@@ -1,0 +1,2637 @@
+{
+  "rows": 167782,
+  "rows_by_origin": {
+    "human": 24422,
+    "synthetic": 143360
+  },
+  "games_by_origin": {
+    "human": 680,
+    "synthetic": 3584
+  },
+  "column_count": 113,
+  "missing_definition": "Empty/whitespace-only CSV cell or scalar nan/null/none (case insensitive); vector entries counted separately.",
+  "conditions": [
+    {
+      "label": "Equal Baseline BC 1",
+      "origin": "synthetic",
+      "rows": 20480,
+      "games": 512,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 512
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 512
+        },
+        "episode_id": {
+          "distinct_nonmissing": 512
+        },
+        "block_id": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Equal Baseline Exp 1",
+      "origin": "human",
+      "rows": 1600,
+      "games": 40,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 40
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Interpolating Baseline BC 1",
+      "origin": "synthetic",
+      "rows": 20480,
+      "games": 512,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 512
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 512
+        },
+        "episode_id": {
+          "distinct_nonmissing": 512
+        },
+        "block_id": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Interpolating Baseline BC 2",
+      "origin": "synthetic",
+      "rows": 20480,
+      "games": 512,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 512
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 512
+        },
+        "episode_id": {
+          "distinct_nonmissing": 512
+        },
+        "block_id": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Interpolating Baseline Exp 2",
+      "origin": "human",
+      "rows": 1600,
+      "games": 40,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 40
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Interpolating Baseline Exp 3",
+      "origin": "human",
+      "rows": 3200,
+      "games": 80,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 80
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 80
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Mixed Baseline BC 1",
+      "origin": "synthetic",
+      "rows": 20480,
+      "games": 512,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 512
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 512
+        },
+        "episode_id": {
+          "distinct_nonmissing": 512
+        },
+        "block_id": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Mixed Baseline Exp 1",
+      "origin": "human",
+      "rows": 1600,
+      "games": 40,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 40
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Proportional Baseline BC 1",
+      "origin": "synthetic",
+      "rows": 20480,
+      "games": 512,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 512
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 512
+        },
+        "episode_id": {
+          "distinct_nonmissing": 512
+        },
+        "block_id": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Proportional Baseline Exp 1",
+      "origin": "human",
+      "rows": 1600,
+      "games": 40,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 40
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Proportional Baseline Exp 2",
+      "origin": "human",
+      "rows": 1600,
+      "games": 40,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 40
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "Proportional Baseline Game 1 Exp 4",
+      "origin": "human",
+      "rows": 1211,
+      "games": 40,
+      "game_length_min": 25,
+      "game_length_max": 49,
+      "game_length_counts": {
+        "25": 9,
+        "26": 5,
+        "27": 6,
+        "28": 4,
+        "29": 2,
+        "30": 2,
+        "31": 1,
+        "32": 1,
+        "33": 1,
+        "34": 1,
+        "35": 1,
+        "36": 1,
+        "38": 1,
+        "40": 1,
+        "42": 1,
+        "47": 2,
+        "49": 1
+      },
+      "round_index_min": 0,
+      "round_index_max": 48,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "game4"
+          ]
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 40
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0.0"
+          ]
+        }
+      }
+    },
+    {
+      "label": "Proportional Baseline Game 2 Exp 4",
+      "origin": "human",
+      "rows": 1091,
+      "games": 40,
+      "game_length_min": 25,
+      "game_length_max": 35,
+      "game_length_counts": {
+        "25": 13,
+        "26": 7,
+        "27": 5,
+        "28": 4,
+        "29": 4,
+        "30": 3,
+        "31": 2,
+        "34": 1,
+        "35": 1
+      },
+      "round_index_min": 0,
+      "round_index_max": 34,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "game4"
+          ]
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 40
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        }
+      }
+    },
+    {
+      "label": "Proportional Baseline Game 3 Exp 4",
+      "origin": "human",
+      "rows": 1130,
+      "games": 40,
+      "game_length_min": 25,
+      "game_length_max": 41,
+      "game_length_counts": {
+        "25": 10,
+        "26": 8,
+        "27": 4,
+        "28": 2,
+        "29": 4,
+        "30": 5,
+        "31": 1,
+        "32": 1,
+        "33": 1,
+        "34": 1,
+        "35": 1,
+        "36": 1,
+        "41": 1
+      },
+      "round_index_min": 0,
+      "round_index_max": 40,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "2"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "game4"
+          ]
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 40
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "2.0"
+          ]
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M1) BC 1",
+      "origin": "synthetic",
+      "rows": 20480,
+      "games": 512,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 512
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 512
+        },
+        "episode_id": {
+          "distinct_nonmissing": 512
+        },
+        "block_id": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M1) Exp 1",
+      "origin": "human",
+      "rows": 1600,
+      "games": 40,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 40
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M1) Exp 2",
+      "origin": "human",
+      "rows": 1600,
+      "games": 40,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 40
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M2) BC 2",
+      "origin": "synthetic",
+      "rows": 20480,
+      "games": 512,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 512
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 512
+        },
+        "episode_id": {
+          "distinct_nonmissing": 512
+        },
+        "block_id": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M2) Exp 3",
+      "origin": "human",
+      "rows": 3200,
+      "games": 80,
+      "game_length_min": 40,
+      "game_length_max": 40,
+      "game_length_counts": {
+        "40": 80
+      },
+      "round_index_min": 0,
+      "round_index_max": 39,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 80
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 0,
+          "values": []
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M2) Game 1 Exp 4",
+      "origin": "human",
+      "rows": 1124,
+      "games": 40,
+      "game_length_min": 25,
+      "game_length_max": 46,
+      "game_length_counts": {
+        "25": 11,
+        "26": 8,
+        "27": 8,
+        "28": 3,
+        "29": 2,
+        "30": 1,
+        "31": 1,
+        "32": 1,
+        "34": 1,
+        "35": 1,
+        "37": 1,
+        "38": 1,
+        "46": 1
+      },
+      "round_index_min": 0,
+      "round_index_max": 45,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "game4"
+          ]
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 40
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "0.0"
+          ]
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M2) Game 2 Exp 4",
+      "origin": "human",
+      "rows": 1135,
+      "games": 40,
+      "game_length_min": 25,
+      "game_length_max": 47,
+      "game_length_counts": {
+        "25": 11,
+        "26": 11,
+        "27": 3,
+        "28": 3,
+        "29": 2,
+        "31": 2,
+        "32": 1,
+        "33": 2,
+        "34": 1,
+        "35": 1,
+        "37": 1,
+        "38": 1,
+        "47": 1
+      },
+      "round_index_min": 0,
+      "round_index_max": 46,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "game4"
+          ]
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 40
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        }
+      }
+    },
+    {
+      "label": "RL Agent (M2) Game 3 Exp 4",
+      "origin": "human",
+      "rows": 1131,
+      "games": 40,
+      "game_length_min": 25,
+      "game_length_max": 39,
+      "game_length_counts": {
+        "25": 12,
+        "26": 4,
+        "27": 6,
+        "28": 3,
+        "29": 3,
+        "30": 2,
+        "31": 2,
+        "32": 3,
+        "33": 1,
+        "34": 1,
+        "35": 2,
+        "39": 1
+      },
+      "round_index_min": 0,
+      "round_index_max": 38,
+      "duplicate_game_rounds": 0,
+      "noncontiguous_or_nonzero_start_games": 0,
+      "identifiers": {
+        "launch_id": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "2"
+          ]
+        },
+        "block_id": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "1.0"
+          ]
+        },
+        "set": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "game4"
+          ]
+        },
+        "launch_id_gamewise": {
+          "distinct_nonmissing": 40
+        },
+        "launch_id_str": {
+          "distinct_nonmissing": 40
+        },
+        "episode_id_str": {
+          "distinct_nonmissing": 1,
+          "values": [
+            "2.0"
+          ]
+        }
+      }
+    }
+  ],
+  "schema": [
+    {
+      "name": "",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mech_name",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "round_id",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "episode_id",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_reward",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_action",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "comma separated",
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "mechanism_observation.is_first",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_observation.pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_observation.prev_reciprocations",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "mechanism_observation.prev_offers",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_action_0",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_reward_0",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_0.offers",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_observation_0.pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_0.prev_reciprocations",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_action_1",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_reward_1",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_1.offers",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_observation_1.pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_1.prev_reciprocations",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_action_2",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_reward_2",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_2.offers",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_observation_2.pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_2.prev_reciprocations",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_action_3",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_reward_3",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_3.offers",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "player_observation_3.pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_observation_3.prev_reciprocations",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "offer_0",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "offer_1",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "offer_2",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "offer_3",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "exlusion_reversal_0",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "exlusion_reversal_1",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "exlusion_reversal_2",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "exlusion_reversal_3",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "exlusion_reversal",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "players_kept_active",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_action_0_relative",
+      "missing_by_origin": {
+        "human": 9951,
+        "synthetic": 59410
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_action_1_relative",
+      "missing_by_origin": {
+        "human": 9062,
+        "synthetic": 56276
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_action_2_relative",
+      "missing_by_origin": {
+        "human": 9464,
+        "synthetic": 56220
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_action_3_relative",
+      "missing_by_origin": {
+        "human": 9654,
+        "synthetic": 56877
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "launch_id",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "next_environment_state.reciprocations",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 167782
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "flat",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "rank1_offer_by_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank2_offer_by_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank3_offer_by_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank4_offer_by_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank1_recip",
+      "missing_by_origin": {
+        "human": 4269,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank2_recip",
+      "missing_by_origin": {
+        "human": 4269,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank3_recip",
+      "missing_by_origin": {
+        "human": 4269,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank4_recip",
+      "missing_by_origin": {
+        "human": 4269,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank1_offer_by_prev_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank2_offer_by_prev_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank3_offer_by_prev_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank4_offer_by_prev_recip",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank1_previous_recip",
+      "missing_by_origin": {
+        "human": 4750,
+        "synthetic": 3584
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank2_previous_recip",
+      "missing_by_origin": {
+        "human": 4750,
+        "synthetic": 3584
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank3_previous_recip",
+      "missing_by_origin": {
+        "human": 4750,
+        "synthetic": 3584
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "rank4_previous_recip",
+      "missing_by_origin": {
+        "human": 4750,
+        "synthetic": 3584
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "offer_gini",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "proportionality",
+      "missing_by_origin": {
+        "human": 4750,
+        "synthetic": 3584
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mech_name_by_player",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "block_id",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "factor",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "max_pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_cumulative_reward",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "four_players_present",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "players_present",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "players_present_jit",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_0_present",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_1_present",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_2_present",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_3_present",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_0_has_no_choice",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_1_has_no_choice",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_2_has_no_choice",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_3_has_no_choice",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "game_has_no_pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "choice_to_be_made",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "players_cumulative_reward",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 24422
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "comma separated",
+          "nested"
+        ]
+      }
+    },
+    {
+      "name": "players_reward",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 24422
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "comma separated",
+          "nested"
+        ]
+      }
+    },
+    {
+      "name": "prev_environment_state.pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "prev_environment_state.reciprocations",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      },
+      "vector": {
+        "flattened_length_counts": {
+          "4": 24422
+        },
+        "rows_with_nonfinite_entries": 0,
+        "formats": [
+          "nested",
+          "whitespace separated"
+        ]
+      }
+    },
+    {
+      "name": "next_environment_state.pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_parameters_distribute_pool_ratio",
+      "missing_by_origin": {
+        "human": 14590,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_parameters_uniform_offer_ratio",
+      "missing_by_origin": {
+        "human": 14590,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "mechanism_parameters_path",
+      "missing_by_origin": {
+        "human": 6400,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_0_usable",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_1_usable",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_2_usable",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "player_3_usable",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "usable_players",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "four_usable_players",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "four_players_present_or_no_pool",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "completed",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "first_x_games",
+      "missing_by_origin": {
+        "human": 0,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_fair",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_contribute_me",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_contribute_others",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_understandable",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_i_can_think",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_money",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_again",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "feedback_beneficial_to_others",
+      "missing_by_origin": {
+        "human": 13222,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "Unnamed: 0",
+      "missing_by_origin": {
+        "human": 17600,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "episode_id_str",
+      "missing_by_origin": {
+        "human": 17600,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "launch_id_str",
+      "missing_by_origin": {
+        "human": 17600,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "old_mechanme",
+      "missing_by_origin": {
+        "human": 17600,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "launch_id_gamewise",
+      "missing_by_origin": {
+        "human": 17600,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    },
+    {
+      "name": "set",
+      "missing_by_origin": {
+        "human": 17600,
+        "synthetic": 143360
+      },
+      "nonfinite_scalar_by_origin": {
+        "human": 0,
+        "synthetic": 0
+      }
+    }
+  ],
+  "identifiers_by_origin": {
+    "human": {
+      "launch_id": {
+        "distinct_nonmissing": 520
+      },
+      "episode_id": {
+        "distinct_nonmissing": 3,
+        "values": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      "block_id": {
+        "distinct_nonmissing": 1,
+        "values": [
+          "1.0"
+        ]
+      },
+      "set": {
+        "distinct_nonmissing": 1,
+        "values": [
+          "game4"
+        ]
+      },
+      "launch_id_gamewise": {
+        "distinct_nonmissing": 240
+      },
+      "launch_id_str": {
+        "distinct_nonmissing": 80
+      },
+      "episode_id_str": {
+        "distinct_nonmissing": 3,
+        "values": [
+          "0.0",
+          "1.0",
+          "2.0"
+        ]
+      }
+    },
+    "synthetic": {
+      "launch_id": {
+        "distinct_nonmissing": 3072
+      },
+      "episode_id": {
+        "distinct_nonmissing": 512
+      },
+      "block_id": {
+        "distinct_nonmissing": 0,
+        "values": []
+      },
+      "set": {
+        "distinct_nonmissing": 0,
+        "values": []
+      },
+      "launch_id_gamewise": {
+        "distinct_nonmissing": 0,
+        "values": []
+      },
+      "launch_id_str": {
+        "distinct_nonmissing": 0,
+        "values": []
+      },
+      "episode_id_str": {
+        "distinct_nonmissing": 0,
+        "values": []
+      }
+    }
+  },
+  "human_flags": {
+    "completed": {
+      "True": 24422
+    },
+    "first_x_games": {
+      "True": 24422
+    },
+    "four_players_present": {
+      "False": 196,
+      "True": 24226
+    },
+    "four_players_present_or_no_pool": {
+      "True": 24422
+    },
+    "four_usable_players": {
+      "True": 24422
+    }
+  },
+  "missing_relative_contribution_context": {
+    "human": {
+      "offer_below_one": 38131
+    },
+    "synthetic": {
+      "offer_below_one": 228783
+    }
+  },
+  "human_rows_without_four_players_present": {
+    "game_has_no_pool=True": 196
+  },
+  "human_group_summary": {
+    "experiment_launch_groups": 520,
+    "games_per_group_counts": {
+      "1": 440,
+      "3": 80
+    },
+    "groups_per_experiment": {
+      "1": 160,
+      "2": 120,
+      "3": 160,
+      "4": 80
+    },
+    "launch_ids_seen_in_multiple_experiments": 0,
+    "experiment_4_group_count": 80,
+    "experiment_4_groups_with_episodes_0_1_2": 80
+  },
+  "identity_limitations": [
+    "Player indices 0\u20133 are positions within a group, not globally linkable participant identifiers.",
+    "Keep all players and rounds in a launch group together; keep all three Experiment 4 episodes together.",
+    "No released participant identifier establishes whether people recur across different launch groups or experiments; cross-group participant independence cannot be certified.",
+    "Synthetic launch_id and episode_id values repeat across conditions; use the full condition label with launch_id and episode_id for a game key.",
+    "The observed labels do not include the initial 537-game human training cohort; fitting released evaluation data would create new behavioral models.",
+    "The paper reports no collected demographics; player presence flags are not demographic data."
+  ]
+}

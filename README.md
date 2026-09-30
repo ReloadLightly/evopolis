@@ -13,7 +13,7 @@ EvoPolis is a research project at the intersection of computational social scien
 
 The first world is a community sharing a productive resource. Its inhabitants receive allocations, decide what to retain, and choose what to return to the commons. Their choices can sustain mutual prosperity, concentrate opportunities, or exhaust the resource on which everyone depends. The research follows two connected problems: learning a faithful model of those choices, and discovering institutions that work across plausible models of human behavior.
 
-**Current state:** research design, visual identity, and the first implementation task. The simulation, trained models, and experimental results are planned. The cover is conceptual artwork; the diagrams below describe the proposed system.
+**Current state:** the first empirical comparison is reproduced from released trajectories, with executable resource accounting, four allocation baselines, and an audit of numerical discrepancies. Behavioral training and evolutionary search remain planned. The cover is conceptual artwork; the Figure 2A reproduction below is measured evidence.
 
 ## The research question
 
@@ -49,9 +49,34 @@ $$
 R_{t+1}=\min\!\left(R_{\max},\;R_t-\sum_i e_{i,t}+g\sum_i c_{i,t}\right).
 $$
 
-The initial protocol uses four inhabitants, a pool capacity and initial stock of 200, and a contribution multiplier of 1.4. Experiments 1–3 run for 40 rounds, with the horizon undisclosed to participants. The first implementation will also transcribe the paper's information, allocation bounds, rounding, and termination rules before running extensions. These details determine what an agent can know and which decisions are feasible.
+The initial protocol uses four inhabitants, a pool capacity and initial stock of 200, and a contribution multiplier of 1.4. Experiments 1–3 run for 40 rounds, with the horizon undisclosed to participants. Human contributions advance in integer units, while allocations can be fractional. The [implemented protocol](docs/protocol.md) records timing, observable information, termination, and unresolved numerical conventions. Experiment 4 instead repeats three games within each group with a different continuation rule.
 
 The planned interface will make this mechanism visible: inhabitants around a shared commons, resource flows, individual histories, and synchronized comparisons between institutions. Replaying observed human decisions and running generated futures will be distinct display modes. Several independent communities can be compared without changing the original group size.
+
+## First empirical result: surplus and inequality
+
+Equal allocation gives everyone access to the commons, but does not condition future access on contributions. Proportional allocation rewards contributions, yet a player who returns nothing can lose all future access. This makes sustaining the resource and sharing its returns distinct challenges.
+
+The reproduction of **Figure 2A** compares these rules, their equal/proportional mixture, and the study's recorded RL mechanism M1. The left panel contains **512 recorded BC1 games per mechanism**; the right contains **40 human groups per mechanism**. Every game has four players and 40 logged rounds, including depleted rounds. Small marks are games; large marks average their surplus and Gini coordinates.
+
+![Reproduction of Figure 2A: recorded BC1 and human Experiment 1 games, showing mean player surplus against inequality for equal, mixed, proportional and recorded RL allocation.](docs/assets/figure2a.png)
+
+Human Experiment 1 results, in game units retained per player per round:
+
+| Allocation mechanism | Groups | Mean surplus | Mean Gini |
+| :--- | ---: | ---: | ---: |
+| Equal | 40 | 2.202 | 0.150 |
+| Mixed | 40 | 4.533 | 0.087 |
+| Proportional | 40 | 6.047 | 0.360 |
+| Recorded RL mechanism M1 | 40 | **8.718** | **0.253** |
+
+The recorded RL mechanism yields **44.2% more surplus than proportional allocation**, with lower inequality (surplus rank-sum \|z\| = 3.252, p = 0.00114; Gini \|z\| = 2.781, p = 0.00542). Its inequality remains higher than under equal or mixed allocation. All ten human rank-sum statistics reported in the paper's Figure 2A discussion agree to the published two decimal places. The data imply 144.2% **of** proportional surplus; the paper's wording “150% greater” is not supported literally by these means.
+
+Gini is computed across each game's four players' mean surplus, then averaged across games. Figure bars add marginal 95% intervals using the notebook's normal-approximation helper, with games as the replication unit. They were not shown in the original figure. See the [complete numerical table and intervals](results/task01/figure2a_table.md), [editable SVG](docs/assets/figure2a.svg), [plotting code](evopolis/plotting.py), and [independent numerical audit](docs/figure-audit.md).
+
+**What this establishes.** The released human and BC1 outcomes reproduce the published comparison. EvoPolis newly implements the resource equation and equal, proportional, mixed, and interpolating baselines; it has not trained BC1, recreated the upstream RL network, or generated the plotted outcomes. The CSV contains **24,422 human** and **143,360 synthetic** round records. It does not identify the original BC1 training cohort, and it lacks participant identifiers that could link people across separate groups.
+
+**Numerical limit.** The published equation is executable, but the unreleased simulator is not exactly reconstructed. Auditing all 167,782 records finds pool-transition residuals, including an apparent 0.01-unit floor in depleted games and smaller precision effects. Affected records and tolerances are preserved in the [replay audit](docs/protocol.md#what-the-recorded-transitions-actually-show), rather than silently corrected. These discrepancies do not alter Figure 2A, which uses the recorded player rewards. This reproduction is descriptive evidence from the released evaluation games, not a held-out test of a new behavioral model.
 
 ## What learns—and what evolves
 
@@ -83,8 +108,8 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 
 | Stage | Experiment | Main artifact | Status |
 | :--- | :--- | :--- | :--- |
-| **01 · Ground** | Reconstruct the published task and reproduce a substantive result from the released human data. | Empirical figure, numerical comparison, and executable resource dynamics. | **Next** |
-| **02 · Observe** | Visualize recorded communities and baseline simulations. | Local browser replay with resource flows and individual histories. | Planned |
+| **01 · Ground** | Reconstruct the published task and reproduce a substantive result from the released human data. | Empirical figure, numerical comparison, and executable resource dynamics, with numerical ambiguities documented. | **Complete** |
+| **02 · Observe** | Visualize recorded communities and baseline simulations. | Local browser replay with resource flows and individual histories. | **Next** |
 | **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Model checkpoints, learning curves, and predictions for held-out groups. | Planned |
 | **04 · Imagine** | Generate multi-round social trajectories under recorded institutions. | Calibration, trajectory comparisons, and uncertainty estimates. | Planned |
 | **05 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
@@ -118,19 +143,15 @@ git clone https://github.com/ReloadLightly/evopolis.git
 code --new-window evopolis
 ```
 
-If you already cloned the repository, open that checkout instead. The simulation has not been implemented yet, so there is no training or dashboard command to run at this stage.
+If you already cloned the repository, open that checkout instead. With [uv](https://docs.astral.sh/uv/getting-started/installation/) available, reproduce the inventory, numerical replay, tables and figures:
 
-Open Codex in that VS Code window and give it this first task:
-
-```text
-Read AGENTS.md, README.md, and docs/tasks/01-empirical-foundation.md.
-Complete Task 01 in this repository: reconstruct the published common-pool
-experiment and reproduce its first substantive empirical figure.
-Follow the task's scope, run the analysis, update the README with the actual
-findings and figures, and commit and push the completed work to origin.
+```bash
+bash scripts/reproduce.sh
 ```
 
-The full brief is in **[Task 01: empirical foundation](docs/tasks/01-empirical-foundation.md)**. Subsequent tasks will be specified from the preceding results. The intended stack is Python with compact CPU-oriented models, a numerical simulation core, and a local browser visualization. Hardware and data will be profiled before selecting training budgets. Large language models are optional for later communication or program proposals; routine simulation will not depend on a model API call for every inhabitant and round.
+The command installs the locked Python environment and streams the public 204 MiB CSV into ignored `data/raw/` on first use. It verifies the pinned data and notebook checksums, then writes `results/task01/` and PNG/SVG figures in `docs/assets/`. Subsequent runs use cached sources. The [task notes](docs/tasks/01-empirical-foundation.md#completion-record) record measured runtime, memory, verification, and dependencies; the [data inventory](docs/data-inventory.md) describes schema, missing values, and group identity limits. No training or dashboard command exists yet.
+
+The next concrete task is a local replay of observed communities, showing how contributions, exclusions and pool changes produce these outcomes. Recorded trajectories and baseline simulations must remain visibly distinct. Later compact CPU models will be fitted to human decisions with declared group splits and separate institutional evaluation. Large language models remain optional for later communication or program proposals.
 
 ## Research foundations
 

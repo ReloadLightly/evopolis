@@ -1,0 +1,31 @@
+{
+  "paper_doi": "10.1038/s41467-025-58043-7",
+  "upstream_revision": "4f1a99a9d150f9fa6bad1a0f70f11c0673d46763",
+  "sources": [
+    {
+      "file": "sustainable_behavior.csv",
+      "url": "https://storage.googleapis.com/sustainable_behavior/sustainable_behavior.csv",
+      "sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+      "bytes": 214185378
+    },
+    {
+      "file": "sustainable_behavior.ipynb",
+      "url": "https://raw.githubusercontent.com/google-deepmind/sustainable_behavior/4f1a99a9d150f9fa6bad1a0f70f11c0673d46763/notebooks/sustainable_behavior.ipynb",
+      "sha256": "4b93edeae3ca4f937bb71701072c3371bfc34d82887f8b8e39d171d0bc1588c9",
+      "bytes": 75896
+    },
+    {
+      "file": "paper.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11929920/fullTextXML",
+      "sha256": "5552acbc0748415d769ff22c2c297d4a61d93032307692c43952c0007591b4fa",
+      "bytes": 144749
+    }
+  ],
+  "inventory": "inventory.json",
+  "replay": "replay.json",
+  "software_license": "Apache-2.0 (adapted notebook definitions)",
+  "data_license": "CC-BY-4.0",
+  "figure": "Figure 2A, recorded BC1 and human Experiment 1",
+  "uncertainty": "Marginal mean +/- 1.96 * population SD / sqrt(number of games); notebook helper, added to figure",
+  "exclusions": "Exact notebook condition selection; all 40 logged rows per game; undefined Gini remains NaN"
+}

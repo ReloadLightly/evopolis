@@ -88,3 +88,39 @@ Commit the completed task and push to the verified `origin` without force. The u
 - A research-focused README update identifying what was reproduced, what was newly implemented, and what remains uncertain.
 
 Finish by summarizing the scientific result and identifying the next concrete task. Do not launch behavioral training or evolutionary search in this run. Those experiments follow once this foundation is visible and reviewable.
+
+## Completion record
+
+Task 01 is complete: the published accounting and four baseline allocation rules are executable, and Figure 2A's recorded BC1 and human Experiment 1 comparison is reproduced. Exact simulator equivalence remains unresolved because the original environment code is not released; the measured numerical departures are part of the result, not suppressed failures. No behavioral training, neural mechanism reconstruction, or evolutionary search was performed.
+
+From the Linux checkout, the verified command is:
+
+```bash
+bash scripts/reproduce.sh
+```
+
+The script requires `uv`, selects Python 3.12, uses `uv.lock`, keeps package/plot caches under ignored `data/cache/`, and downloads missing public sources in streaming blocks to `data/raw/`. The tested interpreter was **Python 3.12.13**, with **NumPy 2.2.6**, **SciPy 1.15.3**, and **Matplotlib 3.10.3**; transitive dependencies are locked. The CSV and notebook checksums are enforced. No credentials enter the data, code, or manifests.
+
+Initial WSL profiling found 3.7 GiB total RAM, approximately **619 MiB available**, fully occupied 1 GiB swap, eight logical CPUs, and 889 GiB free disk. The 204 MiB CSV is streamed, never materialized as a full DataFrame. The final cached-source reproduction took **25.826 seconds** and **148.102 MiB peak process RSS**, measured by Python's monotonic clock and Linux `getrusage`; earlier complete runs took 30–31 seconds at about 149 MiB RSS. Download and environment installation time are excluded from this cached measurement. [runtime.json](../../results/task01/runtime.json) is refreshed on each run. This short, deterministic analysis needs no long-run checkpoints; atomic source downloads and cached inputs permit restart.
+
+The outputs are:
+
+- [Source manifest](../../results/task01/manifest.json), [full inventory](../../results/task01/inventory.json), and [schema/identity explanation](../data-inventory.md): 167,782 rows, explicitly separated into 24,422 human and 143,360 synthetic records.
+- [Protocol and replay findings](../protocol.md), [replay summary](../../results/task01/replay.json), [condition checks](../../results/task01/replay_by_condition.csv), and [affected comparisons](../../results/task01/replay_mismatches.csv). All input rows validate at `1e-4`; all human returns are integer-valued. The unreleased 0.01 pool-floor behavior and remaining precision discrepancies prevent a claim of exact transition reproduction.
+- [Figure PNG](../assets/figure2a.png), [SVG](../assets/figure2a.svg), [plotting source](../../evopolis/plotting.py), [all group coordinates](../../results/task01/figure2a_groups.csv), [summary CSV](../../results/task01/figure2a_summary.csv), [readable table](../../results/task01/figure2a_table.md), and [rank-sum comparisons](../../results/task01/rank_tests.csv).
+
+Verification commands, after reproduction:
+
+```bash
+.venv/bin/python -m unittest discover -s tests -v
+python3 scripts/check_upstream.py --compare-dir results/task01 > results/task01/independent_check.json
+git diff --check
+```
+
+All **11 numerical/estimand/replay tests** passed, including feasible accounting, capacity, integer human actions, proportional exclusion, observation boundaries, episode resets, and retention of mismatching source records. The independent standard-library checker matched 2,208 game coordinates, eight summaries and intervals, and 24 rank-sum tests: maximum discrepancy **1.78e-15** over 4,504 numerical comparisons at a tolerance of `1e-12`. All ten Figure 2A human rank-sum values reported in the paper match its printed precision. The figure was visually inspected, its labels/units/counts checked against the summary, and repeated runs produced byte-identical group/summary/test CSVs and PNG/SVG figures. Relative document links and whitespace checks passed.
+
+Human M1 surplus is **8.718**, versus **6.047** for proportional allocation, a **44.2% increase**, with Gini **0.253** versus **0.360**. The paper's “150% greater” phrase is not literally reproduced; the measured ratio is 1.442. See the [figure audit](../figure-audit.md) for exact estimands, published-statistic comparisons, and zero-Gini handling. Recorded RL outcomes are distinguished throughout from newly implemented accounting and baselines.
+
+The checkout began clean. `origin` was verified as `https://github.com/ReloadLightly/evopolis.git`, and the remote was synchronized before publication. An initial sandboxed GitHub authentication check could not access the network; the existing login worked with approved network access. `bash scripts/configure-github.sh` successfully applied the prepared description and six research topics. No authentication or access-control changes were needed.
+
+The next concrete task is **Task 02: a local replay of observed communities**, with pool, allocation, contribution, surplus, and exclusion histories displayed over synchronized rounds. It should show recorded trajectories separately from simulations under the reconstructed rules, including the documented pool-floor discrepancy. Future behavioral fitting requires declared group splits, all three Experiment 4 games kept together, and an explicit limit on participant independence because cross-group participant IDs are unavailable.

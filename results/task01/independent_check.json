@@ -1,0 +1,305 @@
+{
+  "source_rows": 167782,
+  "missing_selected_rewards": 0,
+  "conditions": [
+    {
+      "cohort": "BC 1",
+      "mechanism": "Equal Baseline",
+      "groups": 512,
+      "rows": 20480,
+      "mean_surplus": 3.8792482603029006,
+      "mean_gini": 0.16663623344975137,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.384060603975,
+      "surplus_95ci_halfwidth_notebook_ddof0": 0.22726581700306117,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.006124561939667877
+    },
+    {
+      "cohort": "BC 1",
+      "mechanism": "Mixed Baseline",
+      "groups": 512,
+      "rows": 20480,
+      "mean_surplus": 4.78677722563631,
+      "mean_gini": 0.09666943746751981,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.419209390379375,
+      "surplus_95ci_halfwidth_notebook_ddof0": 0.24835870187216622,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.004156822680576462
+    },
+    {
+      "cohort": "BC 1",
+      "mechanism": "Proportional Baseline",
+      "groups": 512,
+      "rows": 20480,
+      "mean_surplus": 6.405637533493392,
+      "mean_gini": 0.4261834062148733,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.346616528920525,
+      "surplus_95ci_halfwidth_notebook_ddof0": 0.24910690767302116,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.012950250503770782
+    },
+    {
+      "cohort": "BC 1",
+      "mechanism": "RL Agent (M1)",
+      "groups": 512,
+      "rows": 20480,
+      "mean_surplus": 8.478325654219514,
+      "mean_gini": 0.286078098605026,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.3986964606623125,
+      "surplus_95ci_halfwidth_notebook_ddof0": 0.2934773932758446,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.011587234805967387
+    },
+    {
+      "cohort": "Exp 1",
+      "mechanism": "Equal Baseline",
+      "groups": 40,
+      "rows": 1600,
+      "mean_surplus": 2.2017613873723896,
+      "mean_gini": 0.1504497402242235,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.3444749571383,
+      "surplus_95ci_halfwidth_notebook_ddof0": 0.36388311447212046,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.023762570865783393
+    },
+    {
+      "cohort": "Exp 1",
+      "mechanism": "Mixed Baseline",
+      "groups": 40,
+      "rows": 1600,
+      "mean_surplus": 4.532721120186616,
+      "mean_gini": 0.08676236502595717,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.4967536994256079,
+      "surplus_95ci_halfwidth_notebook_ddof0": 0.8986495020165051,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.016129487327361015
+    },
+    {
+      "cohort": "Exp 1",
+      "mechanism": "Proportional Baseline",
+      "groups": 40,
+      "rows": 1600,
+      "mean_surplus": 6.0468687356403095,
+      "mean_gini": 0.35959515980594353,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.3944187076762318,
+      "surplus_95ci_halfwidth_notebook_ddof0": 1.0625752265731028,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.057297412434053174
+    },
+    {
+      "cohort": "Exp 1",
+      "mechanism": "RL Agent (M1)",
+      "groups": 40,
+      "rows": 1600,
+      "mean_surplus": 8.71846526746963,
+      "mean_gini": 0.2529985914925974,
+      "zero_surplus_games": 0,
+      "min_surplus": 1.502062492755916,
+      "surplus_95ci_halfwidth_notebook_ddof0": 1.2868194124107704,
+      "gini_95ci_halfwidth_notebook_ddof0": 0.035490582519573294
+    }
+  ],
+  "rank_sum_tests": [
+    {
+      "cohort": "BC 1",
+      "first": "Equal Baseline",
+      "second": "Mixed Baseline",
+      "metric": "surplus",
+      "z": -5.843453219106837,
+      "p_two_sided": 5.112966163623353e-09
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Equal Baseline",
+      "second": "Mixed Baseline",
+      "metric": "gini",
+      "z": 16.203003334973758,
+      "p_two_sided": 4.802327067875251e-59
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Equal Baseline",
+      "second": "Proportional Baseline",
+      "metric": "surplus",
+      "z": -14.06097440911694,
+      "p_two_sided": 6.597155062646215e-45
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Equal Baseline",
+      "second": "Proportional Baseline",
+      "metric": "gini",
+      "z": -22.819708708748127,
+      "p_two_sided": 2.9224016810990534e-115
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Equal Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "surplus",
+      "z": -18.706827201740882,
+      "p_two_sided": 4.355449930277421e-78
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Equal Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "gini",
+      "z": -15.04111747917652,
+      "p_two_sided": 3.9482833774294893e-51
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Mixed Baseline",
+      "second": "Proportional Baseline",
+      "metric": "surplus",
+      "z": -8.976614313695746,
+      "p_two_sided": 2.7922664305171852e-19
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Mixed Baseline",
+      "second": "Proportional Baseline",
+      "metric": "gini",
+      "z": -25.56339078692483,
+      "p_two_sided": 3.897370337965176e-144
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Mixed Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "surplus",
+      "z": -15.941800912681035,
+      "p_two_sided": 3.248551755511225e-57
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Mixed Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "gini",
+      "z": -23.48243589022869,
+      "p_two_sided": 6.166517511351725e-122
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Proportional Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "surplus",
+      "z": -10.881743631631739,
+      "p_two_sided": 1.4084272523227806e-27
+    },
+    {
+      "cohort": "BC 1",
+      "first": "Proportional Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "gini",
+      "z": 14.414950183664114,
+      "p_two_sided": 4.1673976784318175e-47
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Equal Baseline",
+      "second": "Mixed Baseline",
+      "metric": "surplus",
+      "z": -4.580312135571031,
+      "p_two_sided": 4.64282495334387e-06
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Equal Baseline",
+      "second": "Mixed Baseline",
+      "metric": "gini",
+      "z": 3.9067368215164677,
+      "p_two_sided": 9.355095117892298e-05
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Equal Baseline",
+      "second": "Proportional Baseline",
+      "metric": "surplus",
+      "z": -5.282754963085075,
+      "p_two_sided": 1.2725555004310156e-07
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Equal Baseline",
+      "second": "Proportional Baseline",
+      "metric": "gini",
+      "z": -4.763139720814412,
+      "p_two_sided": 1.9060376716772554e-06
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Equal Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "surplus",
+      "z": -6.312362943139908,
+      "p_two_sided": 2.7480680592167436e-10
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Equal Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "gini",
+      "z": -4.185789451624787,
+      "p_two_sided": 2.841766767033698e-05
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Mixed Baseline",
+      "second": "Proportional Baseline",
+      "metric": "surplus",
+      "z": -1.7320508075688772,
+      "p_two_sided": 0.08326451666355043
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Mixed Baseline",
+      "second": "Proportional Baseline",
+      "metric": "gini",
+      "z": -5.888972745734183,
+      "p_two_sided": 3.886035200107552e-09
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Mixed Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "surplus",
+      "z": -4.378239541354662,
+      "p_two_sided": 1.1964181080424348e-05
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Mixed Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "gini",
+      "z": -6.29311793416692,
+      "p_two_sided": 3.111517548242033e-10
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Proportional Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "surplus",
+      "z": -3.252406516434892,
+      "p_two_sided": 0.0011443223101137423
+    },
+    {
+      "cohort": "Exp 1",
+      "first": "Proportional Baseline",
+      "second": "RL Agent (M1)",
+      "metric": "gini",
+      "z": 2.7809037965966974,
+      "p_two_sided": 0.005420779844613688
+    }
+  ],
+  "verification": {
+    "directory": "results/task01",
+    "groups_compared": 2208,
+    "conditions_compared": 8,
+    "rank_tests_compared": 24,
+    "numbers_compared": 4504,
+    "absolute_tolerance": 1e-12,
+    "maximum_absolute_difference": 1.7763568394002505e-15
+  }
+}

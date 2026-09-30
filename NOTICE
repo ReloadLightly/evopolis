@@ -1,0 +1,17 @@
+EvoPolis Task 01 reproduces the analysis of:
+Koster, Pîslar et al. (2025), Nature Communications 16, 2824.
+https://doi.org/10.1038/s41467-025-58043-7
+
+The group aggregation, Gini definition, condition selection, and rank-sum
+comparisons in evopolis/analysis.py adapt the accompanying analysis notebook:
+https://github.com/google-deepmind/sustainable_behavior
+revision 4f1a99a9d150f9fa6bad1a0f70f11c0673d46763.
+Copyright 2024 DeepMind Technologies Limited.
+Licensed under the Apache License, Version 2.0; see LICENSES/Apache-2.0.txt.
+Changes: streaming CSV processing, explicit provenance and numerical replay,
+group-level uncertainty, new figure styling, and machine-readable results.
+
+The released trajectories are licensed CC BY 4.0 according to the upstream
+README: https://creativecommons.org/licenses/by/4.0/ . Derived empirical tables
+and figures retain that attribution. Raw data are downloaded, not vendored.
+This is an independent reproduction, not an official Google product.

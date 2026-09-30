@@ -1,0 +1,2358 @@
+{
+  "method": "Published equation; double precision; no data clipping or rounding.",
+  "residual_sign": "observed minus reconstructed",
+  "tolerances": {
+    "tight": 1e-09,
+    "replay": 0.0001
+  },
+  "rows": 167782,
+  "games": 4264,
+  "mismatches_file": "replay_mismatches.csv",
+  "mismatch_row_convention": "csv_row and round_id locate the observation; prediction_round_id locates the allocation/contribution round. For adjacent_next_pool the observation is the following round's pool.",
+  "floor_pattern_definition": "Among residuals > 1e-4, observed pool within 1e-7 of 0.01 and reconstructed pool below 0.01. Diagnostic evidence, not a correction to the published equation.",
+  "conditions": {
+    "Equal Baseline BC 1": {
+      "origin": "recorded_behavioral_clone",
+      "rows": 20480,
+      "first_rounds": 512,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "adjacent_next_pool": 6866
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 19968,
+          "above_1e_9": 18974,
+          "above_1e_4": 6866,
+          "max_abs": 0.0051729093007261305,
+          "mean_abs": 0.001102028798289204,
+          "rmse": 0.0018925803313881557
+        },
+        "allocation_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 512,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 20480,
+          "above_1e_9": 12544,
+          "above_1e_4": 0,
+          "max_abs": 1.6346817005796765e-05,
+          "mean_abs": 4.925689436290316e-07,
+          "rmse": 1.1638429927951982e-06
+        },
+        "negative_contribution": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 81920,
+          "above_1e_9": 46342,
+          "above_1e_4": 0,
+          "max_abs": 3.7677001927249876e-06,
+          "mean_abs": 7.644392910528732e-08,
+          "rmse": 2.1724382555884154e-07
+        },
+        "pool_bound_violation": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Equal Baseline Exp 1": {
+      "origin": "human",
+      "rows": 1600,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 1144,
+        "adjacent_next_pool": 1106
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1560,
+          "above_1e_9": 1474,
+          "above_1e_4": 1134,
+          "max_abs": 0.009199867025017738,
+          "mean_abs": 0.006265009410010311,
+          "rmse": 0.007421989544126928
+        },
+        "allocation_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1600,
+          "above_1e_9": 1514,
+          "above_1e_4": 1172,
+          "max_abs": 0.009199867025017738,
+          "mean_abs": 0.0063173852465111665,
+          "rmse": 0.007453051761181277
+        },
+        "human_integer_grid": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_contribution": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1560,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 6400,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Interpolating Baseline BC 1": {
+      "origin": "recorded_behavioral_clone",
+      "rows": 20480,
+      "first_rounds": 512,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "adjacent_next_pool": 1697
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 19968,
+          "above_1e_9": 18074,
+          "above_1e_4": 1697,
+          "max_abs": 0.00850440165637453,
+          "mean_abs": 0.0002878630649629979,
+          "rmse": 0.000989357938169501
+        },
+        "allocation_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 512,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 20480,
+          "above_1e_9": 18362,
+          "above_1e_4": 0,
+          "max_abs": 2.3445472720595717e-05,
+          "mean_abs": 9.327309686830364e-07,
+          "rmse": 1.758545123723763e-06
+        },
+        "negative_contribution": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 81920,
+          "above_1e_9": 50741,
+          "above_1e_4": 0,
+          "max_abs": 9.053649904444683e-06,
+          "mean_abs": 1.3736116110611876e-07,
+          "rmse": 3.694718384521343e-07
+        },
+        "pool_bound_violation": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Interpolating Baseline BC 2": {
+      "origin": "recorded_behavioral_clone",
+      "rows": 20480,
+      "first_rounds": 512,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "adjacent_next_pool": 1536
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 19968,
+          "above_1e_9": 18164,
+          "above_1e_4": 1536,
+          "max_abs": 0.007658919127425179,
+          "mean_abs": 0.0002596010385880197,
+          "rmse": 0.0009355396601738634
+        },
+        "allocation_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 512,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 20480,
+          "above_1e_9": 18549,
+          "above_1e_4": 0,
+          "max_abs": 1.8771057142430436e-05,
+          "mean_abs": 9.969995778897446e-07,
+          "rmse": 1.7758511161633532e-06
+        },
+        "negative_contribution": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 81920,
+          "above_1e_9": 52854,
+          "above_1e_4": 0,
+          "max_abs": 1.067237855068015e-05,
+          "mean_abs": 1.4309132354435377e-07,
+          "rmse": 3.5996131273415553e-07
+        },
+        "pool_bound_violation": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Interpolating Baseline Exp 2": {
+      "origin": "human",
+      "rows": 1600,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 95,
+        "adjacent_next_pool": 89
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1560,
+          "above_1e_9": 1257,
+          "above_1e_4": 89,
+          "max_abs": 0.009000549092888832,
+          "mean_abs": 0.0005059670881369642,
+          "rmse": 0.0021049640383239946
+        },
+        "allocation_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1600,
+          "above_1e_9": 1290,
+          "above_1e_4": 95,
+          "max_abs": 0.009000549092888832,
+          "mean_abs": 0.0005263942196011903,
+          "rmse": 0.002147208068478088
+        },
+        "human_integer_grid": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1600,
+          "above_1e_9": 578,
+          "above_1e_4": 0,
+          "max_abs": 1.1444091796875e-05,
+          "mean_abs": 4.22745943069458e-07,
+          "rmse": 9.654756607368627e-07
+        },
+        "negative_contribution": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1560,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 6400,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Interpolating Baseline Exp 3": {
+      "origin": "human",
+      "rows": 3200,
+      "first_rounds": 80,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 533,
+        "adjacent_next_pool": 512
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 3120,
+          "above_1e_9": 2600,
+          "above_1e_4": 512,
+          "max_abs": 0.009046325460076332,
+          "mean_abs": 0.0014483186942864455,
+          "rmse": 0.0035682206798256983
+        },
+        "allocation_excess": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 3200,
+          "above_1e_9": 2671,
+          "above_1e_4": 533,
+          "max_abs": 0.009046325460076332,
+          "mean_abs": 0.0014699355080937504,
+          "rmse": 0.0035947314815585048
+        },
+        "human_integer_grid": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 80,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 3200,
+          "above_1e_9": 1013,
+          "above_1e_4": 0,
+          "max_abs": 9.5367431640625e-06,
+          "mean_abs": 3.9134174585342406e-07,
+          "rmse": 9.473881259208726e-07
+        },
+        "negative_contribution": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 3120,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 12800,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Mixed Baseline BC 1": {
+      "origin": "recorded_behavioral_clone",
+      "rows": 20480,
+      "first_rounds": 512,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "adjacent_next_pool": 4309
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 19968,
+          "above_1e_9": 19092,
+          "above_1e_4": 4309,
+          "max_abs": 0.005179269894142635,
+          "mean_abs": 0.0007058063338245536,
+          "rmse": 0.001528257264111623
+        },
+        "allocation_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 512,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 20480,
+          "above_1e_9": 15288,
+          "above_1e_4": 0,
+          "max_abs": 1.7378082276309215e-05,
+          "mean_abs": 6.090623658563742e-07,
+          "rmse": 1.2756132732359117e-06
+        },
+        "negative_contribution": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 81920,
+          "above_1e_9": 57298,
+          "above_1e_4": 0,
+          "max_abs": 3.7628173856774083e-06,
+          "mean_abs": 9.634287143717274e-08,
+          "rmse": 2.3822881854455792e-07
+        },
+        "pool_bound_violation": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Mixed Baseline Exp 1": {
+      "origin": "human",
+      "rows": 1600,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 586,
+        "adjacent_next_pool": 558
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1560,
+          "above_1e_9": 1466,
+          "above_1e_4": 558,
+          "max_abs": 0.009076857939362526,
+          "mean_abs": 0.003152683057272401,
+          "rmse": 0.005268711411290624
+        },
+        "allocation_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1600,
+          "above_1e_9": 1505,
+          "above_1e_4": 586,
+          "max_abs": 0.009076857939362526,
+          "mean_abs": 0.003227895037270433,
+          "rmse": 0.005331091557473072
+        },
+        "human_integer_grid": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1600,
+          "above_1e_9": 378,
+          "above_1e_4": 0,
+          "max_abs": 1.1444091796875e-05,
+          "mean_abs": 2.7869828045368195e-07,
+          "rmse": 8.882400670856275e-07
+        },
+        "negative_contribution": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1560,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 6400,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Proportional Baseline BC 1": {
+      "origin": "recorded_behavioral_clone",
+      "rows": 20480,
+      "first_rounds": 512,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "adjacent_next_pool": 1939
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 19968,
+          "above_1e_9": 15358,
+          "above_1e_4": 1939,
+          "max_abs": 0.007613560172467259,
+          "mean_abs": 0.00033017668554308,
+          "rmse": 0.0010711552442508477
+        },
+        "allocation_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 512,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 20480,
+          "above_1e_9": 17958,
+          "above_1e_4": 0,
+          "max_abs": 1.9891190817133975e-05,
+          "mean_abs": 7.235400776541537e-07,
+          "rmse": 1.5054809750897477e-06
+        },
+        "negative_contribution": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 81920,
+          "above_1e_9": 35290,
+          "above_1e_4": 0,
+          "max_abs": 1.3462829599575343e-05,
+          "mean_abs": 1.0913288901372259e-07,
+          "rmse": 4.0990452628983137e-07
+        },
+        "pool_bound_violation": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Proportional Baseline Exp 1": {
+      "origin": "human",
+      "rows": 1600,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 306,
+        "adjacent_next_pool": 289
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1560,
+          "above_1e_9": 1007,
+          "above_1e_4": 353,
+          "max_abs": 0.009002456441521645,
+          "mean_abs": 0.0016751124155817744,
+          "rmse": 0.003797917907776662
+        },
+        "allocation_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1600,
+          "above_1e_9": 1034,
+          "above_1e_4": 370,
+          "max_abs": 0.009002456441521645,
+          "mean_abs": 0.001726871421792548,
+          "rmse": 0.00385856468044459
+        },
+        "human_integer_grid": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1600,
+          "above_1e_9": 410,
+          "above_1e_4": 0,
+          "max_abs": 7.62939453125e-06,
+          "mean_abs": 2.3953616619110106e-07,
+          "rmse": 7.162918593060871e-07
+        },
+        "negative_contribution": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1560,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 6400,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Proportional Baseline Exp 2": {
+      "origin": "human",
+      "rows": 1600,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 227,
+        "adjacent_next_pool": 211
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1560,
+          "above_1e_9": 927,
+          "above_1e_4": 211,
+          "max_abs": 0.009000549092888832,
+          "mean_abs": 0.0011934818955466055,
+          "rmse": 0.0032413984550766534
+        },
+        "allocation_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1600,
+          "above_1e_9": 953,
+          "above_1e_4": 227,
+          "max_abs": 0.009000549092888832,
+          "mean_abs": 0.0012517881020897015,
+          "rmse": 0.0033197203018907975
+        },
+        "human_integer_grid": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1600,
+          "above_1e_9": 324,
+          "above_1e_4": 0,
+          "max_abs": 5.7220458984375e-06,
+          "mean_abs": 2.465397119522095e-07,
+          "rmse": 7.160066100498719e-07
+        },
+        "negative_contribution": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1560,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 6400,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Proportional Baseline Game 1 Exp 4": {
+      "origin": "human",
+      "rows": 1211,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 139,
+        "adjacent_next_pool": 130
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1171,
+          "above_1e_9": 506,
+          "above_1e_4": 130,
+          "max_abs": 0.008999999999995225,
+          "mean_abs": 0.0009800936806148585,
+          "rmse": 0.0029354451223149967
+        },
+        "allocation_excess": {
+          "count": 1211,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1211,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1211,
+          "above_1e_9": 521,
+          "above_1e_4": 139,
+          "max_abs": 0.008999999999995225,
+          "mean_abs": 0.0010134654830718265,
+          "rmse": 0.002985519429060305
+        },
+        "human_integer_grid": {
+          "count": 1211,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1211,
+          "above_1e_9": 707,
+          "above_1e_4": 0,
+          "max_abs": 1.100000000064938e-05,
+          "mean_abs": 1.7117919073038219e-06,
+          "rmse": 2.913765018053956e-06
+        },
+        "negative_contribution": {
+          "count": 1211,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1211,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1171,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 4844,
+          "above_1e_9": 1497,
+          "above_1e_4": 0,
+          "max_abs": 9.999999988963282e-06,
+          "mean_abs": 4.113329894054967e-07,
+          "rmse": 1.2168479870053417e-06
+        },
+        "pool_bound_violation": {
+          "count": 1211,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1211,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Proportional Baseline Game 2 Exp 4": {
+      "origin": "human",
+      "rows": 1091,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 51,
+        "adjacent_next_pool": 46
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1051,
+          "above_1e_9": 250,
+          "above_1e_4": 46,
+          "max_abs": 0.008999999999995225,
+          "mean_abs": 0.000387223977164982,
+          "rmse": 0.0018454249834788238
+        },
+        "allocation_excess": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1091,
+          "above_1e_9": 262,
+          "above_1e_4": 51,
+          "max_abs": 0.008999999999995225,
+          "mean_abs": 0.00041340091659061414,
+          "rmse": 0.0019067344362436354
+        },
+        "human_integer_grid": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1091,
+          "above_1e_9": 778,
+          "above_1e_4": 0,
+          "max_abs": 1.4000000007285962e-05,
+          "mean_abs": 2.041860678614801e-06,
+          "rmse": 2.9867041593898428e-06
+        },
+        "negative_contribution": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1051,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 4364,
+          "above_1e_9": 1982,
+          "above_1e_4": 0,
+          "max_abs": 1.0000000003174137e-05,
+          "mean_abs": 5.609431121314994e-07,
+          "rmse": 1.2448005373732564e-06
+        },
+        "pool_bound_violation": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "Proportional Baseline Game 3 Exp 4": {
+      "origin": "human",
+      "rows": 1130,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 59,
+        "adjacent_next_pool": 53
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1090,
+          "above_1e_9": 183,
+          "above_1e_4": 53,
+          "max_abs": 0.0090099999999984,
+          "mean_abs": 0.00042955403669762526,
+          "rmse": 0.0019446668204406473
+        },
+        "allocation_excess": {
+          "count": 1130,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "contribution_excess": {
+          "count": 1130,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1130,
+          "above_1e_9": 196,
+          "above_1e_4": 59,
+          "max_abs": 0.0090099999999984,
+          "mean_abs": 0.00046127778761090603,
+          "rmse": 0.002015489749734023
+        },
+        "human_integer_grid": {
+          "count": 1130,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1130,
+          "above_1e_9": 876,
+          "above_1e_4": 0,
+          "max_abs": 1.3999999993075107e-05,
+          "mean_abs": 2.386212389410084e-06,
+          "rmse": 3.4074618006867374e-06
+        },
+        "negative_contribution": {
+          "count": 1130,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1130,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1090,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 4520,
+          "above_1e_9": 2349,
+          "above_1e_4": 0,
+          "max_abs": 9.999999988963282e-06,
+          "mean_abs": 6.287807235924427e-07,
+          "rmse": 1.3100391332681608e-06
+        },
+        "pool_bound_violation": {
+          "count": 1130,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1130,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M1) BC 1": {
+      "origin": "recorded_behavioral_clone",
+      "rows": 20480,
+      "first_rounds": 512,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "adjacent_next_pool": 1493
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 19968,
+          "above_1e_9": 16691,
+          "above_1e_4": 1493,
+          "max_abs": 0.009535024925253311,
+          "mean_abs": 0.00028755097011943836,
+          "rmse": 0.0010593553691761552
+        },
+        "allocation_excess": {
+          "count": 20480,
+          "above_1e_9": 9226,
+          "above_1e_4": 0,
+          "max_abs": 3.1683349618560896e-05,
+          "mean_abs": 2.6294435701908993e-06,
+          "rmse": 5.303464384337276e-06
+        },
+        "contribution_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 512,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 20480,
+          "above_1e_9": 18726,
+          "above_1e_4": 0,
+          "max_abs": 1.8955249800001184e-05,
+          "mean_abs": 1.091788968613111e-06,
+          "rmse": 1.8273103539904393e-06
+        },
+        "negative_contribution": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 81920,
+          "above_1e_9": 56341,
+          "above_1e_4": 0,
+          "max_abs": 1.2244491585988726e-05,
+          "mean_abs": 1.5152960904126498e-07,
+          "rmse": 3.8061274200184056e-07
+        },
+        "pool_bound_violation": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M1) Exp 1": {
+      "origin": "human",
+      "rows": 1600,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 315,
+        "adjacent_next_pool": 301
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1560,
+          "above_1e_9": 1311,
+          "above_1e_4": 324,
+          "max_abs": 0.010002182330936193,
+          "mean_abs": 0.0020802874050736488,
+          "rmse": 0.004557135896390003
+        },
+        "allocation_excess": {
+          "count": 1600,
+          "above_1e_9": 626,
+          "above_1e_4": 0,
+          "max_abs": 2.288818359375e-05,
+          "mean_abs": 1.9545682060861936e-06,
+          "rmse": 4.086610810481764e-06
+        },
+        "contribution_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1600,
+          "above_1e_9": 1344,
+          "above_1e_4": 338,
+          "max_abs": 0.010002182330936193,
+          "mean_abs": 0.002115845622378456,
+          "rmse": 0.004596009234155675
+        },
+        "human_integer_grid": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1600,
+          "above_1e_9": 1029,
+          "above_1e_4": 0,
+          "max_abs": 1.1444091796875e-05,
+          "mean_abs": 8.714376257107359e-07,
+          "rmse": 1.522864825563009e-06
+        },
+        "negative_contribution": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1560,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 6400,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M1) Exp 2": {
+      "origin": "human",
+      "rows": 1600,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 237,
+        "adjacent_next_pool": 226
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1560,
+          "above_1e_9": 1358,
+          "above_1e_4": 226,
+          "max_abs": 0.010001972783356905,
+          "mean_abs": 0.0014522547994044207,
+          "rmse": 0.003806209421307328
+        },
+        "allocation_excess": {
+          "count": 1600,
+          "above_1e_9": 664,
+          "above_1e_4": 0,
+          "max_abs": 2.193450927734375e-05,
+          "mean_abs": 2.0270043099746004e-06,
+          "rmse": 4.188236737643815e-06
+        },
+        "contribution_excess": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1600,
+          "above_1e_9": 1391,
+          "above_1e_4": 237,
+          "max_abs": 0.010001972783356905,
+          "mean_abs": 0.0014847525252460992,
+          "rmse": 0.003848707542940751
+        },
+        "human_integer_grid": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1600,
+          "above_1e_9": 1133,
+          "above_1e_4": 0,
+          "max_abs": 1.1444091796875e-05,
+          "mean_abs": 9.119218683550922e-07,
+          "rmse": 1.6181635950371022e-06
+        },
+        "negative_contribution": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1560,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 6400,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1600,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M2) BC 2": {
+      "origin": "recorded_behavioral_clone",
+      "rows": 20480,
+      "first_rounds": 512,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "adjacent_next_pool": 927
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 19968,
+          "above_1e_9": 17110,
+          "above_1e_4": 927,
+          "max_abs": 0.009699064426861526,
+          "mean_abs": 0.0001869822875759129,
+          "rmse": 0.0008658221414002559
+        },
+        "allocation_excess": {
+          "count": 20480,
+          "above_1e_9": 806,
+          "above_1e_4": 0,
+          "max_abs": 3.0350341802432013e-05,
+          "mean_abs": 3.026467684542738e-07,
+          "rmse": 1.892203123240625e-06
+        },
+        "contribution_excess": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 512,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 20480,
+          "above_1e_9": 19136,
+          "above_1e_4": 0,
+          "max_abs": 1.763801574838908e-05,
+          "mean_abs": 1.2058074924671597e-06,
+          "rmse": 1.9605029938275566e-06
+        },
+        "negative_contribution": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 81920,
+          "above_1e_9": 54666,
+          "above_1e_4": 0,
+          "max_abs": 1.0933532706758342e-05,
+          "mean_abs": 1.6171564965020829e-07,
+          "rmse": 4.0102228630452196e-07
+        },
+        "pool_bound_violation": {
+          "count": 20480,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M2) Exp 3": {
+      "origin": "human",
+      "rows": 3200,
+      "first_rounds": 80,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 300,
+        "adjacent_next_pool": 286
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 3120,
+          "above_1e_9": 2574,
+          "above_1e_4": 286,
+          "max_abs": 0.010000001236448952,
+          "mean_abs": 0.0009132968118697396,
+          "rmse": 0.0030124367927352046
+        },
+        "allocation_excess": {
+          "count": 3200,
+          "above_1e_9": 99,
+          "above_1e_4": 0,
+          "max_abs": 2.193450927734375e-05,
+          "mean_abs": 2.354523754033444e-07,
+          "rmse": 1.6125893195231878e-06
+        },
+        "contribution_excess": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 3200,
+          "above_1e_9": 2649,
+          "above_1e_4": 300,
+          "max_abs": 0.010000001236448952,
+          "mean_abs": 0.0009343134789455179,
+          "rmse": 0.003047196327030663
+        },
+        "human_integer_grid": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 80,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 3200,
+          "above_1e_9": 2383,
+          "above_1e_4": 0,
+          "max_abs": 1.52587890625e-05,
+          "mean_abs": 8.34799919299921e-07,
+          "rmse": 1.4794661365941586e-06
+        },
+        "negative_contribution": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 3120,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 12800,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pool_bound_violation": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 3200,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M2) Game 1 Exp 4": {
+      "origin": "human",
+      "rows": 1124,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 104,
+        "adjacent_next_pool": 98
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1084,
+          "above_1e_9": 890,
+          "above_1e_4": 98,
+          "max_abs": 0.010000001069,
+          "mean_abs": 0.0008959988152492889,
+          "rmse": 0.00298111477284536
+        },
+        "allocation_excess": {
+          "count": 1124,
+          "above_1e_9": 41,
+          "above_1e_4": 0,
+          "max_abs": 1.7999999982976078e-05,
+          "mean_abs": 2.810591449187294e-07,
+          "rmse": 1.775052002806137e-06
+        },
+        "contribution_excess": {
+          "count": 1124,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1124,
+          "above_1e_9": 927,
+          "above_1e_4": 104,
+          "max_abs": 0.010000001069,
+          "mean_abs": 0.0009176530270164469,
+          "rmse": 0.0030173812646216228
+        },
+        "human_integer_grid": {
+          "count": 1124,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1124,
+          "above_1e_9": 942,
+          "above_1e_4": 0,
+          "max_abs": 2.3199999986900366e-05,
+          "mean_abs": 1.7024513102198093e-06,
+          "rmse": 2.7139999871137136e-06
+        },
+        "negative_contribution": {
+          "count": 1124,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1124,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1084,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 4496,
+          "above_1e_9": 1233,
+          "above_1e_4": 0,
+          "max_abs": 1.0000000003174137e-05,
+          "mean_abs": 3.7508856808619423e-07,
+          "rmse": 9.823950921905582e-07
+        },
+        "pool_bound_violation": {
+          "count": 1124,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1124,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M2) Game 2 Exp 4": {
+      "origin": "human",
+      "rows": 1135,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 51,
+        "adjacent_next_pool": 47
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1095,
+          "above_1e_9": 811,
+          "above_1e_4": 47,
+          "max_abs": 0.0100000008222,
+          "mean_abs": 0.00043352899218231187,
+          "rmse": 0.0020717394159054056
+        },
+        "allocation_excess": {
+          "count": 1135,
+          "above_1e_9": 45,
+          "above_1e_4": 0,
+          "max_abs": 2.0000000006348273e-05,
+          "mean_abs": 2.955986075704265e-07,
+          "rmse": 1.7743274468127297e-06
+        },
+        "contribution_excess": {
+          "count": 1135,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1135,
+          "above_1e_9": 845,
+          "above_1e_4": 51,
+          "max_abs": 0.0100000008222,
+          "mean_abs": 0.00045363349961326065,
+          "rmse": 0.002119732203814829
+        },
+        "human_integer_grid": {
+          "count": 1135,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1135,
+          "above_1e_9": 990,
+          "above_1e_4": 0,
+          "max_abs": 1.1599999993450183e-05,
+          "mean_abs": 1.871262454549898e-06,
+          "rmse": 2.6419440999758286e-06
+        },
+        "negative_contribution": {
+          "count": 1135,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1135,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1095,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 4540,
+          "above_1e_9": 1452,
+          "above_1e_4": 0,
+          "max_abs": 5.99999998840417e-06,
+          "mean_abs": 4.5383740157546364e-07,
+          "rmse": 1.0482094408185647e-06
+        },
+        "pool_bound_violation": {
+          "count": 1135,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1135,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    },
+    "RL Agent (M2) Game 3 Exp 4": {
+      "origin": "human",
+      "rows": 1131,
+      "first_rounds": 40,
+      "step_rejected_at_1e_4": 0,
+      "nonconsecutive_rows": 0,
+      "pool_floor_pattern_mismatches": {
+        "direct_next_pool": 7,
+        "adjacent_next_pool": 6
+      },
+      "checks": {
+        "adjacent_next_pool": {
+          "count": 1091,
+          "above_1e_9": 768,
+          "above_1e_4": 6,
+          "max_abs": 0.0099999994642,
+          "mean_abs": 5.952751950676732e-05,
+          "rmse": 0.0007396720248643379
+        },
+        "allocation_excess": {
+          "count": 1131,
+          "above_1e_9": 30,
+          "above_1e_4": 0,
+          "max_abs": 2.7999999986150215e-05,
+          "mean_abs": 1.8709124899630878e-07,
+          "rmse": 1.5222197477544778e-06
+        },
+        "contribution_excess": {
+          "count": 1131,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "direct_next_pool": {
+          "count": 1131,
+          "above_1e_9": 802,
+          "above_1e_4": 7,
+          "max_abs": 0.010000000202700001,
+          "mean_abs": 6.644461167345045e-05,
+          "rmse": 0.0007849740756445005
+        },
+        "human_integer_grid": {
+          "count": 1131,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "initial_pool": {
+          "count": 40,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "mechanism_surplus": {
+          "count": 1131,
+          "above_1e_9": 1014,
+          "above_1e_4": 0,
+          "max_abs": 1.100000000064938e-05,
+          "mean_abs": 2.0965156155044396e-06,
+          "rmse": 2.799284687526277e-06
+        },
+        "negative_contribution": {
+          "count": 1131,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "negative_offer": {
+          "count": 1131,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "next_field_to_adjacent_pool": {
+          "count": 1091,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "player_surplus": {
+          "count": 4524,
+          "above_1e_9": 1570,
+          "above_1e_4": 0,
+          "max_abs": 7.999999994012796e-06,
+          "mean_abs": 4.983351686933907e-07,
+          "rmse": 1.098129092695719e-06
+        },
+        "pool_bound_violation": {
+          "count": 1131,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        },
+        "pre_pool_field": {
+          "count": 1131,
+          "above_1e_9": 0,
+          "above_1e_4": 0,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "rmse": 0.0
+        }
+      }
+    }
+  }
+}
