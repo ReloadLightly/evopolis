@@ -1,72 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1080" viewBox="0 0 1200 1080" role="img" aria-labelledby="title desc">
 <title id="title">EvoPolis: two linked research loops</title>
-<desc id="desc">Proposed architecture. Human behavioral records are divided by participant and group into training, development and untouched test data. Evolution proposes memory and learning procedures; behavioral models are fitted on training data and judged on development prediction. Untouched test data are used only for final evaluation. In a separate loop, an ensemble of fitted behavioral models is frozen and combined with exact resource dynamics. Allocation policies are evolved against simulated welfare, inclusion and inequality. These are simulated hypotheses, not validated human outcomes. No experimental results are presented.</desc>
+<desc id="desc">Proposed architecture. Human behavioral records are divided by participant and group into training, development and untouched test data. Evolution proposes memory and learning procedures; behavioral models are fitted on training data and judged on development prediction. Untouched test data are used only for final evaluation. In a separate loop, an ensemble of fitted behavioral models is frozen and combined with exact resource dynamics. Allocation policies are evolved against simulated welfare, inclusion and inequality. These are simulated hypotheses, not validated human outcomes. This diagram shows planned learning and evolution loops; the empirical foundation has been implemented.</desc>
 <defs>
- <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#55dec7"/></marker>
- <marker id="amber-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffbf69"/></marker>
+ <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path shape-rendering="crispEdges" d="M 1 1 H 4 V 3 H 6 V 4 H 8 V 6 H 6 V 7 H 4 V 9 H 1 Z" fill="#73e0b3"/></marker>
+ <marker id="amber-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path shape-rendering="crispEdges" d="M 1 1 H 4 V 3 H 6 V 4 H 8 V 6 H 6 V 7 H 4 V 9 H 1 Z" fill="#ffcf6e"/></marker>
  <style>
- text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#f1f3ee} .muted{fill:#b0bdcb} .teal{fill:#55dec7} .amber{fill:#ffbf69} .eyebrow{font-size:15px;letter-spacing:2px;font-weight:700} .body{font-size:18px} .small{font-size:15px} .box-title{font-size:22px;font-weight:700} .connector{fill:none;stroke:#55dec7;stroke-width:2.3;marker-end:url(#arrow)} .policy-connector{fill:none;stroke:#ffbf69;stroke-width:2.3;marker-end:url(#amber-arrow)}
+ text{font-family:"DejaVu Sans Mono",Consolas,monospace;fill:#fff1d2} .muted{fill:#b6c6df} .teal{fill:#73e0b3} .amber{fill:#ffcf6e} .eyebrow{font-size:14px;letter-spacing:1px;font-weight:700} .body{font-size:15.5px} .small{font-size:15px} .box-title{font-size:19px;font-weight:700} .connector{fill:none;stroke:#73e0b3;stroke-width:3;marker-end:url(#arrow)} .policy-connector{fill:none;stroke:#ffcf6e;stroke-width:3;marker-end:url(#amber-arrow)}
  </style>
 </defs>
-<rect width="1200" height="1080" rx="24" fill="#091522"/>
-<text x="40" y="43" class="eyebrow teal">EVOPOLIS / RESEARCH DESIGN</text>
-<text x="40" y="89" font-size="34" font-weight="700">Learn how people behave. Then explore institutions.</text>
+<rect width="1200" height="1080" fill="#172038"/>
+<g fill="#ffcf6e" shape-rendering="crispEdges" aria-hidden="true"><rect x="40" y="25" width="3" height="3"/><rect x="43" y="25" width="3" height="3"/><rect x="46" y="25" width="3" height="3"/><rect x="49" y="25" width="3" height="3"/><rect x="52" y="25" width="3" height="3"/><rect x="40" y="28" width="3" height="3"/><rect x="40" y="31" width="3" height="3"/><rect x="40" y="34" width="3" height="3"/><rect x="43" y="34" width="3" height="3"/><rect x="46" y="34" width="3" height="3"/><rect x="49" y="34" width="3" height="3"/><rect x="40" y="37" width="3" height="3"/><rect x="40" y="40" width="3" height="3"/><rect x="40" y="43" width="3" height="3"/><rect x="43" y="43" width="3" height="3"/><rect x="46" y="43" width="3" height="3"/><rect x="49" y="43" width="3" height="3"/><rect x="52" y="43" width="3" height="3"/><rect x="58" y="25" width="3" height="3"/><rect x="70" y="25" width="3" height="3"/><rect x="58" y="28" width="3" height="3"/><rect x="70" y="28" width="3" height="3"/><rect x="58" y="31" width="3" height="3"/><rect x="70" y="31" width="3" height="3"/><rect x="58" y="34" width="3" height="3"/><rect x="70" y="34" width="3" height="3"/><rect x="58" y="37" width="3" height="3"/><rect x="70" y="37" width="3" height="3"/><rect x="61" y="40" width="3" height="3"/><rect x="67" y="40" width="3" height="3"/><rect x="64" y="43" width="3" height="3"/><rect x="79" y="25" width="3" height="3"/><rect x="82" y="25" width="3" height="3"/><rect x="85" y="25" width="3" height="3"/><rect x="76" y="28" width="3" height="3"/><rect x="88" y="28" width="3" height="3"/><rect x="76" y="31" width="3" height="3"/><rect x="88" y="31" width="3" height="3"/><rect x="76" y="34" width="3" height="3"/><rect x="88" y="34" width="3" height="3"/><rect x="76" y="37" width="3" height="3"/><rect x="88" y="37" width="3" height="3"/><rect x="76" y="40" width="3" height="3"/><rect x="88" y="40" width="3" height="3"/><rect x="79" y="43" width="3" height="3"/><rect x="82" y="43" width="3" height="3"/><rect x="85" y="43" width="3" height="3"/><rect x="94" y="25" width="3" height="3"/><rect x="97" y="25" width="3" height="3"/><rect x="100" y="25" width="3" height="3"/><rect x="103" y="25" width="3" height="3"/><rect x="94" y="28" width="3" height="3"/><rect x="106" y="28" width="3" height="3"/><rect x="94" y="31" width="3" height="3"/><rect x="106" y="31" width="3" height="3"/><rect x="94" y="34" width="3" height="3"/><rect x="97" y="34" width="3" height="3"/><rect x="100" y="34" width="3" height="3"/><rect x="103" y="34" width="3" height="3"/><rect x="94" y="37" width="3" height="3"/><rect x="94" y="40" width="3" height="3"/><rect x="94" y="43" width="3" height="3"/><rect x="115" y="25" width="3" height="3"/><rect x="118" y="25" width="3" height="3"/><rect x="121" y="25" width="3" height="3"/><rect x="112" y="28" width="3" height="3"/><rect x="124" y="28" width="3" height="3"/><rect x="112" y="31" width="3" height="3"/><rect x="124" y="31" width="3" height="3"/><rect x="112" y="34" width="3" height="3"/><rect x="124" y="34" width="3" height="3"/><rect x="112" y="37" width="3" height="3"/><rect x="124" y="37" width="3" height="3"/><rect x="112" y="40" width="3" height="3"/><rect x="124" y="40" width="3" height="3"/><rect x="115" y="43" width="3" height="3"/><rect x="118" y="43" width="3" height="3"/><rect x="121" y="43" width="3" height="3"/><rect x="130" y="25" width="3" height="3"/><rect x="130" y="28" width="3" height="3"/><rect x="130" y="31" width="3" height="3"/><rect x="130" y="34" width="3" height="3"/><rect x="130" y="37" width="3" height="3"/><rect x="130" y="40" width="3" height="3"/><rect x="130" y="43" width="3" height="3"/><rect x="133" y="43" width="3" height="3"/><rect x="136" y="43" width="3" height="3"/><rect x="139" y="43" width="3" height="3"/><rect x="142" y="43" width="3" height="3"/><rect x="148" y="25" width="3" height="3"/><rect x="151" y="25" width="3" height="3"/><rect x="154" y="25" width="3" height="3"/><rect x="157" y="25" width="3" height="3"/><rect x="160" y="25" width="3" height="3"/><rect x="154" y="28" width="3" height="3"/><rect x="154" y="31" width="3" height="3"/><rect x="154" y="34" width="3" height="3"/><rect x="154" y="37" width="3" height="3"/><rect x="154" y="40" width="3" height="3"/><rect x="148" y="43" width="3" height="3"/><rect x="151" y="43" width="3" height="3"/><rect x="154" y="43" width="3" height="3"/><rect x="157" y="43" width="3" height="3"/><rect x="160" y="43" width="3" height="3"/><rect x="169" y="25" width="3" height="3"/><rect x="172" y="25" width="3" height="3"/><rect x="175" y="25" width="3" height="3"/><rect x="178" y="25" width="3" height="3"/><rect x="166" y="28" width="3" height="3"/><rect x="166" y="31" width="3" height="3"/><rect x="169" y="34" width="3" height="3"/><rect x="172" y="34" width="3" height="3"/><rect x="175" y="34" width="3" height="3"/><rect x="178" y="37" width="3" height="3"/><rect x="178" y="40" width="3" height="3"/><rect x="166" y="43" width="3" height="3"/><rect x="169" y="43" width="3" height="3"/><rect x="172" y="43" width="3" height="3"/><rect x="175" y="43" width="3" height="3"/></g><text x="215" y="43" class="eyebrow teal">/ RESEARCH MAP</text>
+<text x="40" y="89" font-size="28" font-weight="700">Learn how people behave. Then explore institutions.</text>
 <!-- Predictive-fidelity loop -->
-<rect x="32" y="126" width="1136" height="480" rx="18" fill="#102031" stroke="#284052"/>
+<path d="M40 126 H1160 V134 H1168 V598 H1160 V606 H40 V598 H32 V134 H40 Z" fill="#253a5e" stroke="#6dcff6" stroke-width="3" shape-rendering="crispEdges"/><path d="M42 131 H1158 M37 136 V596" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
 <text x="60" y="164" class="eyebrow teal">01 / BEHAVIORAL MODEL EVOLUTION</text>
-<text x="60" y="191" class="small muted">Selection asks: does the model better predict unseen human decisions?</text>
-<rect x="60" y="215" width="290" height="130" rx="12" fill="#162a3b" stroke="#3c6970"/>
-<text x="82" y="250" class="box-title">Human decision records</text>
-<text x="82" y="282" class="body muted">Split by participant / group</text>
-<text x="82" y="312" class="small teal">TRAIN / DEVELOPMENT / TEST</text>
-<rect x="440" y="215" width="290" height="130" rx="12" fill="#162a3b" stroke="#3c6970"/>
-<text x="462" y="250" class="box-title">Fit behavioral models</text>
-<text x="462" y="282" class="body muted">Learn from training records</text>
-<text x="462" y="312" class="small teal">WEIGHTS + TEMPORAL MEMORY</text>
-<rect x="850" y="215" width="290" height="130" rx="12" fill="#162a3b" stroke="#3c6970"/>
+<text x="60" y="191" class="small muted">OBJECTIVE: predict unseen human decisions.</text>
+<path d="M68 215 H342 V223 H350 V337 H342 V345 H68 V337 H60 V223 H68 Z" fill="#3b5278" stroke="#b6c6df" stroke-width="3" shape-rendering="crispEdges"/><path d="M70 220 H340 M65 225 V335" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
+<text x="82" y="250" class="box-title">Human records</text>
+<text x="82" y="282" class="body muted">Participant / group split</text>
+<text x="82" y="312" class="small teal">TRAIN / DEV / TEST</text>
+<path d="M448 215 H722 V223 H730 V337 H722 V345 H448 V337 H440 V223 H448 Z" fill="#3b5278" stroke="#b6c6df" stroke-width="3" shape-rendering="crispEdges"/><path d="M450 220 H720 M445 225 V335" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
+<text x="462" y="250" class="box-title">Fit behavior models</text>
+<text x="462" y="282" class="body muted">Fit on training records</text>
+<text x="462" y="312" class="small teal">WEIGHTS + MEMORY</text>
+<path d="M858 215 H1132 V223 H1140 V337 H1132 V345 H858 V337 H850 V223 H858 Z" fill="#3b5278" stroke="#b6c6df" stroke-width="3" shape-rendering="crispEdges"/><path d="M860 220 H1130 M855 225 V335" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
 <text x="872" y="250" class="box-title">Evolve procedures</text>
-<text x="872" y="282" class="body muted">Memory and learning rules</text>
-<text x="872" y="312" class="small teal">MUTATE / RETRAIN / COMPARE</text>
+<text x="872" y="282" class="body muted">Memory + learning rules</text>
+<text x="872" y="312" class="small teal">MUTATE / FIT / COMPARE</text>
 <path d="M 350 280 H 432" class="connector"/>
 <text x="367" y="266" class="small muted">train</text>
 <path d="M 850 280 H 738" class="connector"/>
 <text x="754" y="266" class="small muted">candidate</text>
-<rect x="60" y="430" width="290" height="100" rx="12" fill="#0e1c2b" stroke="#738394" stroke-dasharray="5 5"/>
-<text x="82" y="467" class="box-title">Untouched test groups</text>
+<rect x="60" y="430" width="290" height="100" fill="#172038" stroke="#b6c6df" stroke-dasharray="5 5"/>
+<text x="82" y="467" class="box-title">Reserved test groups</text>
 <text x="82" y="499" class="body muted">Final evaluation only</text>
-<path d="M 205 345 V 422" fill="none" stroke="#738394" stroke-width="2" stroke-dasharray="5 5"/>
+<path d="M 205 345 V 422" fill="none" stroke="#b6c6df" stroke-width="2" stroke-dasharray="5 5"/>
 <text x="222" y="391" class="small muted">reserve</text>
-<rect x="440" y="430" width="290" height="100" rx="12" fill="#162a3b" stroke="#55dec7"/>
+<path d="M448 430 H722 V438 H730 V522 H722 V530 H448 V522 H440 V438 H448 Z" fill="#3b5278" stroke="#73e0b3" stroke-width="3" shape-rendering="crispEdges"/><path d="M450 435 H720 M445 440 V520" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
 <text x="462" y="467" class="box-title">Predictive fidelity</text>
-<text x="462" y="499" class="body muted">Score on development groups</text>
+<text x="462" y="499" class="body muted">Score development groups</text>
 <path d="M 585 345 V 422" class="connector"/>
 <text x="602" y="391" class="small muted">predict</text>
 <path d="M 730 480 H 995 V 353" class="connector"/>
 <text x="790" y="462" class="small teal">selection feedback</text>
-<text x="60" y="575" class="small muted">A better model must earn its improvement against human evidence.</text>
+<text x="60" y="575" class="small muted">HUMAN EVIDENCE determines whether a behavioral model improves.</text>
 <!-- Institution-design loop -->
-<rect x="32" y="638" width="1136" height="355" rx="18" fill="#102031" stroke="#284052"/>
+<path d="M40 638 H1160 V646 H1168 V985 H1160 V993 H40 V985 H32 V646 H40 Z" fill="#253a5e" stroke="#6dcff6" stroke-width="3" shape-rendering="crispEdges"/><path d="M42 643 H1158 M37 648 V983" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
 <text x="60" y="676" class="eyebrow amber">02 / ALLOCATION POLICY EVOLUTION</text>
-<text x="60" y="703" class="small muted">Selection asks: which rules produce desirable outcomes across plausible social worlds?</text>
-<rect x="60" y="748" width="290" height="158" rx="12" fill="#162a3b" stroke="#3c6970"/>
+<text x="60" y="703" class="small muted">OBJECTIVE: compare institutions across plausible social worlds.</text>
+<path d="M68 748 H342 V756 H350 V898 H342 V906 H68 V898 H60 V756 H68 Z" fill="#3b5278" stroke="#b6c6df" stroke-width="3" shape-rendering="crispEdges"/><path d="M70 753 H340 M65 758 V896" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
 <text x="82" y="784" class="box-title">Frozen model ensemble</text>
-<text x="82" y="817" class="body muted">Fitted models from loop 01</text>
+<text x="82" y="817" class="body muted">Fitted models: loop 01</text>
 <text x="82" y="847" class="body muted">Fixed during policy search</text>
-<text x="82" y="877" class="small teal">PRESERVE MODEL UNCERTAINTY</text>
-<rect x="440" y="748" width="290" height="158" rx="12" fill="#162a3b" stroke="#926c3e"/>
-<text x="462" y="784" class="box-title">Simulated social worlds</text>
+<text x="82" y="877" class="small teal">MODEL UNCERTAINTY</text>
+<path d="M448 748 H722 V756 H730 V898 H722 V906 H448 V898 H440 V756 H448 Z" fill="#3b5278" stroke="#ffcf6e" stroke-width="3" shape-rendering="crispEdges"/><path d="M450 753 H720 M445 758 V896" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
+<text x="462" y="784" class="box-title">Simulated worlds</text>
 <text x="462" y="817" class="body muted">Exact resource dynamics</text>
-<text x="462" y="847" class="body muted">Learned behavioral responses</text>
-<text x="462" y="877" class="small amber">REPEATED STOCHASTIC FUTURES</text>
-<rect x="850" y="748" width="290" height="158" rx="12" fill="#162a3b" stroke="#ffbf69"/>
-<text x="872" y="784" class="box-title">Evolve allocation rules</text>
-<text x="872" y="817" class="body muted">Welfare / inclusion / inequality</text>
-<text x="872" y="847" class="body muted">Compare institutional trade-offs</text>
+<text x="462" y="847" class="body muted">Learned human responses</text>
+<text x="462" y="877" class="small amber">STOCHASTIC FUTURES</text>
+<path d="M858 748 H1132 V756 H1140 V898 H1132 V906 H858 V898 H850 V756 H858 Z" fill="#3b5278" stroke="#ffcf6e" stroke-width="3" shape-rendering="crispEdges"/><path d="M860 753 H1130 M855 758 V896" fill="none" stroke="#fff1d2" stroke-opacity=".25" stroke-width="2" shape-rendering="crispEdges"/>
+<text x="872" y="784" class="box-title">Evolve allocations</text>
+<text x="872" y="817" class="body muted">Welfare / inclusion</text>
+<text x="872" y="847" class="body muted">Inequality / trade-offs</text>
 <text x="872" y="877" class="small amber">SIMULATION HYPOTHESES</text>
 <path d="M 350 805 H 432" class="connector"/>
 <path d="M 730 805 H 842" class="policy-connector"/>
 <text x="751" y="790" class="small muted">evaluate</text>
 <path d="M 995 906 V 947 H 585 V 914" class="policy-connector"/>
 <text x="719" y="976" class="small amber">candidate allocations</text>
-<text x="40" y="1040" class="eyebrow muted">PROPOSED ARCHITECTURE · NO EXPERIMENTAL RESULTS YET</text>
+<text x="40" y="1040" class="eyebrow muted">PLANNED LEARNING + EVOLUTION LOOPS / EMPIRICAL FOUNDATION IMPLEMENTED</text>
 </svg>

@@ -1,0 +1,75 @@
+/* EvoPolis: reusable 16-bit interface theme. Scope application markup to .ep-root. */
+.ep-root {
+  --ep-midnight: #172038;
+  --ep-indigo: #253a5e;
+  --ep-slate: #3b5278;
+  --ep-parchment: #fff1d2;
+  --ep-muted: #b6c6df;
+  --ep-mint: #73e0b3;
+  --ep-cyan: #6dcff6;
+  --ep-amber: #ffcf6e;
+  --ep-coral: #ff8b8b;
+  --ep-equal: var(--ep-coral);
+  --ep-mixed: var(--ep-amber);
+  --ep-proportional: var(--ep-cyan);
+  --ep-recorded-rl: var(--ep-mint);
+  --ep-font-text: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ep-font-display: ui-monospace, "DejaVu Sans Mono", Consolas, "Liberation Mono", monospace;
+  color-scheme: dark;
+  background: var(--ep-midnight);
+  color: var(--ep-parchment);
+  font-family: var(--ep-font-text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ep-root, .ep-root *, .ep-root *::before, .ep-root *::after { box-sizing: border-box; }
+.ep-root .ep-panel {
+  background: var(--ep-indigo);
+  border: 2px solid var(--ep-parchment);
+  border-radius: 0;
+  box-shadow: inset 0 0 0 3px var(--ep-slate), 4px 4px 0 var(--ep-midnight);
+  padding: 20px;
+}
+.ep-root .ep-title {
+  font-family: var(--ep-font-display);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ep-root .ep-value {
+  font-family: var(--ep-font-display);
+  font-variant-numeric: tabular-nums;
+  color: var(--ep-parchment);
+}
+.ep-root .ep-muted { color: var(--ep-muted); }
+.ep-root .ep-pixel-art { image-rendering: pixelated; }
+.ep-root .ep-chart { image-rendering: auto; max-width: 100%; height: auto; }
+.ep-root a { color: var(--ep-cyan); text-underline-offset: 3px; }
+.ep-root .ep-button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 2px solid var(--ep-parchment);
+  border-radius: 0;
+  background: var(--ep-indigo);
+  color: var(--ep-parchment);
+  box-shadow: 3px 3px 0 var(--ep-slate);
+  font: 700 14px/1.4 var(--ep-font-display);
+  cursor: pointer;
+}
+.ep-root .ep-button:hover { background: var(--ep-slate); }
+.ep-root .ep-button:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ep-slate); }
+.ep-root .ep-button:disabled { color: var(--ep-muted); cursor: default; }
+.ep-root :focus-visible { outline: 3px solid var(--ep-amber); outline-offset: 4px; }
+.ep-root .ep-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border: 1px solid var(--ep-muted);
+  color: var(--ep-parchment);
+  font: 700 12px/1.5 var(--ep-font-display);
+}
+.ep-root table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.ep-root th, .ep-root td { padding: 10px 12px; border-bottom: 1px solid var(--ep-slate); text-align: left; }
+.ep-root th { color: var(--ep-parchment); font-family: var(--ep-font-display); }
+.ep-root .ep-table-scroll { overflow-x: auto; }

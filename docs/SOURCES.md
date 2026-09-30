@@ -25,8 +25,10 @@ Raphael Koster, Miruna Pîslar, Andrea Tacchetti, Jan Balaguer, Leqi Liu, Romual
 
 ## Original repository graphics
 
-`assets/evopolis-cover.png` is AI-generated conceptual artwork created with the built-in image-generation tool. The exact generation prompt is preserved in `assets/cover-prompt.txt`. It is not a screenshot of working software, a representation of actual participants, or an empirical result.
+`assets/evopolis-cover.png` is AI-generated conceptual artwork created with the built-in image-generation tool and restyled as an original 16-bit pixel-art town at the user's request. The exact generation/edit prompt is preserved in `assets/cover-prompt.txt`. It is not a screenshot of working software, a representation of actual participants, or an empirical result.
 
 `assets/research-loop.svg` and `assets/commons-cycle.svg` are editable vector diagrams of the proposed research architecture and resource mechanism. Their arrows represent dependencies and resource flows, not measured effects.
+
+All current graphics follow the NES/SNES-inspired direction in [VISUAL_STYLE.md](VISUAL_STYLE.md). The matching CSS in `assets/evopolis-theme.css` is a reusable starting point for the future local interface. The empirical figure's retro styling preserves its recorded points, aggregation, and uncertainty intervals.
 
 Source links and upstream licenses do not imply affiliation with or endorsement by the referenced institutions.

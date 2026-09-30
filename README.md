@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/assets/evopolis-cover.png" alt="EvoPolis — Evolving social worlds. Concept illustration of a small community surrounding a shared commons, connected by luminous social relationships." width="100%">
+  <img src="docs/assets/evopolis-cover.png" alt="EvoPolis — Evolving social worlds. Original 16-bit pixel-art town with residents, tile paths, and a shared commons, inspired by NES and SNES-era games." width="100%">
 </p>
 
-<p align="center"><strong>Human behavior · Learned world models · Evolutionary computation</strong></p>
+<p align="center"><strong>Human behavior · Learned world models · Evolutionary computation</strong><br><sub>A living social laboratory with a 16-bit soul.</sub></p>
 <p align="center"><a href="#the-research-question">Research question</a> · <a href="#the-first-world">The first world</a> · <a href="#research-program">Experiments</a> · <a href="#start-in-vs-code--wsl">Start in WSL</a> · <a href="#research-foundations">Foundations</a></p>
 
 # EvoPolis
@@ -51,7 +51,21 @@ $$
 
 The initial protocol uses four inhabitants, a pool capacity and initial stock of 200, and a contribution multiplier of 1.4. Experiments 1–3 run for 40 rounds, with the horizon undisclosed to participants. Human contributions advance in integer units, while allocations can be fractional. The [implemented protocol](docs/protocol.md) records timing, observable information, termination, and unresolved numerical conventions. Experiment 4 instead repeats three games within each group with a different continuation rule.
 
-The planned interface will make this mechanism visible: inhabitants around a shared commons, resource flows, individual histories, and synchronized comparisons between institutions. Replaying observed human decisions and running generated futures will be distinct display modes. Several independent communities can be compared without changing the original group size.
+The planned interface will make this mechanism visible as an original **16-bit pixel-art town**: four resident sprites around a shared commons, discrete resource transfers, dialogue-style history panels, and synchronized comparisons between institutions. Replaying observed human decisions and running generated futures will be distinct display modes. Several independent communities can be compared without changing the original group size.
+
+### A 16-bit social laboratory
+
+EvoPolis takes its visual direction from NES and SNES games of the late 1980s and early 1990s: expressive pixel inhabitants, tile-based scenery, square-framed menus, and a restrained palette of midnight blue, mint, cyan, amber, coral, and parchment. The cover, research diagrams, and empirical figure share this theme. The future replay interface will extend it to the community itself.
+
+| Surface | Visual direction |
+| :--- | :--- |
+| Community | Original 2D town tiles, four distinct resident sprites, and a visible shared resource. |
+| Decisions and histories | Dialogue-style panels showing allocations, contributions, private surplus, and past rounds. |
+| Playback | Clear round counter and pause, step, and play controls; resource animations tied to actual actions. |
+| Research diagrams | Crisp square borders, pixel symbols, and labeled directional flows. |
+| Empirical figures | Matching colors and monospaced labels, with accurate positions, scales, and uncertainty intervals. |
+
+The [visual style guide](docs/VISUAL_STYLE.md) and [reusable interface theme](docs/assets/evopolis-theme.css) keep future work consistent. Pixel art supplies the world and interface identity; empirical numbers, readable tables, and statistical meaning remain explicit.
 
 ## First empirical result: surplus and inequality
 
