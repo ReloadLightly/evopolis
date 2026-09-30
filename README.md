@@ -123,7 +123,7 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | Stage | Experiment | Main artifact | Status |
 | :--- | :--- | :--- | :--- |
 | **01 · Ground** | Reconstruct the published task and reproduce a substantive result from the released human data. | Empirical figure, numerical comparison, and executable resource dynamics, with numerical ambiguities documented. | **Complete** |
-| **02 · Observe** | Visualize recorded communities and baseline simulations. | Local browser replay with resource flows and individual histories. | **Next** |
+| **02 · Observe** | Visualize recorded communities and baseline simulations. | Local browser replay with resource flows and individual histories. | **[Next: implementation task](docs/tasks/02-pixel-community-replay.md)** |
 | **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Model checkpoints, learning curves, and predictions for held-out groups. | Planned |
 | **04 · Imagine** | Generate multi-round social trajectories under recorded institutions. | Calibration, trajectory comparisons, and uncertainty estimates. | Planned |
 | **05 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
@@ -165,7 +165,7 @@ bash scripts/reproduce.sh
 
 The command installs the locked Python environment and streams the public 204 MiB CSV into ignored `data/raw/` on first use. It verifies the pinned data and notebook checksums, then writes `results/task01/` and PNG/SVG figures in `docs/assets/`. Subsequent runs use cached sources. The [task notes](docs/tasks/01-empirical-foundation.md#completion-record) record measured runtime, memory, verification, and dependencies; the [data inventory](docs/data-inventory.md) describes schema, missing values, and group identity limits. No training or dashboard command exists yet.
 
-The next concrete task is a local replay of observed communities, showing how contributions, exclusions and pool changes produce these outcomes. Recorded trajectories and baseline simulations must remain visibly distinct. Later compact CPU models will be fitted to human decisions with declared group splits and separate institutional evaluation. Large language models remain optional for later communication or program proposals.
+The next concrete task is **[Task 02: make the commons observable](docs/tasks/02-pixel-community-replay.md)**: a local 16-bit community viewer with recorded human/model episodes, resident inspection, synchronized comparisons, and a clearly labeled scripted sandbox using the implemented allocation rules. Its brief is ready for Codex in the WSL checkout; the viewer itself has not been implemented yet. Later compact CPU models will be fitted to human decisions with declared group splits and separate institutional evaluation. Large language models remain optional for later communication or program proposals.
 
 ## Research foundations
 
