@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">EvoPolis: the commons mechanism</title>
+<desc id="desc">Conceptual resource flow. An allocation rule distributes resources from a common pool to four inhabitants. Each inhabitant splits an allocation e_i into a retained amount s_i and a contribution c_i, so e_i equals s_i plus c_i. Retained resources provide individual benefit; contributions are multiplied by m and replenish the common pool. Total allocation cannot exceed available resources. Exact numerical dynamics will follow the published experimental protocol.</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#55dec7"/></marker>
+ <marker id="amber-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffbf69"/></marker>
+ <style>text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#f1f3ee}.muted{fill:#b0bdcb}.teal{fill:#55dec7}.amber{fill:#ffbf69}.eyebrow{font-size:15px;letter-spacing:2px;font-weight:700}.body{font-size:19px}.small{font-size:17px}.title{font-size:25px;font-weight:700}.connector{fill:none;stroke:#55dec7;stroke-width:2.5;marker-end:url(#arrow)}.retained{fill:none;stroke:#ffbf69;stroke-width:2.5;marker-end:url(#amber-arrow)}</style>
+</defs>
+<rect width="1200" height="640" rx="24" fill="#091522"/>
+<text x="40" y="43" class="eyebrow teal">EVOPOLIS / THE SOCIAL DILEMMA</text>
+<text x="40" y="89" font-size="34" font-weight="700">A shared future, shaped by individual decisions.</text>
+<rect x="32" y="126" width="1136" height="462" rx="18" fill="#102031" stroke="#284052"/>
+<rect x="60" y="210" width="260" height="198" rx="14" fill="#162a3b" stroke="#55dec7"/>
+<text x="84" y="250" class="title">Common pool</text>
+<text x="84" y="285" class="body muted">An institution decides</text>
+<text x="84" y="313" class="body muted">who receives how much.</text>
+<line x1="84" y1="337" x2="296" y2="337" stroke="#3c6970"/>
+<text x="84" y="367" class="small teal">ALLOCATION RULE</text>
+<text x="84" y="391" class="small muted">Equal, adaptive, or evolved</text>
+<rect x="420" y="210" width="380" height="198" rx="14" fill="#162a3b" stroke="#3c6970"/>
+<text x="443" y="248" class="title">Four inhabitants</text>
+<g fill="#55dec7">
+ <circle cx="468" cy="286" r="11"/><path d="M448 320 Q448 300 468 300 Q488 300 488 320 Z"/>
+ <circle cx="562" cy="286" r="11"/><path d="M542 320 Q542 300 562 300 Q582 300 582 320 Z"/>
+ <circle cx="656" cy="286" r="11"/><path d="M636 320 Q636 300 656 300 Q676 300 676 320 Z"/>
+ <circle cx="750" cy="286" r="11"/><path d="M730 320 Q730 300 750 300 Q770 300 770 320 Z"/>
+</g>
+<text x="443" y="352" class="body muted">Each allocation is split:</text>
+<text x="443" y="389" font-size="29">eᵢ = sᵢ + cᵢ</text>
+<rect x="910" y="180" width="230" height="130" rx="14" fill="#162a3b" stroke="#ffbf69"/>
+<text x="934" y="220" class="title">Keep s<tspan baseline-shift="sub" font-size="16">i</tspan></text>
+<text x="934" y="254" class="body muted">Retained resources</text>
+<text x="934" y="283" class="small amber">INDIVIDUAL BENEFIT</text>
+<rect x="910" y="390" width="230" height="130" rx="14" fill="#162a3b" stroke="#55dec7"/>
+<text x="934" y="430" class="title">Return c<tspan baseline-shift="sub" font-size="16">i</tspan></text>
+<text x="934" y="464" class="body muted">Contributions grow</text>
+<text x="934" y="493" class="small teal">MULTIPLIER g</text>
+<path d="M320 302 H412" class="connector"/>
+<text x="339" y="284" class="small teal">allocate</text>
+<path d="M800 268 H852 V245 H902" class="retained"/>
+<path d="M800 354 H852 V453 H902" class="connector"/>
+<path d="M1025 520 V553 H190 V416" class="connector"/>
+<text x="355" y="534" class="body teal">Multiplied returns replenish the pool: g Σ cᵢ</text>
+<text x="60" y="166" class="small muted">Resource constraint: Σ eᵢ ≤ available pool</text>
+<text x="40" y="622" class="eyebrow muted">CONCEPTUAL FLOW · NUMERICAL DYNAMICS FOLLOW THE PUBLISHED PROTOCOL</text>
+</svg>

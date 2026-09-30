@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1080" viewBox="0 0 1200 1080" role="img" aria-labelledby="title desc">
+<title id="title">EvoPolis: two linked research loops</title>
+<desc id="desc">Proposed architecture. Human behavioral records are divided by participant and group into training, development and untouched test data. Evolution proposes memory and learning procedures; behavioral models are fitted on training data and judged on development prediction. Untouched test data are used only for final evaluation. In a separate loop, an ensemble of fitted behavioral models is frozen and combined with exact resource dynamics. Allocation policies are evolved against simulated welfare, inclusion and inequality. These are simulated hypotheses, not validated human outcomes. No experimental results are presented.</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#55dec7"/></marker>
+ <marker id="amber-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffbf69"/></marker>
+ <style>
+ text{font-family:Inter,Arial,Helvetica,sans-serif;fill:#f1f3ee} .muted{fill:#b0bdcb} .teal{fill:#55dec7} .amber{fill:#ffbf69} .eyebrow{font-size:15px;letter-spacing:2px;font-weight:700} .body{font-size:18px} .small{font-size:15px} .box-title{font-size:22px;font-weight:700} .connector{fill:none;stroke:#55dec7;stroke-width:2.3;marker-end:url(#arrow)} .policy-connector{fill:none;stroke:#ffbf69;stroke-width:2.3;marker-end:url(#amber-arrow)}
+ </style>
+</defs>
+<rect width="1200" height="1080" rx="24" fill="#091522"/>
+<text x="40" y="43" class="eyebrow teal">EVOPOLIS / RESEARCH DESIGN</text>
+<text x="40" y="89" font-size="34" font-weight="700">Learn how people behave. Then explore institutions.</text>
+<!-- Predictive-fidelity loop -->
+<rect x="32" y="126" width="1136" height="480" rx="18" fill="#102031" stroke="#284052"/>
+<text x="60" y="164" class="eyebrow teal">01 / BEHAVIORAL MODEL EVOLUTION</text>
+<text x="60" y="191" class="small muted">Selection asks: does the model better predict unseen human decisions?</text>
+<rect x="60" y="215" width="290" height="130" rx="12" fill="#162a3b" stroke="#3c6970"/>
+<text x="82" y="250" class="box-title">Human decision records</text>
+<text x="82" y="282" class="body muted">Split by participant / group</text>
+<text x="82" y="312" class="small teal">TRAIN / DEVELOPMENT / TEST</text>
+<rect x="440" y="215" width="290" height="130" rx="12" fill="#162a3b" stroke="#3c6970"/>
+<text x="462" y="250" class="box-title">Fit behavioral models</text>
+<text x="462" y="282" class="body muted">Learn from training records</text>
+<text x="462" y="312" class="small teal">WEIGHTS + TEMPORAL MEMORY</text>
+<rect x="850" y="215" width="290" height="130" rx="12" fill="#162a3b" stroke="#3c6970"/>
+<text x="872" y="250" class="box-title">Evolve procedures</text>
+<text x="872" y="282" class="body muted">Memory and learning rules</text>
+<text x="872" y="312" class="small teal">MUTATE / RETRAIN / COMPARE</text>
+<path d="M 350 280 H 432" class="connector"/>
+<text x="367" y="266" class="small muted">train</text>
+<path d="M 850 280 H 738" class="connector"/>
+<text x="754" y="266" class="small muted">candidate</text>
+<rect x="60" y="430" width="290" height="100" rx="12" fill="#0e1c2b" stroke="#738394" stroke-dasharray="5 5"/>
+<text x="82" y="467" class="box-title">Untouched test groups</text>
+<text x="82" y="499" class="body muted">Final evaluation only</text>
+<path d="M 205 345 V 422" fill="none" stroke="#738394" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="222" y="391" class="small muted">reserve</text>
+<rect x="440" y="430" width="290" height="100" rx="12" fill="#162a3b" stroke="#55dec7"/>
+<text x="462" y="467" class="box-title">Predictive fidelity</text>
+<text x="462" y="499" class="body muted">Score on development groups</text>
+<path d="M 585 345 V 422" class="connector"/>
+<text x="602" y="391" class="small muted">predict</text>
+<path d="M 730 480 H 995 V 353" class="connector"/>
+<text x="790" y="462" class="small teal">selection feedback</text>
+<text x="60" y="575" class="small muted">A better model must earn its improvement against human evidence.</text>
+<!-- Institution-design loop -->
+<rect x="32" y="638" width="1136" height="355" rx="18" fill="#102031" stroke="#284052"/>
+<text x="60" y="676" class="eyebrow amber">02 / ALLOCATION POLICY EVOLUTION</text>
+<text x="60" y="703" class="small muted">Selection asks: which rules produce desirable outcomes across plausible social worlds?</text>
+<rect x="60" y="748" width="290" height="158" rx="12" fill="#162a3b" stroke="#3c6970"/>
+<text x="82" y="784" class="box-title">Frozen model ensemble</text>
+<text x="82" y="817" class="body muted">Fitted models from loop 01</text>
+<text x="82" y="847" class="body muted">Fixed during policy search</text>
+<text x="82" y="877" class="small teal">PRESERVE MODEL UNCERTAINTY</text>
+<rect x="440" y="748" width="290" height="158" rx="12" fill="#162a3b" stroke="#926c3e"/>
+<text x="462" y="784" class="box-title">Simulated social worlds</text>
+<text x="462" y="817" class="body muted">Exact resource dynamics</text>
+<text x="462" y="847" class="body muted">Learned behavioral responses</text>
+<text x="462" y="877" class="small amber">REPEATED STOCHASTIC FUTURES</text>
+<rect x="850" y="748" width="290" height="158" rx="12" fill="#162a3b" stroke="#ffbf69"/>
+<text x="872" y="784" class="box-title">Evolve allocation rules</text>
+<text x="872" y="817" class="body muted">Welfare / inclusion / inequality</text>
+<text x="872" y="847" class="body muted">Compare institutional trade-offs</text>
+<text x="872" y="877" class="small amber">SIMULATION HYPOTHESES</text>
+<path d="M 350 805 H 432" class="connector"/>
+<path d="M 730 805 H 842" class="policy-connector"/>
+<text x="751" y="790" class="small muted">evaluate</text>
+<path d="M 995 906 V 947 H 585 V 914" class="policy-connector"/>
+<text x="719" y="976" class="small amber">candidate allocations</text>
+<text x="40" y="1040" class="eyebrow muted">PROPOSED ARCHITECTURE · NO EXPERIMENTAL RESULTS YET</text>
+</svg>
