@@ -1,0 +1,56 @@
+{
+  "review_date_utc": "2026-10-01",
+  "reviewed_commit": "92ce916d0b1a44c50bdb0d6f8f30ac44ad7c9c21",
+  "conclusion": "No scientific blocker found to proceeding with Task 03 behavioral training.",
+  "independently_repeated": {
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "fresh_cache_episode_count": 2208,
+    "fresh_cache_round_count": 88320,
+    "all_episode_summaries_match_task01_within": 1e-9,
+    "python_tests_passed": 21,
+    "python_tests_skipped": 0,
+    "http_checks": [
+      "Application root returns HTML successfully",
+      "Catalog exposes all 2208 recorded episodes",
+      "Selected default human episode returns all 40 rounds",
+      "Equal zero-return scripted sandbox ends after one round",
+      "Raw data, unlisted files and unknown episode routes return 404"
+    ],
+    "screenshot": "Inspected the existing real application screenshot; did not capture a new one."
+  },
+  "browser_interaction_rerun": {
+    "status": "not_completed",
+    "reason": "The agent-browser daemon failed to start; its Chrome installer failed certificate validation. The alternative Playwright installer received invalid archives. No certificate checks or permission controls were disabled.",
+    "prior_evidence": "results/task02/browser-verification.json",
+    "interpretation": "The original run records successful graphical interactions. This review independently verifies source data, Python behavior and HTTP responses, but does not claim a new graphical interaction pass."
+  },
+  "training_target_audit": {
+    "cohort": "Human Experiment 1 only",
+    "groups": 160,
+    "group_rounds": 6400,
+    "player_decisions": 25600,
+    "integer_support_violations": 0,
+    "support_definition": "0 <= contribution <= floor(exact stored offer); contribution is integer-valued",
+    "nonforced_decisions": 12814,
+    "forced_zero_decisions": 12786,
+    "per_condition": {
+      "Equal Baseline Exp 1": {"decisions": 6400, "nonforced": 1832},
+      "Mixed Baseline Exp 1": {"decisions": 6400, "nonforced": 3891},
+      "Proportional Baseline Exp 1": {"decisions": 6400, "nonforced": 2893},
+      "RL Agent (M1) Exp 1": {"decisions": 6400, "nonforced": 4198}
+    }
+  },
+  "followups_in_task03": [
+    {
+      "finding": "Scripted sandbox surplus averages over executed rounds; empirical Figure 2A averages over 40 rounds.",
+      "observed_zero_return_example": {"executed_rounds": 1, "sandbox_surplus": 50.0, "fixed_40_round_surplus": 1.25},
+      "action": "Use total generated rewards / (4 * 40), zero-pad after exact-zero termination and report termination time separately. Do not reuse the sandbox average as a comparable score."
+    },
+    {
+      "finding": "Comparison timelines use episode-specific time and cumulative-surplus scales.",
+      "action": "Use common round coordinates and shared axes when adding trained-agent comparisons."
+    }
+  ],
+  "next_task": "docs/tasks/03-trained-behavioral-agents.md",
+  "training_started_by_this_review": false
+}
