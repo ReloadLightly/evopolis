@@ -1,0 +1,2553 @@
+{
+  "counts": {
+    "all": {
+      "Equal": {
+        "choices": 6400,
+        "forced_choices": 4568,
+        "forced_fraction": 0.71375,
+        "group_rounds": 1600,
+        "groups": 40,
+        "nonforced_choices": 1832
+      },
+      "M1": {
+        "choices": 6400,
+        "forced_choices": 2202,
+        "forced_fraction": 0.3440625,
+        "group_rounds": 1600,
+        "groups": 40,
+        "nonforced_choices": 4198
+      },
+      "Mixed": {
+        "choices": 6400,
+        "forced_choices": 2509,
+        "forced_fraction": 0.39203125,
+        "group_rounds": 1600,
+        "groups": 40,
+        "nonforced_choices": 3891
+      },
+      "Proportional": {
+        "choices": 6400,
+        "forced_choices": 3507,
+        "forced_fraction": 0.54796875,
+        "group_rounds": 1600,
+        "groups": 40,
+        "nonforced_choices": 2893
+      }
+    },
+    "test": {
+      "Equal": {
+        "choices": 1280,
+        "forced_choices": 1028,
+        "forced_fraction": 0.803125,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 252
+      },
+      "M1": {
+        "choices": 1280,
+        "forced_choices": 687,
+        "forced_fraction": 0.53671875,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 593
+      },
+      "Mixed": {
+        "choices": 1280,
+        "forced_choices": 273,
+        "forced_fraction": 0.21328125,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 1007
+      },
+      "Proportional": {
+        "choices": 1280,
+        "forced_choices": 693,
+        "forced_fraction": 0.54140625,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 587
+      }
+    },
+    "train": {
+      "Equal": {
+        "choices": 3840,
+        "forced_choices": 2720,
+        "forced_fraction": 0.7083333333333334,
+        "group_rounds": 960,
+        "groups": 24,
+        "nonforced_choices": 1120
+      },
+      "M1": {
+        "choices": 3840,
+        "forced_choices": 1109,
+        "forced_fraction": 0.28880208333333335,
+        "group_rounds": 960,
+        "groups": 24,
+        "nonforced_choices": 2731
+      },
+      "Mixed": {
+        "choices": 3840,
+        "forced_choices": 1815,
+        "forced_fraction": 0.47265625,
+        "group_rounds": 960,
+        "groups": 24,
+        "nonforced_choices": 2025
+      },
+      "Proportional": {
+        "choices": 3840,
+        "forced_choices": 1914,
+        "forced_fraction": 0.4984375,
+        "group_rounds": 960,
+        "groups": 24,
+        "nonforced_choices": 1926
+      }
+    },
+    "validation": {
+      "Equal": {
+        "choices": 1280,
+        "forced_choices": 820,
+        "forced_fraction": 0.640625,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 460
+      },
+      "M1": {
+        "choices": 1280,
+        "forced_choices": 406,
+        "forced_fraction": 0.3171875,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 874
+      },
+      "Mixed": {
+        "choices": 1280,
+        "forced_choices": 421,
+        "forced_fraction": 0.32890625,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 859
+      },
+      "Proportional": {
+        "choices": 1280,
+        "forced_choices": 900,
+        "forced_fraction": 0.703125,
+        "group_rounds": 320,
+        "groups": 8,
+        "nonforced_choices": 380
+      }
+    }
+  },
+  "groups": [
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 108,
+      "index": 0,
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "launch_id": "13009511",
+      "mechanism": "Equal",
+      "nonforced_choices": 52,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 120,
+      "index": 1,
+      "key": [
+        "Equal Baseline Exp 1",
+        "13383055",
+        "0"
+      ],
+      "launch_id": "13383055",
+      "mechanism": "Equal",
+      "nonforced_choices": 40,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 144,
+      "index": 2,
+      "key": [
+        "Equal Baseline Exp 1",
+        "13443751",
+        "0"
+      ],
+      "launch_id": "13443751",
+      "mechanism": "Equal",
+      "nonforced_choices": 16,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 60,
+      "index": 3,
+      "key": [
+        "Equal Baseline Exp 1",
+        "17030251",
+        "0"
+      ],
+      "launch_id": "17030251",
+      "mechanism": "Equal",
+      "nonforced_choices": 100,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 140,
+      "index": 4,
+      "key": [
+        "Equal Baseline Exp 1",
+        "18089277",
+        "0"
+      ],
+      "launch_id": "18089277",
+      "mechanism": "Equal",
+      "nonforced_choices": 20,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 112,
+      "index": 5,
+      "key": [
+        "Equal Baseline Exp 1",
+        "20953934",
+        "0"
+      ],
+      "launch_id": "20953934",
+      "mechanism": "Equal",
+      "nonforced_choices": 48,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 104,
+      "index": 6,
+      "key": [
+        "Equal Baseline Exp 1",
+        "21063212",
+        "0"
+      ],
+      "launch_id": "21063212",
+      "mechanism": "Equal",
+      "nonforced_choices": 56,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 116,
+      "index": 7,
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "launch_id": "24769323",
+      "mechanism": "Equal",
+      "nonforced_choices": 44,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 140,
+      "index": 8,
+      "key": [
+        "Equal Baseline Exp 1",
+        "27555027",
+        "0"
+      ],
+      "launch_id": "27555027",
+      "mechanism": "Equal",
+      "nonforced_choices": 20,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 76,
+      "index": 9,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30383025",
+        "0"
+      ],
+      "launch_id": "30383025",
+      "mechanism": "Equal",
+      "nonforced_choices": 84,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 144,
+      "index": 10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30429600",
+        "0"
+      ],
+      "launch_id": "30429600",
+      "mechanism": "Equal",
+      "nonforced_choices": 16,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 140,
+      "index": 11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30843571",
+        "0"
+      ],
+      "launch_id": "30843571",
+      "mechanism": "Equal",
+      "nonforced_choices": 20,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 116,
+      "index": 12,
+      "key": [
+        "Equal Baseline Exp 1",
+        "31981132",
+        "0"
+      ],
+      "launch_id": "31981132",
+      "mechanism": "Equal",
+      "nonforced_choices": 44,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 120,
+      "index": 13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35368456",
+        "0"
+      ],
+      "launch_id": "35368456",
+      "mechanism": "Equal",
+      "nonforced_choices": 40,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 14,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35775718",
+        "0"
+      ],
+      "launch_id": "35775718",
+      "mechanism": "Equal",
+      "nonforced_choices": 160,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 136,
+      "index": 15,
+      "key": [
+        "Equal Baseline Exp 1",
+        "37049926",
+        "0"
+      ],
+      "launch_id": "37049926",
+      "mechanism": "Equal",
+      "nonforced_choices": 24,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 16,
+      "key": [
+        "Equal Baseline Exp 1",
+        "38102987",
+        "0"
+      ],
+      "launch_id": "38102987",
+      "mechanism": "Equal",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 100,
+      "index": 17,
+      "key": [
+        "Equal Baseline Exp 1",
+        "39146798",
+        "0"
+      ],
+      "launch_id": "39146798",
+      "mechanism": "Equal",
+      "nonforced_choices": 60,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 136,
+      "index": 18,
+      "key": [
+        "Equal Baseline Exp 1",
+        "39797392",
+        "0"
+      ],
+      "launch_id": "39797392",
+      "mechanism": "Equal",
+      "nonforced_choices": 24,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 16,
+      "index": 19,
+      "key": [
+        "Equal Baseline Exp 1",
+        "39799073",
+        "0"
+      ],
+      "launch_id": "39799073",
+      "mechanism": "Equal",
+      "nonforced_choices": 144,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 132,
+      "index": 20,
+      "key": [
+        "Equal Baseline Exp 1",
+        "40800498",
+        "0"
+      ],
+      "launch_id": "40800498",
+      "mechanism": "Equal",
+      "nonforced_choices": 28,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 112,
+      "index": 21,
+      "key": [
+        "Equal Baseline Exp 1",
+        "41174484",
+        "0"
+      ],
+      "launch_id": "41174484",
+      "mechanism": "Equal",
+      "nonforced_choices": 48,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 120,
+      "index": 22,
+      "key": [
+        "Equal Baseline Exp 1",
+        "43487752",
+        "0"
+      ],
+      "launch_id": "43487752",
+      "mechanism": "Equal",
+      "nonforced_choices": 40,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 148,
+      "index": 23,
+      "key": [
+        "Equal Baseline Exp 1",
+        "43891819",
+        "0"
+      ],
+      "launch_id": "43891819",
+      "mechanism": "Equal",
+      "nonforced_choices": 12,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 144,
+      "index": 24,
+      "key": [
+        "Equal Baseline Exp 1",
+        "45406707",
+        "0"
+      ],
+      "launch_id": "45406707",
+      "mechanism": "Equal",
+      "nonforced_choices": 16,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 112,
+      "index": 25,
+      "key": [
+        "Equal Baseline Exp 1",
+        "46096247",
+        "0"
+      ],
+      "launch_id": "46096247",
+      "mechanism": "Equal",
+      "nonforced_choices": 48,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 108,
+      "index": 26,
+      "key": [
+        "Equal Baseline Exp 1",
+        "49067645",
+        "0"
+      ],
+      "launch_id": "49067645",
+      "mechanism": "Equal",
+      "nonforced_choices": 52,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 56,
+      "index": 27,
+      "key": [
+        "Equal Baseline Exp 1",
+        "49665958",
+        "0"
+      ],
+      "launch_id": "49665958",
+      "mechanism": "Equal",
+      "nonforced_choices": 104,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 132,
+      "index": 28,
+      "key": [
+        "Equal Baseline Exp 1",
+        "56254954",
+        "0"
+      ],
+      "launch_id": "56254954",
+      "mechanism": "Equal",
+      "nonforced_choices": 28,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 144,
+      "index": 29,
+      "key": [
+        "Equal Baseline Exp 1",
+        "61875013",
+        "0"
+      ],
+      "launch_id": "61875013",
+      "mechanism": "Equal",
+      "nonforced_choices": 16,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 116,
+      "index": 30,
+      "key": [
+        "Equal Baseline Exp 1",
+        "67430636",
+        "0"
+      ],
+      "launch_id": "67430636",
+      "mechanism": "Equal",
+      "nonforced_choices": 44,
+      "split": "validation"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 140,
+      "index": 31,
+      "key": [
+        "Equal Baseline Exp 1",
+        "75670883",
+        "0"
+      ],
+      "launch_id": "75670883",
+      "mechanism": "Equal",
+      "nonforced_choices": 20,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 136,
+      "index": 32,
+      "key": [
+        "Equal Baseline Exp 1",
+        "85774797",
+        "0"
+      ],
+      "launch_id": "85774797",
+      "mechanism": "Equal",
+      "nonforced_choices": 24,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 148,
+      "index": 33,
+      "key": [
+        "Equal Baseline Exp 1",
+        "89808192",
+        "0"
+      ],
+      "launch_id": "89808192",
+      "mechanism": "Equal",
+      "nonforced_choices": 12,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 132,
+      "index": 34,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92173211",
+        "0"
+      ],
+      "launch_id": "92173211",
+      "mechanism": "Equal",
+      "nonforced_choices": 28,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 132,
+      "index": 35,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92291462",
+        "0"
+      ],
+      "launch_id": "92291462",
+      "mechanism": "Equal",
+      "nonforced_choices": 28,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 108,
+      "index": 36,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92992435",
+        "0"
+      ],
+      "launch_id": "92992435",
+      "mechanism": "Equal",
+      "nonforced_choices": 52,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 132,
+      "index": 37,
+      "key": [
+        "Equal Baseline Exp 1",
+        "93922021",
+        "0"
+      ],
+      "launch_id": "93922021",
+      "mechanism": "Equal",
+      "nonforced_choices": 28,
+      "split": "train"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 144,
+      "index": 38,
+      "key": [
+        "Equal Baseline Exp 1",
+        "94815040",
+        "0"
+      ],
+      "launch_id": "94815040",
+      "mechanism": "Equal",
+      "nonforced_choices": 16,
+      "split": "test"
+    },
+    {
+      "condition": "Equal Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 144,
+      "index": 39,
+      "key": [
+        "Equal Baseline Exp 1",
+        "97424607",
+        "0"
+      ],
+      "launch_id": "97424607",
+      "mechanism": "Equal",
+      "nonforced_choices": 16,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 40,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "launch_id": "10726889",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 83,
+      "index": 41,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "15175221",
+        "0"
+      ],
+      "launch_id": "15175221",
+      "mechanism": "Mixed",
+      "nonforced_choices": 77,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 42,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "17017594",
+        "0"
+      ],
+      "launch_id": "17017594",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 106,
+      "index": 43,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "17903542",
+        "0"
+      ],
+      "launch_id": "17903542",
+      "mechanism": "Mixed",
+      "nonforced_choices": 54,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 44,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "18823620",
+        "0"
+      ],
+      "launch_id": "18823620",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 135,
+      "index": 45,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "22126530",
+        "0"
+      ],
+      "launch_id": "22126530",
+      "mechanism": "Mixed",
+      "nonforced_choices": 25,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 16,
+      "index": 46,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "24809112",
+        "0"
+      ],
+      "launch_id": "24809112",
+      "mechanism": "Mixed",
+      "nonforced_choices": 144,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 47,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "26185795",
+        "0"
+      ],
+      "launch_id": "26185795",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 123,
+      "index": 48,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "26595751",
+        "0"
+      ],
+      "launch_id": "26595751",
+      "mechanism": "Mixed",
+      "nonforced_choices": 37,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 108,
+      "index": 49,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "27475779",
+        "0"
+      ],
+      "launch_id": "27475779",
+      "mechanism": "Mixed",
+      "nonforced_choices": 52,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 124,
+      "index": 50,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "34349062",
+        "0"
+      ],
+      "launch_id": "34349062",
+      "mechanism": "Mixed",
+      "nonforced_choices": 36,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 25,
+      "index": 51,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "36289195",
+        "0"
+      ],
+      "launch_id": "36289195",
+      "mechanism": "Mixed",
+      "nonforced_choices": 135,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 52,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "37465807",
+        "0"
+      ],
+      "launch_id": "37465807",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 53,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "38710152",
+        "0"
+      ],
+      "launch_id": "38710152",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 106,
+      "index": 54,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "43297180",
+        "0"
+      ],
+      "launch_id": "43297180",
+      "mechanism": "Mixed",
+      "nonforced_choices": 54,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 105,
+      "index": 55,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "44480089",
+        "0"
+      ],
+      "launch_id": "44480089",
+      "mechanism": "Mixed",
+      "nonforced_choices": 55,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 56,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "launch_id": "45795675",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 122,
+      "index": 57,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "47841996",
+        "0"
+      ],
+      "launch_id": "47841996",
+      "mechanism": "Mixed",
+      "nonforced_choices": 38,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 63,
+      "index": 58,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "49307875",
+        "0"
+      ],
+      "launch_id": "49307875",
+      "mechanism": "Mixed",
+      "nonforced_choices": 97,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 121,
+      "index": 59,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "49685025",
+        "0"
+      ],
+      "launch_id": "49685025",
+      "mechanism": "Mixed",
+      "nonforced_choices": 39,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 16,
+      "index": 60,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "50116627",
+        "0"
+      ],
+      "launch_id": "50116627",
+      "mechanism": "Mixed",
+      "nonforced_choices": 144,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 61,
+      "index": 61,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "51524772",
+        "0"
+      ],
+      "launch_id": "51524772",
+      "mechanism": "Mixed",
+      "nonforced_choices": 99,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 121,
+      "index": 62,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "53975444",
+        "0"
+      ],
+      "launch_id": "53975444",
+      "mechanism": "Mixed",
+      "nonforced_choices": 39,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 106,
+      "index": 63,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "58475822",
+        "0"
+      ],
+      "launch_id": "58475822",
+      "mechanism": "Mixed",
+      "nonforced_choices": 54,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 64,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "64291720",
+        "0"
+      ],
+      "launch_id": "64291720",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 65,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "68836277",
+        "0"
+      ],
+      "launch_id": "68836277",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 38,
+      "index": 66,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "70094867",
+        "0"
+      ],
+      "launch_id": "70094867",
+      "mechanism": "Mixed",
+      "nonforced_choices": 122,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 67,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "70166162",
+        "0"
+      ],
+      "launch_id": "70166162",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 120,
+      "index": 68,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "71045601",
+        "0"
+      ],
+      "launch_id": "71045601",
+      "mechanism": "Mixed",
+      "nonforced_choices": 40,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 137,
+      "index": 69,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "72808628",
+        "0"
+      ],
+      "launch_id": "72808628",
+      "mechanism": "Mixed",
+      "nonforced_choices": 23,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 115,
+      "index": 70,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "74380517",
+        "0"
+      ],
+      "launch_id": "74380517",
+      "mechanism": "Mixed",
+      "nonforced_choices": 45,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 100,
+      "index": 71,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "80421478",
+        "0"
+      ],
+      "launch_id": "80421478",
+      "mechanism": "Mixed",
+      "nonforced_choices": 60,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 63,
+      "index": 72,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "83986039",
+        "0"
+      ],
+      "launch_id": "83986039",
+      "mechanism": "Mixed",
+      "nonforced_choices": 97,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 22,
+      "index": 73,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "85460730",
+        "0"
+      ],
+      "launch_id": "85460730",
+      "mechanism": "Mixed",
+      "nonforced_choices": 138,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 74,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "88281250",
+        "0"
+      ],
+      "launch_id": "88281250",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 75,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "92017990",
+        "0"
+      ],
+      "launch_id": "92017990",
+      "mechanism": "Mixed",
+      "nonforced_choices": 160,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 31,
+      "index": 76,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "94451609",
+        "0"
+      ],
+      "launch_id": "94451609",
+      "mechanism": "Mixed",
+      "nonforced_choices": 129,
+      "split": "validation"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 113,
+      "index": 77,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "95135734",
+        "0"
+      ],
+      "launch_id": "95135734",
+      "mechanism": "Mixed",
+      "nonforced_choices": 47,
+      "split": "train"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 113,
+      "index": 78,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "95675568",
+        "0"
+      ],
+      "launch_id": "95675568",
+      "mechanism": "Mixed",
+      "nonforced_choices": 47,
+      "split": "test"
+    },
+    {
+      "condition": "Mixed Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 116,
+      "index": 79,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "98522310",
+        "0"
+      ],
+      "launch_id": "98522310",
+      "mechanism": "Mixed",
+      "nonforced_choices": 44,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 103,
+      "index": 80,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "11095201",
+        "0"
+      ],
+      "launch_id": "11095201",
+      "mechanism": "Proportional",
+      "nonforced_choices": 57,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 83,
+      "index": 81,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "launch_id": "14508367",
+      "mechanism": "Proportional",
+      "nonforced_choices": 77,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 134,
+      "index": 82,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14606420",
+        "0"
+      ],
+      "launch_id": "14606420",
+      "mechanism": "Proportional",
+      "nonforced_choices": 26,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 67,
+      "index": 83,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "18446714",
+        "0"
+      ],
+      "launch_id": "18446714",
+      "mechanism": "Proportional",
+      "nonforced_choices": 93,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 50,
+      "index": 84,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "18817699",
+        "0"
+      ],
+      "launch_id": "18817699",
+      "mechanism": "Proportional",
+      "nonforced_choices": 110,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 128,
+      "index": 85,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "19679219",
+        "0"
+      ],
+      "launch_id": "19679219",
+      "mechanism": "Proportional",
+      "nonforced_choices": 32,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 143,
+      "index": 86,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "launch_id": "22198508",
+      "mechanism": "Proportional",
+      "nonforced_choices": 17,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 100,
+      "index": 87,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "30377184",
+        "0"
+      ],
+      "launch_id": "30377184",
+      "mechanism": "Proportional",
+      "nonforced_choices": 60,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 55,
+      "index": 88,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "32679619",
+        "0"
+      ],
+      "launch_id": "32679619",
+      "mechanism": "Proportional",
+      "nonforced_choices": 105,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 56,
+      "index": 89,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "36303454",
+        "0"
+      ],
+      "launch_id": "36303454",
+      "mechanism": "Proportional",
+      "nonforced_choices": 104,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 135,
+      "index": 90,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "39641403",
+        "0"
+      ],
+      "launch_id": "39641403",
+      "mechanism": "Proportional",
+      "nonforced_choices": 25,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 38,
+      "index": 91,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "39770412",
+        "0"
+      ],
+      "launch_id": "39770412",
+      "mechanism": "Proportional",
+      "nonforced_choices": 122,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 68,
+      "index": 92,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "41159778",
+        "0"
+      ],
+      "launch_id": "41159778",
+      "mechanism": "Proportional",
+      "nonforced_choices": 92,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 82,
+      "index": 93,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "42414310",
+        "0"
+      ],
+      "launch_id": "42414310",
+      "mechanism": "Proportional",
+      "nonforced_choices": 78,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 104,
+      "index": 94,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "42641869",
+        "0"
+      ],
+      "launch_id": "42641869",
+      "mechanism": "Proportional",
+      "nonforced_choices": 56,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 33,
+      "index": 95,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "43430147",
+        "0"
+      ],
+      "launch_id": "43430147",
+      "mechanism": "Proportional",
+      "nonforced_choices": 127,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 76,
+      "index": 96,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "45150103",
+        "0"
+      ],
+      "launch_id": "45150103",
+      "mechanism": "Proportional",
+      "nonforced_choices": 84,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 71,
+      "index": 97,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "45673270",
+        "0"
+      ],
+      "launch_id": "45673270",
+      "mechanism": "Proportional",
+      "nonforced_choices": 89,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 86,
+      "index": 98,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "51230437",
+        "0"
+      ],
+      "launch_id": "51230437",
+      "mechanism": "Proportional",
+      "nonforced_choices": 74,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 104,
+      "index": 99,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "53212352",
+        "0"
+      ],
+      "launch_id": "53212352",
+      "mechanism": "Proportional",
+      "nonforced_choices": 56,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 96,
+      "index": 100,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "56833376",
+        "0"
+      ],
+      "launch_id": "56833376",
+      "mechanism": "Proportional",
+      "nonforced_choices": 64,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 97,
+      "index": 101,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "57287564",
+        "0"
+      ],
+      "launch_id": "57287564",
+      "mechanism": "Proportional",
+      "nonforced_choices": 63,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 112,
+      "index": 102,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "58710652",
+        "0"
+      ],
+      "launch_id": "58710652",
+      "mechanism": "Proportional",
+      "nonforced_choices": 48,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 143,
+      "index": 103,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "61948140",
+        "0"
+      ],
+      "launch_id": "61948140",
+      "mechanism": "Proportional",
+      "nonforced_choices": 17,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 72,
+      "index": 104,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "63752993",
+        "0"
+      ],
+      "launch_id": "63752993",
+      "mechanism": "Proportional",
+      "nonforced_choices": 88,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 121,
+      "index": 105,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "67521144",
+        "0"
+      ],
+      "launch_id": "67521144",
+      "mechanism": "Proportional",
+      "nonforced_choices": 39,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 55,
+      "index": 106,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "68155095",
+        "0"
+      ],
+      "launch_id": "68155095",
+      "mechanism": "Proportional",
+      "nonforced_choices": 105,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 77,
+      "index": 107,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69384851",
+        "0"
+      ],
+      "launch_id": "69384851",
+      "mechanism": "Proportional",
+      "nonforced_choices": 83,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 138,
+      "index": 108,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69390994",
+        "0"
+      ],
+      "launch_id": "69390994",
+      "mechanism": "Proportional",
+      "nonforced_choices": 22,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 130,
+      "index": 109,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "70560629",
+        "0"
+      ],
+      "launch_id": "70560629",
+      "mechanism": "Proportional",
+      "nonforced_choices": 30,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 107,
+      "index": 110,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "72433781",
+        "0"
+      ],
+      "launch_id": "72433781",
+      "mechanism": "Proportional",
+      "nonforced_choices": 53,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 72,
+      "index": 111,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "76356479",
+        "0"
+      ],
+      "launch_id": "76356479",
+      "mechanism": "Proportional",
+      "nonforced_choices": 88,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 75,
+      "index": 112,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "79450339",
+        "0"
+      ],
+      "launch_id": "79450339",
+      "mechanism": "Proportional",
+      "nonforced_choices": 85,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 55,
+      "index": 113,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "80851468",
+        "0"
+      ],
+      "launch_id": "80851468",
+      "mechanism": "Proportional",
+      "nonforced_choices": 105,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 27,
+      "index": 114,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "81793613",
+        "0"
+      ],
+      "launch_id": "81793613",
+      "mechanism": "Proportional",
+      "nonforced_choices": 133,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 108,
+      "index": 115,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "83597340",
+        "0"
+      ],
+      "launch_id": "83597340",
+      "mechanism": "Proportional",
+      "nonforced_choices": 52,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 72,
+      "index": 116,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "83701533",
+        "0"
+      ],
+      "launch_id": "83701533",
+      "mechanism": "Proportional",
+      "nonforced_choices": 88,
+      "split": "validation"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 108,
+      "index": 117,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "85019022",
+        "0"
+      ],
+      "launch_id": "85019022",
+      "mechanism": "Proportional",
+      "nonforced_choices": 52,
+      "split": "test"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 24,
+      "index": 118,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "86279004",
+        "0"
+      ],
+      "launch_id": "86279004",
+      "mechanism": "Proportional",
+      "nonforced_choices": 136,
+      "split": "train"
+    },
+    {
+      "condition": "Proportional Baseline Exp 1",
+      "episode_id": "0",
+      "forced_choices": 102,
+      "index": 119,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "89143435",
+        "0"
+      ],
+      "launch_id": "89143435",
+      "mechanism": "Proportional",
+      "nonforced_choices": 58,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 21,
+      "index": 120,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "launch_id": "18376511",
+      "mechanism": "M1",
+      "nonforced_choices": 139,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 50,
+      "index": 121,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "launch_id": "18992647",
+      "mechanism": "M1",
+      "nonforced_choices": 110,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 24,
+      "index": 122,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "20532812",
+        "0"
+      ],
+      "launch_id": "20532812",
+      "mechanism": "M1",
+      "nonforced_choices": 136,
+      "split": "test"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 51,
+      "index": 123,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "21171705",
+        "0"
+      ],
+      "launch_id": "21171705",
+      "mechanism": "M1",
+      "nonforced_choices": 109,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 138,
+      "index": 124,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "22263006",
+        "0"
+      ],
+      "launch_id": "22263006",
+      "mechanism": "M1",
+      "nonforced_choices": 22,
+      "split": "test"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 2,
+      "index": 125,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "24718462",
+        "0"
+      ],
+      "launch_id": "24718462",
+      "mechanism": "M1",
+      "nonforced_choices": 158,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 126,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "26686566",
+        "0"
+      ],
+      "launch_id": "26686566",
+      "mechanism": "M1",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 22,
+      "index": 127,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "28195864",
+        "0"
+      ],
+      "launch_id": "28195864",
+      "mechanism": "M1",
+      "nonforced_choices": 138,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 12,
+      "index": 128,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "33612364",
+        "0"
+      ],
+      "launch_id": "33612364",
+      "mechanism": "M1",
+      "nonforced_choices": 148,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 68,
+      "index": 129,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "39583963",
+        "0"
+      ],
+      "launch_id": "39583963",
+      "mechanism": "M1",
+      "nonforced_choices": 92,
+      "split": "test"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 114,
+      "index": 130,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "47817874",
+        "0"
+      ],
+      "launch_id": "47817874",
+      "mechanism": "M1",
+      "nonforced_choices": 46,
+      "split": "test"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 132,
+      "index": 131,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "48812052",
+        "0"
+      ],
+      "launch_id": "48812052",
+      "mechanism": "M1",
+      "nonforced_choices": 28,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 133,
+      "index": 132,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "49408957",
+        "0"
+      ],
+      "launch_id": "49408957",
+      "mechanism": "M1",
+      "nonforced_choices": 27,
+      "split": "test"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 16,
+      "index": 133,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "49432162",
+        "0"
+      ],
+      "launch_id": "49432162",
+      "mechanism": "M1",
+      "nonforced_choices": 144,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 128,
+      "index": 134,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "50147811",
+        "0"
+      ],
+      "launch_id": "50147811",
+      "mechanism": "M1",
+      "nonforced_choices": 32,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 7,
+      "index": 135,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "50251280",
+        "0"
+      ],
+      "launch_id": "50251280",
+      "mechanism": "M1",
+      "nonforced_choices": 153,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 89,
+      "index": 136,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "53180780",
+        "0"
+      ],
+      "launch_id": "53180780",
+      "mechanism": "M1",
+      "nonforced_choices": 71,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 3,
+      "index": 137,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "56399293",
+        "0"
+      ],
+      "launch_id": "56399293",
+      "mechanism": "M1",
+      "nonforced_choices": 157,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 65,
+      "index": 138,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "57404481",
+        "0"
+      ],
+      "launch_id": "57404481",
+      "mechanism": "M1",
+      "nonforced_choices": 95,
+      "split": "test"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 5,
+      "index": 139,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "61454237",
+        "0"
+      ],
+      "launch_id": "61454237",
+      "mechanism": "M1",
+      "nonforced_choices": 155,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 10,
+      "index": 140,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "63504480",
+        "0"
+      ],
+      "launch_id": "63504480",
+      "mechanism": "M1",
+      "nonforced_choices": 150,
+      "split": "test"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 11,
+      "index": 141,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "63845553",
+        "0"
+      ],
+      "launch_id": "63845553",
+      "mechanism": "M1",
+      "nonforced_choices": 149,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 15,
+      "index": 142,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "64122649",
+        "0"
+      ],
+      "launch_id": "64122649",
+      "mechanism": "M1",
+      "nonforced_choices": 145,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 144,
+      "index": 143,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "65596261",
+        "0"
+      ],
+      "launch_id": "65596261",
+      "mechanism": "M1",
+      "nonforced_choices": 16,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 92,
+      "index": 144,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "66350717",
+        "0"
+      ],
+      "launch_id": "66350717",
+      "mechanism": "M1",
+      "nonforced_choices": 68,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 134,
+      "index": 145,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "73953894",
+        "0"
+      ],
+      "launch_id": "73953894",
+      "mechanism": "M1",
+      "nonforced_choices": 26,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 25,
+      "index": 146,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "76820131",
+        "0"
+      ],
+      "launch_id": "76820131",
+      "mechanism": "M1",
+      "nonforced_choices": 135,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 122,
+      "index": 147,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "78925223",
+        "0"
+      ],
+      "launch_id": "78925223",
+      "mechanism": "M1",
+      "nonforced_choices": 38,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 133,
+      "index": 148,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "81258716",
+        "0"
+      ],
+      "launch_id": "81258716",
+      "mechanism": "M1",
+      "nonforced_choices": 27,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 53,
+      "index": 149,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "81387887",
+        "0"
+      ],
+      "launch_id": "81387887",
+      "mechanism": "M1",
+      "nonforced_choices": 107,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 10,
+      "index": 150,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "83148405",
+        "0"
+      ],
+      "launch_id": "83148405",
+      "mechanism": "M1",
+      "nonforced_choices": 150,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 59,
+      "index": 151,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "84760433",
+        "0"
+      ],
+      "launch_id": "84760433",
+      "mechanism": "M1",
+      "nonforced_choices": 101,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 21,
+      "index": 152,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "84942891",
+        "0"
+      ],
+      "launch_id": "84942891",
+      "mechanism": "M1",
+      "nonforced_choices": 139,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 6,
+      "index": 153,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "85136205",
+        "0"
+      ],
+      "launch_id": "85136205",
+      "mechanism": "M1",
+      "nonforced_choices": 154,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 9,
+      "index": 154,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "87192231",
+        "0"
+      ],
+      "launch_id": "87192231",
+      "mechanism": "M1",
+      "nonforced_choices": 151,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 0,
+      "index": 155,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "89992553",
+        "0"
+      ],
+      "launch_id": "89992553",
+      "mechanism": "M1",
+      "nonforced_choices": 160,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 118,
+      "index": 156,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "93598180",
+        "0"
+      ],
+      "launch_id": "93598180",
+      "mechanism": "M1",
+      "nonforced_choices": 42,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 24,
+      "index": 157,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "95025156",
+        "0"
+      ],
+      "launch_id": "95025156",
+      "mechanism": "M1",
+      "nonforced_choices": 136,
+      "split": "train"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 1,
+      "index": 158,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "95891360",
+        "0"
+      ],
+      "launch_id": "95891360",
+      "mechanism": "M1",
+      "nonforced_choices": 159,
+      "split": "validation"
+    },
+    {
+      "condition": "RL Agent (M1) Exp 1",
+      "episode_id": "0",
+      "forced_choices": 135,
+      "index": 159,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "96535892",
+        "0"
+      ],
+      "launch_id": "96535892",
+      "mechanism": "M1",
+      "nonforced_choices": 25,
+      "split": "test"
+    }
+  ],
+  "manifest_hash": "bbc978d8235b65731086a9a2a0b3ac368983931247c8681a819b389dfeb461f3",
+  "numpy_version": "2.2.6",
+  "participant_limit": "launch_id isolation verified; cross-group repeat participants cannot be checked without released participant identifiers",
+  "random_generator": "numpy.random.Generator(numpy.random.PCG64(seed)); single stream, sorted condition strings, then sorted full keys, 24/8/8 permutation slices",
+  "schema_version": 1,
+  "source_file": "sustainable_behavior.csv",
+  "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+  "source_url": "https://storage.googleapis.com/sustainable_behavior/sustainable_behavior.csv",
+  "split_seed": 20261001,
+  "test_status": "Held out from Task 03 fitting and selection; all Experiment 1 groups were described in Task 01",
+  "upstream_revision": "4f1a99a9d150f9fa6bad1a0f70f11c0673d46763"
+}

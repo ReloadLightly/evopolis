@@ -1,0 +1,270 @@
+{
+  "utc": "2026-10-01T01:59:41.518672+00:00",
+  "launch_command": "bash scripts/viewer.sh --port 8765",
+  "url": "http://127.0.0.1:8765/?mode=trained",
+  "recorded_and_sandbox_regression": {
+    "checks": [
+      {
+        "evidence": {
+          "episodes": 40,
+          "key": [
+            "Equal Baseline Exp 1",
+            "67430636",
+            "0"
+          ]
+        },
+        "name": "default selection",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "final_cumulative": 50.26139649748802,
+          "resident": "C",
+          "round12_after": 0.009999999776482582
+        },
+        "name": "resident, exact values and backward seek",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "paused_round": 2
+        },
+        "name": "play, pause, speed, previous and restart",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "episodes": 512,
+          "final_after": null,
+          "key": [
+            "Equal Baseline BC 1",
+            "1221",
+            "197"
+          ]
+        },
+        "name": "upstream replay",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "keys": [
+            "Equal Baseline BC 1 \u00b7 launch 1221 \u00b7 episode 197 \u00b7 source rounds 0\u201339",
+            "Mixed Baseline Exp 1 \u00b7 launch 70094867 \u00b7 episode 0 \u00b7 source rounds 0\u201339"
+          ],
+          "round": 9
+        },
+        "name": "independent recorded comparison",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "selected": "e706d5afdf5a3e26d83e711d37aee3c8021c9eb39cae4706fbb9358a9039f134"
+        },
+        "name": "keyboard outcome selection",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "decimal_fraction": 0.58,
+          "initial_return": 29,
+          "rules": [
+            "equal",
+            "proportional"
+          ]
+        },
+        "name": "scripted policies, matched comparison, edits and reset",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "ended": "Run ended after round 1 (exact-zero pool); final state held while the other pane continues."
+        },
+        "name": "unequal run lengths and reduced motion",
+        "status": "pass"
+      }
+    ],
+    "viewport": [
+      1366,
+      900
+    ]
+  },
+  "trained": {
+    "checks": [
+      {
+        "evidence": {
+          "cells": 48,
+          "checkpoint_sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+          "games": 3072,
+          "id": "trained-recurrent-17-equal-039",
+          "rollout_seed": "4128699797167127739"
+        },
+        "name": "complete design and default",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "final_total": 72,
+          "first_prediction": {
+            "alpha": 1.5868059602018556,
+            "beta": 1.8041972027715032,
+            "emission_parameters": [
+              -0.9410369992256165,
+              -1.820979356765747,
+              1.2349179983139038,
+              1.2946491241455078,
+              1.5641908645629885
+            ],
+            "evaluated": true,
+            "expected_contribution": 22.188313666537383,
+            "legal_max": 50,
+            "mixture_weights": [
+              0.0977956658971911,
+              0.040566309325140784,
+              0.861638024777668
+            ],
+            "p_max": 0.042853579736774165,
+            "p_zero": 0.10294382922474826
+          },
+          "resident": "D"
+        },
+        "name": "resident, exact values, prediction and backward seek",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "paused_round": 2
+        },
+        "name": "play, pause, previous, restart",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "families": 4,
+          "rollouts_per_cell": 64,
+          "training_seed": 43
+        },
+        "name": "family, checkpoint, mechanism and rollout selection",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "executed_rounds": 11,
+          "id": "trained-constant-17-equal-000"
+        },
+        "name": "exact-zero termination and padding",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "axes": [
+            {
+              "poolMax": "200",
+              "roundMax": "40",
+              "surplusMax": "422.2"
+            },
+            {
+              "poolMax": "200",
+              "roundMax": "40",
+              "surplusMax": "422.2"
+            }
+          ],
+          "sources": [
+            "NEW TRAINED EVOPOLIS SIMULATION",
+            "RECORDED HUMAN \u00b7 EXP 1"
+          ]
+        },
+        "name": "independent human/trained comparison with common scales",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "id": "trained-recurrent-17-equal-039",
+          "rollout_seed": "4128699797167127739"
+        },
+        "name": "published episode identity is reproducible",
+        "status": "pass"
+      }
+    ],
+    "viewport": [
+      1366,
+      900
+    ]
+  },
+  "view_url_reload": {
+    "axes": [
+      {
+        "poolMax": "200",
+        "roundMax": "40",
+        "surplusMax": "422.2"
+      },
+      {
+        "poolMax": "200",
+        "roundMax": "40",
+        "surplusMax": "422.2"
+      }
+    ],
+    "episode0": "trained-constant-17-equal-000",
+    "episode1": "e2b1800c580e10405468d62a5d99393054d940063bb37151abf3c989ed3fadee",
+    "name": "Resident D",
+    "resident0": "3",
+    "round": "9"
+  },
+  "native_keyboard_family_change": {
+    "family": "feedforward",
+    "identity": "Feedforward \u00b7 training seed 17 \u00b7 selected epoch 109 \u00b7 checkpoint be65c3cf7720 \u00b7 rollout seed 7560340725006427613 \u00b7 Equal"
+  },
+  "narrow_viewport": {
+    "body_width": 390,
+    "document_width": 390,
+    "viewport": [
+      390,
+      844
+    ],
+    "visible_selectors": [
+      {
+        "class": "cohort",
+        "right": 190,
+        "width": 166
+      },
+      {
+        "class": "mechanism",
+        "right": 366,
+        "width": 166
+      },
+      {
+        "class": "family",
+        "right": 190,
+        "width": 166
+      },
+      {
+        "class": "checkpoint",
+        "right": 366,
+        "width": 166
+      },
+      {
+        "class": "rollout",
+        "right": 366,
+        "width": 342
+      }
+    ]
+  },
+  "browser_errors": [],
+  "browser_console": [],
+  "screenshot": {
+    "path": "docs/assets/trained-community-viewer.png",
+    "sha256": "1390b886c8b59fd307ceed3cd67f1aac03cf624527722ba9599ebae9e3d0d317",
+    "viewport": [
+      1366,
+      900
+    ],
+    "episode_id": "trained-recurrent-17-equal-039",
+    "playback_round": 1,
+    "resident": "A",
+    "source": "actual Chromium application screenshot"
+  },
+  "prior_artifact_check": {
+    "count": 17,
+    "all_unchanged": true
+  },
+  "checkpoint_reproducibility_evidence": "results/task03/generation_verification.json; fresh-process Python regenerates the full default 64-game cell independently of browser playback"
+}

@@ -10,11 +10,11 @@
 <header class="masthead">
   <a class="brand" href="/" aria-label="EvoPolis home"><span class="brand-flower" aria-hidden="true">✣</span><span>EVOPOLIS<small>THE COMMUNITY OBSERVATORY</small></span></a>
   <div class="header-note">Four residents. One commons.<br><span>Watch the choices. Inspect the evidence.</span></div>
-  <span class="local-tag">LOCAL LAB · 02</span>
+  <span class="local-tag">LOCAL LAB · 03</span>
 </header>
 <main>
   <div class="mode-row">
-    <div class="mode-tabs" role="group" aria-label="Evidence mode"><button id="recorded-mode" class="active" aria-pressed="true">Recorded communities</button><button id="sandbox-mode" aria-pressed="false">Scripted sandbox</button></div>
+    <div class="mode-tabs" role="group" aria-label="Evidence mode"><button id="recorded-mode" class="active" aria-pressed="true">Recorded communities</button><button id="trained-mode" aria-pressed="false">New trained EvoPolis agents</button><button id="sandbox-mode" aria-pressed="false">Scripted sandbox</button></div>
     <div class="view-options"><label><input type="checkbox" id="compare"> Compare communities</label><label><input type="checkbox" id="reduced-motion"> Reduced motion</label></div>
   </div>
   <div id="mode-context" class="context"></div>
@@ -33,16 +33,19 @@
   <div id="communities"></div>
   <footer>
     <span>RESEARCH PLAYBACK · residents A–D are group positions, not identities.</span>
-    <details><summary>Evidence &amp; interpretation</summary><p>Recorded human Experiment 1 and recorded upstream BC1 outcomes from Koster, Pîslar et al. (2025). Four-player, 40-round Figure 2A cohorts only. Source revision <code>4f1a99a</code>; data CC BY 4.0. The upstream models are replayed, not run here.</p><p>The 40-round horizon is a researcher control and was undisclosed to participants. Current contributions are simultaneous; animation order does not create additional observations. Movement and symbolic flower tokens add no distance, cost or social rules. Rounded labels never update the underlying data. No fitting or learning occurs in this viewer.</p><p id="provenance-detail"></p><a href="https://doi.org/10.1038/s41467-025-58043-7" target="_blank" rel="noreferrer">Published study ↗</a></details>
+    <details><summary>Evidence &amp; interpretation</summary><p>Recorded human Experiment 1 and recorded upstream BC1 outcomes from Koster, Pîslar et al. (2025). Four-player, 40-round Figure 2A cohorts only. Source revision <code>4f1a99a</code>; data CC BY 4.0. The upstream models are replayed, not run here.</p><p>New EvoPolis agents were fitted to the declared human Experiment 1 training groups. Their archived simulations use frozen best-validation checkpoints, shared weights and separate resident histories. Recurrent memory updates during generation; weights do not. This viewer replays generated trajectories without fitting or sampling. Scripted policies remain a separate demonstration.</p><p>The 40-round horizon is a researcher control and was undisclosed to participants. Current contributions are simultaneous; animation order does not create additional observations. Movement and symbolic flower tokens add no distance, cost or social rules. Rounded labels never update the underlying data.</p><p id="provenance-detail"></p><a href="https://doi.org/10.1038/s41467-025-58043-7" target="_blank" rel="noreferrer">Published study ↗</a></details>
   </footer>
 </main>
 <template id="community-template">
   <section class="community" aria-label="Community">
     <div class="community-heading"><span class="pane-name eyebrow"></span><span class="source-badge"></span></div>
     <div class="recorded-selectors selectors">
-      <label>Evidence<select class="cohort"><option value="human">Human · Experiment 1</option><option value="bc1">Upstream model · BC1</option></select></label>
+      <label>Evidence<select class="cohort"><option value="human">Human · Experiment 1</option><option value="bc1">Upstream model · BC1</option><option value="trained">New trained EvoPolis agents</option></select></label>
       <label>Allocation rule<select class="mechanism"><option>Equal</option><option>Mixed</option><option>Proportional</option><option>Recorded RL M1</option></select></label>
       <label class="episode-field">Episode · mean surplus / Gini<select class="episode"></select></label>
+      <label class="trained-field" hidden>Model family<select class="family"><option value="constant">Constant</option><option value="linear">Linear</option><option value="feedforward">Feedforward</option><option value="recurrent">Recurrent · GRU</option></select></label>
+      <label class="trained-field" hidden>Checkpoint · training seed / epoch<select class="checkpoint"></select></label>
+      <label class="trained-field rollout-field" hidden>Rollout seed · mean surplus / Gini<select class="rollout"></select></label>
     </div>
     <div class="sandbox-selectors" hidden>
       <div class="sandbox-top"><label>Allocation rule<select class="sandbox-mechanism"><option value="equal">Equal</option><option value="proportional">Proportional</option><option value="mixed">Mixed</option><option value="interpolating">Interpolating</option></select></label><button class="reset-sandbox">Reset settings</button></div>
@@ -66,7 +69,8 @@
         <dl class="resident-values"></dl>
         <div class="opportunity"></div>
         <details class="history-detail"><summary>Resident history through this round</summary><div class="history-scroll"><table><thead><tr><th>Round</th><th>Offer</th><th>Return</th><th>Retain</th><th>Cumulative</th></tr></thead><tbody class="history"></tbody></table></div></details>
-        <details><summary>Information before this choice</summary><p class="information-basis"></p><p class="previous-returns"></p><p class="prior-cumulative"></p><p>No fitted model predictions are available.</p></details>
+        <details><summary>Information before this choice</summary><p class="information-basis"></p><p class="previous-returns"></p><p class="prior-cumulative"></p><p class="prediction-note">No fitted model predictions are available.</p></details>
+        <div class="prediction-panel" hidden><h3>BEFORE-CHOICE PREDICTION</h3><dl class="prediction-values"></dl><p class="prediction-support"></p></div>
       </aside>
     </div>
     <details class="exact-detail"><summary>Inspect exact round values &amp; accounting</summary><div class="exact-scroll"><table><thead><tr><th>Resident</th><th>Allocation</th><th>Return</th><th>Round surplus</th><th>Cumulative surplus</th></tr></thead><tbody class="exact-values"></tbody></table></div><p class="exact-pool"></p><p class="accounting"></p><p class="after-source"></p><p class="gini-note"></p></details>

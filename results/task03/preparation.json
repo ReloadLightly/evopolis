@@ -1,0 +1,103 @@
+{
+  "array_compressed_bytes": 348229,
+  "array_file": "data/cache/task03/human_exp1.npz",
+  "array_sha256": "2ad25f10e59c5bcb291aff342a0392d3f84d398f72d116991862851ec65f3419",
+  "array_uncompressed_bytes": 2764800,
+  "arrays": {
+    "n": {
+      "dtype": "int64",
+      "shape": [
+        160,
+        4,
+        40
+      ]
+    },
+    "next_pool": {
+      "dtype": "float64",
+      "shape": [
+        160,
+        40
+      ]
+    },
+    "offers": {
+      "dtype": "float64",
+      "shape": [
+        160,
+        4,
+        40
+      ]
+    },
+    "pool": {
+      "dtype": "float64",
+      "shape": [
+        160,
+        40
+      ]
+    },
+    "surplus": {
+      "dtype": "float64",
+      "shape": [
+        160,
+        4,
+        40
+      ]
+    },
+    "x": {
+      "dtype": "float64",
+      "shape": [
+        160,
+        4,
+        40,
+        9
+      ]
+    },
+    "y": {
+      "dtype": "int64",
+      "shape": [
+        160,
+        4,
+        40
+      ]
+    }
+  },
+  "audit": {
+    "forced_choices": 12786,
+    "group_rounds": 6400,
+    "groups": 160,
+    "launch_id_split_overlap": 0,
+    "nonforced_choices": 12814,
+    "noninteger_targets": 0,
+    "player_decisions": 25600,
+    "support_violations": 0,
+    "zero_scoreable_groups": 0
+  },
+  "axes": "x: group, resident, round, feature; y/n/offers/surplus: group,resident,round; pool/next_pool: group,round",
+  "config_hash_at_preparation": "a2254a67498ae180eee47cd781093ca71ef555e9f03476a2a9c035027817da7e",
+  "excluded_cohorts": "All BC1/BC2 records and human Experiments 2-4 ignored before parsing numeric fields",
+  "feature_order": [
+    "offer_self",
+    "offer_next",
+    "offer_next2",
+    "offer_next3",
+    "previous_return_self",
+    "previous_return_next",
+    "previous_return_next2",
+    "previous_return_next3",
+    "pool"
+  ],
+  "normalization": 200.0,
+  "numeric_input_columns": [
+    "offer_0..3",
+    "same-episode previous player_action_0..3",
+    "mechanism_observation.pool"
+  ],
+  "provenance_filter": [
+    "Equal Baseline Exp 1",
+    "Mixed Baseline Exp 1",
+    "Proportional Baseline Exp 1",
+    "RL Agent (M1) Exp 1"
+  ],
+  "schema_version": 1,
+  "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+  "split_hash": "bbc978d8235b65731086a9a2a0b3ac368983931247c8681a819b389dfeb461f3"
+}

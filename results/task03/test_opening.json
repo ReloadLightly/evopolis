@@ -1,0 +1,269 @@
+{
+  "code_revision": "134322ec8332cc8b5f09b17feb12fc415baed3f0",
+  "frozen_contract": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261003,
+    "checkpoints": [
+      {
+        "best_sha256": "c99c319cf9c64781d61deb6caada1836e56765a004db61ad3325d487e43e9538",
+        "family": "constant",
+        "last_sha256": "9e1e52f3b40b952d94d7c4edc3a7fd8f4db40affae6089ce1d8de2843b7bdb08",
+        "seed": 17,
+        "selected_epoch": 120,
+        "validation_nll": 2.8568291482359895
+      },
+      {
+        "best_sha256": "57709ffb15d56b9568f688cc56441bc3ec90c3a4777a1dad918676331a755a8b",
+        "family": "constant",
+        "last_sha256": "55e1ef86b6e8696c40d859bcd53dfbdf246a2293f3b299e73022e2764dc9c45a",
+        "seed": 29,
+        "selected_epoch": 120,
+        "validation_nll": 2.860996487307178
+      },
+      {
+        "best_sha256": "4d44dd4d21f404db3b0b785d5d59a737b5a01bcf0afa0588e49c58dfb161cc77",
+        "family": "constant",
+        "last_sha256": "8dc253f37a8c79dd4db9cf25910aad509ae52892a26f25a35970fd27f87affee",
+        "seed": 43,
+        "selected_epoch": 120,
+        "validation_nll": 2.8541968810050626
+      },
+      {
+        "best_sha256": "c920fe932cf7cfad9e9e5928c07e0b5b5bab4d0732c8bd1d21c9c99063847ee2",
+        "family": "linear",
+        "last_sha256": "f7ceca023b412a6ee0c6615f304c2da07ac536da74a238d8487c3cddf93b4d8d",
+        "seed": 17,
+        "selected_epoch": 120,
+        "validation_nll": 2.808152092542238
+      },
+      {
+        "best_sha256": "1d746fff5df3a3d384c965301ae19af31b63dc48c1d5c4b1f86f1c5d36995c8c",
+        "family": "linear",
+        "last_sha256": "12dbd0618ec1a0ead99231d0909c4d76a3a706d25d405b7277224446c7082b78",
+        "seed": 29,
+        "selected_epoch": 120,
+        "validation_nll": 2.8038591958437022
+      },
+      {
+        "best_sha256": "cab8a69f36f55fcc0e3e6153b71856e08419caf9d5e6de8e74421260e1f115f9",
+        "family": "linear",
+        "last_sha256": "2a8a6beb508772e92e7034866af5258ee38af55f08697b22dba4420d29c3c1be",
+        "seed": 43,
+        "selected_epoch": 120,
+        "validation_nll": 2.80963018363462
+      },
+      {
+        "best_sha256": "be65c3cf7720e5805db3f1eeb285d832d662e8b54d5684fc51e051e9ce4032a2",
+        "family": "feedforward",
+        "last_sha256": "5fd8ea614cbc23ff2a5ce18ff022bc5fcf671479536ad73872a2ae7734347e45",
+        "seed": 17,
+        "selected_epoch": 109,
+        "validation_nll": 2.6683948916927247
+      },
+      {
+        "best_sha256": "72769aecba837a6103debf4e06eb9657c7c975953a6c9238c6f38ec4da84fe6f",
+        "family": "feedforward",
+        "last_sha256": "3e472bda02cdd08c07b060b7232a136a2110db6aa9a69d34dfef43a3e446362d",
+        "seed": 29,
+        "selected_epoch": 116,
+        "validation_nll": 2.6664142460057634
+      },
+      {
+        "best_sha256": "9f2316808439affb020d8d2382b50d0d5f2fa551c8451ed4228e82821cebbe18",
+        "family": "feedforward",
+        "last_sha256": "a1e8974ae3edac1c33845955fac5be557abc94dbe9fcc26fc8828ab4f343d90a",
+        "seed": 43,
+        "selected_epoch": 117,
+        "validation_nll": 2.6692846954832694
+      },
+      {
+        "best_sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+        "family": "recurrent",
+        "last_sha256": "e8c7dec4d1e4f3255d4685d74ea265b8b4ccac71ce3845be42df67acf8d08561",
+        "seed": 17,
+        "selected_epoch": 116,
+        "validation_nll": 2.6479121784064787
+      },
+      {
+        "best_sha256": "25143274613b933909fde59f9c7829f73581c5edb821787fdf4efeb1c2169091",
+        "family": "recurrent",
+        "last_sha256": "698d09f5339e8bdf944fd20f3a7f14f6b13e30969d03c53b7b857995c24bb2d6",
+        "seed": 29,
+        "selected_epoch": 117,
+        "validation_nll": 2.6503829938635732
+      },
+      {
+        "best_sha256": "83ea46a7c1f7b5874d32f28d7a0a26cb3f07d77bf57f1682801d3ac26bed14d2",
+        "family": "recurrent",
+        "last_sha256": "3e56f32a51b3969827a77ddbdf68bfb9b1ecd0d1ac7e4548465b93073b8469a6",
+        "seed": 43,
+        "selected_epoch": 113,
+        "validation_nll": 2.648604778061384
+      }
+    ],
+    "evaluation_code_sha256": "67075fcf9f98cd98b8cd4bf7adb86426a5b8c17f66e3fc34dcea218dae1b3e34",
+    "generation_code_sha256": {
+      "evopolis/behavior_generate.py": "42462f037bf80d9662ef7a282b99ed79ca6e5ddd2542e99a68d30758c7bd45e7",
+      "evopolis/world.py": "e8d32143f857cdaf6d780290794a9be72100492fc2f8d548d88a2d0c83cbb6b7"
+    },
+    "offer_bin_edges": [
+      1.0,
+      5.0,
+      10.0,
+      25.0,
+      50.0,
+      100.0,
+      201.0
+    ],
+    "probability_bin_edges": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "training_identity": {
+      "code_revision": "134322ec8332cc8b5f09b17feb12fc415baed3f0",
+      "code_sha256": {
+        "evopolis/behavior_data.py": "86a380e87a24e41f1f95de2a82e240f347d99660d54862e65c61956698162df1",
+        "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+        "evopolis/behavior_train.py": "add4118740f7338cceb01a2cb2e0401bc3a72243bca1a1a2cfa04ae0b3a7c63e"
+      },
+      "config_sha256": "16e6f69d152af0247f4e1c6dac2080d520b3b0c3f8bb739a0fb18d709748f94c",
+      "configuration": {
+        "architectures": {
+          "constant": "5 fitted emission parameters",
+          "feedforward": "Linear(9,64), ReLU, Linear(64,52), ReLU, Linear(52,5); biases",
+          "linear": "Linear(9,5), with bias",
+          "recurrent": "one-layer biased GRU(input=9,hidden=32), Linear(32,5) with bias"
+        },
+        "bin_closure": "lower-inclusive, upper-exclusive; final upper edge included",
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 20261003,
+        "checkpoint_selection": "lowest validation nonforced group-balanced NLL; exact ties choose earliest epoch",
+        "clip_grad_norm": 1.0,
+        "early_stopping": false,
+        "effective_batch_groups": 8,
+        "emission": {
+          "forced": "n=0 has P(0)=1, zero primary loss, and retained observation history",
+          "legal_support": "0,...,floor(observed offer), without epsilon or upward rounding",
+          "name": "zero/maximum-inflated beta-binomial",
+          "overlap": "beta-binomial includes both endpoints; overlapping mixture masses are added",
+          "parameters": [
+            "zero_logit",
+            "maximum_logit",
+            "beta_binomial_logit",
+            "alpha_raw",
+            "beta_raw"
+          ],
+          "shape_transform": "softplus(raw) + 0.05"
+        },
+        "ensemble": null,
+        "epochs": 120,
+        "experiment": "Task 03: human Experiment 1 behavioral fits",
+        "families": [
+          "constant",
+          "linear",
+          "feedforward",
+          "recurrent"
+        ],
+        "feature_order": [
+          "offer_self",
+          "offer_next",
+          "offer_next2",
+          "offer_next3",
+          "previous_return_self",
+          "previous_return_next",
+          "previous_return_next2",
+          "previous_return_next3",
+          "pool"
+        ],
+        "held_out_status": "held out from Task 03 fitting/selection, previously described by Task 01; no cross-group participant linkage available",
+        "learning_rate_schedule": null,
+        "lr": 0.001,
+        "microbatch_groups": 2,
+        "normalization": 200.0,
+        "num_workers": 0,
+        "offer_bin_edges": [
+          1,
+          5,
+          10,
+          25,
+          50,
+          100,
+          201
+        ],
+        "optimizer": "Adam",
+        "other_scores": [
+          "MAE abs(E[c]-c)",
+          "relative MAE abs(E[c]-c)/observed offer",
+          "zero return calibration",
+          "maximum feasible return calibration"
+        ],
+        "primary_score": "mean nonforced choice NLL within each group, mean groups within mechanism, equal mean over four mechanisms",
+        "probability_bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "representative_display": "recurrent training seed 17, Equal; nearest median surplus with stable rollout-index tie break",
+        "rollout_baselines": [
+          "equal",
+          "proportional",
+          "mixed",
+          "interpolating"
+        ],
+        "rollout_games_per_cell": 64,
+        "rollout_horizon": 40,
+        "rollout_initial_pool": 200.0,
+        "rollout_padding": "zero pool/offers/returns/surplus after exact-zero termination; cumulative surplus held constant",
+        "rollout_parameters": "best-validation weights frozen during play; recurrent states reset per independent game",
+        "rollout_sampling": "independent resident draws conditional on simultaneous pre-decision observations and separate histories",
+        "rollout_seed_namespace": 20261004,
+        "rollout_surplus_denominator": 160,
+        "schema_version": 1,
+        "seed_aggregation": "equal mean of group scores over all three seeds; no lucky seed selection",
+        "shuffle": "seeded whole-group permutation each epoch; all four complete resident sequences stay together",
+        "split_seed": 20261001,
+        "threads": 1,
+        "training_seeds": [
+          17,
+          29,
+          43
+        ],
+        "transfer_boundary": "Experiments 2-3 remain outside preparation, fitting, selection, and outcome inspection; Experiment 4 deferred",
+        "uncertainty": "paired mechanism-stratified group bootstrap; same resampled groups for every model",
+        "uniform_reference": "unfitted uniform distribution over 0,...,floor(offer)",
+        "validation_frequency_epochs": 1,
+        "weight_decay": 0.0001
+      },
+      "effective_batch_groups": 8,
+      "microbatch_groups": 2,
+      "num_workers": 0,
+      "software": {
+        "numpy": "2.2.6",
+        "python": "3.12.13",
+        "torch": "2.10.0+cpu"
+      },
+      "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+      "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678",
+      "threads": 1
+    }
+  },
+  "opened_utc": "2026-10-01T01:53:05.118296+00:00",
+  "status": "Held out from Task 03 fitting and selection; historically described in Task 01. Outcomes consume this endpoint for later model search."
+}

@@ -63,6 +63,6 @@ The local community viewer applies the supplied CSS tokens to its original Canva
 
 ## Continuing the interface
 
-Stage 02 implements a compact pixel-art community replay around the existing empirical records and numerical environment. Further work should preserve visible resource transfers, accurate status panels, resident inspection, pause/step/play controls, and synchronized comparisons. Keep recorded trajectories, scripted simulations, and any future fitted-model predictions visibly distinct.
+Stages 02–03 implement pixel-art replay for empirical records, scripted simulations and trained-agent communities, including saved pre-choice predictions. Further work should preserve visible resource transfers, accurate status panels, resident inspection, pause/step/play controls, and synchronized comparisons on common numerical scales. Keep recorded trajectories, fixed scripts and fitted-model predictions visibly distinct.
 
 Future interfaces should make the experiment and model behavior observable through this visual language. They should not change the social mechanism in order to make the scene resemble a game.

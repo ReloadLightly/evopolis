@@ -1,0 +1,48 @@
+{
+  "python_tests": {
+    "full_suite_passed": 40,
+    "full_suite_seconds": 14.91,
+    "post_export_repair_generator_tests_passed": 3,
+    "post_export_repair_generator_seconds": 3.684
+  },
+  "fresh_process_validation_prediction_hashes_match": true,
+  "saved_validation_scores_reproduced": 12,
+  "prior_artifacts_unchanged": 17,
+  "prior_sha256": {
+    "results/task01/inventory.json": "468fe2a8f12c3abac5cdc79ac1e10a0475d3ed3b4d40cfbade8d8c24eeee7fb9",
+    "results/task01/replay_by_condition.csv": "5d0346050197606fd14cf9c914a119c608912e902597317ade81da7638200ba7",
+    "results/task01/runtime.json": "980e5753bd3e6abb14e90188eefa3a7de80939ebad14423d05fe97a22f1a4319",
+    "results/task01/replay_mismatches.csv": "7a1c1acf782567b2f96fd57f335cb35294bad8f55148102397f5ff8b3c566b32",
+    "results/task01/independent_check.json": "30745df2f45debf6b023f9080188801ec4b4653e7b25617059cad61677f567f4",
+    "results/task01/figure2a_summary.csv": "173cf051c4d0aba100354f1ae1f0732c043e99c03fca67432243e88310c29ca6",
+    "results/task01/rank_tests.csv": "11e3e79ac4c075eaca0b58b5a90d7de99fe2f4620e78bb367744574ccbd60f8d",
+    "results/task01/figure2a_table.md": "5c7fe2753b51ff66fcbe2d8e3aab6ecdf57fb69437c94e3174c84475fb22acb5",
+    "results/task01/figure2a_groups.csv": "9b8bfebebc03dafce7d0bad4801444d2249608d08de206c3c72c9874d1ed1d12",
+    "results/task01/manifest.json": "60216ed1ffe3935c6892c42aa807b90273087cbd5b6cd9f918a6ef8db8922489",
+    "results/task01/replay.json": "8f13be15367dcbf63deb77d67d9c1a506b9c5b0b53b1e9fb3810f2a6602312b8",
+    "results/task02/browser-verification.json": "dde662a69ef7471a68933f38c501d4874be333a8a8474de294eae30b61e10052",
+    "results/task02/verification.json": "3aed26b9fecc7ce10628d0ed4ab78e72ac8fcae249de4f1e90bd4edfd074e5de",
+    "results/task02/review-2026-10-01.json": "7d2a08e7beb2dd7c35f6bec379c86d09a91c800013ad41b38d502bf9c0980435",
+    "docs/assets/figure2a.png": "0878dea428dbf0293791785fa2914bb747619174ca64db845ecad65ee1f03d3e",
+    "docs/assets/figure2a.svg": "77158c2533c3649a9079d5db56d4579db5cec78431fcbcc5f314fe3cd9f5bfc5",
+    "docs/assets/community-viewer.png": "26d960d1ac1bda7b314e3f5cbbe8932a4b924833d756f6695d47d02d30272453"
+  },
+  "all_frozen_training_evaluation_generation_code_hashes_match": true,
+  "documentation_relative_links_resolve": true,
+  "browser_regression_flows_passed": 8,
+  "browser_trained_flows_passed": 7,
+  "screenshot": {
+    "path": "docs/assets/trained-community-viewer.png",
+    "sha256": "1390b886c8b59fd307ceed3cd67f1aac03cf624527722ba9599ebae9e3d0d317",
+    "viewport": [
+      1366,
+      900
+    ],
+    "episode_id": "trained-recurrent-17-equal-039",
+    "playback_round": 1,
+    "resident": "A",
+    "source": "actual Chromium application screenshot"
+  },
+  "independent_numerical_audit": "independent_audit.json",
+  "generated_accounting_and_reload": "generation_verification.json"
+}

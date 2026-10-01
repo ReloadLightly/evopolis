@@ -1,0 +1,30 @@
+{
+  "archive_bytes": 28114944,
+  "archive_sha256": "b131e5554d7e666fb7d5743786a7dadf73a294e3aeaa9dc27a6585b261497ff2",
+  "games": 3072,
+  "identity": {
+    "behavior_models_sha256": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+    "checkpoints": {
+      "constant_17": "c99c319cf9c64781d61deb6caada1836e56765a004db61ad3325d487e43e9538",
+      "constant_29": "57709ffb15d56b9568f688cc56441bc3ec90c3a4777a1dad918676331a755a8b",
+      "constant_43": "4d44dd4d21f404db3b0b785d5d59a737b5a01bcf0afa0588e49c58dfb161cc77",
+      "feedforward_17": "be65c3cf7720e5805db3f1eeb285d832d662e8b54d5684fc51e051e9ce4032a2",
+      "feedforward_29": "72769aecba837a6103debf4e06eb9657c7c975953a6c9238c6f38ec4da84fe6f",
+      "feedforward_43": "9f2316808439affb020d8d2382b50d0d5f2fa551c8451ed4228e82821cebbe18",
+      "linear_17": "c920fe932cf7cfad9e9e5928c07e0b5b5bab4d0732c8bd1d21c9c99063847ee2",
+      "linear_29": "1d746fff5df3a3d384c965301ae19af31b63dc48c1d5c4b1f86f1c5d36995c8c",
+      "linear_43": "cab8a69f36f55fcc0e3e6153b71856e08419caf9d5e6de8e74421260e1f115f9",
+      "recurrent_17": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+      "recurrent_29": "25143274613b933909fde59f9c7829f73581c5edb821787fdf4efeb1c2169091",
+      "recurrent_43": "83ea46a7c1f7b5874d32f28d7a0a26cb3f07d77bf57f1682801d3ac26bed14d2"
+    },
+    "config_sha256": "16e6f69d152af0247f4e1c6dac2080d520b3b0c3f8bb739a0fb18d709748f94c",
+    "generator_sha256": "42462f037bf80d9662ef7a282b99ed79ca6e5ddd2542e99a68d30758c7bd45e7",
+    "rollout_seed_table_hash": "6f881d08d22363dd3e2da568c1371637e11d9c05de05bcaf1bfaa18d779abd01",
+    "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678",
+    "world_sha256": "e8d32143f857cdaf6d780290794a9be72100492fc2f8d548d88a2d0c83cbb6b7"
+  },
+  "invocation_seconds": 31.759892715956084,
+  "padded_rounds": 122880,
+  "peak_rss_kib": 319620
+}

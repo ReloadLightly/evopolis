@@ -1,0 +1,1932 @@
+{
+  "active": "allocation>=1; all160player-rounds denominator",
+  "cells": [
+    {
+      "active_allocation_fraction": {
+        "mean": 0.327734375,
+        "median": 0.325,
+        "q10": 0.2,
+        "q90": 0.425
+      },
+      "actual_rounds": {
+        "mean": 14.046875,
+        "median": 13.5,
+        "q10": 9.0,
+        "q90": 18.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.1325260566282468,
+        "median": 0.12544696066746125,
+        "q10": 0.07384054643554132,
+        "q90": 0.19370057022756315
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.48140625,
+        "median": 2.3662499999999995,
+        "q10": 1.8094999999999999,
+        "q90": 3.31125
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.18369140625000002,
+        "median": 0.175,
+        "q10": 0.108125,
+        "q90": 0.27937500000000004
+      },
+      "actual_rounds": {
+        "mean": 12.21875,
+        "median": 12.0,
+        "q10": 6.600000000000001,
+        "q90": 18.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.16938501980939322,
+        "median": 0.16047226040852938,
+        "q10": 0.06577690643962944,
+        "q90": 0.25260443950265976
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 2.6416992187499995,
+        "median": 2.3949999999999996,
+        "q10": 1.8297499999999998,
+        "q90": 3.7910000000000004
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.29853515625000004,
+        "median": 0.284375,
+        "q10": 0.175,
+        "q90": 0.43125
+      },
+      "actual_rounds": {
+        "mean": 13.40625,
+        "median": 13.0,
+        "q10": 8.0,
+        "q90": 19.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.05982392840946156,
+        "median": 0.05736303399554317,
+        "q10": 0.030031001549265766,
+        "q90": 0.09106567078558335
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.5012890624999997,
+        "median": 2.3774999999999995,
+        "q10": 1.8492499999999998,
+        "q90": 3.4438749999999994
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.15087890625,
+        "median": 0.14375,
+        "q10": 0.083125,
+        "q90": 0.22312500000000002
+      },
+      "actual_rounds": {
+        "mean": 11.1875,
+        "median": 11.0,
+        "q10": 6.0,
+        "q90": 18.400000000000006
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.20552853902166424,
+        "median": 0.19222450762019438,
+        "q10": 0.08660091155106107,
+        "q90": 0.3396523283881789
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 2.4764453124999997,
+        "median": 2.24625,
+        "q10": 1.71275,
+        "q90": 3.4250000000000003
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.319921875,
+        "median": 0.3,
+        "q10": 0.175,
+        "q90": 0.4675000000000001
+      },
+      "actual_rounds": {
+        "mean": 13.65625,
+        "median": 13.0,
+        "q10": 8.0,
+        "q90": 19.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.12201452025952184,
+        "median": 0.12295374726750186,
+        "q10": 0.05392648507882885,
+        "q90": 0.19312562817188025
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.4855078125,
+        "median": 2.4074999999999998,
+        "q10": 1.6915,
+        "q90": 3.471875
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.16298828124999998,
+        "median": 0.15,
+        "q10": 0.09375,
+        "q90": 0.23812500000000006
+      },
+      "actual_rounds": {
+        "mean": 11.03125,
+        "median": 11.0,
+        "q10": 6.0,
+        "q90": 16.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.1652533103365333,
+        "median": 0.1758641942310662,
+        "q10": 0.061902430587930435,
+        "q90": 0.2728667977141478
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 2.3440234374999998,
+        "median": 2.28125,
+        "q10": 1.599,
+        "q90": 3.0346249999999997
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.2783203125,
+        "median": 0.275,
+        "q10": 0.149375,
+        "q90": 0.398125
+      },
+      "actual_rounds": {
+        "mean": 12.59375,
+        "median": 12.0,
+        "q10": 7.0,
+        "q90": 17.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.06207764145458439,
+        "median": 0.060404077590962495,
+        "q10": 0.029499946349929404,
+        "q90": 0.0951744562522285
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.3646093749999997,
+        "median": 2.205,
+        "q10": 1.71325,
+        "q90": 3.21725
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.1642578125,
+        "median": 0.15625,
+        "q10": 0.089375,
+        "q90": 0.235625
+      },
+      "actual_rounds": {
+        "mean": 12.5,
+        "median": 12.5,
+        "q10": 6.300000000000001,
+        "q90": 18.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.20346755148778634,
+        "median": 0.17610843961325273,
+        "q10": 0.11839364959201015,
+        "q90": 0.35333707891296284
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 2.4356835937499994,
+        "median": 2.2318749999999996,
+        "q10": 1.76425,
+        "q90": 3.1371249999999997
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.31796875,
+        "median": 0.3,
+        "q10": 0.225,
+        "q90": 0.45
+      },
+      "actual_rounds": {
+        "mean": 13.6875,
+        "median": 13.0,
+        "q10": 9.3,
+        "q90": 19.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.11386399080028631,
+        "median": 0.11475651198192284,
+        "q10": 0.05004068228025661,
+        "q90": 0.17950809823361535
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.4994531249999996,
+        "median": 2.3706249999999995,
+        "q10": 1.823,
+        "q90": 3.6159999999999997
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.17626953125,
+        "median": 0.175,
+        "q10": 0.095625,
+        "q90": 0.254375
+      },
+      "actual_rounds": {
+        "mean": 12.3125,
+        "median": 11.0,
+        "q10": 7.0,
+        "q90": 20.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.17754554802954742,
+        "median": 0.17078377313756127,
+        "q10": 0.09269109919667684,
+        "q90": 0.267958232958298
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 2.4966015624999995,
+        "median": 2.4624999999999995,
+        "q10": 1.70525,
+        "q90": 3.254125
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.30537109375000004,
+        "median": 0.2875,
+        "q10": 0.19375,
+        "q90": 0.448125
+      },
+      "actual_rounds": {
+        "mean": 13.90625,
+        "median": 13.0,
+        "q10": 10.0,
+        "q90": 19.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.05721344707208352,
+        "median": 0.05063956648350007,
+        "q10": 0.03068900271202655,
+        "q90": 0.09496862070004426
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.5072656249999996,
+        "median": 2.3099999999999996,
+        "q10": 1.9384999999999997,
+        "q90": 3.3403749999999994
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.154296875,
+        "median": 0.153125,
+        "q10": 0.083125,
+        "q90": 0.210625
+      },
+      "actual_rounds": {
+        "mean": 11.90625,
+        "median": 11.0,
+        "q10": 6.0,
+        "q90": 19.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "constant",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.2189085155002244,
+        "median": 0.19854189553580343,
+        "q10": 0.09941230141691706,
+        "q90": 0.3592320323074533
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 2.5394140624999997,
+        "median": 2.3449999999999998,
+        "q10": 1.7538749999999999,
+        "q90": 3.6033750000000007
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.29023437500000004,
+        "median": 0.275,
+        "q10": 0.2,
+        "q90": 0.4
+      },
+      "actual_rounds": {
+        "mean": 12.59375,
+        "median": 12.0,
+        "q10": 9.0,
+        "q90": 17.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.13690455395753304,
+        "median": 0.13794629335150688,
+        "q10": 0.05624928169175959,
+        "q90": 0.208931842095008
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 1.9814453125,
+        "median": 1.9074999999999998,
+        "q10": 1.629,
+        "q90": 2.43025
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.29736328125,
+        "median": 0.234375,
+        "q10": 0.125,
+        "q90": 0.581875
+      },
+      "actual_rounds": {
+        "mean": 20.84375,
+        "median": 18.0,
+        "q10": 8.3,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.828125,
+      "exact_zero_termination_fraction": 0.828125,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 11.85625,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 25.760000000000048
+      },
+      "final_sustainment_fraction": 0.171875,
+      "games": 64,
+      "gini": {
+        "mean": 0.21676630016665846,
+        "median": 0.18744716159146288,
+        "q10": 0.09877923064913346,
+        "q90": 0.3770594499215767
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 3.9275781249999993,
+        "median": 2.6624999999999996,
+        "q10": 1.6602499999999998,
+        "q90": 8.347375
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.2693359375,
+        "median": 0.2625,
+        "q10": 0.17875,
+        "q90": 0.366875
+      },
+      "actual_rounds": {
+        "mean": 12.4375,
+        "median": 12.0,
+        "q10": 8.3,
+        "q90": 16.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.059766474643788245,
+        "median": 0.05541886863675584,
+        "q10": 0.02810950873701604,
+        "q90": 0.0961351916607649
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.2249414062499997,
+        "median": 2.00875,
+        "q10": 1.6199999999999999,
+        "q90": 3.0482500000000003
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.24072265625,
+        "median": 0.225,
+        "q10": 0.11875,
+        "q90": 0.4081250000000002
+      },
+      "actual_rounds": {
+        "mean": 21.53125,
+        "median": 16.5,
+        "q10": 8.0,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.71875,
+      "exact_zero_termination_fraction": 0.71875,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 46.36875,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 200.0
+      },
+      "final_sustainment_fraction": 0.28125,
+      "games": 64,
+      "gini": {
+        "mean": 0.309592805518907,
+        "median": 0.23886777584397986,
+        "q10": 0.09103275447042643,
+        "q90": 0.5984490599708883
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 3.977207031249999,
+        "median": 2.2699999999999996,
+        "q10": 1.702,
+        "q90": 8.28225
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.27265625,
+        "median": 0.25,
+        "q10": 0.175,
+        "q90": 0.36750000000000005
+      },
+      "actual_rounds": {
+        "mean": 11.8125,
+        "median": 11.0,
+        "q10": 8.0,
+        "q90": 15.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.11396428187673563,
+        "median": 0.10638464484904026,
+        "q10": 0.0599322892089672,
+        "q90": 0.18789642936349527
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.0017968749999997,
+        "median": 1.96,
+        "q10": 1.60575,
+        "q90": 2.41925
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.29267578125000004,
+        "median": 0.2375,
+        "q10": 0.139375,
+        "q90": 0.5618750000000001
+      },
+      "actual_rounds": {
+        "mean": 20.0625,
+        "median": 18.5,
+        "q10": 10.0,
+        "q90": 39.7
+      },
+      "depleted_fraction": 0.890625,
+      "exact_zero_termination_fraction": 0.890625,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 11.506250000000001,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 48.020000000000195
+      },
+      "final_sustainment_fraction": 0.109375,
+      "games": 64,
+      "gini": {
+        "mean": 0.20352787382055032,
+        "median": 0.1912707674564048,
+        "q10": 0.07002583638020558,
+        "q90": 0.34740402282621463
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 3.7734765624999995,
+        "median": 2.5737499999999995,
+        "q10": 1.776,
+        "q90": 8.416625000000002
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.283203125,
+        "median": 0.2875,
+        "q10": 0.183125,
+        "q90": 0.40437500000000004
+      },
+      "actual_rounds": {
+        "mean": 12.984375,
+        "median": 13.0,
+        "q10": 9.0,
+        "q90": 18.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.06561225686535144,
+        "median": 0.06228429490199775,
+        "q10": 0.032558131498053505,
+        "q90": 0.09942645126244182
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.1679492187499996,
+        "median": 2.1187499999999995,
+        "q10": 1.6139999999999999,
+        "q90": 2.72875
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.247265625,
+        "median": 0.2125,
+        "q10": 0.12687500000000002,
+        "q90": 0.429375
+      },
+      "actual_rounds": {
+        "mean": 20.25,
+        "median": 15.5,
+        "q10": 8.0,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.8125,
+      "exact_zero_termination_fraction": 0.8125,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 28.9875,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 177.24000000000007
+      },
+      "final_sustainment_fraction": 0.1875,
+      "games": 64,
+      "gini": {
+        "mean": 0.27041844900720824,
+        "median": 0.22262567229351937,
+        "q10": 0.09252920106801268,
+        "q90": 0.5364306293752289
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 3.6182226562499995,
+        "median": 2.275,
+        "q10": 1.71025,
+        "q90": 7.359249999999999
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.26484375,
+        "median": 0.25,
+        "q10": 0.175,
+        "q90": 0.39250000000000007
+      },
+      "actual_rounds": {
+        "mean": 11.53125,
+        "median": 11.0,
+        "q10": 8.0,
+        "q90": 16.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.12208446633190279,
+        "median": 0.11377672669053848,
+        "q10": 0.054569930046657764,
+        "q90": 0.21710346710346715
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.0725390624999998,
+        "median": 2.0025,
+        "q10": 1.60825,
+        "q90": 2.5062499999999996
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.281640625,
+        "median": 0.21875,
+        "q10": 0.13312500000000002,
+        "q90": 0.53625
+      },
+      "actual_rounds": {
+        "mean": 21.359375,
+        "median": 18.0,
+        "q10": 9.0,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.8125,
+      "exact_zero_termination_fraction": 0.8125,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 22.549999999999997,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 126.98000000000008
+      },
+      "final_sustainment_fraction": 0.1875,
+      "games": 64,
+      "gini": {
+        "mean": 0.2312469675686524,
+        "median": 0.2102254383188586,
+        "q10": 0.10851660817888029,
+        "q90": 0.39996109691993015
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 3.695878906249999,
+        "median": 2.6937499999999996,
+        "q10": 1.80425,
+        "q90": 8.102124999999997
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.28437500000000004,
+        "median": 0.26875,
+        "q10": 0.183125,
+        "q90": 0.41125000000000006
+      },
+      "actual_rounds": {
+        "mean": 13.171875,
+        "median": 12.0,
+        "q10": 9.0,
+        "q90": 18.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.06562053604134457,
+        "median": 0.06852853893449908,
+        "q10": 0.03398883269080805,
+        "q90": 0.09321844372597708
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.1996875,
+        "median": 2.0349999999999997,
+        "q10": 1.61775,
+        "q90": 3.0822499999999997
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.2708984375,
+        "median": 0.259375,
+        "q10": 0.139375,
+        "q90": 0.42125
+      },
+      "actual_rounds": {
+        "mean": 24.734375,
+        "median": 23.5,
+        "q10": 8.3,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.671875,
+      "exact_zero_termination_fraction": 0.671875,
+      "family": "feedforward",
+      "final_pool": {
+        "mean": 63.928124999999994,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 200.0
+      },
+      "final_sustainment_fraction": 0.328125,
+      "games": 64,
+      "gini": {
+        "mean": 0.34907796222287035,
+        "median": 0.33810823636676157,
+        "q10": 0.0906176593024293,
+        "q90": 0.578850962651191
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 4.756191406249999,
+        "median": 3.259375,
+        "q10": 1.8244999999999998,
+        "q90": 8.983
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.29179687500000007,
+        "median": 0.2875,
+        "q10": 0.175,
+        "q90": 0.4175000000000001
+      },
+      "actual_rounds": {
+        "mean": 12.625,
+        "median": 12.0,
+        "q10": 8.0,
+        "q90": 17.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.11506445650121601,
+        "median": 0.11268534359851726,
+        "q10": 0.06314027818265108,
+        "q90": 0.1771896139849524
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.4491601562499996,
+        "median": 2.3324999999999996,
+        "q10": 1.7467499999999998,
+        "q90": 3.3621249999999994
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.23085937499999998,
+        "median": 0.19687500000000002,
+        "q10": 0.11625,
+        "q90": 0.3775000000000002
+      },
+      "actual_rounds": {
+        "mean": 14.21875,
+        "median": 12.5,
+        "q10": 7.300000000000001,
+        "q90": 22.400000000000006
+      },
+      "depleted_fraction": 0.96875,
+      "exact_zero_termination_fraction": 0.96875,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.7656249999999999,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.03125,
+      "games": 64,
+      "gini": {
+        "mean": 0.14788490339950947,
+        "median": 0.15340945744255002,
+        "q10": 0.059932515147983145,
+        "q90": 0.2336630904008289
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 3.1086914062499997,
+        "median": 2.6118749999999995,
+        "q10": 1.8675,
+        "q90": 5.033000000000001
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.2841796875,
+        "median": 0.275,
+        "q10": 0.16,
+        "q90": 0.4375
+      },
+      "actual_rounds": {
+        "mean": 12.71875,
+        "median": 12.0,
+        "q10": 7.300000000000001,
+        "q90": 20.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.05781239133527699,
+        "median": 0.05712151448581873,
+        "q10": 0.026599004007689102,
+        "q90": 0.0896487653439909
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.6797070312499995,
+        "median": 2.600625,
+        "q10": 1.7610000000000001,
+        "q90": 3.8042499999999997
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.18701171875,
+        "median": 0.17812499999999998,
+        "q10": 0.0875,
+        "q90": 0.31062500000000004
+      },
+      "actual_rounds": {
+        "mean": 12.125,
+        "median": 11.0,
+        "q10": 6.0,
+        "q90": 19.80000000000001
+      },
+      "depleted_fraction": 0.96875,
+      "exact_zero_termination_fraction": 0.96875,
+      "family": "linear",
+      "final_pool": {
+        "mean": 6.25,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.03125,
+      "games": 64,
+      "gini": {
+        "mean": 0.19234027480875499,
+        "median": 0.15972396893643442,
+        "q10": 0.08165809496531884,
+        "q90": 0.3410083204103363
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 2.916953125,
+        "median": 2.4362499999999994,
+        "q10": 1.6682500000000002,
+        "q90": 4.075874999999999
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.277734375,
+        "median": 0.275,
+        "q10": 0.175,
+        "q90": 0.3850000000000002
+      },
+      "actual_rounds": {
+        "mean": 12.03125,
+        "median": 12.0,
+        "q10": 8.0,
+        "q90": 16.400000000000006
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.11623902656716853,
+        "median": 0.11354304432073326,
+        "q10": 0.05700236624026125,
+        "q90": 0.17574144377327228
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.3760742187499995,
+        "median": 2.2474999999999996,
+        "q10": 1.7489999999999999,
+        "q90": 3.385125
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.223046875,
+        "median": 0.2,
+        "q10": 0.10625,
+        "q90": 0.3762500000000001
+      },
+      "actual_rounds": {
+        "mean": 12.96875,
+        "median": 12.0,
+        "q10": 7.0,
+        "q90": 20.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.14915645733121402,
+        "median": 0.13201085561660214,
+        "q10": 0.07631868062870398,
+        "q90": 0.24576808300470193
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 3.0671874999999993,
+        "median": 2.59,
+        "q10": 1.8054999999999999,
+        "q90": 4.988
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.283984375,
+        "median": 0.2875,
+        "q10": 0.183125,
+        "q90": 0.379375
+      },
+      "actual_rounds": {
+        "mean": 12.84375,
+        "median": 13.0,
+        "q10": 9.0,
+        "q90": 16.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.0588647783303223,
+        "median": 0.05542626675582844,
+        "q10": 0.029593924302155898,
+        "q90": 0.093519975039891
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.5379687499999997,
+        "median": 2.3831249999999997,
+        "q10": 1.79925,
+        "q90": 3.3109999999999995
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.20732421874999998,
+        "median": 0.19687500000000002,
+        "q10": 0.125,
+        "q90": 0.29375
+      },
+      "actual_rounds": {
+        "mean": 14.453125,
+        "median": 13.0,
+        "q10": 8.0,
+        "q90": 24.700000000000003
+      },
+      "depleted_fraction": 0.953125,
+      "exact_zero_termination_fraction": 0.953125,
+      "family": "linear",
+      "final_pool": {
+        "mean": 6.271875,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.046875,
+      "games": 64,
+      "gini": {
+        "mean": 0.23959286600948282,
+        "median": 0.21536962639315732,
+        "q10": 0.1158871607241172,
+        "q90": 0.44226959826460144
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 3.0778320312499994,
+        "median": 2.425,
+        "q10": 1.9557499999999999,
+        "q90": 4.727874999999999
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.295703125,
+        "median": 0.275,
+        "q10": 0.2,
+        "q90": 0.4175000000000001
+      },
+      "actual_rounds": {
+        "mean": 12.796875,
+        "median": 12.0,
+        "q10": 9.0,
+        "q90": 17.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.1116954476399521,
+        "median": 0.10479591836734697,
+        "q10": 0.05896305524941301,
+        "q90": 0.16643268720850898
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.5597460937499994,
+        "median": 2.4375,
+        "q10": 1.87725,
+        "q90": 3.397
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.22275390625000002,
+        "median": 0.2,
+        "q10": 0.125,
+        "q90": 0.37187500000000007
+      },
+      "actual_rounds": {
+        "mean": 13.34375,
+        "median": 12.0,
+        "q10": 7.300000000000001,
+        "q90": 20.700000000000003
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.15043649001064024,
+        "median": 0.13766784855449782,
+        "q10": 0.05494296931093391,
+        "q90": 0.2558231781773319
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 2.9754296874999997,
+        "median": 2.5874999999999995,
+        "q10": 1.9329999999999998,
+        "q90": 4.576375
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.26738281249999996,
+        "median": 0.265625,
+        "q10": 0.1625,
+        "q90": 0.37125
+      },
+      "actual_rounds": {
+        "mean": 12.03125,
+        "median": 12.0,
+        "q10": 7.300000000000001,
+        "q90": 16.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.05455847686509492,
+        "median": 0.0514522517236321,
+        "q10": 0.028969383035796877,
+        "q90": 0.0855594912970986
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.53490234375,
+        "median": 2.51,
+        "q10": 1.7472499999999997,
+        "q90": 3.2887499999999994
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.21064453125,
+        "median": 0.19375,
+        "q10": 0.11875,
+        "q90": 0.3425000000000001
+      },
+      "actual_rounds": {
+        "mean": 13.953125,
+        "median": 12.0,
+        "q10": 7.0,
+        "q90": 23.0
+      },
+      "depleted_fraction": 0.984375,
+      "exact_zero_termination_fraction": 0.984375,
+      "family": "linear",
+      "final_pool": {
+        "mean": 0.546875,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.015625,
+      "games": 64,
+      "gini": {
+        "mean": 0.22594021075742296,
+        "median": 0.18317264544398687,
+        "q10": 0.08393744128065737,
+        "q90": 0.46606781708163764
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 3.16279296875,
+        "median": 2.4462499999999996,
+        "q10": 1.86425,
+        "q90": 5.692875
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.2390625,
+        "median": 0.1875,
+        "q10": 0.1,
+        "q90": 0.4175000000000001
+      },
+      "actual_rounds": {
+        "mean": 10.4375,
+        "median": 8.0,
+        "q10": 5.0,
+        "q90": 17.700000000000003
+      },
+      "depleted_fraction": 0.984375,
+      "exact_zero_termination_fraction": 0.984375,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 1.4874999999999998,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.015625,
+      "games": 64,
+      "gini": {
+        "mean": 0.117927784200206,
+        "median": 0.11718315661626975,
+        "q10": 0.05663220733838092,
+        "q90": 0.1797077155745157
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 1.9386328124999999,
+        "median": 1.7199999999999998,
+        "q10": 1.409,
+        "q90": 2.5915
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.2259765625,
+        "median": 0.18125,
+        "q10": 0.08125,
+        "q90": 0.48562500000000003
+      },
+      "actual_rounds": {
+        "mean": 18.109375,
+        "median": 12.5,
+        "q10": 5.300000000000001,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.859375,
+      "exact_zero_termination_fraction": 0.859375,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 10.278125,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 14.980000000000002
+      },
+      "final_sustainment_fraction": 0.140625,
+      "games": 64,
+      "gini": {
+        "mean": 0.19555367851018102,
+        "median": 0.18552755990872105,
+        "q10": 0.053548977456097255,
+        "q90": 0.36582606567605985
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 3.0174804687499996,
+        "median": 2.07875,
+        "q10": 1.4465,
+        "q90": 6.406874999999999
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.24326171875,
+        "median": 0.16875,
+        "q10": 0.125,
+        "q90": 0.4
+      },
+      "actual_rounds": {
+        "mean": 11.359375,
+        "median": 8.0,
+        "q10": 6.0,
+        "q90": 18.700000000000003
+      },
+      "depleted_fraction": 0.984375,
+      "exact_zero_termination_fraction": 0.984375,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 0.65625,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.015625,
+      "games": 64,
+      "gini": {
+        "mean": 0.056238808475791574,
+        "median": 0.05296883970867461,
+        "q10": 0.025370234604105594,
+        "q90": 0.0877638862891671
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.0310156249999998,
+        "median": 1.7325,
+        "q10": 1.4822499999999998,
+        "q90": 2.6363749999999997
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.22109375,
+        "median": 0.19375,
+        "q10": 0.089375,
+        "q90": 0.39
+      },
+      "actual_rounds": {
+        "mean": 19.453125,
+        "median": 16.5,
+        "q10": 6.0,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.84375,
+      "exact_zero_termination_fraction": 0.84375,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 24.793750000000003,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 145.46000000000015
+      },
+      "final_sustainment_fraction": 0.15625,
+      "games": 64,
+      "gini": {
+        "mean": 0.26211720389120663,
+        "median": 0.20530876148188676,
+        "q10": 0.060627145883556145,
+        "q90": 0.5647878485892428
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 3.3715624999999996,
+        "median": 2.4499999999999997,
+        "q10": 1.5,
+        "q90": 7.448874999999999
+      },
+      "training_seed": 17,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.263671875,
+        "median": 0.1875,
+        "q10": 0.125,
+        "q90": 0.43500000000000016
+      },
+      "actual_rounds": {
+        "mean": 11.421875,
+        "median": 8.5,
+        "q10": 6.0,
+        "q90": 18.400000000000006
+      },
+      "depleted_fraction": 0.9375,
+      "exact_zero_termination_fraction": 0.9375,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 2.603125,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0625,
+      "games": 64,
+      "gini": {
+        "mean": 0.11004578443699092,
+        "median": 0.11137123945139299,
+        "q10": 0.05354260618512173,
+        "q90": 0.16833964847481378
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 2.10619140625,
+        "median": 1.7287499999999998,
+        "q10": 1.4649999999999999,
+        "q90": 2.589
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.34443359375,
+        "median": 0.215625,
+        "q10": 0.095625,
+        "q90": 0.7275
+      },
+      "actual_rounds": {
+        "mean": 22.640625,
+        "median": 18.0,
+        "q10": 6.0,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.640625,
+      "exact_zero_termination_fraction": 0.640625,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 49.796875,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 177.38000000000005
+      },
+      "final_sustainment_fraction": 0.359375,
+      "games": 64,
+      "gini": {
+        "mean": 0.1716036226571335,
+        "median": 0.13350187442149028,
+        "q10": 0.05235864335639909,
+        "q90": 0.33039774514910963
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 4.253339843749999,
+        "median": 2.5437499999999997,
+        "q10": 1.50725,
+        "q90": 9.029374999999998
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.38662109375,
+        "median": 0.2375,
+        "q10": 0.14125000000000001,
+        "q90": 1.0
+      },
+      "actual_rounds": {
+        "mean": 17.09375,
+        "median": 12.0,
+        "q10": 7.0,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.875,
+      "exact_zero_termination_fraction": 0.875,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 8.859374999999998,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 19.460000000000026
+      },
+      "final_sustainment_fraction": 0.125,
+      "games": 64,
+      "gini": {
+        "mean": 0.056305301509595174,
+        "median": 0.04898470464135023,
+        "q10": 0.029263069156401093,
+        "q90": 0.09548057235399196
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 2.6715625,
+        "median": 1.9349999999999998,
+        "q10": 1.5897499999999998,
+        "q90": 5.188249999999999
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.2234375,
+        "median": 0.171875,
+        "q10": 0.08125,
+        "q90": 0.4025
+      },
+      "actual_rounds": {
+        "mean": 19.640625,
+        "median": 14.0,
+        "q10": 6.0,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.796875,
+      "exact_zero_termination_fraction": 0.796875,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 30.603125,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 191.66000000000008
+      },
+      "final_sustainment_fraction": 0.203125,
+      "games": 64,
+      "gini": {
+        "mean": 0.28364700313394203,
+        "median": 0.22974697058666524,
+        "q10": 0.06401566385967976,
+        "q90": 0.567593571703476
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 3.7003320312499994,
+        "median": 2.2112499999999997,
+        "q10": 1.522,
+        "q90": 8.327874999999999
+      },
+      "training_seed": 29,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.23906249999999998,
+        "median": 0.175,
+        "q10": 0.125,
+        "q90": 0.43500000000000016
+      },
+      "actual_rounds": {
+        "mean": 10.375,
+        "median": 8.0,
+        "q10": 5.0,
+        "q90": 18.400000000000006
+      },
+      "depleted_fraction": 0.96875,
+      "exact_zero_termination_fraction": 0.96875,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 3.671875,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.03125,
+      "games": 64,
+      "gini": {
+        "mean": 0.10925271222916796,
+        "median": 0.09895143281259662,
+        "q10": 0.047680607252096475,
+        "q90": 0.17488930589525178
+      },
+      "mechanism": "Equal",
+      "surplus": {
+        "mean": 1.9935937499999996,
+        "median": 1.7362499999999998,
+        "q10": 1.4685,
+        "q90": 2.654000000000001
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.30595703124999996,
+        "median": 0.190625,
+        "q10": 0.108125,
+        "q90": 0.62375
+      },
+      "actual_rounds": {
+        "mean": 21.140625,
+        "median": 16.0,
+        "q10": 6.300000000000001,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.71875,
+      "exact_zero_termination_fraction": 0.71875,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 33.224999999999994,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 156.52
+      },
+      "final_sustainment_fraction": 0.28125,
+      "games": 64,
+      "gini": {
+        "mean": 0.18614271999963342,
+        "median": 0.16860202308703467,
+        "q10": 0.06368990420838286,
+        "q90": 0.3273432690415755
+      },
+      "mechanism": "Interpolating",
+      "surplus": {
+        "mean": 4.070546875,
+        "median": 2.3674999999999997,
+        "q10": 1.6215,
+        "q90": 8.987749999999998
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.21767578124999998,
+        "median": 0.20625,
+        "q10": 0.114375,
+        "q90": 0.36062500000000003
+      },
+      "actual_rounds": {
+        "mean": 10.40625,
+        "median": 10.0,
+        "q10": 6.0,
+        "q90": 17.0
+      },
+      "depleted_fraction": 1.0,
+      "exact_zero_termination_fraction": 1.0,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 0.0
+      },
+      "final_sustainment_fraction": 0.0,
+      "games": 64,
+      "gini": {
+        "mean": 0.05652056484074548,
+        "median": 0.05606501076569136,
+        "q10": 0.028111699168219876,
+        "q90": 0.08157954505832538
+      },
+      "mechanism": "Mixed",
+      "surplus": {
+        "mean": 1.8326562499999999,
+        "median": 1.75,
+        "q10": 1.4969999999999999,
+        "q90": 2.26325
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    },
+    {
+      "active_allocation_fraction": {
+        "mean": 0.22236328125000002,
+        "median": 0.1875,
+        "q10": 0.076875,
+        "q90": 0.41937500000000005
+      },
+      "actual_rounds": {
+        "mean": 20.4375,
+        "median": 16.0,
+        "q10": 4.300000000000001,
+        "q90": 40.0
+      },
+      "depleted_fraction": 0.796875,
+      "exact_zero_termination_fraction": 0.796875,
+      "family": "recurrent",
+      "final_pool": {
+        "mean": 30.56875,
+        "median": 0.0,
+        "q10": 0.0,
+        "q90": 168.56
+      },
+      "final_sustainment_fraction": 0.203125,
+      "games": 64,
+      "gini": {
+        "mean": 0.2816027598856732,
+        "median": 0.22219350287210393,
+        "q10": 0.06797217577108879,
+        "q90": 0.586425142238712
+      },
+      "mechanism": "Proportional",
+      "surplus": {
+        "mean": 3.6165234374999997,
+        "median": 2.16125,
+        "q10": 1.5444999999999998,
+        "q90": 8.065
+      },
+      "training_seed": 43,
+      "undefined_gini": 0
+    }
+  ],
+  "depletion": "any post-round pool <1",
+  "exact_zero": "simulation ends at exactly zero",
+  "games": 3072,
+  "quantiles": "descriptive game distribution, not human confidence intervals",
+  "surplus_denominator": 160,
+  "sustainment": "pool after40rounds>1",
+  "unit": "new independent simulated game, not human participants"
+}

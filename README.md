@@ -13,7 +13,7 @@ EvoPolis is a research project at the intersection of computational social scien
 
 The first world is a community sharing a productive resource. Its inhabitants receive allocations, decide what to retain, and choose what to return to the commons. Their choices can sustain mutual prosperity, concentrate opportunities, or exhaust the resource on which everyone depends. The research follows two connected problems: learning a faithful model of those choices, and discovering institutions that work across plausible models of human behavior.
 
-**Current state:** the empirical comparison is reproduced, and a working 16-bit community viewer replays all 2,208 Figure 2A episodes with resident inspection and synchronized comparisons. A separate scripted sandbox runs four allocation baselines through the numerical environment. Behavioral training and evolutionary search remain planned. The cover is concept art; the viewer screenshot and empirical figure below show working software and measured evidence.
+**Current state:** the empirical comparison is reproduced, and **12 behavioral models have been trained and evaluated on human Experiment 1**. The 16-bit viewer exposes 2,208 recorded episodes, 3,072 newly generated communities, resident predictions, synchronized comparisons and a separate scripted sandbox. Added recurrent memory has no clear predictive advantage over the feedforward control, and generated communities still miss important human outcomes. Trajectory validation is next; evolutionary search remains planned. The cover is concept art; screenshots and research figures below show working software and measured evidence.
 
 ## The research question
 
@@ -79,7 +79,7 @@ In that default community, **playback round 12** (source `round_id=11`) offers e
 
 Comparison mode places two independently selected episodes on the same playback clock. These are different observed groups, not the same people under alternative institutions. The separate **scripted sandbox** assigns each resident an editable fraction `q`, returns `floor(q × allocation)`, and runs Equal, Proportional, Mixed or Interpolating allocation using the Python environment. Settings edits begin a new run. These fixed scripts are neither trained agents nor predictions of human behavior.
 
-The [viewer guide](docs/viewer.md) explains controls, source semantics, and limitations. In particular, the final BC1 next-pool value is unavailable; observed trajectories preserve the source's residuals, while scripted runs stop at exact zero or 40 rounds. Task 03 will introduce the first trained behavioral agents.
+The [viewer guide](docs/viewer.md) explains controls, source semantics, and limitations. In particular, the final BC1 next-pool value is unavailable; observed trajectories preserve the source's residuals, while scripted runs stop at exact zero or 40 rounds. The trained-agent source described below now adds newly generated behavior without modifying recorded episodes.
 
 ## First empirical result: surplus and inequality
 
@@ -105,6 +105,34 @@ Gini is computed across each game's four players' mean surplus, then averaged ac
 **What this establishes.** The released human and BC1 outcomes reproduce the published comparison. EvoPolis newly implements the resource equation and equal, proportional, mixed, and interpolating baselines; it has not trained BC1, recreated the upstream RL network, or generated the plotted outcomes. The CSV contains **24,422 human** and **143,360 synthetic** round records. It does not identify the original BC1 training cohort, and it lacks participant identifiers that could link people across separate groups.
 
 **Numerical limit.** The published equation is executable, but the unreleased simulator is not exactly reconstructed. Auditing all 167,782 records finds pool-transition residuals, including an apparent 0.01-unit floor in depleted games and smaller precision effects. Affected records and tolerances are preserved in the [replay audit](docs/protocol.md#what-the-recorded-transitions-actually-show), rather than silently corrected. These discrepancies do not alter Figure 2A, which uses the recorded player rewards. This reproduction is descriptive evidence from the released evaluation games, not a held-out test of a new behavioral model.
+
+## First trained inhabitants: prediction before prosperity
+
+Task 03 fits Constant, Linear, Feedforward and Recurrent GRU response distributions, each with three training seeds and 120 epochs. All use the same nine pre-decision inputs and legal integer support. Human Experiment 1 supplies **96 training, 32 validation and 32 test groups**, split by complete interacting group and mechanism. The primary score excludes mechanically forced zeros: the test contains **2,439 nonforced choices**, with choices averaged within groups and mechanisms weighted equally.
+
+| Predictor | Test NLL, nats per nonforced choice ↓ | Mean absolute error, units ↓ |
+| :--- | ---: | ---: |
+| Uniform, unfitted | 2.959 | 10.064 |
+| Constant | 2.922 | 8.697 |
+| Linear | 2.862 | 6.442 |
+| Feedforward, 4,285 parameters | 2.724 | 5.642 |
+| GRU, 4,293 parameters | **2.694** | **5.529** |
+
+The models learned useful conditional response distributions: mean GRU validation NLL fell from **3.408 at initialization to 2.649 after fitting**. But **additional recurrent memory has no clear demonstrated advantage**. GRU minus feedforward test NLL is **−0.029**, with a paired 95% group-bootstrap interval of **[−0.064, +0.006]**. The feedforward control already receives previous contributions. Three optimization seeds are averaged within each group before 2,000 paired, mechanism-stratified bootstrap draws; they are not additional human replications.
+
+![Measured held-out human prediction and zero/maximum-return calibration for the trained behavioral models.](docs/assets/task03-prediction.png)
+
+Calibration remains imperfect: the GRU predicts maximum-feasible returns **19.43%** of the time versus **16.18%** observed under the declared group weights. All checkpoints, [actual learning curves](docs/assets/task03-learning-curves.png), [per-group metrics](results/task03/prediction_groups.csv), [seed/mechanism results and uncertainty](results/task03/prediction_summary.json), and [the full experiment report](docs/behavioral-agents.md) are available. These are new EvoPolis fits, not recreated upstream BC1 networks. Test groups were held out from this fitting and selection, but Task 01 had already described them; their published outcomes cannot be pristine confirmation for later searches.
+
+### Watch learned choices become a community
+
+![Real running EvoPolis viewer showing trained GRU inhabitants, checkpoint and rollout identity, sampled choices, and saved before-choice predictions.](docs/assets/trained-community-viewer.png)
+
+Launch `bash scripts/viewer.sh --port 8765`, then open **http://127.0.0.1:8765/?mode=trained**. Select **New trained EvoPolis agents** to choose any family, checkpoint, allocation rule and rollout seed. Playback shows saved pre-choice expected returns and endpoint probabilities beside actual sampled actions. Comparison panes use common rounds and shared numerical scales; post-termination padding is marked explicitly. Recorded humans, upstream models and fixed scripts remain distinct sources.
+
+Every best-validation checkpoint generates 64 games under each of Equal, Proportional, Mixed and Interpolating: **3,072 games, with none filtered for success**. Weights remain frozen while each GRU resident updates its own memory. The default is the median-surplus Equal game for predeclared training seed 17: rollout **4128699797167127739**, checkpoint epoch **116**. Its first-round expected return is **22.188** from an offer of 50; the four independent samples are **26, 38, 26 and 14**. It reaches exact zero after round 9.
+
+The [generated outcome distributions](docs/assets/trained-outcomes.png) and [pool/participation trajectories](docs/assets/trained-trajectories.png) expose a substantial gap. GRU mean surplus under Equal/Mixed/Proportional is **2.013/2.178/3.563**, compared with **1.788/5.594/6.756** in the corresponding held-out human groups. All generated summaries use the same 40-round denominator, including zero padding. Human records retain their approximately 0.01 residual pool; the reconstructed simulation does not add that floor. Interpolating is exploratory transfer with no Experiment 1 human counterpart. Predictive learning has occurred; reliable counterfactual social simulation has not been established.
 
 ## What learns—and what evolves
 
@@ -138,8 +166,8 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | :--- | :--- | :--- | :--- |
 | **01 · Ground** | Reconstruct the published task and reproduce a substantive result from the released human data. | Empirical figure, numerical comparison, and executable resource dynamics, with numerical ambiguities documented. | **Complete** |
 | **02 · Observe** | Visualize recorded communities and baseline simulations. | Verified local pixel-art replay, resident inspection, comparisons, and scripted sandbox. | **Complete** |
-| **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Model checkpoints, learning curves, and predictions for held-out groups. | **Next** |
-| **04 · Imagine** | Generate multi-round social trajectories under recorded institutions. | Calibration, trajectory comparisons, and uncertainty estimates. | Planned |
+| **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Twelve trained checkpoints, measured human predictions, 3,072 generated games and verified trained-agent playback. | **Complete** |
+| **04 · Imagine** | Validate multi-round social trajectories and institutional generalization. | Explain collective prediction failures; assess trajectory calibration, uncertainty and declared transfer evidence. | **Next** |
 | **05 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
 | **06 · Govern** | Evolve allocation procedures across frozen behavioral models. | Trade-offs among surplus, inclusion, inequality, and resource persistence. | Planned |
 | **07 · Expand** | Introduce one mechanism such as communication, community switching, or resource shocks. | A controlled study of changed assumptions. | Planned |
@@ -185,9 +213,21 @@ To reproduce the empirical inventory, accounting audit, tables and figures separ
 bash scripts/reproduce.sh
 ```
 
-The analysis command streams the public 204 MiB CSV into ignored `data/raw/` on first use. It verifies the pinned data and notebook checksums, then writes `results/task01/` and PNG/SVG figures in `docs/assets/`. Subsequent runs use cached sources. The [Task 01 notes](docs/tasks/01-empirical-foundation.md#completion-record) record its runtime, memory, verification, and dependencies; the [data inventory](docs/data-inventory.md) describes schema, missing values, and group identity limits. No behavioral training command exists yet.
+The analysis command streams the public 204 MiB CSV into ignored `data/raw/` on first use. It verifies the pinned data and notebook checksums, then writes `results/task01/` and PNG/SVG figures in `docs/assets/`. Subsequent runs use cached sources. The [Task 01 notes](docs/tasks/01-empirical-foundation.md#completion-record) record its runtime, memory, verification, and dependencies; the [data inventory](docs/data-inventory.md) describes schema, missing values, and group identity limits.
 
-The [completed Task 02 brief and verification record](docs/tasks/02-pixel-community-replay.md#completion-record) describe the viewer's scope. The next research step is [Task 03 — Train the first inhabitants](docs/tasks/03-trained-behavioral-agents.md): fit probabilistic behavioral baselines and a compact recurrent agent on human Experiment 1, evaluate predictions on separate groups, save learned weights, and put newly generated communities into the viewer. The fixed comparison tests whether learned recurrent memory improves prediction over a similarly sized feedforward model. Its primary score covers decisions with a genuine choice; offers below one force an integer contribution of zero. Large language models remain optional for later communication or program proposals.
+To prepare and run or resume the fixed behavioral experiment:
+
+```bash
+bash scripts/learn.sh prepare
+bash scripts/learn.sh benchmark
+bash scripts/learn.sh train
+bash scripts/learn.sh evaluate
+bash scripts/learn.sh generate
+bash scripts/learn.sh verify
+bash scripts/learn.sh plot
+```
+
+The CPU-only PyTorch dependency is pinned; training uses one compute thread and saves resumable checkpoints. Published weights and generated trajectories are already included, so watching the inhabitants does not require retraining. [The experiment guide](docs/behavioral-agents.md) explains the split, frozen budget, test-opening rules, measured compute and continuation. The next scientific question is why improved next-choice prediction still produces premature collective depletion, and what evidence would establish faithful trajectories under institutional changes. No evolutionary search or online weight adaptation was performed. Large language models remain optional for later communication or program proposals.
 
 ## Research foundations
 

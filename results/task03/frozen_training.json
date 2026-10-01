@@ -1,0 +1,138 @@
+{
+  "utc": "2026-10-01T01:41:54.043478+00:00",
+  "identity": {
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678",
+    "config_sha256": "16e6f69d152af0247f4e1c6dac2080d520b3b0c3f8bb739a0fb18d709748f94c",
+    "code_revision": "134322ec8332cc8b5f09b17feb12fc415baed3f0",
+    "code_sha256": {
+      "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+      "evopolis/behavior_train.py": "add4118740f7338cceb01a2cb2e0401bc3a72243bca1a1a2cfa04ae0b3a7c63e",
+      "evopolis/behavior_data.py": "86a380e87a24e41f1f95de2a82e240f347d99660d54862e65c61956698162df1"
+    },
+    "software": {
+      "python": "3.12.13",
+      "numpy": "2.2.6",
+      "torch": "2.10.0+cpu"
+    },
+    "threads": 1,
+    "microbatch_groups": 2,
+    "effective_batch_groups": 8,
+    "num_workers": 0,
+    "configuration": {
+      "experiment": "Task 03: human Experiment 1 behavioral fits",
+      "schema_version": 1,
+      "split_seed": 20261001,
+      "bootstrap_seed": 20261003,
+      "bootstrap_replicates": 2000,
+      "rollout_seed_namespace": 20261004,
+      "training_seeds": [
+        17,
+        29,
+        43
+      ],
+      "families": [
+        "constant",
+        "linear",
+        "feedforward",
+        "recurrent"
+      ],
+      "architectures": {
+        "constant": "5 fitted emission parameters",
+        "linear": "Linear(9,5), with bias",
+        "feedforward": "Linear(9,64), ReLU, Linear(64,52), ReLU, Linear(52,5); biases",
+        "recurrent": "one-layer biased GRU(input=9,hidden=32), Linear(32,5) with bias"
+      },
+      "epochs": 120,
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "clip_grad_norm": 1.0,
+      "effective_batch_groups": 8,
+      "microbatch_groups": 2,
+      "threads": 1,
+      "num_workers": 0,
+      "shuffle": "seeded whole-group permutation each epoch; all four complete resident sequences stay together",
+      "checkpoint_selection": "lowest validation nonforced group-balanced NLL; exact ties choose earliest epoch",
+      "validation_frequency_epochs": 1,
+      "early_stopping": false,
+      "learning_rate_schedule": null,
+      "normalization": 200.0,
+      "feature_order": [
+        "offer_self",
+        "offer_next",
+        "offer_next2",
+        "offer_next3",
+        "previous_return_self",
+        "previous_return_next",
+        "previous_return_next2",
+        "previous_return_next3",
+        "pool"
+      ],
+      "emission": {
+        "name": "zero/maximum-inflated beta-binomial",
+        "parameters": [
+          "zero_logit",
+          "maximum_logit",
+          "beta_binomial_logit",
+          "alpha_raw",
+          "beta_raw"
+        ],
+        "shape_transform": "softplus(raw) + 0.05",
+        "legal_support": "0,...,floor(observed offer), without epsilon or upward rounding",
+        "forced": "n=0 has P(0)=1, zero primary loss, and retained observation history",
+        "overlap": "beta-binomial includes both endpoints; overlapping mixture masses are added"
+      },
+      "primary_score": "mean nonforced choice NLL within each group, mean groups within mechanism, equal mean over four mechanisms",
+      "other_scores": [
+        "MAE abs(E[c]-c)",
+        "relative MAE abs(E[c]-c)/observed offer",
+        "zero return calibration",
+        "maximum feasible return calibration"
+      ],
+      "probability_bin_edges": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "offer_bin_edges": [
+        1,
+        5,
+        10,
+        25,
+        50,
+        100,
+        201
+      ],
+      "bin_closure": "lower-inclusive, upper-exclusive; final upper edge included",
+      "seed_aggregation": "equal mean of group scores over all three seeds; no lucky seed selection",
+      "uncertainty": "paired mechanism-stratified group bootstrap; same resampled groups for every model",
+      "uniform_reference": "unfitted uniform distribution over 0,...,floor(offer)",
+      "ensemble": null,
+      "rollout_baselines": [
+        "equal",
+        "proportional",
+        "mixed",
+        "interpolating"
+      ],
+      "rollout_games_per_cell": 64,
+      "rollout_horizon": 40,
+      "rollout_surplus_denominator": 160,
+      "rollout_initial_pool": 200.0,
+      "rollout_sampling": "independent resident draws conditional on simultaneous pre-decision observations and separate histories",
+      "rollout_padding": "zero pool/offers/returns/surplus after exact-zero termination; cumulative surplus held constant",
+      "rollout_parameters": "best-validation weights frozen during play; recurrent states reset per independent game",
+      "representative_display": "recurrent training seed 17, Equal; nearest median surplus with stable rollout-index tie break",
+      "held_out_status": "held out from Task 03 fitting/selection, previously described by Task 01; no cross-group participant linkage available",
+      "transfer_boundary": "Experiments 2-3 remain outside preparation, fitting, selection, and outcome inspection; Experiment 4 deferred"
+    }
+  }
+}

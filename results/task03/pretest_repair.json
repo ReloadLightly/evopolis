@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-01T01:41:47.499741+00:00",
+  "test_opened": false,
+  "reason": "Publication changes HEAD even when training source is unchanged; retain original code revision as provenance while enforcing source/split/config/relevant-code hashes on resume. No numerical model, objective or budget setting changed.",
+  "discarded_fits": [
+    {
+      "fit": "constant_17",
+      "epochs": 120,
+      "seconds": 12.239469295484014
+    },
+    {
+      "fit": "constant_29",
+      "epochs": 120,
+      "seconds": 9.62075140257366
+    },
+    {
+      "fit": "constant_43",
+      "epochs": 120,
+      "seconds": 10.807463588542305
+    },
+    {
+      "fit": "feedforward_17",
+      "epochs": 120,
+      "seconds": 19.24213832744863
+    },
+    {
+      "fit": "feedforward_29",
+      "epochs": 120,
+      "seconds": 17.792143634636886
+    },
+    {
+      "fit": "feedforward_43",
+      "epochs": 120,
+      "seconds": 16.277855165069923
+    },
+    {
+      "fit": "linear_17",
+      "epochs": 120,
+      "seconds": 18.248873334843665
+    },
+    {
+      "fit": "linear_29",
+      "epochs": 120,
+      "seconds": 14.856138878967613
+    },
+    {
+      "fit": "linear_43",
+      "epochs": 120,
+      "seconds": 12.620567278703675
+    },
+    {
+      "fit": "recurrent_17",
+      "epochs": 120,
+      "seconds": 68.07877901382744
+    },
+    {
+      "fit": "recurrent_29",
+      "epochs": 13,
+      "seconds": 7.070712659042329
+    }
+  ],
+  "discarded_epochs": 1213,
+  "discarded_epoch_seconds": 206.85489257914014,
+  "replacement": "All declared fits restarted from original seeds for 120 epochs after the provenance-only repair.",
+  "archive": "data/cache/task03/discarded-pretest-continuation-repair (ignored)",
+  "numerical_equivalence_check": {
+    "overlapping_epochs": 1213,
+    "train_and_validation_losses_bit_identical": true,
+    "model_or_hyperparameter_change": false
+  },
+  "pretest_export_repair": {
+    "reason": "Constant emission expansion remains a parameter view under no_grad; detach explicitly before NumPy export in checkpoint digest and generator.",
+    "test_previously_opened": false,
+    "training_or_model_changed": false,
+    "fits_rerun": false,
+    "verification": "Three generator tests passed, including exact seeded replay for all four real model families."
+  }
+}

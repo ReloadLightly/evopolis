@@ -1,0 +1,58 @@
+{
+  "cohort": "Task 03 held-out human Experiment 1 only; outcomes opened before this comparison",
+  "human": [
+    {
+      "mechanism": "Equal",
+      "groups": 8,
+      "group_indices": [
+        11,
+        13,
+        20,
+        25,
+        31,
+        35,
+        36,
+        38
+      ],
+      "mean_surplus": 1.7876442835433408,
+      "mean_gini": 0.1490588513362115,
+      "final_sustainment_fraction": 0.0
+    },
+    {
+      "mechanism": "Mixed",
+      "groups": 8,
+      "group_indices": [
+        44,
+        47,
+        52,
+        57,
+        60,
+        64,
+        73,
+        78
+      ],
+      "mean_surplus": 5.594317924510688,
+      "mean_gini": 0.07916643006165686,
+      "final_sustainment_fraction": 0.5
+    },
+    {
+      "mechanism": "Proportional",
+      "groups": 8,
+      "group_indices": [
+        80,
+        82,
+        89,
+        97,
+        104,
+        107,
+        111,
+        117
+      ],
+      "mean_surplus": 6.755572584853508,
+      "mean_gini": 0.4099560629881802,
+      "final_sustainment_fraction": 0.875
+    }
+  ],
+  "generated_summaries": "generated_outcomes.json",
+  "interpretation": "Descriptive unpaired group distributions; generated games are not additional human observations; recorded residual floor differs from reconstructed accounting."
+}

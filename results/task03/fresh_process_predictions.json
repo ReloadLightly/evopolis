@@ -1,0 +1,134 @@
+[
+  {
+    "family": "constant",
+    "seed": 17,
+    "epoch": 120,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "12e14dc49e4eb5f1aca8222052ab575cad1b75f6fe100b3fd42bd8897f99cbac"
+  },
+  {
+    "family": "constant",
+    "seed": 29,
+    "epoch": 120,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "ba78e77fc51ee689806a815bbbd5fe37bc5d27c5a219f444b7d75ce1f8dca82d"
+  },
+  {
+    "family": "constant",
+    "seed": 43,
+    "epoch": 120,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "0d334c45ae3502dc7d23fe0c7b76fdd14cfb5c4f7d6518d7377422c9dcd0a3e3"
+  },
+  {
+    "family": "linear",
+    "seed": 17,
+    "epoch": 120,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "4242d781bd51d6abf42eb0adb830a6d1407f8dc9c99641b6a3ab8dd5d99bc4ad"
+  },
+  {
+    "family": "linear",
+    "seed": 29,
+    "epoch": 120,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "f0618fb02aaeb0931176cfffec59caa46682bc023dab4d57e2183225e2763dc6"
+  },
+  {
+    "family": "linear",
+    "seed": 43,
+    "epoch": 120,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "714251f9a1f866f591b88aabdcc5f77a85e97013c28bd3c1912a4d950f3b7413"
+  },
+  {
+    "family": "feedforward",
+    "seed": 17,
+    "epoch": 109,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "3ad23a5ee74075808efaecedd9f7971ca88635efcdb3df46fab3d876ab9ecb1c"
+  },
+  {
+    "family": "feedforward",
+    "seed": 29,
+    "epoch": 116,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "79919d0222100899fa53e1b377ae72203b333c004db258bdcdd55fcd401a51c5"
+  },
+  {
+    "family": "feedforward",
+    "seed": 43,
+    "epoch": 117,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "7b37e5c7a4ba4658cd7923b850cf27ff59c38d83a18dcba6d3a99b3348ae14c8"
+  },
+  {
+    "family": "recurrent",
+    "seed": 17,
+    "epoch": 116,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "d2f8338cc5e0e165f70fa9e6259c1383fd12693f18ad3cb50fc5b5f6b2e2bb0d"
+  },
+  {
+    "family": "recurrent",
+    "seed": 29,
+    "epoch": 117,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "0870feeb46778b85559e819c9b19b9fa68729982a2a47cbdd398b25195ff6af9"
+  },
+  {
+    "family": "recurrent",
+    "seed": 43,
+    "epoch": 113,
+    "validation_group": [
+      "Equal Baseline Exp 1",
+      "24769323",
+      "0"
+    ],
+    "prediction_sha256": "cfee0fec97a8625e3c05048afcc405efd0dec63b19ad31593f98111bd9ac949d"
+  }
+]

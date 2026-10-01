@@ -1,0 +1,91 @@
+{
+  "audited_utc": "2026-10-01T01:57:16.025044+00:00",
+  "bootstrap": {
+    "generator": "numpy.random.Generator(PCG64)",
+    "mechanism_stratified": true,
+    "optimization_seeds_averaged_before_resampling": true,
+    "paired_groups": true,
+    "replicates": 2000,
+    "seed": 20261003
+  },
+  "calibration_checks": {
+    "each_partition_weight_sums_to_one": true,
+    "probability_and_offer_partitions_checked_for_both_endpoints_and_all_five_predictors": true,
+    "weighted_bin_predictions_and_outcomes_reconstruct_headline_rates": true
+  },
+  "figure_review": {
+    "actual_images_inspected": true,
+    "continuous_numerical_geometry_preserved": true,
+    "files": [
+      "docs/assets/task03-learning-curves.png",
+      "docs/assets/task03-prediction.png"
+    ],
+    "readable_labels_and_legends": true,
+    "shared_learning_curve_axes": true,
+    "status": "passed; no scientific or visual correctness repair required"
+  },
+  "findings": {
+    "calibration_interpretation": "Endpoint errors are descriptive diagnostics, not independent hypothesis tests or evidence of reliable counterfactual prediction.",
+    "gru_maximum_return_overprediction": {
+      "aggregation": "nonforced choices within groups, groups within mechanism, equal mechanisms; fitted seed mean",
+      "observed": 0.16184572626548588,
+      "predicted": 0.19427375298981375
+    },
+    "gru_mixed_maximum_return_overprediction": {
+      "observed": 0.1601022791667343,
+      "predicted": 0.24621510385591688
+    },
+    "gru_offer_5_to_less_than_10_maximum_calibration": {
+      "groups_represented": 30,
+      "observed": 0.11460540109664084,
+      "predicted": 0.22278826112938832,
+      "weighted_mass": 0.110353642255394
+    },
+    "interpretation": "GRU has a modest lower mean NLL, but its paired 95% interval includes zero; additional recurrent memory is not clearly established beyond a feedforward model whose inputs already include previous contributions.",
+    "recurrent_vs_feedforward": {
+      "by_mechanism": {
+        "Equal": -0.06451076600058905,
+        "M1": 0.02583858060201555,
+        "Mixed": -0.0698388223746485,
+        "Proportional": -0.009079810251509834
+      },
+      "ci95": [
+        -0.06367111951605689,
+        0.0063116857732917015
+      ],
+      "comparison": "recurrent - feedforward",
+      "nll_difference": -0.02939770450618296
+    }
+  },
+  "fitted_seeds_per_group": 3,
+  "forced_test_choices": 2681,
+  "groups_per_mechanism": 8,
+  "human_test_groups": 32,
+  "mechanisms": [
+    "Equal",
+    "M1",
+    "Mixed",
+    "Proportional"
+  ],
+  "method": "Independent CSV/JSON reader using stdlib math.fsum and numpy.random.Generator(PCG64); did not import or call behavior_evaluate scorer/bootstrap functions, load torch, refit models, or revise selection. Rebuilt group-seed averages, mechanism means, paired bootstrap replicates and conditional-calibration partition totals from saved group metrics. This checks aggregation rather than independently reimplementing neural inference.",
+  "nonforced_test_choices": 2439,
+  "numerical_agreement": {
+    "calibration_headline_max_absolute_difference": 8.326672684688674e-17,
+    "calibration_partition_mass_max_absolute_difference": 0.0,
+    "paired_and_marginal_nll_ci_max_absolute_difference": 4.440892098500626e-16,
+    "primary_nll_means_max_absolute_difference": 4.440892098500626e-16
+  },
+  "source_artifact_sha256": {
+    "docs/assets/task03-learning-curves.png": "2557c15d7cb9f5cd60469badb802ee77dd4b4ee8fb845a99e1af20f167828aa6",
+    "docs/assets/task03-prediction.png": "98f50fde2a1029940ac7cccd91bf9a26230a0617b6db965d2e8ace255e2ad1cd",
+    "results/task03/calibration.csv": "ce0e23b26be57cd8dfabb64817fb2a2d003995e5d9b6a7cd14d62f99b30b4300",
+    "results/task03/learning.csv": "3fda67e8aa7dfcb34a6a069a551f461c8f60de1a1c005ec10fa001093991f70b",
+    "results/task03/prediction_groups.csv": "eb1098f45d876f32576d1e1ff0be9bad543c8528c230e5ecb8b6a05aae3d05ea",
+    "results/task03/prediction_summary.json": "0057ec946e5b2efd8c0f2366faed0542463b0e231c83037e81342661d97cee7d",
+    "results/task03/test_opening.json": "e10b1a8d405157116af39d673795107cded74dfe139f710a05b8f35af6496035"
+  },
+  "status": "passed",
+  "test_metric_rows": 416,
+  "tolerance_absolute": 1e-12,
+  "uniform_reference_copies_per_group": 1
+}

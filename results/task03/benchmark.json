@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-01T01:36:47.016524+00:00",
+  "fits": [
+    {
+      "family": "constant",
+      "epochs": 2,
+      "seconds": 0.20106944208964705,
+      "train_nll": [
+        3.1544022493723616,
+        3.144313258057909
+      ],
+      "parameter_count": 5,
+      "peak_rss_kib": 320480
+    },
+    {
+      "family": "linear",
+      "epochs": 2,
+      "seconds": 0.17515916796401143,
+      "train_nll": [
+        3.3238256727210533,
+        3.2925644679300032
+      ],
+      "parameter_count": 50,
+      "peak_rss_kib": 321632
+    },
+    {
+      "family": "feedforward",
+      "epochs": 2,
+      "seconds": 0.22839147900231183,
+      "train_nll": [
+        3.195007240208193,
+        3.0460123324267747
+      ],
+      "parameter_count": 4285,
+      "peak_rss_kib": 322144
+    },
+    {
+      "family": "recurrent",
+      "epochs": 2,
+      "seconds": 1.1932074099313468,
+      "train_nll": [
+        2.9895280410284877,
+        2.882242218102821
+      ],
+      "parameter_count": 4293,
+      "peak_rss_kib": 323808
+    }
+  ],
+  "estimated_training_seconds_12_fits": 323.6089498177171,
+  "estimate_excludes_validation_checkpoint_io": true,
+  "choice": {
+    "threads": 1,
+    "microbatch_groups": 2,
+    "effective_batch_groups": 8
+  },
+  "state_discarded": true,
+  "test_or_validation_used": false
+}
