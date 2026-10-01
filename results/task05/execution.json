@@ -1,0 +1,62 @@
+{
+  "started_utc": "2026-10-01T12:47:30.661917+00:00",
+  "steps": [
+    {
+      "name": "integration",
+      "exit_code": 0,
+      "seconds": 169.9075513909338
+    },
+    {
+      "name": "focused-tests",
+      "exit_code": 0,
+      "seconds": 4.173160525970161
+    },
+    {
+      "name": "prepare",
+      "exit_code": 0,
+      "seconds": 5.232212834060192
+    },
+    {
+      "name": "observations",
+      "exit_code": 0,
+      "seconds": 52.32619530695956
+    },
+    {
+      "name": "generate",
+      "exit_code": 0,
+      "seconds": 701.9051442550262
+    },
+    {
+      "name": "scores",
+      "exit_code": 0,
+      "seconds": 17.305489458027296
+    },
+    {
+      "name": "verify",
+      "exit_code": 0,
+      "seconds": 41.717519270954654
+    },
+    {
+      "name": "diagnostics",
+      "exit_code": 0,
+      "seconds": 11.241365383961238
+    },
+    {
+      "name": "plot",
+      "exit_code": 0,
+      "seconds": 4.96040796302259
+    },
+    {
+      "name": "audit",
+      "exit_code": 0,
+      "seconds": 16.97704394289758
+    },
+    {
+      "name": "all-tests",
+      "exit_code": 0,
+      "seconds": 18.616224293014966
+    }
+  ],
+  "active": null,
+  "completed_utc": "2026-10-01T13:04:55.218505+00:00"
+}

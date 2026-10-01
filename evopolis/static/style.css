@@ -115,6 +115,14 @@ dl { margin: 14px 0; }dl div { display: flex; justify-content: space-between; ga
 .prediction-panel dt { font-size: 10px; }
 .prediction-panel dd { font-size: 12px; }
 .prediction-support { font-size: 10px; color: var(--ep-muted); margin-bottom: 0; }
+.conditional-panel { margin-top: 14px; padding-top: 7px; border-top: 1px solid #7185ac; grid-column: 1/-1; }
+.conditional-panel h3 { color: var(--ep-mint); }
+.conditional-panel dl { margin: 7px 0; }
+.conditional-panel dl div { padding: 5px 0; }
+.conditional-panel dt { font-size: 10px; }
+.conditional-panel dd { font-size: 12px; }
+.conditional-note,.latent-note { font-size: 10px; color: var(--ep-muted); }
+.pmf-chart { display: block; width: 100%; max-height: 200px; }
 details { margin-top: 12px; }summary { cursor: pointer; font: 11px/1.6 var(--ep-font-display); color: var(--ep-parchment); padding: 6px 0; }details p { font-size: 11px; color: var(--ep-muted); }details[open] summary { color: var(--ep-amber); }
 .history-scroll,.exact-scroll { overflow: auto; }.history-scroll { max-height: 240px; }.history-scroll th,.history-scroll td { padding: 5px 4px; font-size: 10px; white-space: nowrap; }
 .exact-detail,.outcome-detail { border-top: 1px solid #50668f; padding-top: 6px; }.exact-values td { font: 11px var(--ep-font-display); }.exact-values th { font-size: 11px; }

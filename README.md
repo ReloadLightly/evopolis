@@ -13,7 +13,7 @@ EvoPolis is a research project at the intersection of computational social scien
 
 The first world is a community sharing a productive resource. Its inhabitants receive allocations, decide what to retain, and choose what to return to the commons. Their choices can sustain mutual prosperity, concentrate opportunities, or exhaust the resource on which everyone depends. The research follows two connected problems: learning a faithful model of those choices, and discovering institutions that work across plausible models of human behavior.
 
-**Current finding:** continuing neural training improves individual prediction but worsens the GRU's declared collective forecast, evaluated against **21 human groups**. The result survives an independent simulation bank and numerical audit. EvoPolis currently models a specific four-person resource game; it has not established a general model of society or identified the human motives behind this prediction gap. [The scientific review](docs/task04-review.md) assesses the evidence, and [Task 05](docs/tasks/05-conditional-responses.md) specifies a theory-informed comparison of conditional responses and persistent individual differences. That experiment has not run. Experiments 2–3 remain reserved; evolutionary search remains planned. The cover is concept art; screenshots and figures below show working software and measured evidence.
+**Current finding:** an explicit response to peers' past contributions does **not show clear improvement on either declared predictive target** after accounting for persistent resident variation. Twelve fitted models and 89,856 forecast branches give a null primary comparison on **21 human groups**, despite positive fitted peer-response coefficients. [The completed conditional-response study](docs/conditional-responses.md) reports the uncertainty, numerical correction and independent audit. The earlier finding also stands: longer neural training improved individual prediction but worsened the GRU's collective forecast. These studies concern a specific four-person resource game; they do not identify human motives or validate a general model of society. Experiments 2–3 remain reserved; evolutionary search remains planned. The cover is concept art; screenshots and figures below show working software and measured evidence.
 
 ## The research question
 
@@ -163,9 +163,9 @@ The default is Mixed human launch **18823620**, continued GRU seed **17**, selec
 
 The [full report](docs/collective-forecast-fidelity.md) includes [learning and individual prediction](docs/assets/task04-optimization.png), [observed/forecast trajectories](docs/assets/task04-forecast-trajectories.png), [renewal calibration](docs/assets/task04-renewal-calibration.png), all proper scores, eligibility counts, numerical sensitivity and reproduction commands. The [independent audit](results/task04/independent_score_audit.json) reconstructs primary scores and intervals from saved draws, with maximum disagreement **2.22×10⁻¹⁶**.
 
-## Next experiment: conditional responses and persistent differences
+## Conditional responses and persistent differences
 
-No established social-science theory has yet been directly tested by EvoPolis. The next study makes one theoretical connection explicit: conditional-cooperation research links people's contributions to others' cooperation and examines imperfect matching. Our data contain observed actions, not elicited preferences or beliefs, so the proposed test concerns an **adapted predictive mechanism** in this resource game.
+Task 05 tested an **adapted predictive implication** of conditional-cooperation research: does an explicit response to peers' past feasible contributions improve individual and collective predictions after controlling for opportunity and own history? The data contain observed actions, not elicited preferences or beliefs. This is a theory-informed model comparison, not a replication of the original elicitation experiments or identification of human motives.
 
 | New fitted model | Opportunity and own history | Additional peer-history response | Persistent individual variation |
 | :--- | :---: | :---: | :---: |
@@ -174,9 +174,26 @@ No established social-science theory has yet been directly tested by EvoPolis. T
 | H0 | Yes | No | Yes |
 | H1 | Yes | Yes | Yes |
 
-The peer-response coefficient can be positive, zero or negative; its proposed direction can fail. All models respect unequal opportunities and distinguish an inability to contribute from a voluntary zero. Current offers already contain indirect information about peers, so the comparison tests the value of an **additional** response to their history. Persistent variation is fitted from choices, not assigned as personality labels.
+All twelve fits completed 480 epochs, retaining the earliest validation minimum for each of three seeds. The signed peer coefficients were positive in every P1 and H1 fit; H1's coefficients ranged from **1.659 to 1.734**. All models distinguish inability to contribute from a voluntary zero and use the actual offer as the fraction denominator. Current offers already convey social information, so P0/H0 test the absence of an **additional explicit peer-history term**. Persistent effects are inferred from choices, without assigning psychological types.
 
-Task 05 will ask whether H1 improves both individual predictions and collective forecasts relative to H0 on the same groups and forecast window. It will fit twelve models, retain all seeds and report failures as well as successes. Positive results would support this operationalization's predictive usefulness, not identify motives or replicate the original preference-elicitation experiments. [Read the scientific review](docs/task04-review.md) and [the complete next Codex task](docs/tasks/05-conditional-responses.md). **Status: planned; no Task 05 results yet.**
+The primary comparison uses the same **21 groups and source rounds 5–14**, after five observed rounds. Lower scores are better; intervals resample interacting human groups and condition on the fitted models.
+
+| Primary outcome | H0 | H1 | H1 minus H0; 95% paired interval |
+| :--- | ---: | ---: | :--- |
+| Individual nonforced NLL | 1.97181 | 1.97571 | **+0.00390 [−0.00103, +0.00921]** |
+| Joint pool/surplus energy | 0.09809 | 0.09982 | **+0.00174 [−0.00428, +0.00849]** |
+
+**Neither interval establishes improvement, so the declared joint criterion fails.** All three secondary factorial comparisons also have primary-window intervals spanning zero. The independent forecast bank gives H1−H0 energy **+0.00025 [−0.01020, +0.01218]**. Its P1−P0 comparison deteriorates, while the principal bank's corresponding change is uncertain; that sensitivity is reported rather than choosing a favorable bank.
+
+![Measured matched individual and collective contrasts, with paired human-group intervals and the independent forecast-bank check.](docs/assets/task05-predictive-comparisons.png)
+
+Positive fitted responses therefore do not establish incremental predictive value in this family. Opportunity-conditioned curves show **imperfect history matching** on some supported states, but those curves describe the fitted model, not elicited preferences or a causal human response. Endogenous allocations and correlated histories constrain interpretation. The null result rejects neither the original preference/belief findings nor every conditional-cooperation model, and this already opened Experiment 1 evidence is exploratory.
+
+![Fitted conditional-response curves and feasible history matching, with empirical covariate support distinguished from extrapolation.](docs/assets/task05-response-curves.png)
+
+The [full report](docs/conditional-responses.md) includes all seeds, frozen neural references, full-game likelihood, secondary horizons and marginals, observed/forecast trajectories, calibration and posterior uncertainty. It records a development-only integration repair: the initial 21-node rule failed the accuracy criterion, all persistent fits were refitted at 41 nodes, and every selected fit passed a 41-versus-81-node check before evaluation. The [independent audit](results/task05/independent_score_audit.json) reconstructed all 5,364 forecast score rows and confirmed that **158 earlier scientific files remain byte-identical**.
+
+The existing forecast viewer now includes P0, P1, H0 and H1. Select a resident to inspect exact legal-action probabilities, own/peer histories and the fixed resident effect sampled from the observed-prefix posterior. Population weights stay frozen; these history and posterior updates are not online weight training. [Viewer controls and evidence](docs/viewer.md) retain the original town, recorded replay, trained agents and neural forecasts.
 
 ## What learns—and what evolves
 
@@ -212,7 +229,7 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | **02 · Observe** | Visualize recorded communities and baseline simulations. | Verified local pixel-art replay, resident inspection, comparisons, and scripted sandbox. | **Complete** |
 | **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Twelve trained checkpoints, measured human predictions, 3,072 generated games and verified trained-agent playback. | **Complete** |
 | **04 · Imagine** | Assess multi-round forecasts across allocation rules and optimization budgets. | Completed fourfold optimization control, 150,912 conditional forecasts, numerical sensitivity and working forecast inspection. New-cohort transfer remains a later test. | **Complete** |
-| **05 · Explain** | Compare an explicit peer-history response with persistent individual variation under matched controls. | Four fitted families, falsifiable response direction, and matched individual/collective predictions. | **[Specified; next task](docs/tasks/05-conditional-responses.md)** |
+| **05 · Explain** | Compare an explicit peer-history response with persistent individual variation under matched controls. | Twelve fits, 89,856 forecasts, verified viewer and a null primary comparison on both predictive targets. | **[Complete](docs/conditional-responses.md)** |
 | **06 · Transfer** | Freeze a procedure before evaluating a reserved cohort. | Evidence about generalization across changed conditions and instructions, with limits on causal interpretation. | Planned |
 | **07 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
 | **08 · Govern** | Evolve allocation procedures across frozen behavioral models. | Trade-offs among surplus, inclusion, inequality, and resource persistence. | Planned |
@@ -273,7 +290,7 @@ bash scripts/learn.sh verify
 bash scripts/learn.sh plot
 ```
 
-The CPU-only PyTorch dependency is pinned; training uses one compute thread and saves resumable checkpoints. Published weights and generated trajectories are already included, so watching the inhabitants does not require retraining. [The Task 03 guide](docs/behavioral-agents.md) explains its split and original budget. [The Task 04 report](docs/collective-forecast-fidelity.md#reproduce-and-inspect) gives the complete continuation/forecast sequence through `scripts/forecast.sh`, including measured memory, checkpointing and evaluation rules. Numerical jobs run sequentially. No evolutionary search or online weight adaptation was performed; the next scientific work is a targeted explanation of the measured collective-prediction failure.
+The CPU-only PyTorch dependency is pinned; training uses one compute thread and saves resumable checkpoints. Published weights and generated trajectories are already included, so watching the inhabitants does not require retraining. [The Task 03 guide](docs/behavioral-agents.md) explains its split and original budget. [The Task 04 report](docs/collective-forecast-fidelity.md#reproduce-and-inspect) gives the continuation/forecast sequence through `scripts/forecast.sh`; [the Task 05 report](docs/conditional-responses.md) gives the conditional-response sequence through `scripts/conditional.sh`, with measured resources and numerical checks. Numerical jobs run sequentially. No evolutionary search or online weight adaptation was performed. The next scientific step is to freeze a procedure before evaluating transfer on a reserved cohort.
 
 ## Research foundations
 

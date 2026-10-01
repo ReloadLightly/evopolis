@@ -1,0 +1,180 @@
+{
+  "archive_bytes": 96071680,
+  "archive_sha256": "2a9fc319a30ad4823bd4a636f55bcc5d47070212607da813931bb56639b2be3e",
+  "branches": 89856,
+  "cells": 1404,
+  "cpu_seconds": 604.807389274,
+  "generated_cells_this_invocation": 1404,
+  "identity": {
+    "checkpoint_registry": [
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+        "family": "P0",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P0_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "2fdd756d345c2013996866284f7792835fdb659a3c5df2690b00800af5d89642",
+        "family": "P0",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P0_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 480,
+        "sha256": "2fdd756d345c2013996866284f7792835fdb659a3c5df2690b00800af5d89642",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "56f691d06b0452d030688fb9a09ff57445ec796c118db8e2dc5aa9166d73a662",
+        "family": "P0",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P0_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "56f691d06b0452d030688fb9a09ff57445ec796c118db8e2dc5aa9166d73a662",
+        "training_seed": 43
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "019662b85c044462d5d4b319ab65b2ab52128d7a7c3091fc3dd9df5daaf9a19e",
+        "family": "P1",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P1_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "019662b85c044462d5d4b319ab65b2ab52128d7a7c3091fc3dd9df5daaf9a19e",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "deda3db37265ccd7344a0aef229ce761bfbfae8f29b44fe12a07d6b993a09087",
+        "family": "P1",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P1_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 480,
+        "sha256": "deda3db37265ccd7344a0aef229ce761bfbfae8f29b44fe12a07d6b993a09087",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "940393c41c87f14644bfb449765c900f06cf92bcc858839f5814aeafbaa2b354",
+        "family": "P1",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P1_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "940393c41c87f14644bfb449765c900f06cf92bcc858839f5814aeafbaa2b354",
+        "training_seed": 43
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+        "family": "H0",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H0_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "9c6cade561becf4363b269f5db19158a0a5c4dc9895ce7f7edae5e1253718aa4",
+        "family": "H0",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H0_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 479,
+        "sha256": "9c6cade561becf4363b269f5db19158a0a5c4dc9895ce7f7edae5e1253718aa4",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "4606995065f47f7e6aded0b67ffbe1074066ada14798652153d70e8ee4df7b19",
+        "family": "H0",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H0_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "4606995065f47f7e6aded0b67ffbe1074066ada14798652153d70e8ee4df7b19",
+        "training_seed": 43
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d",
+        "family": "H1",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H1_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+        "family": "H1",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H1_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 479,
+        "sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "8db1ae16acc2a45e47b63d73d19b64849a67d78319bffa949269b6d8298094f1",
+        "family": "H1",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H1_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "8db1ae16acc2a45e47b63d73d19b64849a67d78319bffa949269b6d8298094f1",
+        "training_seed": 43
+      }
+    ],
+    "code_sha256": {
+      "evopolis/behavior_data.py": "86a380e87a24e41f1f95de2a82e240f347d99660d54862e65c61956698162df1",
+      "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+      "evopolis/conditional_generate.py": "810736270c43fc8a9183476d02cb5b597d03e6c5810c11bccdad55360ce580f3",
+      "evopolis/conditional_models.py": "cf8fa36e13347c0485ecd085876b6c79123886f7763fc29cae9c21199f3e70e0",
+      "evopolis/forecast_generate.py": "3ee3e8ad482032dfa84782e49d4998bc0470885497550b4f301311430f93fc79",
+      "evopolis/world.py": "e8d32143f857cdaf6d780290794a9be72100492fc2f8d548d88a2d0c83cbb6b7"
+    },
+    "configuration_sha256": "f45a5897614db65fa129dd02a41e29adaa39fadc8b86a3a9a15953bbe039397c",
+    "seed_table_hash": "aebd773b43116c3fab3c75c0051117783f4c1d1910327f835883c15f1a8f4092",
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678"
+  },
+  "peak_rss_kib": 338900,
+  "principal_branches": 73728,
+  "resumed_cells": 0,
+  "second_bank_branches": 16128,
+  "simulation_audit": {
+    "executed_rounds": 958755,
+    "max_abs_transition_residual": 0.0,
+    "max_allocation_over_pool": 0.0,
+    "max_legal_support_violation": 0.0,
+    "padded_rounds": 677085
+  },
+  "wall_seconds": 696.65842518094
+}

@@ -1,0 +1,159 @@
+{
+  "contract": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261022,
+    "checkpoints": [
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+        "family": "P0",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P0_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "2fdd756d345c2013996866284f7792835fdb659a3c5df2690b00800af5d89642",
+        "family": "P0",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P0_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 480,
+        "sha256": "2fdd756d345c2013996866284f7792835fdb659a3c5df2690b00800af5d89642",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "56f691d06b0452d030688fb9a09ff57445ec796c118db8e2dc5aa9166d73a662",
+        "family": "P0",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P0_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "56f691d06b0452d030688fb9a09ff57445ec796c118db8e2dc5aa9166d73a662",
+        "training_seed": 43
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "019662b85c044462d5d4b319ab65b2ab52128d7a7c3091fc3dd9df5daaf9a19e",
+        "family": "P1",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P1_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "019662b85c044462d5d4b319ab65b2ab52128d7a7c3091fc3dd9df5daaf9a19e",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "deda3db37265ccd7344a0aef229ce761bfbfae8f29b44fe12a07d6b993a09087",
+        "family": "P1",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P1_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 480,
+        "sha256": "deda3db37265ccd7344a0aef229ce761bfbfae8f29b44fe12a07d6b993a09087",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "940393c41c87f14644bfb449765c900f06cf92bcc858839f5814aeafbaa2b354",
+        "family": "P1",
+        "integration_nodes": 21,
+        "path": "results/task05/weights/P1_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "940393c41c87f14644bfb449765c900f06cf92bcc858839f5814aeafbaa2b354",
+        "training_seed": 43
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+        "family": "H0",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H0_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "9c6cade561becf4363b269f5db19158a0a5c4dc9895ce7f7edae5e1253718aa4",
+        "family": "H0",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H0_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 479,
+        "sha256": "9c6cade561becf4363b269f5db19158a0a5c4dc9895ce7f7edae5e1253718aa4",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "4606995065f47f7e6aded0b67ffbe1074066ada14798652153d70e8ee4df7b19",
+        "family": "H0",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H0_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "4606995065f47f7e6aded0b67ffbe1074066ada14798652153d70e8ee4df7b19",
+        "training_seed": 43
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d",
+        "family": "H1",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H1_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 480,
+        "sha256": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d",
+        "training_seed": 17
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+        "family": "H1",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H1_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 479,
+        "sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+        "training_seed": 29
+      },
+      {
+        "budget": "conditional",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "8db1ae16acc2a45e47b63d73d19b64849a67d78319bffa949269b6d8298094f1",
+        "family": "H1",
+        "integration_nodes": 41,
+        "path": "results/task05/weights/H1_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 480,
+        "sha256": "8db1ae16acc2a45e47b63d73d19b64849a67d78319bffa949269b6d8298094f1",
+        "training_seed": 43
+      }
+    ],
+    "config_sha256": "f45a5897614db65fa129dd02a41e29adaa39fadc8b86a3a9a15953bbe039397c",
+    "integration_sha256": "0d3116248ac04ec987c004f41e0e3532d5218f19f9e838fe0fa1d233f97336d2",
+    "model_code_sha256": "cf8fa36e13347c0485ecd085876b6c79123886f7763fc29cae9c21199f3e70e0",
+    "scoring_code_sha256": "761e5e635c32c5d7e038d4529a26107abcbcd617f5c7778058811ba447aef4a0",
+    "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678"
+  },
+  "opened_utc": "2026-10-01T12:50:33.024544+00:00",
+  "status": "Diagnostic use of already opened Experiment 1; not an independently confirmatory test"
+}

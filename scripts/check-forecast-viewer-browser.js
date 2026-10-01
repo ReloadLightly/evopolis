@@ -10,7 +10,7 @@
   const pass=(name,evidence)=>checks.push({name,status:'pass',evidence});
   const getForecast=async()=>{const params=new URLSearchParams(location.search);return (await fetch(`/api/forecast?id=${encodeURIComponent(params.get('forecast'))}&branch=${params.get('branch')}`)).json();};
   await wait(ready);
-  const catalog=await(await fetch('/api/catalog')).json(), cells=catalog.forecasts.cells;
+  const catalog=await(await fetch('/api/catalog')).json(), cells=catalog.forecasts.cells.filter(e=>!['P0','P1','H0','H1'].includes(e.family));
   assert(cells.length===1728,'Incomplete principal forecast design');
   const groups=new Set(cells.map(e=>JSON.stringify(e.key))), conditions=new Set(cells.map(e=>[e.family,e.budget,e.training_seed].join('/')));
   assert(groups.size===24&&conditions.size===18,'Human groups or checkpoint conditions missing');

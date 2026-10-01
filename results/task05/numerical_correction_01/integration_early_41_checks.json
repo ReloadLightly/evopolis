@@ -1,0 +1,4667 @@
+{
+  "all_six_persistent_fits_checked": false,
+  "checks": [
+    {
+      "beta": 0.0,
+      "checkpoint_sha256": "b15af3b0c718b40620884893222bf88794ef6628d1a6eea06255d1385bb0e1aa",
+      "eta": 0.716121299314848,
+      "family": "H0",
+      "maxima": {
+        "group_nll": 3.35979820320631e-06,
+        "posterior_normalization": 1.5543122344752192e-15,
+        "prediction_fraction": 0.00022886933936215224,
+        "resident_nll": 3.735120014991544e-05,
+        "tail_probability": 0.0002403127954169193
+      },
+      "most_concentrated_train_validation_posterior": {
+        "key": [
+          "Equal Baseline Exp 1",
+          "39799073",
+          "0"
+        ],
+        "latent_nodes": [
+          -27.81987125374496,
+          -26.41394051728813,
+          -25.252269552770713,
+          -24.21728497193036,
+          -23.26411182026751,
+          -22.36964098277827,
+          -21.5200174434068,
+          -20.70611514645046,
+          -19.921522551481274,
+          -19.161517619750196,
+          -18.422494659808905,
+          -17.701620414112014,
+          -16.996616047450342,
+          -16.305612719764977,
+          -15.627052379836668,
+          -14.959617524413687,
+          -14.302180167448249,
+          -13.653763932999516,
+          -13.013515345981386,
+          -12.380681714533944,
+          -11.754593829646447,
+          -11.134652246788857,
+          -10.520316272399775,
+          -9.911095021176163,
+          -9.306540078404273,
+          -8.706239420151737,
+          -8.109812329035785,
+          -7.516905104946423,
+          -6.92718741548531,
+          -6.340349164680582,
+          -5.756097783983732,
+          -5.174155868897653,
+          -4.594259099414261,
+          -4.016154393892347,
+          -3.4395982549023243,
+          -2.8643552725032673,
+          -2.2901967558396863,
+          -1.7168994681763388,
+          -1.1442444437710666,
+          -0.572015867497156,
+          0.0,
+          0.572015867497156,
+          1.1442444437710666,
+          1.7168994681763388,
+          2.2901967558396863,
+          2.8643552725032673,
+          3.4395982549023243,
+          4.016154393892347,
+          4.594259099414261,
+          5.174155868897653,
+          5.756097783983732,
+          6.340349164680582,
+          6.92718741548531,
+          7.516905104946423,
+          8.109812329035785,
+          8.706239420151737,
+          9.306540078404273,
+          9.911095021176163,
+          10.520316272399775,
+          11.134652246788857,
+          11.754593829646447,
+          12.380681714533944,
+          13.013515345981386,
+          13.653763932999516,
+          14.302180167448249,
+          14.959617524413687,
+          15.627052379836668,
+          16.305612719764977,
+          16.996616047450342,
+          17.701620414112014,
+          18.422494659808905,
+          19.161517619750196,
+          19.921522551481274,
+          20.70611514645046,
+          21.5200174434068,
+          22.36964098277827,
+          23.26411182026751,
+          24.21728497193036,
+          25.252269552770713,
+          26.41394051728813,
+          27.81987125374496
+        ],
+        "nodes": 81,
+        "posterior_mean": 0.503224862695346,
+        "posterior_sd": 0.49715462611343675,
+        "prefix": 36,
+        "prior_sigma": 1.6436683896645,
+        "resident": 3,
+        "split": "train",
+        "weights": [
+          3.868791842740729e-256,
+          2.501915493674503e-239,
+          1.1943992978944446e-225,
+          1.2324758856589977e-213,
+          1.0136027298142714e-202,
+          1.3082636379747123e-192,
+          3.9884042012028885e-183,
+          3.7642041236806662e-174,
+          1.3308845125600204e-165,
+          2.0291826357732925e-157,
+          1.4856297310239507e-149,
+          5.6827392035168716e-142,
+          1.21519693515004e-134,
+          1.5351117419721447e-127,
+          1.199066171681528e-120,
+          6.015829692181442e-114,
+          2.0017589038761088e-107,
+          4.5388919209684136e-101,
+          7.175545696550094e-95,
+          8.06325906537264e-89,
+          6.5451206692111544e-83,
+          3.888776626446656e-77,
+          1.7089730872483775e-71,
+          5.598065666298167e-66,
+          1.3735597024789406e-60,
+          2.5290353656915742e-55,
+          3.4883992340004423e-50,
+          3.583484592296786e-45,
+          2.711277304111551e-40,
+          1.484271371710586e-35,
+          5.725488084249009e-31,
+          1.498115032299732e-26,
+          2.5209669454986397e-22,
+          2.5360523038694047e-18,
+          1.3833428237968411e-14,
+          3.607700954883132e-11,
+          3.857904013476332e-08,
+          1.4241444728098474e-05,
+          0.001533791907090842,
+          0.04227818820421605,
+          0.2802233562558325,
+          0.4542720003011975,
+          0.19543204491062702,
+          0.02512620903971335,
+          0.0011012606562505944,
+          1.8728858903420498e-05,
+          1.3930128431919162e-07,
+          5.040509800798639e-10,
+          9.730311563805324e-13,
+          1.0834930552683918e-15,
+          7.425317998283126e-19,
+          3.301534575802094e-22,
+          9.93481780057244e-26,
+          2.0913213895464277e-29,
+          3.1586640933473295e-33,
+          3.4878948596037717e-37,
+          2.853281963169671e-41,
+          1.743959567480437e-45,
+          7.999300790875242e-50,
+          2.755745932003099e-54,
+          7.112576325376215e-59,
+          1.3677818430296868e-63,
+          1.9432183370459785e-68,
+          2.016292091880709e-73,
+          1.5057757558345776e-78,
+          7.948861222370104e-84,
+          2.9018629496370804e-89,
+          7.135445512937111e-95,
+          1.1448699452205399e-100,
+          1.1535657301500544e-106,
+          6.966810006417459e-113,
+          2.3812879309303425e-119,
+          4.287674910299263e-126,
+          3.711193967325307e-133,
+          1.3696881902758112e-140,
+          1.8322418072033995e-148,
+          7.055431220701641e-157,
+          5.522377849301958e-166,
+          4.938028548533462e-176,
+          1.6656676072640845e-187,
+          1.2122359748556082e-201
+        ]
+      },
+      "nodes_compared": [
+        41,
+        81
+      ],
+      "passed": true,
+      "seed": 17,
+      "sigma": 1.6436683896645
+    }
+  ],
+  "group_checks": [
+    {
+      "family": "H0",
+      "group_index": 0,
+      "group_nll": 4.491799752661161e-09,
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "posterior_normalization": 3.3306690738754696e-16,
+      "prediction_fraction": 5.269628290688927e-08,
+      "resident_nll": 1.3203931503724675e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.533109453947915e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 1,
+      "group_nll": 2.7110047540190863e-11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "13383055",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 7.418896522130573e-11,
+      "resident_nll": 9.638689846269699e-11,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.826761295679717e-11
+    },
+    {
+      "family": "H0",
+      "group_index": 2,
+      "group_nll": 1.5989432000651504e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "13443751",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.158121783180862e-10,
+      "resident_nll": 2.6936275432376533e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.416027626381492e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 3,
+      "group_nll": 1.2018230677313113e-09,
+      "key": [
+        "Equal Baseline Exp 1",
+        "17030251",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 1.015334682370993e-06,
+      "resident_nll": 7.469359397660469e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.0661013680746123e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 4,
+      "group_nll": 2.1316282072803005e-15,
+      "key": [
+        "Equal Baseline Exp 1",
+        "18089277",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.0713589573720776e-14,
+      "resident_nll": 9.325873406851315e-15,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 3.3306690738754696e-15
+    },
+    {
+      "family": "H0",
+      "group_index": 5,
+      "group_nll": 7.498446308318307e-11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "20953934",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.62407956978729e-10,
+      "resident_nll": 1.4276269055812918e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 8.33497715291287e-11
+    },
+    {
+      "family": "H0",
+      "group_index": 6,
+      "group_nll": 1.7394984500437464e-09,
+      "key": [
+        "Equal Baseline Exp 1",
+        "21063212",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.6797052495611873e-08,
+      "resident_nll": 7.988671058001273e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.9608390744441095e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 7,
+      "group_nll": 1.4472392577276464e-09,
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 1.79113968834401e-08,
+      "resident_nll": 3.4064984166803924e-09,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.8806965873530146e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 8,
+      "group_nll": 2.2808421817899217e-13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "27555027",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.0768106472615165e-12,
+      "resident_nll": 3.8902214782865485e-13,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.6409096303959814e-12
+    },
+    {
+      "family": "H0",
+      "group_index": 9,
+      "group_nll": 6.073668552224782e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30383025",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 2.502005243157549e-08,
+      "resident_nll": 4.203150272275025e-09,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 3.7420704895874124e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 10,
+      "group_nll": 4.440892098500626e-16,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30429600",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 4.3020565189765543e-16,
+      "resident_nll": 8.881784197001252e-16,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.1510571102112408e-16
+    },
+    {
+      "family": "H0",
+      "group_index": 12,
+      "group_nll": 4.1250041766199337e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "31981132",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 6.45342253410697e-09,
+      "resident_nll": 1.207197897201695e-09,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 6.776093353089152e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 14,
+      "group_nll": 3.696763712923712e-08,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35775718",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 1.705270602230682e-06,
+      "resident_nll": 1.230573567490012e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 4.302009221343606e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 15,
+      "group_nll": 8.023211724624464e-14,
+      "key": [
+        "Equal Baseline Exp 1",
+        "37049926",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.349371739222468e-13,
+      "resident_nll": 3.8902214782865485e-13,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 2.299826995511012e-13
+    },
+    {
+      "family": "H0",
+      "group_index": 16,
+      "group_nll": 5.2406619133194e-07,
+      "key": [
+        "Equal Baseline Exp 1",
+        "38102987",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.8843002398564856e-05,
+      "resident_nll": 2.723615029509574e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.9785151619988728e-05
+    },
+    {
+      "family": "H0",
+      "group_index": 17,
+      "group_nll": 2.1797840569585484e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "39146798",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.2887508180746489e-09,
+      "resident_nll": 1.13384812649997e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 9.594384176025983e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 18,
+      "group_nll": 1.9841757866364182e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "39797392",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 8.817761736356102e-10,
+      "resident_nll": 4.00626198882037e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 9.258649402710262e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 19,
+      "group_nll": 3.35979820320631e-06,
+      "key": [
+        "Equal Baseline Exp 1",
+        "39799073",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 0.00022886933936215224,
+      "resident_nll": 3.735120014991544e-05,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 0.0002403127954169193
+    },
+    {
+      "family": "H0",
+      "group_index": 21,
+      "group_nll": 2.5076237382866867e-13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "41174484",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 1.2517907345608948e-11,
+      "resident_nll": 3.721911667753375e-12,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.0792061688746912e-12
+    },
+    {
+      "family": "H0",
+      "group_index": 22,
+      "group_nll": 4.429309541365001e-09,
+      "key": [
+        "Equal Baseline Exp 1",
+        "43487752",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.2780989808316945e-08,
+      "resident_nll": 2.2574803137942467e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 5.5420036781939075e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 23,
+      "group_nll": 1.7763568394002505e-15,
+      "key": [
+        "Equal Baseline Exp 1",
+        "43891819",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.586032892321652e-16,
+      "resident_nll": 5.773159728050814e-15,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.025630077706069e-17
+    },
+    {
+      "family": "H0",
+      "group_index": 24,
+      "group_nll": 1.4521717162097048e-13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "45406707",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 7.117719233730531e-13,
+      "resident_nll": 3.872457909892546e-13,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.025630077706069e-17
+    },
+    {
+      "family": "H0",
+      "group_index": 26,
+      "group_nll": 1.8096581737399202e-08,
+      "key": [
+        "Equal Baseline Exp 1",
+        "49067645",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.5072596681202008e-07,
+      "resident_nll": 7.435714977077623e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.582622579654469e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 27,
+      "group_nll": 4.458986367148135e-07,
+      "key": [
+        "Equal Baseline Exp 1",
+        "49665958",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 1.6239553699489357e-05,
+      "resident_nll": 1.19804229337106e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.7051530610101562e-05
+    },
+    {
+      "family": "H0",
+      "group_index": 28,
+      "group_nll": 6.577595611036356e-13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "56254954",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.146024166678013e-12,
+      "resident_nll": 3.825384453648439e-12,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 9.995670957607672e-12
+    },
+    {
+      "family": "H0",
+      "group_index": 29,
+      "group_nll": 8.881784197001252e-16,
+      "key": [
+        "Equal Baseline Exp 1",
+        "61875013",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 9.813578688364471e-16,
+      "resident_nll": 1.1102230246251565e-15,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.220446049250313e-16
+    },
+    {
+      "family": "H0",
+      "group_index": 30,
+      "group_nll": 2.3299729822280246e-09,
+      "key": [
+        "Equal Baseline Exp 1",
+        "67430636",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.803325983199133e-08,
+      "resident_nll": 3.630310718705232e-09,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.893492196369806e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 32,
+      "group_nll": 1.6608936448392342e-12,
+      "key": [
+        "Equal Baseline Exp 1",
+        "85774797",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.1135016614879738e-12,
+      "resident_nll": 2.4060753389676393e-12,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.80648854050969e-12
+    },
+    {
+      "family": "H0",
+      "group_index": 33,
+      "group_nll": 2.6645352591003757e-15,
+      "key": [
+        "Equal Baseline Exp 1",
+        "89808192",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.7636145900766613e-16,
+      "resident_nll": 5.773159728050814e-15,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.025630077706069e-17
+    },
+    {
+      "family": "H0",
+      "group_index": 34,
+      "group_nll": 3.045183153257572e-15,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92173211",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 3.134635408384513e-13,
+      "resident_nll": 1.1945999744966684e-13,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 6.755707104844078e-14
+    },
+    {
+      "family": "H0",
+      "group_index": 37,
+      "group_nll": 2.0098208811499976e-13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "93922021",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.759853704944887e-12,
+      "resident_nll": 1.0738077094174514e-12,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.616795669041494e-13
+    },
+    {
+      "family": "H0",
+      "group_index": 39,
+      "group_nll": 8.881784197001252e-16,
+      "key": [
+        "Equal Baseline Exp 1",
+        "97424607",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 4.95635287291135e-16,
+      "resident_nll": 4.440892098500626e-16,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.025630077706069e-17
+    },
+    {
+      "family": "H0",
+      "group_index": 40,
+      "group_nll": 2.4157655786893883e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 6.912831016240621e-06,
+      "resident_nll": 8.668757160990026e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.777004602083082e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 41,
+      "group_nll": 4.61314886504258e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "15175221",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.821307905472226e-06,
+      "resident_nll": 1.4557548865257175e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.962373166215393e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 42,
+      "group_nll": 2.3760958924867737e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "17017594",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.5992569386703464e-05,
+      "resident_nll": 1.316306135201728e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.791929563521588e-05
+    },
+    {
+      "family": "H0",
+      "group_index": 43,
+      "group_nll": 2.882922674248052e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "17903542",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 6.403994303156499e-08,
+      "resident_nll": 2.21014491152971e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 6.724193712948079e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 45,
+      "group_nll": 9.520135790808126e-11,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "22126530",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.850691119533319e-10,
+      "resident_nll": 2.2881163630472656e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.717096713235946e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 46,
+      "group_nll": 1.6288929316488066e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "24809112",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.820545687308448e-06,
+      "resident_nll": 2.2986025527416132e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.6252929544168246e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 48,
+      "group_nll": 5.345654969730546e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "26595751",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 4.556658538011422e-09,
+      "resident_nll": 1.580993114203011e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.784491247633582e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 49,
+      "group_nll": 4.000391129466152e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "27475779",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.0986147212981214e-08,
+      "resident_nll": 3.288245231658493e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.2035453572932795e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 50,
+      "group_nll": 3.515306564357464e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "34349062",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.12618433052237e-08,
+      "resident_nll": 1.1552442336082436e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.2324934456641188e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 51,
+      "group_nll": 7.497803616624204e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "36289195",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 3.4953987293127985e-05,
+      "resident_nll": 2.0934318141208053e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.281863526744978e-05
+    },
+    {
+      "family": "H0",
+      "group_index": 53,
+      "group_nll": 1.8334379205953156e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "38710152",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 5.948416795846574e-06,
+      "resident_nll": 5.807025331705518e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.980617811815245e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 54,
+      "group_nll": 5.707042936996408e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "43297180",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.9312669535066544e-08,
+      "resident_nll": 1.1959200740818687e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 6.227830018357139e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 55,
+      "group_nll": 8.672540652489922e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "44480089",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 6.106853140410437e-06,
+      "resident_nll": 2.5810266441883556e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 6.412195506233509e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 56,
+      "group_nll": 2.651024647803979e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 6.571705509934333e-06,
+      "resident_nll": 9.475707876127615e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 3.226970110599761e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 58,
+      "group_nll": 4.0385417863494836e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "49307875",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.082716990148408e-06,
+      "resident_nll": 1.7217019583348758e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.336852597292996e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 59,
+      "group_nll": 1.9120231324147122e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "49685025",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.1768649024042411e-09,
+      "resident_nll": 5.748310716313654e-10,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.2357080914071616e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 61,
+      "group_nll": 1.7530950855751768e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "51524772",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.2731131143400634e-06,
+      "resident_nll": 4.4082476335916e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.009563643103675e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 62,
+      "group_nll": 1.709740725066065e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "53975444",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.008079921734195e-09,
+      "resident_nll": 6.092761850595707e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.4598979520007447e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 63,
+      "group_nll": 1.722639808576787e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "58475822",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.7348615607709213e-08,
+      "resident_nll": 2.9402347223594916e-09,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.8216045560848215e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 65,
+      "group_nll": 1.0254896309902506e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "68836277",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 2.9767192331311868e-06,
+      "resident_nll": 7.477614607509508e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.753151153670144e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 66,
+      "group_nll": 6.634092817533156e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "70094867",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 3.9433830205099325e-06,
+      "resident_nll": 5.374577611849674e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.323188421362367e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 67,
+      "group_nll": 3.466438158739038e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "70166162",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 1.7845511213951655e-07,
+      "resident_nll": 1.793294268637169e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 3.1737013621302435e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 68,
+      "group_nll": 2.6399636965379614e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "71045601",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 4.128035381563112e-07,
+      "resident_nll": 1.2651136249708372e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.334436953801202e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 69,
+      "group_nll": 2.9592560286286953e-12,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "72808628",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.7300149903353175e-11,
+      "resident_nll": 2.3315571695547987e-11,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.019268499774967e-11
+    },
+    {
+      "family": "H0",
+      "group_index": 70,
+      "group_nll": 2.123068219993406e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "74380517",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 4.747429981303196e-07,
+      "resident_nll": 7.689463421556297e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.984801253993254e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 71,
+      "group_nll": 1.2167357491913815e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "80421478",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 5.824450275183721e-09,
+      "resident_nll": 2.939575693972074e-09,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.0133996641847887e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 72,
+      "group_nll": 4.364922627237039e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "83986039",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.600855538930425e-06,
+      "resident_nll": 1.4764199418593194e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.6808982395422056e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 74,
+      "group_nll": 6.005165147371372e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "88281250",
+        "0"
+      ],
+      "posterior_normalization": 1.5543122344752192e-15,
+      "prediction_fraction": 1.5156913062474867e-06,
+      "resident_nll": 6.612690763851958e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.491575843095728e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 75,
+      "group_nll": 1.1824212080568941e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "92017990",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.7711876381777917e-06,
+      "resident_nll": 4.7152512028247884e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 9.683974864158063e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 76,
+      "group_nll": 7.660277599493983e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "94451609",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 2.0439765032854093e-06,
+      "resident_nll": 5.798836895110071e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.2373223174932946e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 77,
+      "group_nll": 2.5592751558662637e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "95135734",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.5351798934411095e-09,
+      "resident_nll": 9.737686212929475e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 3.18235099383557e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 79,
+      "group_nll": 8.245590392293294e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "98522310",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 4.6626047681605105e-08,
+      "resident_nll": 2.0768940345305964e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.895734784238215e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 81,
+      "group_nll": 5.885998712959941e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 5.066730589027346e-08,
+      "resident_nll": 2.0594787653038793e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.504265554456822e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 83,
+      "group_nll": 3.2832567575086056e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "18446714",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 6.258490813847017e-06,
+      "resident_nll": 2.3241182667277371e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.8190964456987757e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 84,
+      "group_nll": 3.26477917993047e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "18817699",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 4.231934530105104e-07,
+      "resident_nll": 1.8887806363387938e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.3627013135427717e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 85,
+      "group_nll": 5.264233493562642e-12,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "19679219",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 6.558695917282627e-12,
+      "resident_nll": 1.6905143951362334e-11,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.274636200563009e-12
+    },
+    {
+      "family": "H0",
+      "group_index": 86,
+      "group_nll": 4.200561467287651e-13,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 8.393841320624762e-12,
+      "resident_nll": 9.379164112033322e-13,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.400546345564635e-13
+    },
+    {
+      "family": "H0",
+      "group_index": 87,
+      "group_nll": 1.057709226870429e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "30377184",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 1.2275976837875948e-08,
+      "resident_nll": 1.6635253174968057e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.6971743240103777e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 88,
+      "group_nll": 6.160812626192291e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "32679619",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 1.6048253241999822e-06,
+      "resident_nll": 1.6736817698426165e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.5683357991180813e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 90,
+      "group_nll": 1.1582102388274507e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "39641403",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.733974609668574e-09,
+      "resident_nll": 2.182955149976351e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.9593556638275444e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 91,
+      "group_nll": 2.348055999834928e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "39770412",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 4.349419655856061e-06,
+      "resident_nll": 8.327827567544688e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.676930861369222e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 92,
+      "group_nll": 3.1604042760591256e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "41159778",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 2.991524163876297e-06,
+      "resident_nll": 8.319024540348607e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.253062653725159e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 93,
+      "group_nll": 6.378932026470862e-10,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "42414310",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 6.123563686301837e-09,
+      "resident_nll": 2.6664310759372256e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 6.1169606556648465e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 94,
+      "group_nll": 1.2702148919986809e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "42641869",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 9.330511376717575e-08,
+      "resident_nll": 2.2445269198811957e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 3.2807090377673376e-14
+    },
+    {
+      "family": "H0",
+      "group_index": 95,
+      "group_nll": 7.715787598130635e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "43430147",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.4000646460278382e-05,
+      "resident_nll": 2.450122522201781e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.7274334262084032e-05
+    },
+    {
+      "family": "H0",
+      "group_index": 96,
+      "group_nll": 2.3423753789518828e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "45150103",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 4.039937961684408e-06,
+      "resident_nll": 5.621708578651408e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.689205819283451e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 98,
+      "group_nll": 5.013863874471615e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "51230437",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 6.933591948284875e-06,
+      "resident_nll": 1.3813928489980754e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.125409953868118e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 99,
+      "group_nll": 2.9179330164806417e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "53212352",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 6.164988612858907e-06,
+      "resident_nll": 4.0850617033516556e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.604583215770617e-13
+    },
+    {
+      "family": "H0",
+      "group_index": 100,
+      "group_nll": 1.4210444820861312e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "56833376",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.999053292924254e-08,
+      "resident_nll": 2.731465631455876e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.3335229477026986e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 101,
+      "group_nll": 2.241708194733725e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "57287564",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.3160879783027054e-08,
+      "resident_nll": 7.764065834692246e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.539296512476085e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 102,
+      "group_nll": 5.5428940548551964e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "58710652",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.1412296330232265e-06,
+      "resident_nll": 1.0236280734154946e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 3.3758659062632645e-11
+    },
+    {
+      "family": "H0",
+      "group_index": 103,
+      "group_nll": 5.366687486564522e-13,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "61948140",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.0436764738433682e-12,
+      "resident_nll": 2.20001794559721e-12,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 6.38378239159465e-16
+    },
+    {
+      "family": "H0",
+      "group_index": 105,
+      "group_nll": 7.290505156841111e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "67521144",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.76679150077119e-08,
+      "resident_nll": 1.2362186829761868e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.6966288355355422e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 106,
+      "group_nll": 2.083135270714549e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "68155095",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.2269543159810757e-06,
+      "resident_nll": 6.920466808502113e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.26355292729484e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 108,
+      "group_nll": 2.216816790740433e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69390994",
+        "0"
+      ],
+      "posterior_normalization": 3.3306690738754696e-16,
+      "prediction_fraction": 9.082225047457829e-09,
+      "resident_nll": 4.06264066832307e-09,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 2.6284630028072797e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 109,
+      "group_nll": 1.1661991550226957e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "70560629",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.1204499911654305e-08,
+      "resident_nll": 2.186536063319977e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 2.644221111514078e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 110,
+      "group_nll": 9.329796139011379e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "72433781",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.745214591430554e-07,
+      "resident_nll": 1.2362717960456848e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 7.720477648229251e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 112,
+      "group_nll": 6.33854476879659e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "79450339",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 6.996218925647697e-08,
+      "resident_nll": 1.2988818909320798e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.6809217893857045e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 113,
+      "group_nll": 1.4418139385053932e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "80851468",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.0814034700953902e-07,
+      "resident_nll": 6.361444704339192e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 3.863042235228986e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 114,
+      "group_nll": 1.2999158601664554e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "81793613",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 4.2847540174761825e-07,
+      "resident_nll": 3.335598575127108e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 3.377146567517392e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 115,
+      "group_nll": 4.851400745746577e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "83597340",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 5.908556585257183e-06,
+      "resident_nll": 6.306823429058639e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.3764822615058847e-11
+    },
+    {
+      "family": "H0",
+      "group_index": 116,
+      "group_nll": 1.469998587501984e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "83701533",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 3.544171903856914e-08,
+      "resident_nll": 1.977833408162155e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 8.53889947031311e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 118,
+      "group_nll": 3.0134628470999387e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "86279004",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 6.109778934455345e-06,
+      "resident_nll": 5.930297111156335e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 9.110565103057772e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 119,
+      "group_nll": 1.5164779409227275e-07,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "89143435",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 4.749026394423313e-07,
+      "resident_nll": 2.58651447815339e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.4419974348352403e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 120,
+      "group_nll": 3.597746057585682e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.1828065567874863e-06,
+      "resident_nll": 2.863126411511985e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 7.982477230866064e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 121,
+      "group_nll": 6.923408632660126e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "posterior_normalization": 1.1102230246251565e-15,
+      "prediction_fraction": 1.0734788683045327e-06,
+      "resident_nll": 1.8697927961497385e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.801563326430365e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 123,
+      "group_nll": 1.396516770684951e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "21171705",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 6.966728401504383e-06,
+      "resident_nll": 3.902951544176858e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 7.430477603154184e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 125,
+      "group_nll": 1.551882897855867e-10,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "24718462",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 8.401068452145412e-09,
+      "resident_nll": 9.718825744187143e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.125270012753866e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 126,
+      "group_nll": 1.0096064784193004e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "26686566",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.7562586332519878e-06,
+      "resident_nll": 3.900039784454634e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 6.793627389589663e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 127,
+      "group_nll": 4.320269992960042e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "28195864",
+        "0"
+      ],
+      "posterior_normalization": 1.1102230246251565e-15,
+      "prediction_fraction": 2.7109101699409457e-06,
+      "resident_nll": 1.1486455075981894e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.297874237432775e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 128,
+      "group_nll": 5.282749277063664e-09,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "33612364",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 1.087834867348831e-07,
+      "resident_nll": 3.168426854216477e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.2741594125214037e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 131,
+      "group_nll": 2.682014610400074e-10,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "48812052",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.611882313836221e-10,
+      "resident_nll": 8.793423766917385e-10,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 3.6872949138455624e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 133,
+      "group_nll": 7.824118992200763e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "49432162",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 2.9954030605910204e-06,
+      "resident_nll": 2.968483463483551e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.487525567735835e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 134,
+      "group_nll": 1.1559440515895858e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "50147811",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 4.457434705187542e-08,
+      "resident_nll": 2.192217296581589e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 3.127676340142216e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 135,
+      "group_nll": 1.0833047121659369e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "50251280",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 3.1944719193653785e-07,
+      "resident_nll": 4.7192970864529116e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 8.135412065540804e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 136,
+      "group_nll": 1.917838964070309e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "53180780",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 2.273467601254105e-06,
+      "resident_nll": 3.40959203093405e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 3.610024963523681e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 137,
+      "group_nll": 3.107934925694257e-09,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "56399293",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.0930975862590768e-07,
+      "resident_nll": 1.0720916598927488e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.5134615117688996e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 139,
+      "group_nll": 3.3820714480175557e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "61454237",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 5.501656578201373e-06,
+      "resident_nll": 1.3209887947951415e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 5.0674738301774436e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 141,
+      "group_nll": 9.156208200284105e-10,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "63845553",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.6321294019000657e-06,
+      "resident_nll": 2.459795034326362e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 3.2041461825449424e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 142,
+      "group_nll": 6.781697344383153e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "64122649",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.343247071064962e-06,
+      "resident_nll": 2.597609554122471e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.5696316004532376e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 143,
+      "group_nll": 2.1533885785629536e-12,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "65596261",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 9.316047535294051e-12,
+      "resident_nll": 1.5124568264468508e-11,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 4.870825964786718e-12
+    },
+    {
+      "family": "H0",
+      "group_index": 144,
+      "group_nll": 3.564102383159158e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "66350717",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.6763932786386686e-07,
+      "resident_nll": 7.336714347161433e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 2.2455026828498842e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 145,
+      "group_nll": 4.785887925278915e-11,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "73953894",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.6261197018750517e-10,
+      "resident_nll": 1.0398526484323156e-10,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.0286841651007137e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 146,
+      "group_nll": 1.854226133622837e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "76820131",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.033876033007488e-06,
+      "resident_nll": 6.189735968220589e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.213220237258894e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 147,
+      "group_nll": 3.462251865321856e-09,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "78925223",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.93610582854615e-08,
+      "resident_nll": 6.26493945610207e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.162170140845854e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 148,
+      "group_nll": 1.716829674310079e-09,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "81258716",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.1583520595744084e-08,
+      "resident_nll": 4.253718488556046e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 6.68176569629253e-10
+    },
+    {
+      "family": "H0",
+      "group_index": 149,
+      "group_nll": 3.376191456499047e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "81387887",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 4.811827643873522e-06,
+      "resident_nll": 7.466681073431403e-07,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 5.223044190115489e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 150,
+      "group_nll": 3.24649261074228e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "83148405",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 1.3735050853638184e-06,
+      "resident_nll": 2.324747017112827e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.160261511708738e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 151,
+      "group_nll": 7.785578562485027e-10,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "84760433",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 1.7598383162459274e-08,
+      "resident_nll": 3.100465217897863e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.9293460728347922e-08
+    },
+    {
+      "family": "H0",
+      "group_index": 152,
+      "group_nll": 1.4863801858717766e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "84942891",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 5.663378509890536e-06,
+      "resident_nll": 5.828808982144551e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.618542923722711e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 153,
+      "group_nll": 1.1383513260448303e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "85136205",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.276084426996461e-07,
+      "resident_nll": 4.616769277987487e-08,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.3566813245654424e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 154,
+      "group_nll": 4.717319784775112e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "87192231",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 6.23493672524929e-06,
+      "resident_nll": 1.0421929528270368e-06,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 9.055729180119931e-06
+    },
+    {
+      "family": "H0",
+      "group_index": 155,
+      "group_nll": 4.4703589097139226e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "89992553",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 4.1586394419794946e-07,
+      "resident_nll": 1.6952072900977555e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 2.6316465717712845e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 156,
+      "group_nll": 3.902354164676494e-09,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "93598180",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.474441376383972e-08,
+      "resident_nll": 8.194221967627868e-09,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 1.679795580411536e-09
+    },
+    {
+      "family": "H0",
+      "group_index": 157,
+      "group_nll": 4.3679244587271085e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "95025156",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 6.006021307347491e-07,
+      "resident_nll": 1.7470981461542578e-07,
+      "seed": 17,
+      "split": "train",
+      "tail_probability": 3.0423910706012247e-07
+    },
+    {
+      "family": "H0",
+      "group_index": 158,
+      "group_nll": 2.389735224520943e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "95891360",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 5.604536863159072e-07,
+      "resident_nll": 7.104388277667795e-08,
+      "seed": 17,
+      "split": "validation",
+      "tail_probability": 1.075095482166999e-06
+    }
+  ],
+  "passed": true,
+  "peak_rss_kib": 260936,
+  "prefix_examples": [
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.274081492266568,
+        5.2144112868316705,
+        5.2676860174564135,
+        5.849876522569336
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        1.1259013572876908,
+        0.10453724858591623,
+        0.8951197348787847,
+        -1.7032378502644048
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.1976871116778296,
+        1.1813915807160977,
+        1.1946829690228495,
+        1.328840888900782
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        7.398718722840979,
+        7.309982299290319,
+        7.387922687134066,
+        8.214395183756242
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        1.1259013572876777,
+        0.10453724858635696,
+        0.8951197348787777,
+        -1.7032378502644048
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.1976871116778545,
+        1.1813915807150623,
+        1.194682969022845,
+        1.3288408889007834
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.665568309342529,
+        4.2956875491914515,
+        4.236280049647278,
+        4.725050270687665
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        2.019455435670273,
+        1.0547517299899842,
+        0.6400713578016743,
+        -1.434513522938654
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        1.0629667259160447,
+        0.97504774888016,
+        0.9604144665605366,
+        1.0747875543187873
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        6.554316931202569,
+        6.0248298362990536,
+        5.939261192461253,
+        6.630624911574873
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        2.01945543561244,
+        1.0547517301485236,
+        0.6400713578270611,
+        -1.4345135229723298
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        1.0629667259940496,
+        0.9750477487720938,
+        0.9604144667541801,
+        1.0747875542108842
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.357203629390464,
+        3.607909368770595,
+        3.477133161457854,
+        3.5531923416142064
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        2.2414735585738494,
+        0.7383308245883199,
+        -0.1917300018049036,
+        -0.04557515888012997
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        0.9951944614658159,
+        0.8207479925412197,
+        0.7897548623276225,
+        0.806778409362149
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        6.123802507941837,
+        5.057616450947243,
+        4.874420972959633,
+        4.98080475339062
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        2.2414735771521404,
+        0.7383318947844331,
+        -0.19172962595200857,
+        -0.04557532062308517
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        0.9951945028355101,
+        0.820747545929616,
+        0.7897563535109853,
+        0.8067782163855808
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.357203629390464,
+        3.607909368770595,
+        3.477133161457854,
+        3.5531923416142064
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        2.2414735585738494,
+        0.7383308245883199,
+        -0.1917300018049036,
+        -0.04557515888012997
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        0.9951944614658159,
+        0.8207479925412197,
+        0.7897548623276225,
+        0.806778409362149
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        6.123802507941837,
+        5.057616450947243,
+        4.874420972959633,
+        4.98080475339062
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "13009511",
+        "0"
+      ],
+      "mean": [
+        2.2414735771521404,
+        0.7383318947844331,
+        -0.19172962595200857,
+        -0.04557532062308517
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        0.9951945028355101,
+        0.820747545929616,
+        0.7897563535109853,
+        0.8067782163855808
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.178531053480226,
+        5.493240561065478,
+        5.177109675656654,
+        5.30990953067074
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        0.47017406558369457,
+        -0.9487880140906428,
+        0.49711576112011296,
+        -0.4091672610461988
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.1745952167696392,
+        1.2459857208120906,
+        1.1743620725069446,
+        1.2042500401279208
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        7.260437236072444,
+        7.7047921743089365,
+        7.258557240849404,
+        7.444557320111429
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        0.47017406558380037,
+        -0.9487880140906392,
+        0.49711576112011924,
+        -0.40916726104618706
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.1745952167693368,
+        1.245985720812096,
+        1.1743620725069766,
+        1.2042500401279237
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        4.210111257060895,
+        4.047216148621545,
+        4.089333459599456,
+        4.005814850333977
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        1.3015730680450277,
+        0.24583433773589075,
+        1.0001555557348523,
+        -0.04706533158383869
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        0.9582234497004655,
+        0.9189597111998381,
+        0.9301422500640256,
+        0.9099851251669852
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.906521204481419,
+        5.672976392680354,
+        5.734953788794858,
+        5.614848494462189
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        1.3015730630411508,
+        0.24583434210343763,
+        1.0001555490179188,
+        -0.04706533962375675
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        0.9582234530797913,
+        0.9189597093047329,
+        0.9301422358204653,
+        0.909985152069485
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        4.053456717142427,
+        3.7754285465101654,
+        3.9160861790745884,
+        3.7746180692483677
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        1.4311588011948746,
+        -0.2218305417741207,
+        1.1502024150074837,
+        -0.248070816363892
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        0.9235627236509482,
+        0.8583887319515903,
+        0.8916658640918647,
+        0.8579428154922264
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.687616796890642,
+        5.2918269230655,
+        5.492861250953071,
+        5.290867028817843
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        1.4311587471453904,
+        -0.22183070334797036,
+        1.1502023522818485,
+        -0.24807076125496733
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        0.9235627683356099,
+        0.8583885385994031,
+        0.8916657614797644,
+        0.8579429853267346
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        4.053456717142427,
+        3.7754285465101654,
+        3.9160861790745884,
+        3.7746180692483677
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        1.4311588011948746,
+        -0.2218305417741207,
+        1.1502024150074837,
+        -0.248070816363892
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        0.9235627236509482,
+        0.8583887319515903,
+        0.8916658640918647,
+        0.8579428154922264
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.687616796890642,
+        5.2918269230655,
+        5.492861250953071,
+        5.290867028817843
+      ],
+      "family": "H0",
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mean": [
+        1.4311587471453904,
+        -0.22183070334797036,
+        1.1502023522818485,
+        -0.24807076125496733
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        0.9235627683356099,
+        0.8583885385994031,
+        0.8916657614797644,
+        0.8579429853267346
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.639678319048598,
+        5.475766327749525,
+        5.486119702500763,
+        5.770286066200057
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        1.6756834753824013,
+        0.06743433218390754,
+        0.9269672941130389,
+        2.3820722546186337
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.281081909810039,
+        1.2406552342342385,
+        1.2442247103581274,
+        1.3146018031684077
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        7.9186827961049,
+        7.676652124978764,
+        7.694787869593189,
+        8.115116002861564
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        1.6756834753824008,
+        0.06743433218390721,
+        0.9269672941130392,
+        2.3820722546186337
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.2810819098100392,
+        1.2406552342342383,
+        1.2442247103581285,
+        1.3146018031684075
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.747464636735559,
+        4.623338958685249,
+        4.713355540914792,
+        5.190203438779025
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        1.7915983711568755,
+        0.5059625761453381,
+        1.4587361725657535,
+        3.0291743000247857
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        1.0786001057649326,
+        1.046842916146383,
+        1.069710077772271,
+        1.1868984197053063
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        6.666570896072335,
+        6.481700770223471,
+        6.614673020910238,
+        7.312832044414003
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        1.7915983711568644,
+        0.505962576145363,
+        1.4587361725657941,
+        3.0291743000247844
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        1.0786001057648715,
+        1.046842916146093,
+        1.069710077772359,
+        1.1868984197052912
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        3.7425614151451114,
+        3.7705214908888456,
+        3.6653829416764294,
+        4.25096990341216
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        1.4865405318875393,
+        1.476133351245691,
+        1.1766958392030615,
+        2.990498351879576
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        0.8492877752144834,
+        0.8548819027898039,
+        0.8304958505658289,
+        0.9720833924025317
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.251875792952851,
+        5.291024075106215,
+        5.14107161924355,
+        5.987885073058752
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        1.4865405340765943,
+        1.4761333515153003,
+        1.1766958435638077,
+        2.990498351878885
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        0.849287763013131,
+        0.8548819029566397,
+        0.8304958470498406,
+        0.9720833923981881
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        2.5115799445303404,
+        2.833711096933528,
+        2.895257313248143,
+        2.85577761113271
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        0.6901844158597372,
+        1.8477693985887556,
+        2.06836939249772,
+        2.083471993409273
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        0.5725517547255145,
+        0.6443819010338114,
+        0.6564443262630325,
+        0.6476222536735882
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        3.5461070996148436,
+        3.9824310311596496,
+        4.055606718407215,
+        3.997168249340155
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "10726889",
+        "0"
+      ],
+      "mean": [
+        0.6899678299870408,
+        1.847774910733313,
+        2.0683827485089137,
+        2.0834957345572453
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        0.5727852562567067,
+        0.6444375470424138,
+        0.6564233355767413,
+        0.6475749309130234
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.466378910934524,
+        5.531134115014205,
+        5.553201220024837,
+        5.479752914983915
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -0.20022990557629117,
+        1.5079577796435177,
+        1.4682375659723368,
+        1.4048582643302725
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.2387121414063724,
+        1.2559792388349296,
+        1.2606631786113116,
+        1.244231287879712
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        7.663619781679019,
+        7.763890325943318,
+        7.794333368788703,
+        7.6905245075345094
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -0.2002299055762911,
+        1.5079577796435184,
+        1.4682375659723363,
+        1.4048582643302734
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.2387121414063722,
+        1.2559792388349298,
+        1.2606631786113143,
+        1.2442312878797124
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        4.560372470452859,
+        4.766895504031524,
+        4.8530992056706035,
+        4.678964818152748
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        0.2505924646625199,
+        1.7121979824386242,
+        2.2209475694702885,
+        1.4341399025474266
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        1.0321240655611965,
+        1.0828830283895825,
+        1.1050192089791662,
+        1.061951937528174
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        6.3927117554580395,
+        6.692725109405245,
+        6.821362440978315,
+        6.566100154951036
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        0.2505924646623687,
+        1.712197982438561,
+        2.2209475694702676,
+        1.434139902547474
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        1.0321240655613997,
+        1.0828830283904323,
+        1.1050192089791222,
+        1.0619519375285136
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        3.752355559735241,
+        4.39973383007293,
+        3.5985918945335884,
+        3.8841624609362926
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -0.8416639666313428,
+        3.460875292793654,
+        1.3530026191571942,
+        1.856737683633375
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        0.8497568571065777,
+        1.0094808612331716,
+        0.8160564345995912,
+        0.882975259213716
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.261484545357466,
+        6.2081288638528935,
+        5.048425085558088,
+        5.454349256654672
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -0.8416639666629262,
+        3.4608752927950377,
+        1.3530026274599818,
+        1.8567376858360092
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        0.8497568525004113,
+        1.009480861243248,
+        0.8160564086001338,
+        0.8829752591937194
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        2.9020610477312534,
+        3.8102129436898258,
+        2.660805018811222,
+        3.3425268792734726
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -1.3941319900463047,
+        4.2514889088914485,
+        1.3316418654035744,
+        3.102475403830942
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        0.6573524301421703,
+        0.8808037855080292,
+        0.5995962115370366,
+        0.7650300082018419
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        4.064052655038517,
+        5.394844084688212,
+        3.707746619386552,
+        4.7087785480425275
+      ],
+      "family": "H0",
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mean": [
+        -1.3941364773055693,
+        4.2514889107600276,
+        1.3316381846467222,
+        3.1024757053557703
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        0.6573099804572361,
+        0.8808037816763927,
+        0.5993544015184079,
+        0.7650298621328271
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.431435107825031,
+        5.38424910674031,
+        5.758726667036444,
+        5.556801241141625
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.7532454190910944,
+        0.7546360254493045,
+        1.9604386094033175,
+        -0.25934392103902054
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.231186009730616,
+        1.2207985610250986,
+        1.3087673761950827,
+        1.2590038834298358
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        7.616719013469917,
+        7.550536505071337,
+        8.090509134517143,
+        7.790630175976631
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.7532454190910949,
+        0.7546360254493043,
+        1.9604386094032789,
+        -0.259343921039026
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.2311860097306129,
+        1.2207985610250982,
+        1.3087673761951522,
+        1.2590038834298403
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.526137226892696,
+        4.453335674658601,
+        5.269636756782917,
+        5.556801241141625
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.8915824687620238,
+        0.6564514029012053,
+        2.583800278319136,
+        -0.25934392103902054
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        1.0264160347012774,
+        1.0094427577406184,
+        1.2010628294790069,
+        1.2590038834298358
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        6.347125553661638,
+        6.243752888315356,
+        7.414290311747294,
+        7.790630175976621
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.8915824687605476,
+        0.6564514029112929,
+        2.583800278317816,
+        -0.25934392103902615
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        1.026416034704673,
+        1.0094427577192198,
+        1.2010628294829475,
+        1.2590038834298407
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        3.63658567489476,
+        4.1943320005755025,
+        4.729271966580079,
+        5.556801241141625
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.9821202169289791,
+        0.05130708446930665,
+        3.393470187492704,
+        -0.25934392103902054
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        0.8256112066849128,
+        0.9505149109824338,
+        1.0838121560598817,
+        1.2590038834298358
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.099942685857223,
+        5.879138168223924,
+        6.671581210438556,
+        7.790630175976621
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.9821203360360233,
+        0.05130708454623045,
+        3.3934701875024356,
+        -0.25934392103902615
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        0.8256109459746215,
+        0.950514911257192,
+        1.0838121560226373,
+        1.2590038834298407
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        3.3156541472237504,
+        4.1943320005755025,
+        3.901268858735244,
+        5.556801241141625
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.5568578495076055,
+        0.05130708446930665,
+        3.6021563219810466,
+        -0.25934392103902054
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        0.7520869598051626,
+        0.9505149109824338,
+        0.8958262669319792,
+        1.2590038834298358
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.645631545872871,
+        5.879138168223924,
+        5.507566395975758,
+        7.790630175976621
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14508367",
+        "0"
+      ],
+      "mean": [
+        0.5568587381052382,
+        0.05130708454623045,
+        3.602156321755805,
+        -0.25934392103902615
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        0.7520894893700614,
+        0.950514911257192,
+        0.8958262700765295,
+        1.2590038834298407
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.932229162033852,
+        5.027126621986814,
+        5.5311004224422495,
+        5.92809272319103
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.285802912958092,
+        -0.5795314559481346,
+        -1.125871105728985,
+        -1.289378077695662
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.347486129164185,
+        1.1417442938959554,
+        1.2571862766028143,
+        1.346484317298318
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        8.324405229448345,
+        7.0484346459042975,
+        7.759390178083013,
+        8.318643607683684
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.2858029129580957,
+        -0.5795314559512614,
+        -1.1258711057228952,
+        -1.2893780776959014
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.347486129161599,
+        1.1417442938984492,
+        1.2571862766116875,
+        1.346484317295703
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.932229162033852,
+        4.41843306904668,
+        5.5311004224422495,
+        5.92809272319103
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.285802912958092,
+        -0.46109336970875237,
+        -1.125871105728985,
+        -1.289378077695662
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        1.347486129164185,
+        1.0047031396588006,
+        1.2571862766028143,
+        1.346484317298318
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        8.324405229448345,
+        6.194079030348503,
+        7.759390178083013,
+        8.318643607683684
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.2858029129580957,
+        -0.4610933703751395,
+        -1.1258711057228952,
+        -1.2893780776959014
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        1.347486129161599,
+        1.004703139236915,
+        1.2571862766116875,
+        1.346484317295703
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.932229162033852,
+        4.41843306904668,
+        5.5311004224422495,
+        5.92809272319103
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.285802912958092,
+        -0.46109336970875237,
+        -1.125871105728985,
+        -1.289378077695662
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        1.347486129164185,
+        1.0047031396588006,
+        1.2571862766028143,
+        1.346484317298318
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        8.324405229448345,
+        6.194079030348503,
+        7.759390178083013,
+        8.318643607683684
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.2858029129580957,
+        -0.4610933703751395,
+        -1.1258711057228952,
+        -1.2893780776959014
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        1.347486129161599,
+        1.004703139236915,
+        1.2571862766116875,
+        1.346484317295703
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.932229162033852,
+        4.41843306904668,
+        5.5311004224422495,
+        5.92809272319103
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.285802912958092,
+        -0.46109336970875237,
+        -1.125871105728985,
+        -1.289378077695662
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        1.347486129164185,
+        1.0047031396588006,
+        1.2571862766028143,
+        1.346484317298318
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        8.324405229448345,
+        6.194079030348503,
+        7.759390178083013,
+        8.318643607683684
+      ],
+      "family": "H0",
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mean": [
+        -1.2858029129580957,
+        -0.4610933703751395,
+        -1.1258711057228952,
+        -1.2893780776959014
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        1.347486129161599,
+        1.004703139236915,
+        1.2571862766116875,
+        1.346484317295703
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.339531302928085,
+        5.362039047941374,
+        6.15309866726314,
+        5.35424482346203
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.0614174272531802,
+        1.33708828033138,
+        0.9171927067044611,
+        0.5034040474330606
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.2115539273993732,
+        1.2174542956988845,
+        1.3969763586966317,
+        1.2135625287235612
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        7.489977619446624,
+        7.524276706292568,
+        8.631199779367089,
+        7.507115731643387
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.061417427253188,
+        1.3370882803314583,
+        0.9171927067044606,
+        0.5034040474330587
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.2115539273993632,
+        1.217454295698796,
+        1.3969763586966317,
+        1.213562528723563
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        4.585852849349111,
+        4.874659067920476,
+        6.15309866726314,
+        4.44511181422454
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.299327007174471,
+        0.8750702393187121,
+        0.9171927067044611,
+        0.7244403577778199
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        1.0411997532059598,
+        1.1059800957539676,
+        1.3969763586966317,
+        1.0080025967159898
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        6.4338956344132905,
+        6.836040317548558,
+        8.631199779367089,
+        6.232503889298854
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.299327006909086,
+        0.8750702393251639,
+        0.9171927067044606,
+        0.7244403577560201
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        1.0411997534945803,
+        1.105980095740282,
+        1.3969763586966317,
+        1.00800259655649
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        3.9113984826599024,
+        4.048095336835391,
+        4.816941418838484,
+        3.634213187537342
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.703004454622166,
+        -0.15412286309070272,
+        2.0503179946072354,
+        0.9842628381757184
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        0.8891682922475739,
+        0.9166119567711827,
+        1.0980714830796385,
+        0.824654057222812
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        5.49081113240033,
+        5.674136132156496,
+        6.767546489572082,
+        5.096652312908518
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.703004443913545,
+        -0.15412286294840216,
+        2.0503179939246055,
+        0.9842629020279706
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        0.8891683220360024,
+        0.9166119569537867,
+        1.0980714851781725,
+        0.8246538350449079
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        3.114466684291721,
+        2.8176059215709603,
+        2.875800143060044,
+        3.081116315829555
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.887259526626372,
+        0.2153306748099532,
+        0.9617608051546112,
+        1.7434988627984214
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        0.708368269275657,
+        0.6373882289859837,
+        0.6534620823088783,
+        0.7010258819192834
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        4.37513412561737,
+        3.946451076049935,
+        4.040617122908902,
+        4.330521447592245
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mean": [
+        1.8872568639922769,
+        0.21535917353112569,
+        0.9617665356240483,
+        1.7434946821154218
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        0.708375288603363,
+        0.6373728337757921,
+        0.6535151551670776,
+        0.7010254370342776
+      ],
+      "seed": 17,
+      "split": "validation"
+    },
+    {
+      "effective_nodes": [
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258,
+        7.258335399420258
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17,
+        -5.5511151231214723e-17
+      ],
+      "nodes": 41,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033,
+        10.178971589294033
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17,
+        -2.7755575615628914e-17
+      ],
+      "nodes": 81,
+      "prefix": 0,
+      "sd": [
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004,
+        1.6436683896645004
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.835090265016966,
+        5.639033170346851,
+        5.841809277401725,
+        5.557946634545396
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        -0.026683035837110347,
+        1.7370472381550288,
+        -0.1907835730559747,
+        1.449572120854151
+      ],
+      "nodes": 41,
+      "prefix": 5,
+      "sd": [
+        1.3230679836754418,
+        1.28057989711973,
+        1.3246612752235494,
+        1.2613588771740751
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        8.18084881998453,
+        7.918462185528074,
+        8.190412982454614,
+        7.8006516369479595
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        -0.02668303583711018,
+        1.7370472381549262,
+        -0.19078357305597582,
+        1.449572120854024
+      ],
+      "nodes": 81,
+      "prefix": 5,
+      "sd": [
+        1.323067983675441,
+        1.28057989712198,
+        1.3246612752235425,
+        1.2613588771745585
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.791995557480795,
+        5.162165646086231,
+        4.824010890707137,
+        5.025296685680033
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        0.7009083678524348,
+        2.5617267055164747,
+        0.022661989429369256,
+        2.148561424573995
+      ],
+      "nodes": 41,
+      "prefix": 10,
+      "sd": [
+        1.0860508204043862,
+        1.1769084992261682,
+        1.0931772884896047,
+        1.1434331224185856
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        6.719193302295767,
+        7.262476025795474,
+        6.762283002984808,
+        7.062215723307163
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        0.7009083678524597,
+        2.5617267055172803,
+        0.022661989429457963,
+        2.1485614245737747
+      ],
+      "nodes": 81,
+      "prefix": 10,
+      "sd": [
+        1.086050820404384,
+        1.1769084992272207,
+        1.093177288490242,
+        1.1434331224205505
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        4.235732464462149,
+        4.125481987034731,
+        4.131843602093107,
+        3.9839282708528594
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        0.9422091905190353,
+        2.3813171472432333,
+        -0.22110281138812482,
+        2.1402591946695155
+      ],
+      "nodes": 41,
+      "prefix": 20,
+      "sd": [
+        0.9603463094926411,
+        0.940521111452114,
+        0.9374315233285901,
+        0.9064949429534067
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.940073191735374,
+        5.800276621192017,
+        5.791651268877002,
+        5.597882134720589
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        0.9422091905374016,
+        2.3813171479020663,
+        -0.2211028151897333,
+        2.1402591958773596
+      ],
+      "nodes": 81,
+      "prefix": 20,
+      "sd": [
+        0.9603463094977299,
+        0.9405211083446899,
+        0.9374315316040355,
+        0.906494942362497
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        3.894936997774281,
+        2.842049482282939,
+        3.783838874591652,
+        3.259133567543903
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        1.1229607472699648,
+        1.443222096718046,
+        0.032709763906403455,
+        2.5566389780563674
+      ],
+      "nodes": 41,
+      "prefix": 40,
+      "sd": [
+        0.8834321479018846,
+        0.6443135837346473,
+        0.858057797008392,
+        0.7438677092172117
+      ],
+      "seed": 17,
+      "split": "train"
+    },
+    {
+      "effective_nodes": [
+        5.462987991186707,
+        3.978226748029463,
+        5.30366385575438,
+        4.586261262909338
+      ],
+      "family": "H0",
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18992647",
+        "0"
+      ],
+      "mean": [
+        1.1229607485624993,
+        1.443249192793929,
+        0.032709787795407674,
+        2.5566391261273647
+      ],
+      "nodes": 81,
+      "prefix": 40,
+      "sd": [
+        0.8834321489150169,
+        0.6442177529831097,
+        0.8580578426262505,
+        0.7438654245486728
+      ],
+      "seed": 17,
+      "split": "train"
+    }
+  ],
+  "scope": "all128 train/validation groups; no test outcomes",
+  "selected_nodes": [
+    41
+  ],
+  "tail_check": "P(C/e >= 0.8), also required to differ by <0.001",
+  "threshold_nats_and_fraction": 0.001,
+  "utc": "2026-10-01T10:56:37.937709+00:00",
+  "wall_seconds": 25.23436826595571
+}

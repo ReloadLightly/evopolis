@@ -1,0 +1,502 @@
+{
+  "utc": "2026-10-01T13:16:56.489696+00:00",
+  "status": "passed",
+  "launch_command": ".venv/bin/python -m evopolis.viewer --port 8765",
+  "browser": "Chromium 153.0.8010.36 through isolated agent-browser session evopolis-task05",
+  "skills": [
+    "vercel:agent-browser",
+    "vercel:agent-browser-verify"
+  ],
+  "desktop_viewport": [
+    1366,
+    900
+  ],
+  "total_scripted_flows": 26,
+  "recorded_and_sandbox_regression": {
+    "checks": [
+      {
+        "evidence": {
+          "episodes": 40,
+          "key": [
+            "Equal Baseline Exp 1",
+            "67430636",
+            "0"
+          ]
+        },
+        "name": "default selection",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "final_cumulative": 50.26139649748802,
+          "resident": "C",
+          "round12_after": 0.009999999776482582
+        },
+        "name": "resident, exact values and backward seek",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "paused_round": 2
+        },
+        "name": "play, pause, speed, previous and restart",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "episodes": 512,
+          "final_after": null,
+          "key": [
+            "Equal Baseline BC 1",
+            "1221",
+            "197"
+          ]
+        },
+        "name": "upstream replay",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "keys": [
+            "Equal Baseline BC 1 \u00b7 launch 1221 \u00b7 episode 197 \u00b7 source rounds 0\u201339",
+            "Mixed Baseline Exp 1 \u00b7 launch 70094867 \u00b7 episode 0 \u00b7 source rounds 0\u201339"
+          ],
+          "round": 9
+        },
+        "name": "independent recorded comparison",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "selected": "e706d5afdf5a3e26d83e711d37aee3c8021c9eb39cae4706fbb9358a9039f134"
+        },
+        "name": "keyboard outcome selection",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "decimal_fraction": 0.58,
+          "initial_return": 29,
+          "rules": [
+            "equal",
+            "proportional"
+          ]
+        },
+        "name": "scripted policies, matched comparison, edits and reset",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "ended": "Run ended after round 1 (exact-zero pool); final state held while the other pane continues."
+        },
+        "name": "unequal run lengths and reduced motion",
+        "status": "pass"
+      }
+    ],
+    "viewport": [
+      1366,
+      900
+    ]
+  },
+  "trained_agent_regression": {
+    "checks": [
+      {
+        "evidence": {
+          "cells": 48,
+          "checkpoint_sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+          "games": 3072,
+          "id": "trained-recurrent-17-equal-039",
+          "rollout_seed": "4128699797167127739"
+        },
+        "name": "complete design and default",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "final_total": 72,
+          "first_prediction": {
+            "alpha": 1.5868059602018556,
+            "beta": 1.8041972027715032,
+            "emission_parameters": [
+              -0.9410369992256165,
+              -1.820979356765747,
+              1.2349179983139038,
+              1.2946491241455078,
+              1.5641908645629885
+            ],
+            "evaluated": true,
+            "expected_contribution": 22.188313666537383,
+            "legal_max": 50,
+            "mixture_weights": [
+              0.0977956658971911,
+              0.040566309325140784,
+              0.861638024777668
+            ],
+            "p_max": 0.042853579736774165,
+            "p_zero": 0.10294382922474826
+          },
+          "resident": "D"
+        },
+        "name": "resident, exact values, prediction and backward seek",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "paused_round": 2
+        },
+        "name": "play, pause, previous, restart",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "families": 4,
+          "rollouts_per_cell": 64,
+          "training_seed": 43
+        },
+        "name": "family, checkpoint, mechanism and rollout selection",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "executed_rounds": 11,
+          "id": "trained-constant-17-equal-000"
+        },
+        "name": "exact-zero termination and padding",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "axes": [
+            {
+              "poolMax": "200",
+              "roundMax": "40",
+              "surplusMax": "422.2"
+            },
+            {
+              "poolMax": "200",
+              "roundMax": "40",
+              "surplusMax": "422.2"
+            }
+          ],
+          "sources": [
+            "NEW TRAINED EVOPOLIS SIMULATION",
+            "RECORDED HUMAN \u00b7 EXP 1"
+          ]
+        },
+        "name": "independent human/trained comparison with common scales",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "id": "trained-recurrent-17-equal-039",
+          "rollout_seed": "4128699797167127739"
+        },
+        "name": "published episode identity is reproducible",
+        "status": "pass"
+      }
+    ],
+    "viewport": [
+      1366,
+      900
+    ]
+  },
+  "task04_forecast_regression": {
+    "checks": [
+      {
+        "evidence": {
+          "branch_index": 0,
+          "cells": 1728,
+          "checkpoint_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+          "conditions": 18,
+          "groups": 24,
+          "id": "forecast-continued-recurrent-17-g44-k5-main-recorded",
+          "rollout_seed": "5979234547828462316"
+        },
+        "name": "complete forecast design and deterministic default",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "axes": [
+            {
+              "poolMax": "200",
+              "roundMax": "25",
+              "surplusMax": "991.7979812622069"
+            },
+            {
+              "poolMax": "200",
+              "roundMax": "25",
+              "surplusMax": "991.7979812622069"
+            }
+          ],
+          "band": {
+            "participation_lower": 4,
+            "participation_median": 4,
+            "participation_upper": 4,
+            "pool_lower": 189.84110626220703,
+            "pool_median": 200,
+            "pool_upper": 200,
+            "round_id": 5
+          },
+          "offers": [
+            42.04520034790039,
+            53.97699737548828,
+            53.40879821777344,
+            50.56789779663086
+          ],
+          "prediction": {
+            "evaluated": true,
+            "expected_contribution": 38.60718132112464,
+            "legal_max": 50,
+            "p_max": 0.0964029702729508,
+            "p_zero": 0.012112723288043557
+          },
+          "resident": "D",
+          "returns": [
+            30,
+            0,
+            44,
+            47
+          ],
+          "round": 6
+        },
+        "name": "recorded prefix, precise boundary, actual future and exact resident prediction",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "first_branch": 0,
+          "median_branch": 6
+        },
+        "name": "illustration selection preserves the 64-branch distribution",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "families": 4,
+          "maximum_playback_round": 40,
+          "origins": [
+            0,
+            5,
+            10,
+            20
+          ]
+        },
+        "name": "model, budget, training seed and all origins",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "final_round": 40
+        },
+        "name": "play, previous and restart obey the episode limit",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "actual_rounds": 7,
+          "id": "forecast-continued-recurrent-17-g11-k5-main-recorded"
+        },
+        "name": "failed forecast accessible and padding explicit",
+        "status": "pass"
+      }
+    ],
+    "viewport": [
+      1366,
+      900
+    ]
+  },
+  "task05_conditional_forecasts": {
+    "checks": [
+      {
+        "evidence": {
+          "conditions": 1152,
+          "families": [
+            "P0",
+            "P1",
+            "H0",
+            "H1"
+          ],
+          "origins": [
+            0,
+            5,
+            10,
+            20
+          ],
+          "seeds": [
+            17,
+            29,
+            43
+          ]
+        },
+        "name": "four matched families, twelve fits and all forecast origins",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "id": "task05-H1-17-g44-k5-main-recorded",
+          "latent_effects": [
+            -1.5336953510959477,
+            0,
+            3.076334825635869,
+            3.076334825635869
+          ],
+          "parameters": {
+            "beta": 1.665176151554555,
+            "eta": 0.7464310001947801,
+            "sigma": 1.5710248380385057
+          },
+          "prefix_posteriors": [
+            {
+              "effective_nodes": 5.602499786527796,
+              "mean": 0.964162896351128,
+              "normalization": 1.0000000000000002,
+              "p10": -0.7662965376153383,
+              "p50": 0.7662965376153383,
+              "p90": 2.303319509092526,
+              "sd": 1.2145044590465752
+            },
+            {
+              "effective_nodes": 5.730467176516203,
+              "mean": 1.8368268950378643,
+              "normalization": 1,
+              "p10": 0,
+              "p50": 1.5336953510959477,
+              "p90": 3.076334825635869,
+              "sd": 1.2454420627049685
+            },
+            {
+              "effective_nodes": 5.836911261599562,
+              "mean": 2.0847474194066313,
+              "normalization": 1,
+              "p10": 0.7662965376153383,
+              "p50": 2.303319509092526,
+              "p90": 3.853974264086267,
+              "sd": 1.2696161892883733
+            },
+            {
+              "effective_nodes": 5.647910900902443,
+              "mean": 1.5637490243509218,
+              "normalization": 1,
+              "p10": 0,
+              "p50": 1.5336953510959477,
+              "p90": 3.076334825635869,
+              "sd": 1.2262964915658146
+            }
+          ]
+        },
+        "name": "exact PMFs, pre-choice histories, past-only posterior and persistent resident effects",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "median_branch": 21
+        },
+        "name": "branch-specific effect selection and population-only family",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "actual_rounds": 7,
+          "id": "task05-H1-17-g11-k5-main-recorded"
+        },
+        "name": "terminated conditional forecast remains accessible with explicit padding",
+        "status": "pass"
+      },
+      {
+        "evidence": {
+          "budget": "continued",
+          "old_family": "recurrent"
+        },
+        "name": "Task 04 model and recorded replay remain reachable",
+        "status": "pass"
+      }
+    ],
+    "viewport": [
+      1366,
+      900
+    ]
+  },
+  "url_restoration": {
+    "status": "pass",
+    "family": "H1",
+    "origin": "5",
+    "residents": [
+      "Resident D",
+      "Resident C"
+    ],
+    "round": "5",
+    "url": "http://127.0.0.1:8765/?mode=forecast&compare=1&round=6&forecast=task05-H1-17-g44-k5-main-recorded&branch=first&resident0=3&episode0=e2b1800c580e10405468d62a5d99393054d940063bb37151abf3c989ed3fadee&resident1=2&episode1=null"
+  },
+  "native_keyboard": {
+    "status": "pass",
+    "action": "Focus model family and press ArrowUp, changing H1 to H0",
+    "family": "H0",
+    "identity": "Mixed \u00b7 launch 18823620 \u00b7 ep 0 \u00b7 H0 \u00b7 persistent differences \u00b7 480-epoch budget \u00b7 seed 17 \u00b7 selected epoch 480 \u00b7 checkpoint 7d6fc5c3d045 \u00b7 branch 0 \u00b7 rollout seed 17205410230633913527",
+    "ready": true,
+    "error_hidden": true
+  },
+  "mobile": {
+    "status": "pass",
+    "body_width": 390,
+    "document_width": 390,
+    "error_hidden": true,
+    "family": "H1",
+    "history_visible": true,
+    "no_horizontal_overflow": true,
+    "pmf_rows": 51,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "console_output": "",
+  "browser_errors": "",
+  "screenshot": {
+    "path": "docs/assets/task05-conditional-community-viewer.png",
+    "sha256": "1e0ccf33831d5a132fb8e4f24f1206658b2f9dbaa28ca88e9ef060fccc87ce76",
+    "dimensions": [
+      1366,
+      3500
+    ],
+    "actual_running_application": true,
+    "id": "task05-H1-17-g44-k5-main-recorded",
+    "key": [
+      "Mixed Baseline Exp 1",
+      "18823620",
+      "0"
+    ],
+    "family": "H1",
+    "seed": 17,
+    "selected_epoch": 480,
+    "checkpoint_sha256": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d",
+    "origin": 5,
+    "playback_round": 6,
+    "forecast_resident": "D",
+    "human_resident": "C",
+    "branch_index": 0,
+    "rollout_seed": "8536210809897347579",
+    "first_forecast_offers": [
+      42.04520034790039,
+      53.97699737548828,
+      53.40879821777344,
+      50.56789779663086
+    ],
+    "first_forecast_returns": [
+      23,
+      44,
+      37,
+      50
+    ]
+  },
+  "test_scripts_sha256": {
+    "scripts/check-viewer-browser.js": "7519d14a98ce0b0ef46fc733f5121b238c89f54f481e8348761832308094e7ee",
+    "scripts/check-trained-viewer-browser.js": "6b28310d3c111d23d24e9535fbe44bf7d12bb271030af27c45f505b138f31ccc",
+    "scripts/check-forecast-viewer-browser.js": "2c31fa1c52dfd19b71b2bb06ccb058e321a8d57cf7638cfae9108b3fc755f653",
+    "scripts/check-conditional-viewer-browser.js": "a6a4b31e3ed365895048e14d404833a4cd7c90f457996d676e47b18e7a26205b"
+  },
+  "forecast_archive_sha256": "2a9fc319a30ad4823bd4a636f55bcc5d47070212607da813931bb56639b2be3e",
+  "browser_closed": true,
+  "server_stopped": true,
+  "scope": "Browser values checked against saved archive; fresh model regeneration and numerical checks are separate scientific evidence."
+}

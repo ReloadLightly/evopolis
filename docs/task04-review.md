@@ -1,6 +1,6 @@
 # Scientific review after Task 04
 
-Reviewed 2026-10-01 at commit `053ac5016bc23b608000c522e4d41ec5d7d4f3e2`. This is a review of completed evidence, not a new experiment. [Task 05](tasks/05-conditional-responses.md) is specified but has not run.
+Reviewed 2026-10-01 at commit `053ac5016bc23b608000c522e4d41ec5d7d4f3e2`. This historical review concerns evidence available before Task 05. The subsequent [conditional-response study](conditional-responses.md) has now completed twelve fits and 89,856 forecast branches: its primary H1−H0 comparison shows no clear improvement on either predictive target. The review and original Task 04 findings below remain unchanged in scope.
 
 ## Where the project stands
 
@@ -51,7 +51,7 @@ There are only 21 groups in the primary comparison. Group intervals condition on
 
 The EvoPolis dataset does not contain those elicited schedules or beliefs. Its allocation rules also change investment incentives. Below the resource cap, with full allocation and other contributions fixed, one extra unit returned increases one's next offer by 0.35 under Equal, 0.875 under Mixed and 1.4 under Proportional. A contribution therefore need not express altruism or reciprocity. This game is not the standard equal-endowment public-goods experiment.
 
-Task 05 will test a restricted, explicitly adapted prediction: **does a fitted response to peers' past feasible contributions improve predictions, and does modeling persistent individual differences alter that result?** A matched four-model comparison separates the peer-response term from persistent variation. Peer-response coefficients can be negative, so the proposed positive response can fail. All models condition on opportunity and own history; forced non-contributions are never treated as voluntary free riding.
+The Task 05 protocol specified a restricted, explicitly adapted prediction: **does a fitted response to peers' past feasible contributions improve predictions, and does modeling persistent individual differences alter that result?** A matched four-model comparison separates the peer-response term from persistent variation. Peer-response coefficients can be negative, so the proposed positive response can fail. All models condition on opportunity and own history; forced non-contributions are never treated as voluntary free riding. Its [completed report](conditional-responses.md) now gives the measured outcome; the rationale here records the pre-execution assessment.
 
 This is a theory-informed predictive mechanism comparison, not identification of preferences or a replication of the original preference/belief experiments. Current offers themselves encode earlier contributions, especially under Proportional allocation. Even a baseline without the extra peer-history term therefore contains indirect social information. Model curves describe conditional associations and simulated mechanisms, not human causal treatment effects.
 

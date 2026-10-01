@@ -21,11 +21,11 @@
   <section id="forecast-controls" hidden aria-label="Forecast selection">
     <div class="forecast-selectors">
       <label>Human group · Experiment 1<select id="forecast-group"></select></label>
-      <label>Model family<select id="forecast-family"><option value="constant">Constant</option><option value="linear">Linear</option><option value="feedforward">Feedforward</option><option value="recurrent">Recurrent · GRU</option></select></label>
-      <label>Optimization budget<select id="forecast-budget"><option value="original">Original · 120 epochs</option><option value="continued">Continued · 480 epochs</option></select></label>
+      <label>Model family<select id="forecast-family"></select></label>
+      <label>Optimization budget<select id="forecast-budget"><option value="original">Original · 120 epochs</option><option value="continued">Continued · 480 epochs</option><option value="conditional">Conditional response · 480 epochs</option></select></label>
       <label>Training seed<select id="forecast-seed"><option>17</option><option>29</option><option>43</option></select></label>
       <label>Observed rounds · k<select id="forecast-origin"><option>0</option><option selected>5</option><option>10</option><option>20</option></select></label>
-      <label>Illustrative branch<select id="forecast-branch"><option value="first">Branch zero · paired stream</option><option value="median">Nearest median surplus</option></select></label>
+      <label>Illustrative branch<select id="forecast-branch"><option value="first">Branch zero</option><option value="median">Nearest median surplus</option></select></label>
     </div>
     <p id="forecast-selection-note"></p>
   </section>
@@ -88,7 +88,8 @@
         <div class="opportunity"></div>
         <details class="history-detail"><summary>Resident history through this round</summary><div class="history-scroll"><table><thead><tr><th>Round</th><th>Offer</th><th>Return</th><th>Retain</th><th>Cumulative</th></tr></thead><tbody class="history"></tbody></table></div></details>
         <details><summary>Information before this choice</summary><p class="information-basis"></p><p class="previous-returns"></p><p class="prior-cumulative"></p><p class="prediction-note">No fitted model predictions are available.</p></details>
-        <div class="prediction-panel" hidden><h3>BEFORE-CHOICE PREDICTION</h3><dl class="prediction-values"></dl><p class="prediction-support"></p></div>
+        <div class="prediction-panel" hidden><h3>BEFORE-CHOICE PREDICTION</h3><dl class="prediction-values"></dl><p class="prediction-support"></p><details class="pmf-detail" hidden><summary>Saved legal-action distribution</summary><svg class="pmf-chart" viewBox="0 0 300 130" role="img" aria-label="Saved contribution probability distribution"></svg><div class="history-scroll"><table><thead><tr><th>Return</th><th>Probability</th></tr></thead><tbody class="pmf-values"></tbody></table></div></details></div>
+        <div class="conditional-panel" hidden><h3>HISTORY BEFORE THIS CHOICE</h3><dl class="conditional-values"></dl><p class="conditional-note"></p><details><summary>Resident effect and population parameters</summary><dl class="latent-values"></dl><p class="latent-note"></p></details></div>
       </aside>
     </div>
     <details class="exact-detail"><summary>Inspect exact round values &amp; accounting</summary><div class="exact-scroll"><table><thead><tr><th>Resident</th><th>Allocation</th><th>Return</th><th>Round surplus</th><th>Cumulative surplus</th></tr></thead><tbody class="exact-values"></tbody></table></div><p class="exact-pool"></p><p class="accounting"></p><p class="after-source"></p><p class="gini-note"></p></details>

@@ -1,0 +1,110 @@
+{
+  "browser": {
+    "checks": "Recorded/sandbox, trained agents, Task 04 forecasts, all new families, exact saved PMFs/history/effects, termination padding, native keyboard selection, direct URL restoration, mobile layout, console and errors",
+    "passed": true,
+    "path": "results/task05/browser-verification.json",
+    "scripted_flows": 26,
+    "sha256": "20df5359eb5253065a997517707aa9e79f923fa00c333e8e131cb36a6443e2f0"
+  },
+  "execution": {
+    "path": "results/task05/execution.json",
+    "sha256": "1afd6a42318e205e404c5f4533ab51254e44d26ac7817278d50676f0fb4b1dfa"
+  },
+  "forecast": {
+    "all_branches_checked": 89856,
+    "archive_bytes": 96071680,
+    "archive_sha256": "2a9fc319a30ad4823bd4a636f55bcc5d47070212607da813931bb56639b2be3e",
+    "cells_checked": 1404,
+    "fresh_process_exact_branches": 64,
+    "path": "results/task05/forecast_verification.json",
+    "sha256": "433857b0ca2fcac60ec9f8561a381a1a861817ef759351673f83052a0ac84acf"
+  },
+  "frozen_identities_rechecked": [
+    "results/task05/frozen_training.json",
+    "results/task05/forecast_frozen.json",
+    "results/task05/evaluation_opening.json"
+  ],
+  "independent_audit": {
+    "maximum_absolute_disagreement": {
+      "contrast_estimate": 3.89011739487799e-16,
+      "contrast_interval": 5.828670879282072e-16,
+      "coverage": 0.0,
+      "energy": 2.220446049250313e-16,
+      "forecast_means": 1.1102230246251565e-16,
+      "individual_nll": 1.3322676295501878e-15,
+      "interval_bounds": 0.0,
+      "observed_endpoint": 0.0,
+      "pool_crps": 1.6653345369377348e-16,
+      "raw_source_arrays": 0.0,
+      "reference_individual_nll": 1.3322676295501878e-15,
+      "reported_target": 0.0,
+      "saved_endpoints": 0.0,
+      "surplus_crps": 1.1102230246251565e-16,
+      "trajectory_pool_crps": 2.220446049250313e-16
+    },
+    "passed": true,
+    "path": "results/task05/independent_score_audit.json",
+    "score_rows": 5364,
+    "sha256": "5d1e1af0592b1d25780e28b227973b8d57f32f5b55aadc15a09f066eb57b9cf5"
+  },
+  "integration": {
+    "development_groups_per_checkpoint": 128,
+    "maxima": {
+      "group_nll": 3.380616818778511e-06,
+      "posterior_normalization": 1.7763568394002505e-15,
+      "prediction_fraction": 0.0002607126113225353,
+      "resident_nll": 3.7384374998339354e-05,
+      "tail_probability": 0.000273748229456916
+    },
+    "nodes_compared": [
+      41,
+      81
+    ],
+    "passed": true,
+    "path": "results/task05/integration_checks.json",
+    "persistent_checkpoints": 6,
+    "sha256": "0d3116248ac04ec987c004f41e0e3532d5218f19f9e838fe0fa1d233f97336d2"
+  },
+  "passed": true,
+  "protected_artifacts": {
+    "base_revision": "f9e4d33042d8e1052fe5403779e21b2dbaa1caa5",
+    "files_byte_identical": 158,
+    "path": "results/task05/preservation.json",
+    "sha256": "172ac5d6b0405d69d6ec47d3b9e933f9d9ff723dd6e084e21d024f7ffb94eece"
+  },
+  "reserved_evidence": "Experiments 2-3 outcomes excluded; Experiment 4 outside scope",
+  "scientific_decision": {
+    "interpretation": "Neither primary 95% paired interval establishes H1 improvement over H0; positive fitted beta does not validate the proposed incremental mechanism.",
+    "joint_predictive_improvement": false
+  },
+  "scope": "Task 05 completion evidence; final hashes checked after numerical and browser verification",
+  "tests": {
+    "focused": {
+      "command": ".venv/bin/python -m unittest tests.test_conditional_models tests.test_conditional_forecast tests.test_conditional_viewer_data -v",
+      "count": 11,
+      "passed": true,
+      "path": "results/task05/focused-tests.txt",
+      "sha256": "3153e47259881c368f512d2d449b58316df9c01eba8ce207aeb35089e20127f6"
+    },
+    "full": {
+      "command": ".venv/bin/python -m unittest discover -s tests -v",
+      "count": 61,
+      "passed": true,
+      "path": "results/task05/all-tests.txt",
+      "sha256": "a14904237fca917ac4b3c6059e1e8b61261aaf890c7ddfedbe86be85e9fb72cc"
+    }
+  },
+  "verified_utc": "2026-10-01T13:18:23.648822+00:00",
+  "visual_review": {
+    "files": {
+      "docs/assets/task05-conditional-community-viewer.png": "1e0ccf33831d5a132fb8e4f24f1206658b2f9dbaa28ca88e9ef060fccc87ce76",
+      "docs/assets/task05-forecast-trajectories.png": "ed4e1a6d2b39eeb57b190a328175a5b88a2f0802f985760387f327e819eb4127",
+      "docs/assets/task05-learning.png": "2bb565b66e623c180eb1a540ca31ce4cfe271040daa4a3e8ca946b8cabd99918",
+      "docs/assets/task05-predictive-comparisons.png": "39db4ddcb7c864de0c04c242186fe9381d5c6df585b19ba34075a7bb21d63862",
+      "docs/assets/task05-renewal-calibration.png": "ecdee5e6459fb221c645feab080c2db90735dfb8615ff41bd77d343670b8c0ee",
+      "docs/assets/task05-response-curves.png": "ab31e4c1018859cf20a1f691457fa9d223434679430fa153ac5ee9d4590c0add"
+    },
+    "method": "Root and responsible agents visually inspected measured scientific PNGs and actual browser screenshot; FFV-inspired town and panel styling retained",
+    "passed": true
+  }
+}

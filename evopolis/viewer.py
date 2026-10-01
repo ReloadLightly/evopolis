@@ -9,6 +9,7 @@ from urllib.parse import parse_qs, urlsplit
 from .viewer_data import catalog, get_episode, prepare_cache, sandbox
 from .trained_viewer_data import generated_catalog, generated_episode
 from .forecast_viewer_data import forecast_catalog, forecast_episode
+from .conditional_viewer_data import conditional_catalog, conditional_episode
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC = Path(__file__).with_name("static")
@@ -23,6 +24,10 @@ def make_handler(cache):
     trained = generated_catalog()
     trained_ids = {episode["id"] for episode in trained["episodes"]}
     forecasts = forecast_catalog()
+    conditional = conditional_catalog()
+    conditional_ids = {cell["id"] for cell in conditional["cells"]}
+    forecasts = {**forecasts, "cells": forecasts["cells"] + conditional["cells"],
+                 "default_id": forecasts["default_id"] or conditional["default_id"]}
 
     class Handler(BaseHTTPRequestHandler):
         def respond(self, status, body, content_type="application/json"):
@@ -47,8 +52,9 @@ def make_handler(cache):
                         "forecasts": forecasts})
                 elif url.path == "/api/forecast":
                     query = parse_qs(url.query)
-                    self.respond(200, forecast_episode(query.get("id", [""])[0],
-                                                       query.get("branch", ["first"])[0]))
+                    identity = query.get("id", [""])[0]
+                    reader = conditional_episode if identity in conditional_ids else forecast_episode
+                    self.respond(200, reader(identity, query.get("branch", ["first"])[0]))
                 elif url.path == "/api/episode":
                     identity = parse_qs(url.query).get("id", [""])[0]
                     self.respond(200, generated_episode(identity) if identity in trained_ids else get_episode(cache, identity))

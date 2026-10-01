@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-01T09:46:17.542036+00:00",
+  "meminfo": "MemTotal:        3836020 kB\nMemFree:           89448 kB\nMemAvailable:     454340 kB\nBuffers:           17144 kB\nCached:           347924 kB\nSwapCached:        24660 kB\nActive:          1140500 kB\nInactive:        2094928 kB\nActive(anon):     959024 kB\nInactive(anon):  1913592 kB\nActive(file):     181476 kB\nInactive(file):   181336 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       1048576 kB\nSwapFree:              0 kB\nDirty:                44 kB\nWriteback:           188 kB\nAnonPages:       2846356 kB\nMapped:           247520 kB\nShmem:              1812 kB\nKReclaimable:      96544 kB\nSlab:             190632 kB\nSReclaimable:      96544 kB\nSUnreclaim:        94088 kB\nKernelStack:       13696 kB\nPageTables:        59604 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     2966584 kB\nCommitted_AS:    9082524 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       41524 kB\nVmallocChunk:          0 kB\nPercpu:             3488 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      171008 kB\nDirectMap2M:     3846144 kB\nDirectMap1G:     8388608 kB\n",
+  "disk": {
+    "total": 1081101176832,
+    "used": 76469743616,
+    "free": 949639077888
+  },
+  "cpus": 8,
+  "microbatch_groups": 1,
+  "threads": 1
+}

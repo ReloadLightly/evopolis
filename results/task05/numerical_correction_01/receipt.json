@@ -1,0 +1,105 @@
+{
+  "utc": "2026-10-01T10:56:03.755443+00:00",
+  "reason": "Initial21-node selected H0/17 failed pre-test training/validation convergence: max fraction0.01011287436740758>0.001; max resident NLL0.0010089482179413967>0.001. P families have no latent integral and are unaffected. Higher resolution will be chosen on development numerical evidence only; affected persistent fits restart from the declared seeded initialization.",
+  "original_files": {
+    "configs/task05.json": "0450696cdac3270316c69b8d8bcb000e332faf3503f9c807a5a95ea77c2802a0",
+    "evopolis/conditional_models.py": "c28ea5c4cf52ed334415d593776033769b3e6799f8c692bbd19b50b27e2486ee",
+    "evopolis/conditional_train.py": "10987d933deab250944688febac0e8316f07afabcc48ed74b48a947fa69b2fbd",
+    "evopolis/conditional_integration.py": "a4851c62094c85ebc449cc17d93cf71f02fa12b31e9569adbbf9764a37e7cd09",
+    "results/task05/frozen_training.json": "6109f514ee41159177dc04dba7fdffe7a1de7edc3a4484684653568ba65eed6c",
+    "results/task05/integration_early_checks.json": "2a0dd4b479b67308683d9afddaf9c1736eb2693bfc959c5f53ee625c856be94d",
+    "results/task05/integration_early_41_checks.json": "48a180ebc99cc01be1ba5fcb4ec16528f3a64652dcee8d3ff05020e6d182b06e"
+  },
+  "test_outcome_comparisons_opened": false,
+  "completed_persistent_fits_at_check": 1,
+  "partial_next_fit": "H0/29",
+  "status": "Complete: all six persistent fits refitted at41 nodes and all selected checkpoints passed the development-only41vs81 accuracy gate before evaluation.",
+  "selected_integration_nodes": 41,
+  "resolution_evidence": "integration_early_41_checks.json: all128 developmentgroups compare41vs81; maxima residentNLL0.00003735120014991544, fraction0.00022886933936215224, tail0.0002403127954169193; all below0.001",
+  "unaffected_fits": {
+    "P0_17": {
+      "best_sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+      "last_sha256": "c7db9c9d1259518c12e744f3b405ac837e4ad94bf806b8ac0859f58101c2ae88",
+      "selected_epoch": 480
+    },
+    "P1_17": {
+      "best_sha256": "019662b85c044462d5d4b319ab65b2ab52128d7a7c3091fc3dd9df5daaf9a19e",
+      "last_sha256": "f4010fc1194a363245de84b74c9e09e7a6f9d59a352110a72663011456b607cc",
+      "selected_epoch": 480
+    },
+    "P1_43": {
+      "best_sha256": "940393c41c87f14644bfb449765c900f06cf92bcc858839f5814aeafbaa2b354",
+      "last_sha256": "b2458aa4d8305b9bfb9c2342c4e24fb73f921c7767a38f878db0af9030bd5daa",
+      "selected_epoch": 480
+    },
+    "P0_43": {
+      "best_sha256": "56f691d06b0452d030688fb9a09ff57445ec796c118db8e2dc5aa9166d73a662",
+      "last_sha256": "566724f0f734dbf7db6107cc48e9131c2e0b0eaac930563e4558d98796d9a9d9",
+      "selected_epoch": 480
+    },
+    "P0_29": {
+      "best_sha256": "2fdd756d345c2013996866284f7792835fdb659a3c5df2690b00800af5d89642",
+      "last_sha256": "e62322d1e595547a9ebb6de26635091d1066005f2d801a56c95f9b172545437d",
+      "selected_epoch": 480
+    },
+    "P1_29": {
+      "best_sha256": "deda3db37265ccd7344a0aef229ce761bfbfae8f29b44fe12a07d6b993a09087",
+      "last_sha256": "747dee11f68b131e8c1a77bae24851858c1100ff8610689bb9a4729d0e19a9cc",
+      "selected_epoch": 480
+    }
+  },
+  "model_definitions_changed": [
+    "prequential: same legal base mass computed once per resident/round instead of repeated per node; optimization only"
+  ],
+  "training_model_functions_byte_equivalent_ast": true,
+  "refit_from_seeded_initialization": [
+    "H0_17",
+    "H0_29",
+    "H0_43",
+    "H1_17",
+    "H1_29",
+    "H1_43"
+  ],
+  "correction_frozen_utc": "2026-10-01T10:58:50.126370+00:00",
+  "original_attempts": {
+    "H0_17": {
+      "last_epoch": 480,
+      "elapsed_seconds": 912.4887885490898,
+      "cpu_seconds": 985.6970170999998,
+      "last_sha256": "39f8a269283885573e8f766432f014a9e111aaa50c63021f185317d2587a60bf"
+    },
+    "H0_29": {
+      "last_epoch": 18,
+      "elapsed_seconds": 30.838547470979393,
+      "cpu_seconds": 33.23739271000022,
+      "last_sha256": "8adae5892b6add2fbd5bd26e04fcf2715ffa4e1db278b1ceb944ed2b83b71e27"
+    }
+  },
+  "pre_refit_tests": {
+    "tests": 10,
+    "result": "passed",
+    "seconds": 2.059,
+    "command": ".venv/bin/python -m unittest tests.test_conditional_models tests.test_conditional_forecast tests.test_conditional_viewer_data"
+  },
+  "final_gate": {
+    "utc": "2026-10-01T12:50:19.886018+00:00",
+    "sha256": "0d3116248ac04ec987c004f41e0e3532d5218f19f9e838fe0fa1d233f97336d2",
+    "all_six_passed": true,
+    "maxima": {
+      "group_nll": 3.380616818778511e-06,
+      "posterior_normalization": 1.7763568394002505e-15,
+      "prediction_fraction": 0.0002607126113225353,
+      "resident_nll": 3.7384374998339354e-05,
+      "tail_probability": 0.000273748229456916
+    }
+  },
+  "corrected_selected_checkpoints": {
+    "H0_43": "4606995065f47f7e6aded0b67ffbe1074066ada14798652153d70e8ee4df7b19",
+    "H0_17": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+    "H0_29": "9c6cade561becf4363b269f5db19158a0a5c4dc9895ce7f7edae5e1253718aa4",
+    "H1_29": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+    "H1_43": "8db1ae16acc2a45e47b63d73d19b64849a67d78319bffa949269b6d8298094f1",
+    "H1_17": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d"
+  },
+  "completed_utc": "2026-10-01T12:50:21.880992+00:00"
+}

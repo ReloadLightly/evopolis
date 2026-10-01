@@ -1,0 +1,19 @@
+test_legal_mass_reduction_and_signed_derivative (tests.test_conditional_models.ConditionalChecks.test_legal_mass_reduction_and_signed_derivative) ... /home/roland/projects/evopolis/tests/test_conditional_models.py:27: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  self.assertEqual(float(base[0,0]),1.)
+ok
+test_marginal_sequence_equals_prequential_and_past_only (tests.test_conditional_models.ConditionalChecks.test_marginal_sequence_equals_prequential_and_past_only) ... ok
+test_simultaneous_history_and_peer_order (tests.test_conditional_models.ConditionalChecks.test_simultaneous_history_and_peer_order) ... ok
+test_whole_group_weighting_and_exact_resume (tests.test_conditional_models.ConditionalChecks.test_whole_group_weighting_and_exact_resume) ... ok
+test_zero_sigma_marginal_and_history_kernel (tests.test_conditional_models.ConditionalChecks.test_zero_sigma_marginal_and_history_kernel) ... ok
+test_indexed_streams_and_inverse_cdf_never_leave_legal_support (tests.test_conditional_forecast.ConditionalForecastTests.test_indexed_streams_and_inverse_cdf_never_leave_legal_support) ... ok
+test_integration_receipt_matches_exact_selected_checkpoints_and_resolution (tests.test_conditional_forecast.ConditionalForecastTests.test_integration_receipt_matches_exact_selected_checkpoints_and_resolution) ... ok
+test_matched_factorial_group_weighting_and_shared_primary_resampling (tests.test_conditional_forecast.ConditionalForecastTests.test_matched_factorial_group_weighting_and_shared_primary_resampling) ... ok
+test_origin_uses_only_prefix_and_independent_latent_stays_fixed (tests.test_conditional_forecast.ConditionalForecastTests.test_origin_uses_only_prefix_and_independent_latent_stays_fixed) ... ok
+test_residual_padding_and_simultaneous_generated_history (tests.test_conditional_forecast.ConditionalForecastTests.test_residual_padding_and_simultaneous_generated_history) ... ok
+test_branch_effect_history_and_pmf_are_not_mixed_between_illustrations (tests.test_conditional_viewer_data.ConditionalPlaybackTests.test_branch_effect_history_and_pmf_are_not_mixed_between_illustrations) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.672s
+
+OK

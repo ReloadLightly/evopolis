@@ -16,7 +16,7 @@ Open `http://127.0.0.1:8765`. Ctrl+C closes the local server. An occupied port p
 
 Choose **New trained EvoPolis agents**, or open `http://127.0.0.1:8765/?mode=trained` directly, to watch the saved Task 03 simulations. The per-pane Evidence menu keeps recorded humans, recorded upstream BC1 outcomes and new trained simulations distinct. The scripted sandbox remains separate. Playback reads published trajectories; it does not import PyTorch, train weights or generate new samples in the browser.
 
-Choose **Forecast from human history**, or open `http://127.0.0.1:8765/?mode=forecast`, to inspect Task 04's conditional forecasts beside the corresponding actual human continuation.
+Choose **Forecast from human history**, or open `http://127.0.0.1:8765/?mode=forecast`, to inspect Task 04 and Task 05 forecasts beside the corresponding actual human continuation.
 
 ## Recorded evidence
 
@@ -63,6 +63,20 @@ The additional pool chart overlays the actual future and selected branch on the 
 Resident inspection, exact numerical values, saved before-choice predictions, history, source and checkpoint hashes, decimal-string rollout seeds, backward seeking, speed and reduced-motion controls work in the forecast view. Displayed cumulative retained totals include the observed prefix; the scientific forecast-window surplus excludes it. A copied link preserves the group/checkpoint/origin/branch selection, round and both selected residents. The observed future is always comparison evidence, never a forecast input. Recorded arithmetic residuals are preserved.
 
 The viewer reads the published `results/task04/forecasts.sqlite3` archive without importing Torch. It exposes the **1,728 principal first-bank, recorded-boundary conditions**, each with 64 forecast draws underlying its bands and two saved illustrative branches. The independent second bank and canonical-first-allocation sensitivity are reported in the study; they do not silently replace the principal forecast distribution. Playback does not perform fitting, online parameter adaptation or on-demand sampling.
+
+### Conditional responses and resident differences
+
+The same family menu also exposes Task 05's **P0, P1, H0 and H1**, with seeds 17, 29 and 43 under their assigned 480-epoch budget. P1 and H1 add a signed peer-history response; H0 and H1 add a persistent resident effect. All use the same opportunity and own-history controls. The Task 05 archive adds **1,152 principal conditions**: twelve selected checkpoints × 24 groups × four origins, each with 64 branches. The existing GRU default, earlier forecasts, recorded replay, trained communities and sandbox remain available.
+
+For these families, the resident inspector displays the **saved full legal-action PMF**, own and peer traces before the current choice, the previous-round valid own fraction, opportunity indicators and peer exposure. Fractions use the actual offer `e`, including its fractional part; offers below one provide no willingness observation. A peer trace is an observed/generated history summary, not an elicited human belief. Current offers already encode indirect social history, so P0/H0 do not mean an absence of social information.
+
+The effect panel shows the fitted beta, eta and sigma, this branch's resident effect, and that resident's prefix-posterior mean and standard deviation. H0/H1 draw one effect per resident from the posterior inferred using only the observed prefix and keep it fixed through the generated branch. The displayed PMF **conditions on that sampled effect**. Ensemble forecast bands integrate this uncertainty by sampling different effects across branches. P0/P1 fix the effect and its population scale to zero. Neither trace updates nor posterior inference change the fitted population parameters, and the latent effect is not an identified psychological type.
+
+The reader opens `results/task05/forecasts.sqlite3` read-only and uses the same playback API and original pixel town. The [conditional-viewer browser check](../scripts/check-conditional-viewer-browser.js) compares the displayed distributions, histories and resident effects directly with that archive, exercises all twelve fits and origins, and checks the return to earlier forecast and recorded modes.
+
+The [actual Task 05 Chromium verification](../results/task05/browser-verification.json) passed **26 scripted flows**: eight recorded/sandbox, seven trained-agent, six Task 04 forecast and five conditional-model flows. These include a terminated H1 forecast with explicitly labeled padding, all twelve new fits, full saved PMFs, traces, branch-specific effects and their conditioning scope. Native keyboard input changed H1 to H0; a direct URL restored the model, origin, round and both residents. Expanded PMF/history panels caused no horizontal overflow at 390×844. Browser errors and console output were empty. The browser and local server were closed after verification.
+
+The [real conditional-viewer screenshot](assets/task05-conditional-community-viewer.png) shows the first sorted Mixed group (launch 18823620, episode 0), H1 seed 17, selected epoch 480, origin `k=5`, branch zero, playback round 6, with Residents D/C selected. Its saved action probabilities condition on the illustrated branch's fixed resident effect; the forecast band includes variation across all 64 branches. This interface screenshot is not experimental evidence of a successful model comparison.
 
 ## Transparent sandbox
 

@@ -1,0 +1,46 @@
+{
+  "accessed_date": "2026-10-01",
+  "attribution": "Theoretical operationalization is original EvoPolis work. No article code, participant data, graphics, or numerical parameter estimates were copied. Task 03 legal-support emission helpers are reused by import without changing protected sources.",
+  "sources": [
+    {
+      "id": "fischbacher_gaechter_fehr_2001",
+      "citation": "Fischbacher, U., Gächter, S., and Fehr, E. (2001). Are people conditionally cooperative? Evidence from a public goods experiment. Economics Letters 71(3), 397–404.",
+      "doi": "10.1016/S0165-1765(01)00394-9",
+      "version": "Published journal article; eight-page publisher-formatted PDF hosted by University of Zurich, not the 2000 working paper.",
+      "url": "https://www.econ.uzh.ch/dam/jcr:ffffffff-9758-127f-0000-00003449356a/ArePeopleCondCooperative.pdf",
+      "bytes": 168764,
+      "sha256": "9444d9dd6402b2d403ca9473018f556a7f4b1f89ae804a541da8e53fd4179432",
+      "sections_inspected": ["Section 2: Experimental design and procedures, pp. 398–400", "Section 3: Results, pp. 400–402", "Section 4: Concluding discussion, p. 403"],
+      "methods": "One-shot four-person linear public good: equal endowments of 20 tokens, private marginal return 0.4. Participants provide one unconditional choice and 21 conditional schedule entries. One randomly selected member's schedule responds to the other three unconditional choices for payment. Schedules directly measure stated contingent choices; repeated-group strategic incentives are intentionally absent."
+    },
+    {
+      "id": "fischbacher_gaechter_2010",
+      "citation": "Fischbacher, U. and Gächter, S. (2010). Social Preferences, Beliefs, and the Dynamics of Free Riding in Public Goods Experiments. American Economic Review 100(1), 541–556.",
+      "doi": "10.1257/aer.100.1.541",
+      "version": "Published journal article, March 2010; sixteen-page publisher-formatted PDF hosted by Université Grenoble Alpes. Publisher landing page inspected; its direct article-download route requires access, so an openly available institutional copy was used.",
+      "url": "https://gael.univ-grenoble-alpes.fr/sites/default/files/Mediatheque/groupe%20de%20lecture/groupe_de_lecture_110319_-_fischbacher_gachter_10_social_preferences_beliefs_and_the_dynamics_of_free_riding_in_pge.pdf",
+      "publisher_url": "https://www.aeaweb.org/articles?id=10.1257/aer.100.1.541",
+      "bytes": 559176,
+      "sha256": "95002b6bb85ad2e5dd9914ccc7685342df330a09452ba7c917964c775e37d348",
+      "sections_inspected": ["Section I: Design and procedures, pp. 543–545", "Section II.C–D: Beliefs and contributions, pp. 547–550", "Section II.E: Simulation contrasts, pp. 550–554"],
+      "methods": "The strategy-method P-experiment is paired with ten randomly rematched one-shot C-experiment rounds and incentivized contemporaneous beliefs; order is counterbalanced. Simulations cross perfect, elicited, or identical contribution schedules with naive or estimated belief updating. Their explanation emphasizes incomplete matching, and decline also appears with identical imperfect responders: heterogeneity alone is not their explanation."
+    },
+    {
+      "id": "fischbacher_gaechter_2010_instructions",
+      "version": "Official AEA eight-page web appendix; English translation of the original German P–C experimental instructions.",
+      "url": "https://www.aeaweb.org/articles/materials/732",
+      "resolved_url": "https://assets.aeaweb.org/asset-server/articles-attachments/aer/data/mar2010/20060029_app.pdf",
+      "bytes": 57529,
+      "sha256": "0d3f628a28183e8272be40e7e12f423186fb0e00f9df25c683f023bf76635380",
+      "sections_inspected": ["P-experiment instructions, PDF pp. 2–7", "C-experiment instructions and belief rewards, PDF pp. 7–8"],
+      "methods": "Checks the common 20-token endowment and 0.4 individual public-good return, random rematching, announced ten rounds, and belief-accuracy rewards. Beliefs are entered after contributions; actual current peer contributions are not yet disclosed."
+    }
+  ],
+  "operationalization_limits": [
+    "EvoPolis has no elicited preference schedule or incentivized belief; its peer trace summarizes previous eligible contribution fractions.",
+    "Unequal endogenous opportunities and future allocation incentives differ from the source linear public-good setting.",
+    "A signed fitted log-tilt tests an incremental predictive association; beta is not a preference-schedule slope.",
+    "A persistent normal latent effect describes predictive temporal dependence, not psychological types or identified stable preferences."
+  ],
+  "pdf_preservation": "Public PDFs were downloaded to /tmp for independent hashing; copyrighted article files are not redistributed in this repository. URLs, bibliographic versions, hashes, and inspected methods are retained here."
+}

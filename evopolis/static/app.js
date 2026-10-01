@@ -4,7 +4,8 @@ const $ = (selector, parent = document) => parent.querySelector(selector);
 const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector)];
 const letters = ['A', 'B', 'C', 'D'];
 const colors = {Equal:'#ff8b8b', Mixed:'#ffcf6e', Proportional:'#6dcff6', 'Recorded RL M1':'#73e0b3', Interpolating:'#b6c6df'};
-const familyNames = {constant:'Constant', linear:'Linear', feedforward:'Feedforward', recurrent:'Recurrent GRU'};
+const familyNames = {constant:'Constant', linear:'Linear', feedforward:'Feedforward', recurrent:'Recurrent GRU', P0:'P0 · common response', P1:'P1 · peer response', H0:'H0 · persistent differences', H1:'H1 · peer + persistent'};
+const conditionalFamilies = ['P0','P1','H0','H1'];
 const defaults = [0.75, 0.75, 0.75, 0.25];
 const state = {
   mode:'recorded', compare:false, round:0, phase:0, playing:false,
@@ -80,7 +81,8 @@ function forecastOptions(changed=null) {
   const groupKey=e=>JSON.stringify(e.key);
   if(changed){
     const family=$('#forecast-family').value;
-    const budget=['constant','linear'].includes(family)?'original':$('#forecast-budget').value;
+    const selectedBudget=$('#forecast-budget').value;
+    const budget=conditionalFamilies.includes(family)?'conditional':['constant','linear'].includes(family)?'original':selectedBudget==='conditional'?'continued':selectedBudget;
     cell=cells.find(e=>groupKey(e)===$('#forecast-group').value&&e.family===family&&e.budget===budget&&
       e.training_seed===Number($('#forecast-seed').value)&&e.origin===Number($('#forecast-origin').value));
   }
@@ -89,11 +91,14 @@ function forecastOptions(changed=null) {
   const groups=[...new Map(cells.map(e=>[groupKey(e),e])).values()].sort((a,b)=>groupKey(a).localeCompare(groupKey(b)));
   $('#forecast-group').replaceChildren(...groups.map(e=>new Option(`${e.mechanism} · ${e.launch_id} · ep ${e.episode_id}`,groupKey(e))));
   $('#forecast-group').value=groupKey(cell);
+  const families=Object.keys(familyNames).filter(family=>cells.some(e=>e.family===family));
+  $('#forecast-family').replaceChildren(...families.map(family=>new Option(familyNames[family],family)));
   $('#forecast-family').value=cell.family;$('#forecast-budget').value=cell.budget;
-  $('#forecast-budget').options[1].disabled=['constant','linear'].includes(cell.family);
+  for(const option of $('#forecast-budget').options)option.disabled=!cells.some(e=>e.family===cell.family&&e.budget===option.value);
   $('#forecast-seed').value=cell.training_seed;$('#forecast-origin').value=cell.origin;
   $('#forecast-branch').value=state.forecastBranch;
-  $('#forecast-selection-note').textContent=`All 24 baseline groups and 18 checkpoint conditions are available. ${cell.origin} completed observed rounds; current source-round-${cell.origin} offers are observed, then 20 rounds are forecast. First bank: 64 branches. The median-surplus branch is an illustration of this distribution, not a fitted typical person.`;
+  const conditions=new Set(cells.map(e=>[e.family,e.budget,e.training_seed].join('/'))).size;
+  $('#forecast-selection-note').textContent=`All ${groups.length} baseline groups and ${conditions} checkpoint conditions are available. ${cell.origin} completed observed rounds; current source-round-${cell.origin} offers are observed, then 20 rounds are forecast. Principal bank: 64 branches. ${conditionalFamilies.includes(cell.family)?'P0/P1 have no persistent resident effect; H0/H1 keep one prefix-posterior draw fixed per resident per branch. ':''}The median-surplus branch is an illustration of this distribution, not a fitted typical person.`;
 }
 function mountPanes() {
   const container=$('#communities'); container.replaceChildren(); container.classList.toggle('compare',state.compare);
@@ -183,6 +188,7 @@ function renderPane(pane) {
   const el=pane.element, episode=pane.episode;if(!episode)return;
   const selectedIndex=Math.min(state.round,episode.rounds.length-1), r=episode.rounds[selectedIndex], i=pane.selected;
   const isForecast=episode.cohort==='forecast', isForecastHuman=episode.cohort==='forecast-observed', forecastView=isForecast||isForecastHuman;
+  const isConditional=conditionalFamilies.includes(episode.family);
   const isScript=episode.cohort==='scripted', isTrained=episode.cohort==='trained'||isForecast&&!r.observed, isSimulated=isScript||isTrained, finished=state.round>=episode.rounds.length;
   const source=$('.source-badge',el);source.className=`source-badge ${episode.cohort}`;
   source.textContent=forecastView?(r.observed?(selectedIndex<episode.origin?'RECORDED HUMAN PREFIX':'OBSERVED HUMAN FUTURE'):r.padded?'FORECAST · ZERO PADDING':'GENERATED MODEL FORECAST'):isScript?'NEW SCRIPTED SIMULATION':isTrained?'NEW TRAINED EVOPOLIS SIMULATION':episode.cohort==='human'?'RECORDED HUMAN · EXP 1':'RECORDED UPSTREAM MODEL · BC1';
@@ -221,6 +227,8 @@ function renderPane(pane) {
   const previous=selectedIndex ? episode.rounds[selectedIndex-1] : null;
   $('.information-basis',el).textContent=isScript
     ? 'This fixed script uses only its own allocation and chosen fraction q. Public history below is researcher context, not a script input.'
+    :isTrained&&isConditional
+      ? `All four conditional-response families receive the same opportunity and own-history controls: own offer, sorted peer offers, current pool, own trace, preceding valid own fraction and explicit validity/exposure indicators. ${['P1','H1'].includes(episode.family)?'An additional signed response uses the peer-history trace b.':'The extra peer-history coefficient is fixed at zero; current offers still carry indirect social information.'} Histories update only after all four simultaneous choices. Global weights remain frozen. Prefix-posterior inference is separate from parameter training; b is a history summary, not an elicited belief.`
     :isTrained
       ? `All families receive the same nine prepared observations: current offers, previous returns and current pool, rotated self-first and divided by 200. ${episode.family==='recurrent'?isForecast?`The GRU was warmed only on the ${episode.origin} completed observed rounds, then uses its generated history.`:'This GRU also uses its own recurrent state, reset at the start of the game.':episode.family==='constant'?'The constant model ignores input values except the legal action support.':'This family has no recurrent state; previous returns already provide one-step history.'} Weights remain frozen. Cumulative totals and the playback horizon are researcher context, not model inputs.`
     :episode.cohort==='bc1'
@@ -231,12 +239,13 @@ function renderPane(pane) {
   const prediction=isTrained&&!r.padded?r.predictions?.[i]:null;
   $('.prediction-panel',el).hidden=!prediction;
   $('.prediction-note',el).textContent=isTrained
-    ? r.padded?'No prediction or memory update was run in these padded rounds.':prediction?'Predictions are saved before sampling any current-round return. Four conditionally independent draws use the shared pre-decision state.':'No saved prediction summary is available for this round.'
+    ? r.padded?'No prediction or memory update was run in these padded rounds.':prediction?isConditional?'Predictions are saved before simultaneous choices and condition on this branch’s fixed resident effect. Ensemble bands marginalize prefix-posterior uncertainty across branches.':'Predictions are saved before sampling any current-round return. Four conditionally independent draws use the shared pre-decision state.':'No saved prediction summary is available for this round.'
     : 'No fitted model predictions are available for this record.';
   if(prediction){
     $('.prediction-values',el).innerHTML=[['Expected return',prediction.expected_contribution],['P(return = 0)',prediction.p_zero],['P(return = maximum)',prediction.p_max]].map(([label,value])=>`<div><dt>${label}</dt><dd title="${esc(exact(value))}">${fmt(value)}</dd></div>`).join('');
-    $('.prediction-support',el).textContent=`Legal integers: 0–${prediction.legal_max}. Probabilities are 0–1; endpoints coincide when the maximum is zero. These are model predictions, not recorded human beliefs.`;
+    $('.prediction-support',el).textContent=`Legal integers: 0–${prediction.legal_max}. Probabilities are 0–1; endpoints coincide when the maximum is zero.${isConditional?['H0','H1'].includes(episode.family)?' This distribution conditions on this branch’s sampled, fixed resident effect; the ensemble bands marginalize that uncertainty.':' This distribution uses u = 0; this family has no persistent resident effect.':''} These are model predictions, not recorded human beliefs.`;
   }
+  renderConditional(pane,prediction,isConditional&&!r.observed&&!r.padded);
   const raw=r.raw||{};
   const rawVector=(name,fallback)=>fallback.map((value,j)=>raw[`${name}_${j}`] ?? exact(value));
   const offers=rawVector('offer',r.offers),returns=rawVector('player_action',r.contributions),surplus=rawVector('player_reward',r.surplus);
@@ -257,6 +266,35 @@ function renderPane(pane) {
   if(isForecast)drawForecast(pane,selectedIndex);
   drawScene(pane);
   if(!isScript&&!forecastView)drawScatter(pane);
+}
+function renderConditional(pane,prediction,visible){
+  const el=pane.element,episode=pane.episode,i=pane.selected;
+  const pmf=prediction?.pmf;
+  $('.pmf-detail',el).hidden=!pmf;
+  if(pmf){
+    $('.pmf-values',el).innerHTML=pmf.map((probability,action)=>`<tr><td>${action}</td><td title="${esc(exact(probability))}">${esc(exact(probability))}</td></tr>`).join('');
+    const maxProbability=Math.max(...pmf),maximum=pmf.length-1;
+    const x=action=>35+(maximum?230*action/maximum:0),y=p=>100-75*p/maxProbability;
+    const marks=pmf.map((p,action)=>`<path d="M${x(action)} 100V${y(p)}" stroke="#73e0b3" stroke-width="${maximum<30?4:1}"/>`).join('');
+    $('.pmf-chart',el).innerHTML=`<title>Exact legal-action probabilities conditional on this branch's resident effect. Return 0–${maximum}; probability 0–${maxProbability}.</title><path d="M35 25V100H265" fill="none" stroke="#7185ac"/>${marks}${svgText(30,29,fmt(maxProbability),'#b6c6df','end')}${svgText(30,104,'0','#b6c6df','end')}${svgText(35,116,'0')}${svgText(265,116,maximum,'#b6c6df','end')}${svgText(150,128,'Returned resources','#b6c6df','middle')}`;
+  }
+  const history=prediction?.history;
+  $('.conditional-panel',el).hidden=!visible||!history;
+  if(!visible||!history)return;
+  const values=entries=>entries.map(([label,value])=>`<div><dt>${esc(label)}</dt><dd title="${esc(exact(value))}">${typeof value==='boolean'?(value?'Yes':'No'):fmt(value)}</dd></div>`).join('');
+  $('.conditional-values',el).innerHTML=values([
+    ['Own trace a',history.own_trace],['Peer trace b',history.peer_trace],
+    ['Previous valid own fraction',history.previous_valid_fraction],['Previous own offer eligible',Boolean(history.previous_own_valid)],
+    ['Previous eligible peers',history.previous_eligible_peers],['Any earlier valid own offer',Boolean(history.own_exposed)],['Any earlier valid peer offer',Boolean(history.peer_exposed)]]);
+  $('.conditional-note',el).textContent='Fractions divide returns by the observed or generated offer e, not floor(e). Offers below 1 supply no willingness observation. Traces start at 0.5; missing eligible observations leave the corresponding trace unchanged. Displayed values precede this round’s choices.';
+  const params=episode.parameters||{},posterior=episode.prefix_posteriors?.[i],persistent=['H0','H1'].includes(episode.family);
+  $('.latent-values',el).innerHTML=values([
+    ['Peer coefficient β',params.beta],['Trace update rate η',params.eta],['Population scale σ',params.sigma],
+    ['Branch resident effect u',episode.latent_effects?.[i]??0],
+    ...(posterior?[['Prefix posterior mean',posterior.mean],['Prefix posterior SD',posterior.sd]]:[])]);
+  $('.latent-note',el).textContent=persistent
+    ? `This branch draws one u for resident ${letters[i]} from the posterior after ${episode.origin} recorded rounds and holds it fixed. Its action distribution conditions on that draw. Posterior summaries use only the observed prefix; later actual human choices are excluded. These are predictive effects, not identified preferences or psychological types.`
+    : 'This family fixes u and σ to zero. Its action distribution has no persistent latent resident effect. Population parameters stay frozen throughout playback.';
 }
 function drawTimeline(pane,index) {
   const rows=pane.episode.rounds, horizon=state.mode==='forecast'?maxRounds():40, x=j=>38+j*470/(horizon-1);
