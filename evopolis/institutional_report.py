@@ -82,6 +82,8 @@ def _audit_paragraph(data):
     observed = "/".join(number(actual["observed_fraction"][rule]) for rule in RULES)
     continued = "/".join(number(matched["continued_mixed_per_seed"][str(seed)]) for seed in SEEDS)
     increments = "/".join(number(matched["floor_tilt_predicted_fraction_change"][rule]) for rule in RULES)
+    proportional = next(row for row in audit["per_seed_rule"]
+                        if row["family"] == "T03-GRU" and row["seed"] == 17 and row["mechanism"] == "Proportional")
     mixed = {row["tau"]: row for row in data["audit_rollouts"]["cells"] if row["rule"] == "Mixed"}
     counts = {tau: sum(int(game["survival"]) for game in row["games"]) for tau, row in mixed.items()}
     return (f"The external audit's six fractions reproduce at quoted precision: predicted E/M/P {predicted}, observed {observed}. "
@@ -89,9 +91,10 @@ def _audit_paragraph(data):
             f"Continued Mixed fractions are {continued} (seeds 17/29/43). The historical exp(0.6c/floor(e)) tilt raises E/M/P fractions by {increments}, "
             f"costing {number(audit['floor_tilt_nll_cost_equal_rules'], 4)} NLL nats; Task 06 instead tilts by actual c/e. "
             f"Continuation changes NLL by {number(audit['continuation_nll_change_equal_rules'], 4)} (three-seed mean versus original seed 17). "
+            f"On nonforced Proportional test choices, GRU seed 17 predicts {number(100 * proportional['p_zero'], 1)}% zero returns against {number(100 * proportional['observed_zero'], 1)}% observed; one zero causes permanent exclusion under this rule. "
             f"Our new Mixed audit draws survive {counts[0.]}/{mixed[0.]['count']}→{counts[.6]}/{mixed[.6]['count']} "
             f"(MC SE {number(mixed[0.]['survival_mcse'])}/{number(mixed[.6]['survival_mcse'])}). "
-            "The external 64-game seed was unavailable, preventing exact bank replication. "
+            "These differ from the brief's approximately 6%→38%; the external 64-game seed was unavailable, preventing exact bank replication. "
             "[Audit artifacts](../results/task06/external_audit_predictions.json) retain all rechecks and estimand definitions.")
 
 
@@ -144,6 +147,20 @@ def evidence(root=ROOT):
     if ({(r["family"], r["mechanism"]) for r in nll_rows} != expected_nll
             or len(nll_rows) != len(expected_nll) or any(r["groups"] != 40 or r["seeds"] != 3 for r in nll_rows)):
         raise RuntimeError("Report refused; every learned line requires all three 40-group transfer conditions")
+    feature_predictions = json.loads((folder / "predictions" / "diagnostics_experiment2" / f"{best}_17.json").read_text())
+    feature_contract, feature_groups = feature_predictions["contract"], feature_predictions["groups"]
+    transfer_rules = ("Proportional", "Interpolating", "M1")
+    if (feature_contract["checkpoint"]["family"] != best or feature_contract["checkpoint"]["seed"] != 17
+            or feature_contract["split"] != "transfer" or len(feature_groups) != 120
+            or len({tuple(r["key"]) for r in feature_groups}) != 120
+            or [r["key"] for r in feature_groups] != feature_contract["group_keys"]
+            or any(sum(r["mechanism"] == rule for r in feature_groups) != 40 for rule in transfer_rules)
+            or any(r["family"] != best or r["seed"] != 17 or r["split"] != "transfer"
+                   or not 0 <= r["signal_clipping_count"] <= config["rollout"]["rounds"] for r in feature_groups)):
+        raise RuntimeError("Report refused; transfer feature clipping needs all 120 distinct groups, 40 per rule")
+    data["transfer_feature_clipping"] = {
+        rule: {"clipped": sum(r["signal_clipping_count"] for r in feature_groups if r["mechanism"] == rule),
+               "rounds": 40 * config["rollout"]["rounds"]} for rule in transfer_rules}
     transfer_replay = data["transfer_replay"]["summaries"]
     if (len(transfer_replay) != 2
             or {(r["cohort"], r["mechanism"]) for r in transfer_replay}
@@ -280,8 +297,8 @@ def _recommendation(data):
                 "Task 07: behavioral-program search, matched-budget random search and fixed-model controls; freeze before opening Experiment 3. No search has run.")
     worse = any(v == "worse" for family, values in transfer["D2"].items() if family != "BC1" for v in values.values())
     if worse:
-        return ("The declared rule identifies a transfer failure: development performance left no headroom, but a primary transfer comparison is worse than BC1. Investigate instruction and cohort shift before adding model complexity. Do not run evolutionary search.",
-                "Investigate instruction and cohort shift; no evolutionary search is recommended by these results.")
+        return ("The declared rule identifies a transfer failure: the development criterion was met, but a primary transfer comparison is worse than BC1. Investigate instruction and cohort shift, and resolve the allocation-replay convention before future replication. Do not run evolutionary search.",
+                "The development criterion was met, but transfer failed. Investigate instruction and cohort shift and resolve the allocation-replay convention before future replication; no evolutionary search is recommended.")
     return ("The contribution is the simple ingredient: development performance meets the incumbent criterion and neither primary candidate is worse than BC1 on the declared transfer comparisons. Recommend no evolutionary search. A paper can proceed from the institution-prediction question, through the BC1 benchmark and tipping-point diagnosis, to the feature/calibration ablations and frozen transfer evaluation.",
             "Develop the simple-ingredient paper: question, incumbent benchmark, tipping-point diagnosis, ablations and frozen transfer. No evolutionary search is recommended.")
 
@@ -290,12 +307,15 @@ def _limitations(data):
     replay = next(r for r in data["replay"]["summaries"] if r["cohort"] == "BC1" and r["mechanism"] == "Interpolating")
     transfer_replay = next(r for r in data["transfer_replay"]["summaries"]
                            if r["cohort"] == "Exp2" and r["mechanism"] == "Interpolating")
+    proportional_replay = next(r for r in data["transfer_replay"]["summaries"]
+                              if r["cohort"] == "Exp2" and r["mechanism"] == "Proportional")
     human_residual = float(transfer_replay["max_abs_offer_residual"])
     convention = ("Human transfer replay agrees within 1e−4; the large discrepancy in this comparison concerns BC1. "
                   if human_residual <= 1e-4 else
                   "Human transfer also contains an allocation-convention discrepancy. ")
     return ("Experiment 2 changes participants and provides rule instructions absent in Experiment 1; the models have no instruction input. The within-cohort effect removes shared shifts only to first order. "
             f"Published continuous Interpolating allocation has maximum offer replay residuals {number(replay['max_abs_offer_residual'], 4)} for BC1 and {human_residual:.6g} for human Experiment 2. "
+            f"The human Proportional residual is {proportional_replay['max_abs_offer_residual']:.6g}. "
             + convention + "Scores evaluate the prespecified continuous implementation, without claiming exact institutional reproduction. "
             "BC1/BC2 terminal pools are equation-inferred because final next-pool fields are missing. BC1 used a different 537-game training collection, continuous actions and outcome-selected checkpoints; its Interpolating rule was also optimized against that simulator. "
             "The paper's component training counts conflict with its stated total; both are retained in the source audit. Participant identities cannot establish independence across launch groups. Exp 1 test outcomes were already opened, so later diagnostics are not pristine confirmation. "
@@ -367,6 +387,11 @@ def render(data, root=ROOT):
     mc_text = "; ".join(label(f) + " " + number(transfer["scores"][f]["surplus"]["E1"]["prediction_mc_se"])
                         + "/" + number(transfer["scores"][f]["surplus"]["E2"]["prediction_mc_se"])
                         for f in transfer["primary_simulators"])
+    collapsed_e2 = any(abs(transfer["scores"][family]["surplus"]["E2"]["paired_difference_ci95"][1]
+                           - transfer["scores"][family]["surplus"]["E2"]["paired_difference_ci95"][0]) < 1e-12
+                       for family in transfer["primary_simulators"] if family != "BC1")
+    paired_interval_note = ("Zero-width E2 percentile intervals reflect cancellation of the shared human mean when both fixed forecasts underpredict it; simulation Monte Carlo uncertainty remains separate."
+                            if collapsed_e2 else "")
     d1_survival = []
     for family in (best, "CL-" + best):
         candidate = next(row for row in data["decision"]["candidates"] if row["family"] == family)
@@ -375,6 +400,14 @@ def render(data, root=ROOT):
         d1_survival.append(f"{label(family)} {number(own['estimate'])} {bounds(own['ci95'])}, "
                            f"matched BC1 {number(incumbent['estimate'])} {bounds(incumbent['ci95'])}")
     d1_survival_text = "; ".join(d1_survival)
+    qualifying = [r for r in data["decision"]["candidates"] if r["qualifies_no_headroom"]]
+    qualifying_text = ("Qualifying candidates are " + "; ".join(
+        f"{label(r['family'])} (IE {number(r['comparisons']['surplus']['candidate_ie']['estimate'])} versus matched BC1 {number(r['comparisons']['surplus']['bc1_ie']['estimate'])})"
+        for r in qualifying) + "." if qualifying else "No candidate meets the development criterion.")
+    transfer_clipping = data["transfer_feature_clipping"]
+    transfer_clipping_text = (f"Feature clipping on transfer histories affects {sum(r['clipped'] for r in transfer_clipping.values())}/{sum(r['rounds'] for r in transfer_clipping.values())} rounds "
+                              + "(" + ", ".join(f"{rule} {row['clipped']}/{row['rounds']}" for rule, row in transfer_clipping.items())
+                              + "); this public feature is model-independent.")
     audit_text = _audit_paragraph(data)
     shift = transfer["cohort_shift"]
     constraint = next(r for r in data["decision"]["human_population_constraints"] if r["population"] == "validation")
@@ -385,6 +418,9 @@ def render(data, root=ROOT):
                 "Consequently all CL candidates are mechanically ineligible under the strict-order criterion, regardless of their IE. This is a constraint of the declared decision rule, not evidence of inaccurate calibrated behavior.")
     conclusion = "; ".join(label(f) + ": E1 " + transfer["D2"][f]["E1"] + ", E2 " + transfer["D2"][f]["E2"]
                            for f in (best, "CL-" + best))
+    abstract_conclusion = conclusion.replace(': E1 ', ': rule-difference error ').replace(', E2 ', ', Interpolating-level error ')
+    development_abstract = ("The development criterion is met by " + ", ".join(label(row['family']) for row in qualifying) + "."
+                            if qualifying else "No candidate meets the development criterion.")
     report = f"""# Institutional validity: do learned human models predict which allocation rule works?
 
 ## 1. Question and tipping point
@@ -455,7 +491,7 @@ E1 is absolute error in I−P; E2 is Interpolating level error. The primary simu
 
 {t['transfer']}
 
-**D2:** {conclusion}. Monte Carlo SEs, reported separately as effect/Interpolating-level SE, are {mc_text}. These use within-checkpoint variation with fixed seed weights.
+**D2:** {conclusion}. {paired_interval_note} Monte Carlo SEs, reported separately as effect/Interpolating-level SE, are {mc_text}. These use within-checkpoint variation with fixed seed weights.
 
 ![Experiment 2 effects, levels and paired comparisons.](assets/task06-transfer-effects.png)
 
@@ -464,6 +500,8 @@ Secondary survival contrasts, Proportional level error, energy and pool20 errors
 All 57 learned checkpoints/variants receive teacher-forced evaluation on all 120 groups; M1 uses recorded current offers only. NLL averages nonforced choices within groups, then groups and fitted seeds equally; the all-120 column averages three equally sized rule strata. The table gives primary learned lines and named references; full per-seed NLL and outcome results are machine-readable.
 
 {t['nll']}
+
+{transfer_clipping_text}
 
 Descriptive Exp2−Exp1 surplus shifts are {number(shift['Proportional']['Exp2_minus_Exp1']['surplus'])} for Proportional and {number(shift['M1']['Exp2_minus_Exp1']['surplus'])} for M1. These comparisons do not reuse people as paired observations.
 
@@ -491,7 +529,7 @@ The [source audit](../results/task06/institutional_source_audit.json), [frozen m
 
 ## Abstract
 
-We test whether behavioral models fitted to human common-pool decisions predict collective outcomes and differences between allocation rules, including an unseen rule. We compare recorded DeepMind BC1 simulations with neural and conditional models, a public institutional-response feature, and calibration to human outcome distributions. Nine new fits and 19 forecast families support a publicly frozen Experiment 2 transfer evaluation. D1 reports **{transfer['D1']}**. {conclusion}. The research plots report measured results. **No evolutionary search has run**; Experiment 3 remains closed.
+We test whether behavioral models fitted to human common-pool decisions predict collective outcomes and differences between allocation rules, including an unseen rule. We compare recorded DeepMind BC1 simulations with neural and conditional models, a public institutional-response feature, and calibration to human outcome distributions. Nine new fits and 19 forecast families support a publicly frozen Experiment 2 transfer evaluation. {development_abstract} Transfer comparisons with BC1 are {abstract_conclusion}. **No evolutionary search has run**; Experiment 3 remains closed.
 
 ## Introduction
 
@@ -533,7 +571,7 @@ The human validation Proportional−Equal choice-mean contrast is only {number(a
 
 All nine FA fits complete 480 epochs. **FA-best is {best}**; mean validation NLLs are {', '.join(f'{family} {number(value, 4)}' for family, value in data['training']['mean_validation_nll'].items())}. Budget-boundary minima: {boundary_text}. The selected {label('CL-'+best)} validation-NLL cost is {number(next(r['cost'] for r in data['nll_cost']['per_family_all_rules'] if r['family'] == best), 4)} nats. All selected tilts and numerical checks are reported in the [study](docs/institutional-validity.md).
 
-**D1: {transfer['D1']}.** The decision compares surplus IE against BC1 on identical human groups and requires both strict human surplus and survival ordering. {tie_text}
+**D1: {transfer['D1']}.** The decision compares surplus IE against BC1 on identical human groups and requires both strict human surplus and survival ordering. {qualifying_text} {tie_text}
 
 ### Frozen Experiment 2 transfer
 
@@ -541,7 +579,7 @@ Human surplus is {number(observed_prop)} under Proportional and {number(level['o
 
 {t['transfer']}
 
-The first three rows are primary; the last two are named secondary references. Paired intervals compare absolute errors with BC1 using the same human resamples. **D2:** {conclusion}. Separate effect/level Monte Carlo SEs are {mc_text}.
+The first three rows are primary; the last two are named secondary references. Paired intervals compare absolute errors with BC1 using the same human resamples. **D2:** {conclusion}. {paired_interval_note} Separate effect/level Monte Carlo SEs are {mc_text}.
 
 ![Experiment 2 observed and predicted effects with intervals.](docs/assets/task06-transfer-effects.png)
 

@@ -171,6 +171,7 @@ def sensitivity_figure(cells, fa_best, taus, directory=FIGURES):
                 ('simulation', 'surplus', 'Simulated mean surplus'),
                 ('validation', 'predicted_fraction', 'Predicted return fraction'))
     zero = list(taus).index(0)
+    surplus_values = []
     for row, family in enumerate(selected):
         for rule, color, marker in zip(RULES, COLORS, MARKERS):
             series = []
@@ -184,6 +185,8 @@ def sensitivity_figure(cells, fa_best, taus, directory=FIGURES):
             costs = [v['validation']['nll']-series[zero]['validation']['nll'] for v in series]
             for col, (kind, metric, title) in enumerate(measures):
                 y = [v[kind][metric] for v in series]
+                if metric == 'surplus':
+                    surplus_values.extend(y)
                 ax = axes[row, col]
                 ax.plot(costs, y, color=color, marker=marker, markersize=4, linewidth=1.25, label=rule)
                 ax.scatter(costs[zero], y[zero], facecolor=PANEL, edgecolor=PARCHMENT, marker='o',
@@ -198,11 +201,13 @@ def sensitivity_figure(cells, fa_best, taus, directory=FIGURES):
                 else:
                     ax.set_ylabel(title)
         axes[row, 0].set_ylim(-.04, 1.04)
-        axes[row, 1].set_ylim(bottom=0)
         axes[row, 2].set_ylim(0, 1)
         axes[row, 2].axhline(1/1.4, color=PARCHMENT, linestyle='--', linewidth=1)
         axes[row, 2].text(.97, 1/1.4+.02, '1/1.4', transform=axes[row, 2].get_yaxis_transform(),
                           ha='right', color=PARCHMENT, fontsize=8)
+    # Set the shared surplus range after every family's points are present.
+    # Setting a bound within the row loop disables later shared-axis autoscaling.
+    axes[0, 1].set_ylim(0, max(surplus_values)*1.06)
     handles = [Line2D([0], [0], color=c, marker=m, label=r)
                for r, c, m in zip(RULES, COLORS, MARKERS)]
     handles.append(Line2D([0], [0], color=PARCHMENT, marker='o', markerfacecolor=PANEL,

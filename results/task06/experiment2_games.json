@@ -1,0 +1,3384 @@
+{
+  "audit": {
+    "behavioral_rows": 4800,
+    "condition_counts": {
+      "Interpolating Baseline Exp 2": 40,
+      "Proportional Baseline Exp 2": 40,
+      "RL Agent (M1) Exp 2": 40
+    },
+    "duplicate_rounds": 0,
+    "exp1_launch_overlap": [],
+    "freeze_commit": "bf994ea7acc41592710f519802a75f2abe7e6b33",
+    "groups": 120,
+    "illegal_actions": 0,
+    "incomplete_games": 0,
+    "integer_targets_required": true,
+    "pool40_inference_limitation": "Synthetic terminal pool is not recorded. Published accounting is used only for pool40 and final survival; no residual floor is invented. Earlier recorded pools and all recorded rewards remain unchanged.",
+    "pool40_inferred_games": 0,
+    "pool40_inferred_negative_count": 0,
+    "recorded_human_adjacent_max_residual": 0.0,
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0"
+  },
+  "games": [
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 13,
+      "first_round_below_one": 13,
+      "gini": 0.16694091719909654,
+      "index": 0,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "10197045",
+        "0"
+      ],
+      "launch_id": "10197045",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 37,
+      "player_mean_surplus": [
+        4.2083373526111245,
+        2.2868417689576743,
+        2.9233395436778666,
+        5.087336955405772
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 3.626463905163109,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.27976917022658115,
+      "index": 1,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "11938674",
+        "0"
+      ],
+      "launch_id": "11938674",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 86,
+      "player_mean_surplus": [
+        4.484994712471962,
+        1.2499924659729005,
+        1.4199924498796463,
+        2.334994837641716
+      ],
+      "pool20": 19.601011276245117,
+      "pool40": 2.8010175228118896,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.372493616491556,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.05577942764316258,
+      "index": 2,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "12526125",
+        "0"
+      ],
+      "launch_id": "12526125",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 154,
+      "player_mean_surplus": [
+        9.787465524673461,
+        10.799465501308442,
+        12.915963935852051,
+        11.441964387893677
+      ],
+      "pool20": 200.0,
+      "pool40": 170.80111694335938,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.236214837431907,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2481970949299955,
+      "index": 3,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "14652900",
+        "0"
+      ],
+      "launch_id": "14652900",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 108,
+      "player_mean_surplus": [
+        4.857849842309951,
+        12.589843678474427,
+        4.644849872589111,
+        14.017344188690185
+      ],
+      "pool20": 107.801025390625,
+      "pool40": 92.40108489990234,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.02747189551592,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.1338355535201518,
+      "index": 4,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "16064366",
+        "0"
+      ],
+      "launch_id": "16064366",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 138,
+      "player_mean_surplus": [
+        8.490943303704261,
+        9.598948138952256,
+        14.079947197437287,
+        7.3899419635534285
+      ],
+      "pool20": 74.20099639892578,
+      "pool40": 156.80099487304688,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.889945150911808,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.16761979836473234,
+      "index": 5,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "19958798",
+        "0"
+      ],
+      "launch_id": "19958798",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 124,
+      "player_mean_surplus": [
+        15.791424489021301,
+        10.185945796966553,
+        11.516936326026917,
+        6.4204454779624935
+      ],
+      "pool20": 119.00120544433594,
+      "pool40": 158.2010040283203,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.978688022494316,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.15992370467431388,
+      "index": 6,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "24632771",
+        "0"
+      ],
+      "launch_id": "24632771",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 159,
+      "player_mean_surplus": [
+        11.135044711828233,
+        13.88403506577015,
+        14.260046577453613,
+        5.605545929074287
+      ],
+      "pool20": 200.0,
+      "pool40": 177.80101013183594,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.22116807103157,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.05789036254228839,
+      "index": 7,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "26192712",
+        "0"
+      ],
+      "launch_id": "26192712",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 135,
+      "player_mean_surplus": [
+        10.104089546203614,
+        10.595581650733948,
+        8.02807963192463,
+        9.057084369659425
+      ],
+      "pool20": 166.6010284423828,
+      "pool40": 194.60101318359375,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.446208799630405,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.06292692377663354,
+      "index": 8,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "28483949",
+        "0"
+      ],
+      "launch_id": "28483949",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 107,
+      "player_mean_surplus": [
+        10.21058728992939,
+        9.054589673876762,
+        9.915587335824966,
+        12.449109554290771
+      ],
+      "pool20": 56.00120544433594,
+      "pool40": 179.2010040283203,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.407468463480473,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.10060408850584529,
+      "index": 9,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "30283835",
+        "0"
+      ],
+      "launch_id": "30283835",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 156,
+      "player_mean_surplus": [
+        13.43809711933136,
+        9.46460657119751,
+        12.966596317291259,
+        8.635594564676286
+      ],
+      "pool20": 137.20095825195312,
+      "pool40": 130.20111083984375,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.126223643124103,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 12,
+      "first_round_below_one": 12,
+      "gini": 0.0912016656765193,
+      "index": 10,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "34405163",
+        "0"
+      ],
+      "launch_id": "34405163",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 44,
+      "player_mean_surplus": [
+        2.2515323527157305,
+        1.931534943729639,
+        1.5615324564278126,
+        2.4515348203480243
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.0490336433053016,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.046953359641680896,
+      "index": 11,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "38797377",
+        "0"
+      ],
+      "launch_id": "38797377",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 137,
+      "player_mean_surplus": [
+        13.075939559936524,
+        10.879457569122314,
+        10.682950758934021,
+        10.326444411277771
+      ],
+      "pool20": 152.6010284423828,
+      "pool40": 176.40101623535156,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.241198074817657,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.017722568829201136,
+      "index": 12,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "40001478",
+        "0"
+      ],
+      "launch_id": "40001478",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 122,
+      "player_mean_surplus": [
+        8.960082179307937,
+        9.372593981027602,
+        9.822591292858124,
+        9.304582262039185
+      ],
+      "pool20": 170.80120849609375,
+      "pool40": 135.80099487304688,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.364962428808212,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.22326626635730795,
+      "index": 13,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "41813044",
+        "0"
+      ],
+      "launch_id": "41813044",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 69,
+      "player_mean_surplus": [
+        1.899992471933365,
+        5.174994373321534,
+        2.2599949300289155,
+        1.9799924433231353
+      ],
+      "pool20": 12.600994110107422,
+      "pool40": 12.600994110107422,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.828743554651737,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.16470938619396133,
+      "index": 14,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "41967002",
+        "0"
+      ],
+      "launch_id": "41967002",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 160,
+      "player_mean_surplus": [
+        14.661166977882385,
+        5.484172821044922,
+        16.40015172958374,
+        16.569151592254638
+      ],
+      "pool20": 194.60101318359375,
+      "pool40": 180.60104370117188,
+      "pool40_source": "recorded next pool",
+      "surplus": 13.278660780191421,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.09679218253125804,
+      "index": 15,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "42819501",
+        "0"
+      ],
+      "launch_id": "42819501",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 132,
+      "player_mean_surplus": [
+        11.364211776852608,
+        7.693707859516143,
+        11.75721459388733,
+        8.3797128200531
+      ],
+      "pool20": 200.0,
+      "pool40": 1.4009946584701538,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.798711762577295,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.11144641892344576,
+      "index": 16,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "44381874",
+        "0"
+      ],
+      "launch_id": "44381874",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 159,
+      "player_mean_surplus": [
+        13.418226051330567,
+        10.477221763134002,
+        14.806726264953614,
+        8.737719374895097
+      ],
+      "pool20": 165.20120239257812,
+      "pool40": 131.60092163085938,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.85997336357832,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.11395164380011047,
+      "index": 17,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "47786901",
+        "0"
+      ],
+      "launch_id": "47786901",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 138,
+      "player_mean_surplus": [
+        10.68571208715439,
+        11.008214455842971,
+        14.623224449157714,
+        7.997721776366234
+      ],
+      "pool20": 193.2010040283203,
+      "pool40": 172.2010040283203,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.078718192130328,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 29,
+      "first_round_below_one": 29,
+      "gini": 0.1874570461641285,
+      "index": 18,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "52269682",
+        "0"
+      ],
+      "launch_id": "52269682",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 78,
+      "player_mean_surplus": [
+        5.008694542385638,
+        8.270194614864886,
+        3.1631947407498955,
+        8.060191906429827
+      ],
+      "pool20": 49.00100326538086,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 6.125568951107562,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.10411363970408855,
+      "index": 19,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "52350989",
+        "0"
+      ],
+      "launch_id": "52350989",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 156,
+      "player_mean_surplus": [
+        7.069180718064308,
+        13.316181480884552,
+        12.673687076568603,
+        13.195675992965699
+      ],
+      "pool20": 191.80120849609375,
+      "pool40": 197.4010467529297,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.56368131712079,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2839997955933442,
+      "index": 20,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "53675322",
+        "0"
+      ],
+      "launch_id": "53675322",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 80,
+      "player_mean_surplus": [
+        3.5091034889221193,
+        15.152103328704834,
+        7.103094756603241,
+        5.975596272945404
+      ],
+      "pool20": 56.001014709472656,
+      "pool40": 70.00101470947266,
+      "pool40_source": "recorded next pool",
+      "surplus": 7.9349744617938995,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.20813449352357555,
+      "index": 21,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "54043305",
+        "0"
+      ],
+      "launch_id": "54043305",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 108,
+      "player_mean_surplus": [
+        5.292481383681297,
+        8.886978650093079,
+        6.021981418132782,
+        2.758477258682251
+      ],
+      "pool20": 28.001007080078125,
+      "pool40": 28.001007080078125,
+      "pool40_source": "recorded next pool",
+      "surplus": 5.739979677647352,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 27,
+      "first_round_below_one": 27,
+      "gini": 0.2495546405618532,
+      "index": 22,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "57446627",
+        "0"
+      ],
+      "launch_id": "57446627",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 52,
+      "player_mean_surplus": [
+        5.070709792338311,
+        1.6407074755057693,
+        4.3007097965106365,
+        1.8007074749097227
+      ],
+      "pool20": 1.4010146856307983,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 3.20320863481611,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.08642012296632987,
+      "index": 23,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "57457975",
+        "0"
+      ],
+      "launch_id": "57457975",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 130,
+      "player_mean_surplus": [
+        8.22421944141388,
+        11.100226593017577,
+        7.299226140975952,
+        7.746219676733017
+      ],
+      "pool20": 29.40101432800293,
+      "pool40": 134.40109252929688,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.592472963035107,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.15442144123481885,
+      "index": 24,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "60855945",
+        "0"
+      ],
+      "launch_id": "60855945",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 123,
+      "player_mean_surplus": [
+        11.381072172522545,
+        8.025574257969856,
+        5.439584350585937,
+        11.883578491210937
+      ],
+      "pool20": 49.001007080078125,
+      "pool40": 163.80120849609375,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.182452318072318,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3143241437239316,
+      "index": 25,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "61379634",
+        "0"
+      ],
+      "launch_id": "61379634",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 94,
+      "player_mean_surplus": [
+        5.453239715099334,
+        3.857234928011894,
+        15.759238862991333,
+        4.270234891772271
+      ],
+      "pool20": 196.0010223388672,
+      "pool40": 75.60100555419922,
+      "pool40_source": "recorded next pool",
+      "surplus": 7.334987099468708,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.06325990925999767,
+      "index": 26,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "62605089",
+        "0"
+      ],
+      "launch_id": "62605089",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 151,
+      "player_mean_surplus": [
+        10.995222163200378,
+        10.766221141815185,
+        7.915222212672234,
+        9.9732266664505
+      ],
+      "pool20": 79.8010025024414,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.912473046034574,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 31,
+      "first_round_below_one": 31,
+      "gini": 0.24216357157216872,
+      "index": 27,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "67646096",
+        "0"
+      ],
+      "launch_id": "67646096",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 77,
+      "player_mean_surplus": [
+        4.983099858276546,
+        6.156599874608219,
+        3.5405997259542348,
+        11.651603169552981
+      ],
+      "pool20": 89.60120391845703,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 6.582975657097995,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.37816409573059034,
+      "index": 28,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "70367906",
+        "0"
+      ],
+      "launch_id": "70367906",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 70,
+      "player_mean_surplus": [
+        1.3949596405029296,
+        4.71995964050293,
+        5.044954776763916,
+        13.944954127073288
+      ],
+      "pool20": 71.40100860595703,
+      "pool40": 12.601008415222168,
+      "pool40_source": "recorded next pool",
+      "surplus": 6.276207046210766,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.1406760699943232,
+      "index": 29,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "70577301",
+        "0"
+      ],
+      "launch_id": "70577301",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 143,
+      "player_mean_surplus": [
+        9.71447366476059,
+        8.773971652984619,
+        8.229469653964042,
+        15.911976432800293
+      ],
+      "pool20": 121.80098724365234,
+      "pool40": 98.00100708007812,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.657472851127386,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.29837112833101415,
+      "index": 30,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "71519964",
+        "0"
+      ],
+      "launch_id": "71519964",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 105,
+      "player_mean_surplus": [
+        13.345988273620605,
+        4.814489591121673,
+        13.519485759735108,
+        2.689984893798828
+      ],
+      "pool20": 86.80096435546875,
+      "pool40": 177.80104064941406,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.592487129569054,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.19832139411796984,
+      "index": 31,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "76237950",
+        "0"
+      ],
+      "launch_id": "76237950",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 138,
+      "player_mean_surplus": [
+        15.675237655639648,
+        9.339738750457764,
+        5.353234893083572,
+        11.921734476089478
+      ],
+      "pool20": 124.60102081298828,
+      "pool40": 121.80099487304688,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.572486443817615,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.35628799424762236,
+      "index": 32,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "77136848",
+        "0"
+      ],
+      "launch_id": "77136848",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 74,
+      "player_mean_surplus": [
+        2.744984915852547,
+        3.1699897766113283,
+        13.494989681243897,
+        3.334984889626503
+      ],
+      "pool20": 42.00099182128906,
+      "pool40": 54.60099411010742,
+      "pool40_source": "recorded next pool",
+      "surplus": 5.686237315833569,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.40985717751041245,
+      "index": 33,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "78730766",
+        "0"
+      ],
+      "launch_id": "78730766",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 58,
+      "player_mean_surplus": [
+        1.7299924433231353,
+        8.454994297027588,
+        1.779994896054268,
+        1.2499924659729005
+      ],
+      "pool20": 23.80100440979004,
+      "pool40": 54.60101318359375,
+      "pool40_source": "recorded next pool",
+      "surplus": 3.3037435255944727,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.07035488791257682,
+      "index": 34,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "79139609",
+        "0"
+      ],
+      "launch_id": "79139609",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 148,
+      "player_mean_surplus": [
+        11.381347095966339,
+        12.683350753784179,
+        12.589853668212891,
+        8.82034464776516
+      ],
+      "pool20": 173.60098266601562,
+      "pool40": 183.40098571777344,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.368724041432142,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 39,
+      "first_round_below_one": 39,
+      "gini": 0.35321707561220894,
+      "index": 35,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "80085661",
+        "0"
+      ],
+      "launch_id": "80085661",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 98,
+      "player_mean_surplus": [
+        4.0427923170849684,
+        4.2632898150011895,
+        19.082791158370675,
+        5.2312947837635875
+      ],
+      "pool20": 70.00100708007812,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.155042018555106,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.37268003596710036,
+      "index": 36,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "83248637",
+        "0"
+      ],
+      "launch_id": "83248637",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 68,
+      "player_mean_surplus": [
+        1.5587424695491792,
+        9.707744097709655,
+        3.407744711637497,
+        2.4007423907518386
+      ],
+      "pool20": 8.401008605957031,
+      "pool40": 147.0010223388672,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.268743417412042,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.36276757507485546,
+      "index": 37,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "83976610",
+        "0"
+      ],
+      "launch_id": "83976610",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 99,
+      "player_mean_surplus": [
+        4.5267222166061405,
+        4.773719894886017,
+        22.24072904586792,
+        5.763722169399261
+      ],
+      "pool20": 79.80099487304688,
+      "pool40": 140.00100708007812,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.326223331689835,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.05610605370223795,
+      "index": 38,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "90114375",
+        "0"
+      ],
+      "launch_id": "90114375",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 147,
+      "player_mean_surplus": [
+        10.237784695625304,
+        13.488296508789062,
+        10.614287674427032,
+        11.049291017651559
+      ],
+      "pool20": 117.60100555419922,
+      "pool40": 176.40110778808594,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.34741497412324,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Interpolating Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.19449616737394196,
+      "index": 39,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "97161148",
+        "0"
+      ],
+      "launch_id": "97161148",
+      "mechanism": "Interpolating",
+      "nonforced_choices": 160,
+      "player_mean_surplus": [
+        15.865516400337219,
+        16.285514056682587,
+        7.722027111053467,
+        6.876524448394775
+      ],
+      "pool20": 191.80120849609375,
+      "pool40": 119.00120544433594,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.687395504117012,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 32,
+      "first_round_below_one": 32,
+      "gini": 0.5019384217483288,
+      "index": 40,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "10489957",
+        "0"
+      ],
+      "launch_id": "10489957",
+      "mechanism": "Proportional",
+      "nonforced_choices": 73,
+      "player_mean_surplus": [
+        7.0482067808508875,
+        22.591038297116757,
+        1.555232433974743,
+        2.501799653470516
+      ],
+      "pool20": 168.00100708007812,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.424069291353225,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3355883152910209,
+      "index": 41,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "11825075",
+        "0"
+      ],
+      "launch_id": "11825075",
+      "mechanism": "Proportional",
+      "nonforced_choices": 106,
+      "player_mean_surplus": [
+        1.2899924635887146,
+        9.979994249343871,
+        19.702293729782106,
+        10.752542209625243
+      ],
+      "pool20": 194.6010284423828,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.431205663084985,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.5120629114103422,
+      "index": 42,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "11902193",
+        "0"
+      ],
+      "launch_id": "11902193",
+      "mechanism": "Proportional",
+      "nonforced_choices": 109,
+      "player_mean_surplus": [
+        1.7999924302101136,
+        25.90128126144409,
+        3.4252873063087463,
+        4.887709379196167
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.003567594289779,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.4460635361892495,
+      "index": 43,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "14045650",
+        "0"
+      ],
+      "launch_id": "14045650",
+      "mechanism": "Proportional",
+      "nonforced_choices": 92,
+      "player_mean_surplus": [
+        23.547832679748534,
+        20.135588550567626,
+        1.5587574660778045,
+        1.9320324420928956
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.793552784621715,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.46798845456179833,
+      "index": 44,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "18008779",
+        "0"
+      ],
+      "launch_id": "18008779",
+      "mechanism": "Proportional",
+      "nonforced_choices": 101,
+      "player_mean_surplus": [
+        26.188957166671752,
+        15.110951137542724,
+        1.7499924391508102,
+        2.7299948900938036
+      ],
+      "pool20": 179.2010040283203,
+      "pool40": 186.2010040283203,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.444973908364773,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 37,
+      "first_round_below_one": 37,
+      "gini": 0.4422282746123458,
+      "index": 45,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "27699870",
+        "0"
+      ],
+      "launch_id": "27699870",
+      "mechanism": "Proportional",
+      "nonforced_choices": 52,
+      "player_mean_surplus": [
+        11.380159481801092,
+        1.2501574659720063,
+        3.4801574075594544,
+        1.940159966982901
+      ],
+      "pool20": 19.60100746154785,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.512658580578863,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 40,
+      "first_round_below_one": 40,
+      "gini": 0.22239582453116932,
+      "index": 46,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "27975983",
+        "0"
+      ],
+      "launch_id": "27975983",
+      "mechanism": "Proportional",
+      "nonforced_choices": 109,
+      "player_mean_surplus": [
+        3.8299923062324526,
+        12.233537006378175,
+        6.161044716835022,
+        6.52999472618103
+      ],
+      "pool20": 96.60102844238281,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 7.18864218890667,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.48484461888644403,
+      "index": 47,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "28232303",
+        "0"
+      ],
+      "launch_id": "28232303",
+      "mechanism": "Proportional",
+      "nonforced_choices": 94,
+      "player_mean_surplus": [
+        4.256994819641113,
+        8.671709442138672,
+        26.350169324874877,
+        1.4756149291992187
+      ],
+      "pool20": 200.0,
+      "pool40": 60.20102310180664,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.18862212896347,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2931868729451044,
+      "index": 48,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "29439092",
+        "0"
+      ],
+      "launch_id": "29439092",
+      "mechanism": "Proportional",
+      "nonforced_choices": 129,
+      "player_mean_surplus": [
+        13.777143192291259,
+        1.3091549634933473,
+        13.57495288848877,
+        7.992878770828247
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.163532453775407,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 15,
+      "first_round_below_one": 15,
+      "gini": 0.10382709857368701,
+      "index": 49,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "35580953",
+        "0"
+      ],
+      "launch_id": "35580953",
+      "mechanism": "Proportional",
+      "nonforced_choices": 38,
+      "player_mean_surplus": [
+        1.8413699431344868,
+        2.1013674600049854,
+        2.9613698525354266,
+        2.7513674123212697
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.413868666999042,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.5822184804926768,
+      "index": 50,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "40084015",
+        "0"
+      ],
+      "launch_id": "40084015",
+      "mechanism": "Proportional",
+      "nonforced_choices": 69,
+      "player_mean_surplus": [
+        5.3777412414550785,
+        1.8136448860168457,
+        30.76240291595459,
+        1.4002424657344819
+      ],
+      "pool20": 161.00100708007812,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.83850787729025,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 39,
+      "first_round_below_one": 39,
+      "gini": 0.2969159547552373,
+      "index": 51,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "40960787",
+        "0"
+      ],
+      "launch_id": "40960787",
+      "mechanism": "Proportional",
+      "nonforced_choices": 98,
+      "player_mean_surplus": [
+        6.970049497298897,
+        6.9000471560284495,
+        2.3300498871132733,
+        1.4900474635884167
+      ],
+      "pool20": 21.001008987426758,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.422548501007259,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 20,
+      "first_round_below_one": 20,
+      "gini": 0.21733158457243126,
+      "index": 52,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "41227328",
+        "0"
+      ],
+      "launch_id": "41227328",
+      "mechanism": "Proportional",
+      "nonforced_choices": 33,
+      "player_mean_surplus": [
+        1.9710949026048183,
+        3.6610947988927363,
+        1.7210924349725247,
+        1.25109246596694
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.151093650609255,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.6315329492711559,
+      "index": 53,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "41744595",
+        "0"
+      ],
+      "launch_id": "41744595",
+      "mechanism": "Proportional",
+      "nonforced_choices": 46,
+      "player_mean_surplus": [
+        1.2699924647808074,
+        31.054941034317018,
+        1.7399949073791503,
+        1.429992437362671
+      ],
+      "pool20": 151.2010040283203,
+      "pool40": 100.80104064941406,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.873730210959911,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.32798403266824155,
+      "index": 54,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "44352253",
+        "0"
+      ],
+      "launch_id": "44352253",
+      "mechanism": "Proportional",
+      "nonforced_choices": 97,
+      "player_mean_surplus": [
+        8.911023807525634,
+        2.2799949049949646,
+        9.673661041259766,
+        1.919992446899414
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 5.696168050169945,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3271537697805003,
+      "index": 55,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "44780613",
+        "0"
+      ],
+      "launch_id": "44780613",
+      "mechanism": "Proportional",
+      "nonforced_choices": 111,
+      "player_mean_surplus": [
+        12.572737789154052,
+        3.0993747472763062,
+        13.843760204315185,
+        2.8732498228549956
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.097280640900134,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.4841827098493168,
+      "index": 56,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "45152147",
+        "0"
+      ],
+      "launch_id": "45152147",
+      "mechanism": "Proportional",
+      "nonforced_choices": 88,
+      "player_mean_surplus": [
+        1.7999949216842652,
+        20.213818764686586,
+        10.660891509056091,
+        1.259992465376854
+      ],
+      "pool20": 200.0,
+      "pool40": 107.80099487304688,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.48367441520095,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.5713920780202837,
+      "index": 57,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "45345965",
+        "0"
+      ],
+      "launch_id": "45345965",
+      "mechanism": "Proportional",
+      "nonforced_choices": 60,
+      "player_mean_surplus": [
+        1.6546923637390136,
+        1.7478298187255858,
+        1.9101199328899383,
+        23.717023944854738
+      ],
+      "pool20": 95.20100402832031,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 7.257416515052319,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3015197088554459,
+      "index": 58,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "48224006",
+        "0"
+      ],
+      "launch_id": "48224006",
+      "mechanism": "Proportional",
+      "nonforced_choices": 121,
+      "player_mean_surplus": [
+        2.4799948900938036,
+        2.3543249368667603,
+        9.02888058423996,
+        3.9963320016860964
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.464883103221656,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 22,
+      "first_round_below_one": 22,
+      "gini": 0.35779776541323227,
+      "index": 59,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "49880652",
+        "0"
+      ],
+      "launch_id": "49880652",
+      "mechanism": "Proportional",
+      "nonforced_choices": 56,
+      "player_mean_surplus": [
+        9.320984631404281,
+        2.260982444509864,
+        1.8209823992103338,
+        2.4509848590940235
+      ],
+      "pool20": 1.4009994268417358,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 3.9634835835546256,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 38,
+      "first_round_below_one": 38,
+      "gini": 0.6091219363733762,
+      "index": 60,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "53872281",
+        "0"
+      ],
+      "launch_id": "53872281",
+      "mechanism": "Proportional",
+      "nonforced_choices": 72,
+      "player_mean_surplus": [
+        6.137927049025893,
+        1.3301024612039327,
+        1.5501024391502143,
+        37.93182949386537
+      ],
+      "pool20": 200.0,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.737490360811353,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.19640846117783492,
+      "index": 61,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "53988142",
+        "0"
+      ],
+      "launch_id": "53988142",
+      "mechanism": "Proportional",
+      "nonforced_choices": 127,
+      "player_mean_surplus": [
+        9.042584586143494,
+        3.3955122947692873,
+        12.169567108154297,
+        9.577229261398315
+      ],
+      "pool20": 107.80098724365234,
+      "pool40": 131.60093688964844,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.546223312616348,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.36107509538217963,
+      "index": 62,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "54816948",
+        "0"
+      ],
+      "launch_id": "54816948",
+      "mechanism": "Proportional",
+      "nonforced_choices": 127,
+      "player_mean_surplus": [
+        6.087854707241059,
+        20.29498510360718,
+        20.12208757400513,
+        1.7442798972129823
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.062301820516588,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.20036180487010513,
+      "index": 63,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "55363923",
+        "0"
+      ],
+      "launch_id": "55363923",
+      "mechanism": "Proportional",
+      "nonforced_choices": 143,
+      "player_mean_surplus": [
+        5.611340618133545,
+        6.438590145111084,
+        2.389017128944397,
+        3.43501877784729
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.4684916675090784,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.37131561544289027,
+      "index": 64,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "62410414",
+        "0"
+      ],
+      "launch_id": "62410414",
+      "mechanism": "Proportional",
+      "nonforced_choices": 88,
+      "player_mean_surplus": [
+        1.2499924659729005,
+        9.351478934288025,
+        1.7499949425458907,
+        9.568431723117829
+      ],
+      "pool20": 46.20100402832031,
+      "pool40": 198.80101013183594,
+      "pool40_source": "recorded next pool",
+      "surplus": 5.479974516481161,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 5,
+      "first_round_below_one": 5,
+      "gini": 0.07515449191460224,
+      "index": 65,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "64806215",
+        "0"
+      ],
+      "launch_id": "64806215",
+      "mechanism": "Proportional",
+      "nonforced_choices": 19,
+      "player_mean_surplus": [
+        2.0219198876991866,
+        2.2319199169054627,
+        1.831917398609221,
+        1.5319174552336334
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 1.904418664611876,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.4235908023013294,
+      "index": 66,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "65001163",
+        "0"
+      ],
+      "launch_id": "65001163",
+      "mechanism": "Proportional",
+      "nonforced_choices": 117,
+      "player_mean_surplus": [
+        2.0152674674987794,
+        3.2729273438453674,
+        21.364090251922608,
+        13.847061061859131
+      ],
+      "pool20": 200.0,
+      "pool40": 197.40098571777344,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.124836531281472,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.5803918748480011,
+      "index": 67,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "70141785",
+        "0"
+      ],
+      "launch_id": "70141785",
+      "mechanism": "Proportional",
+      "nonforced_choices": 86,
+      "player_mean_surplus": [
+        6.67464690208435,
+        2.894837188720703,
+        1.6038899064064025,
+        39.755763339996335
+      ],
+      "pool20": 197.4010009765625,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.732284334301948,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 19,
+      "first_round_below_one": 19,
+      "gini": 0.11525399228475015,
+      "index": 68,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "71525303",
+        "0"
+      ],
+      "launch_id": "71525303",
+      "mechanism": "Proportional",
+      "nonforced_choices": 37,
+      "player_mean_surplus": [
+        1.4511474600061773,
+        2.1711498787626624,
+        1.3011474629864097,
+        2.061149915121496
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 1.7461486792191863,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 33,
+      "first_round_below_one": 33,
+      "gini": 0.564236512017699,
+      "index": 69,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "77527926",
+        "0"
+      ],
+      "launch_id": "77527926",
+      "mechanism": "Proportional",
+      "nonforced_choices": 59,
+      "player_mean_surplus": [
+        25.030277253873646,
+        1.7203799353912472,
+        3.9803773568943144,
+        1.520377446897328
+      ],
+      "pool20": 50.4010124206543,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 8.062852998264134,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3336577074101921,
+      "index": 70,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "83000493",
+        "0"
+      ],
+      "launch_id": "83000493",
+      "mechanism": "Proportional",
+      "nonforced_choices": 86,
+      "player_mean_surplus": [
+        2.3099923938512803,
+        1.4999924659729005,
+        6.954992246627808,
+        8.539997091889381
+      ],
+      "pool20": 49.0009880065918,
+      "pool40": 9.800980567932129,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.826243549585342,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 19,
+      "first_round_below_one": 19,
+      "gini": 0.0947932738837434,
+      "index": 71,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "84345711",
+        "0"
+      ],
+      "launch_id": "84345711",
+      "mechanism": "Proportional",
+      "nonforced_choices": 56,
+      "player_mean_surplus": [
+        2.4111499032005668,
+        1.6911474427208304,
+        1.5511499455198645,
+        2.021147393248975
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 1.9186486711725592,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.048233563991679315,
+      "index": 72,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "84773809",
+        "0"
+      ],
+      "launch_id": "84773809",
+      "mechanism": "Proportional",
+      "nonforced_choices": 91,
+      "player_mean_surplus": [
+        1.759992429614067,
+        2.0449949204921722,
+        1.6299924373626709,
+        1.6399949014186859
+      ],
+      "pool20": 2.8010051250457764,
+      "pool40": 1.4010051488876343,
+      "pool40_source": "recorded next pool",
+      "surplus": 1.768743672221899,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.19394773307229513,
+      "index": 73,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "84896877",
+        "0"
+      ],
+      "launch_id": "84896877",
+      "mechanism": "Proportional",
+      "nonforced_choices": 99,
+      "player_mean_surplus": [
+        5.854340553283691,
+        7.20871057510376,
+        2.572397327423096,
+        4.29861478805542
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.983515810966492,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 7,
+      "first_round_below_one": 7,
+      "gini": 0.03542321799069642,
+      "index": 74,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "87177307",
+        "0"
+      ],
+      "launch_id": "87177307",
+      "mechanism": "Proportional",
+      "nonforced_choices": 16,
+      "player_mean_surplus": [
+        1.5518099395558238,
+        1.3018074629828333,
+        1.4318074552342295,
+        1.5018099455162883
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 1.4468087008222938,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 35,
+      "first_round_below_one": 35,
+      "gini": 0.3999386409066069,
+      "index": 75,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "89628573",
+        "0"
+      ],
+      "launch_id": "89628573",
+      "mechanism": "Proportional",
+      "nonforced_choices": 59,
+      "player_mean_surplus": [
+        1.4369524559006095,
+        10.9664287885651,
+        3.696167310141027,
+        2.511494787596166
+      ],
+      "pool20": 44.80101776123047,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.652760835550725,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.13100998146631376,
+      "index": 76,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "91330762",
+        "0"
+      ],
+      "launch_id": "91330762",
+      "mechanism": "Proportional",
+      "nonforced_choices": 142,
+      "player_mean_surplus": [
+        3.4403441905975343,
+        3.837833786010742,
+        5.248199844360352,
+        2.7178372621536253
+      ],
+      "pool20": 200.0,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 3.811053770780563,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 36,
+      "first_round_below_one": 36,
+      "gini": 0.24408583797258332,
+      "index": 77,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "91651634",
+        "0"
+      ],
+      "launch_id": "91651634",
+      "mechanism": "Proportional",
+      "nonforced_choices": 70,
+      "player_mean_surplus": [
+        1.3402124606072903,
+        1.3102124623954297,
+        3.8402149371802805,
+        3.6902148120105265
+      ],
+      "pool20": 4.201009750366211,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.545213668048382,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.37641992303852273,
+      "index": 78,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "94793973",
+        "0"
+      ],
+      "launch_id": "94793973",
+      "mechanism": "Proportional",
+      "nonforced_choices": 65,
+      "player_mean_surplus": [
+        2.4505223274230956,
+        12.864683189988137,
+        3.0801796913146973,
+        2.644034814834595
+      ],
+      "pool20": 200.0,
+      "pool40": 1.401007056236267,
+      "pool40_source": "recorded next pool",
+      "surplus": 5.259855005890131,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "Proportional Baseline Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 32,
+      "first_round_below_one": 32,
+      "gini": 0.3832840567688489,
+      "index": 79,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "99258070",
+        "0"
+      ],
+      "launch_id": "99258070",
+      "mechanism": "Proportional",
+      "nonforced_choices": 90,
+      "player_mean_surplus": [
+        4.160014556348324,
+        4.1057996794581415,
+        2.3403648480772974,
+        15.834869931638242
+      ],
+      "pool20": 200.0,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 6.610262253880501,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 23,
+      "first_round_below_one": 23,
+      "gini": 0.30901987762183614,
+      "index": 80,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "11973031",
+        "0"
+      ],
+      "launch_id": "11973031",
+      "mechanism": "M1",
+      "nonforced_choices": 48,
+      "player_mean_surplus": [
+        2.7659689123574442,
+        1.1282189842659693,
+        5.522786114807241,
+        1.927275688296416
+      ],
+      "pool20": 36.39999771118164,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.8360624249317676,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 11,
+      "first_round_below_one": 11,
+      "gini": 0.19680468421649316,
+      "index": 81,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "12872695",
+        "0"
+      ],
+      "launch_id": "12872695",
+      "mechanism": "M1",
+      "nonforced_choices": 29,
+      "player_mean_surplus": [
+        1.8841567695257253,
+        1.8051526877024848,
+        3.404675848829926,
+        1.2432642008495625
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.0843123767269245,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2281280523820873,
+      "index": 82,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "12992915",
+        "0"
+      ],
+      "launch_id": "12992915",
+      "mechanism": "M1",
+      "nonforced_choices": 146,
+      "player_mean_surplus": [
+        12.183281517028808,
+        5.328323183418251,
+        20.521954917907713,
+        12.056440258026123
+      ],
+      "pool20": 168.00001525878906,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.522499969095223,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.22343732399193933,
+      "index": 83,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "14490156",
+        "0"
+      ],
+      "launch_id": "14490156",
+      "mechanism": "M1",
+      "nonforced_choices": 147,
+      "player_mean_surplus": [
+        14.584075880050658,
+        9.0471670165658,
+        19.46611042022705,
+        6.527644439123105
+      ],
+      "pool20": 194.60000610351562,
+      "pool40": 180.59999084472656,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.406249438991653,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.16901381488221456,
+      "index": 84,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "18754807",
+        "0"
+      ],
+      "launch_id": "18754807",
+      "mechanism": "M1",
+      "nonforced_choices": 140,
+      "player_mean_surplus": [
+        14.847788404673338,
+        8.192022585030646,
+        16.632200622558592,
+        8.087989293329883
+      ],
+      "pool20": 177.80001831054688,
+      "pool40": 158.1999969482422,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.940000226398116,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 12,
+      "first_round_below_one": 12,
+      "gini": 0.2689003175147009,
+      "index": 85,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "20931191",
+        "0"
+      ],
+      "launch_id": "20931191",
+      "mechanism": "M1",
+      "nonforced_choices": 30,
+      "player_mean_surplus": [
+        1.5494465074958117,
+        3.356443780932705,
+        1.855958923561137,
+        5.4151502510067075
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 3.0442498657490904,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 28,
+      "first_round_below_one": 28,
+      "gini": 0.42638049631988567,
+      "index": 86,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "22486311",
+        "0"
+      ],
+      "launch_id": "22486311",
+      "mechanism": "M1",
+      "nonforced_choices": 56,
+      "player_mean_surplus": [
+        1.0239044643757642,
+        5.322462998067713,
+        1.253634741096799,
+        9.242996672331355
+      ],
+      "pool20": 67.19999694824219,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 4.210749718967907,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 14,
+      "first_round_below_one": 14,
+      "gini": 0.2838860743251219,
+      "index": 87,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "23425017",
+        "0"
+      ],
+      "launch_id": "23425017",
+      "mechanism": "M1",
+      "nonforced_choices": 33,
+      "player_mean_surplus": [
+        1.409747534998544,
+        3.8427748928195795,
+        0.9028472499183582,
+        3.1011297911210933
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.3141248672143937,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2311934498201037,
+      "index": 88,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "24212442",
+        "0"
+      ],
+      "launch_id": "24212442",
+      "mechanism": "M1",
+      "nonforced_choices": 152,
+      "player_mean_surplus": [
+        14.383441185951233,
+        7.604017863050103,
+        19.47733516693115,
+        6.845203039515764
+      ],
+      "pool20": 177.80001831054688,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.077499313862063,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.4216165563827038,
+      "index": 89,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "25763239",
+        "0"
+      ],
+      "launch_id": "25763239",
+      "mechanism": "M1",
+      "nonforced_choices": 103,
+      "player_mean_surplus": [
+        3.1422430770791836,
+        23.472659158706666,
+        13.253774309158326,
+        2.836323067074409
+      ],
+      "pool20": 91.0,
+      "pool40": 79.79999542236328,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.676249903004646,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.1351280735136288,
+      "index": 90,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "26715911",
+        "0"
+      ],
+      "launch_id": "26715911",
+      "mechanism": "M1",
+      "nonforced_choices": 137,
+      "player_mean_surplus": [
+        7.89325515627861,
+        13.888389432430268,
+        7.406351569562685,
+        9.192002909733356
+      ],
+      "pool20": 51.80000305175781,
+      "pool40": 40.599998474121094,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.59499976700123,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 18,
+      "first_round_below_one": 18,
+      "gini": 0.20313054711767112,
+      "index": 91,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "29637067",
+        "0"
+      ],
+      "launch_id": "29637067",
+      "mechanism": "M1",
+      "nonforced_choices": 60,
+      "player_mean_surplus": [
+        4.415513467783231,
+        8.679210108403641,
+        7.305909969820641,
+        3.239865580221745
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 5.910124781557315,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.25096437574411096,
+      "index": 92,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "34303425",
+        "0"
+      ],
+      "launch_id": "34303425",
+      "mechanism": "M1",
+      "nonforced_choices": 133,
+      "player_mean_surplus": [
+        5.576993426406989,
+        18.360978964716196,
+        7.121760590432677,
+        13.130263495445252
+      ],
+      "pool20": 190.40000915527344,
+      "pool40": 156.8000030517578,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.04749911925028,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 15,
+      "first_round_below_one": 15,
+      "gini": 0.2747313851140858,
+      "index": 93,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "34408746",
+        "0"
+      ],
+      "launch_id": "34408746",
+      "mechanism": "M1",
+      "nonforced_choices": 31,
+      "player_mean_surplus": [
+        2.5180198474321513,
+        1.4638668502037757,
+        0.8545702457227258,
+        3.5897930068200594
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.1065624875446782,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2847668495574636,
+      "index": 94,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "37416775",
+        "0"
+      ],
+      "launch_id": "37416775",
+      "mechanism": "M1",
+      "nonforced_choices": 141,
+      "player_mean_surplus": [
+        13.699364304542542,
+        7.286766241909936,
+        4.563710776780499,
+        19.55015754699707
+      ],
+      "pool20": 166.60000610351562,
+      "pool40": 162.39999389648438,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.274999717557511,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2669654117639315,
+      "index": 95,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "37685679",
+        "0"
+      ],
+      "launch_id": "37685679",
+      "mechanism": "M1",
+      "nonforced_choices": 149,
+      "player_mean_surplus": [
+        6.516779601573944,
+        10.842595565319062,
+        6.3809681350598115,
+        20.78965539932251
+      ],
+      "pool20": 177.80001831054688,
+      "pool40": 193.20001220703125,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.132499675318831,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.39886110853592377,
+      "index": 96,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "40927779",
+        "0"
+      ],
+      "launch_id": "40927779",
+      "mechanism": "M1",
+      "nonforced_choices": 117,
+      "player_mean_surplus": [
+        2.7351202860765627,
+        21.309289932250977,
+        11.98000381886959,
+        3.9405821037478743
+      ],
+      "pool20": 128.8000030517578,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.991249035236251,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2803033408977274,
+      "index": 97,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "43891483",
+        "0"
+      ],
+      "launch_id": "43891483",
+      "mechanism": "M1",
+      "nonforced_choices": 119,
+      "player_mean_surplus": [
+        12.341954939253629,
+        16.872214019298553,
+        4.2931789449416105,
+        5.897649962594732
+      ],
+      "pool20": 56.0,
+      "pool40": 137.20001220703125,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.85124946652213,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 10,
+      "first_round_below_one": 10,
+      "gini": 0.1721345285695527,
+      "index": 98,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "44081476",
+        "0"
+      ],
+      "launch_id": "44081476",
+      "mechanism": "M1",
+      "nonforced_choices": 22,
+      "player_mean_surplus": [
+        1.160688610236111,
+        2.690846529765986,
+        2.640791785854925,
+        1.6351724502337057
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.0318748440226817,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.25871554334438396,
+      "index": 99,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "49418844",
+        "0"
+      ],
+      "launch_id": "49418844",
+      "mechanism": "M1",
+      "nonforced_choices": 123,
+      "player_mean_surplus": [
+        7.263557732547634,
+        21.09133949279785,
+        6.545266975252889,
+        7.394835698604584
+      ],
+      "pool20": 177.80001831054688,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.573749974800739,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3923426211541092,
+      "index": 100,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "51294132",
+        "0"
+      ],
+      "launch_id": "51294132",
+      "mechanism": "M1",
+      "nonforced_choices": 110,
+      "player_mean_surplus": [
+        9.657469737529755,
+        3.5766946625546554,
+        21.07271523475647,
+        3.383117327229411
+      ],
+      "pool20": 158.1999969482422,
+      "pool40": 170.8000030517578,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.422499240517572,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.23072917339012602,
+      "index": 101,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "52402891",
+        "0"
+      ],
+      "launch_id": "52402891",
+      "mechanism": "M1",
+      "nonforced_choices": 114,
+      "player_mean_surplus": [
+        7.492626291431952,
+        15.670814561843873,
+        8.651958592934534,
+        4.794599068776006
+      ],
+      "pool20": 57.39999771118164,
+      "pool40": 188.99998474121094,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.152499628746591,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.4387109553496458,
+      "index": 102,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "52456072",
+        "0"
+      ],
+      "launch_id": "52456072",
+      "mechanism": "M1",
+      "nonforced_choices": 82,
+      "player_mean_surplus": [
+        6.080019737785915,
+        3.868653090385487,
+        2.9035541866789574,
+        23.33277349472046
+      ],
+      "pool20": 90.99999237060547,
+      "pool40": 119.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.046250127392705,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.36497126977226435,
+      "index": 103,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "55730436",
+        "0"
+      ],
+      "launch_id": "55730436",
+      "mechanism": "M1",
+      "nonforced_choices": 154,
+      "player_mean_surplus": [
+        6.817663764953613,
+        31.15543613433838,
+        7.674845008552074,
+        6.207051413581939
+      ],
+      "pool20": 189.0,
+      "pool40": 176.39999389648438,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.963749080356502,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3364908727853363,
+      "index": 104,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "57318946",
+        "0"
+      ],
+      "launch_id": "57318946",
+      "mechanism": "M1",
+      "nonforced_choices": 121,
+      "player_mean_surplus": [
+        4.874697650060989,
+        20.779209232330324,
+        14.655758798122406,
+        4.11033146858681
+      ],
+      "pool20": 149.79998779296875,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.104999287275133,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 29,
+      "first_round_below_one": 29,
+      "gini": 0.123735552449109,
+      "index": 105,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "60733728",
+        "0"
+      ],
+      "launch_id": "60733728",
+      "mechanism": "M1",
+      "nonforced_choices": 98,
+      "player_mean_surplus": [
+        7.3212716572417325,
+        7.83917585297022,
+        4.981059029389587,
+        4.5462435364127245
+      ],
+      "pool20": 35.0,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 6.171937519003566,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.25808617988240595,
+      "index": 106,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "61582578",
+        "0"
+      ],
+      "launch_id": "61582578",
+      "mechanism": "M1",
+      "nonforced_choices": 159,
+      "player_mean_surplus": [
+        2.5627334993332624,
+        17.208917331695556,
+        18.360664415359498,
+        12.41768463253975
+      ],
+      "pool20": 197.39999389648438,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.637499969732016,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.1264841238997655,
+      "index": 107,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "65676972",
+        "0"
+      ],
+      "launch_id": "65676972",
+      "mechanism": "M1",
+      "nonforced_choices": 132,
+      "player_mean_surplus": [
+        8.336877713690047,
+        14.727257490158081,
+        10.46184965352877,
+        8.414013293199242
+      ],
+      "pool20": 163.8000030517578,
+      "pool40": 95.20000457763672,
+      "pool40_source": "recorded next pool",
+      "surplus": 10.484999537644034,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.324873877324492,
+      "index": 108,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "69867594",
+        "0"
+      ],
+      "launch_id": "69867594",
+      "mechanism": "M1",
+      "nonforced_choices": 122,
+      "player_mean_surplus": [
+        5.283627164018981,
+        10.883310997113586,
+        3.6494317453631084,
+        18.28862862586975
+      ],
+      "pool20": 35.0,
+      "pool40": 133.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 9.526249633091357,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 38,
+      "first_round_below_one": 38,
+      "gini": 0.40079955539118617,
+      "index": 109,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "77490241",
+        "0"
+      ],
+      "launch_id": "77490241",
+      "mechanism": "M1",
+      "nonforced_choices": 114,
+      "player_mean_surplus": [
+        5.850232451614284,
+        28.14889712657314,
+        4.81844504442981,
+        5.227923861067789
+      ],
+      "pool20": 113.39999389648438,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.011374620921256,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.09968847269776435,
+      "index": 110,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "79272033",
+        "0"
+      ],
+      "launch_id": "79272033",
+      "mechanism": "M1",
+      "nonforced_choices": 151,
+      "player_mean_surplus": [
+        14.33147643636912,
+        9.34786906838417,
+        15.417490386962891,
+        12.118161081988365
+      ],
+      "pool20": 194.59999084472656,
+      "pool40": 187.59999084472656,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.803749243426136,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.3084063707091611,
+      "index": 111,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "86545627",
+        "0"
+      ],
+      "launch_id": "86545627",
+      "mechanism": "M1",
+      "nonforced_choices": 160,
+      "player_mean_surplus": [
+        11.464413070678711,
+        7.858333495259285,
+        26.72538814544678,
+        6.371865367889404
+      ],
+      "pool20": 189.0,
+      "pool40": 170.8000030517578,
+      "pool40_source": "recorded next pool",
+      "surplus": 13.105000019818545,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.49163446299291513,
+      "index": 112,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "88376462",
+        "0"
+      ],
+      "launch_id": "88376462",
+      "mechanism": "M1",
+      "nonforced_choices": 105,
+      "player_mean_surplus": [
+        30.30626983642578,
+        3.1004296174272894,
+        7.671959247754421,
+        2.9613389312697107
+      ],
+      "pool20": 155.40000915527344,
+      "pool40": 159.59999084472656,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.0099994082193,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": 16,
+      "first_round_below_one": 16,
+      "gini": 0.20306009047346432,
+      "index": 113,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "92574677",
+        "0"
+      ],
+      "launch_id": "92574677",
+      "mechanism": "M1",
+      "nonforced_choices": 33,
+      "player_mean_surplus": [
+        2.525185190641787,
+        1.6401176586058455,
+        1.0496931201574786,
+        2.971003728511861
+      ],
+      "pool20": 0.009999999776482582,
+      "pool40": 0.009999999776482582,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.0464999244792432,
+      "survival": false
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.20702609205962044,
+      "index": 114,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "92975880",
+        "0"
+      ],
+      "launch_id": "92975880",
+      "mechanism": "M1",
+      "nonforced_choices": 156,
+      "player_mean_surplus": [
+        9.374538937211037,
+        20.040542602539062,
+        11.705961006879807,
+        7.418955228477716
+      ],
+      "pool20": 200.0,
+      "pool40": 189.00001525878906,
+      "pool40_source": "recorded next pool",
+      "surplus": 12.134999443776906,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.23883523069896498,
+      "index": 115,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "95037991",
+        "0"
+      ],
+      "launch_id": "95037991",
+      "mechanism": "M1",
+      "nonforced_choices": 144,
+      "player_mean_surplus": [
+        8.731913093850016,
+        22.772244262695313,
+        7.592638609115966,
+        8.653202477958985
+      ],
+      "pool20": 183.3999786376953,
+      "pool40": 200.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.93749961090507,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.2865899563400647,
+      "index": 116,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "95428526",
+        "0"
+      ],
+      "launch_id": "95428526",
+      "mechanism": "M1",
+      "nonforced_choices": 66,
+      "player_mean_surplus": [
+        5.371765851974487,
+        1.8127973344601513,
+        1.3713233008533963,
+        2.599113374158924
+      ],
+      "pool20": 8.399999618530273,
+      "pool40": 21.0,
+      "pool40_source": "recorded next pool",
+      "surplus": 2.7887499653617396,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.15448525684282677,
+      "index": 117,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "96027415",
+        "0"
+      ],
+      "launch_id": "96027415",
+      "mechanism": "M1",
+      "nonforced_choices": 109,
+      "player_mean_surplus": [
+        8.778499960899353,
+        4.3790671033799295,
+        9.61732006072998,
+        6.440112160073477
+      ],
+      "pool20": 22.400001525878906,
+      "pool40": 167.99998474121094,
+      "pool40_source": "recorded next pool",
+      "surplus": 7.303749821270685,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.41239242291247596,
+      "index": 118,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "96121907",
+        "0"
+      ],
+      "launch_id": "96121907",
+      "mechanism": "M1",
+      "nonforced_choices": 85,
+      "player_mean_surplus": [
+        8.145569014549256,
+        11.49529090821743,
+        1.5073980088032841,
+        1.3417410274523718
+      ],
+      "pool20": 23.80000114440918,
+      "pool40": 22.399999618530273,
+      "pool40_source": "recorded next pool",
+      "surplus": 5.622499739755586,
+      "survival": true
+    },
+    {
+      "cohort": "Exp2",
+      "condition": "RL Agent (M1) Exp 2",
+      "episode_id": "0",
+      "first_depletion_after_round": null,
+      "first_round_below_one": null,
+      "gini": 0.32191827221263886,
+      "index": 119,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "97108971",
+        "0"
+      ],
+      "launch_id": "97108971",
+      "mechanism": "M1",
+      "nonforced_choices": 134,
+      "player_mean_surplus": [
+        5.696035866637248,
+        25.080169010162354,
+        8.175052372424398,
+        7.0687399109127
+      ],
+      "pool20": 200.0,
+      "pool40": 102.19999694824219,
+      "pool40_source": "recorded next pool",
+      "surplus": 11.504999290034174,
+      "survival": true
+    }
+  ]
+}

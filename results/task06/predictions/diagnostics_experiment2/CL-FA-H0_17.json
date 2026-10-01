@@ -1,0 +1,3991 @@
+{
+  "contract": {
+    "checkpoint": {
+      "base_family": "FA-H0",
+      "epoch": 473,
+      "family": "CL-FA-H0",
+      "path": "results/task06/weights/FA-H0_17/best.pt",
+      "seed": 17,
+      "sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "tilt": [
+        0.9,
+        -0.75
+      ]
+    },
+    "code_sha256": {
+      "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+      "evopolis/conditional_models.py": "cf8fa36e13347c0485ecd085876b6c79123886f7763fc29cae9c21199f3e70e0",
+      "evopolis/institutional_models.py": "9e44a43aa1711f71e6d64fbdad13a0b8a479658673d9364e337f924b7fd77005",
+      "evopolis/institutional_predict.py": "84ef2d6f221612f16605210eb87ab49aa778ddfe7a9d452b8fd60374f10d4b83"
+    },
+    "group_keys": [
+      [
+        "Interpolating Baseline Exp 2",
+        "10197045",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "11938674",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "12526125",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "14652900",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "16064366",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "19958798",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "24632771",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "26192712",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "28483949",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "30283835",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "34405163",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "38797377",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "40001478",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "41813044",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "41967002",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "42819501",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "44381874",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "47786901",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "52269682",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "52350989",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "53675322",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "54043305",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "57446627",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "57457975",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "60855945",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "61379634",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "62605089",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "67646096",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "70367906",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "70577301",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "71519964",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "76237950",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "77136848",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "78730766",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "79139609",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "80085661",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "83248637",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "83976610",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "90114375",
+        "0"
+      ],
+      [
+        "Interpolating Baseline Exp 2",
+        "97161148",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "10489957",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "11825075",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "11902193",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "14045650",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "18008779",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "27699870",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "27975983",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "28232303",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "29439092",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "35580953",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "40084015",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "40960787",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "41227328",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "41744595",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "44352253",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "44780613",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "45152147",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "45345965",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "48224006",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "49880652",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "53872281",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "53988142",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "54816948",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "55363923",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "62410414",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "64806215",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "65001163",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "70141785",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "71525303",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "77527926",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "83000493",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "84345711",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "84773809",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "84896877",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "87177307",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "89628573",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "91330762",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "91651634",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "94793973",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 2",
+        "99258070",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "11973031",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "12872695",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "12992915",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "14490156",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "18754807",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "20931191",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "22486311",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "23425017",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "24212442",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "25763239",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "26715911",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "29637067",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "34303425",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "34408746",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "37416775",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "37685679",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "40927779",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "43891483",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "44081476",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "49418844",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "51294132",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "52402891",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "52456072",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "55730436",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "57318946",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "60733728",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "61582578",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "65676972",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "69867594",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "77490241",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "79272033",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "86545627",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "88376462",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "92574677",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "92975880",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "95037991",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "95428526",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "96027415",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "96121907",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 2",
+        "97108971",
+        "0"
+      ]
+    ],
+    "nodes": 41,
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "split": "transfer"
+  },
+  "groups": [
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 0,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "10197045",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.1816382317909855,
+      "nodes": 41,
+      "nonforced_choices": 37,
+      "observed_fraction": 0.5654110889380864,
+      "observed_zero": 0.16216216216216217,
+      "p_zero": 0.07215348270595037,
+      "predicted_fraction": 0.5878581316985152,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 1,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "11938674",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 1.384430055782487,
+      "nodes": 41,
+      "nonforced_choices": 86,
+      "observed_fraction": 0.638071239550881,
+      "observed_zero": 0.023255813953488372,
+      "p_zero": 0.12810595190065321,
+      "predicted_fraction": 0.5917051799622223,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 2,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "12526125",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.1224329192468594,
+      "nodes": 41,
+      "nonforced_choices": 154,
+      "observed_fraction": 0.7234651472942043,
+      "observed_zero": 0.006493506493506494,
+      "p_zero": 0.023904723566456034,
+      "predicted_fraction": 0.6831835584733209,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 3,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "14652900",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.339264344263139,
+      "nodes": 41,
+      "nonforced_choices": 108,
+      "observed_fraction": 0.6893064161856779,
+      "observed_zero": 0.018518518518518517,
+      "p_zero": 0.03596460467160775,
+      "predicted_fraction": 0.6869033321694621,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 4,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "16064366",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.1648718464638668,
+      "nodes": 41,
+      "nonforced_choices": 138,
+      "observed_fraction": 0.68301710955034,
+      "observed_zero": 0.043478260869565216,
+      "p_zero": 0.057094676315821456,
+      "predicted_fraction": 0.64996640324804,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 5,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "19958798",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.168487723826996,
+      "nodes": 41,
+      "nonforced_choices": 124,
+      "observed_fraction": 0.6574955268896534,
+      "observed_zero": 0.12903225806451613,
+      "p_zero": 0.07162188305306844,
+      "predicted_fraction": 0.6266214962051496,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 6,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "24632771",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.069414653400676,
+      "nodes": 41,
+      "nonforced_choices": 159,
+      "observed_fraction": 0.6643482365932549,
+      "observed_zero": 0.012578616352201259,
+      "p_zero": 0.06951867791682809,
+      "predicted_fraction": 0.6303425001477051,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 7,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "26192712",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.016065411117949,
+      "nodes": 41,
+      "nonforced_choices": 135,
+      "observed_fraction": 0.6708520749636707,
+      "observed_zero": 0.02962962962962963,
+      "p_zero": 0.04598773242164062,
+      "predicted_fraction": 0.6249785263461546,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 8,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "28483949",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.576578934279555,
+      "nodes": 41,
+      "nonforced_choices": 107,
+      "observed_fraction": 0.4850572028347522,
+      "observed_zero": 0.24299065420560748,
+      "p_zero": 0.15758438898407945,
+      "predicted_fraction": 0.4999055451908348,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 9,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "30283835",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.0675828653500976,
+      "nodes": 41,
+      "nonforced_choices": 156,
+      "observed_fraction": 0.7075334110857079,
+      "observed_zero": 0.00641025641025641,
+      "p_zero": 0.03260888130632203,
+      "predicted_fraction": 0.669546849549464,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 10,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "34405163",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.1007023342658697,
+      "nodes": 41,
+      "nonforced_choices": 44,
+      "observed_fraction": 0.49625510646481047,
+      "observed_zero": 0.09090909090909091,
+      "p_zero": 0.12696096362553047,
+      "predicted_fraction": 0.5083950063747781,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 11,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "38797377",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.9621115271353697,
+      "nodes": 41,
+      "nonforced_choices": 137,
+      "observed_fraction": 0.6660048622622061,
+      "observed_zero": 0.043795620437956206,
+      "p_zero": 0.0653980922313697,
+      "predicted_fraction": 0.6355577598709158,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 12,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "40001478",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.792033544625794,
+      "nodes": 41,
+      "nonforced_choices": 122,
+      "observed_fraction": 0.6339645367029352,
+      "observed_zero": 0.05737704918032787,
+      "p_zero": 0.07188776823405427,
+      "predicted_fraction": 0.6084384593602692,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 13,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "41813044",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.3022622512421473,
+      "nodes": 41,
+      "nonforced_choices": 69,
+      "observed_fraction": 0.5954418292239754,
+      "observed_zero": 0.043478260869565216,
+      "p_zero": 0.08409799460234568,
+      "predicted_fraction": 0.6056374534629051,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 14,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "41967002",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.377374609123798,
+      "nodes": 41,
+      "nonforced_choices": 160,
+      "observed_fraction": 0.7061954113197365,
+      "observed_zero": 0.0,
+      "p_zero": 0.022932132373004902,
+      "predicted_fraction": 0.6666432763915309,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 15,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "42819501",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.129559386332899,
+      "nodes": 41,
+      "nonforced_choices": 132,
+      "observed_fraction": 0.6343406149839762,
+      "observed_zero": 0.03787878787878788,
+      "p_zero": 0.05243160642503264,
+      "predicted_fraction": 0.6295869358920705,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 16,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "44381874",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.1536799271972744,
+      "nodes": 41,
+      "nonforced_choices": 159,
+      "observed_fraction": 0.7204740410613637,
+      "observed_zero": 0.006289308176100629,
+      "p_zero": 0.026049523265908436,
+      "predicted_fraction": 0.6817438985056109,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 17,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "47786901",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.095769420191001,
+      "nodes": 41,
+      "nonforced_choices": 138,
+      "observed_fraction": 0.6466507974880663,
+      "observed_zero": 0.06521739130434782,
+      "p_zero": 0.05409261494376726,
+      "predicted_fraction": 0.6331784656728214,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 18,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "52269682",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.1401878108621393,
+      "nodes": 41,
+      "nonforced_choices": 78,
+      "observed_fraction": 0.6953324247015884,
+      "observed_zero": 0.05128205128205128,
+      "p_zero": 0.03417092115553956,
+      "predicted_fraction": 0.6944754262279407,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 19,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "52350989",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.189769175605034,
+      "nodes": 41,
+      "nonforced_choices": 156,
+      "observed_fraction": 0.7310859244740485,
+      "observed_zero": 0.01282051282051282,
+      "p_zero": 0.032489224429821405,
+      "predicted_fraction": 0.6886075577842422,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 20,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "53675322",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.961707326280714,
+      "nodes": 41,
+      "nonforced_choices": 80,
+      "observed_fraction": 0.6131876976913407,
+      "observed_zero": 0.1625,
+      "p_zero": 0.08609433431911218,
+      "predicted_fraction": 0.6317626588373217,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 21,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "54043305",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.5540759181852026,
+      "nodes": 41,
+      "nonforced_choices": 108,
+      "observed_fraction": 0.7026776417179816,
+      "observed_zero": 0.027777777777777776,
+      "p_zero": 0.05888123821915162,
+      "predicted_fraction": 0.677164114513564,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 22,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "57446627",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.5391829732546034,
+      "nodes": 41,
+      "nonforced_choices": 52,
+      "observed_fraction": 0.5694673570665585,
+      "observed_zero": 0.07692307692307693,
+      "p_zero": 0.1194023442123172,
+      "predicted_fraction": 0.5886655733340805,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 23,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "57457975",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.973307182765245,
+      "nodes": 41,
+      "nonforced_choices": 130,
+      "observed_fraction": 0.6887212016303065,
+      "observed_zero": 0.015384615384615385,
+      "p_zero": 0.06542110610484922,
+      "predicted_fraction": 0.6598442907077104,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 24,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "60855945",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.5479326575953674,
+      "nodes": 41,
+      "nonforced_choices": 123,
+      "observed_fraction": 0.6423070507207546,
+      "observed_zero": 0.10569105691056911,
+      "p_zero": 0.11261450233929889,
+      "predicted_fraction": 0.5923571172398945,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 25,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "61379634",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.7525454498374486,
+      "nodes": 41,
+      "nonforced_choices": 94,
+      "observed_fraction": 0.5877963656659216,
+      "observed_zero": 0.10638297872340426,
+      "p_zero": 0.12773983820676366,
+      "predicted_fraction": 0.5875476427572018,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 26,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "62605089",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.0467648901062456,
+      "nodes": 41,
+      "nonforced_choices": 151,
+      "observed_fraction": 0.7066025037763968,
+      "observed_zero": 0.006622516556291391,
+      "p_zero": 0.035673048787013134,
+      "predicted_fraction": 0.6664313177289023,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 27,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "67646096",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.6998804506322465,
+      "nodes": 41,
+      "nonforced_choices": 77,
+      "observed_fraction": 0.6015012686168294,
+      "observed_zero": 0.1038961038961039,
+      "p_zero": 0.11038949553722117,
+      "predicted_fraction": 0.5875641933952214,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 28,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "70367906",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.129000909521624,
+      "nodes": 41,
+      "nonforced_choices": 70,
+      "observed_fraction": 0.6992086222726049,
+      "observed_zero": 0.05714285714285714,
+      "p_zero": 0.0561919489909284,
+      "predicted_fraction": 0.6796805500373474,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 29,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "70577301",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.99919674063441,
+      "nodes": 41,
+      "nonforced_choices": 143,
+      "observed_fraction": 0.6701172533537896,
+      "observed_zero": 0.04195804195804196,
+      "p_zero": 0.05848209394065724,
+      "predicted_fraction": 0.653160086135867,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 30,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "71519964",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.304319902847757,
+      "nodes": 41,
+      "nonforced_choices": 105,
+      "observed_fraction": 0.709208406860375,
+      "observed_zero": 0.02857142857142857,
+      "p_zero": 0.03579943657808179,
+      "predicted_fraction": 0.7033441301057465,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 31,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "76237950",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.245434777321627,
+      "nodes": 41,
+      "nonforced_choices": 138,
+      "observed_fraction": 0.7123610793473212,
+      "observed_zero": 0.028985507246376812,
+      "p_zero": 0.03916248955810483,
+      "predicted_fraction": 0.680187961565076,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 32,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "77136848",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.957458710564206,
+      "nodes": 41,
+      "nonforced_choices": 74,
+      "observed_fraction": 0.6268954553877116,
+      "observed_zero": 0.04054054054054054,
+      "p_zero": 0.08754127515653035,
+      "predicted_fraction": 0.6323304611404476,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 33,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "78730766",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.7269214824135486,
+      "nodes": 41,
+      "nonforced_choices": 58,
+      "observed_fraction": 0.6231467584219924,
+      "observed_zero": 0.05172413793103448,
+      "p_zero": 0.09365984632459916,
+      "predicted_fraction": 0.633791415310287,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 34,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "79139609",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.881587103898964,
+      "nodes": 41,
+      "nonforced_choices": 148,
+      "observed_fraction": 0.5927874982581025,
+      "observed_zero": 0.08108108108108109,
+      "p_zero": 0.07741509500513671,
+      "predicted_fraction": 0.5884226561573865,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 35,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "80085661",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.952598947803011,
+      "nodes": 41,
+      "nonforced_choices": 98,
+      "observed_fraction": 0.6285135524136285,
+      "observed_zero": 0.08163265306122448,
+      "p_zero": 0.09391954037416657,
+      "predicted_fraction": 0.6357350397351803,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 36,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "83248637",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 2.7404977030850235,
+      "nodes": 41,
+      "nonforced_choices": 68,
+      "observed_fraction": 0.6553450147858944,
+      "observed_zero": 0.04411764705882353,
+      "p_zero": 0.1033853183751916,
+      "predicted_fraction": 0.6351235345958879,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 37,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "83976610",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.222805377973643,
+      "nodes": 41,
+      "nonforced_choices": 99,
+      "observed_fraction": 0.6298313134370465,
+      "observed_zero": 0.0707070707070707,
+      "p_zero": 0.08908191401866748,
+      "predicted_fraction": 0.627296895654686,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 38,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "90114375",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.125810529283951,
+      "nodes": 41,
+      "nonforced_choices": 147,
+      "observed_fraction": 0.692989375153871,
+      "observed_zero": 0.034013605442176874,
+      "p_zero": 0.04276824910142297,
+      "predicted_fraction": 0.660231323503439,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 39,
+      "key": [
+        "Interpolating Baseline Exp 2",
+        "97161148",
+        "0"
+      ],
+      "mechanism": "Interpolating",
+      "nll": 3.1328854163379773,
+      "nodes": 41,
+      "nonforced_choices": 160,
+      "observed_fraction": 0.7091157998605278,
+      "observed_zero": 0.0,
+      "p_zero": 0.042754070975927747,
+      "predicted_fraction": 0.656381594727598,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 40,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "10489957",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.283485897950207,
+      "nodes": 41,
+      "nonforced_choices": 73,
+      "observed_fraction": 0.7516954030161427,
+      "observed_zero": 0.0547945205479452,
+      "p_zero": 0.038024387215602334,
+      "predicted_fraction": 0.7374483075147921,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 41,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "11825075",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.3752731634583615,
+      "nodes": 41,
+      "nonforced_choices": 106,
+      "observed_fraction": 0.7289632425634355,
+      "observed_zero": 0.018867924528301886,
+      "p_zero": 0.035435775801149635,
+      "predicted_fraction": 0.7112190343640348,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 42,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "11902193",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.06427446966952,
+      "nodes": 41,
+      "nonforced_choices": 109,
+      "observed_fraction": 0.7625029507224367,
+      "observed_zero": 0.01834862385321101,
+      "p_zero": 0.029280590164973093,
+      "predicted_fraction": 0.7309054223226172,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 43,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "14045650",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.7559306096653478,
+      "nodes": 41,
+      "nonforced_choices": 92,
+      "observed_fraction": 0.7397256981764578,
+      "observed_zero": 0.021739130434782608,
+      "p_zero": 0.038944974100154996,
+      "predicted_fraction": 0.73403926743642,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 44,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "18008779",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.3492542626703674,
+      "nodes": 41,
+      "nonforced_choices": 101,
+      "observed_fraction": 0.6755725985818348,
+      "observed_zero": 0.019801980198019802,
+      "p_zero": 0.05486593810457879,
+      "predicted_fraction": 0.6737948502836438,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 45,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "27699870",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.1459896429660152,
+      "nodes": 41,
+      "nonforced_choices": 52,
+      "observed_fraction": 0.62185806216021,
+      "observed_zero": 0.07692307692307693,
+      "p_zero": 0.06998529106809834,
+      "predicted_fraction": 0.6572062560069309,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 46,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "27975983",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.9443527421513185,
+      "nodes": 41,
+      "nonforced_choices": 109,
+      "observed_fraction": 0.725070745348368,
+      "observed_zero": 0.03669724770642202,
+      "p_zero": 0.03121803258141251,
+      "predicted_fraction": 0.700782808547419,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 47,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "28232303",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.586561895358344,
+      "nodes": 41,
+      "nonforced_choices": 94,
+      "observed_fraction": 0.7428719280730245,
+      "observed_zero": 0.02127659574468085,
+      "p_zero": 0.02699176964880832,
+      "predicted_fraction": 0.7422242819092632,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 48,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "29439092",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.1056409154684403,
+      "nodes": 41,
+      "nonforced_choices": 129,
+      "observed_fraction": 0.8104416211426245,
+      "observed_zero": 0.007751937984496124,
+      "p_zero": 0.035143979640012715,
+      "predicted_fraction": 0.7539402828594406,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 49,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "35580953",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.8235306752382225,
+      "nodes": 41,
+      "nonforced_choices": 38,
+      "observed_fraction": 0.5084410871179593,
+      "observed_zero": 0.10526315789473684,
+      "p_zero": 0.10325734163788244,
+      "predicted_fraction": 0.5603980396812973,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 50,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "40084015",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.565401177588967,
+      "nodes": 41,
+      "nonforced_choices": 69,
+      "observed_fraction": 0.8028250361473137,
+      "observed_zero": 0.043478260869565216,
+      "p_zero": 0.026331187196921273,
+      "predicted_fraction": 0.7797675147399631,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 51,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "40960787",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.4392159745300597,
+      "nodes": 41,
+      "nonforced_choices": 98,
+      "observed_fraction": 0.6635904457675358,
+      "observed_zero": 0.04081632653061224,
+      "p_zero": 0.05307417007924383,
+      "predicted_fraction": 0.6619185792176059,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 52,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "41227328",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.6660262624114575,
+      "nodes": 41,
+      "nonforced_choices": 33,
+      "observed_fraction": 0.5415933548342773,
+      "observed_zero": 0.12121212121212122,
+      "p_zero": 0.08517868875581122,
+      "predicted_fraction": 0.5717750749783237,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 53,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "41744595",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.593446143530059,
+      "nodes": 41,
+      "nonforced_choices": 46,
+      "observed_fraction": 0.6876063807876232,
+      "observed_zero": 0.06521739130434782,
+      "p_zero": 0.05494157480510067,
+      "predicted_fraction": 0.6979343206145024,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 54,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "44352253",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.995802478489325,
+      "nodes": 41,
+      "nonforced_choices": 97,
+      "observed_fraction": 0.7568933522684068,
+      "observed_zero": 0.020618556701030927,
+      "p_zero": 0.03559909918585955,
+      "predicted_fraction": 0.7197294092986503,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 55,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "44780613",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.3869541247017954,
+      "nodes": 41,
+      "nonforced_choices": 111,
+      "observed_fraction": 0.8054467956739018,
+      "observed_zero": 0.018018018018018018,
+      "p_zero": 0.018150579415529517,
+      "predicted_fraction": 0.7628796883472394,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 56,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "45152147",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.3806506302932386,
+      "nodes": 41,
+      "nonforced_choices": 88,
+      "observed_fraction": 0.7388694821596218,
+      "observed_zero": 0.022727272727272728,
+      "p_zero": 0.04802500355102352,
+      "predicted_fraction": 0.7172421423168839,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 57,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "45345965",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.3238086281870958,
+      "nodes": 41,
+      "nonforced_choices": 60,
+      "observed_fraction": 0.7051468240351383,
+      "observed_zero": 0.05,
+      "p_zero": 0.06666690510559144,
+      "predicted_fraction": 0.6809261026544753,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 58,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "48224006",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.060749737665061,
+      "nodes": 41,
+      "nonforced_choices": 121,
+      "observed_fraction": 0.8002592877618063,
+      "observed_zero": 0.01652892561983471,
+      "p_zero": 0.05405253705681607,
+      "predicted_fraction": 0.7288130518260983,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 59,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "49880652",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.7179196593492883,
+      "nodes": 41,
+      "nonforced_choices": 56,
+      "observed_fraction": 0.6125954923095379,
+      "observed_zero": 0.07142857142857142,
+      "p_zero": 0.07942084589604491,
+      "predicted_fraction": 0.6295382240366726,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 60,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "53872281",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.6209742833370933,
+      "nodes": 41,
+      "nonforced_choices": 72,
+      "observed_fraction": 0.6771099059211256,
+      "observed_zero": 0.05555555555555555,
+      "p_zero": 0.0572973221145014,
+      "predicted_fraction": 0.6944061668305486,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 61,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "53988142",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.185022441841964,
+      "nodes": 41,
+      "nonforced_choices": 127,
+      "observed_fraction": 0.7165528015299233,
+      "observed_zero": 0.007874015748031496,
+      "p_zero": 0.026304759027620604,
+      "predicted_fraction": 0.703557253076715,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 62,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "54816948",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.183489888795614,
+      "nodes": 41,
+      "nonforced_choices": 127,
+      "observed_fraction": 0.7634594741562755,
+      "observed_zero": 0.007874015748031496,
+      "p_zero": 0.025494214043229053,
+      "predicted_fraction": 0.7246241231840981,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 63,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "55363923",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.5972095751244875,
+      "nodes": 41,
+      "nonforced_choices": 143,
+      "observed_fraction": 0.9070963612409493,
+      "observed_zero": 0.006993006993006993,
+      "p_zero": 0.009349464179964686,
+      "predicted_fraction": 0.8135416866488402,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 64,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "62410414",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.8408396581019084,
+      "nodes": 41,
+      "nonforced_choices": 88,
+      "observed_fraction": 0.7060046203239911,
+      "observed_zero": 0.022727272727272728,
+      "p_zero": 0.06452532742126818,
+      "predicted_fraction": 0.6812276130235735,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 65,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "64806215",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.5835032707629835,
+      "nodes": 41,
+      "nonforced_choices": 19,
+      "observed_fraction": 0.3845140707728289,
+      "observed_zero": 0.21052631578947367,
+      "p_zero": 0.1683172773661449,
+      "predicted_fraction": 0.4890246292174795,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 66,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "65001163",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.7874820787277175,
+      "nodes": 41,
+      "nonforced_choices": 117,
+      "observed_fraction": 0.7664242949755344,
+      "observed_zero": 0.02564102564102564,
+      "p_zero": 0.044863905957661515,
+      "predicted_fraction": 0.7316371413256157,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 67,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "70141785",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.5424990708425446,
+      "nodes": 41,
+      "nonforced_choices": 86,
+      "observed_fraction": 0.689768150312066,
+      "observed_zero": 0.03488372093023256,
+      "p_zero": 0.04551477894907529,
+      "predicted_fraction": 0.6934541749647637,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 68,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "71525303",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 1.6755597916837293,
+      "nodes": 41,
+      "nonforced_choices": 37,
+      "observed_fraction": 0.462116539369217,
+      "observed_zero": 0.10810810810810811,
+      "p_zero": 0.2158583818530875,
+      "predicted_fraction": 0.4737351480430144,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 69,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "77527926",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.2539892939216593,
+      "nodes": 41,
+      "nonforced_choices": 59,
+      "observed_fraction": 0.6435302042462508,
+      "observed_zero": 0.06779661016949153,
+      "p_zero": 0.08211350195058842,
+      "predicted_fraction": 0.6556773675718821,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 70,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "83000493",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.7334240638609093,
+      "nodes": 41,
+      "nonforced_choices": 86,
+      "observed_fraction": 0.6356957671592672,
+      "observed_zero": 0.03488372093023256,
+      "p_zero": 0.06103377986366088,
+      "predicted_fraction": 0.6556862292842834,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 71,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "84345711",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 1.3556558047724345,
+      "nodes": 41,
+      "nonforced_choices": 56,
+      "observed_fraction": 0.5582691968711347,
+      "observed_zero": 0.07142857142857142,
+      "p_zero": 0.18657804215961463,
+      "predicted_fraction": 0.5144334482312745,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 72,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "84773809",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 0.8345096913783624,
+      "nodes": 41,
+      "nonforced_choices": 91,
+      "observed_fraction": 0.6195230036374086,
+      "observed_zero": 0.03296703296703297,
+      "p_zero": 0.1709727540095485,
+      "predicted_fraction": 0.5535527804677949,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 73,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "84896877",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.09476210886726,
+      "nodes": 41,
+      "nonforced_choices": 99,
+      "observed_fraction": 0.8646141770461733,
+      "observed_zero": 0.020202020202020204,
+      "p_zero": 0.016623309320272856,
+      "predicted_fraction": 0.7890910795388489,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 74,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "87177307",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.320410043551441,
+      "nodes": 41,
+      "nonforced_choices": 16,
+      "observed_fraction": 0.27613835366150635,
+      "observed_zero": 0.25,
+      "p_zero": 0.17547265831944595,
+      "predicted_fraction": 0.43179521829638645,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 75,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "89628573",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.1780817909753263,
+      "nodes": 41,
+      "nonforced_choices": 59,
+      "observed_fraction": 0.6941214899023604,
+      "observed_zero": 0.06779661016949153,
+      "p_zero": 0.04297105717989827,
+      "predicted_fraction": 0.708722274723055,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 76,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "91330762",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.23196393946118,
+      "nodes": 41,
+      "nonforced_choices": 142,
+      "observed_fraction": 0.8853475539865543,
+      "observed_zero": 0.007042253521126761,
+      "p_zero": 0.015597928298757977,
+      "predicted_fraction": 0.7797264299929224,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 77,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "91651634",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 1.81115511987187,
+      "nodes": 41,
+      "nonforced_choices": 70,
+      "observed_fraction": 0.5933945917880681,
+      "observed_zero": 0.05714285714285714,
+      "p_zero": 0.1426163632062388,
+      "predicted_fraction": 0.5729802444787193,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 78,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "94793973",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.1333359010819195,
+      "nodes": 41,
+      "nonforced_choices": 65,
+      "observed_fraction": 0.730010390313354,
+      "observed_zero": 0.046153846153846156,
+      "p_zero": 0.033785958026090156,
+      "predicted_fraction": 0.7271949768175056,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 79,
+      "key": [
+        "Proportional Baseline Exp 2",
+        "99258070",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.9434785511040156,
+      "nodes": 41,
+      "nonforced_choices": 90,
+      "observed_fraction": 0.7990513965158891,
+      "observed_zero": 0.044444444444444446,
+      "p_zero": 0.025402404331202354,
+      "predicted_fraction": 0.7508913458800979,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 80,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "11973031",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.7116855838244476,
+      "nodes": 41,
+      "nonforced_choices": 48,
+      "observed_fraction": 0.5765799699343863,
+      "observed_zero": 0.10416666666666667,
+      "p_zero": 0.10804391794286732,
+      "predicted_fraction": 0.6114891649171018,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 81,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "12872695",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.572808105193022,
+      "nodes": 41,
+      "nonforced_choices": 29,
+      "observed_fraction": 0.4496548322625911,
+      "observed_zero": 0.13793103448275862,
+      "p_zero": 0.15961431853799696,
+      "predicted_fraction": 0.49829441259844054,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 82,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "12992915",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.023208062920836,
+      "nodes": 41,
+      "nonforced_choices": 146,
+      "observed_fraction": 0.667085445671843,
+      "observed_zero": 0.0821917808219178,
+      "p_zero": 0.08034241055095935,
+      "predicted_fraction": 0.641754556159244,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 83,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "14490156",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.786396161527149,
+      "nodes": 41,
+      "nonforced_choices": 147,
+      "observed_fraction": 0.5462264515491166,
+      "observed_zero": 0.1836734693877551,
+      "p_zero": 0.12926520561632504,
+      "predicted_fraction": 0.5454743500903182,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 84,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "18754807",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.0269109189256587,
+      "nodes": 41,
+      "nonforced_choices": 140,
+      "observed_fraction": 0.5650964558500584,
+      "observed_zero": 0.12857142857142856,
+      "p_zero": 0.08646336466617774,
+      "predicted_fraction": 0.5620525607262284,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 85,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "20931191",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.8305233989066463,
+      "nodes": 41,
+      "nonforced_choices": 30,
+      "observed_fraction": 0.4880503839818553,
+      "observed_zero": 0.2,
+      "p_zero": 0.12227523224383188,
+      "predicted_fraction": 0.5561662656160744,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 86,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "22486311",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.868735120052111,
+      "nodes": 41,
+      "nonforced_choices": 56,
+      "observed_fraction": 0.6381453905807284,
+      "observed_zero": 0.08928571428571429,
+      "p_zero": 0.094898627829772,
+      "predicted_fraction": 0.6482565107823309,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 87,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "23425017",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.9123674873439334,
+      "nodes": 41,
+      "nonforced_choices": 33,
+      "observed_fraction": 0.5500447943959368,
+      "observed_zero": 0.09090909090909091,
+      "p_zero": 0.10663727450448912,
+      "predicted_fraction": 0.587926872656127,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 88,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "24212442",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.793139140303594,
+      "nodes": 41,
+      "nonforced_choices": 152,
+      "observed_fraction": 0.5660590440790798,
+      "observed_zero": 0.09868421052631579,
+      "p_zero": 0.12126875170608953,
+      "predicted_fraction": 0.5448016463369889,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 89,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "25763239",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.2653661563318868,
+      "nodes": 41,
+      "nonforced_choices": 103,
+      "observed_fraction": 0.6422180096952825,
+      "observed_zero": 0.05825242718446602,
+      "p_zero": 0.08148859056500157,
+      "predicted_fraction": 0.6425611742021421,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 90,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "26715911",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.9278826666786117,
+      "nodes": 41,
+      "nonforced_choices": 137,
+      "observed_fraction": 0.7087149129435415,
+      "observed_zero": 0.0072992700729927005,
+      "p_zero": 0.04255490125846454,
+      "predicted_fraction": 0.6652368353120272,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 91,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "29637067",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.376985617938767,
+      "nodes": 41,
+      "nonforced_choices": 60,
+      "observed_fraction": 0.5439645962154421,
+      "observed_zero": 0.08333333333333333,
+      "p_zero": 0.07290145877971797,
+      "predicted_fraction": 0.5762782892195641,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 92,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "34303425",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.8217492694629014,
+      "nodes": 41,
+      "nonforced_choices": 133,
+      "observed_fraction": 0.5700892986937105,
+      "observed_zero": 0.14285714285714285,
+      "p_zero": 0.11261734808175887,
+      "predicted_fraction": 0.561253722564879,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 93,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "34408746",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.3212123028573735,
+      "nodes": 41,
+      "nonforced_choices": 31,
+      "observed_fraction": 0.4692179467984284,
+      "observed_zero": 0.03225806451612903,
+      "p_zero": 0.1530265462258447,
+      "predicted_fraction": 0.48989690073124176,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 94,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "37416775",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.0171459414120165,
+      "nodes": 41,
+      "nonforced_choices": 141,
+      "observed_fraction": 0.6858841054337244,
+      "observed_zero": 0.0070921985815602835,
+      "p_zero": 0.04961321782476853,
+      "predicted_fraction": 0.64043039439586,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 95,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "37685679",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.0884606249201734,
+      "nodes": 41,
+      "nonforced_choices": 149,
+      "observed_fraction": 0.7349225621971125,
+      "observed_zero": 0.026845637583892617,
+      "p_zero": 0.031063006138534955,
+      "predicted_fraction": 0.6953118131980132,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 96,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "40927779",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.9771349274091086,
+      "nodes": 41,
+      "nonforced_choices": 117,
+      "observed_fraction": 0.6404405644955993,
+      "observed_zero": 0.05128205128205128,
+      "p_zero": 0.07654545381417434,
+      "predicted_fraction": 0.614983058811959,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 97,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "43891483",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.8719932290342127,
+      "nodes": 41,
+      "nonforced_choices": 119,
+      "observed_fraction": 0.6085856657034806,
+      "observed_zero": 0.15126050420168066,
+      "p_zero": 0.1172843577076581,
+      "predicted_fraction": 0.5840880406604257,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 98,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "44081476",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.1526787951944173,
+      "nodes": 41,
+      "nonforced_choices": 22,
+      "observed_fraction": 0.4573726826023565,
+      "observed_zero": 0.18181818181818182,
+      "p_zero": 0.09739195189262827,
+      "predicted_fraction": 0.5504249110262271,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 99,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "49418844",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.7239778699263186,
+      "nodes": 41,
+      "nonforced_choices": 123,
+      "observed_fraction": 0.519748494261388,
+      "observed_zero": 0.14634146341463414,
+      "p_zero": 0.1563309736331417,
+      "predicted_fraction": 0.5139285844014897,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 100,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "51294132",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.680586068230921,
+      "nodes": 41,
+      "nonforced_choices": 110,
+      "observed_fraction": 0.6594586652973479,
+      "observed_zero": 0.08181818181818182,
+      "p_zero": 0.07899341620134329,
+      "predicted_fraction": 0.6557142983700863,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 101,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "52402891",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.0212466422584923,
+      "nodes": 41,
+      "nonforced_choices": 114,
+      "observed_fraction": 0.644912358293386,
+      "observed_zero": 0.07894736842105263,
+      "p_zero": 0.07710637086616116,
+      "predicted_fraction": 0.6304501581279969,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 102,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "52456072",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.3877974819964427,
+      "nodes": 41,
+      "nonforced_choices": 82,
+      "observed_fraction": 0.6520597448756146,
+      "observed_zero": 0.08536585365853659,
+      "p_zero": 0.06410734130353725,
+      "predicted_fraction": 0.6556581913246659,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 103,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "55730436",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.0217503252807805,
+      "nodes": 41,
+      "nonforced_choices": 154,
+      "observed_fraction": 0.7077551736547251,
+      "observed_zero": 0.01948051948051948,
+      "p_zero": 0.04003188415386565,
+      "predicted_fraction": 0.6691033127288795,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 104,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "57318946",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.985856698901181,
+      "nodes": 41,
+      "nonforced_choices": 121,
+      "observed_fraction": 0.7129665421633501,
+      "observed_zero": 0.04132231404958678,
+      "p_zero": 0.047525227800546486,
+      "predicted_fraction": 0.6787058533462124,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 105,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "60733728",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.834367558768665,
+      "nodes": 41,
+      "nonforced_choices": 98,
+      "observed_fraction": 0.6622759039447704,
+      "observed_zero": 0.07142857142857142,
+      "p_zero": 0.051043361826511674,
+      "predicted_fraction": 0.6566602585527974,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 106,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "61582578",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.005259174158334,
+      "nodes": 41,
+      "nonforced_choices": 159,
+      "observed_fraction": 0.7579891557415227,
+      "observed_zero": 0.006289308176100629,
+      "p_zero": 0.01802388923235384,
+      "predicted_fraction": 0.7006477434920292,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 107,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "65676972",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.1879498656929517,
+      "nodes": 41,
+      "nonforced_choices": 132,
+      "observed_fraction": 0.7073571785293199,
+      "observed_zero": 0.015151515151515152,
+      "p_zero": 0.038356788413806193,
+      "predicted_fraction": 0.6795007329685565,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 108,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "69867594",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.8215730175935403,
+      "nodes": 41,
+      "nonforced_choices": 122,
+      "observed_fraction": 0.5960006426453976,
+      "observed_zero": 0.08196721311475409,
+      "p_zero": 0.1045198853880061,
+      "predicted_fraction": 0.5948943605445738,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 109,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "77490241",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.6338812993627783,
+      "nodes": 41,
+      "nonforced_choices": 114,
+      "observed_fraction": 0.5950207332533931,
+      "observed_zero": 0.19298245614035087,
+      "p_zero": 0.11105030908938322,
+      "predicted_fraction": 0.6037505855254647,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 110,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "79272033",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.6497774849931717,
+      "nodes": 41,
+      "nonforced_choices": 151,
+      "observed_fraction": 0.5226121292763223,
+      "observed_zero": 0.17218543046357615,
+      "p_zero": 0.10658640480280877,
+      "predicted_fraction": 0.5286058147011414,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 111,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "86545627",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.1093851024001173,
+      "nodes": 41,
+      "nonforced_choices": 160,
+      "observed_fraction": 0.727703781520507,
+      "observed_zero": 0.03125,
+      "p_zero": 0.027355306795254053,
+      "predicted_fraction": 0.6851308441375483,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 112,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "88376462",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.7131022534781755,
+      "nodes": 41,
+      "nonforced_choices": 105,
+      "observed_fraction": 0.48581880021301244,
+      "observed_zero": 0.22857142857142856,
+      "p_zero": 0.2091763215721498,
+      "predicted_fraction": 0.5106044986696355,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 113,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "92574677",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.2911846761703547,
+      "nodes": 41,
+      "nonforced_choices": 33,
+      "observed_fraction": 0.5314842188397275,
+      "observed_zero": 0.18181818181818182,
+      "p_zero": 0.1299097612488422,
+      "predicted_fraction": 0.5535215437000298,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 114,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "92975880",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.1461503052701474,
+      "nodes": 41,
+      "nonforced_choices": 156,
+      "observed_fraction": 0.6955155890949649,
+      "observed_zero": 0.019230769230769232,
+      "p_zero": 0.03562628158848044,
+      "predicted_fraction": 0.6677526066433261,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 115,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "95037991",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.823089037033872,
+      "nodes": 41,
+      "nonforced_choices": 144,
+      "observed_fraction": 0.5843178724572301,
+      "observed_zero": 0.11805555555555555,
+      "p_zero": 0.10109085193742917,
+      "predicted_fraction": 0.5585483085209114,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 116,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "95428526",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.3260768012055855,
+      "nodes": 41,
+      "nonforced_choices": 66,
+      "observed_fraction": 0.6332657604099586,
+      "observed_zero": 0.0,
+      "p_zero": 0.0646464974851127,
+      "predicted_fraction": 0.6198546723237358,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 117,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "96027415",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.506692297075967,
+      "nodes": 41,
+      "nonforced_choices": 109,
+      "observed_fraction": 0.639136561405215,
+      "observed_zero": 0.22935779816513763,
+      "p_zero": 0.09168137971075178,
+      "predicted_fraction": 0.6446754614171156,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 118,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "96121907",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.9222445158975185,
+      "nodes": 41,
+      "nonforced_choices": 85,
+      "observed_fraction": 0.6809986453472273,
+      "observed_zero": 0.058823529411764705,
+      "p_zero": 0.0699274697008102,
+      "predicted_fraction": 0.6773491153038615,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "family": "CL-FA-H0",
+      "group_index": 119,
+      "key": [
+        "RL Agent (M1) Exp 2",
+        "97108971",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.2886312940578897,
+      "nodes": 41,
+      "nonforced_choices": 134,
+      "observed_fraction": 0.6560758722688798,
+      "observed_zero": 0.04477611940298507,
+      "p_zero": 0.06425608952068171,
+      "predicted_fraction": 0.6302408967402436,
+      "seed": 17,
+      "selected_epoch": 473,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "transfer",
+      "tilt": [
+        0.9,
+        -0.75
+      ],
+      "tilt_denominator": "offer"
+    }
+  ],
+  "peak_rss_kib": 340656,
+  "seconds": 14.607236933079548
+}

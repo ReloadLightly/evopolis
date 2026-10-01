@@ -292,6 +292,148 @@
         "exit_code": 0,
         "utc": "2026-10-01T23:16:16.413562+00:00"
       }
+    ],
+    "transfer": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_evaluate",
+          "transfer"
+        ],
+        "wall_seconds": 18.387982088024728,
+        "peak_rss_kib": 199336,
+        "user_cpu_seconds": 9.0,
+        "system_cpu_seconds": 7.61,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:19:26.616114+00:00"
+      }
+    ],
+    "transfer-nll": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_predict",
+          "transfer"
+        ],
+        "wall_seconds": 519.6932153700618,
+        "peak_rss_kib": 340656,
+        "user_cpu_seconds": 537.12,
+        "system_cpu_seconds": 6.54,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:28:52.203847+00:00"
+      }
+    ],
+    "plot": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_plot"
+        ],
+        "wall_seconds": 6.120970817981288,
+        "peak_rss_kib": 211832,
+        "user_cpu_seconds": 4.23,
+        "system_cpu_seconds": 1.27,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:29:05.780333+00:00"
+      },
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_plot"
+        ],
+        "wall_seconds": 5.371461380971596,
+        "peak_rss_kib": 212484,
+        "user_cpu_seconds": 4.4,
+        "system_cpu_seconds": 1.24,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:30:50.616968+00:00"
+      }
+    ],
+    "report": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_report",
+          "--check"
+        ],
+        "wall_seconds": 2.6310711759142578,
+        "peak_rss_kib": 134592,
+        "user_cpu_seconds": 1.15,
+        "system_cpu_seconds": 0.76,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:29:18.784935+00:00"
+      },
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_report"
+        ],
+        "wall_seconds": 1.7579931839136407,
+        "peak_rss_kib": 134504,
+        "user_cpu_seconds": 1.08,
+        "system_cpu_seconds": 0.76,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:29:32.541636+00:00"
+      },
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_report",
+          "--check"
+        ],
+        "wall_seconds": 1.6827874489827082,
+        "peak_rss_kib": 134500,
+        "user_cpu_seconds": 1.24,
+        "system_cpu_seconds": 0.52,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:30:52.642392+00:00"
+      },
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_report"
+        ],
+        "wall_seconds": 1.5384126000571996,
+        "peak_rss_kib": 134608,
+        "user_cpu_seconds": 1.16,
+        "system_cpu_seconds": 0.45,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:33:36.004747+00:00"
+      },
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_report"
+        ],
+        "wall_seconds": 1.1429329719394445,
+        "peak_rss_kib": 134512,
+        "user_cpu_seconds": 0.96,
+        "system_cpu_seconds": 0.24,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:35:21.816848+00:00"
+      },
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_report"
+        ],
+        "wall_seconds": 1.1760368730174378,
+        "peak_rss_kib": 134620,
+        "user_cpu_seconds": 1.03,
+        "system_cpu_seconds": 0.2,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:37:17.245810+00:00"
+      }
     ]
   },
   "phase1_data": {
@@ -430,5 +572,134 @@
     "status": "complete",
     "utc": "2026-10-01T23:13:16.138960+00:00",
     "wall_seconds": 2.916378624038771
-  }
+  },
+  "final_publication_verification": {
+    "utc": "2026-10-01T23:38:38.612248+00:00",
+    "passed": true,
+    "wall_seconds": 5.863011943059973,
+    "peak_rss_kib": 47916
+  },
+  "phase_summary": {
+    "archived-check": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 3.24015781795606,
+      "peak_rss_kib": 97984,
+      "last_exit_code": 0
+    },
+    "audit": {
+      "finished_invocations": 2,
+      "recorded_wall_seconds": 22.000358421937563,
+      "peak_rss_kib": 327988,
+      "last_exit_code": 0
+    },
+    "audit-rollouts": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 5.986972265993245,
+      "peak_rss_kib": 328860,
+      "last_exit_code": 0
+    },
+    "benchmark": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 12.176127944956534,
+      "peak_rss_kib": 197752,
+      "last_exit_code": 0
+    },
+    "calibrate": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 4788.917034362094,
+      "peak_rss_kib": 391244,
+      "last_exit_code": 0
+    },
+    "diagnostics": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 97.5897935439134,
+      "peak_rss_kib": 328784,
+      "last_exit_code": 0
+    },
+    "generate": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 579.5838557409588,
+      "peak_rss_kib": 436268,
+      "last_exit_code": 0
+    },
+    "integration": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 96.00770130206365,
+      "peak_rss_kib": 310900,
+      "last_exit_code": 0
+    },
+    "sensitivity": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 1328.357609683997,
+      "peak_rss_kib": 390144,
+      "last_exit_code": 0
+    },
+    "test": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 22.807227233075537,
+      "peak_rss_kib": 370456,
+      "last_exit_code": 0
+    },
+    "train": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 3758.943767737015,
+      "peak_rss_kib": 368752,
+      "last_exit_code": 0
+    },
+    "verify": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 127.6641873709159,
+      "peak_rss_kib": 393644,
+      "last_exit_code": 0
+    },
+    "verify-all-rollout": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 21.471745827933773,
+      "peak_rss_kib": 317616,
+      "last_exit_code": 0
+    },
+    "verify-tilted": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 50.832809358951636,
+      "peak_rss_kib": 330736,
+      "last_exit_code": 0
+    },
+    "verify-protected": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 0.5722592039965093,
+      "peak_rss_kib": 18976,
+      "last_exit_code": 0
+    },
+    "freeze": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 8.040001117973588,
+      "peak_rss_kib": 282156,
+      "last_exit_code": 0
+    },
+    "transfer": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 18.387982088024728,
+      "peak_rss_kib": 199336,
+      "last_exit_code": 0
+    },
+    "transfer-nll": {
+      "finished_invocations": 1,
+      "recorded_wall_seconds": 519.6932153700618,
+      "peak_rss_kib": 340656,
+      "last_exit_code": 0
+    },
+    "plot": {
+      "finished_invocations": 2,
+      "recorded_wall_seconds": 11.492432198952883,
+      "peak_rss_kib": 212484,
+      "last_exit_code": 0
+    },
+    "report": {
+      "finished_invocations": 6,
+      "recorded_wall_seconds": 9.929234253824688,
+      "peak_rss_kib": 134620,
+      "last_exit_code": 0
+    }
+  },
+  "phase_summary_notes": "Finished wrapper invocations only; the interrupted calibration invocation and legacy direct phase receipts remain separately recorded above. Nested verification subphases are not added to their wrapper total."
 }

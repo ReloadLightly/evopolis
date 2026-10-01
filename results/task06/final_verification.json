@@ -1,0 +1,46 @@
+{
+  "status": "scientific work and publication artifacts verified",
+  "utc": "2026-10-01T23:38:38.612248+00:00",
+  "passed": true,
+  "freeze_commit": "bf994ea7acc41592710f519802a75f2abe7e6b33",
+  "frozen_artifacts": {
+    "forecast_summaries": 228,
+    "checkpoint_records": 57,
+    "trajectory_files": 228,
+    "recorded_forecasts_and_source_audit_verified": true
+  },
+  "frozen_analysis_files_unchanged": 17,
+  "protected_files_unchanged": 371,
+  "unrelated_files_unchanged": 7,
+  "full_existing_suite": {
+    "command": [
+      "/home/roland/projects/evopolis/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "peak_rss_kib": 370456,
+    "system_cpu_seconds": 3.53,
+    "user_cpu_seconds": 18.09,
+    "utc": "2026-10-01T23:15:41.497024+00:00",
+    "wall_seconds": 22.807227233075537
+  },
+  "word_counts": {
+    "report": 2094,
+    "readme_prose": 1149
+  },
+  "figure_files": 8,
+  "published_documents_sha256": {
+    "README.md": "66a7ffa3ac972d4b613ede22a4a8c965c8b0d0c923854b50740db93686a92dd5",
+    "docs/institutional-validity.md": "41794e3843866139bb028016f5539bf6322cae1a1813241f712b652b0a108dde",
+    "docs/github-description.txt": "11dc30120161f8c9ddb663c27dbbee63459a05193d061e1dd1f003fb14693066"
+  },
+  "local_document_links_resolve": true,
+  "experiment3": "closed; no Task07 run",
+  "wall_seconds": 5.863011943059973,
+  "peak_rss_kib": 47916
+}

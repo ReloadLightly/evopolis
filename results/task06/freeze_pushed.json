@@ -1,0 +1,29 @@
+{
+  "commit": "bf994ea7acc41592710f519802a75f2abe7e6b33",
+  "remote": "origin",
+  "ref": "refs/heads/main",
+  "manifest_sha256": "11cba94d375b5a105158fd86fb360e5cbfc736b13a15d7a6b6a852240060ff8d",
+  "analysis_code_sha256": {
+    "configs/task06.json": "5ffc4d76d3abd0b35c1323680fd278b4e870e2b7e2a087c17fcd1093b4cdedcf",
+    "evopolis/behavior_data.py": "86a380e87a24e41f1f95de2a82e240f347d99660d54862e65c61956698162df1",
+    "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+    "evopolis/conditional_models.py": "cf8fa36e13347c0485ecd085876b6c79123886f7763fc29cae9c21199f3e70e0",
+    "evopolis/institutional_calibrate.py": "0bdd5db9ec5ac1902362c63e15db6f4bcd7a9dba6d7b31b851a68cf66cb3b0b2",
+    "evopolis/institutional_data.py": "7d18a1c95502d26b181ba09bb5399dd083a90e4ede89b49230a019eb4c607fbd",
+    "evopolis/institutional_evaluate.py": "db5a505e1d9b03ff9215ef170e005c4c9260b92884cb87fa19a369639a677bd5",
+    "evopolis/institutional_freeze.py": "4846ab2074af8b44416ba0fc9db29c4bb64713fa5622f510cb2bf907932b9deb",
+    "evopolis/institutional_metrics.py": "ed21b328306d1626c52d5875fd23f499c103c061a724004607e6df08eb15e715",
+    "evopolis/institutional_models.py": "9e44a43aa1711f71e6d64fbdad13a0b8a479658673d9364e337f924b7fd77005",
+    "evopolis/institutional_predict.py": "84ef2d6f221612f16605210eb87ab49aa778ddfe7a9d452b8fd60374f10d4b83",
+    "evopolis/institutional_rollout.py": "a7263ed59a592cad97063c9776b691023bb0215b08b7e575c98887026697e383",
+    "evopolis/institutional_train.py": "9c488eeb69523a3a7d2294e9141974dd0e937feb6b09b068e845d5b053619f36",
+    "evopolis/institutional_verify.py": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943",
+    "evopolis/world.py": "e8d32143f857cdaf6d780290794a9be72100492fc2f8d548d88a2d0c83cbb6b7",
+    "scripts/institutional.sh": "9bd8207eb42abd25f777184da9127e641050d61fd6653ad7b25e886685a95e92",
+    "scripts/run-institutional-phase.py": "de03e6500408bc11e4ae2a6332163b92eead947bcf5c639296a66b60abdf49fe"
+  },
+  "verified_remote_commit": "bf994ea7acc41592710f519802a75f2abe7e6b33",
+  "verified_at_utc": "2026-10-01T23:19:01.188317+00:00",
+  "repository_public": true,
+  "url": "https://github.com/ReloadLightly/evopolis/commit/bf994ea7acc41592710f519802a75f2abe7e6b33"
+}
