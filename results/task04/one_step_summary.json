@@ -1,0 +1,1432 @@
+{
+  "collective_one_step": {
+    "aggregation": "Three fitted-seed scores within group, groups within mechanism, mechanisms equally; no mixing forecast draws across fitted seeds",
+    "all_declared_mechanisms_available": true,
+    "bootstrap": {
+      "generator": "PCG64",
+      "group_ids": {
+        "Equal": [
+          11,
+          13,
+          20,
+          25,
+          31,
+          35,
+          36,
+          38
+        ],
+        "Mixed": [
+          44,
+          47,
+          52,
+          57,
+          60,
+          64,
+          73,
+          78
+        ],
+        "Proportional": [
+          80,
+          82,
+          89,
+          97,
+          104,
+          107,
+          111,
+          117
+        ]
+      },
+      "paired": true,
+      "replicates": 2000,
+      "scope": "Human sample uncertainty conditional on the fitted seeds and finite forecast banks",
+      "seed": 20261014,
+      "unit": "human interacting group"
+    },
+    "comparisons": [
+      {
+        "by_mechanism": {
+          "Equal": {
+            "aggregate_nll": -0.04256756396420924,
+            "renewal_brier": 0.00042730242811322863,
+            "renewal_observed": 0.0,
+            "renewal_probability": -0.004034972823505739
+          },
+          "Mixed": {
+            "aggregate_nll": -0.03447784806692755,
+            "renewal_brier": 0.002487393437638272,
+            "renewal_observed": 0.0,
+            "renewal_probability": 0.002571128106852439
+          },
+          "Proportional": {
+            "aggregate_nll": -0.0255673085466816,
+            "renewal_brier": -0.005159204797925934,
+            "renewal_observed": 0.0,
+            "renewal_probability": 0.020923791901185082
+          }
+        },
+        "ci95": {
+          "aggregate_nll": [
+            -0.07284909618806812,
+            0.006655417038712324
+          ],
+          "renewal_brier": [
+            -0.005929655630601068,
+            0.005117682060539017
+          ],
+          "renewal_observed": [
+            0.0,
+            0.0
+          ],
+          "renewal_probability": [
+            -0.0023614642062964345,
+            0.014116791302989257
+          ]
+        },
+        "comparison": "continued minus original",
+        "differences": {
+          "aggregate_nll": -0.03420424019260615,
+          "renewal_brier": -0.0007481696440581609,
+          "renewal_observed": 0.0,
+          "renewal_probability": 0.006486649061510641
+        },
+        "estimand": "equal mechanisms",
+        "family": "feedforward",
+        "groups": 24
+      },
+      {
+        "by_mechanism": {
+          "Equal": {
+            "aggregate_nll": -0.0467430018082739,
+            "renewal_brier": 0.0012904710203751274,
+            "renewal_observed": 0.0,
+            "renewal_probability": 0.0031281847476931695
+          },
+          "Mixed": {
+            "aggregate_nll": 0.026710289051832592,
+            "renewal_brier": 0.022406491833046556,
+            "renewal_observed": 0.0,
+            "renewal_probability": -0.08445652132222148
+          },
+          "Proportional": {
+            "aggregate_nll": -0.14781020142939155,
+            "renewal_brier": 0.0024387452773091,
+            "renewal_observed": 0.0,
+            "renewal_probability": -0.010586604848536643
+          }
+        },
+        "ci95": {
+          "aggregate_nll": [
+            -0.08854790291389304,
+            -0.024036911523316117
+          ],
+          "renewal_brier": [
+            -0.0001849833216727166,
+            0.017441479638572746
+          ],
+          "renewal_observed": [
+            0.0,
+            0.0
+          ],
+          "renewal_probability": [
+            -0.051747694038966896,
+            -0.009058983035009417
+          ]
+        },
+        "comparison": "continued minus original",
+        "differences": {
+          "aggregate_nll": -0.05594763806194436,
+          "renewal_brier": 0.008711902710243552,
+          "renewal_observed": 0.0,
+          "renewal_probability": -0.030638313807688278
+        },
+        "estimand": "equal mechanisms",
+        "family": "recurrent",
+        "groups": 24
+      }
+    ],
+    "group_counts": {
+      "Equal": 8,
+      "Mixed": 8,
+      "Proportional": 8
+    },
+    "summary": [
+      {
+        "aggregate_nll": 3.3350797081055443,
+        "groups": 8,
+        "mechanism": "Equal",
+        "procedure": "constant_original",
+        "renewal_brier": 0.056255044862284755,
+        "renewal_observed": 0.04583333333333334,
+        "renewal_probability": 0.17745702578475311
+      },
+      {
+        "aggregate_nll": 3.626559584023694,
+        "groups": 8,
+        "mechanism": "Mixed",
+        "procedure": "constant_original",
+        "renewal_brier": 0.2598046813489519,
+        "renewal_observed": 0.3684027777777778,
+        "renewal_probability": 0.206715549597776
+      },
+      {
+        "aggregate_nll": 4.242494437876386,
+        "groups": 8,
+        "mechanism": "Proportional",
+        "procedure": "constant_original",
+        "renewal_brier": 0.2912621926047374,
+        "renewal_observed": 0.695138888888889,
+        "renewal_probability": 0.3640664330041125
+      },
+      {
+        "aggregate_nll": 3.7347112433352074,
+        "ci95": {
+          "aggregate_nll": [
+            3.4901298030517824,
+            3.9970784327156257
+          ],
+          "renewal_brier": [
+            0.170340635698478,
+            0.23259804055806596
+          ],
+          "renewal_observed": [
+            0.2969849537037037,
+            0.4364641203703704
+          ],
+          "renewal_probability": [
+            0.23772525343668513,
+            0.26102605208585683
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "per_seed": [
+          {
+            "aggregate_nll": 3.735328568267967,
+            "renewal_brier": 0.20175866590457603,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.25271804594591923,
+            "seed": 17
+          },
+          {
+            "aggregate_nll": 3.734594688691368,
+            "renewal_brier": 0.20306636667283542,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.24593268004311875,
+            "seed": 29
+          },
+          {
+            "aggregate_nll": 3.7342104730462893,
+            "renewal_brier": 0.20249688623856263,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.2495882823976037,
+            "seed": 43
+          }
+        ],
+        "procedure": "constant_original",
+        "renewal_brier": 0.20244063960532468,
+        "renewal_observed": 0.3697916666666667,
+        "renewal_probability": 0.24941300279554723
+      },
+      {
+        "aggregate_nll": 3.126407222027775,
+        "groups": 8,
+        "mechanism": "Equal",
+        "procedure": "feedforward_continued",
+        "renewal_brier": 0.04123439704182576,
+        "renewal_observed": 0.04583333333333334,
+        "renewal_probability": 0.11401591290733283
+      },
+      {
+        "aggregate_nll": 3.6782074105263067,
+        "groups": 8,
+        "mechanism": "Mixed",
+        "procedure": "feedforward_continued",
+        "renewal_brier": 0.28133315462403524,
+        "renewal_observed": 0.3684027777777778,
+        "renewal_probability": 0.15875143991423385
+      },
+      {
+        "aggregate_nll": 3.8330776217731755,
+        "groups": 8,
+        "mechanism": "Proportional",
+        "procedure": "feedforward_continued",
+        "renewal_brier": 0.15271460096024492,
+        "renewal_observed": 0.695138888888889,
+        "renewal_probability": 0.6187856831646756
+      },
+      {
+        "aggregate_nll": 3.5458974181090857,
+        "ci95": {
+          "aggregate_nll": [
+            3.33113423005019,
+            3.7714261370777242
+          ],
+          "renewal_brier": [
+            0.12290137776825737,
+            0.19106539900257694
+          ],
+          "renewal_observed": [
+            0.2969849537037037,
+            0.4364641203703704
+          ],
+          "renewal_probability": [
+            0.2629716584082718,
+            0.33184425418035757
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "per_seed": [
+          {
+            "aggregate_nll": 3.5444970300781034,
+            "renewal_brier": 0.15707185661555578,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.2988238764476676,
+            "seed": 17
+          },
+          {
+            "aggregate_nll": 3.549043444234757,
+            "renewal_brier": 0.15898722767514964,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.29496995004773957,
+            "seed": 29
+          },
+          {
+            "aggregate_nll": 3.544151780014397,
+            "renewal_brier": 0.15922306833540048,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.297759209490835,
+            "seed": 43
+          }
+        ],
+        "procedure": "feedforward_continued",
+        "renewal_brier": 0.15842738420870198,
+        "renewal_observed": 0.3697916666666667,
+        "renewal_probability": 0.29718434532874743
+      },
+      {
+        "aggregate_nll": 3.1689747859919843,
+        "groups": 8,
+        "mechanism": "Equal",
+        "procedure": "feedforward_original",
+        "renewal_brier": 0.04080709461371253,
+        "renewal_observed": 0.04583333333333334,
+        "renewal_probability": 0.11805088573083855
+      },
+      {
+        "aggregate_nll": 3.7126852585932353,
+        "groups": 8,
+        "mechanism": "Mixed",
+        "procedure": "feedforward_original",
+        "renewal_brier": 0.278845761186397,
+        "renewal_observed": 0.3684027777777778,
+        "renewal_probability": 0.1561803118073814
+      },
+      {
+        "aggregate_nll": 3.8586449303198576,
+        "groups": 8,
+        "mechanism": "Proportional",
+        "procedure": "feedforward_original",
+        "renewal_brier": 0.15787380575817087,
+        "renewal_observed": 0.695138888888889,
+        "renewal_probability": 0.5978618912634904
+      },
+      {
+        "aggregate_nll": 3.580101658301692,
+        "ci95": {
+          "aggregate_nll": [
+            3.350114799723289,
+            3.8258804949158836
+          ],
+          "renewal_brier": [
+            0.12375721351649058,
+            0.19253406657526698
+          ],
+          "renewal_observed": [
+            0.2969849537037037,
+            0.4364641203703704
+          ],
+          "renewal_probability": [
+            0.2529225493617576,
+            0.3286267240663836
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "per_seed": [
+          {
+            "aggregate_nll": 3.583476049437776,
+            "renewal_brier": 0.16076939549501187,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.2830930063675822,
+            "seed": 17
+          },
+          {
+            "aggregate_nll": 3.5795636697660824,
+            "renewal_brier": 0.15845281873223546,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.2931731660709212,
+            "seed": 29
+          },
+          {
+            "aggregate_nll": 3.5772652557012172,
+            "renewal_brier": 0.158304447331033,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.29582691636320696,
+            "seed": 43
+          }
+        ],
+        "procedure": "feedforward_original",
+        "renewal_brier": 0.15917555385276014,
+        "renewal_observed": 0.3697916666666667,
+        "renewal_probability": 0.2906976962672368
+      },
+      {
+        "aggregate_nll": 3.257499613646308,
+        "groups": 8,
+        "mechanism": "Equal",
+        "procedure": "linear_original",
+        "renewal_brier": 0.04890078193656048,
+        "renewal_observed": 0.04583333333333334,
+        "renewal_probability": 0.1439977779890516
+      },
+      {
+        "aggregate_nll": 3.636860313937773,
+        "groups": 8,
+        "mechanism": "Mixed",
+        "procedure": "linear_original",
+        "renewal_brier": 0.2600409615086812,
+        "renewal_observed": 0.3684027777777778,
+        "renewal_probability": 0.1925644855967835
+      },
+      {
+        "aggregate_nll": 4.074743298863243,
+        "groups": 8,
+        "mechanism": "Proportional",
+        "procedure": "linear_original",
+        "renewal_brier": 0.19078577965936647,
+        "renewal_observed": 0.695138888888889,
+        "renewal_probability": 0.49463166861371216
+      },
+      {
+        "aggregate_nll": 3.656367742149108,
+        "ci95": {
+          "aggregate_nll": [
+            3.437984316070172,
+            3.880298885924411
+          ],
+          "renewal_brier": [
+            0.13447483435285618,
+            0.19741922602010573
+          ],
+          "renewal_observed": [
+            0.2969849537037037,
+            0.4364641203703704
+          ],
+          "renewal_probability": [
+            0.25004049271038975,
+            0.3036248318627964
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "per_seed": [
+          {
+            "aggregate_nll": 3.6547423961500782,
+            "renewal_brier": 0.1656517427594284,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.2797677963895733,
+            "seed": 17
+          },
+          {
+            "aggregate_nll": 3.6539906456439497,
+            "renewal_brier": 0.16592227774724724,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.2784756112320392,
+            "seed": 29
+          },
+          {
+            "aggregate_nll": 3.660370184653297,
+            "renewal_brier": 0.16815350259793252,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.27295052457793484,
+            "seed": 43
+          }
+        ],
+        "procedure": "linear_original",
+        "renewal_brier": 0.16657584103486942,
+        "renewal_observed": 0.3697916666666667,
+        "renewal_probability": 0.2770646440665157
+      },
+      {
+        "aggregate_nll": 2.831156254181572,
+        "groups": 8,
+        "mechanism": "Equal",
+        "procedure": "recurrent_continued",
+        "renewal_brier": 0.039756782364544246,
+        "renewal_observed": 0.04583333333333334,
+        "renewal_probability": 0.08039233104703991
+      },
+      {
+        "aggregate_nll": 3.388902933146601,
+        "groups": 8,
+        "mechanism": "Mixed",
+        "procedure": "recurrent_continued",
+        "renewal_brier": 0.2297100694924324,
+        "renewal_observed": 0.3684027777777778,
+        "renewal_probability": 0.27573607886002327
+      },
+      {
+        "aggregate_nll": 3.7052746720314342,
+        "groups": 8,
+        "mechanism": "Proportional",
+        "procedure": "recurrent_continued",
+        "renewal_brier": 0.14457055643261402,
+        "renewal_observed": 0.695138888888889,
+        "renewal_probability": 0.584428233717027
+      },
+      {
+        "aggregate_nll": 3.308444619786536,
+        "ci95": {
+          "aggregate_nll": [
+            3.1150830827301177,
+            3.5100020056023977
+          ],
+          "renewal_brier": [
+            0.1102638235314009,
+            0.1635879085711778
+          ],
+          "renewal_observed": [
+            0.2969849537037037,
+            0.4364641203703704
+          ],
+          "renewal_probability": [
+            0.2668291040734736,
+            0.3591004733748643
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "per_seed": [
+          {
+            "aggregate_nll": 3.2964137043402673,
+            "renewal_brier": 0.1370381826308735,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.3173600575638335,
+            "seed": 17
+          },
+          {
+            "aggregate_nll": 3.309696956903046,
+            "renewal_brier": 0.13800688600839564,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.3182633970861018,
+            "seed": 29
+          },
+          {
+            "aggregate_nll": 3.319223198116294,
+            "renewal_brier": 0.1389923396503215,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.3049331889741548,
+            "seed": 43
+          }
+        ],
+        "procedure": "recurrent_continued",
+        "renewal_brier": 0.13801246942986353,
+        "renewal_observed": 0.3697916666666667,
+        "renewal_probability": 0.31351888120803006
+      },
+      {
+        "aggregate_nll": 2.8778992559898455,
+        "groups": 8,
+        "mechanism": "Equal",
+        "procedure": "recurrent_original",
+        "renewal_brier": 0.038466311344169134,
+        "renewal_observed": 0.04583333333333334,
+        "renewal_probability": 0.07726414629934672
+      },
+      {
+        "aggregate_nll": 3.362192644094769,
+        "groups": 8,
+        "mechanism": "Mixed",
+        "procedure": "recurrent_original",
+        "renewal_brier": 0.20730357765938584,
+        "renewal_observed": 0.3684027777777778,
+        "renewal_probability": 0.3601926001822447
+      },
+      {
+        "aggregate_nll": 3.8530848734608263,
+        "groups": 8,
+        "mechanism": "Proportional",
+        "procedure": "recurrent_original",
+        "renewal_brier": 0.14213181115530493,
+        "renewal_observed": 0.695138888888889,
+        "renewal_probability": 0.5950148385655637
+      },
+      {
+        "aggregate_nll": 3.3643922578484804,
+        "ci95": {
+          "aggregate_nll": [
+            3.170682890171866,
+            3.562715528667918
+          ],
+          "renewal_brier": [
+            0.10471556947893074,
+            0.15225852131585266
+          ],
+          "renewal_observed": [
+            0.2969849537037037,
+            0.4364641203703704
+          ],
+          "renewal_probability": [
+            0.29272555832824015,
+            0.39169942811548675
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "per_seed": [
+          {
+            "aggregate_nll": 3.3590966047196122,
+            "renewal_brier": 0.12991220893269637,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.336900041397066,
+            "seed": 17
+          },
+          {
+            "aggregate_nll": 3.3686516147593224,
+            "renewal_brier": 0.12944745376669356,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.3529566415354819,
+            "seed": 29
+          },
+          {
+            "aggregate_nll": 3.3654285540665057,
+            "renewal_brier": 0.12854203745947,
+            "renewal_observed": 0.3697916666666667,
+            "renewal_probability": 0.3426149021146072,
+            "seed": 43
+          }
+        ],
+        "procedure": "recurrent_original",
+        "renewal_brier": 0.12930056671961998,
+        "renewal_observed": 0.3697916666666667,
+        "renewal_probability": 0.34415719501571834
+      }
+    ],
+    "unavailable_mechanisms": []
+  },
+  "individual_24": {
+    "aggregation": "Three fitted-seed scores within group, groups within mechanism, mechanisms equally; no mixing forecast draws across fitted seeds",
+    "all_declared_mechanisms_available": true,
+    "bootstrap": {
+      "generator": "PCG64",
+      "group_ids": {
+        "Equal": [
+          11,
+          13,
+          20,
+          25,
+          31,
+          35,
+          36,
+          38
+        ],
+        "Mixed": [
+          44,
+          47,
+          52,
+          57,
+          60,
+          64,
+          73,
+          78
+        ],
+        "Proportional": [
+          80,
+          82,
+          89,
+          97,
+          104,
+          107,
+          111,
+          117
+        ]
+      },
+      "paired": true,
+      "replicates": 2000,
+      "scope": "Human sample uncertainty conditional on the fitted seeds and finite forecast banks",
+      "seed": 20261014,
+      "unit": "human interacting group"
+    },
+    "comparisons": [
+      {
+        "by_mechanism": {
+          "Equal": {
+            "nll": -0.047285907407024846
+          },
+          "Mixed": {
+            "nll": -0.05567995393690156
+          },
+          "Proportional": {
+            "nll": -0.0197861789862398
+          }
+        },
+        "ci95": {
+          "nll": [
+            -0.062044901711477196,
+            -0.021205018465023734
+          ]
+        },
+        "comparison": "continued minus original",
+        "differences": {
+          "nll": -0.040917346776721875
+        },
+        "estimand": "equal mechanisms",
+        "family": "feedforward",
+        "groups": 24
+      },
+      {
+        "by_mechanism": {
+          "Equal": {
+            "nll": -0.09183400170574665
+          },
+          "Mixed": {
+            "nll": -0.06511254814310213
+          },
+          "Proportional": {
+            "nll": -0.10237980224162768
+          }
+        },
+        "ci95": {
+          "nll": [
+            -0.11157664097072122,
+            -0.06068220210561496
+          ]
+        },
+        "comparison": "continued minus original",
+        "differences": {
+          "nll": -0.08644211736349217
+        },
+        "estimand": "equal mechanisms",
+        "family": "recurrent",
+        "groups": 24
+      }
+    ],
+    "group_counts": {
+      "Equal": 8,
+      "Mixed": 8,
+      "Proportional": 8
+    },
+    "summary": [
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.3730149590568557,
+        "procedure": "constant_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.6978729847974385,
+        "procedure": "constant_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.389185779149561,
+        "procedure": "constant_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.62700531520012,
+            3.0213791954966207
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "nll": 2.8200245743346186,
+        "per_seed": [
+          {
+            "nll": 2.8198931637479716,
+            "seed": 17
+          },
+          {
+            "nll": 2.8233261368399325,
+            "seed": 29
+          },
+          {
+            "nll": 2.8168544224159517,
+            "seed": 43
+          }
+        ],
+        "procedure": "constant_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.1421829813710103,
+        "procedure": "feedforward_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.5410637819613964,
+        "procedure": "feedforward_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.087787575808185,
+        "procedure": "feedforward_continued"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.43068520941768,
+            2.7554987282954992
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "nll": 2.5903447797135306,
+        "per_seed": [
+          {
+            "nll": 2.588605527189302,
+            "seed": 17
+          },
+          {
+            "nll": 2.5930548918173097,
+            "seed": 29
+          },
+          {
+            "nll": 2.58937392013398,
+            "seed": 43
+          }
+        ],
+        "procedure": "feedforward_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.189468888778035,
+        "procedure": "feedforward_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.596743735898298,
+        "procedure": "feedforward_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.107573754794425,
+        "procedure": "feedforward_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.472455230171667,
+            2.797792301087185
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "nll": 2.6312621264902525,
+        "per_seed": [
+          {
+            "nll": 2.6320596839249255,
+            "seed": 17
+          },
+          {
+            "nll": 2.6321536907368035,
+            "seed": 29
+          },
+          {
+            "nll": 2.629573004809029,
+            "seed": 43
+          }
+        ],
+        "procedure": "feedforward_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.3385665754012335,
+        "procedure": "linear_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.689941823990545,
+        "procedure": "linear_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.268938802173224,
+        "procedure": "linear_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.5964272948124494,
+            2.9425564265579753
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "nll": 2.765815733855001,
+        "per_seed": [
+          {
+            "nll": 2.767503599452952,
+            "seed": 17
+          },
+          {
+            "nll": 2.7602455940908244,
+            "seed": 29
+          },
+          {
+            "nll": 2.7696980080212263,
+            "seed": 43
+          }
+        ],
+        "procedure": "linear_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.0331241210716993,
+        "procedure": "recurrent_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.4617923653805476,
+        "procedure": "recurrent_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 2.9961141423012876,
+        "procedure": "recurrent_continued"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.3488126220326184,
+            2.662771705125781
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "nll": 2.4970102095845115,
+        "per_seed": [
+          {
+            "nll": 2.490902875302075,
+            "seed": 17
+          },
+          {
+            "nll": 2.4956705744244174,
+            "seed": 29
+          },
+          {
+            "nll": 2.5044571790270416,
+            "seed": 43
+          }
+        ],
+        "procedure": "recurrent_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.1249581227774463,
+        "procedure": "recurrent_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.5269049135236497,
+        "procedure": "recurrent_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.0984939445429154,
+        "procedure": "recurrent_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.4230502513756855,
+            2.760198552276174
+          ]
+        },
+        "groups": 24,
+        "mechanism": "all",
+        "nll": 2.5834523269480036,
+        "per_seed": [
+          {
+            "nll": 2.5805378257543077,
+            "seed": 17
+          },
+          {
+            "nll": 2.584201305723654,
+            "seed": 29
+          },
+          {
+            "nll": 2.585617849366049,
+            "seed": 43
+          }
+        ],
+        "procedure": "recurrent_original"
+      }
+    ],
+    "unavailable_mechanisms": []
+  },
+  "individual_32": {
+    "aggregation": "Three fitted-seed scores within group, groups within mechanism, mechanisms equally; no mixing forecast draws across fitted seeds",
+    "all_declared_mechanisms_available": true,
+    "bootstrap": {
+      "generator": "PCG64",
+      "group_ids": {
+        "Equal": [
+          11,
+          13,
+          20,
+          25,
+          31,
+          35,
+          36,
+          38
+        ],
+        "M1": [
+          122,
+          124,
+          129,
+          130,
+          132,
+          138,
+          140,
+          159
+        ],
+        "Mixed": [
+          44,
+          47,
+          52,
+          57,
+          60,
+          64,
+          73,
+          78
+        ],
+        "Proportional": [
+          80,
+          82,
+          89,
+          97,
+          104,
+          107,
+          111,
+          117
+        ]
+      },
+      "paired": true,
+      "replicates": 2000,
+      "scope": "Human sample uncertainty conditional on the fitted seeds and finite forecast banks",
+      "seed": 20261014,
+      "unit": "human interacting group"
+    },
+    "comparisons": [
+      {
+        "by_mechanism": {
+          "Equal": {
+            "nll": -0.047285907407024846
+          },
+          "M1": {
+            "nll": -0.016222257832894604
+          },
+          "Mixed": {
+            "nll": -0.05567995393690156
+          },
+          "Proportional": {
+            "nll": -0.0197861789862398
+          }
+        },
+        "ci95": {
+          "nll": [
+            -0.05281854110167693,
+            -0.016961785954005923
+          ]
+        },
+        "comparison": "continued minus original",
+        "differences": {
+          "nll": -0.034743574540765376
+        },
+        "estimand": "equal mechanisms",
+        "family": "feedforward",
+        "groups": 32
+      },
+      {
+        "by_mechanism": {
+          "Equal": {
+            "nll": -0.09183400170574665
+          },
+          "M1": {
+            "nll": -0.04247516578384253
+          },
+          "Mixed": {
+            "nll": -0.06511254814310213
+          },
+          "Proportional": {
+            "nll": -0.10237980224162768
+          }
+        },
+        "ci95": {
+          "nll": [
+            -0.10710983698658297,
+            -0.04004935988628976
+          ]
+        },
+        "comparison": "continued minus original",
+        "differences": {
+          "nll": -0.07545037946857969
+        },
+        "estimand": "equal mechanisms",
+        "family": "recurrent",
+        "groups": 32
+      }
+    ],
+    "group_counts": {
+      "Equal": 8,
+      "M1": 8,
+      "Mixed": 8,
+      "Proportional": 8
+    },
+    "summary": [
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.3730149590568557,
+        "procedure": "constant_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.6978729847974385,
+        "procedure": "constant_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.389185779149561,
+        "procedure": "constant_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "M1",
+        "nll": 3.2295891771911003,
+        "procedure": "constant_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.7710215344558065,
+            3.085300777248019
+          ]
+        },
+        "groups": 32,
+        "mechanism": "all",
+        "nll": 2.922415725048739,
+        "per_seed": [
+          {
+            "nll": 2.9223734771389696,
+            "seed": 17
+          },
+          {
+            "nll": 2.9257973607320356,
+            "seed": 29
+          },
+          {
+            "nll": 2.9190763372752118,
+            "seed": 43
+          }
+        ],
+        "procedure": "constant_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.1421829813710103,
+        "procedure": "feedforward_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.5410637819613964,
+        "procedure": "feedforward_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.087787575808185,
+        "procedure": "feedforward_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "M1",
+        "nll": 2.9851498126002243,
+        "procedure": "feedforward_continued"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.5567450071702997,
+            2.832806584184712
+          ]
+        },
+        "groups": 32,
+        "mechanism": "all",
+        "nll": 2.6890460379352037,
+        "per_seed": [
+          {
+            "nll": 2.6891381187279437,
+            "seed": 17
+          },
+          {
+            "nll": 2.6891792652714726,
+            "seed": 29
+          },
+          {
+            "nll": 2.6888207298061957,
+            "seed": 43
+          }
+        ],
+        "procedure": "feedforward_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.189468888778035,
+        "procedure": "feedforward_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.596743735898298,
+        "procedure": "feedforward_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.107573754794425,
+        "procedure": "feedforward_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "M1",
+        "nll": 3.001372070433119,
+        "procedure": "feedforward_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.595516853591234,
+            2.8639224548861386
+          ]
+        },
+        "groups": 32,
+        "mechanism": "all",
+        "nll": 2.723789612475969,
+        "per_seed": [
+          {
+            "nll": 2.7232602965103196,
+            "seed": 17
+          },
+          {
+            "nll": 2.724385296431296,
+            "seed": 29
+          },
+          {
+            "nll": 2.723723244486292,
+            "seed": 43
+          }
+        ],
+        "procedure": "feedforward_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.3385665754012335,
+        "procedure": "linear_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.689941823990545,
+        "procedure": "linear_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.268938802173224,
+        "procedure": "linear_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "M1",
+        "nll": 3.14953230060934,
+        "procedure": "linear_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.725135361433567,
+            3.0048174924918998
+          ]
+        },
+        "groups": 32,
+        "mechanism": "all",
+        "nll": 2.861744875543586,
+        "per_seed": [
+          {
+            "nll": 2.8615967614669153,
+            "seed": 17
+          },
+          {
+            "nll": 2.855774472797359,
+            "seed": 29
+          },
+          {
+            "nll": 2.8678633923664827,
+            "seed": 43
+          }
+        ],
+        "procedure": "linear_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.0331241210716993,
+        "procedure": "recurrent_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.4617923653805476,
+        "procedure": "recurrent_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 2.9961141423012876,
+        "procedure": "recurrent_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "M1",
+        "nll": 2.9847354852512917,
+        "procedure": "recurrent_continued"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.4938777145117528,
+            2.7624812763431557
+          ]
+        },
+        "groups": 32,
+        "mechanism": "all",
+        "nll": 2.6189415285012068,
+        "per_seed": [
+          {
+            "nll": 2.612991065028825,
+            "seed": 17
+          },
+          {
+            "nll": 2.619973055539279,
+            "seed": 29
+          },
+          {
+            "nll": 2.6238604649355155,
+            "seed": 43
+          }
+        ],
+        "procedure": "recurrent_continued"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Equal",
+        "nll": 2.1249581227774463,
+        "procedure": "recurrent_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Mixed",
+        "nll": 2.5269049135236497,
+        "procedure": "recurrent_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "Proportional",
+        "nll": 3.0984939445429154,
+        "procedure": "recurrent_original"
+      },
+      {
+        "groups": 8,
+        "mechanism": "M1",
+        "nll": 3.0272106510351344,
+        "procedure": "recurrent_original"
+      },
+      {
+        "ci95": {
+          "nll": [
+            2.5695744287263005,
+            2.836497193849733
+          ]
+        },
+        "groups": 32,
+        "mechanism": "all",
+        "nll": 2.6943919079697864,
+        "per_seed": [
+          {
+            "nll": 2.691262516338143,
+            "seed": 17
+          },
+          {
+            "nll": 2.6976640608548736,
+            "seed": 29
+          },
+          {
+            "nll": 2.6942491467163423,
+            "seed": 43
+          }
+        ],
+        "procedure": "recurrent_original"
+      }
+    ],
+    "unavailable_mechanisms": []
+  },
+  "original_task03_max_nll_disagreement": 0.0,
+  "probability_bin_edges": [
+    0.0,
+    0.1,
+    0.2,
+    0.30000000000000004,
+    0.4,
+    0.5,
+    0.6000000000000001,
+    0.7000000000000001,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "renewal_event": "1.4 * total_return >= sum(recorded current offers)",
+  "resource": {
+    "cpu_seconds": 10.325247922,
+    "peak_rss_kib": 333836,
+    "wall_seconds": 9.75028229795862
+  },
+  "status": "Diagnostic reuse of opened Experiment 1; Experiments 2\u20133 untouched"
+}

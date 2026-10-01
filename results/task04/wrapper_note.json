@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-01T05:19:32.771914+00:00",
+  "issue": "The shell wrapper was extended with scoring commands while its train invocation was running. After Python finished and wrote training_complete.json, bash resumed reading the changed file and reported a trailing syntax error.",
+  "impact": "All six Python fits completed epoch480, selected weights reloaded, and the preservation audit passed before the wrapper error. No epoch is missing and no numerical rerun is needed.",
+  "resolution": "Current wrapper passes bash -n. Keep wrapper stable during subsequent executions; validate completed artifacts independently.",
+  "training_complete_receipt": "results/task04/training_complete.json"
+}

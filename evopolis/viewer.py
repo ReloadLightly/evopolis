@@ -8,6 +8,7 @@ from urllib.parse import parse_qs, urlsplit
 
 from .viewer_data import catalog, get_episode, prepare_cache, sandbox
 from .trained_viewer_data import generated_catalog, generated_episode
+from .forecast_viewer_data import forecast_catalog, forecast_episode
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC = Path(__file__).with_name("static")
@@ -21,6 +22,7 @@ ASSETS = {"/": (STATIC / "index.html", "text/html"),
 def make_handler(cache):
     trained = generated_catalog()
     trained_ids = {episode["id"] for episode in trained["episodes"]}
+    forecasts = forecast_catalog()
 
     class Handler(BaseHTTPRequestHandler):
         def respond(self, status, body, content_type="application/json"):
@@ -41,7 +43,12 @@ def make_handler(cache):
                     self.respond(200, {**recorded,
                         "episodes": recorded["episodes"] + trained["episodes"],
                         "trained_default_id": trained["default_id"],
-                        "trained_provenance": trained["provenance"]})
+                        "trained_provenance": trained["provenance"],
+                        "forecasts": forecasts})
+                elif url.path == "/api/forecast":
+                    query = parse_qs(url.query)
+                    self.respond(200, forecast_episode(query.get("id", [""])[0],
+                                                       query.get("branch", ["first"])[0]))
                 elif url.path == "/api/episode":
                     identity = parse_qs(url.query).get("id", [""])[0]
                     self.respond(200, generated_episode(identity) if identity in trained_ids else get_episode(cache, identity))

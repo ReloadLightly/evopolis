@@ -1,0 +1,125 @@
+{
+  "audit_utc": "2026-10-01T05:28:09.940987+00:00",
+  "primary_checkpoint_group_banks": 1008,
+  "branches_rechecked": 64512,
+  "method": "Independent SciPy condensed Euclidean distances, sorted scalar CRPS identity and math.fsum group-difference bootstrap; no scoring helper imported",
+  "maximum_absolute_disagreement": {
+    "observed_endpoint": 0.0,
+    "energy": 2.220446049250313e-16,
+    "pool_crps": 2.220446049250313e-16,
+    "surplus_crps": 2.7755575615628914e-17,
+    "effect": 2.7755575615628914e-17,
+    "interval": 3.469446951953614e-17
+  },
+  "effects": [
+    {
+      "bank": "main",
+      "family": "feedforward",
+      "difference": -0.005626916588591324,
+      "ci95": [
+        -0.013847107804357566,
+        0.001718818569234953
+      ],
+      "groups": 21
+    },
+    {
+      "bank": "main",
+      "family": "recurrent",
+      "difference": 0.028779403526368996,
+      "ci95": [
+        0.007466729605655387,
+        0.053517554000998745
+      ],
+      "groups": 21
+    },
+    {
+      "bank": "second",
+      "family": "feedforward",
+      "difference": -0.008522655535793774,
+      "ci95": [
+        -0.018857009829264824,
+        -0.00010958403483866873
+      ],
+      "groups": 21
+    },
+    {
+      "bank": "second",
+      "family": "recurrent",
+      "difference": 0.02943903997972054,
+      "ci95": [
+        0.006633241221352755,
+        0.055703021311950235
+      ],
+      "groups": 21
+    }
+  ],
+  "preserved_files_byte_identical": 102,
+  "complete_neural_continuations": [
+    {
+      "family": "feedforward",
+      "seed": 17,
+      "selected_epoch": 478,
+      "validation_nll": 2.6433068690851895,
+      "epochs": 480,
+      "original120_curve_identical": true,
+      "best_sha256": "63ddc8400f53191767bb69890a743442f8c8cae9f18a70771b29a8a50b53710c"
+    },
+    {
+      "family": "feedforward",
+      "seed": 29,
+      "selected_epoch": 444,
+      "validation_nll": 2.6412160960858295,
+      "epochs": 480,
+      "original120_curve_identical": true,
+      "best_sha256": "e64f1d4048b4f9b830d3cd5f6d31465f65e9ac4843161dded476ca275e53e946"
+    },
+    {
+      "family": "feedforward",
+      "seed": 43,
+      "selected_epoch": 473,
+      "validation_nll": 2.641112246325137,
+      "epochs": 480,
+      "original120_curve_identical": true,
+      "best_sha256": "6a1e6a7ef5770e5cb77a129d7c941aabd21f8b4fcac17e8b615fb4d61cd9b0e1"
+    },
+    {
+      "family": "recurrent",
+      "seed": 17,
+      "selected_epoch": 476,
+      "validation_nll": 2.566374499859358,
+      "epochs": 480,
+      "original120_curve_identical": true,
+      "best_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e"
+    },
+    {
+      "family": "recurrent",
+      "seed": 29,
+      "selected_epoch": 460,
+      "validation_nll": 2.5767467385036547,
+      "epochs": 480,
+      "original120_curve_identical": true,
+      "best_sha256": "d85aae54aeba7cf9de9a453c743dbaac3af05ae43385c8592b54f6d40694fc4f"
+    },
+    {
+      "family": "recurrent",
+      "seed": 43,
+      "selected_epoch": 470,
+      "validation_nll": 2.5673550634927635,
+      "epochs": 480,
+      "original120_curve_identical": true,
+      "best_sha256": "3bcb6bb2871153c8c95f34d6759c69fb18b7702b90f72633e8e8172973e52241"
+    }
+  ],
+  "eligible_counts_from_unchanged_source": {
+    "Equal": 5,
+    "Mixed": 8,
+    "Proportional": 8
+  },
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261014,
+  "forecast_archive_sha256": "1d1b461ea89852648e5c5de665b5b2827bceb40695f13f72e4b7b1db2173ea34",
+  "audit_script_sha256": "75cfb21cd2c50392b6e16facb61794b650063b8746575f6e2c6ee2923423e238",
+  "wall_seconds": 2.730435155914165,
+  "cpu_seconds": 2.832328994,
+  "peak_rss_kib": 96184
+}

@@ -129,3 +129,19 @@ Keep Experiments 2–3 unopened and name them as potential future transfer evide
 Update the README and research report with the actual result, limitations, figures, trained/forecast launch commands and screenshot. Mark Stage 04 complete only with completed experiments and working forecast inspection. Keep operational details out of the main research narrative. Do not begin institutional optimization, NAS or evolutionary search during this task.
 
 The user authorizes this continuation experiment, forecast study, viewer addition, documentation and publication. Commit and push completed work to the verified `ReloadLightly/evopolis` origin without force, following ordinary access controls. Preserve existing user work and report a precise access/resource blocker if publication or completion fails.
+
+## Completion record
+
+Completed on 1 October 2026. All six epoch-120 states continued through epoch 480, adding all **2,160 declared epochs**. Selected epochs for seeds 17/29/43 are Feedforward **478/444/473** and GRU **476/460/470**. The original 102 protected files, including all Task 03 weights, numerical results, figures, split and hashed scientific sources, remain byte-identical.
+
+All **150,912 prescribed branches** are saved or regenerable from the committed archive, seed table and checkpoints: 110,592 principal, 24,192 second-bank and 16,128 canonical-first-allocation sensitivity branches. Individual NLL improves for both neural procedures. The primary continued-minus-original GRU energy effect is **+0.028779**, 95% paired group interval **[+0.007467, +0.053518]**; the independent bank gives **+0.029439 [+0.006633, +0.055703]**. Additional optimization therefore improves individual prediction while worsening the declared primary collective forecast. Feedforward's small primary collective gain remains uncertain. The bounded numerical sensitivity does not explain this deterioration.
+
+The [research report](../collective-forecast-fidelity.md) records every measured comparison, proper-score and coverage definition, missing eligible stratum, one-step calibration result, numerical qualification and resource measurement. Main continuation took **823.759 seconds / 308,352 KiB peak RSS**; all forecasts took **411.486 seconds / 314,760 KiB**. The two disposable training benchmark epochs, validation-only forecast benchmark, preflight state-copy repair and post-training shell-wrapper issue are recorded separately. No scientific setting changed in response to the new outcomes. Experiments 2–3 remain reserved.
+
+All 50 Python tests pass. A fresh process exactly regenerated the default 64-branch cell; independent scoring and preservation verification agreed within **2.22×10⁻¹⁶**. The forecast viewer exposes all 24 groups and 18 checkpoint conditions, with an observed prefix, generated branch, actual future, shared coordinates, uncertainty bands and resident inspection. Browser evidence and a real screenshot accompany the [viewer guide](../viewer.md).
+
+```bash
+bash scripts/viewer.sh --port 8765
+```
+
+Open `http://127.0.0.1:8765/?mode=forecast`. The next supported question concerns collective response calibration and feedback, comparing marginal misspecification, persistent heterogeneity and residual dependence under a new declared protocol. This task performs no institutional optimization or evolutionary search.

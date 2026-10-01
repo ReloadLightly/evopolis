@@ -13,7 +13,7 @@ EvoPolis is a research project at the intersection of computational social scien
 
 The first world is a community sharing a productive resource. Its inhabitants receive allocations, decide what to retain, and choose what to return to the commons. Their choices can sustain mutual prosperity, concentrate opportunities, or exhaust the resource on which everyone depends. The research follows two connected problems: learning a faithful model of those choices, and discovering institutions that work across plausible models of human behavior.
 
-**Current state:** the empirical comparison is reproduced, and **12 behavioral models have been trained and evaluated on human Experiment 1**. The 16-bit viewer exposes 2,208 recorded episodes, 3,072 newly generated communities, resident predictions, synchronized comparisons and a separate scripted sandbox. Added recurrent memory has no clear predictive advantage over the feedforward control, and generated communities still miss important human outcomes. Trajectory validation is next; evolutionary search remains planned. The cover is concept art; screenshots and research figures below show working software and measured evidence.
+**Current state:** the empirical comparison is reproduced, behavioral agents are trained, and **150,912 conditional forecast branches have been evaluated against human Experiment 1**. Continuing six neural fits from 120 to 480 epochs improves individual prediction but worsens the declared primary GRU collective forecast. The 16-bit viewer exposes recorded communities, trained simulations and forecasts from observed human histories, with resident inspection and uncertainty bands. Experiments 2–3 remain reserved; evolutionary search remains planned. The cover is concept art; screenshots and figures below show working software and measured evidence.
 
 ## The research question
 
@@ -33,7 +33,7 @@ This question separates **predictive fidelity** from **institutional performance
 
 The empirical foundation is **Koster, Pîslar et al. (2025)**, *Deep reinforcement learning can promote sustainable human behaviour in a common-pool resource problem*, published in **Nature Communications**. The study trained neural models of human decisions, developed resource-allocation mechanisms in simulation, and evaluated mechanisms with people. Its final dataset comprises 4,952 participants; the experimental unit is a group of four.
 
-EvoPolis begins with that experimental unit and its published dynamics. The [official DeepMind release](https://github.com/google-deepmind/sustainable_behavior) provides an analysis notebook and recorded trajectories containing both human decisions and pre-generated behavioral-model rollouts. It does **not** release a complete simulator, training pipeline, or pretrained behavioral models. The paper's total participant count is not the size of an available model-training cohort. Our models will be new fits to the released human trajectories; reproduced upstream model outcomes will be labeled as recorded results.
+EvoPolis begins with that experimental unit and its published dynamics. The [official DeepMind release](https://github.com/google-deepmind/sustainable_behavior) provides an analysis notebook and recorded trajectories containing both human decisions and pre-generated behavioral-model rollouts. It does **not** release a complete simulator, training pipeline, or pretrained behavioral models. The paper's total participant count is not the size of an available model-training cohort. Our models are new fits to the released human trajectories; reproduced upstream model outcomes are labeled as recorded results.
 
 <img src="docs/assets/commons-cycle.svg" alt="Proposed common-pool mechanism: an institution allocates resources to four inhabitants, who divide their allocation between private surplus and contributions that replenish the shared pool." width="100%">
 
@@ -134,7 +134,34 @@ Every best-validation checkpoint generates 64 games under each of Equal, Proport
 
 The [generated outcome distributions](docs/assets/trained-outcomes.png) and [pool/participation trajectories](docs/assets/trained-trajectories.png) expose a substantial gap. GRU mean surplus under Equal/Mixed/Proportional is **2.013/2.178/3.563**, compared with **1.788/5.594/6.756** in the corresponding held-out human groups. All generated summaries use the same 40-round denominator, including zero padding. Human records retain their approximately 0.01 residual pool; the reconstructed simulation does not add that floor. Interpolating is exploratory transfer with no Experiment 1 human counterpart. Predictive learning has occurred; reliable counterfactual social simulation has not been established.
 
-[Task 04 — Collective forecast fidelity](docs/tasks/04-collective-forecast-fidelity.md) asks whether additional optimization improves forecasts of collective outcomes. It will compare the frozen Task 03 models with neural fits continued to 480 epochs, then forecast resource and surplus distributions from observed human histories at several horizons. A declared sensitivity check separates first-allocation integer-boundary effects from behavioral predictions. Experiments 2–3 remain reserved for later transfer research. The [Task 03 review](docs/task03-review.md) explains the evidence, unresolved causes and potential paper contribution.
+## More training improves choices, but can worsen collective forecasts
+
+Task 04 continued all six neural fits from their **epoch-120 optimizer and random states through epoch 480**, preserving the data split, architecture and training objective. Checkpoints were selected only by validation likelihood across all 480 epochs. The experiment evaluates eighteen original/continued checkpoint conditions through **150,912 forecast branches**, starting after 0, 5, 10 or 20 observed rounds. Recorded current allocations start each forecast; later choices, allocations and pools are generated without future human information.
+
+| Prediction | Original budget | Continued budget | Paired change, 95% group interval |
+| :--- | ---: | ---: | :--- |
+| Feedforward individual NLL, 32 groups ↓ | 2.7238 | 2.6890 | −0.0347 [−0.0528, −0.0170] |
+| GRU individual NLL, 32 groups ↓ | 2.6944 | 2.6189 | −0.0755 [−0.1071, −0.0400] |
+| **GRU primary collective energy score ↓** | **0.09660** | **0.12538** | **+0.02878 [+0.00747, +0.05352]** |
+| Feedforward collective energy, secondary ↓ | 0.16271 | 0.15708 | −0.00563 [−0.01385, +0.00172] |
+
+The primary forecast predicts the joint pool/surplus endpoint **ten rounds after five observed rounds**, using 21 origin-eligible groups: five Equal, eight Mixed and eight Proportional. Individual gains also hold on the matched 24 baseline groups, excluding recorded M1. Scores are computed separately for every fitted seed, averaged within each human group, then equally across mechanisms. Branches and training seeds are not additional human replications. This follow-up reuses already opened Experiment 1 evidence.
+
+![Measured optimization-budget effects and collective forecast errors by horizon and observed prefix.](docs/assets/task04-forecast-scores.png)
+
+The independent second bank reproduces GRU deterioration: **+0.02944 [+0.00663, +0.05570]**. Feedforward's small collective gain remains uncertain in the primary bank. The canonical-first-allocation sensitivity shifts the GRU budget effect by only **+0.00019**; no legal maximum changes at these particular origins, so this does not rule out every numerical convention. All original Task 03 artifacts remain unchanged.
+
+The evidence supports investigating **misspecified collective responses under observed histories, and how those errors compound through resource feedback**. For Mixed allocation, continued GRU renewal probability falls from **36.02% to 27.57%**, against **36.84% observed**, despite improved individual likelihood. Persistent individual differences, residual dependence between residents, and the marginal response distribution are candidates to distinguish next. This experiment identifies a prediction failure, not its unique psychological cause. Some other origins/horizons improve; neither endpoint energy nor mean marginal trajectory error validates full path dependence or new institutions. Experiments 2–3 remain reserved for a separate transfer protocol.
+
+### Inspect a forecast from human history
+
+![Real EvoPolis forecast viewer comparing an observed human continuation with a generated branch and its ensemble band.](docs/assets/forecast-community-viewer.png)
+
+Launch `bash scripts/viewer.sh --port 8765`, then open **http://127.0.0.1:8765/?mode=forecast**. Select any of the 24 groups, model/budget, training seed and origin. Playback distinguishes the observed prefix, generated choices, actual future and post-termination padding; resident predictions and pointwise 80% forecast bands retain real values on shared axes.
+
+The default is Mixed human launch **18823620**, continued GRU seed **17**, selected epoch **476**, origin **k=5**, branch **0**. At the first forecast decision, its inhabitants return **30/0/44/47**, while the actual humans returned **35/31/5/3**. The predicted branch leaves a pool of **169.4011**, versus **103.6011** recorded. This branch is an illustration of the saved distribution, not a fitted typical person or the score itself.
+
+The [full report](docs/collective-forecast-fidelity.md) includes [learning and individual prediction](docs/assets/task04-optimization.png), [observed/forecast trajectories](docs/assets/task04-forecast-trajectories.png), [renewal calibration](docs/assets/task04-renewal-calibration.png), all proper scores, eligibility counts, numerical sensitivity and reproduction commands. The [independent audit](results/task04/independent_score_audit.json) reconstructs primary scores and intervals from saved draws, with maximum disagreement **2.22×10⁻¹⁶**.
 
 ## What learns—and what evolves
 
@@ -169,7 +196,7 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | **01 · Ground** | Reconstruct the published task and reproduce a substantive result from the released human data. | Empirical figure, numerical comparison, and executable resource dynamics, with numerical ambiguities documented. | **Complete** |
 | **02 · Observe** | Visualize recorded communities and baseline simulations. | Verified local pixel-art replay, resident inspection, comparisons, and scripted sandbox. | **Complete** |
 | **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Twelve trained checkpoints, measured human predictions, 3,072 generated games and verified trained-agent playback. | **Complete** |
-| **04 · Imagine** | Assess multi-round forecasts across allocation rules and optimization budgets. | Conditional forecasts, uncertainty, numerical sensitivity and measured failure boundaries; new-cohort transfer remains a later test. | **Next** |
+| **04 · Imagine** | Assess multi-round forecasts across allocation rules and optimization budgets. | Completed fourfold optimization control, 150,912 conditional forecasts, numerical sensitivity and working forecast inspection. New-cohort transfer remains a later test. | **Complete** |
 | **05 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
 | **06 · Govern** | Evolve allocation procedures across frozen behavioral models. | Trade-offs among surplus, inclusion, inequality, and resource persistence. | Planned |
 | **07 · Expand** | Introduce one mechanism such as communication, community switching, or resource shocks. | A controlled study of changed assumptions. | Planned |
@@ -229,7 +256,7 @@ bash scripts/learn.sh verify
 bash scripts/learn.sh plot
 ```
 
-The CPU-only PyTorch dependency is pinned; training uses one compute thread and saves resumable checkpoints. Published weights and generated trajectories are already included, so watching the inhabitants does not require retraining. [The experiment guide](docs/behavioral-agents.md) explains the split, frozen budget, test-opening rules, measured compute and continuation. The next scientific question is why improved next-choice prediction still produces premature collective depletion, and what evidence would establish faithful trajectories under institutional changes. No evolutionary search or online weight adaptation was performed. Large language models remain optional for later communication or program proposals.
+The CPU-only PyTorch dependency is pinned; training uses one compute thread and saves resumable checkpoints. Published weights and generated trajectories are already included, so watching the inhabitants does not require retraining. [The Task 03 guide](docs/behavioral-agents.md) explains its split and original budget. [The Task 04 report](docs/collective-forecast-fidelity.md#reproduce-and-inspect) gives the complete continuation/forecast sequence through `scripts/forecast.sh`, including measured memory, checkpointing and evaluation rules. Numerical jobs run sequentially. No evolutionary search or online weight adaptation was performed; the next scientific work is a targeted explanation of the measured collective-prediction failure.
 
 ## Research foundations
 

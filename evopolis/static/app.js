@@ -10,6 +10,7 @@ const state = {
   mode:'recorded', compare:false, round:0, phase:0, playing:false,
   reduced:matchMedia('(prefers-reduced-motion: reduce)').matches, speed:1,
   catalog:null, generation:0, busy:true,
+  forecastId:null, forecastBranch:'first', previousCompare:false,
   panes:[0,1].map(i => ({cohort:'human', mechanism:i ? 'Proportional':'Equal',
     id:null, family:'recurrent', trainingSeed:null, selected:0, rule:i ? 'proportional':'equal', fractions:[...defaults], episode:null, element:null})),
 };
@@ -73,18 +74,39 @@ function selectionOptions(pane) {
   }));
   select.value=pane.id;
 }
+function forecastOptions(changed=null) {
+  const cells=state.catalog.forecasts.cells;
+  let cell=cells.find(e=>e.id===state.forecastId)||cells.find(e=>e.id===state.catalog.forecasts.default_id);
+  const groupKey=e=>JSON.stringify(e.key);
+  if(changed){
+    const family=$('#forecast-family').value;
+    const budget=['constant','linear'].includes(family)?'original':$('#forecast-budget').value;
+    cell=cells.find(e=>groupKey(e)===$('#forecast-group').value&&e.family===family&&e.budget===budget&&
+      e.training_seed===Number($('#forecast-seed').value)&&e.origin===Number($('#forecast-origin').value));
+  }
+  if(!cell)throw new Error('That forecast condition is not available');
+  state.forecastId=cell.id;
+  const groups=[...new Map(cells.map(e=>[groupKey(e),e])).values()].sort((a,b)=>groupKey(a).localeCompare(groupKey(b)));
+  $('#forecast-group').replaceChildren(...groups.map(e=>new Option(`${e.mechanism} · ${e.launch_id} · ep ${e.episode_id}`,groupKey(e))));
+  $('#forecast-group').value=groupKey(cell);
+  $('#forecast-family').value=cell.family;$('#forecast-budget').value=cell.budget;
+  $('#forecast-budget').options[1].disabled=['constant','linear'].includes(cell.family);
+  $('#forecast-seed').value=cell.training_seed;$('#forecast-origin').value=cell.origin;
+  $('#forecast-branch').value=state.forecastBranch;
+  $('#forecast-selection-note').textContent=`All 24 baseline groups and 18 checkpoint conditions are available. ${cell.origin} completed observed rounds; current source-round-${cell.origin} offers are observed, then 20 rounds are forecast. First bank: 64 branches. The median-surplus branch is an illustration of this distribution, not a fitted typical person.`;
+}
 function mountPanes() {
   const container=$('#communities'); container.replaceChildren(); container.classList.toggle('compare',state.compare);
   activePanes().forEach((pane,index)=>{
     const element=$('#community-template').content.firstElementChild.cloneNode(true);
     pane.element=element; element.dataset.pane=index; element.setAttribute('aria-label',`Community ${index+1}`);
-    $('.pane-name',element).textContent=`COMMUNITY ${index+1} / ${state.mode==='sandbox' ? 'SANDBOX':'ARCHIVE'}`;
-    $('.recorded-selectors',element).hidden=state.mode==='sandbox';
+    $('.pane-name',element).textContent=state.mode==='forecast'?(index?'ACTUAL HUMAN CONTINUATION':'OBSERVED PREFIX → MODEL FORECAST'):`COMMUNITY ${index+1} / ${state.mode==='sandbox' ? 'SANDBOX':'ARCHIVE'}`;
+    $('.recorded-selectors',element).hidden=['sandbox','forecast'].includes(state.mode);
     $('.sandbox-selectors',element).hidden=state.mode!=='sandbox';
-    $('.outcome-detail',element).hidden=state.mode==='sandbox';
+    $('.outcome-detail',element).hidden=['sandbox','forecast'].includes(state.mode);
     $('.cohort',element).value=pane.cohort; $('.mechanism',element).value=pane.mechanism;
     $('.cohort option[value="trained"]',element).disabled=!state.catalog.trained_default_id;
-    selectionOptions(pane);
+    if(state.mode!=='forecast')selectionOptions(pane);
     $('.cohort',element).addEventListener('change',e=>{pane.cohort=e.target.value;pane.id=null;if(pane.cohort==='trained')adoptEpisode(pane,state.catalog.episodes.find(e=>e.id===state.catalog.trained_default_id));selectionOptions(pane);updateContext();loadEpisodes(true);});
     $('.mechanism',element).addEventListener('change',e=>{pane.mechanism=e.target.value;pane.id=null;selectionOptions(pane);loadEpisodes(true);});
     $('.episode',element).addEventListener('change',e=>{pane.id=e.target.value;loadEpisodes(true);});
@@ -107,7 +129,12 @@ function mountPanes() {
   updateContext();
 }
 function updateContext(){
-  $('#mode-context').textContent=state.mode==='sandbox'
+  $('#forecast-controls').hidden=state.mode!=='forecast';
+  $('#compare').disabled=state.mode==='forecast';
+  if(state.mode==='forecast')forecastOptions();
+  $('#mode-context').textContent=state.mode==='forecast'
+    ? 'CONDITIONAL FORECAST · Same human prefix and current offers, then generated choices and allocations. Recorded future is comparison evidence only; it never enters the forecast.'
+    :state.mode==='sandbox'
     ? (state.compare ? 'SCRIPTED COMPARISON · Same fractions copied on entry; each pane can be explicitly edited. Outcomes depend on these fixed assumptions.' : 'NEW SCRIPTED SIMULATION · Fixed-fraction returns using the published equation. No human prediction, fitting or learning.')
     : state.compare ? 'SYNCHRONIZED COMPARISON · Common round coordinates and shared axes. Different observed groups and simulations are not individual counterfactuals.'
     : activePanes().some(p=>p.cohort==='trained') ? 'NEW TRAINED EVOPOLIS AGENTS · 3,072 generated games from all 12 best-validation checkpoints. Frozen weights; separate resident histories.'
@@ -122,7 +149,8 @@ async function loadEpisodes(reset=false) {
   renderTransport();
   try {
     const panes=activePanes();
-    const episodes=await Promise.all(panes.map(p=>state.mode!=='sandbox'
+    const forecast=state.mode==='forecast'?await request(`/api/forecast?id=${encodeURIComponent(state.forecastId)}&branch=${state.forecastBranch}`):null;
+    const episodes=forecast?[forecast.forecast,forecast.observed]:await Promise.all(panes.map(p=>state.mode!=='sandbox'
       ? request(`/api/episode?id=${encodeURIComponent(p.id)}`)
       : request('/api/sandbox',{mechanism:p.rule,fractions:p.fractions})));
     if(generation!==state.generation)return;
@@ -153,14 +181,24 @@ function cumulativeGini(values) {
 function renderPane(pane) {
   const el=pane.element, episode=pane.episode;if(!episode)return;
   const selectedIndex=Math.min(state.round,episode.rounds.length-1), r=episode.rounds[selectedIndex], i=pane.selected;
-  const isScript=episode.cohort==='scripted', isTrained=episode.cohort==='trained', isSimulated=isScript||isTrained, finished=state.round>=episode.rounds.length;
+  const isForecast=episode.cohort==='forecast', isForecastHuman=episode.cohort==='forecast-observed', forecastView=isForecast||isForecastHuman;
+  const isScript=episode.cohort==='scripted', isTrained=episode.cohort==='trained'||isForecast&&!r.observed, isSimulated=isScript||isTrained, finished=state.round>=episode.rounds.length;
   const source=$('.source-badge',el);source.className=`source-badge ${episode.cohort}`;
-  source.textContent=isScript?'NEW SCRIPTED SIMULATION':isTrained?'NEW TRAINED EVOPOLIS SIMULATION':episode.cohort==='human'?'RECORDED HUMAN · EXP 1':'RECORDED UPSTREAM MODEL · BC1';
-  $('.identity',el).textContent=isScript
+  source.textContent=forecastView?(r.observed?(selectedIndex<episode.origin?'RECORDED HUMAN PREFIX':'OBSERVED HUMAN FUTURE'):r.padded?'FORECAST · ZERO PADDING':'GENERATED MODEL FORECAST'):isScript?'NEW SCRIPTED SIMULATION':isTrained?'NEW TRAINED EVOPOLIS SIMULATION':episode.cohort==='human'?'RECORDED HUMAN · EXP 1':'RECORDED UPSTREAM MODEL · BC1';
+  $('.identity',el).textContent=forecastView
+    ? `${episode.mechanism} · launch ${episode.launch_id} · ep ${episode.episode_id} · ${familyNames[episode.family]} · ${episode.budget_epochs}-epoch budget · seed ${episode.training_seed} · selected epoch ${episode.selected_epoch} · checkpoint ${episode.checkpoint_sha256.slice(0,12)}${isForecast?` · branch ${episode.branch_index} · rollout seed ${episode.rollout_seed}`:''}`
+    :isScript
     ? `${episode.mechanism} · q = [${pane.fractions.join(', ')}] · ${episode.rounds.length} rounds · ${episode.termination}`
     : isTrained ? `${familyNames[episode.family]} · training seed ${episode.training_seed} · selected epoch ${episode.selected_epoch} · checkpoint ${episode.checkpoint_sha256.slice(0,12)} · rollout seed ${episode.rollout_seed} · ${episode.mechanism}${episode.mechanism==='Interpolating'?' (exploratory transfer)':''}`
     : `${episode.condition} · launch ${episode.launch_id} · episode ${episode.episode_id} · source rounds 0–39`;
-  $('.identity',el).title=isTrained?`Checkpoint SHA-256: ${episode.checkpoint_sha256}`:'';
+  $('.identity',el).title=isTrained||forecastView?`Checkpoint SHA-256: ${episode.checkpoint_sha256}`:'';
+  const forecastStatus=$('.forecast-status',el);forecastStatus.hidden=!forecastView;
+  if(forecastView){
+    forecastStatus.classList.toggle('observed',r.observed);
+    forecastStatus.textContent=selectedIndex<episode.origin?`OBSERVED PREFIX · ${episode.origin} completed rounds warm the history. No future actions are supplied.`
+      :isForecastHuman?`OBSERVED FUTURE · Playback round ${selectedIndex+1}; comparison evidence, excluded from forecast inputs.`
+      :`${r.padded?'POST-TERMINATION PADDING':'GENERATED FORECAST'} · Step ${selectedIndex-episode.origin+1} / 20. Boundary before playback round ${episode.origin+1} contributions.${selectedIndex===episode.origin?' Current pool and offers are recorded.':''}`;
+  }
   $$('.phase-strip span',el).forEach((span,index)=>span.classList.toggle('active',index===(finished||r.padded?2:state.phase)));
   $('.pool-before',el).textContent=fmt(r.pool_before);$('.pool-before',el).title=exact(r.pool_before);
   $('.pool-after',el).textContent=fmt(r.pool_after);$('.pool-after',el).title=r.pool_after==null?'No following observation':exact(r.pool_after);
@@ -178,7 +216,7 @@ function renderPane(pane) {
   $('.information-basis',el).textContent=isScript
     ? 'This fixed script uses only its own allocation and chosen fraction q. Public history below is researcher context, not a script input.'
     :isTrained
-      ? `All families receive the same nine prepared observations: current offers, previous returns and current pool, rotated self-first and divided by 200. ${episode.family==='recurrent'?'This GRU also uses its own recurrent state, reset at the start of the game.':episode.family==='constant'?'The constant model ignores input values except the legal action support.':'This family has no recurrent state; previous returns already provide one-step history.'} Weights remain frozen. Cumulative totals and the playback horizon are researcher context, not model inputs.`
+      ? `All families receive the same nine prepared observations: current offers, previous returns and current pool, rotated self-first and divided by 200. ${episode.family==='recurrent'?isForecast?`The GRU was warmed only on the ${episode.origin} completed observed rounds, then uses its generated history.`:'This GRU also uses its own recurrent state, reset at the start of the game.':episode.family==='constant'?'The constant model ignores input values except the legal action support.':'This family has no recurrent state; previous returns already provide one-step history.'} Weights remain frozen. Cumulative totals and the playback horizon are researcher context, not model inputs.`
     :episode.cohort==='bc1'
       ? 'The upstream BC1 model used nine inputs: all current offers, previous returns and current pool, plus recurrent memory. Cumulative totals below are researcher context, not a separate model input.'
       : 'People saw all current offers, previous public returns and pool size; earlier public outcomes and cumulative surplus could be remembered. Current returns were simultaneous.';
@@ -199,30 +237,45 @@ function renderPane(pane) {
   $('.exact-values',el).innerHTML=letters.map((letter,j)=>`<tr><td>${letter}</td><td>${esc(offers[j])}</td><td>${esc(returns[j])}</td><td>${esc(surplus[j])}</td><td>${esc(exact(r.cumulative_surplus[j]))}</td></tr>`).join('');
   $('.exact-pool',el).textContent=`Pool before: ${raw['mechanism_observation.pool'] ?? exact(r.pool_before)} · ${isSimulated?'Simulated':'Recorded'} after: ${r.pool_after_raw ?? exact(r.pool_after)}`;
   $('.accounting',el).textContent=`Equation estimate: ${exact(r.equation_after)} · ${isSimulated?'Simulated':'Recorded'} − equation: ${r.pool_after==null?'Unavailable':exact(r.pool_after-r.equation_after)}. ${isSimulated?'The Python numerical environment has no undocumented 0.01 floor.':'Observations are never replaced by this estimate.'}`;
-  $('.after-source',el).textContent=`Next-pool source: ${r.after_source}. ${isSimulated?'Internal':'Source'} round ${r.round_id}; playback round ${r.round_id+1}.${isTrained?` Checkpoint SHA-256: ${episode.checkpoint_sha256}. Generated mean surplus divides full-game retained resources by 4 × 40, including zero padding.`:''}`;
+  $('.after-source',el).textContent=`Next-pool source: ${r.after_source}. ${isSimulated?'Internal':'Source'} round ${r.round_id}; playback round ${r.round_id+1}.${isTrained?` Checkpoint SHA-256: ${episode.checkpoint_sha256}.${isForecast?' Forecast scores exclude the observed prefix and use the declared 1/5/10/20-round windows; displayed cumulative totals include the prefix.':' Generated mean surplus divides full-game retained resources by 4 × 40, including zero padding.'}`:''}`;
   const gini=cumulativeGini(r.cumulative_surplus);
-  $('.gini-note',el).textContent=`Cumulative retained sums ${isSimulated?'simulated':'recorded'} round surplus through this round${isSimulated?'':' (not the rounded source cumulative counter)'}. Current-game cumulative Gini: ${gini==null?'Undefined (zero total)':exact(gini)}. Four-player maximum 0.75. Completed-game Gini: ${episode.gini==null?'Undefined (zero total)':exact(episode.gini)}.${raw.players_cumulative_reward ? ` Source cumulative counter A–D: ${raw.players_cumulative_reward}`:''}`;
+  $('.gini-note',el).textContent=`Cumulative retained sums ${isForecast?'recorded prefix and generated':isSimulated?'simulated':'recorded'} round surplus through this round${isSimulated?'':' (not the rounded source cumulative counter)'}. Displayed cumulative Gini: ${gini==null?'Undefined (zero total)':exact(gini)}. Four-player maximum 0.75.${forecastView?' Forecast-window surplus used for scoring excludes the prefix.':` Completed-game Gini: ${episode.gini==null?'Undefined (zero total)':exact(episode.gini)}.`}${raw.players_cumulative_reward ? ` Source cumulative counter A–D: ${raw.players_cumulative_reward}`:''}`;
   $('.end-state',el).textContent=finished?`Run ended after round ${episode.rounds.length} (${episode.termination}); final state held while the other pane continues.`
+    :forecastView ? `${r.padded?'POST-TERMINATION PADDING · ':''}Window: ${episode.origin?`observed rounds 1–${episode.origin}`:'no completed observed rounds'}, forecast rounds ${episode.origin+1}–${episode.forecast_end}; stops by recorded round 40. ${isForecast?episode.termination+'. The actual future is shown alongside.':'Human future is preserved as recorded, including numerical residuals.'}`
     :isTrained ? `${r.padded?'POST-TERMINATION PADDING · ':''}${episode.actual_rounds} executed rounds; ${episode.termination}. ${episode.actual_rounds<40?'The remaining rounds have zero resources and returns; cumulative retained stays fixed.':'Full 40-round horizon.'}`
     :r.pool_after==null?'Final BC1 next pool is unavailable; no later observation was released.'
     :isScript&&selectedIndex===episode.rounds.length-1?`Run ends: ${episode.termination}. No undocumented 0.01 floor.`
     :`Units: flowers / retained resources. All four contributions were simultaneous.`;
   drawTimeline(pane,selectedIndex);
+  $('.forecast-distribution',el).hidden=!isForecast;
+  if(isForecast)drawForecast(pane,selectedIndex);
   drawScene(pane);
-  if(!isScript)drawScatter(pane);
+  if(!isScript&&!forecastView)drawScatter(pane);
 }
 function drawTimeline(pane,index) {
-  const rows=pane.episode.rounds, horizon=40, x=j=>38+j*470/(horizon-1);
+  const rows=pane.episode.rounds, horizon=state.mode==='forecast'?maxRounds():40, x=j=>38+j*470/(horizon-1);
   const groupTotal=r=>r.group_cumulative_surplus ?? r.cumulative_surplus.reduce((a,b)=>a+b,0);
   const cumulative=rows.map(groupTotal);
   // Both panes use one domain for each quantity, including a short sandbox.
   const maxSurplus=Math.max(1,...activePanes().flatMap(p=>p.episode.rounds.map(groupTotal)));
   const yPool=v=>100-v/200*78,ySurplus=v=>100-v/maxSurplus*78;
   const path=(values,y)=>values.map((v,j)=>`${j?'L':'M'}${x(j)},${y(v)}`).join(' ');
-  const svg=$('.timeline',pane.element), ending=pane.episode.actual_rounds;
+  const svg=$('.timeline',pane.element), ending=state.mode==='forecast'?(pane.episode.cohort==='forecast'&&rows.some(r=>r.padded)?pane.episode.actual_rounds:null):pane.episode.actual_rounds;
   svg.dataset.roundMax=horizon;svg.dataset.poolMax=200;svg.dataset.surplusMax=maxSurplus;
-  const marker=ending&&ending<40?`<rect x="${x(ending)}" y="22" width="${508-x(ending)}" height="78" fill="#3b5278" opacity=".25"/><path d="M${x(ending-1)} 18V104" stroke="#ff8b8b" stroke-dasharray="2 3"/>${svgText(Math.min(470,x(ending-1)+4),12,`end ${ending}`,'#ff8b8b')}`:'';
-  svg.innerHTML=`<title>Common rounds 1–40. Pool before each round (left axis 0–200); total cumulative retained (shared right axis 0–${maxSurplus}). Cursor at round ${index+1}.${ending&&ending<40?` Game ended after round ${ending}; later rounds are padding.`:''}</title><path d="M38 22V100H508" fill="none" stroke="#3b5278"/><path d="M38 61H508 M38 22H508" fill="none" stroke="#253a5e"/>${marker}${svgText(31,26,'200','#6dcff6','end')}${svgText(31,104,'0','#6dcff6','end')}${svgText(515,26,fmt(maxSurplus),'#ffcf6e')}${svgText(515,104,'0','#ffcf6e')}${svgText(38,120,'1')}${svgText(270,120,'Round · shared axes','#b6c6df','middle')}${svgText(508,120,horizon,'#b6c6df','end')}<path d="${path(rows.map(r=>r.pool_before),yPool)}" fill="none" stroke="#6dcff6" stroke-width="2"/><path d="${path(cumulative,ySurplus)}" fill="none" stroke="#ffcf6e" stroke-width="2"/><path d="M${x(state.round)} 15V104" stroke="#fff1d2" stroke-dasharray="3 3"/><circle cx="${x(index)}" cy="${yPool(rows[index].pool_before)}" r="3" fill="#6dcff6"/><circle cx="${x(index)}" cy="${ySurplus(cumulative[index])}" r="3" fill="#ffcf6e"/>`;
+  const marker=ending!=null&&ending<horizon?`<rect x="${x(ending)}" y="22" width="${508-x(ending)}" height="78" fill="#3b5278" opacity=".25"/><path d="M${x(Math.max(0,ending-1))} 18V104" stroke="#ff8b8b" stroke-dasharray="2 3"/>${svgText(Math.min(470,x(Math.max(0,ending-1))+4),12,`end ${ending}`,'#ff8b8b')}`:'';
+  const boundary=state.mode==='forecast'?`<path class="forecast-boundary" d="M${x(pane.episode.origin)} 18V104" stroke="#73e0b3" stroke-dasharray="5 3"/>${svgText(Math.min(450,x(pane.episode.origin)+4),12,`k=${pane.episode.origin}`,'#73e0b3')}`:'';
+  svg.innerHTML=`<title>Common rounds 1–${horizon}. Pool before each round (left axis 0–200); total cumulative retained (shared right axis 0–${maxSurplus}). Cursor at round ${index+1}.${ending!=null&&ending<horizon?` Game ended after round ${ending}; later rounds are padding.`:''}</title><path d="M38 22V100H508" fill="none" stroke="#3b5278"/><path d="M38 61H508 M38 22H508" fill="none" stroke="#253a5e"/>${marker}${boundary}${svgText(31,26,'200','#6dcff6','end')}${svgText(31,104,'0','#6dcff6','end')}${svgText(515,26,fmt(maxSurplus),'#ffcf6e')}${svgText(515,104,'0','#ffcf6e')}${svgText(38,120,'1')}${svgText(270,120,'Round · shared axes','#b6c6df','middle')}${svgText(508,120,horizon,'#b6c6df','end')}<path d="${path(rows.map(r=>r.pool_before),yPool)}" fill="none" stroke="#6dcff6" stroke-width="2"/><path d="${path(cumulative,ySurplus)}" fill="none" stroke="#ffcf6e" stroke-width="2"/><path d="M${x(state.round)} 15V104" stroke="#fff1d2" stroke-dasharray="3 3"/><circle cx="${x(index)}" cy="${yPool(rows[index].pool_before)}" r="3" fill="#6dcff6"/><circle cx="${x(index)}" cy="${ySurplus(cumulative[index])}" r="3" fill="#ffcf6e"/>`;
+}
+function drawForecast(pane,index){
+  const episode=pane.episode, observed=state.panes[1].episode.rounds, bands=episode.bands;
+  const x=j=>38+j*470/(maxRounds()-1),y=value=>90-value/200*65;
+  const line=(rows,key)=>rows.map((r,i)=>`${i?'L':'M'}${x(r.round_id)},${y(r[key])}`).join(' ');
+  const polygon=[...bands.map(r=>`${x(r.round_id)},${y(r.pool_upper)}`),...bands.toReversed().map(r=>`${x(r.round_id)},${y(r.pool_lower)}`)].join(' ');
+  const svg=$('.forecast-timeline',pane.element);
+  svg.dataset.poolMax=200;svg.dataset.roundMax=maxRounds();svg.dataset.origin=episode.origin;svg.dataset.branchCount=64;
+  svg.innerHTML=`<title>Pool after each round. Recorded human future in coral, illustrative generated branch in cyan, pointwise 10th–90th percentiles of 64 branches shaded. These are forecast-distribution bands, not human confidence intervals. Boundary after ${episode.origin} observed rounds, before round ${episode.origin+1} contributions.</title><path d="M38 25V90H508 M38 25H508" stroke="#3b5278" fill="none"/><polygon class="forecast-band" points="${polygon}" fill="#6dcff6" opacity=".18"/><path d="${line(bands,'pool_median')}" fill="none" stroke="#73e0b3" stroke-dasharray="3 3"/><path d="${line(observed,'pool_after')}" fill="none" stroke="#ff8b8b" stroke-width="2"/><path d="${line(episode.rounds,'pool_after')}" fill="none" stroke="#6dcff6" stroke-width="2"/><path class="forecast-boundary" d="M${x(episode.origin)} 18V95" stroke="#73e0b3" stroke-dasharray="5 3"/><path d="M${x(index)} 18V95" stroke="#fff1d2" stroke-dasharray="2 3"/>${svgText(31,29,'200','#6dcff6','end')}${svgText(31,94,'0','#6dcff6','end')}${svgText(38,110,'1')}${svgText(508,110,maxRounds(),'#b6c6df','end')}${svgText(Math.min(450,x(episode.origin)+4),12,`k=${episode.origin}: forecast`,'#73e0b3')}${svgText(275,110,'Shared round coordinates','#b6c6df','middle')}`;
+  const band=bands.find(r=>r.round_id===index);
+  $('.forecast-band-values',pane.element).textContent=band?`Round ${index+1} · 80% pool-after band ${fmt(band.pool_lower)}–${fmt(band.pool_upper)}; median ${fmt(band.pool_median)}. Offers ≥1: 80% band ${fmt(band.participation_lower)}–${fmt(band.participation_upper)} of 4. Mint dashed line = pointwise pool median.`:'Observed prefix: no forecast uncertainty is assigned to these recorded values.';
 }
 function drawScatter(pane) {
   const list=candidates(pane),svg=$('.scatter',pane.element), color=colors[pane.mechanism];
@@ -253,6 +306,7 @@ function render() {renderTransport();activePanes().forEach(renderPane);}
 function writeURL() {
   if(state.busy||!state.catalog)return;
   const params=new URLSearchParams({mode:state.mode,compare:state.compare?'1':'0',round:String(state.round+1)});
+  if(state.mode==='forecast'){params.set('forecast',state.forecastId);params.set('branch',state.forecastBranch);}
   activePanes().forEach((p,i)=>{
     params.set(`resident${i}`,String(p.selected));
     if(state.mode!=='sandbox')params.set(`episode${i}`,p.id);
@@ -261,7 +315,13 @@ function writeURL() {
   history.replaceState(null,'',`?${params}`);
 }
 function setMode(mode) {
+  if(mode==='forecast'&&state.mode==='forecast')return;
   if(mode===state.mode&&(mode==='sandbox'||activePanes().every(p=>(p.cohort==='trained')===(mode==='trained'))))return;pause();
+  if(mode==='forecast'){
+    state.previousCompare=state.compare;state.compare=true;$('#compare').checked=true;
+  }else if(state.mode==='forecast'){
+    state.compare=state.previousCompare;$('#compare').checked=state.compare;
+  }
   if(mode==='trained'){
     state.panes.forEach(p=>{if(p.cohort!=='trained'){p.recordedId=p.id;adoptEpisode(p,state.catalog.episodes.find(e=>e.id===(p.trainedId||state.catalog.trained_default_id)));}});
   }else if(mode==='recorded'){
@@ -272,9 +332,14 @@ function setMode(mode) {
   updateModeButtons();
   mountPanes();loadEpisodes(true);
 }
-function updateModeButtons(){for(const mode of ['recorded','trained','sandbox']){const button=$(`#${mode}-mode`);button.classList.toggle('active',state.mode===mode);button.setAttribute('aria-pressed',state.mode===mode);}}
+function updateModeButtons(){for(const mode of ['recorded','trained','forecast','sandbox']){const button=$(`#${mode}-mode`);button.classList.toggle('active',state.mode===mode);button.setAttribute('aria-pressed',state.mode===mode);}}
 $('#recorded-mode').addEventListener('click',()=>setMode('recorded'));
 $('#trained-mode').addEventListener('click',()=>setMode('trained'));
+$('#forecast-mode').addEventListener('click',()=>setMode('forecast'));
+for(const selector of ['#forecast-group','#forecast-family','#forecast-budget','#forecast-seed','#forecast-origin']){
+  $(selector).addEventListener('change',()=>{try{forecastOptions(selector);loadEpisodes(true);}catch(error){showError(error);}});
+}
+$('#forecast-branch').addEventListener('change',e=>{state.forecastBranch=e.target.value;loadEpisodes(true);});
 $('#sandbox-mode').addEventListener('click',()=>setMode('sandbox'));
 $('#compare').addEventListener('change',e=>{pause();state.compare=e.target.checked;if(state.compare&&state.mode==='sandbox')state.panes[1].fractions=[...state.panes[0].fractions];mountPanes();loadEpisodes(true);});
 $('#reduced-motion').checked=state.reduced;
@@ -307,8 +372,12 @@ async function init(){
     state.catalog=await request('/api/catalog');state.panes[0].id=state.catalog.default_id;
     const params=new URLSearchParams(location.search);
     state.compare=params.get('compare')==='1';$('#compare').checked=state.compare;
-    const initialMode=params.get('mode')==='sandbox'?'sandbox':params.get('mode')==='trained'&&state.catalog.trained_default_id?'trained':'recorded';
+    const initialMode=params.get('mode')==='forecast'&&state.catalog.forecasts.default_id?'forecast':params.get('mode')==='sandbox'?'sandbox':params.get('mode')==='trained'&&state.catalog.trained_default_id?'trained':'recorded';
     $('#trained-mode').disabled=!state.catalog.trained_default_id;
+    $('#forecast-mode').disabled=!state.catalog.forecasts.default_id;
+    state.forecastId=state.catalog.forecasts.cells.some(e=>e.id===params.get('forecast'))?params.get('forecast'):state.catalog.forecasts.default_id;
+    state.forecastBranch=params.get('branch')==='median'?'median':'first';
+    if(initialMode==='forecast'){state.previousCompare=false;state.compare=true;$('#compare').checked=true;}
     if(initialMode==='trained')state.panes.forEach(p=>adoptEpisode(p,state.catalog.episodes.find(e=>e.id===state.catalog.trained_default_id)));
     state.panes.forEach((pane,i)=>{
       const saved=state.catalog.episodes.find(e=>e.id===params.get(`episode${i}`));

@@ -1,0 +1,231 @@
+{
+  "archive_bytes": 38920192,
+  "archive_sha256": "1d1b461ea89852648e5c5de665b5b2827bceb40695f13f72e4b7b1db2173ea34",
+  "branches": 150912,
+  "cells": 2358,
+  "cpu_seconds": 326.875459476,
+  "generated_cells_this_invocation": 2358,
+  "identity": {
+    "checkpoint_registry": [
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "c99c319cf9c64781d61deb6caada1836e56765a004db61ad3325d487e43e9538",
+        "family": "constant",
+        "path": "results/task03/weights/constant_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 120,
+        "sha256": "c99c319cf9c64781d61deb6caada1836e56765a004db61ad3325d487e43e9538",
+        "training_seed": 17
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "57709ffb15d56b9568f688cc56441bc3ec90c3a4777a1dad918676331a755a8b",
+        "family": "constant",
+        "path": "results/task03/weights/constant_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 120,
+        "sha256": "57709ffb15d56b9568f688cc56441bc3ec90c3a4777a1dad918676331a755a8b",
+        "training_seed": 29
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "4d44dd4d21f404db3b0b785d5d59a737b5a01bcf0afa0588e49c58dfb161cc77",
+        "family": "constant",
+        "path": "results/task03/weights/constant_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 120,
+        "sha256": "4d44dd4d21f404db3b0b785d5d59a737b5a01bcf0afa0588e49c58dfb161cc77",
+        "training_seed": 43
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "c920fe932cf7cfad9e9e5928c07e0b5b5bab4d0732c8bd1d21c9c99063847ee2",
+        "family": "linear",
+        "path": "results/task03/weights/linear_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 120,
+        "sha256": "c920fe932cf7cfad9e9e5928c07e0b5b5bab4d0732c8bd1d21c9c99063847ee2",
+        "training_seed": 17
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "1d746fff5df3a3d384c965301ae19af31b63dc48c1d5c4b1f86f1c5d36995c8c",
+        "family": "linear",
+        "path": "results/task03/weights/linear_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 120,
+        "sha256": "1d746fff5df3a3d384c965301ae19af31b63dc48c1d5c4b1f86f1c5d36995c8c",
+        "training_seed": 29
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "cab8a69f36f55fcc0e3e6153b71856e08419caf9d5e6de8e74421260e1f115f9",
+        "family": "linear",
+        "path": "results/task03/weights/linear_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 120,
+        "sha256": "cab8a69f36f55fcc0e3e6153b71856e08419caf9d5e6de8e74421260e1f115f9",
+        "training_seed": 43
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "be65c3cf7720e5805db3f1eeb285d832d662e8b54d5684fc51e051e9ce4032a2",
+        "family": "feedforward",
+        "path": "results/task03/weights/feedforward_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 109,
+        "sha256": "be65c3cf7720e5805db3f1eeb285d832d662e8b54d5684fc51e051e9ce4032a2",
+        "training_seed": 17
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "72769aecba837a6103debf4e06eb9657c7c975953a6c9238c6f38ec4da84fe6f",
+        "family": "feedforward",
+        "path": "results/task03/weights/feedforward_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 116,
+        "sha256": "72769aecba837a6103debf4e06eb9657c7c975953a6c9238c6f38ec4da84fe6f",
+        "training_seed": 29
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "9f2316808439affb020d8d2382b50d0d5f2fa551c8451ed4228e82821cebbe18",
+        "family": "feedforward",
+        "path": "results/task03/weights/feedforward_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 117,
+        "sha256": "9f2316808439affb020d8d2382b50d0d5f2fa551c8451ed4228e82821cebbe18",
+        "training_seed": 43
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+        "family": "recurrent",
+        "path": "results/task03/weights/recurrent_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 116,
+        "sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+        "training_seed": 17
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "25143274613b933909fde59f9c7829f73581c5edb821787fdf4efeb1c2169091",
+        "family": "recurrent",
+        "path": "results/task03/weights/recurrent_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 117,
+        "sha256": "25143274613b933909fde59f9c7829f73581c5edb821787fdf4efeb1c2169091",
+        "training_seed": 29
+      },
+      {
+        "budget": "original",
+        "budget_epochs": 120,
+        "checkpoint_sha256": "83ea46a7c1f7b5874d32f28d7a0a26cb3f07d77bf57f1682801d3ac26bed14d2",
+        "family": "recurrent",
+        "path": "results/task03/weights/recurrent_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 113,
+        "sha256": "83ea46a7c1f7b5874d32f28d7a0a26cb3f07d77bf57f1682801d3ac26bed14d2",
+        "training_seed": 43
+      },
+      {
+        "budget": "continued",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "63ddc8400f53191767bb69890a743442f8c8cae9f18a70771b29a8a50b53710c",
+        "family": "feedforward",
+        "path": "results/task04/weights/feedforward_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 478,
+        "sha256": "63ddc8400f53191767bb69890a743442f8c8cae9f18a70771b29a8a50b53710c",
+        "training_seed": 17
+      },
+      {
+        "budget": "continued",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "e64f1d4048b4f9b830d3cd5f6d31465f65e9ac4843161dded476ca275e53e946",
+        "family": "feedforward",
+        "path": "results/task04/weights/feedforward_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 444,
+        "sha256": "e64f1d4048b4f9b830d3cd5f6d31465f65e9ac4843161dded476ca275e53e946",
+        "training_seed": 29
+      },
+      {
+        "budget": "continued",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "6a1e6a7ef5770e5cb77a129d7c941aabd21f8b4fcac17e8b615fb4d61cd9b0e1",
+        "family": "feedforward",
+        "path": "results/task04/weights/feedforward_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 473,
+        "sha256": "6a1e6a7ef5770e5cb77a129d7c941aabd21f8b4fcac17e8b615fb4d61cd9b0e1",
+        "training_seed": 43
+      },
+      {
+        "budget": "continued",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+        "family": "recurrent",
+        "path": "results/task04/weights/recurrent_17/best.pt",
+        "seed": 17,
+        "selected_epoch": 476,
+        "sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+        "training_seed": 17
+      },
+      {
+        "budget": "continued",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "d85aae54aeba7cf9de9a453c743dbaac3af05ae43385c8592b54f6d40694fc4f",
+        "family": "recurrent",
+        "path": "results/task04/weights/recurrent_29/best.pt",
+        "seed": 29,
+        "selected_epoch": 460,
+        "sha256": "d85aae54aeba7cf9de9a453c743dbaac3af05ae43385c8592b54f6d40694fc4f",
+        "training_seed": 29
+      },
+      {
+        "budget": "continued",
+        "budget_epochs": 480,
+        "checkpoint_sha256": "3bcb6bb2871153c8c95f34d6759c69fb18b7702b90f72633e8e8172973e52241",
+        "family": "recurrent",
+        "path": "results/task04/weights/recurrent_43/best.pt",
+        "seed": 43,
+        "selected_epoch": 470,
+        "sha256": "3bcb6bb2871153c8c95f34d6759c69fb18b7702b90f72633e8e8172973e52241",
+        "training_seed": 43
+      }
+    ],
+    "code_sha256": {
+      "evopolis/behavior_data.py": "86a380e87a24e41f1f95de2a82e240f347d99660d54862e65c61956698162df1",
+      "evopolis/behavior_generate.py": "42462f037bf80d9662ef7a282b99ed79ca6e5ddd2542e99a68d30758c7bd45e7",
+      "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+      "evopolis/forecast_generate.py": "3ee3e8ad482032dfa84782e49d4998bc0470885497550b4f301311430f93fc79",
+      "evopolis/world.py": "e8d32143f857cdaf6d780290794a9be72100492fc2f8d548d88a2d0c83cbb6b7"
+    },
+    "configuration_sha256": "6796fb8b2107a94b7fd791460f6d71c0d4d1d4bdf7c95972cae1401174d35562",
+    "seed_table_hash": "240293c9483f81966dd76d20edad5e0717cdadf75b9bdd73221969f38d085ab1",
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678"
+  },
+  "peak_rss_kib": 314760,
+  "resumed_cells": 0,
+  "simulation_audit": {
+    "executed_rounds": 1391232,
+    "max_abs_transition_residual": 0.0,
+    "max_allocation_over_pool": 0.0,
+    "max_legal_support_violation": 0.0,
+    "padded_rounds": 1223808
+  },
+  "wall_seconds": 411.48604153993074
+}

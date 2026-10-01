@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "family": "feedforward",
+      "parent_epoch": 120,
+      "first_loss": 2.1816181045212852,
+      "second_loss": 2.180343043015501,
+      "resumed_loss": 2.180343043015501,
+      "all_model_optimizer_rng_shuffle_values_exact": true,
+      "parent_adam_steps": [
+        1440
+      ]
+    },
+    {
+      "family": "recurrent",
+      "parent_epoch": 120,
+      "first_loss": 2.1025502958911266,
+      "second_loss": 2.102463296200636,
+      "resumed_loss": 2.102463296200636,
+      "all_model_optimizer_rng_shuffle_values_exact": true,
+      "parent_adam_steps": [
+        1440
+      ]
+    }
+  ],
+  "training_only_groups_per_update": 8,
+  "updates_per_family": 3,
+  "seconds": 0.18745226506143808,
+  "state_discarded": true
+}

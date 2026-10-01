@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "family": "feedforward",
+      "epochs": 1,
+      "parent_epoch": 120,
+      "seconds": 0.320310237002559,
+      "cpu_seconds": 0.23312987400000118,
+      "train_nll": 2.52621070883891
+    },
+    {
+      "family": "recurrent",
+      "epochs": 1,
+      "parent_epoch": 120,
+      "seconds": 0.5895286269951612,
+      "cpu_seconds": 0.5768656070000002,
+      "train_nll": 2.4914012223301163
+    }
+  ],
+  "total_training_epochs": 2,
+  "test_and_validation_used": false,
+  "state_discarded": true,
+  "estimate_seconds_excluding_validation_and_io": 982.6259731175378,
+  "peak_rss_kib": 305164
+}

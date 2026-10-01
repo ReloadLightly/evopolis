@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "budget": "original",
+      "cell_id": "forecast-original-recurrent-17-g13-k5-main-recorded",
+      "group_index": 13,
+      "group_key": [
+        "Equal Baseline Exp 1",
+        "35368456",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "seed": 17
+    },
+    {
+      "budget": "continued",
+      "cell_id": "forecast-continued-recurrent-17-g13-k5-main-recorded",
+      "group_index": 13,
+      "group_key": [
+        "Equal Baseline Exp 1",
+        "35368456",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "seed": 17
+    },
+    {
+      "budget": "original",
+      "cell_id": "forecast-original-recurrent-17-g44-k5-main-recorded",
+      "group_index": 44,
+      "group_key": [
+        "Mixed Baseline Exp 1",
+        "18823620",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "seed": 17
+    },
+    {
+      "budget": "continued",
+      "cell_id": "forecast-continued-recurrent-17-g44-k5-main-recorded",
+      "group_index": 44,
+      "group_key": [
+        "Mixed Baseline Exp 1",
+        "18823620",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "seed": 17
+    },
+    {
+      "budget": "original",
+      "cell_id": "forecast-original-recurrent-17-g80-k5-main-recorded",
+      "group_index": 80,
+      "group_key": [
+        "Proportional Baseline Exp 1",
+        "11095201",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "seed": 17
+    },
+    {
+      "budget": "continued",
+      "cell_id": "forecast-continued-recurrent-17-g80-k5-main-recorded",
+      "group_index": 80,
+      "group_key": [
+        "Proportional Baseline Exp 1",
+        "11095201",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "seed": 17
+    }
+  ],
+  "selection": "Smallest source group index among k=5 eligible test groups in each baseline mechanism; fixed GRU seed 17, both budgets"
+}

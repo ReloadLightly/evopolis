@@ -1,0 +1,275 @@
+{
+  "family": "recurrent",
+  "seed": 17,
+  "budget": "continued",
+  "total_epochs": 480,
+  "selected_epoch": 476,
+  "validation_score": 2.566374499859358,
+  "reloaded_validation_score": 2.566374499859358,
+  "best_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+  "last_sha256": "c81f5f4fff0a8f636cc384f5b43e6dfd84569acf6ba27a0959019d9d72ac34b8",
+  "parent_last_sha256": "e8c7dec4d1e4f3255d4685d74ea265b8b4ccac71ce3845be42df67acf8d08561",
+  "parent_best_sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+  "identity": {
+    "parent_identity": {
+      "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+      "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678",
+      "config_sha256": "16e6f69d152af0247f4e1c6dac2080d520b3b0c3f8bb739a0fb18d709748f94c",
+      "code_revision": "134322ec8332cc8b5f09b17feb12fc415baed3f0",
+      "code_sha256": {
+        "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+        "evopolis/behavior_train.py": "add4118740f7338cceb01a2cb2e0401bc3a72243bca1a1a2cfa04ae0b3a7c63e",
+        "evopolis/behavior_data.py": "86a380e87a24e41f1f95de2a82e240f347d99660d54862e65c61956698162df1"
+      },
+      "software": {
+        "python": "3.12.13",
+        "numpy": "2.2.6",
+        "torch": "2.10.0+cpu"
+      },
+      "threads": 1,
+      "microbatch_groups": 2,
+      "effective_batch_groups": 8,
+      "num_workers": 0,
+      "configuration": {
+        "experiment": "Task 03: human Experiment 1 behavioral fits",
+        "schema_version": 1,
+        "split_seed": 20261001,
+        "bootstrap_seed": 20261003,
+        "bootstrap_replicates": 2000,
+        "rollout_seed_namespace": 20261004,
+        "training_seeds": [
+          17,
+          29,
+          43
+        ],
+        "families": [
+          "constant",
+          "linear",
+          "feedforward",
+          "recurrent"
+        ],
+        "architectures": {
+          "constant": "5 fitted emission parameters",
+          "linear": "Linear(9,5), with bias",
+          "feedforward": "Linear(9,64), ReLU, Linear(64,52), ReLU, Linear(52,5); biases",
+          "recurrent": "one-layer biased GRU(input=9,hidden=32), Linear(32,5) with bias"
+        },
+        "epochs": 120,
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "clip_grad_norm": 1.0,
+        "effective_batch_groups": 8,
+        "microbatch_groups": 2,
+        "threads": 1,
+        "num_workers": 0,
+        "shuffle": "seeded whole-group permutation each epoch; all four complete resident sequences stay together",
+        "checkpoint_selection": "lowest validation nonforced group-balanced NLL; exact ties choose earliest epoch",
+        "validation_frequency_epochs": 1,
+        "early_stopping": false,
+        "learning_rate_schedule": null,
+        "normalization": 200.0,
+        "feature_order": [
+          "offer_self",
+          "offer_next",
+          "offer_next2",
+          "offer_next3",
+          "previous_return_self",
+          "previous_return_next",
+          "previous_return_next2",
+          "previous_return_next3",
+          "pool"
+        ],
+        "emission": {
+          "name": "zero/maximum-inflated beta-binomial",
+          "parameters": [
+            "zero_logit",
+            "maximum_logit",
+            "beta_binomial_logit",
+            "alpha_raw",
+            "beta_raw"
+          ],
+          "shape_transform": "softplus(raw) + 0.05",
+          "legal_support": "0,...,floor(observed offer), without epsilon or upward rounding",
+          "forced": "n=0 has P(0)=1, zero primary loss, and retained observation history",
+          "overlap": "beta-binomial includes both endpoints; overlapping mixture masses are added"
+        },
+        "primary_score": "mean nonforced choice NLL within each group, mean groups within mechanism, equal mean over four mechanisms",
+        "other_scores": [
+          "MAE abs(E[c]-c)",
+          "relative MAE abs(E[c]-c)/observed offer",
+          "zero return calibration",
+          "maximum feasible return calibration"
+        ],
+        "probability_bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "offer_bin_edges": [
+          1,
+          5,
+          10,
+          25,
+          50,
+          100,
+          201
+        ],
+        "bin_closure": "lower-inclusive, upper-exclusive; final upper edge included",
+        "seed_aggregation": "equal mean of group scores over all three seeds; no lucky seed selection",
+        "uncertainty": "paired mechanism-stratified group bootstrap; same resampled groups for every model",
+        "uniform_reference": "unfitted uniform distribution over 0,...,floor(offer)",
+        "ensemble": null,
+        "rollout_baselines": [
+          "equal",
+          "proportional",
+          "mixed",
+          "interpolating"
+        ],
+        "rollout_games_per_cell": 64,
+        "rollout_horizon": 40,
+        "rollout_surplus_denominator": 160,
+        "rollout_initial_pool": 200.0,
+        "rollout_sampling": "independent resident draws conditional on simultaneous pre-decision observations and separate histories",
+        "rollout_padding": "zero pool/offers/returns/surplus after exact-zero termination; cumulative surplus held constant",
+        "rollout_parameters": "best-validation weights frozen during play; recurrent states reset per independent game",
+        "representative_display": "recurrent training seed 17, Equal; nearest median surplus with stable rollout-index tie break",
+        "held_out_status": "held out from Task 03 fitting/selection, previously described by Task 01; no cross-group participant linkage available",
+        "transfer_boundary": "Experiments 2-3 remain outside preparation, fitting, selection, and outcome inspection; Experiment 4 deferred"
+      }
+    },
+    "config_sha256": "6796fb8b2107a94b7fd791460f6d71c0d4d1d4bdf7c95972cae1401174d35562",
+    "code_sha256": {
+      "evopolis/forecast_train.py": "1eef85be5be3a549bb052e4b726121a6fa0cea60168412628b8f4d7598c4df8f"
+    },
+    "parent_last_sha256": {
+      "feedforward_17": "5fd8ea614cbc23ff2a5ce18ff022bc5fcf671479536ad73872a2ae7734347e45",
+      "feedforward_29": "3e472bda02cdd08c07b060b7232a136a2110db6aa9a69d34dfef43a3e446362d",
+      "feedforward_43": "a1e8974ae3edac1c33845955fac5be557abc94dbe9fcc26fc8828ab4f343d90a",
+      "recurrent_17": "e8c7dec4d1e4f3255d4685d74ea265b8b4ccac71ce3845be42df67acf8d08561",
+      "recurrent_29": "698d09f5339e8bdf944fd20f3a7f14f6b13e30969d03c53b7b857995c24bb2d6",
+      "recurrent_43": "3e56f32a51b3969827a77ddbdf68bfb9b1ecd0d1ac7e4548465b93073b8469a6"
+    },
+    "parent_best_sha256": {
+      "feedforward_17": "be65c3cf7720e5805db3f1eeb285d832d662e8b54d5684fc51e051e9ce4032a2",
+      "feedforward_29": "72769aecba837a6103debf4e06eb9657c7c975953a6c9238c6f38ec4da84fe6f",
+      "feedforward_43": "9f2316808439affb020d8d2382b50d0d5f2fa551c8451ed4228e82821cebbe18",
+      "recurrent_17": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+      "recurrent_29": "25143274613b933909fde59f9c7829f73581c5edb821787fdf4efeb1c2169091",
+      "recurrent_43": "83ea46a7c1f7b5874d32f28d7a0a26cb3f07d77bf57f1682801d3ac26bed14d2"
+    },
+    "base_revision": "999dad4860a837312b95dc0a8b02961ef9caf552",
+    "configuration": {
+      "experiment": "Task 04: collective forecast fidelity",
+      "schema_version": 1,
+      "status": "diagnostic follow-up informed by already published Experiment 1 results",
+      "parent_config": "configs/task03.json",
+      "continued_families": [
+        "feedforward",
+        "recurrent"
+      ],
+      "families": [
+        "constant",
+        "linear",
+        "feedforward",
+        "recurrent"
+      ],
+      "training_seeds": [
+        17,
+        29,
+        43
+      ],
+      "parent_epoch": 120,
+      "epochs": 480,
+      "additional_epochs_per_fit": 360,
+      "additional_epochs_total": 2160,
+      "optimizer": "Adam",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "clip_grad_norm": 1.0,
+      "effective_batch_groups": 8,
+      "microbatch_groups": 2,
+      "threads": 1,
+      "num_workers": 0,
+      "checkpoint_selection": "lowest validation group-balanced nonforced NLL over epochs 1..480, earliest exact tie; original best eligible",
+      "restart": "restore original epoch-120 last.pt model, Adam, torch RNG and PCG64 shuffle state",
+      "early_stopping": false,
+      "learning_rate_schedule": null,
+      "mechanisms": [
+        "Equal",
+        "Mixed",
+        "Proportional"
+      ],
+      "origins": [
+        0,
+        5,
+        10,
+        20
+      ],
+      "horizons": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "primary_origin": 5,
+      "primary_horizon": 10,
+      "primary_population": "recorded current offers contain at least one offer >=1 at k=5",
+      "primary_effect": "continued minus original recurrent energy score",
+      "primary_bank": 0,
+      "branches_per_cell": 64,
+      "principal_branches": 110592,
+      "stability_branches": 24192,
+      "sensitivity_branches": 16128,
+      "total_branches": 150912,
+      "seed_namespace": 20261015,
+      "bootstrap_seed": 20261014,
+      "bootstrap_replicates": 2000,
+      "endpoint": [
+        "pool_after_h / 200",
+        "total retained resources within forecast window / (200*h)"
+      ],
+      "energy_score": "mean distance to observed endpoint minus off-diagonal pairwise distance sum/(2*M*(M-1)); no clipping",
+      "crps": "univariate energy score with same off-diagonal finite-sample estimator",
+      "interval_quantiles": [
+        0.1,
+        0.9
+      ],
+      "quantile_method": "linear",
+      "seed_aggregation": "score each fitted seed separately then mean within human group",
+      "mechanism_aggregation": "mean groups within mechanism then equally weight mechanisms; missing strata explicitly unavailable",
+      "probability_bin_edges": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "renewal_event": "1.4 * total_return >= sum(current_offers)",
+      "main_first_allocation": "recorded current allocation; preserve unallocated resource",
+      "numerical_sensitivity": "canonical first allocation only; original and continued neural fits; k=5 h=10 eligible groups; paired first-bank seeds",
+      "future_allocation": "canonical existing Equal/Mixed/Proportional using generated history and pool",
+      "termination": "exact zero, absorbing zero padding; cumulative forecast-window surplus held constant",
+      "prefix": "process observations 0..k-1 only; origin k observation processed once; no current/future targets enter input",
+      "display_default": "first sorted Mixed test group, recurrent seed 17 continued, origin 5, branch index 0; all groups and failed forecasts accessible",
+      "reserved": "Experiments 2-3 excluded; Experiment 4 deferred; no live M1 or Interpolating comparison"
+    }
+  },
+  "continuation_seconds": 186.19922089006286,
+  "continuation_cpu_seconds": 197.175395472,
+  "parameter_count": 4293
+}

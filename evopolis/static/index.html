@@ -10,14 +10,25 @@
 <header class="masthead">
   <a class="brand" href="/" aria-label="EvoPolis home"><span class="brand-flower" aria-hidden="true">✣</span><span>EVOPOLIS<small>THE COMMUNITY OBSERVATORY</small></span></a>
   <div class="header-note">Four residents. One commons.<br><span>Watch the choices. Inspect the evidence.</span></div>
-  <span class="local-tag">LOCAL LAB · 03</span>
+  <span class="local-tag">LOCAL LAB · 04</span>
 </header>
 <main>
   <div class="mode-row">
-    <div class="mode-tabs" role="group" aria-label="Evidence mode"><button id="recorded-mode" class="active" aria-pressed="true">Recorded communities</button><button id="trained-mode" aria-pressed="false">New trained EvoPolis agents</button><button id="sandbox-mode" aria-pressed="false">Scripted sandbox</button></div>
+    <div class="mode-tabs" role="group" aria-label="Evidence mode"><button id="recorded-mode" class="active" aria-pressed="true">Recorded communities</button><button id="trained-mode" aria-pressed="false">New trained EvoPolis agents</button><button id="forecast-mode" aria-pressed="false">Forecast from human history</button><button id="sandbox-mode" aria-pressed="false">Scripted sandbox</button></div>
     <div class="view-options"><label><input type="checkbox" id="compare"> Compare communities</label><label><input type="checkbox" id="reduced-motion"> Reduced motion</label></div>
   </div>
   <div id="mode-context" class="context"></div>
+  <section id="forecast-controls" hidden aria-label="Forecast selection">
+    <div class="forecast-selectors">
+      <label>Human group · Experiment 1<select id="forecast-group"></select></label>
+      <label>Model family<select id="forecast-family"><option value="constant">Constant</option><option value="linear">Linear</option><option value="feedforward">Feedforward</option><option value="recurrent">Recurrent · GRU</option></select></label>
+      <label>Optimization budget<select id="forecast-budget"><option value="original">Original · 120 epochs</option><option value="continued">Continued · 480 epochs</option></select></label>
+      <label>Training seed<select id="forecast-seed"><option>17</option><option>29</option><option>43</option></select></label>
+      <label>Observed rounds · k<select id="forecast-origin"><option>0</option><option selected>5</option><option>10</option><option>20</option></select></label>
+      <label>Illustrative branch<select id="forecast-branch"><option value="first">Branch zero · paired stream</option><option value="median">Nearest median surplus</option></select></label>
+    </div>
+    <p id="forecast-selection-note"></p>
+  </section>
   <section class="transport" aria-label="Playback controls">
     <button id="restart" title="Restart at round 1" aria-label="Restart">↺</button>
     <button id="previous" title="Previous round" aria-label="Previous round">◀</button>
@@ -33,7 +44,7 @@
   <div id="communities"></div>
   <footer>
     <span>RESEARCH PLAYBACK · residents A–D are group positions, not identities.</span>
-    <details><summary>Evidence &amp; interpretation</summary><p>Recorded human Experiment 1 and recorded upstream BC1 outcomes from Koster, Pîslar et al. (2025). Four-player, 40-round Figure 2A cohorts only. Source revision <code>4f1a99a</code>; data CC BY 4.0. The upstream models are replayed, not run here.</p><p>New EvoPolis agents were fitted to the declared human Experiment 1 training groups. Their archived simulations use frozen best-validation checkpoints, shared weights and separate resident histories. Recurrent memory updates during generation; weights do not. This viewer replays generated trajectories without fitting or sampling. Scripted policies remain a separate demonstration.</p><p>The 40-round horizon is a researcher control and was undisclosed to participants. Current contributions are simultaneous; animation order does not create additional observations. Movement and symbolic flower tokens add no distance, cost or social rules. Rounded labels never update the underlying data.</p><p id="provenance-detail"></p><a href="https://doi.org/10.1038/s41467-025-58043-7" target="_blank" rel="noreferrer">Published study ↗</a></details>
+    <details><summary>Evidence &amp; interpretation</summary><p>Recorded human Experiment 1 and recorded upstream BC1 outcomes from Koster, Pîslar et al. (2025). Four-player, 40-round Figure 2A cohorts only. Source revision <code>4f1a99a</code>; data CC BY 4.0. The upstream models are replayed, not run here.</p><p>New EvoPolis agents were fitted to the declared human Experiment 1 training groups. Their archived simulations use frozen best-validation checkpoints, shared weights and separate resident histories. Recurrent memory updates during generation; weights do not. This viewer replays generated trajectories without fitting or sampling. Scripted policies remain a separate demonstration.</p><p>Forecasts reuse the 24 previously opened baseline test groups. Only the prefix and current allocation are observed inputs; subsequent states and allocations are generated. Bands are pointwise 10th–90th percentiles of 64 forecast branches for one fitted seed, not confidence intervals over humans. The illustrative branch is not an ensemble median trajectory. Main recorded-boundary first-bank forecasts are shown; independent-bank and canonical-boundary comparisons are reported separately.</p><p>The 40-round horizon is a researcher control and was undisclosed to participants. Current contributions are simultaneous; animation order does not create additional observations. Movement and symbolic flower tokens add no distance, cost or social rules. Rounded labels never update the underlying data.</p><p id="provenance-detail"></p><a href="https://doi.org/10.1038/s41467-025-58043-7" target="_blank" rel="noreferrer">Published study ↗</a></details>
   </footer>
 </main>
 <template id="community-template">
@@ -53,6 +64,7 @@
       <p class="policy-note">Return = floor(q × allocation). Fixed script, no learning. Changing a setting starts a new run.</p>
     </div>
     <div class="identity"></div>
+    <div class="forecast-status" hidden></div>
     <div class="community-layout">
       <div class="world-column">
         <div class="phase-strip" aria-label="Round phases"><span data-phase="0">1 ALLOCATE</span><span data-phase="1">2 RETURN / RETAIN</span><span data-phase="2">3 REPLENISH</span></div>
@@ -62,6 +74,11 @@
         <div class="stats"><div><span>Pool before</span><strong class="pool-before"></strong></div><div><span class="after-label">Recorded pool after</span><strong class="pool-after"></strong></div><div><span>Offers ≥ 1 unit</span><strong class="active-count"></strong></div><div><span>Total retained so far</span><strong class="total-surplus"></strong></div></div>
         <div class="trajectory-header"><h3>COMMUNITY TRAJECTORY</h3><span><i class="line cyan-line"></i> Pool before <i class="line amber-line"></i> Cumulative retained</span></div>
         <svg class="timeline" viewBox="0 0 560 130" preserveAspectRatio="none" role="img" aria-label="Pool and cumulative retained surplus with selected round cursor"></svg>
+        <div class="forecast-distribution" hidden>
+          <div class="trajectory-header"><h3>POOL AFTER EACH ROUND</h3><span><i class="line cyan-line"></i> Branch <i class="line coral-line"></i> Observed · shaded 80% forecast band</span></div>
+          <svg class="forecast-timeline" viewBox="0 0 560 120" role="img" aria-label="Forecast pool after each round with observed outcome and 80 percent predictive band"></svg>
+          <div class="forecast-band-values"></div>
+        </div>
         <p class="end-state"></p>
       </div>
       <aside class="inspector">

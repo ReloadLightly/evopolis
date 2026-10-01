@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-01T05:49:32.262275+00:00",
+  "base_revision": "999dad4860a837312b95dc0a8b02961ef9caf552",
+  "verified_origin": "https://github.com/ReloadLightly/evopolis.git",
+  "origin_main_synchronized_before_commit": true,
+  "protected_files_byte_identical": 102,
+  "frozen_training_generation_evaluation_source_hashes_match": true,
+  "all_18_registered_checkpoint_hashes_match": true,
+  "python_suite": {
+    "tests": 50,
+    "seconds": 10.069,
+    "status": "pass",
+    "local_log_sha256": "4277259aebe64d1dc859275080066b23d22771a0b25a461a7711638de7002a57"
+  },
+  "syntax_and_whitespace_checks": [
+    [
+      "git",
+      "diff",
+      "--check"
+    ],
+    [
+      "bash",
+      "-n",
+      "scripts/forecast.sh"
+    ],
+    [
+      "bash",
+      "-n",
+      "scripts/viewer.sh"
+    ],
+    [
+      "node",
+      "--check",
+      "evopolis/static/app.js"
+    ],
+    [
+      "node",
+      "--check",
+      "scripts/check-forecast-viewer-browser.js"
+    ]
+  ],
+  "local_document_links_checked": 88,
+  "training_complete": {
+    "fits": 6,
+    "additional_epochs": 2160,
+    "total_epochs_per_fit": 480,
+    "wall_seconds": 823.758737053955,
+    "cpu_seconds": 872.760247526,
+    "peak_rss_kib": 308352,
+    "utc": "2026-10-01T05:18:53.060138+00:00"
+  },
+  "forecast_branches": 150912,
+  "forecast_cells": 2358,
+  "archive_sha256": "1d1b461ea89852648e5c5de665b5b2827bceb40695f13f72e4b7b1db2173ea34",
+  "fresh_process_exact_branches": 64,
+  "browser_flows_passed": 21,
+  "browser_receipt": "results/task04/browser-verification.json",
+  "screenshot_sha256": "ff75ab8a725b82620b31c67cc76b0f7b80819eb2034d582ad40ce07de14844ce",
+  "independent_audit": "results/task04/independent_score_audit.json",
+  "experiments_2_3": "remain reserved; no new outcomes opened",
+  "status": "pass"
+}

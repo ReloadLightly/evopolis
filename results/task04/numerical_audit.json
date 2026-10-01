@@ -1,0 +1,4200 @@
+{
+  "eligible_counts": {
+    "0": {
+      "Equal": 8,
+      "Mixed": 8,
+      "Proportional": 8
+    },
+    "10": {
+      "Equal": 2,
+      "Mixed": 7,
+      "Proportional": 7
+    },
+    "20": {
+      "Equal": 0,
+      "Mixed": 6,
+      "Proportional": 7
+    },
+    "5": {
+      "Equal": 5,
+      "Mixed": 8,
+      "Proportional": 8
+    }
+  },
+  "group_count": 24,
+  "origin_count": 96,
+  "origin_unallocated_max": 0.0012054443359375,
+  "origin_unallocated_min": 0.000804901123046875,
+  "origins": [
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30843571",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.7002026438713074,
+        0.7002026438713074,
+        0.7002026438713074,
+        0.7002026438713074
+      ],
+      "eligible": false,
+      "group_index": 11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30843571",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071
+      ],
+      "origin": 5,
+      "pool": 2.8008105754852295,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0008106231689453125
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30843571",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 10,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30843571",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35368456",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "canonical_offers": [
+        2.10020112991333,
+        2.10020112991333,
+        2.10020112991333,
+        2.10020112991333
+      ],
+      "eligible": true,
+      "group_index": 13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35368456",
+        "0"
+      ],
+      "legal_max": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        2.0999999046325684,
+        2.0999999046325684,
+        2.0999999046325684,
+        2.0999999046325684
+      ],
+      "origin": 5,
+      "pool": 8.40080451965332,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.000804901123046875
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.7002012133598328,
+        0.7002012133598328,
+        0.7002012133598328,
+        0.7002012133598328
+      ],
+      "eligible": false,
+      "group_index": 13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35368456",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071
+      ],
+      "origin": 10,
+      "pool": 2.800804853439331,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.000804901123046875
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 13,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35368456",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 20,
+      "key": [
+        "Equal Baseline Exp 1",
+        "40800498",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "canonical_offers": [
+        2.450202226638794,
+        2.450202226638794,
+        2.450202226638794,
+        2.450202226638794
+      ],
+      "eligible": true,
+      "group_index": 20,
+      "key": [
+        "Equal Baseline Exp 1",
+        "40800498",
+        "0"
+      ],
+      "legal_max": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        2.450000047683716,
+        2.450000047683716,
+        2.450000047683716,
+        2.450000047683716
+      ],
+      "origin": 5,
+      "pool": 9.800808906555176,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0008087158203125
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 20,
+      "key": [
+        "Equal Baseline Exp 1",
+        "40800498",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 10,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 20,
+      "key": [
+        "Equal Baseline Exp 1",
+        "40800498",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 25,
+      "key": [
+        "Equal Baseline Exp 1",
+        "46096247",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "canonical_offers": [
+        4.550202369689941,
+        4.550202369689941,
+        4.550202369689941,
+        4.550202369689941
+      ],
+      "eligible": true,
+      "group_index": 25,
+      "key": [
+        "Equal Baseline Exp 1",
+        "46096247",
+        "0"
+      ],
+      "legal_max": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        4.549999713897705,
+        4.549999713897705,
+        4.549999713897705,
+        4.549999713897705
+      ],
+      "origin": 5,
+      "pool": 18.200809478759766,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0008106231689453125
+    },
+    {
+      "canonical_legal_max": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "canonical_offers": [
+        1.4002026319503784,
+        1.4002026319503784,
+        1.4002026319503784,
+        1.4002026319503784
+      ],
+      "eligible": true,
+      "group_index": 25,
+      "key": [
+        "Equal Baseline Exp 1",
+        "46096247",
+        "0"
+      ],
+      "legal_max": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        1.399999976158142,
+        1.399999976158142,
+        1.399999976158142,
+        1.399999976158142
+      ],
+      "origin": 10,
+      "pool": 5.600810527801514,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0008106231689453125
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 25,
+      "key": [
+        "Equal Baseline Exp 1",
+        "46096247",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 31,
+      "key": [
+        "Equal Baseline Exp 1",
+        "75670883",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.35020217299461365,
+        0.35020217299461365,
+        0.35020217299461365,
+        0.35020217299461365
+      ],
+      "eligible": false,
+      "group_index": 31,
+      "key": [
+        "Equal Baseline Exp 1",
+        "75670883",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.3499999940395355,
+        0.3499999940395355,
+        0.3499999940395355,
+        0.3499999940395355
+      ],
+      "origin": 5,
+      "pool": 1.4008086919784546,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0008087158203125
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 31,
+      "key": [
+        "Equal Baseline Exp 1",
+        "75670883",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 10,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 31,
+      "key": [
+        "Equal Baseline Exp 1",
+        "75670883",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 35,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92291462",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "canonical_offers": [
+        2.4502012729644775,
+        2.4502012729644775,
+        2.4502012729644775,
+        2.4502012729644775
+      ],
+      "eligible": true,
+      "group_index": 35,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92291462",
+        "0"
+      ],
+      "legal_max": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        2.450000047683716,
+        2.450000047683716,
+        2.450000047683716,
+        2.450000047683716
+      ],
+      "origin": 5,
+      "pool": 9.80080509185791,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.000804901123046875
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 35,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92291462",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 10,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 35,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92291462",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 36,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92992435",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        15,
+        15,
+        15,
+        15
+      ],
+      "canonical_offers": [
+        15.050202369689941,
+        15.050202369689941,
+        15.050202369689941,
+        15.050202369689941
+      ],
+      "eligible": true,
+      "group_index": 36,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92992435",
+        "0"
+      ],
+      "legal_max": [
+        15,
+        15,
+        15,
+        15
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        15.049999237060547,
+        15.049999237060547,
+        15.049999237060547,
+        15.049999237060547
+      ],
+      "origin": 5,
+      "pool": 60.200809478759766,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.000812530517578125
+    },
+    {
+      "canonical_legal_max": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "canonical_offers": [
+        3.850203037261963,
+        3.850203037261963,
+        3.850203037261963,
+        3.850203037261963
+      ],
+      "eligible": true,
+      "group_index": 36,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92992435",
+        "0"
+      ],
+      "legal_max": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        3.8499999046325684,
+        3.8499999046325684,
+        3.8499999046325684,
+        3.8499999046325684
+      ],
+      "origin": 10,
+      "pool": 15.400812149047852,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.000812530517578125
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 36,
+      "key": [
+        "Equal Baseline Exp 1",
+        "92992435",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 38,
+      "key": [
+        "Equal Baseline Exp 1",
+        "94815040",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 38,
+      "key": [
+        "Equal Baseline Exp 1",
+        "94815040",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 5,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 38,
+      "key": [
+        "Equal Baseline Exp 1",
+        "94815040",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 10,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 38,
+      "key": [
+        "Equal Baseline Exp 1",
+        "94815040",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Equal",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 44,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "18823620",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        42,
+        53,
+        53,
+        50
+      ],
+      "canonical_offers": [
+        42.04545454545455,
+        53.97727272727275,
+        53.40909090909091,
+        50.56818181818181
+      ],
+      "eligible": true,
+      "group_index": 44,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "18823620",
+        "0"
+      ],
+      "legal_max": [
+        42,
+        53,
+        53,
+        50
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        42.04520034790039,
+        53.97699737548828,
+        53.40879821777344,
+        50.56789779663086
+      ],
+      "origin": 5,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.00110626220703125
+    },
+    {
+      "canonical_legal_max": [
+        20,
+        20,
+        13,
+        24
+      ],
+      "canonical_offers": [
+        20.300286837986537,
+        20.300286837986537,
+        13.300187928336008,
+        24.500346183776855
+      ],
+      "eligible": true,
+      "group_index": 44,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "18823620",
+        "0"
+      ],
+      "legal_max": [
+        20,
+        20,
+        13,
+        24
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        20.299999237060547,
+        20.299999237060547,
+        13.299999237060547,
+        24.5
+      ],
+      "origin": 10,
+      "pool": 78.40110778808594,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001110076904296875
+    },
+    {
+      "canonical_legal_max": [
+        17,
+        22,
+        17,
+        24
+      ],
+      "canonical_offers": [
+        17.150236228416706,
+        22.750313364226244,
+        17.150236228416706,
+        24.150332648178626
+      ],
+      "eligible": true,
+      "group_index": 44,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "18823620",
+        "0"
+      ],
+      "legal_max": [
+        17,
+        22,
+        17,
+        24
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        17.149999618530273,
+        22.75,
+        17.149999618530273,
+        24.149999618530273
+      ],
+      "origin": 20,
+      "pool": 81.20111846923828,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0011196136474609375
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 47,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "26185795",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        22,
+        18,
+        34,
+        22
+      ],
+      "canonical_offers": [
+        22.92520798427958,
+        18.725169880289428,
+        34.825315945585004,
+        22.92520798427958
+      ],
+      "eligible": true,
+      "group_index": 47,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "26185795",
+        "0"
+      ],
+      "legal_max": [
+        22,
+        18,
+        34,
+        22
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        22.924999237060547,
+        18.725000381469727,
+        34.82500076293945,
+        22.924999237060547
+      ],
+      "origin": 5,
+      "pool": 99.4009017944336,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009021759033203125
+    },
+    {
+      "canonical_legal_max": [
+        12,
+        20,
+        21,
+        19
+      ],
+      "canonical_offers": [
+        12.775157100749466,
+        20.47525179161216,
+        21.87526900813264,
+        19.07523457509167
+      ],
+      "eligible": true,
+      "group_index": 47,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "26185795",
+        "0"
+      ],
+      "legal_max": [
+        12,
+        20,
+        21,
+        19
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        12.774999618530273,
+        20.475000381469727,
+        21.875,
+        19.07499885559082
+      ],
+      "origin": 10,
+      "pool": 74.20091247558594,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009136199951171875
+    },
+    {
+      "canonical_legal_max": [
+        10,
+        18,
+        14,
+        13
+      ],
+      "canonical_offers": [
+        10.500174522399902,
+        18.200302505493163,
+        14.000232696533203,
+        13.300221061706543
+      ],
+      "eligible": true,
+      "group_index": 47,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "26185795",
+        "0"
+      ],
+      "legal_max": [
+        10,
+        18,
+        14,
+        13
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        10.5,
+        18.19999885559082,
+        14.0,
+        13.299999237060547
+      ],
+      "origin": 20,
+      "pool": 56.00093078613281,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009326934814453125
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 52,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "37465807",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        26,
+        33,
+        37,
+        31
+      ],
+      "canonical_offers": [
+        26.600230673085086,
+        33.60029137652853,
+        37.100321728250265,
+        31.5002731654955
+      ],
+      "eligible": true,
+      "group_index": 52,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "37465807",
+        "0"
+      ],
+      "legal_max": [
+        26,
+        33,
+        37,
+        31
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        26.599998474121094,
+        33.599998474121094,
+        37.099998474121094,
+        31.5
+      ],
+      "origin": 5,
+      "pool": 128.80111694335938,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.00112152099609375
+    },
+    {
+      "canonical_legal_max": [
+        30,
+        27,
+        30,
+        31
+      ],
+      "canonical_offers": [
+        30.450285955917003,
+        27.65025966112004,
+        30.450285955917003,
+        31.85029910331548
+      ],
+      "eligible": true,
+      "group_index": 52,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "37465807",
+        "0"
+      ],
+      "legal_max": [
+        30,
+        27,
+        30,
+        31
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        30.44999885559082,
+        27.649999618530273,
+        30.44999885559082,
+        31.849998474121094
+      ],
+      "origin": 10,
+      "pool": 120.40113067626953,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0011348724365234375
+    },
+    {
+      "canonical_legal_max": [
+        28,
+        28,
+        30,
+        26
+      ],
+      "canonical_offers": [
+        28.175286610921226,
+        28.175286610921226,
+        30.275307973225907,
+        26.775272369384766
+      ],
+      "eligible": true,
+      "group_index": 52,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "37465807",
+        "0"
+      ],
+      "legal_max": [
+        28,
+        28,
+        30,
+        26
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        28.174999237060547,
+        28.174999237060547,
+        30.274999618530273,
+        26.774999618530273
+      ],
+      "origin": 20,
+      "pool": 113.40115356445312,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001155853271484375
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 57,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "47841996",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        5,
+        6,
+        2,
+        4
+      ],
+      "canonical_offers": [
+        5.075253376593956,
+        6.475323273585394,
+        2.275113582611084,
+        4.375218428098238
+      ],
+      "eligible": true,
+      "group_index": 57,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "47841996",
+        "0"
+      ],
+      "legal_max": [
+        5,
+        6,
+        2,
+        4
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        5.074999809265137,
+        6.474999904632568,
+        2.2749998569488525,
+        4.375
+      ],
+      "origin": 5,
+      "pool": 18.200908660888672,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009090900421142578
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.8755674213171005,
+        0.1751134842634201,
+        0.1751134842634201,
+        0.1751134842634201
+      ],
+      "eligible": false,
+      "group_index": 57,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "47841996",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        0.8748999834060669,
+        0.17499999701976776,
+        0.17499999701976776,
+        0.17499999701976776
+      ],
+      "origin": 10,
+      "pool": 1.4009078741073608,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010078996419906616
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 57,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "47841996",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 60,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "50116627",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        54,
+        35,
+        47,
+        20
+      ],
+      "canonical_offers": [
+        54.07533797542605,
+        35.8752242231791,
+        47.775298599648266,
+        20.47512797127783
+      ],
+      "eligible": true,
+      "group_index": 60,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "50116627",
+        "0"
+      ],
+      "legal_max": [
+        54,
+        35,
+        47,
+        20
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        54.07499694824219,
+        35.875,
+        47.77499771118164,
+        20.475000381469727
+      ],
+      "origin": 5,
+      "pool": 158.20098876953125,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009937286376953125
+    },
+    {
+      "canonical_legal_max": [
+        51,
+        45,
+        49,
+        21
+      ],
+      "canonical_offers": [
+        51.80030581156413,
+        45.50026861826579,
+        49.000289281209305,
+        21.70012811024984
+      ],
+      "eligible": true,
+      "group_index": 60,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "50116627",
+        "0"
+      ],
+      "legal_max": [
+        51,
+        45,
+        49,
+        21
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        51.79999923706055,
+        45.5,
+        49.0,
+        21.69999885559082
+      ],
+      "origin": 10,
+      "pool": 168.00099182128906,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009937286376953125
+    },
+    {
+      "canonical_legal_max": [
+        63,
+        56,
+        54,
+        25
+      ],
+      "canonical_offers": [
+        63.15789473684211,
+        56.578947368421055,
+        54.60526315789474,
+        25.657894736842106
+      ],
+      "eligible": true,
+      "group_index": 60,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "50116627",
+        "0"
+      ],
+      "legal_max": [
+        63,
+        56,
+        54,
+        25
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        63.157596588134766,
+        56.578697204589844,
+        54.60499954223633,
+        25.657798767089844
+      ],
+      "origin": 20,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.00090789794921875
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 64,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "64291720",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        16,
+        11,
+        10,
+        11
+      ],
+      "canonical_offers": [
+        16.800304412841797,
+        11.90021562576294,
+        10.500190258026123,
+        11.200202941894531
+      ],
+      "eligible": true,
+      "group_index": 64,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "64291720",
+        "0"
+      ],
+      "legal_max": [
+        16,
+        11,
+        10,
+        11
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        16.799999237060547,
+        11.899999618530273,
+        10.5,
+        11.199999809265137
+      ],
+      "origin": 5,
+      "pool": 50.40091323852539,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009145736694335938
+    },
+    {
+      "canonical_legal_max": [
+        8,
+        8,
+        3,
+        10
+      ],
+      "canonical_offers": [
+        8.750260959972035,
+        8.050240083174273,
+        3.8501148223876953,
+        10.150302713567559
+      ],
+      "eligible": true,
+      "group_index": 64,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "64291720",
+        "0"
+      ],
+      "legal_max": [
+        8,
+        8,
+        3,
+        10
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        8.75,
+        8.050000190734863,
+        3.8499999046325684,
+        10.149999618530273
+      ],
+      "origin": 10,
+      "pool": 30.800918579101562,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009188652038574219
+    },
+    {
+      "canonical_legal_max": [
+        13,
+        12,
+        12,
+        13
+      ],
+      "canonical_offers": [
+        13.650239015880388,
+        12.950226758655749,
+        12.950226758655749,
+        13.650239015880384
+      ],
+      "eligible": true,
+      "group_index": 64,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "64291720",
+        "0"
+      ],
+      "legal_max": [
+        13,
+        12,
+        12,
+        13
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        13.649999618530273,
+        12.949999809265137,
+        12.949999809265137,
+        13.649999618530273
+      ],
+      "origin": 20,
+      "pool": 53.200931549072266,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009326934814453125
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 73,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "85460730",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        39,
+        49,
+        33,
+        51
+      ],
+      "canonical_offers": [
+        39.20022533785912,
+        49.700285696214245,
+        33.60019314673639,
+        51.10029374399494
+      ],
+      "eligible": true,
+      "group_index": 73,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "85460730",
+        "0"
+      ],
+      "legal_max": [
+        39,
+        49,
+        33,
+        51
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        39.20000076293945,
+        49.69999694824219,
+        33.599998474121094,
+        51.099998474121094
+      ],
+      "origin": 5,
+      "pool": 173.6009979248047,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001003265380859375
+    },
+    {
+      "canonical_legal_max": [
+        29,
+        37,
+        32,
+        35
+      ],
+      "canonical_offers": [
+        29.400218963623047,
+        37.8002815246582,
+        32.20023981730143,
+        35.00026067097981
+      ],
+      "eligible": true,
+      "group_index": 73,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "85460730",
+        "0"
+      ],
+      "legal_max": [
+        29,
+        37,
+        32,
+        35
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        29.399999618530273,
+        37.79999923706055,
+        32.20000076293945,
+        35.0
+      ],
+      "origin": 10,
+      "pool": 134.4010009765625,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010013580322265625
+    },
+    {
+      "canonical_legal_max": [
+        9,
+        12,
+        16,
+        31
+      ],
+      "canonical_offers": [
+        9.450134925842285,
+        12.25017490386963,
+        16.450234870910645,
+        31.850454750061033
+      ],
+      "eligible": true,
+      "group_index": 73,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "85460730",
+        "0"
+      ],
+      "legal_max": [
+        9,
+        12,
+        16,
+        31
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        9.449999809265137,
+        12.25,
+        16.44999885559082,
+        31.849998474121094
+      ],
+      "origin": 20,
+      "pool": 70.0009994506836,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010023117065429688
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 78,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "95675568",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        10,
+        15,
+        4,
+        6
+      ],
+      "canonical_offers": [
+        10.15030783873338,
+        15.050456450535702,
+        4.550137996673584,
+        6.650201687446007
+      ],
+      "eligible": true,
+      "group_index": 78,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "95675568",
+        "0"
+      ],
+      "legal_max": [
+        10,
+        15,
+        4,
+        6
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        10.149999618530273,
+        15.049999237060547,
+        4.549999713897705,
+        6.649999618530273
+      ],
+      "origin": 5,
+      "pool": 36.40110397338867,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0011057853698730469
+    },
+    {
+      "canonical_legal_max": [
+        2,
+        7,
+        2,
+        2
+      ],
+      "canonical_offers": [
+        2.6251719214699483,
+        7.5254928415471865,
+        2.6251719214699483,
+        2.6251719214699483
+      ],
+      "eligible": true,
+      "group_index": 78,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "95675568",
+        "0"
+      ],
+      "legal_max": [
+        2,
+        7,
+        2,
+        2
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        2.625,
+        7.524999618530273,
+        2.625,
+        2.625
+      ],
+      "origin": 10,
+      "pool": 15.401008605957031,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010089874267578125
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 78,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "95675568",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Mixed",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 80,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "11095201",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        11,
+        2,
+        0
+      ],
+      "canonical_offers": [
+        0.0,
+        11.200804138183594,
+        2.8002010345458985,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 80,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "11095201",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        11,
+        2,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        11.199999809265137,
+        2.799999952316284,
+        0.0
+      ],
+      "origin": 5,
+      "pool": 14.001005172729492,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001005411148071289
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        19,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0,
+        19.60100555419922,
+        0.0,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 80,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "11095201",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        19,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        19.600000381469727,
+        0.0,
+        0.0
+      ],
+      "origin": 10,
+      "pool": 19.60100555419922,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010051727294921875
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        51,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0,
+        51.80100631713867,
+        0.0,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 80,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "11095201",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        51,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        51.79999923706055,
+        0.0,
+        0.0
+      ],
+      "origin": 20,
+      "pool": 51.80100631713867,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001007080078125
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 82,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14606420",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        2,
+        0,
+        4,
+        0
+      ],
+      "canonical_offers": [
+        2.8,
+        0.0,
+        4.2,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 82,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14606420",
+        "0"
+      ],
+      "legal_max": [
+        2,
+        0,
+        4,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        2.7995998859405518,
+        0.0,
+        4.199399948120117,
+        0.0
+      ],
+      "origin": 5,
+      "pool": 7.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010001659393310547
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 82,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14606420",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 10,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455,
+        0.0024999999441206455
+      ],
+      "eligible": false,
+      "group_index": 82,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "14606420",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071,
+        0.002199999988079071
+      ],
+      "origin": 20,
+      "pool": 0.009999999776482582,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001199999824166298
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 89,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "36303454",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        11,
+        1,
+        33,
+        153
+      ],
+      "canonical_offers": [
+        11.188811188811188,
+        1.3986013986013985,
+        33.56643356643357,
+        153.84615384615384
+      ],
+      "eligible": true,
+      "group_index": 89,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "36303454",
+        "0"
+      ],
+      "legal_max": [
+        11,
+        1,
+        33,
+        153
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        11.188799858093262,
+        1.3985999822616577,
+        33.56629943847656,
+        153.84539794921875
+      ],
+      "origin": 5,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009027719497680664
+    },
+    {
+      "canonical_legal_max": [
+        1,
+        0,
+        30,
+        154
+      ],
+      "canonical_offers": [
+        1.4000075490851152,
+        0.0,
+        30.800166079872533,
+        154.00083039936266
+      ],
+      "eligible": true,
+      "group_index": 89,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "36303454",
+        "0"
+      ],
+      "legal_max": [
+        1,
+        0,
+        30,
+        154
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        1.399999976158142,
+        0.0,
+        30.799999237060547,
+        154.0
+      ],
+      "origin": 10,
+      "pool": 186.2010040283203,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010048151016235352
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        80,
+        119
+      ],
+      "canonical_offers": [
+        0.0,
+        0.0,
+        80.23952095808383,
+        119.76047904191617
+      ],
+      "eligible": true,
+      "group_index": 89,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "36303454",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        80,
+        119
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        0.0,
+        80.23909759521484,
+        119.75989532470703
+      ],
+      "origin": 20,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001007080078125
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 97,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "45673270",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        56,
+        16,
+        35,
+        21
+      ],
+      "canonical_offers": [
+        56.00047899329144,
+        16.800143697987433,
+        35.00029937080715,
+        21.00017962248429
+      ],
+      "eligible": true,
+      "group_index": 97,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "45673270",
+        "0"
+      ],
+      "legal_max": [
+        56,
+        16,
+        35,
+        21
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        56.0,
+        16.799999237060547,
+        35.0,
+        21.0
+      ],
+      "origin": 5,
+      "pool": 128.8011016845703,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001102447509765625
+    },
+    {
+      "canonical_legal_max": [
+        122,
+        0,
+        64,
+        12
+      ],
+      "canonical_offers": [
+        122.54335260115606,
+        0.0,
+        64.73988439306359,
+        12.716763005780347
+      ],
+      "eligible": true,
+      "group_index": 97,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "45673270",
+        "0"
+      ],
+      "legal_max": [
+        122,
+        0,
+        64,
+        12
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        122.54269409179688,
+        0.0,
+        64.7396011352539,
+        12.716699600219727
+      ],
+      "origin": 10,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010051727294921875
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        114,
+        85
+      ],
+      "canonical_offers": [
+        0.0,
+        0.0,
+        114.28571428571429,
+        85.71428571428571
+      ],
+      "eligible": true,
+      "group_index": 97,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "45673270",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        114,
+        85
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        0.0,
+        114.28509521484375,
+        85.71379852294922
+      ],
+      "origin": 20,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.00110626220703125
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 104,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "63752993",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        42,
+        53
+      ],
+      "canonical_offers": [
+        0.0,
+        0.0,
+        42.00039919684915,
+        53.200505649342254
+      ],
+      "eligible": true,
+      "group_index": 104,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "63752993",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        42,
+        53
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        0.0,
+        42.0,
+        53.19999694824219
+      ],
+      "origin": 5,
+      "pool": 95.2009048461914,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.00090789794921875
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        44,
+        155
+      ],
+      "canonical_offers": [
+        0.0,
+        0.0,
+        44.29530201342282,
+        155.70469798657717
+      ],
+      "eligible": true,
+      "group_index": 104,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "63752993",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        44,
+        155
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        0.0,
+        44.29509735107422,
+        155.7039031982422
+      ],
+      "origin": 10,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.00099945068359375
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        0,
+        36,
+        163
+      ],
+      "canonical_offers": [
+        0.0,
+        0.0,
+        36.70886075949367,
+        163.29113924050634
+      ],
+      "eligible": true,
+      "group_index": 104,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "63752993",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        0,
+        36,
+        163
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        0.0,
+        36.70869827270508,
+        163.29029846191406
+      ],
+      "origin": 20,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001003265380859375
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 107,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69384851",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        28,
+        25,
+        18,
+        9
+      ],
+      "canonical_offers": [
+        28.00037778657058,
+        25.200340007913525,
+        18.20024556127088,
+        9.800132225299704
+      ],
+      "eligible": true,
+      "group_index": 107,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69384851",
+        "0"
+      ],
+      "legal_max": [
+        28,
+        25,
+        18,
+        9
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        28.0,
+        25.19999885559082,
+        18.19999885559082,
+        9.800000190734863
+      ],
+      "origin": 5,
+      "pool": 81.20109558105469,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010976791381835938
+    },
+    {
+      "canonical_legal_max": [
+        21,
+        43,
+        2,
+        14
+      ],
+      "canonical_offers": [
+        21.00028136680866,
+        43.400581491404566,
+        2.800037515574488,
+        14.00018757787244
+      ],
+      "eligible": true,
+      "group_index": 107,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69384851",
+        "0"
+      ],
+      "legal_max": [
+        21,
+        43,
+        2,
+        14
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        21.0,
+        43.39999771118164,
+        2.799999952316284,
+        14.0
+      ],
+      "origin": 10,
+      "pool": 81.20108795166016,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010902881622314453
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        200,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        0.0,
+        200.0,
+        0.0,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 107,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69384851",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        199,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        199.99899291992188,
+        0.0,
+        0.0
+      ],
+      "origin": 20,
+      "pool": 200.0,
+      "support_differences": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "unallocated": 0.001007080078125
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 111,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "76356479",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        30,
+        2,
+        0,
+        21
+      ],
+      "canonical_offers": [
+        30.80056293194111,
+        2.8000511756310096,
+        0.0,
+        21.00038381723257
+      ],
+      "eligible": true,
+      "group_index": 111,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "76356479",
+        "0"
+      ],
+      "legal_max": [
+        30,
+        2,
+        0,
+        21
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        30.799999237060547,
+        2.799999952316284,
+        0.0,
+        21.0
+      ],
+      "origin": 5,
+      "pool": 54.60099792480469,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0009987354278564453
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        1,
+        0,
+        4
+      ],
+      "canonical_offers": [
+        0.0,
+        1.400250792503357,
+        0.0,
+        4.200752377510071
+      ],
+      "eligible": true,
+      "group_index": 111,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "76356479",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        1,
+        0,
+        4
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        1.399999976158142,
+        0.0,
+        4.199999809265137
+      ],
+      "origin": 10,
+      "pool": 5.601003170013428,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010033845901489258
+    },
+    {
+      "canonical_legal_max": [
+        0,
+        1,
+        0,
+        32
+      ],
+      "canonical_offers": [
+        0.0,
+        1.400041898091634,
+        0.0,
+        32.20096365610758
+      ],
+      "eligible": true,
+      "group_index": 111,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "76356479",
+        "0"
+      ],
+      "legal_max": [
+        0,
+        1,
+        0,
+        32
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        0.0,
+        1.399999976158142,
+        0.0,
+        32.20000076293945
+      ],
+      "origin": 20,
+      "pool": 33.60100555419922,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.0010048151016235352
+    },
+    {
+      "canonical_legal_max": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "canonical_offers": [
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "eligible": true,
+      "group_index": 117,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "85019022",
+        "0"
+      ],
+      "legal_max": [
+        49,
+        49,
+        49,
+        49
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016,
+        49.999698638916016
+      ],
+      "origin": 0,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "unallocated": 0.0012054443359375
+    },
+    {
+      "canonical_legal_max": [
+        182,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        182.00100708007812,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 117,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "85019022",
+        "0"
+      ],
+      "legal_max": [
+        182,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        182.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin": 5,
+      "pool": 182.00100708007812,
+      "support_differences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001007080078125
+    },
+    {
+      "canonical_legal_max": [
+        200,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        200.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 117,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "85019022",
+        "0"
+      ],
+      "legal_max": [
+        199,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        199.99899291992188,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin": 10,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001007080078125
+    },
+    {
+      "canonical_legal_max": [
+        200,
+        0,
+        0,
+        0
+      ],
+      "canonical_offers": [
+        200.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "eligible": true,
+      "group_index": 117,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "85019022",
+        "0"
+      ],
+      "legal_max": [
+        199,
+        0,
+        0,
+        0
+      ],
+      "mechanism": "Proportional",
+      "offers": [
+        199.99899291992188,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin": 20,
+      "pool": 200.0,
+      "support_differences": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "unallocated": 0.001007080078125
+    }
+  ],
+  "primary_eligible_first_allocation_support": {
+    "Equal": {
+      "changed_player_maxima": 0,
+      "groups": 5,
+      "groups_with_any_support_change": 0
+    },
+    "Mixed": {
+      "changed_player_maxima": 0,
+      "groups": 8,
+      "groups_with_any_support_change": 0
+    },
+    "Proportional": {
+      "changed_player_maxima": 0,
+      "groups": 8,
+      "groups_with_any_support_change": 0
+    }
+  },
+  "recorded_rounds": 960,
+  "recorded_transition_residual": {
+    "definition": "recorded next pool minus equation from recorded pool/offers/returns",
+    "max": 0.009195098653435707,
+    "max_abs": 0.009195098653435707,
+    "mean_abs": 0.0032683409769855357,
+    "min": -0.001202392578107947
+  },
+  "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+  "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678",
+  "support_differences": {
+    "Equal": {
+      "canonical_one_higher": 32,
+      "other": 0
+    },
+    "Mixed": {
+      "canonical_one_higher": 32,
+      "other": 0
+    },
+    "Proportional": {
+      "canonical_one_higher": 102,
+      "other": 0
+    }
+  },
+  "support_differences_total": 166
+}

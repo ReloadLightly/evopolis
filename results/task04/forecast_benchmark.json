@@ -1,0 +1,16 @@
+{
+  "branches": 64,
+  "cpu_seconds": 0.216345558,
+  "family": "recurrent",
+  "group_index": 56,
+  "horizon": 20,
+  "peak_rss_kib": 301584,
+  "projected_full_run_seconds": 488.6596583488863,
+  "projection_excludes": "archive IO, mixtures of families/origins and shorter secondary/sensitivity banks",
+  "resident_batch": 256,
+  "scientific_settings_changed": false,
+  "seed": 17,
+  "selected_chunk_size": 64,
+  "validation_only": true,
+  "wall_seconds": 0.20723479997832328
+}
