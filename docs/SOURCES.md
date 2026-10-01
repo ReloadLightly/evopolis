@@ -18,6 +18,11 @@ Raphael Koster, Miruna Pîslar, Andrea Tacchetti, Jan Balaguer, Leqi Liu, Romual
 
 ## Broader references
 
+- Urs Fischbacher, Simon Gächter and Ernst Fehr. 2001. *Are people conditionally cooperative? Evidence from a public goods experiment*. Economics Letters 71(3), 397–404. https://doi.org/10.1016/S0165-1765(01)00394-9 . [Author-hosted article](https://www.econ.uzh.ch/dam/jcr:ffffffff-9758-127f-0000-00003449356a/ArePeopleCondCooperative.pdf).
+- Urs Fischbacher and Simon Gächter. 2010. *Social Preferences, Beliefs, and the Dynamics of Free Riding in Public Goods Experiments*. American Economic Review 100(1), 541–556. https://doi.org/10.1257/aer.100.1.541 . The study uses elicited preferences and incentivized beliefs; its explanation emphasizes imperfect conditional cooperation. Task 05 uses an explicitly adapted history-response model in a different game, not a replication of that experimental identification. The [official replication archive](https://doi.org/10.3886/E112335V1) exists but its data have not been downloaded or used by EvoPolis.
+
+These references motivate the planned Task 05 operationalization. They do not turn previously fitted neural predictions into a test of the source theories. No code or data from these two studies have been copied into this repository.
+
 - Percy Liang. *Simulation: The Next Frontier for AI*. https://www.simile.com/blog/simulation-next-frontier
 - Joon Sung Park et al. 2023. *Generative Agents: Interactive Simulacra of Human Behavior*. https://arxiv.org/abs/2304.03442
 - StanfordHCI/genagents: https://github.com/StanfordHCI/genagents . The public demographic agents are not the restricted interview-based population described by the associated research.

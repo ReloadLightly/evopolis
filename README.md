@@ -13,7 +13,7 @@ EvoPolis is a research project at the intersection of computational social scien
 
 The first world is a community sharing a productive resource. Its inhabitants receive allocations, decide what to retain, and choose what to return to the commons. Their choices can sustain mutual prosperity, concentrate opportunities, or exhaust the resource on which everyone depends. The research follows two connected problems: learning a faithful model of those choices, and discovering institutions that work across plausible models of human behavior.
 
-**Current state:** the empirical comparison is reproduced, behavioral agents are trained, and **150,912 conditional forecast branches have been evaluated against human Experiment 1**. Continuing six neural fits from 120 to 480 epochs improves individual prediction but worsens the declared primary GRU collective forecast. The 16-bit viewer exposes recorded communities, trained simulations and forecasts from observed human histories, with resident inspection and uncertainty bands. Experiments 2–3 remain reserved; evolutionary search remains planned. The cover is concept art; screenshots and figures below show working software and measured evidence.
+**Current finding:** continuing neural training improves individual prediction but worsens the GRU's declared collective forecast, evaluated against **21 human groups**. The result survives an independent simulation bank and numerical audit. EvoPolis currently models a specific four-person resource game; it has not established a general model of society or identified the human motives behind this prediction gap. [The scientific review](docs/task04-review.md) assesses the evidence, and [Task 05](docs/tasks/05-conditional-responses.md) specifies a theory-informed comparison of conditional responses and persistent individual differences. That experiment has not run. Experiments 2–3 remain reserved; evolutionary search remains planned. The cover is concept art; screenshots and figures below show working software and measured evidence.
 
 ## The research question
 
@@ -118,7 +118,7 @@ Task 03 fits Constant, Linear, Feedforward and Recurrent GRU response distributi
 | Feedforward, 4,285 parameters | 2.724 | 5.642 |
 | GRU, 4,293 parameters | **2.694** | **5.529** |
 
-The models learned useful conditional response distributions: mean GRU validation NLL fell from **3.408 at initialization to 2.649 after fitting**. But **additional recurrent memory has no clear demonstrated advantage**. GRU minus feedforward test NLL is **−0.029**, with a paired 95% group-bootstrap interval of **[−0.064, +0.006]**. The feedforward control already receives previous contributions. Three optimization seeds are averaged within each group before 2,000 paired, mechanism-stratified bootstrap draws; they are not additional human replications.
+The models learned useful conditional response distributions: mean GRU validation NLL fell from **3.408 at initialization to 2.649 after fitting**. **At this 120-epoch budget**, GRU's advantage over feedforward is uncertain: test NLL differs by **−0.029**, with a paired 95% group-bootstrap interval of **[−0.064, +0.006]**. The feedforward control already receives previous contributions. The longer-budget comparison below changes that finding; neither architecture comparison alone isolates memory's contribution. Three optimization seeds are averaged within each group before 2,000 paired, mechanism-stratified bootstrap draws; they are not additional human replications.
 
 ![Measured held-out human prediction and zero/maximum-return calibration for the trained behavioral models.](docs/assets/task03-prediction.png)
 
@@ -163,6 +163,21 @@ The default is Mixed human launch **18823620**, continued GRU seed **17**, selec
 
 The [full report](docs/collective-forecast-fidelity.md) includes [learning and individual prediction](docs/assets/task04-optimization.png), [observed/forecast trajectories](docs/assets/task04-forecast-trajectories.png), [renewal calibration](docs/assets/task04-renewal-calibration.png), all proper scores, eligibility counts, numerical sensitivity and reproduction commands. The [independent audit](results/task04/independent_score_audit.json) reconstructs primary scores and intervals from saved draws, with maximum disagreement **2.22×10⁻¹⁶**.
 
+## Next experiment: conditional responses and persistent differences
+
+No established social-science theory has yet been directly tested by EvoPolis. The next study makes one theoretical connection explicit: conditional-cooperation research links people's contributions to others' cooperation and examines imperfect matching. Our data contain observed actions, not elicited preferences or beliefs, so the proposed test concerns an **adapted predictive mechanism** in this resource game.
+
+| New fitted model | Opportunity and own history | Additional peer-history response | Persistent individual variation |
+| :--- | :---: | :---: | :---: |
+| P0 | Yes | No | No |
+| P1 | Yes | Yes | No |
+| H0 | Yes | No | Yes |
+| H1 | Yes | Yes | Yes |
+
+The peer-response coefficient can be positive, zero or negative; its proposed direction can fail. All models respect unequal opportunities and distinguish an inability to contribute from a voluntary zero. Current offers already contain indirect information about peers, so the comparison tests the value of an **additional** response to their history. Persistent variation is fitted from choices, not assigned as personality labels.
+
+Task 05 will ask whether H1 improves both individual predictions and collective forecasts relative to H0 on the same groups and forecast window. It will fit twelve models, retain all seeds and report failures as well as successes. Positive results would support this operationalization's predictive usefulness, not identify motives or replicate the original preference-elicitation experiments. [Read the scientific review](docs/task04-review.md) and [the complete next Codex task](docs/tasks/05-conditional-responses.md). **Status: planned; no Task 05 results yet.**
+
 ## What learns—and what evolves
 
 The first learned world model combines **known resource accounting** with **learned, probabilistic human responses**. The accounting determines what is materially possible; the behavioral model estimates how inhabitants respond to their experience and the institution's allocations.
@@ -197,10 +212,12 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | **02 · Observe** | Visualize recorded communities and baseline simulations. | Verified local pixel-art replay, resident inspection, comparisons, and scripted sandbox. | **Complete** |
 | **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Twelve trained checkpoints, measured human predictions, 3,072 generated games and verified trained-agent playback. | **Complete** |
 | **04 · Imagine** | Assess multi-round forecasts across allocation rules and optimization budgets. | Completed fourfold optimization control, 150,912 conditional forecasts, numerical sensitivity and working forecast inspection. New-cohort transfer remains a later test. | **Complete** |
-| **05 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
-| **06 · Govern** | Evolve allocation procedures across frozen behavioral models. | Trade-offs among surplus, inclusion, inequality, and resource persistence. | Planned |
-| **07 · Expand** | Introduce one mechanism such as communication, community switching, or resource shocks. | A controlled study of changed assumptions. | Planned |
-| **08 · Improve** | Test changes to the procedure that trains or improves the models. | Fresh-task evidence about subsequent learning capability. | Future research |
+| **05 · Explain** | Compare an explicit peer-history response with persistent individual variation under matched controls. | Four fitted families, falsifiable response direction, and matched individual/collective predictions. | **[Specified; next task](docs/tasks/05-conditional-responses.md)** |
+| **06 · Transfer** | Freeze a procedure before evaluating a reserved cohort. | Evidence about generalization across changed conditions and instructions, with limits on causal interpretation. | Planned |
+| **07 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
+| **08 · Govern** | Evolve allocation procedures across frozen behavioral models. | Trade-offs among surplus, inclusion, inequality, and resource persistence. | Planned |
+| **09 · Expand** | Introduce one mechanism such as communication, community switching, or resource shocks. | A controlled study of changed assumptions. | Planned |
+| **10 · Improve** | Test changes to the procedure that trains or improves the models. | Fresh-task evidence about subsequent learning capability. | Future research |
 
 ### How experiments will be judged
 
@@ -213,7 +230,7 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | Robustness | Variation across fitted behavioral models, seeds, and new experimental conditions. | Performance on unfamiliar groups and stress scenarios. |
 | Computational cost | Training time, peak memory, evaluations, and any external model calls. | Gains obtained for the same practical resource budget. |
 
-Human participants and interacting groups define the split boundaries. Repeated observations from the same participant or group must not leak between training, selection, and final evaluation. Statistical uncertainty must reflect those dependencies. Behavioral fitting and evolutionary selection use development evidence; the final human test set remains untouched until the selected procedure is frozen.
+Interacting groups define the implemented split boundaries. Repeated observations from the same group must not leak between fitting and selection/evaluation; the release lacks identifiers needed to check participant overlap between groups. Statistical uncertainty reflects the known group dependence. Experiment 1 test groups were excluded from parameter fitting and checkpoint selection, but their outcomes have already been inspected. Subsequent analyses of them are exploratory or diagnostic. Experiments 2–3 remain reserved for future EvoPolis model evaluation, with procedures frozen before their outcome comparisons; their original published findings are already public.
 
 New institutions may induce behavior outside the support of the recorded data. Cross-model evaluation helps expose simulator exploitation, but agreement between models does not establish a real-world causal effect. Novel policy outcomes will be reported as simulation findings until supported by new human evidence. Synthetic experiments on larger communities or shocks will be labeled as extensions.
 
@@ -263,6 +280,8 @@ The CPU-only PyTorch dependency is pinned; training uses one compute thread and 
 | Source | Contribution to EvoPolis |
 | :--- | :--- |
 | [Koster, Pîslar et al. (2025), Nature Communications](https://doi.org/10.1038/s41467-025-58043-7) · [code and data access](https://github.com/google-deepmind/sustainable_behavior) | The initial human experiment, behavioral-modeling approach, and institution-design problem. |
+| [Fischbacher, Gächter & Fehr (2001), *Are people conditionally cooperative?*](https://doi.org/10.1016/S0165-1765(01)00394-9) | Elicited conditional-contribution schedules; theoretical basis for Task 05's adapted response prediction, not a replicated elicitation experiment. |
+| [Fischbacher & Gächter (2010), *Social Preferences, Beliefs, and the Dynamics of Free Riding in Public Goods Experiments*](https://doi.org/10.1257/aer.100.1.541) | Distinguishes preferences, beliefs and imperfect conditional cooperation; makes the limits of our action-history proxies explicit. |
 | [Liang, *Simulation: The Next Frontier for AI*](https://www.simile.com/blog/simulation-next-frontier) | The broader motivation: faithful people and environments, efficient simulation, and calibrated outcomes. |
 | [Park et al. (2023), *Generative Agents*](https://arxiv.org/abs/2304.03442) · [implementation](https://github.com/joonspk-research/generative_agents) | Inspiration for inspectable inhabitants, experience, and social interaction. |
 | [StanfordHCI/genagents](https://github.com/StanfordHCI/genagents) | A possible later source of memory and language-interaction components. |

@@ -1,0 +1,269 @@
+{
+  "reviewed_commit": "053ac5016bc23b608000c522e4d41ec5d7d4f3e2",
+  "review_utc": "2026-10-01T09:33:42.323778+00:00",
+  "scope": "Independent statistical review of saved Task 04 evidence; no training or reserved Experiment 2-3 outcomes inspected",
+  "calculation": {
+    "energy": "Mean Euclidean distance to archived human endpoint minus full off-diagonal Euclidean distance sum / (2*M*(M-1)); M=64",
+    "coverage": "Empirical 10th/90th percentiles with numpy default linear interpolation; include human endpoint when lower <= endpoint <= upper",
+    "aggregation": "Score each fitted seed separately; average seeds within human group, groups within mechanism, mechanisms equally",
+    "bootstrap": {
+      "generator": "PCG64",
+      "seed": 20261014,
+      "replicates": 2000,
+      "unit": "Human interacting group",
+      "paired": true,
+      "stratified_by": "Mechanism",
+      "stratum_order_primary_and_matched21": [
+        "Equal",
+        "Mixed",
+        "Proportional"
+      ],
+      "stratum_order_exploratory32": [
+        "Equal",
+        "Mixed",
+        "Proportional",
+        "M1"
+      ],
+      "interval": "2.5th and 97.5th percentiles of paired mean-difference bootstrap distribution",
+      "uncertainty_scope": "Human-group sampling conditional on these fitted seeds and finite forecast banks"
+    }
+  },
+  "sqlite_recomputation": {
+    "checkpoint_group_banks": 756,
+    "branches": 48384,
+    "banks": [
+      "main",
+      "second"
+    ],
+    "convention": "recorded",
+    "origin": 5,
+    "horizon": 10,
+    "maximum_absolute_energy_disagreement": 0.0,
+    "maximum_absolute_coverage_disagreement": 0.0,
+    "human_target_source": "Archived observed endpoints; raw prepared Exp1 cache was unavailable to this reviewer",
+    "raw_source_check": "Performed separately and recorded in task04-source-review.json; not claimed by this statistical receipt"
+  },
+  "declared_forecast_comparisons": [
+    {
+      "left_procedure": [
+        "recurrent",
+        "continued"
+      ],
+      "right_procedure": [
+        "recurrent",
+        "original"
+      ],
+      "metric": "energy",
+      "left_score": 0.12538136496046173,
+      "right_score": 0.09660196143409276,
+      "difference_left_minus_right": 0.028779403526368996,
+      "ci95": [
+        0.007466729605655392,
+        0.05351755400099873
+      ],
+      "group_counts": {
+        "Equal": 5,
+        "Mixed": 8,
+        "Proportional": 8
+      },
+      "difference_by_mechanism": {
+        "Equal": -0.00454991489780854,
+        "Mixed": 0.0594191545518004,
+        "Proportional": 0.03146897092511512
+      },
+      "bank": "main",
+      "status": "Declared primary comparison"
+    },
+    {
+      "left_procedure": [
+        "feedforward",
+        "continued"
+      ],
+      "right_procedure": [
+        "feedforward",
+        "original"
+      ],
+      "metric": "energy",
+      "left_score": 0.1570840665125747,
+      "right_score": 0.16271098310116605,
+      "difference_left_minus_right": -0.005626916588591331,
+      "ci95": [
+        -0.01384710780435757,
+        0.0017188185692349452
+      ],
+      "group_counts": {
+        "Equal": 5,
+        "Mixed": 8,
+        "Proportional": 8
+      },
+      "difference_by_mechanism": {
+        "Equal": 1.2453465831308193e-05,
+        "Mixed": -0.0016671846141719413,
+        "Proportional": -0.015226018617433359
+      },
+      "bank": "main",
+      "status": "Declared secondary comparison or Monte Carlo stability check"
+    },
+    {
+      "left_procedure": [
+        "recurrent",
+        "continued"
+      ],
+      "right_procedure": [
+        "recurrent",
+        "original"
+      ],
+      "metric": "energy",
+      "left_score": 0.13247711470079923,
+      "right_score": 0.10303807472107868,
+      "difference_left_minus_right": 0.029439039979720555,
+      "ci95": [
+        0.0066332412213527805,
+        0.055703021311950256
+      ],
+      "group_counts": {
+        "Equal": 5,
+        "Mixed": 8,
+        "Proportional": 8
+      },
+      "difference_by_mechanism": {
+        "Equal": -0.006421652161721291,
+        "Mixed": 0.06143165080025001,
+        "Proportional": 0.03330712130063294
+      },
+      "bank": "second",
+      "status": "Declared secondary comparison or Monte Carlo stability check"
+    },
+    {
+      "left_procedure": [
+        "feedforward",
+        "continued"
+      ],
+      "right_procedure": [
+        "feedforward",
+        "original"
+      ],
+      "metric": "energy",
+      "left_score": 0.15103227578033837,
+      "right_score": 0.15955493131613213,
+      "difference_left_minus_right": -0.008522655535793771,
+      "ci95": [
+        -0.018857009829264804,
+        -0.00010958403483866936
+      ],
+      "group_counts": {
+        "Equal": 5,
+        "Mixed": 8,
+        "Proportional": 8
+      },
+      "difference_by_mechanism": {
+        "Equal": 8.062332871117714e-06,
+        "Mixed": -0.003301178328139003,
+        "Proportional": -0.022274850612113428
+      },
+      "bank": "second",
+      "status": "Declared secondary comparison or Monte Carlo stability check"
+    }
+  ],
+  "exploratory_comparisons": [
+    {
+      "left_procedure": [
+        "recurrent",
+        "continued"
+      ],
+      "right_procedure": [
+        "recurrent",
+        "original"
+      ],
+      "metric": "nll",
+      "left_score": 2.4470748990688964,
+      "right_score": 2.5315282114140616,
+      "difference_left_minus_right": -0.08445331234516497,
+      "ci95": [
+        -0.11001686556693617,
+        -0.05697102224205179
+      ],
+      "group_counts": {
+        "Equal": 5,
+        "Mixed": 8,
+        "Proportional": 8
+      },
+      "difference_by_mechanism": {
+        "Equal": -0.08586758665076526,
+        "Mixed": -0.06511254814310213,
+        "Proportional": -0.10237980224162752
+      },
+      "status": "Post-hoc exploratory diagnostic calculated during review",
+      "cohort": "The same 21 primary-eligible groups; whole-game individual NLL, not forecast-window NLL"
+    },
+    {
+      "left_procedure": [
+        "feedforward",
+        "continued"
+      ],
+      "right_procedure": [
+        "feedforward",
+        "original"
+      ],
+      "metric": "nll",
+      "left_score": 2.519012264141375,
+      "right_score": 2.5638540901617355,
+      "difference_left_minus_right": -0.04484182602036063,
+      "ci95": [
+        -0.07162324588389245,
+        -0.019743181159611194
+      ],
+      "group_counts": {
+        "Equal": 5,
+        "Mixed": 8,
+        "Proportional": 8
+      },
+      "difference_by_mechanism": {
+        "Equal": -0.05905934513794091,
+        "Mixed": -0.05567995393690148,
+        "Proportional": -0.019786178986239522
+      },
+      "status": "Post-hoc exploratory diagnostic calculated during review",
+      "cohort": "The same 21 primary-eligible groups; whole-game individual NLL, not forecast-window NLL"
+    },
+    {
+      "left_procedure": [
+        "recurrent",
+        "continued"
+      ],
+      "right_procedure": [
+        "feedforward",
+        "continued"
+      ],
+      "metric": "nll",
+      "left_score": 2.6189415285012068,
+      "right_score": 2.689046037935204,
+      "difference_left_minus_right": -0.07010450943399756,
+      "ci95": [
+        -0.1058420080253146,
+        -0.032879536111155544
+      ],
+      "group_counts": {
+        "Equal": 8,
+        "Mixed": 8,
+        "Proportional": 8,
+        "M1": 8
+      },
+      "difference_by_mechanism": {
+        "Equal": -0.10905886029931097,
+        "Mixed": -0.07927141658084916,
+        "Proportional": -0.09167343350689783,
+        "M1": -0.0004143273489322641
+      },
+      "status": "Post-hoc exploratory diagnostic calculated during review",
+      "cohort": "All 32 Experiment 1 test groups; whole-game individual NLL",
+      "interpretation_limit": "Architecture comparison does not isolate the contribution of memory"
+    }
+  ],
+  "review_document_numbers": "docs/task04-review.md rounded effects and intervals agree with the independently calculated values",
+  "input_sha256": {
+    "results/task04/forecast_scores.csv": "39bf5a860d0b0150144d6b7dc8dfc28cd4b481ea55fbf83b22b900f49b453258",
+    "results/task04/individual_groups.csv": "238c5ac7cfd22fd59ccf7dcfec87673161af62a52fda6439599589b6e53da7a2",
+    "results/task04/forecasts.sqlite3": "1d1b461ea89852648e5c5de665b5b2827bceb40695f13f72e4b7b1db2173ea34"
+  }
+}
