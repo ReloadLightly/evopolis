@@ -1,5 +1,11 @@
 # Community viewer
 
+The observatory uses an original **Final Fantasy V-inspired** town and interface: layered scenery, detailed cottages, matching resident sprites and portraits, silver-edged blue menus, and a party-style roster with actual allocation, returned and retained resources. The logical town remains 480×240 pixels and displays at 960×480 when space permits, shrinking proportionally on smaller screens. Resident cards and Canvas selection open the same evidence inspector.
+
+![Working community observatory with the refreshed town and resident roster.](assets/ffv-community-viewer.png)
+
+The [visual-refresh verification](visual-refresh-verification.json) records 21 existing browser interaction flows, nine responsive cases at 390, 768 and 1366 pixels wide, exact roster-value agreement and scaled Canvas selection. These checks concern presentation and interaction; they add no experimental results. The original task screenshots and verification records below remain historical artifacts.
+
 Run from the Linux checkout with `uv` installed:
 
 ```bash

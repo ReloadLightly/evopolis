@@ -27,6 +27,8 @@ Raphael Koster, Miruna Pîslar, Andrea Tacchetti, Jan Balaguer, Leqi Liu, Romual
 
 `assets/evopolis-cover.png` is AI-generated conceptual artwork created with the built-in image-generation tool and restyled as an original 16-bit pixel-art town at the user's request. The exact generation/edit prompt is preserved in `assets/cover-prompt.txt`. It is not a screenshot of working software, a representation of actual participants, or an empirical result.
 
+The current cover, `assets/evopolis-cover-ffv.png`, is a new AI-generated title-screen illustration in the user's requested Final Fantasy V-inspired direction. It was created with the built-in image-generation tool using the user's supplied screenshot as a style reference, with original village scenery and four residents. The exact prompt is preserved in `assets/cover-ffv-prompt.txt`. It is concept art, not a working-app screenshot or a depiction of experimental outcomes. No game sprites, characters, or screenshot pixels are used as runtime assets. The earlier cover remains available above.
+
 `assets/research-loop.svg` and `assets/commons-cycle.svg` are editable vector diagrams of the proposed research architecture and resource mechanism. Their arrows represent dependencies and resource flows, not measured effects.
 
 All current graphics follow the NES/SNES-inspired direction in [VISUAL_STYLE.md](VISUAL_STYLE.md). The matching CSS in `assets/evopolis-theme.css` is a reusable starting point for the future local interface. The empirical figure's retro styling preserves its recorded points, aggregation, and uncertainty intervals.
@@ -36,6 +38,8 @@ Source links and upstream licenses do not imply affiliation with or endorsement 
 ## Working community viewer
 
 `evopolis/static/town.js` draws original pixel residents and town scenery directly on Canvas. It uses no copied game sprites or external runtime assets. A–D mark recorded group positions and do not attribute demographics or private beliefs to participants. Resource flowers and motion are schematic presentation, not empirical magnitudes or added environmental rules.
+
+The Final Fantasy V-inspired refresh adds original clustered foliage, mountain scenery, detailed cottages and resident sprite maps shared by the town and roster portraits. `assets/ffv-community-viewer.png`, `assets/ffv-trained-community-viewer.png` and `assets/ffv-forecast-community-viewer.png` are full-page screenshots of the actual local app captured at 1440 pixels wide. They show the default recorded community at round 1, default trained community at round 1, and default forecast comparison at round 8, respectively. The [visual verification](visual-refresh-verification.json) identifies their restored URLs and interaction checks. The simulation rules, archives, checkpoints and empirical figure geometry were not changed by this presentation update.
 
 `assets/community-viewer.png` is a real Chromium screenshot of the working local app at 1366×900: human Experiment 1, Equal allocation, launch `67430636`, episode `0`, playback round 1. Its underlying records have the same pinned CSV provenance and CC BY 4.0 attribution as the Task 01 figure. The [viewer verification](../results/task02/verification.json) records the screenshot checksum, cache provenance and identified example. No generated artwork is presented as a software screenshot.
 

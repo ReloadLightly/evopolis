@@ -1,4 +1,4 @@
-import {drawTown, hitResident} from './town.js';
+import {drawTown, hitResident, drawResidentPortrait} from './town.js';
 
 const $ = (selector, parent = document) => parent.querySelector(selector);
 const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector)];
@@ -121,7 +121,8 @@ function mountPanes() {
       pane.fractions[i]=Number(input.value);loadEpisodes(true);
     }));
     $('.reset-sandbox',element).addEventListener('click',()=>{pane.fractions=[...defaults];pane.rule='equal';mountPanes();loadEpisodes(true);});
-    $('.resident-buttons',element).innerHTML=letters.map((letter,i)=>`<button data-resident="${i}" aria-label="Inspect resident ${letter}">Resident ${letter}</button>`).join('');
+    $('.resident-buttons',element).innerHTML=letters.map((letter,i)=>`<button data-resident="${i}" aria-label="Inspect resident ${letter}"><span class="resident-top"><canvas class="resident-portrait" width="24" height="32" aria-hidden="true"></canvas><span class="resident-label">Resident ${letter}<span class="resident-slot">Group position ${i}</span></span></span><span class="resident-resources"><span>Allocation <strong class="roster-offer">—</strong></span><span>Returned <strong class="roster-return">—</strong></span><span>Retained <strong class="roster-retain">—</strong></span></span></button>`).join('');
+    $$('.resident-portrait',element).forEach((canvas,i)=>drawResidentPortrait(canvas,i));
     $$('.resident-buttons button',element).forEach(button=>button.addEventListener('click',()=>{pane.selected=Number(button.dataset.resident);renderPane(pane);writeURL();}));
     $('.town',element).addEventListener('click',event=>{const i=hitResident(event.target,event);if(i!=null&&i>=0){pane.selected=i;renderPane(pane);writeURL();}});
     container.append(element);
@@ -207,7 +208,12 @@ function renderPane(pane) {
   $('.total-surplus',el).textContent=fmt(r.group_cumulative_surplus ?? r.cumulative_surplus.reduce((a,b)=>a+b,0));
   $('.resident-name',el).textContent=`Resident ${letters[i]}`;
   $('.resident-position',el).textContent=`Position ${i} in this group · values in resource units`;
-  $$('.resident-buttons button',el).forEach((b,j)=>b.setAttribute('aria-pressed',j===i?'true':'false'));
+  $$('.resident-buttons button',el).forEach((button,j)=>{
+    button.setAttribute('aria-pressed',j===i?'true':'false');
+    for(const [selector,value] of [['.roster-offer',r.offers[j]],['.roster-return',r.contributions[j]],['.roster-retain',r.surplus[j]]]){
+      const field=$(selector,button);field.textContent=fmt(value);field.title=exact(value);
+    }
+  });
   $('.resident-values',el).innerHTML=[['Allocation',r.offers[i]],['Returned',r.contributions[i]],['Retained this round',r.surplus[i]],['Cumulative retained',r.cumulative_surplus[i]]].map(([label,value])=>`<div><dt>${label}</dt><dd title="${esc(exact(value))}">${fmt(value)}</dd></div>`).join('');
   const opportunity=$('.opportunity',el);opportunity.classList.toggle('low',r.offers[i]<1);
   opportunity.textContent=r.padded?`Post-termination padding. No decision was sampled; the game ended after round ${episode.actual_rounds}.`:r.offers[i]<1?'Offer below 1 unit in this round. This alone does not establish permanent exclusion.':'Offer at least 1 unit in this round.';

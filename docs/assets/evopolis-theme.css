@@ -1,8 +1,11 @@
-/* EvoPolis: reusable 16-bit interface theme. Scope application markup to .ep-root. */
+/* EvoPolis: original 16-bit RPG windows. Scope application markup to .ep-root. */
 .ep-root {
   --ep-midnight: #172038;
   --ep-indigo: #253a5e;
   --ep-slate: #3b5278;
+  --ep-silver: #a8b7d1;
+  --ep-window: linear-gradient(180deg, #263f83 0%, #142c65 55%, #10214f 100%);
+  --ep-frame-shadow: inset 0 0 0 1px #07112d, inset 0 0 0 2px #647bac, 0 0 0 1px #040919, 3px 3px 0 #050b20;
   --ep-parchment: #fff1d2;
   --ep-muted: #b6c6df;
   --ep-mint: #73e0b3;
@@ -13,6 +16,7 @@
   --ep-mixed: var(--ep-amber);
   --ep-proportional: var(--ep-cyan);
   --ep-recorded-rl: var(--ep-mint);
+  --ep-font-title: Georgia, "Times New Roman", serif;
   --ep-font-text: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --ep-font-display: ui-monospace, "DejaVu Sans Mono", Consolas, "Liberation Mono", monospace;
   color-scheme: dark;
@@ -25,10 +29,10 @@
 
 .ep-root, .ep-root *, .ep-root *::before, .ep-root *::after { box-sizing: border-box; }
 .ep-root .ep-panel {
-  background: var(--ep-indigo);
-  border: 2px solid var(--ep-parchment);
+  background: var(--ep-window);
+  border: 2px solid var(--ep-silver);
   border-radius: 0;
-  box-shadow: inset 0 0 0 3px var(--ep-slate), 4px 4px 0 var(--ep-midnight);
+  box-shadow: var(--ep-frame-shadow);
   padding: 20px;
 }
 .ep-root .ep-title {

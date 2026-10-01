@@ -10,7 +10,7 @@
 <header class="masthead">
   <a class="brand" href="/" aria-label="EvoPolis home"><span class="brand-flower" aria-hidden="true">✣</span><span>EVOPOLIS<small>THE COMMUNITY OBSERVATORY</small></span></a>
   <div class="header-note">Four residents. One commons.<br><span>Watch the choices. Inspect the evidence.</span></div>
-  <span class="local-tag">LOCAL LAB · 04</span>
+  <span class="local-tag">HUMAN BEHAVIOR<br>COMMUNITY ARCHIVE</span>
 </header>
 <main>
   <div class="mode-row">
@@ -69,14 +69,15 @@
       <div class="world-column">
         <div class="phase-strip" aria-label="Round phases"><span data-phase="0">1 ALLOCATE</span><span data-phase="1">2 RETURN / RETAIN</span><span data-phase="2">3 REPLENISH</span></div>
         <div class="town-wrap"><canvas class="town" width="480" height="240" aria-label="Pixel town with four selectable residents"></canvas></div>
+        <div class="roster-heading"><h3>RESIDENTS · THIS ROUND</h3><span>Select a resident to inspect</span></div>
         <div class="resident-buttons" role="group" aria-label="Inspect a resident"></div>
         <div class="scene-caption"><span class="cyan">◆ Allocate</span><span class="mint">◆ Return</span><span class="amber">◆ Retain</span><span>Symbolic tokens · rounded labels · exact values in inspection</span></div>
         <div class="stats"><div><span>Pool before</span><strong class="pool-before"></strong></div><div><span class="after-label">Recorded pool after</span><strong class="pool-after"></strong></div><div><span>Offers ≥ 1 unit</span><strong class="active-count"></strong></div><div><span>Total retained so far</span><strong class="total-surplus"></strong></div></div>
         <div class="trajectory-header"><h3>COMMUNITY TRAJECTORY</h3><span><i class="line cyan-line"></i> Pool before <i class="line amber-line"></i> Cumulative retained</span></div>
-        <svg class="timeline" viewBox="0 0 560 130" preserveAspectRatio="none" role="img" aria-label="Pool and cumulative retained surplus with selected round cursor"></svg>
+        <svg class="timeline" viewBox="0 0 560 130" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Pool and cumulative retained surplus with selected round cursor"></svg>
         <div class="forecast-distribution" hidden>
           <div class="trajectory-header"><h3>POOL AFTER EACH ROUND</h3><span><i class="line cyan-line"></i> Branch <i class="line coral-line"></i> Observed · shaded 80% forecast band</span></div>
-          <svg class="forecast-timeline" viewBox="0 0 560 120" role="img" aria-label="Forecast pool after each round with observed outcome and 80 percent predictive band"></svg>
+          <svg class="forecast-timeline" viewBox="0 0 560 120" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Forecast pool after each round with observed outcome and 80 percent predictive band"></svg>
           <div class="forecast-band-values"></div>
         </div>
         <p class="end-state"></p>
@@ -91,7 +92,7 @@
       </aside>
     </div>
     <details class="exact-detail"><summary>Inspect exact round values &amp; accounting</summary><div class="exact-scroll"><table><thead><tr><th>Resident</th><th>Allocation</th><th>Return</th><th>Round surplus</th><th>Cumulative surplus</th></tr></thead><tbody class="exact-values"></tbody></table></div><p class="exact-pool"></p><p class="accounting"></p><p class="after-source"></p><p class="gini-note"></p></details>
-    <details class="outcome-detail"><summary>Choose a community by completed-game outcomes</summary><p class="selection-rule"></p><div class="scatter-layout"><svg class="scatter" viewBox="0 0 540 190" role="group" aria-label="Select a game by surplus and Gini"></svg><p>Each mark is one complete game in the selected cohort and mechanism. Select a mark or use the episode menu. This view includes future rounds; it is a research tool.</p></div></details>
+    <details class="outcome-detail"><summary>Choose a community by completed-game outcomes</summary><p class="selection-rule"></p><div class="scatter-layout"><svg class="scatter" viewBox="0 0 540 190" preserveAspectRatio="xMidYMid meet" role="group" aria-label="Select a game by surplus and Gini"></svg><p>Each mark is one complete game in the selected cohort and mechanism. Select a mark or use the episode menu. This view includes future rounds; it is a research tool.</p></div></details>
   </section>
 </template>
 </body>

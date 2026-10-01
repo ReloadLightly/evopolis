@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/evopolis-cover.png" alt="EvoPolis — Evolving social worlds. Original 16-bit pixel-art town with residents, tile paths, and a shared commons, inspired by NES and SNES-era games." width="100%">
+  <img src="docs/assets/evopolis-cover-ffv.png" alt="EvoPolis — The Community Observatory. Original Final Fantasy V-inspired concept art: four residents, a shared garden, timber cottages, and a lush mountain valley." width="100%">
 </p>
 
 <p align="center"><strong>Human behavior · Learned world models · Evolutionary computation</strong><br><sub>A living social laboratory with a 16-bit soul.</sub></p>
@@ -51,7 +51,7 @@ $$
 
 The initial protocol uses four inhabitants, a pool capacity and initial stock of 200, and a contribution multiplier of 1.4. Experiments 1–3 run for 40 rounds, with the horizon undisclosed to participants. Human contributions advance in integer units, while allocations can be fractional. The [implemented protocol](docs/protocol.md) records timing, observable information, termination, and unresolved numerical conventions. Experiment 4 instead repeats three games within each group with a different continuation rule.
 
-The working interface makes this mechanism visible as an original **16-bit pixel-art town**: four resident sprites around a shared commons, discrete resource transfers, dialogue-style history panels, and synchronized comparisons between institutions. Recorded human decisions, recorded upstream model outcomes, and new scripted simulations have distinct source labels. Comparing communities does not change the original four-player group size.
+The working interface makes this mechanism visible as an original **Final Fantasy V-inspired pixel-art town**: lush scenery, detailed cottages, four resident sprites around a shared commons, and silver-edged blue menus. A party-style roster displays each resident's actual allocation, return, and retained resources; selecting a resident opens their history and available predictions. Recorded human decisions, upstream model outcomes, trained simulations, and forecasts have distinct source labels. Comparing communities does not change the original four-player group size.
 
 ### A 16-bit social laboratory
 
@@ -69,7 +69,7 @@ The [visual style guide](docs/VISUAL_STYLE.md) and [reusable interface theme](do
 
 ### Watch a recorded community
 
-![Actual EvoPolis application at a laptop viewport: the default human Equal community, its four residents, recorded pool and surplus, resident inspection, and synchronized trajectory cursor.](docs/assets/community-viewer.png)
+![Actual EvoPolis application: the Final Fantasy V-inspired town, four-resident roster, recorded pool and surplus, resident inspection, and synchronized trajectory cursor.](docs/assets/ffv-community-viewer.png)
 
 This is a **real screenshot of the running application**, showing human Experiment 1, Equal allocation, launch `67430636`, episode `0`, at playback round 1. The default is the episode nearest its condition's median mean surplus, with ties resolved by the full episode key.
 
@@ -126,7 +126,7 @@ Calibration remains imperfect: the GRU predicts maximum-feasible returns **19.43
 
 ### Watch learned choices become a community
 
-![Real running EvoPolis viewer showing trained GRU inhabitants, checkpoint and rollout identity, sampled choices, and saved before-choice predictions.](docs/assets/trained-community-viewer.png)
+![Real running EvoPolis viewer showing trained GRU inhabitants, checkpoint and rollout identity, sampled choices, and saved before-choice predictions.](docs/assets/ffv-trained-community-viewer.png)
 
 Launch `bash scripts/viewer.sh --port 8765`, then open **http://127.0.0.1:8765/?mode=trained**. Select **New trained EvoPolis agents** to choose any family, checkpoint, allocation rule and rollout seed. Playback shows saved pre-choice expected returns and endpoint probabilities beside actual sampled actions. Comparison panes use common rounds and shared numerical scales; post-termination padding is marked explicitly. Recorded humans, upstream models and fixed scripts remain distinct sources.
 
@@ -155,7 +155,7 @@ The evidence supports investigating **misspecified collective responses under ob
 
 ### Inspect a forecast from human history
 
-![Real EvoPolis forecast viewer comparing an observed human continuation with a generated branch and its ensemble band.](docs/assets/forecast-community-viewer.png)
+![Real EvoPolis forecast viewer comparing an observed human continuation with a generated branch and its ensemble band.](docs/assets/ffv-forecast-community-viewer.png)
 
 Launch `bash scripts/viewer.sh --port 8765`, then open **http://127.0.0.1:8765/?mode=forecast**. Select any of the 24 groups, model/budget, training seed and origin. Playback distinguishes the observed prefix, generated choices, actual future and post-termination padding; resident predictions and pointwise 80% forecast bands retain real values on shared axes.
 
