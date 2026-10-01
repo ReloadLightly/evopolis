@@ -134,6 +134,8 @@ Every best-validation checkpoint generates 64 games under each of Equal, Proport
 
 The [generated outcome distributions](docs/assets/trained-outcomes.png) and [pool/participation trajectories](docs/assets/trained-trajectories.png) expose a substantial gap. GRU mean surplus under Equal/Mixed/Proportional is **2.013/2.178/3.563**, compared with **1.788/5.594/6.756** in the corresponding held-out human groups. All generated summaries use the same 40-round denominator, including zero padding. Human records retain their approximately 0.01 residual pool; the reconstructed simulation does not add that floor. Interpolating is exploratory transfer with no Experiment 1 human counterpart. Predictive learning has occurred; reliable counterfactual social simulation has not been established.
 
+[Task 04 — Collective forecast fidelity](docs/tasks/04-collective-forecast-fidelity.md) asks whether additional optimization improves forecasts of collective outcomes. It will compare the frozen Task 03 models with neural fits continued to 480 epochs, then forecast resource and surplus distributions from observed human histories at several horizons. A declared sensitivity check separates first-allocation integer-boundary effects from behavioral predictions. Experiments 2–3 remain reserved for later transfer research. The [Task 03 review](docs/task03-review.md) explains the evidence, unresolved causes and potential paper contribution.
+
 ## What learns—and what evolves
 
 The first learned world model combines **known resource accounting** with **learned, probabilistic human responses**. The accounting determines what is materially possible; the behavioral model estimates how inhabitants respond to their experience and the institution's allocations.
@@ -167,7 +169,7 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | **01 · Ground** | Reconstruct the published task and reproduce a substantive result from the released human data. | Empirical figure, numerical comparison, and executable resource dynamics, with numerical ambiguities documented. | **Complete** |
 | **02 · Observe** | Visualize recorded communities and baseline simulations. | Verified local pixel-art replay, resident inspection, comparisons, and scripted sandbox. | **Complete** |
 | **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Twelve trained checkpoints, measured human predictions, 3,072 generated games and verified trained-agent playback. | **Complete** |
-| **04 · Imagine** | Validate multi-round social trajectories and institutional generalization. | Explain collective prediction failures; assess trajectory calibration, uncertainty and declared transfer evidence. | **Next** |
+| **04 · Imagine** | Assess multi-round forecasts across allocation rules and optimization budgets. | Conditional forecasts, uncertainty, numerical sensitivity and measured failure boundaries; new-cohort transfer remains a later test. | **Next** |
 | **05 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
 | **06 · Govern** | Evolve allocation procedures across frozen behavioral models. | Trade-offs among surplus, inclusion, inequality, and resource persistence. | Planned |
 | **07 · Expand** | Introduce one mechanism such as communication, community switching, or resource shocks. | A controlled study of changed assumptions. | Planned |
