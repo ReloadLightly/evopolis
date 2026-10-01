@@ -1,0 +1,24 @@
+{
+  "groups": 128,
+  "rounds": 5120,
+  "clipped_rounds": 13,
+  "undefined_rounds": 128,
+  "by_rule": {
+    "Equal": {
+      "rounds": 1280,
+      "clipped": 0
+    },
+    "Mixed": {
+      "rounds": 1280,
+      "clipped": 0
+    },
+    "Proportional": {
+      "rounds": 1280,
+      "clipped": 0
+    },
+    "M1": {
+      "rounds": 1280,
+      "clipped": 13
+    }
+  }
+}

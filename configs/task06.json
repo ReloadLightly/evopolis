@@ -1,0 +1,278 @@
+{
+  "experiment": "Task 06 \u2014 Institutional validity",
+  "protocol_file": "docs/tasks/06-institutional-validity.md",
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "rollout_namespace": 20261102,
+  "calibration_namespace": 20261103,
+  "bootstrap_seed": 20261101,
+  "bootstrap_replicates": 2000,
+  "threads": 1,
+  "num_workers": 0,
+  "rss_target_mib": 600,
+  "phase_limit_seconds": 28800,
+  "rules": [
+    "Equal",
+    "Mixed",
+    "Proportional",
+    "Interpolating"
+  ],
+  "development_rules": [
+    "Equal",
+    "Mixed",
+    "Proportional"
+  ],
+  "reference_families": [
+    "T03-constant",
+    "T03-linear",
+    "T03-feedforward",
+    "T03-GRU",
+    "T04-feedforward",
+    "T04-GRU",
+    "P0",
+    "P1",
+    "H0",
+    "H1"
+  ],
+  "fa_families": [
+    "FA-GRU",
+    "FA-P0",
+    "FA-H0"
+  ],
+  "calibration_families": [
+    "T04-GRU",
+    "P0",
+    "H0",
+    "FA-GRU",
+    "FA-P0",
+    "FA-H0"
+  ],
+  "recorded": {
+    "BC1": [
+      "Equal",
+      "Mixed",
+      "Proportional",
+      "Interpolating",
+      "M1"
+    ],
+    "BC2_descriptive": [
+      "Interpolating",
+      "M2"
+    ]
+  },
+  "training": {
+    "epochs": 480,
+    "initialization": "fresh per fit",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "clip_grad_norm": 1.0,
+    "effective_batch_groups": 8,
+    "gru_microbatch_groups": 2,
+    "conditional_microbatch_groups": 1,
+    "gru_dtype": "float32 with float64 emission",
+    "conditional_dtype": "float64",
+    "selection": "earliest minimum validation nonforced group-balanced NLL among epochs1..480",
+    "training_groups": 96,
+    "validation_groups": 32,
+    "include_M1_for_likelihood": true,
+    "fa_best": "lowest mean validation NLL across three training seeds"
+  },
+  "signal": {
+    "definition": "sum((previous contribution shares-.25)*(current offer shares-.25))/sum((previous contribution shares-.25)^2)",
+    "variance_tolerance": 1e-09,
+    "initial": 0.5,
+    "initial_undefined": 1,
+    "clip": [
+      -1,
+      2
+    ],
+    "edge": "carry last defined signal and undefined flag on zero previous actions, zero offers, or variance below tolerance; no current or future action"
+  },
+  "quadrature_nodes": 41,
+  "quadrature_check_nodes": 81,
+  "quadrature_tolerances": {
+    "group_nll": 0.001,
+    "resident_nll": 0.001,
+    "prediction_fraction": 0.001,
+    "tail_probability": 0.001,
+    "posterior_normalization": 1e-12
+  },
+  "rollout": {
+    "games_per_checkpoint_rule": 512,
+    "pooled_games_per_family_rule": 1536,
+    "full_trajectories_per_cell": 4,
+    "rounds": 40,
+    "origin": 0,
+    "human_prefix": false,
+    "persistent": "independent Normal resident effects drawn once at start; fixed throughout game",
+    "sampling": "indexed independent resident/action inverse CDF uniforms; separate latent namespace",
+    "scheduler": "WorldState exact-zero or40 rounds; zero padding; legal integers0..floor(e)",
+    "seed_index": "SeedSequence([namespace,family_index,training_seed,rule_index,game]); PCG64 per resident and purpose; calibration and sensitivity use common random numbers within checkpoint/rule"
+  },
+  "outcomes": [
+    "surplus",
+    "gini",
+    "survival",
+    "pool20",
+    "pool40",
+    "first_depletion_after_round"
+  ],
+  "surplus": "mean four player means over40 rounds; recorded residual floors preserved",
+  "gini": "four player mean surplus; undefined if total zero",
+  "survival": "pool after40 >1",
+  "first_depletion": "first completed round with pool<1, 1-based; null if never",
+  "energy": {
+    "vector": [
+      "surplus/10",
+      "pool20/200",
+      "pool40/200"
+    ],
+    "estimator": "2 mean cross Euclidean distance minus off-diagonal within-simulator and within-human means; unbiased U estimator, no clipping"
+  },
+  "benchmark_populations": [
+    "all40 per rule including opened test groups",
+    "train+validation32 per rule"
+  ],
+  "calibration": {
+    "games_per_rule": 256,
+    "training_only": true,
+    "tau0_grid": [
+      -1.2,
+      -0.9,
+      -0.6,
+      -0.3,
+      0.0,
+      0.3,
+      0.6,
+      0.9,
+      1.2
+    ],
+    "tau1_grid": [
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5
+    ],
+    "refinement_shape": [
+      5,
+      5
+    ],
+    "refinement_tau0_offsets": [
+      -0.3,
+      -0.15,
+      0,
+      0.15,
+      0.3
+    ],
+    "refinement_tau1_offsets": [
+      -0.5,
+      -0.25,
+      0,
+      0.25,
+      0.5
+    ],
+    "tie_break": "first minimum in ascending tau0,tau1 order; refined points may lie outside coarse grid",
+    "objective": "sum energy distance on training groups overEqual,Mixed,Proportional",
+    "tilt": "P(c)*exp((tau0+tau1*s)*c/e), legal support then normalize",
+    "report_validation_nll_cost": true
+  },
+  "sensitivity": {
+    "taus": [
+      -0.3,
+      0,
+      0.3,
+      0.6,
+      0.9
+    ],
+    "games_per_point_rule_checkpoint": 256,
+    "rules": [
+      "Equal",
+      "Mixed",
+      "Proportional"
+    ],
+    "families": "all references, FA and CL",
+    "nll_population": "validation",
+    "denominator": "actual e",
+    "threshold": 0.7142857142857143
+  },
+  "attenuation": {
+    "population": "validation nonforced choices; mean within group, within rule; seed mean",
+    "index": "(predicted Proportional-predicted Equal)/(observed Proportional-observed Equal)"
+  },
+  "D1": {
+    "metric": "mean overEqual,Mixed,Proportional absolute simulated minus human mean surplus; survival analogue secondary",
+    "uncalibrated_groups": "Exp1 train+validation32 per rule",
+    "calibrated_groups": "Exp1 validation8 per rule",
+    "bc1_matched_population": true,
+    "no_headroom": "at least one FA or CL candidate matches strict human ordering for both mean surplus and survival AND IE<=IE(BC1) on same groups",
+    "otherwise": "headroom",
+    "intervals": "2000 stratified human-group bootstrap; fixed simulators;95 percentile"
+  },
+  "freeze": {
+    "before": "any numerical parsing of Exp2 rows",
+    "required": [
+      "all4-rule rollout cells",
+      "checkpoint hashes",
+      "calibrated tilts",
+      "seed tables",
+      "forecast summary hashes",
+      "D1",
+      "primary comparisons",
+      "analysis code hashes"
+    ],
+    "commit_message": "Freeze Task 06 forecasts before opening Experiment 2",
+    "push_required": true
+  },
+  "transfer": {
+    "cohort": "Exp2 only, typed full keys;40 Proportional40 Interpolating40 M1",
+    "primary": [
+      "BC1",
+      "FA-best",
+      "CL(FA-best)"
+    ],
+    "named_secondary": [
+      "T03-GRU",
+      "T03-constant"
+    ],
+    "E1": "absolute error in predicted minus observed within-Exp2 Interpolating-minus-Proportional surplus difference",
+    "E2": "absolute error in Interpolating mean surplus",
+    "comparison": "paired absolute-error differences against BC1 using same rule-stratified human-group resamples;95 percentile CI excludes0=>better below0,worse above0;otherwise not distinguishable",
+    "mc_error": "separate per-rule and effect Monte Carlo SE; per-seed results",
+    "secondary": [
+      "survival E1/E2",
+      "Proportional level error",
+      "per-rule energy",
+      "pool20 errors",
+      "per-seed",
+      "teacher-forced nonforced NLL all120 groups each checkpoint;M1 separately",
+      "Exp1 vsExp2 cohort shift underProportional andM1"
+    ],
+    "D2": "primary simulators classifications relativeBC1 on E1 andE2",
+    "boundaries": "Exp3 closed;Exp4 out of scope;M1 andM2 never executable;BC2 descriptive includesExp2"
+  },
+  "recommendation": {
+    "no_headroom_and_not_worse": "simple ingredient contribution, no evolutionary search, paper outline",
+    "headroom": "specifyTask07 LLM-guided behavioral-program search, matched-budget random control, Exp1 fidelity, frozen Exp3 test;do not run",
+    "no_headroom_and_worse": "transfer failure;investigate instruction/cohort shift, not evolution"
+  },
+  "verification": [
+    "signal recovery/BC1 slopes/no-leakage",
+    "vectorized vs per-game actions and pools identical",
+    "Task03 GRU distributions agree within MC error",
+    "tilt normalization",
+    "energy vs brute force",
+    "bootstrap pairing",
+    "fresh-process regeneration each family",
+    "protected Task01-05 hashes unchanged",
+    "full existing suite"
+  ],
+  "resources": "one JSON file runtime/peakRSS per phase; actual work throughput projection; stop if any phase>8h; resumable atomic states; no design reduction"
+}

@@ -1,0 +1,1087 @@
+{
+  "contract": {
+    "checkpoint": {
+      "base_family": "H1",
+      "epoch": 479,
+      "family": "H1",
+      "path": "results/task05/weights/H1_29/best.pt",
+      "seed": 29,
+      "sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "tilt": [
+        0.0,
+        0.0
+      ]
+    },
+    "code_sha256": {
+      "evopolis/behavior_models.py": "4dc94c82b7fed92dfbc2231709e6ddc7e611b046bc01b8573e7b29c78d542917",
+      "evopolis/conditional_models.py": "cf8fa36e13347c0485ecd085876b6c79123886f7763fc29cae9c21199f3e70e0",
+      "evopolis/institutional_models.py": "9e44a43aa1711f71e6d64fbdad13a0b8a479658673d9364e337f924b7fd77005",
+      "evopolis/institutional_predict.py": "84ef2d6f221612f16605210eb87ab49aa778ddfe7a9d452b8fd60374f10d4b83"
+    },
+    "group_keys": [
+      [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      [
+        "Equal Baseline Exp 1",
+        "27555027",
+        "0"
+      ],
+      [
+        "Equal Baseline Exp 1",
+        "30383025",
+        "0"
+      ],
+      [
+        "Equal Baseline Exp 1",
+        "31981132",
+        "0"
+      ],
+      [
+        "Equal Baseline Exp 1",
+        "35775718",
+        "0"
+      ],
+      [
+        "Equal Baseline Exp 1",
+        "37049926",
+        "0"
+      ],
+      [
+        "Equal Baseline Exp 1",
+        "43487752",
+        "0"
+      ],
+      [
+        "Equal Baseline Exp 1",
+        "67430636",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "49685025",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "58475822",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "70166162",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "80421478",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "83986039",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "92017990",
+        "0"
+      ],
+      [
+        "Mixed Baseline Exp 1",
+        "94451609",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "32679619",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "58710652",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "61948140",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "69390994",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "70560629",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "72433781",
+        "0"
+      ],
+      [
+        "Proportional Baseline Exp 1",
+        "83701533",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "48812052",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "50251280",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "53180780",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "63845553",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "66350717",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "81387887",
+        "0"
+      ],
+      [
+        "RL Agent (M1) Exp 1",
+        "95891360",
+        "0"
+      ]
+    ],
+    "nodes": 41,
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "split": "validation"
+  },
+  "groups": [
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 7,
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 1.7270825139988804,
+      "nodes": 41,
+      "nonforced_choices": 44,
+      "observed_fraction": 0.49163554527815806,
+      "observed_zero": 0.06818181818181818,
+      "p_zero": 0.23406912568114108,
+      "predicted_fraction": 0.4497543410963117,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 8,
+      "key": [
+        "Equal Baseline Exp 1",
+        "27555027",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 2.507659730592373,
+      "nodes": 41,
+      "nonforced_choices": 20,
+      "observed_fraction": 0.2941930820376356,
+      "observed_zero": 0.25,
+      "p_zero": 0.20820517676956637,
+      "predicted_fraction": 0.37820227129126194,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 9,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30383025",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 2.276831084782993,
+      "nodes": 41,
+      "nonforced_choices": 84,
+      "observed_fraction": 0.6002678457645331,
+      "observed_zero": 0.03571428571428571,
+      "p_zero": 0.08437450730758166,
+      "predicted_fraction": 0.5773677302944763,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 12,
+      "key": [
+        "Equal Baseline Exp 1",
+        "31981132",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 2.4310892024620863,
+      "nodes": 41,
+      "nonforced_choices": 44,
+      "observed_fraction": 0.5005772172055418,
+      "observed_zero": 0.06818181818181818,
+      "p_zero": 0.1788439916675788,
+      "predicted_fraction": 0.48348029709745133,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 14,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35775718",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 2.6498014981492717,
+      "nodes": 41,
+      "nonforced_choices": 160,
+      "observed_fraction": 0.7064049462896447,
+      "observed_zero": 0.03125,
+      "p_zero": 0.0368161062260676,
+      "predicted_fraction": 0.6639503916193421,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 15,
+      "key": [
+        "Equal Baseline Exp 1",
+        "37049926",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 2.2838087993696132,
+      "nodes": 41,
+      "nonforced_choices": 24,
+      "observed_fraction": 0.3669689639084098,
+      "observed_zero": 0.16666666666666666,
+      "p_zero": 0.25893329454273145,
+      "predicted_fraction": 0.36968532041556273,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 22,
+      "key": [
+        "Equal Baseline Exp 1",
+        "43487752",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 1.6015934924965194,
+      "nodes": 41,
+      "nonforced_choices": 40,
+      "observed_fraction": 0.48553133897761197,
+      "observed_zero": 0.175,
+      "p_zero": 0.27106690697031277,
+      "predicted_fraction": 0.45826548630891917,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 30,
+      "key": [
+        "Equal Baseline Exp 1",
+        "67430636",
+        "0"
+      ],
+      "mechanism": "Equal",
+      "nll": 1.6542649905891862,
+      "nodes": 41,
+      "nonforced_choices": 44,
+      "observed_fraction": 0.5033269808911119,
+      "observed_zero": 0.1590909090909091,
+      "p_zero": 0.23366615779410943,
+      "predicted_fraction": 0.46398737483585023,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 56,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 2.5017626857049304,
+      "nodes": 41,
+      "nonforced_choices": 160,
+      "observed_fraction": 0.6493106478951983,
+      "observed_zero": 0.04375,
+      "p_zero": 0.07730664994996621,
+      "predicted_fraction": 0.6199944611755663,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 59,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "49685025",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 1.7543777352979895,
+      "nodes": 41,
+      "nonforced_choices": 39,
+      "observed_fraction": 0.4428962675679047,
+      "observed_zero": 0.1794871794871795,
+      "p_zero": 0.25214095870861986,
+      "predicted_fraction": 0.43356223554118356,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 63,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "58475822",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 2.1703373237638917,
+      "nodes": 41,
+      "nonforced_choices": 54,
+      "observed_fraction": 0.45434833694974475,
+      "observed_zero": 0.14814814814814814,
+      "p_zero": 0.2012316678629688,
+      "predicted_fraction": 0.47802471259519125,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 67,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "70166162",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 3.050067790618318,
+      "nodes": 41,
+      "nonforced_choices": 160,
+      "observed_fraction": 0.7653524402639865,
+      "observed_zero": 0.03125,
+      "p_zero": 0.013731316277819572,
+      "predicted_fraction": 0.720045874619115,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 71,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "80421478",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 2.3753485336392126,
+      "nodes": 41,
+      "nonforced_choices": 60,
+      "observed_fraction": 0.574021424616443,
+      "observed_zero": 0.13333333333333333,
+      "p_zero": 0.1400554641254532,
+      "predicted_fraction": 0.5488288809520075,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 72,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "83986039",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 2.513998174449589,
+      "nodes": 41,
+      "nonforced_choices": 97,
+      "observed_fraction": 0.5559976830842147,
+      "observed_zero": 0.08247422680412371,
+      "p_zero": 0.11277717544753867,
+      "predicted_fraction": 0.5651461434828484,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 75,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "92017990",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 2.9038773009262764,
+      "nodes": 41,
+      "nonforced_choices": 160,
+      "observed_fraction": 0.6819046181565399,
+      "observed_zero": 0.0125,
+      "p_zero": 0.030635276581767817,
+      "predicted_fraction": 0.6464845420150598,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 76,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "94451609",
+        "0"
+      ],
+      "mechanism": "Mixed",
+      "nll": 2.775573498595281,
+      "nodes": 41,
+      "nonforced_choices": 129,
+      "observed_fraction": 0.6362768075059795,
+      "observed_zero": 0.031007751937984496,
+      "p_zero": 0.05593458088657266,
+      "predicted_fraction": 0.6333292501524136,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 86,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.0377869416229664,
+      "nodes": 41,
+      "nonforced_choices": 17,
+      "observed_fraction": 0.21753506211753637,
+      "observed_zero": 0.23529411764705882,
+      "p_zero": 0.3244428322251397,
+      "predicted_fraction": 0.3220770513500993,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 88,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "32679619",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.964627800791991,
+      "nodes": 41,
+      "nonforced_choices": 105,
+      "observed_fraction": 0.7258938527752092,
+      "observed_zero": 0.01904761904761905,
+      "p_zero": 0.07875251928855057,
+      "predicted_fraction": 0.6881122852507766,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 102,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "58710652",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.197460665718228,
+      "nodes": 41,
+      "nonforced_choices": 48,
+      "observed_fraction": 0.5976877920938103,
+      "observed_zero": 0.08333333333333333,
+      "p_zero": 0.14588288546672076,
+      "predicted_fraction": 0.5632510352280781,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 103,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "61948140",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.125260297915213,
+      "nodes": 41,
+      "nonforced_choices": 17,
+      "observed_fraction": 0.22079713749903576,
+      "observed_zero": 0.23529411764705882,
+      "p_zero": 0.35082764241109604,
+      "predicted_fraction": 0.31838805891464544,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 108,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69390994",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.0455598027126154,
+      "nodes": 41,
+      "nonforced_choices": 22,
+      "observed_fraction": 0.37196711180951264,
+      "observed_zero": 0.18181818181818182,
+      "p_zero": 0.22688132580348705,
+      "predicted_fraction": 0.4344524426883401,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 109,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "70560629",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 2.5503690854734913,
+      "nodes": 41,
+      "nonforced_choices": 30,
+      "observed_fraction": 0.5032663295637927,
+      "observed_zero": 0.13333333333333333,
+      "p_zero": 0.14224684285506078,
+      "predicted_fraction": 0.5294717986836956,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 110,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "72433781",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.793167947129201,
+      "nodes": 41,
+      "nonforced_choices": 53,
+      "observed_fraction": 0.7271913247999411,
+      "observed_zero": 0.05660377358490566,
+      "p_zero": 0.05441760714043561,
+      "predicted_fraction": 0.6974270648915719,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 116,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "83701533",
+        "0"
+      ],
+      "mechanism": "Proportional",
+      "nll": 3.685671248856764,
+      "nodes": 41,
+      "nonforced_choices": 88,
+      "observed_fraction": 0.7574049964047348,
+      "observed_zero": 0.022727272727272728,
+      "p_zero": 0.025495262813177145,
+      "predicted_fraction": 0.7509080685585494,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 120,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.067827728890283,
+      "nodes": 41,
+      "nonforced_choices": 139,
+      "observed_fraction": 0.6451663651819283,
+      "observed_zero": 0.03597122302158273,
+      "p_zero": 0.07233454888455612,
+      "predicted_fraction": 0.6203502101148223,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 131,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "48812052",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.5424824660661995,
+      "nodes": 41,
+      "nonforced_choices": 28,
+      "observed_fraction": 0.41149174099400343,
+      "observed_zero": 0.32142857142857145,
+      "p_zero": 0.28741654895218083,
+      "predicted_fraction": 0.4415197801819786,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 135,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "50251280",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.0105315209365675,
+      "nodes": 41,
+      "nonforced_choices": 153,
+      "observed_fraction": 0.6161620485571552,
+      "observed_zero": 0.17647058823529413,
+      "p_zero": 0.08813779597089559,
+      "predicted_fraction": 0.5799270620538152,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 136,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "53180780",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.6760199843986365,
+      "nodes": 41,
+      "nonforced_choices": 71,
+      "observed_fraction": 0.591071932030133,
+      "observed_zero": 0.14084507042253522,
+      "p_zero": 0.15064944592070628,
+      "predicted_fraction": 0.5736255356635072,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 141,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "63845553",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.858479609257896,
+      "nodes": 41,
+      "nonforced_choices": 149,
+      "observed_fraction": 0.6683073503512751,
+      "observed_zero": 0.06040268456375839,
+      "p_zero": 0.0607619476266179,
+      "predicted_fraction": 0.6405920235934965,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 144,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "66350717",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.5242652861307286,
+      "nodes": 41,
+      "nonforced_choices": 68,
+      "observed_fraction": 0.6398303973105409,
+      "observed_zero": 0.04411764705882353,
+      "p_zero": 0.05518792175118903,
+      "predicted_fraction": 0.6416373633833846,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 149,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "81387887",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 2.6050208356503033,
+      "nodes": 41,
+      "nonforced_choices": 107,
+      "observed_fraction": 0.5409643959508242,
+      "observed_zero": 0.2336448598130841,
+      "p_zero": 0.1569857212047939,
+      "predicted_fraction": 0.5621932204994072,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 1,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    },
+    {
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "family": "H1",
+      "group_index": 158,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "95891360",
+        "0"
+      ],
+      "mechanism": "M1",
+      "nll": 3.205173831366263,
+      "nodes": 41,
+      "nonforced_choices": 159,
+      "observed_fraction": 0.7125469702401969,
+      "observed_zero": 0.006289308176100629,
+      "p_zero": 0.020950644016519644,
+      "predicted_fraction": 0.6810345459862466,
+      "seed": 29,
+      "selected_epoch": 479,
+      "signal_clipping_count": 0,
+      "signal_defined_rounds": 39,
+      "split": "validation",
+      "tilt": [
+        0.0,
+        0.0
+      ],
+      "tilt_denominator": "offer"
+    }
+  ],
+  "peak_rss_kib": 327760,
+  "seconds": 3.078981618047692
+}

@@ -1,0 +1,226 @@
+{
+  "complete": true,
+  "peak_rss_kib": 391244,
+  "seconds_this_invocation": 4779.351363240043,
+  "selected": {
+    "FA-GRU_17": {
+      "checkpoint_sha256": "520d40c378da3589ea259383b6829c6f1b13d4519528493f0b0ff228d8cff9a3",
+      "coarse_best": [
+        0.9,
+        0.0
+      ],
+      "objective": -0.018182302695201838,
+      "tilt": [
+        0.6,
+        0.25
+      ]
+    },
+    "FA-GRU_29": {
+      "checkpoint_sha256": "ab1d2785defe4ba89fc4bf681e73beb1e8269e594a3cdb3515e2a32ace7f8766",
+      "coarse_best": [
+        0.3,
+        0.5
+      ],
+      "objective": 0.005367095349901541,
+      "tilt": [
+        0.45,
+        0.25
+      ]
+    },
+    "FA-GRU_43": {
+      "checkpoint_sha256": "08b2c42836cb2c4b902d5e629b11133b082a4f628c4ddcf90e77c1c94f1137bb",
+      "coarse_best": [
+        0.6,
+        0.0
+      ],
+      "objective": -0.004748499804887812,
+      "tilt": [
+        0.6,
+        0.0
+      ]
+    },
+    "FA-H0_17": {
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "coarse_best": [
+        1.2,
+        -1.0
+      ],
+      "objective": -0.010833840214397594,
+      "tilt": [
+        0.9,
+        -0.75
+      ]
+    },
+    "FA-H0_29": {
+      "checkpoint_sha256": "5eeaf0fd7fa2ddab3da81b42ef4cd464db5cb07731db6e3368c525daaccc70e1",
+      "coarse_best": [
+        0.9,
+        -0.5
+      ],
+      "objective": -0.029677732297186593,
+      "tilt": [
+        0.9,
+        -0.5
+      ]
+    },
+    "FA-H0_43": {
+      "checkpoint_sha256": "90a081156fe5d137fee0472d696935b289ab0c2ac2952036063f790364773d17",
+      "coarse_best": [
+        1.2,
+        -1.0
+      ],
+      "objective": -0.024634388925565215,
+      "tilt": [
+        0.9,
+        -0.75
+      ]
+    },
+    "FA-P0_17": {
+      "checkpoint_sha256": "721249dc948e3efd72b088706c39d06bba11626ed4a908b40e55af2af6aa8507",
+      "coarse_best": [
+        0.3,
+        -0.5
+      ],
+      "objective": -0.022780691594077626,
+      "tilt": [
+        0.45,
+        -0.5
+      ]
+    },
+    "FA-P0_29": {
+      "checkpoint_sha256": "7e455e2572ff5a91dbdd5481d7c866f9f104a8661991460839013239005994f1",
+      "coarse_best": [
+        0.3,
+        -0.5
+      ],
+      "objective": -0.021285845313699703,
+      "tilt": [
+        0.45,
+        -0.5
+      ]
+    },
+    "FA-P0_43": {
+      "checkpoint_sha256": "e8c02a20c5c83af55511e4159bb54e4878b80cdf6d2e19e63c105b36148c53c0",
+      "coarse_best": [
+        0.0,
+        0.0
+      ],
+      "objective": -0.01867616714791126,
+      "tilt": [
+        0.3,
+        -0.25
+      ]
+    },
+    "H0_17": {
+      "checkpoint_sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+      "coarse_best": [
+        0.6,
+        0.0
+      ],
+      "objective": -0.022779846713688157,
+      "tilt": [
+        0.6,
+        0.0
+      ]
+    },
+    "H0_29": {
+      "checkpoint_sha256": "9c6cade561becf4363b269f5db19158a0a5c4dc9895ce7f7edae5e1253718aa4",
+      "coarse_best": [
+        0.6,
+        0.0
+      ],
+      "objective": -0.006954582648873775,
+      "tilt": [
+        0.6,
+        0.0
+      ]
+    },
+    "H0_43": {
+      "checkpoint_sha256": "4606995065f47f7e6aded0b67ffbe1074066ada14798652153d70e8ee4df7b19",
+      "coarse_best": [
+        0.9,
+        -0.5
+      ],
+      "objective": -0.003016570537566682,
+      "tilt": [
+        0.9,
+        -0.5
+      ]
+    },
+    "P0_17": {
+      "checkpoint_sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+      "coarse_best": [
+        0.0,
+        0.0
+      ],
+      "objective": -0.0050801031760068505,
+      "tilt": [
+        0.15,
+        -0.25
+      ]
+    },
+    "P0_29": {
+      "checkpoint_sha256": "2fdd756d345c2013996866284f7792835fdb659a3c5df2690b00800af5d89642",
+      "coarse_best": [
+        0.3,
+        0.0
+      ],
+      "objective": -0.015073541598964263,
+      "tilt": [
+        0.15,
+        0.0
+      ]
+    },
+    "P0_43": {
+      "checkpoint_sha256": "56f691d06b0452d030688fb9a09ff57445ec796c118db8e2dc5aa9166d73a662",
+      "coarse_best": [
+        0.0,
+        0.0
+      ],
+      "objective": 0.0019689734649220303,
+      "tilt": [
+        0.3,
+        -0.25
+      ]
+    },
+    "T04-GRU_17": {
+      "checkpoint_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+      "coarse_best": [
+        0.3,
+        0.5
+      ],
+      "objective": 0.003563368899115432,
+      "tilt": [
+        0.3,
+        0.5
+      ]
+    },
+    "T04-GRU_29": {
+      "checkpoint_sha256": "d85aae54aeba7cf9de9a453c743dbaac3af05ae43385c8592b54f6d40694fc4f",
+      "coarse_best": [
+        0.3,
+        0.5
+      ],
+      "objective": 0.005487192544914171,
+      "tilt": [
+        0.45,
+        0.25
+      ]
+    },
+    "T04-GRU_43": {
+      "checkpoint_sha256": "3bcb6bb2871153c8c95f34d6759c69fb18b7702b90f72633e8e8172973e52241",
+      "coarse_best": [
+        0.3,
+        0.5
+      ],
+      "objective": 0.0005838892222858605,
+      "tilt": [
+        0.3,
+        0.5
+      ]
+    }
+  },
+  "selection_uses": "Exp1 training only, three rules, energy-distance fidelity",
+  "unique_point_compute_seconds": 6604.892452459084,
+  "unique_points": 1594
+}

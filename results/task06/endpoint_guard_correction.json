@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-01T19:31:25.693753+00:00",
+  "reason": "CDF endpoint is exactly1 from each resident legal maximum; finite inverse-normal convention for exactlyzero uniform",
+  "initial_reference_cells": 120,
+  "initial_run": {
+    "completed_cells": 120,
+    "peak_rss_kib": 436032,
+    "projected_seconds": 324.57047369494103,
+    "seconds_this_invocation": 328.7569961230038,
+    "total_cells": 120,
+    "status": "completed first reference run; regeneration required after endpoint guards"
+  },
+  "prior_cells_retained_at": "data/cache/task06/reference_before_endpoint_guard",
+  "fresh_production_cells_required": true,
+  "design_unchanged": true
+}

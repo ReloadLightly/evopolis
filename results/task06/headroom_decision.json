@@ -1,0 +1,1347 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261101,
+  "candidates": [
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.5818409600644793,
+              1.4118587904048037
+            ],
+            "estimate": 0.876452554553448,
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              1.0158700744875628,
+              2.093656276751353
+            ],
+            "estimate": 1.5480511667678367,
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 1.7989420572916668,
+              "Mixed": 2.1551041666666664,
+              "Proportional": 3.8441056315104163
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": true,
+            "simulated_means": {
+              "Equal": 1.7989420572916668,
+              "Mixed": 2.1551041666666664,
+              "Proportional": 3.8441056315104163
+            }
+          },
+          "paired_ie_difference": 0.6715986122143888,
+          "paired_ie_difference_ci95": [
+            -0.3927635723461588,
+            1.406505800638967
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.13932291666666666,
+              0.28541666666666526
+            ],
+            "estimate": 0.21223958333333334,
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.11674262152777778,
+              0.2732204861111111
+            ],
+            "estimate": 0.1898871527777778,
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.001953125,
+              "Mixed": 0.010416666666666666,
+              "Proportional": 0.23046875
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": true,
+            "simulated_means": {
+              "Equal": 0.001953125,
+              "Mixed": 0.010416666666666666,
+              "Proportional": 0.23046875
+            }
+          },
+          "paired_ie_difference": -0.022352430555555552,
+          "paired_ie_difference_ci95": [
+            -0.1686740451388889,
+            0.13529730902777723
+          ]
+        }
+      },
+      "family": "FA-GRU",
+      "human_groups_per_rule": 32,
+      "population": "train_validation",
+      "qualifies_no_headroom": false,
+      "strict_order_condition_feasible": true
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.5818409600644793,
+              1.4118587904048037
+            ],
+            "estimate": 0.876452554553448,
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.3730428804757089,
+              1.3256835343518627
+            ],
+            "estimate": 0.7432017310709407,
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 1.9594287109375,
+              "Mixed": 2.7562719726562492,
+              "Proportional": 6.242386067708332
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": true,
+            "simulated_means": {
+              "Equal": 1.9594287109375,
+              "Mixed": 2.7562719726562492,
+              "Proportional": 6.242386067708332
+            }
+          },
+          "paired_ie_difference": -0.13325082348250727,
+          "paired_ie_difference_ci95": [
+            -0.7922481093914493,
+            0.4404022131413483
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.13932291666666666,
+              0.28541666666666526
+            ],
+            "estimate": 0.21223958333333334,
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.05620659722222223,
+              0.19162326388888892
+            ],
+            "estimate": 0.10828993055555557,
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.0,
+              "Mixed": 0.041015625,
+              "Proportional": 0.4466145833333333
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": true,
+            "simulated_means": {
+              "Equal": 0.0,
+              "Mixed": 0.041015625,
+              "Proportional": 0.4466145833333333
+            }
+          },
+          "paired_ie_difference": -0.10394965277777778,
+          "paired_ie_difference_ci95": [
+            -0.22287326388888892,
+            0.057562934027777485
+          ]
+        }
+      },
+      "family": "FA-P0",
+      "human_groups_per_rule": 32,
+      "population": "train_validation",
+      "qualifies_no_headroom": true,
+      "strict_order_condition_feasible": true
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.5818409600644793,
+              1.4118587904048037
+            ],
+            "estimate": 0.876452554553448,
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.5245658698961704,
+              1.4217268842021353
+            ],
+            "estimate": 0.870761398972698,
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 1.8574788411458332,
+              "Mixed": 2.461158854166666,
+              "Proportional": 5.511383463541666
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.3052906633296515,
+              "Mixed": 4.267321919105598,
+              "Proportional": 5.86969277333701
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": true,
+            "simulated_means": {
+              "Equal": 1.8574788411458332,
+              "Mixed": 2.461158854166666,
+              "Proportional": 5.511383463541666
+            }
+          },
+          "paired_ie_difference": -0.005691155580749951,
+          "paired_ie_difference_ci95": [
+            -0.7888480966824069,
+            0.7292160328438286
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.13932291666666666,
+              0.28541666666666526
+            ],
+            "estimate": 0.21223958333333334,
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.05381944444444445,
+              0.19965277777777776
+            ],
+            "estimate": 0.11631944444444446,
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.0026041666666666665,
+              "Mixed": 0.06901041666666667,
+              "Proportional": 0.3919270833333333
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.0625,
+              "Mixed": 0.25,
+              "Proportional": 0.5
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": true,
+            "simulated_means": {
+              "Equal": 0.0026041666666666665,
+              "Mixed": 0.06901041666666667,
+              "Proportional": 0.3919270833333333
+            }
+          },
+          "paired_ie_difference": -0.09592013888888888,
+          "paired_ie_difference_ci95": [
+            -0.24001736111111108,
+            0.061729600694443915
+          ]
+        }
+      },
+      "family": "FA-H0",
+      "human_groups_per_rule": 32,
+      "population": "train_validation",
+      "qualifies_no_headroom": true,
+      "strict_order_condition_feasible": true
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.4976640988803517,
+              2.4161407104688193
+            ],
+            "estimate": 1.2308741979692528,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.5539387857075784,
+              2.4282378473768924
+            ],
+            "estimate": 1.1407848368191884,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 2.5446980794270835,
+              "Mixed": 3.259436035156249,
+              "Proportional": 5.449576822916666
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Proportional",
+              "Mixed"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 2.5446980794270835,
+              "Mixed": 3.259436035156249,
+              "Proportional": 5.449576822916666
+            }
+          },
+          "paired_ie_difference": -0.09008936115006438,
+          "paired_ie_difference_ci95": [
+            -0.7643264993111868,
+            0.9678852298959605
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.09635416666666667,
+              0.3580729166666667
+            ],
+            "estimate": 0.19140625,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.060329861111111126,
+              0.3276909722222222
+            ],
+            "estimate": 0.14366319444444445,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.07356770833333333,
+              "Mixed": 0.15690104166666666,
+              "Proportional": 0.5364583333333334
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": false,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 0.07356770833333333,
+              "Mixed": 0.15690104166666666,
+              "Proportional": 0.5364583333333334
+            }
+          },
+          "paired_ie_difference": -0.04774305555555555,
+          "paired_ie_difference_ci95": [
+            -0.22743055555555555,
+            0.11111111111111112
+          ]
+        }
+      },
+      "family": "CL-T04-GRU",
+      "human_groups_per_rule": 8,
+      "population": "validation",
+      "qualifies_no_headroom": false,
+      "strict_order_condition_feasible": false
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.4976640988803517,
+              2.4161407104688193
+            ],
+            "estimate": 1.2308741979692528,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.6816362149038604,
+              2.7038116861527195
+            ],
+            "estimate": 1.4703687126872438,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 2.3982698567708334,
+              "Mixed": 3.043001302083333,
+              "Proportional": 6.075465494791666
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Proportional",
+              "Mixed"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 2.3982698567708334,
+              "Mixed": 3.043001302083333,
+              "Proportional": 6.075465494791666
+            }
+          },
+          "paired_ie_difference": 0.239494514717991,
+          "paired_ie_difference_ci95": [
+            -0.5577036625758549,
+            0.9648607627944394
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.09635416666666667,
+              0.3580729166666667
+            ],
+            "estimate": 0.19140625,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.07183159722222222,
+              0.3634982638888889
+            ],
+            "estimate": 0.15516493055555555,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.008463541666666666,
+              "Mixed": 0.08333333333333333,
+              "Proportional": 0.4322916666666667
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": false,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 0.008463541666666666,
+              "Mixed": 0.08333333333333333,
+              "Proportional": 0.4322916666666667
+            }
+          },
+          "paired_ie_difference": -0.03624131944444445,
+          "paired_ie_difference_ci95": [
+            -0.2805989583333333,
+            0.17556423611111108
+          ]
+        }
+      },
+      "family": "CL-P0",
+      "human_groups_per_rule": 8,
+      "population": "validation",
+      "qualifies_no_headroom": false,
+      "strict_order_condition_feasible": false
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.4976640988803517,
+              2.4161407104688193
+            ],
+            "estimate": 1.2308741979692528,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.5782814930061508,
+              2.613139748058262
+            ],
+            "estimate": 1.3270207309164104,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 2.572232259114583,
+              "Mixed": 3.2340633138020833,
+              "Proportional": 6.010445963541666
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Proportional",
+              "Mixed"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 2.572232259114583,
+              "Mixed": 3.2340633138020833,
+              "Proportional": 6.010445963541666
+            }
+          },
+          "paired_ie_difference": 0.09614653294715758,
+          "paired_ie_difference_ci95": [
+            -0.6415754169830781,
+            0.821512781023606
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.09635416666666667,
+              0.3580729166666667
+            ],
+            "estimate": 0.19140625,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.04904513888888889,
+              0.3182183159722218
+            ],
+            "estimate": 0.11284722222222221,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.07421875,
+              "Mixed": 0.18294270833333334,
+              "Proportional": 0.470703125
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": false,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 0.07421875,
+              "Mixed": 0.18294270833333334,
+              "Proportional": 0.470703125
+            }
+          },
+          "paired_ie_difference": -0.07855902777777779,
+          "paired_ie_difference_ci95": [
+            -0.24045138888888887,
+            0.10763888888888888
+          ]
+        }
+      },
+      "family": "CL-H0",
+      "human_groups_per_rule": 8,
+      "population": "validation",
+      "qualifies_no_headroom": false,
+      "strict_order_condition_feasible": false
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.4976640988803517,
+              2.4161407104688193
+            ],
+            "estimate": 1.2308741979692528,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.5683903379008858,
+              2.5237679888003957
+            ],
+            "estimate": 1.2890942986247438,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 2.2828678385416663,
+              "Mixed": 3.2888028971354157,
+              "Proportional": 5.662041829427082
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Proportional",
+              "Mixed"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 2.2828678385416663,
+              "Mixed": 3.2888028971354157,
+              "Proportional": 5.662041829427082
+            }
+          },
+          "paired_ie_difference": 0.05822010065549099,
+          "paired_ie_difference_ci95": [
+            -0.7169790377305258,
+            0.9745513540279053
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.09635416666666667,
+              0.3580729166666667
+            ],
+            "estimate": 0.19140625,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.0583767361111111,
+              0.333984375
+            ],
+            "estimate": 0.16731770833333334,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.04296875,
+              "Mixed": 0.16861979166666666,
+              "Proportional": 0.5885416666666666
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": false,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 0.04296875,
+              "Mixed": 0.16861979166666666,
+              "Proportional": 0.5885416666666666
+            }
+          },
+          "paired_ie_difference": -0.024088541666666657,
+          "paired_ie_difference_ci95": [
+            -0.21636284722222224,
+            0.134765625
+          ]
+        }
+      },
+      "family": "CL-FA-GRU",
+      "human_groups_per_rule": 8,
+      "population": "validation",
+      "qualifies_no_headroom": false,
+      "strict_order_condition_feasible": false
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.4976640988803517,
+              2.4161407104688193
+            ],
+            "estimate": 1.2308741979692528,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.6490676199725331,
+              2.719309809554469
+            ],
+            "estimate": 1.5147673129476604,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 2.2648087565104165,
+              "Mixed": 3.2564729817708327,
+              "Proportional": 6.288671874999999
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Proportional",
+              "Mixed"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 2.2648087565104165,
+              "Mixed": 3.2564729817708327,
+              "Proportional": 6.288671874999999
+            }
+          },
+          "paired_ie_difference": 0.28389311497840763,
+          "paired_ie_difference_ci95": [
+            -0.5330589124466691,
+            1.009259363054856
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.09635416666666667,
+              0.3580729166666667
+            ],
+            "estimate": 0.19140625,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.060546875,
+              0.3522135416666667
+            ],
+            "estimate": 0.14778645833333334,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.006510416666666667,
+              "Mixed": 0.11848958333333333,
+              "Proportional": 0.443359375
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": false,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 0.006510416666666667,
+              "Mixed": 0.11848958333333333,
+              "Proportional": 0.443359375
+            }
+          },
+          "paired_ie_difference": -0.04361979166666666,
+          "paired_ie_difference_ci95": [
+            -0.2892795138888889,
+            0.16080729166666666
+          ]
+        }
+      },
+      "family": "CL-FA-P0",
+      "human_groups_per_rule": 8,
+      "population": "validation",
+      "qualifies_no_headroom": false,
+      "strict_order_condition_feasible": false
+    },
+    {
+      "comparisons": {
+        "surplus": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.4976640988803517,
+              2.4161407104688193
+            ],
+            "estimate": 1.2308741979692528,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 3.8792482603029006,
+              "Mixed": 4.78677722563631,
+              "Proportional": 6.405637533493392
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.6294058977605633,
+              2.6424077880715933
+            ],
+            "estimate": 1.4154943094754386,
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 2.35452880859375,
+              "Mixed": 3.2271264648437494,
+              "Proportional": 6.051226399739583
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 2.791198888188228,
+              "Mixed": 5.673762114718556,
+              "Proportional": 4.688049200782553
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Proportional",
+              "Mixed"
+            ],
+            "human_strict": true,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 2.35452880859375,
+              "Mixed": 3.2271264648437494,
+              "Proportional": 6.051226399739583
+            }
+          },
+          "paired_ie_difference": 0.18462011150618585,
+          "paired_ie_difference_ci95": [
+            -0.600163975165172,
+            0.9099863595826343
+          ]
+        },
+        "survival": {
+          "bc1_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.09635416666666667,
+              0.3580729166666667
+            ],
+            "estimate": 0.19140625,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.283203125,
+              "Mixed": 0.455078125,
+              "Proportional": 0.7109375
+            }
+          },
+          "candidate_ie": {
+            "bootstrap_replicates": 2000,
+            "ci95": [
+              0.059461805555555546,
+              0.3155381944444445
+            ],
+            "estimate": 0.11414930555555557,
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "interval_resampling": "human groups, stratified by rule; forecast means fixed",
+            "simulated_means": {
+              "Equal": 0.052083333333333336,
+              "Mixed": 0.18424479166666666,
+              "Proportional": 0.4537760416666667
+            }
+          },
+          "ordering": {
+            "human_means": {
+              "Equal": 0.125,
+              "Mixed": 0.375,
+              "Proportional": 0.375
+            },
+            "human_order_low_to_high": [
+              "Equal",
+              "Mixed",
+              "Proportional"
+            ],
+            "human_strict": false,
+            "matches_strict_human_order": false,
+            "simulated_means": {
+              "Equal": 0.052083333333333336,
+              "Mixed": 0.18424479166666666,
+              "Proportional": 0.4537760416666667
+            }
+          },
+          "paired_ie_difference": -0.07725694444444443,
+          "paired_ie_difference_ci95": [
+            -0.2530381944444444,
+            0.12022569444444443
+          ]
+        }
+      },
+      "family": "CL-FA-H0",
+      "human_groups_per_rule": 8,
+      "population": "validation",
+      "qualifies_no_headroom": false,
+      "strict_order_condition_feasible": false
+    }
+  ],
+  "human_population_constraints": [
+    {
+      "affected_candidates": [
+        "FA-GRU",
+        "FA-P0",
+        "FA-H0"
+      ],
+      "human_groups_per_rule": 32,
+      "interpretation": "Both observed human rankings are strict, so a candidate can satisfy the ranking condition.",
+      "metrics": {
+        "surplus": {
+          "human_means": {
+            "Equal": 2.3052906633296515,
+            "Mixed": 4.267321919105598,
+            "Proportional": 5.86969277333701
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Mixed",
+            "Proportional"
+          ],
+          "human_strict": true,
+          "tied_rule_pairs": []
+        },
+        "survival": {
+          "human_means": {
+            "Equal": 0.0625,
+            "Mixed": 0.25,
+            "Proportional": 0.5
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Mixed",
+            "Proportional"
+          ],
+          "human_strict": true,
+          "tied_rule_pairs": []
+        }
+      },
+      "population": "train_validation",
+      "strict_order_condition_feasible": true
+    },
+    {
+      "affected_candidates": [
+        "CL-T04-GRU",
+        "CL-P0",
+        "CL-H0",
+        "CL-FA-GRU",
+        "CL-FA-P0",
+        "CL-FA-H0"
+      ],
+      "human_groups_per_rule": 8,
+      "interpretation": "An observed human outcome ranking contains a tie. Under the stipulated strict-order decision rule, no candidate assessed on this population can qualify, regardless of forecast accuracy or IE. This constraint is not evidence that calibrated behavior is inaccurate.",
+      "metrics": {
+        "surplus": {
+          "human_means": {
+            "Equal": 2.791198888188228,
+            "Mixed": 5.673762114718556,
+            "Proportional": 4.688049200782553
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Proportional",
+            "Mixed"
+          ],
+          "human_strict": true,
+          "tied_rule_pairs": []
+        },
+        "survival": {
+          "human_means": {
+            "Equal": 0.125,
+            "Mixed": 0.375,
+            "Proportional": 0.375
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Mixed",
+            "Proportional"
+          ],
+          "human_strict": false,
+          "tied_rule_pairs": [
+            [
+              "Mixed",
+              "Proportional"
+            ]
+          ]
+        }
+      },
+      "population": "validation",
+      "strict_order_condition_feasible": false
+    }
+  ],
+  "ordering_note": "Each comparison follows the actual human mean ordering; any human tie fails the strict-order condition.",
+  "outcome": "no headroom",
+  "qualifying_candidates": [
+    "FA-P0",
+    "FA-H0"
+  ],
+  "rule": {
+    "bc1_matched_population": true,
+    "calibrated_groups": "Exp1 validation8 per rule",
+    "intervals": "2000 stratified human-group bootstrap; fixed simulators;95 percentile",
+    "metric": "mean overEqual,Mixed,Proportional absolute simulated minus human mean surplus; survival analogue secondary",
+    "no_headroom": "at least one FA or CL candidate matches strict human ordering for both mean surplus and survival AND IE<=IE(BC1) on same groups",
+    "otherwise": "headroom",
+    "uncalibrated_groups": "Exp1 train+validation32 per rule"
+  },
+  "status": "complete"
+}

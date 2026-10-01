@@ -1,0 +1,13 @@
+{
+  "first_noticed_utc": "2026-10-01T19:33:00.613776+00:00",
+  "handling": "Preserve and exclude from this run commits. source_audit.json was overwritten by separate institution_* implementation after our audit; restored our audit under institutional_source_audit.json.",
+  "files": {
+    "evopolis/institution_simulate.py": "9e4510726b0a1eda67f40dfaecfe0c65d56c93fb9c9af7bba9728af9b2b8ce08",
+    "evopolis/institution_evaluate.py": "06ebb3e476f8d5b2587eb6fd84fa7f0ea5db7f1b60b19ea263e0a913130f8c15",
+    "evopolis/institution_data.py": "2d76b324aa6f83b9ff8e34407820366df32eb20e068c207c80a248c5c5dd5171",
+    "evopolis/institution_train.py": "121517ffa3cd5cb6cab4701afff138c0b1e6b5f33714a5009cfd3a66dc3fbfd2",
+    "evopolis/institution_models.py": "09a18b237556bbcac15ad8edf21e031c980dbe5c31a0255dd3a0da219eb4f86b",
+    "tests/test_institution_simulate.py": "9798af3ddb60b334e05cfecf38d62dfe86c00bfe889c6d443d296141846b6c71",
+    "results/task06/source_audit.json": "f873bc9c1ffdfaa01d39ebf2c14fdfe68b6ccd81f724d161e8ebc1ff6ee652e1"
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "interruptions": [
+    {
+      "last_saved_progress": {
+        "current_checkpoint": "P0_29",
+        "last_tilt": [
+          0.9,
+          1.0
+        ],
+        "peak_rss_kib": 392756,
+        "projected_seconds": 7874.986200857068,
+        "scheduled_points_done": 449,
+        "scheduled_points_total": 1746,
+        "seconds_this_invocation": 1842.170203933958
+      },
+      "phase": "calibrate",
+      "reason": "server restart; phase lock confirmed released; no completion receipt",
+      "recovery_utc": "2026-10-01T21:12:35.739279+00:00",
+      "resume_policy": "reuse validated identical grid-point contracts; recompute only unfinished points",
+      "unique_saved_points": 413
+    }
+  ],
+  "invocations": {
+    "archived-check": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_evaluate",
+          "archived-check"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 97984,
+        "system_cpu_seconds": 1.7,
+        "user_cpu_seconds": 1.46,
+        "utc": "2026-10-01T23:15:04.600654+00:00",
+        "wall_seconds": 3.24015781795606
+      }
+    ],
+    "audit": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_predict",
+          "audit"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 323148,
+        "system_cpu_seconds": 0.82,
+        "user_cpu_seconds": 6.09,
+        "utc": "2026-10-01T20:38:58.371585+00:00",
+        "wall_seconds": 6.87300438596867
+      },
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_predict",
+          "audit"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 327988,
+        "system_cpu_seconds": 5.34,
+        "user_cpu_seconds": 6.17,
+        "utc": "2026-10-01T21:12:51.425945+00:00",
+        "wall_seconds": 15.127354035968892
+      }
+    ],
+    "audit-rollouts": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_predict",
+          "audit-rollouts"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 328860,
+        "system_cpu_seconds": 0.52,
+        "user_cpu_seconds": 5.7,
+        "utc": "2026-10-01T20:39:05.830923+00:00",
+        "wall_seconds": 5.986972265993245
+      }
+    ],
+    "benchmark": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_evaluate",
+          "benchmark"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 197752,
+        "system_cpu_seconds": 5.26,
+        "user_cpu_seconds": 4.68,
+        "utc": "2026-10-01T23:15:16.846357+00:00",
+        "wall_seconds": 12.176127944956534
+      }
+    ],
+    "calibrate": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_calibrate",
+          "calibrate"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 391244,
+        "system_cpu_seconds": 299.43,
+        "user_cpu_seconds": 4694.94,
+        "utc": "2026-10-01T22:36:12.340409+00:00",
+        "wall_seconds": 4788.917034362094
+      }
+    ],
+    "diagnostics": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_predict",
+          "diagnostics"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 328784,
+        "system_cpu_seconds": 0.48,
+        "user_cpu_seconds": 102.52,
+        "utc": "2026-10-01T22:38:48.517020+00:00",
+        "wall_seconds": 97.5897935439134
+      }
+    ],
+    "generate": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_rollout",
+          "all"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 436268,
+        "system_cpu_seconds": 29.97,
+        "user_cpu_seconds": 581.05,
+        "utc": "2026-10-01T23:12:22.453054+00:00",
+        "wall_seconds": 579.5838557409588
+      }
+    ],
+    "integration": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_train",
+          "verify-integration"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 310900,
+        "system_cpu_seconds": 2.0,
+        "user_cpu_seconds": 97.11,
+        "utc": "2026-10-01T20:38:51.426193+00:00",
+        "wall_seconds": 96.00770130206365
+      }
+    ],
+    "sensitivity": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_calibrate",
+          "sensitivity"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 390144,
+        "system_cpu_seconds": 45.0,
+        "user_cpu_seconds": 1353.35,
+        "utc": "2026-10-01T23:02:08.427229+00:00",
+        "wall_seconds": 1328.357609683997
+      }
+    ],
+    "test": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 370456,
+        "system_cpu_seconds": 3.53,
+        "user_cpu_seconds": 18.09,
+        "utc": "2026-10-01T23:15:41.497024+00:00",
+        "wall_seconds": 22.807227233075537
+      }
+    ],
+    "train": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_train",
+          "train"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 368752,
+        "system_cpu_seconds": 425.27,
+        "user_cpu_seconds": 3480.82,
+        "utc": "2026-10-01T20:37:10.521923+00:00",
+        "wall_seconds": 3758.943767737015
+      }
+    ],
+    "verify": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_verify",
+          "all"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 393644,
+        "system_cpu_seconds": 20.1,
+        "user_cpu_seconds": 107.56,
+        "utc": "2026-10-01T23:15:01.126270+00:00",
+        "wall_seconds": 127.6641873709159
+      }
+    ],
+    "verify-all-rollout": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_rollout",
+          "verify-all"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 317616,
+        "system_cpu_seconds": 1.86,
+        "user_cpu_seconds": 20.68,
+        "utc": "2026-10-01T23:12:46.298208+00:00",
+        "wall_seconds": 21.471745827933773
+      }
+    ],
+    "verify-tilted": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_verify",
+          "tilted-integration"
+        ],
+        "exit_code": 0,
+        "peak_rss_kib": 330736,
+        "system_cpu_seconds": 1.41,
+        "user_cpu_seconds": 51.31,
+        "utc": "2026-10-01T22:37:05.470947+00:00",
+        "wall_seconds": 50.832809358951636
+      }
+    ],
+    "verify-protected": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_verify",
+          "protected"
+        ],
+        "wall_seconds": 0.5722592039965093,
+        "peak_rss_kib": 18976,
+        "user_cpu_seconds": 0.27,
+        "system_cpu_seconds": 0.2,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:15:42.127334+00:00"
+      }
+    ],
+    "freeze": [
+      {
+        "command": [
+          "/home/roland/projects/evopolis/.venv/bin/python",
+          "-m",
+          "evopolis.institutional_freeze"
+        ],
+        "wall_seconds": 8.040001117973588,
+        "peak_rss_kib": 282156,
+        "user_cpu_seconds": 3.24,
+        "system_cpu_seconds": 2.7,
+        "exit_code": 0,
+        "utc": "2026-10-01T23:16:16.413562+00:00"
+      }
+    ]
+  },
+  "phase1_data": {
+    "elapsed_seconds": 9.233939118916169,
+    "experiment_2_opened": false,
+    "human_games": 160,
+    "peak_rss_mib": 243.4453125,
+    "phase": "prefreeze_data",
+    "replay": [
+      {
+        "cohort": "BC1",
+        "max_abs_offer_residual": 7.2898567525009526,
+        "max_abs_slope_residual": 0.04999490959865194,
+        "mechanism": "Interpolating",
+        "offer_rows_above_1e_4": 20480,
+        "offer_rows_above_1e_9": 20480,
+        "rows": 20480,
+        "slope_clipped_rows": 0,
+        "slope_defined_rows": 19968,
+        "slope_rows_above_1e_4": 7560,
+        "slope_undefined_rows": 512
+      },
+      {
+        "cohort": "BC2",
+        "max_abs_offer_residual": 7.3293117444554525,
+        "max_abs_slope_residual": 0.04998410779464885,
+        "mechanism": "Interpolating",
+        "offer_rows_above_1e_4": 20480,
+        "offer_rows_above_1e_9": 20480,
+        "rows": 20480,
+        "slope_clipped_rows": 0,
+        "slope_defined_rows": 19968,
+        "slope_rows_above_1e_4": 8566,
+        "slope_undefined_rows": 512
+      }
+    ],
+    "synthetic_games": 3584
+  },
+  "phase1_references_initial": {
+    "completed_cells": 120,
+    "peak_rss_kib": 436032,
+    "projected_seconds": 324.57047369494103,
+    "seconds_this_invocation": 328.7569961230038,
+    "status": "completed first reference run; regeneration required after endpoint guards",
+    "total_cells": 120
+  },
+  "phase1_source_audit": {
+    "measurement_source": "results/task06/institutional_source_audit.json",
+    "peak_rss_kib": 51740,
+    "status": "completed",
+    "utc": "2026-10-01T19:41:15.888206+00:00",
+    "wall_seconds": 14.644391420064494
+  },
+  "phase2a_integration": {
+    "cpu_seconds": 93.732080592,
+    "error": null,
+    "invocation_cpu_seconds": 95.26585171500001,
+    "invocation_wall_seconds": 91.68068324797787,
+    "peak_rss_kib": 310900,
+    "status": "complete",
+    "utc": "2026-10-01T20:38:50.769052+00:00",
+    "wall_seconds": 89.83862657297868
+  },
+  "phase2a_training": {
+    "boundary_minima": [
+      "FA-P0_43",
+      "FA-H0_43"
+    ],
+    "cpu_seconds": 3889.877729916,
+    "elapsed_seconds": 3743.004548968631,
+    "epochs_per_fit": 480,
+    "error": null,
+    "fa_best": "FA-H0",
+    "fits": 9,
+    "invocation_cpu_seconds": 3897.7414326059998,
+    "invocation_wall_seconds": 3750.7196267710533,
+    "mean_validation_nll": {
+      "FA-GRU": 2.591471764571755,
+      "FA-H0": 2.5637145663361296,
+      "FA-P0": 2.580583933648251
+    },
+    "peak_rss_kib": 368752,
+    "status": "complete",
+    "utc": "2026-10-01T20:37:03.679056+00:00"
+  },
+  "verification_all": {
+    "cpu_seconds": 0.042066303,
+    "error": null,
+    "peak_child_rss_kib": 393644,
+    "peak_rss_kib": 16768,
+    "status": "complete",
+    "utc": "2026-10-01T23:15:01.019372+00:00",
+    "wall_seconds": 127.52380554797128
+  },
+  "verification_checkpoints": {
+    "cpu_seconds": 3.814966947,
+    "error": null,
+    "peak_child_rss_kib": 0,
+    "peak_rss_kib": 303524,
+    "status": "complete",
+    "utc": "2026-10-01T23:13:12.714379+00:00",
+    "wall_seconds": 4.111738129984587
+  },
+  "verification_feature-replay": {
+    "cpu_seconds": 20.722005686,
+    "error": null,
+    "peak_child_rss_kib": 0,
+    "peak_rss_kib": 393644,
+    "status": "complete",
+    "utc": "2026-10-01T23:13:06.294670+00:00",
+    "wall_seconds": 19.881813568994403
+  },
+  "verification_protected": {
+    "cpu_seconds": 0.42559465399999996,
+    "error": null,
+    "peak_child_rss_kib": 0,
+    "peak_rss_kib": 18976,
+    "status": "complete",
+    "utc": "2026-10-01T23:15:42.119587+00:00",
+    "wall_seconds": 0.5212458659661934
+  },
+  "verification_regenerate": {
+    "cpu_seconds": 0.11881455599999999,
+    "error": null,
+    "peak_child_rss_kib": 350908,
+    "peak_rss_kib": 17664,
+    "status": "complete",
+    "utc": "2026-10-01T23:15:00.115913+00:00",
+    "wall_seconds": 98.13097220892087
+  },
+  "verification_tilted-integration": {
+    "cpu_seconds": 2.269400371,
+    "error": null,
+    "peak_child_rss_kib": 0,
+    "peak_rss_kib": 305168,
+    "status": "complete",
+    "utc": "2026-10-01T23:13:16.138960+00:00",
+    "wall_seconds": 2.916378624038771
+  }
+}

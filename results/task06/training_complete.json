@@ -1,0 +1,18 @@
+{
+  "fits": 9,
+  "epochs_per_fit": 480,
+  "mean_validation_nll": {
+    "FA-GRU": 2.591471764571755,
+    "FA-P0": 2.580583933648251,
+    "FA-H0": 2.5637145663361296
+  },
+  "fa_best": "FA-H0",
+  "boundary_minima": [
+    "FA-P0_43",
+    "FA-H0_43"
+  ],
+  "elapsed_seconds": 3743.004548968631,
+  "cpu_seconds": 3889.877729916,
+  "peak_rss_kib": 368752,
+  "utc": "2026-10-01T20:37:03.601472+00:00"
+}

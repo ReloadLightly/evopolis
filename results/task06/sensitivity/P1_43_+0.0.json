@@ -1,0 +1,106 @@
+{
+  "cells": {
+    "Equal": {
+      "simulation": {
+        "games": 256,
+        "gini": 0.16164252570807272,
+        "gini_defined_games": 256,
+        "gini_mc_se": 0.0038856420844264757,
+        "pool20": 6.081249999999999,
+        "pool20_defined_games": 256,
+        "pool20_mc_se": 1.504825927575652,
+        "pool40": 1.1921875,
+        "pool40_defined_games": 256,
+        "pool40_mc_se": 0.5869514592778576,
+        "surplus": 2.2739306640625,
+        "surplus_defined_games": 256,
+        "surplus_mc_se": 0.0647027538620603,
+        "survival": 0.02734375,
+        "survival_defined_games": 256,
+        "survival_mc_se": 0.010212654460096235
+      },
+      "validation": {
+        "nll": 2.1362285536402377,
+        "observed_fraction": 0.4936132400440809,
+        "predicted_fraction": 0.48694543390126566
+      }
+    },
+    "Mixed": {
+      "simulation": {
+        "games": 256,
+        "gini": 0.07731081651435383,
+        "gini_defined_games": 256,
+        "gini_mc_se": 0.002162885442197683,
+        "pool20": 12.1828125,
+        "pool20_defined_games": 256,
+        "pool20_mc_se": 1.9293835544941105,
+        "pool40": 2.20390625,
+        "pool40_defined_games": 256,
+        "pool40_mc_se": 0.8939183484474534,
+        "surplus": 2.7421630859374995,
+        "surplus_defined_games": 256,
+        "surplus_mc_se": 0.09133025797305941,
+        "survival": 0.05078125,
+        "survival_defined_games": 256,
+        "survival_mc_se": 0.013748798827881614
+      },
+      "validation": {
+        "nll": 2.5267053088452025,
+        "observed_fraction": 0.5950135282550014,
+        "predicted_fraction": 0.5677140677624564
+      }
+    },
+    "Proportional": {
+      "simulation": {
+        "games": 256,
+        "gini": 0.39559631268946593,
+        "gini_defined_games": 256,
+        "gini_mc_se": 0.010891811678043985,
+        "pool20": 103.328125,
+        "pool20_defined_games": 256,
+        "pool20_mc_se": 5.599183508923903,
+        "pool40": 59.81640625,
+        "pool40_defined_games": 256,
+        "pool40_mc_se": 5.318857112083813,
+        "surplus": 5.760024414062499,
+        "surplus_defined_games": 256,
+        "surplus_mc_se": 0.18496536468579003,
+        "survival": 0.375,
+        "survival_defined_games": 256,
+        "survival_mc_se": 0.03031695312954162
+      },
+      "validation": {
+        "nll": 2.6892535391008057,
+        "observed_fraction": 0.5152179508829466,
+        "predicted_fraction": 0.5580080173994173
+      }
+    }
+  },
+  "contract": {
+    "code_sha256": {
+      "evopolis/institutional_calibrate.py": "0bdd5db9ec5ac1902362c63e15db6f4bcd7a9dba6d7b31b851a68cf66cb3b0b2",
+      "evopolis/institutional_models.py": "9e44a43aa1711f71e6d64fbdad13a0b8a479658673d9364e337f924b7fd77005",
+      "evopolis/institutional_predict.py": "84ef2d6f221612f16605210eb87ab49aa778ddfe7a9d452b8fd60374f10d4b83",
+      "evopolis/institutional_rollout.py": "a7263ed59a592cad97063c9776b691023bb0215b08b7e575c98887026697e383"
+    },
+    "config_sha256": "5ffc4d76d3abd0b35c1323680fd278b4e870e2b7e2a087c17fcd1093b4cdedcf",
+    "record": {
+      "base_family": "P1",
+      "epoch": 480,
+      "family": "P1",
+      "path": "results/task05/weights/P1_43/best.pt",
+      "seed": 43,
+      "sha256": "940393c41c87f14644bfb449765c900f06cf92bcc858839f5814aeafbaa2b354",
+      "tilt": [
+        0.0,
+        0.0
+      ]
+    },
+    "tau": 0,
+    "tilt": [
+      0.0,
+      0.0
+    ]
+  },
+  "seconds": 4.3365199860418215
+}

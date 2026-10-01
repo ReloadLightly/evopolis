@@ -1,0 +1,463 @@
+{
+  "all_families": true,
+  "checks": [
+    {
+      "exact": true,
+      "family": "T03-constant",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "T03-constant",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "T03-constant",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "T03-constant",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "T03-linear",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "T03-linear",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "T03-linear",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "T03-linear",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "T03-feedforward",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "T03-feedforward",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "T03-feedforward",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "T03-feedforward",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "T03-GRU",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "T03-GRU",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "T03-GRU",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "T03-GRU",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "T04-feedforward",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "T04-feedforward",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "T04-feedforward",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "T04-feedforward",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "T04-GRU",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "T04-GRU",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "T04-GRU",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "T04-GRU",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "P0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "P0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "P0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "P0",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "P1",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "P1",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "P1",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "P1",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "H0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "H0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "H0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "H0",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "H1",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "H1",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "H1",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "H1",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "FA-GRU",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "FA-GRU",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "FA-GRU",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "FA-GRU",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "FA-P0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "FA-P0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "FA-P0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "FA-P0",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "FA-H0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "FA-H0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "FA-H0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "FA-H0",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "CL-T04-GRU",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "CL-T04-GRU",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "CL-T04-GRU",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "CL-T04-GRU",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "CL-P0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "CL-P0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "CL-P0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "CL-P0",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "CL-H0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "CL-H0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "CL-H0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "CL-H0",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-GRU",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-GRU",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-GRU",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-GRU",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-P0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-P0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-P0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-P0",
+      "games": 5,
+      "rule": "Interpolating"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-H0",
+      "games": 5,
+      "rule": "Equal"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-H0",
+      "games": 5,
+      "rule": "Mixed"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-H0",
+      "games": 5,
+      "rule": "Proportional"
+    },
+    {
+      "exact": true,
+      "family": "CL-FA-H0",
+      "games": 5,
+      "rule": "Interpolating"
+    }
+  ],
+  "code_sha256": "a7263ed59a592cad97063c9776b691023bb0215b08b7e575c98887026697e383",
+  "passed": true
+}

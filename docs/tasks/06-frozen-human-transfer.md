@@ -1,3 +1,4 @@
+Superseded on 2026-10-01 by Task 06 — Institutional validity; not executed.
 # Task 06 — Learned human responses under changed conditions
 
 **Status: specified; not executed.** Execute the complete experiment when assigned: continue fitting, validate numerical precision, freeze the procedures, evaluate human Experiment 2, inspect the findings, update the scientific presentation, commit and push. Implementation alone is incomplete. This task follows the [Task 05 scientific review](../task05-review.md).

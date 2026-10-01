@@ -1,0 +1,424 @@
+{
+  "contract": {
+    "code_sha256": {
+      "evopolis/conditional_models.py": "cf8fa36e13347c0485ecd085876b6c79123886f7763fc29cae9c21199f3e70e0",
+      "evopolis/institutional_models.py": "9e44a43aa1711f71e6d64fbdad13a0b8a479658673d9364e337f924b7fd77005",
+      "evopolis/institutional_predict.py": "84ef2d6f221612f16605210eb87ab49aa778ddfe7a9d452b8fd60374f10d4b83",
+      "evopolis/institutional_verify.py": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+    },
+    "nodes_compared": [
+      41,
+      81
+    ],
+    "record": {
+      "base_family": "FA-H0",
+      "epoch": 477,
+      "family": "CL-FA-H0",
+      "path": "results/task06/weights/FA-H0_29/best.pt",
+      "seed": 29,
+      "sha256": "5eeaf0fd7fa2ddab3da81b42ef4cd464db5cb07731db6e3368c525daaccc70e1",
+      "tilt": [
+        0.9,
+        -0.5
+      ]
+    },
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "split_sha256": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678"
+  },
+  "groups": [
+    {
+      "group_nll": 2.507970245621297e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "24769323",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.1380372822717968e-08,
+      "resident_nll": 1.9241097402235914e-09,
+      "tail_probability": 1.1949390921195402e-08
+    },
+    {
+      "group_nll": 1.8329782136561334e-14,
+      "key": [
+        "Equal Baseline Exp 1",
+        "27555027",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.371389836506468e-13,
+      "resident_nll": 2.639666263348772e-13,
+      "tail_probability": 5.250799794964678e-13
+    },
+    {
+      "group_nll": 1.1512873194468348e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "30383025",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.08125966787885e-08,
+      "resident_nll": 1.1412201712735466e-09,
+      "tail_probability": 4.918956941768471e-08
+    },
+    {
+      "group_nll": 6.407649966178042e-10,
+      "key": [
+        "Equal Baseline Exp 1",
+        "31981132",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 9.822930693072586e-09,
+      "resident_nll": 2.054694212751749e-09,
+      "tail_probability": 1.031407675933238e-08
+    },
+    {
+      "group_nll": 7.612136949733395e-08,
+      "key": [
+        "Equal Baseline Exp 1",
+        "35775718",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 3.5590406612597568e-06,
+      "resident_nll": 8.839076633515575e-07,
+      "tail_probability": 3.574244221329903e-06
+    },
+    {
+      "group_nll": 9.87173306062535e-15,
+      "key": [
+        "Equal Baseline Exp 1",
+        "37049926",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.1514598574149543e-13,
+      "resident_nll": 2.3832787595286693e-14,
+      "tail_probability": 9.509060205914466e-14
+    },
+    {
+      "group_nll": 2.5614876886237424e-11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "43487752",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 6.062104744499029e-09,
+      "resident_nll": 3.595241415688122e-09,
+      "tail_probability": 6.365209692660301e-09
+    },
+    {
+      "group_nll": 7.641076155645072e-11,
+      "key": [
+        "Equal Baseline Exp 1",
+        "67430636",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 4.648922357836564e-09,
+      "resident_nll": 7.748816941634893e-10,
+      "tail_probability": 4.8813682540505e-09
+    },
+    {
+      "group_nll": 9.475811833803415e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "45795675",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 2.5429819916904102e-06,
+      "resident_nll": 4.2369982225509693e-08,
+      "tail_probability": 1.6446529726953096e-06
+    },
+    {
+      "group_nll": 9.920851661549845e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "49685025",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 7.9363380849807e-09,
+      "resident_nll": 3.390510518806102e-09,
+      "tail_probability": 8.333154610795646e-09
+    },
+    {
+      "group_nll": 2.1332379525392014e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "58475822",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.475749074039481e-08,
+      "resident_nll": 6.372595625795238e-09,
+      "tail_probability": 3.649536362004824e-08
+    },
+    {
+      "group_nll": 2.8805814289434293e-09,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "70166162",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.109299018811163e-07,
+      "resident_nll": 2.113373461232193e-08,
+      "tail_probability": 3.6162278124404756e-07
+    },
+    {
+      "group_nll": 1.2954200120004108e-10,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "80421478",
+        "0"
+      ],
+      "posterior_normalization": 7.771561172376096e-16,
+      "prediction_fraction": 1.0447367194130783e-09,
+      "resident_nll": 1.119123273218836e-09,
+      "tail_probability": 1.010171279958172e-09
+    },
+    {
+      "group_nll": 1.4721816061746141e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "83986039",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.2784398347491687e-07,
+      "resident_nll": 2.7129448872583357e-08,
+      "tail_probability": 3.4423616701584336e-07
+    },
+    {
+      "group_nll": 1.0316382896974341e-07,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "92017990",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 7.978334001998523e-07,
+      "resident_nll": 3.9614581890390357e-07,
+      "tail_probability": 1.295589618439258e-06
+    },
+    {
+      "group_nll": 4.998884760739938e-08,
+      "key": [
+        "Mixed Baseline Exp 1",
+        "94451609",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.170414837940975e-06,
+      "resident_nll": 3.247114235473767e-07,
+      "tail_probability": 1.065838952873932e-06
+    },
+    {
+      "group_nll": 4.450035111644598e-13,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "22198508",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 4.630026599758867e-12,
+      "resident_nll": 1.1283037995976234e-12,
+      "tail_probability": 2.609024107869118e-15
+    },
+    {
+      "group_nll": 1.1750580376448805e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "32679619",
+        "0"
+      ],
+      "posterior_normalization": 8.881784197001252e-16,
+      "prediction_fraction": 3.8419542568612156e-07,
+      "resident_nll": 1.112296516955372e-07,
+      "tail_probability": 3.9203976165413934e-07
+    },
+    {
+      "group_nll": 5.480476348666367e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "58710652",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 2.170860492652181e-07,
+      "resident_nll": 1.0117729842828993e-07,
+      "tail_probability": 4.593492253235354e-12
+    },
+    {
+      "group_nll": 1.48991929904696e-13,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "61948140",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 7.353641630481111e-13,
+      "resident_nll": 3.064215547965432e-13,
+      "tail_probability": 8.326672684688674e-17
+    },
+    {
+      "group_nll": 2.95307631883255e-10,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "69390994",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 1.520058628684548e-09,
+      "resident_nll": 5.408862709573489e-10,
+      "tail_probability": 1.7497336912697392e-11
+    },
+    {
+      "group_nll": 1.1311973654078618e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "70560629",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.5114012169810074e-09,
+      "resident_nll": 2.120915831849146e-09,
+      "tail_probability": 2.364341028515682e-09
+    },
+    {
+      "group_nll": 3.255170553651616e-08,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "72433781",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.423256685375261e-07,
+      "resident_nll": 4.313092956675923e-08,
+      "tail_probability": 4.801859333845426e-07
+    },
+    {
+      "group_nll": 7.005710751416639e-09,
+      "key": [
+        "Proportional Baseline Exp 1",
+        "83701533",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.1297028342519068e-08,
+      "resident_nll": 9.132244904730413e-09,
+      "tail_probability": 3.503034915527253e-08
+    },
+    {
+      "group_nll": 2.299095643681395e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "18376511",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 7.772936340882348e-07,
+      "resident_nll": 1.6208194327184804e-07,
+      "tail_probability": 6.992761804290593e-07
+    },
+    {
+      "group_nll": 1.4197369470535038e-10,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "48812052",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 1.752846741383633e-09,
+      "resident_nll": 4.2437648457078264e-10,
+      "tail_probability": 2.1706059172288406e-09
+    },
+    {
+      "group_nll": 4.007640196099971e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "50251280",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 1.1761495082263302e-06,
+      "resident_nll": 1.5565102375121086e-07,
+      "tail_probability": 1.6710859324572946e-06
+    },
+    {
+      "group_nll": 2.628165057101614e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "53180780",
+        "0"
+      ],
+      "posterior_normalization": 5.551115123125783e-16,
+      "prediction_fraction": 7.225843174955783e-07,
+      "resident_nll": 4.8150184200901336e-08,
+      "tail_probability": 1.3326473054364046e-06
+    },
+    {
+      "group_nll": 6.133246525119744e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "63845553",
+        "0"
+      ],
+      "posterior_normalization": 4.440892098500626e-16,
+      "prediction_fraction": 2.742089065533966e-06,
+      "resident_nll": 1.4855477558185404e-07,
+      "tail_probability": 3.3380023813367465e-06
+    },
+    {
+      "group_nll": 1.2467507833314282e-08,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "66350717",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.148167588301385e-08,
+      "resident_nll": 2.569164878820438e-08,
+      "tail_probability": 1.2584117476364953e-08
+    },
+    {
+      "group_nll": 3.053915790978363e-07,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "81387887",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 1.7725478174450846e-06,
+      "resident_nll": 6.223299039317882e-07,
+      "tail_probability": 2.13511276160247e-06
+    },
+    {
+      "group_nll": 8.280630846980796e-09,
+      "key": [
+        "RL Agent (M1) Exp 1",
+        "95891360",
+        "0"
+      ],
+      "posterior_normalization": 6.661338147750939e-16,
+      "prediction_fraction": 3.1722039186669837e-07,
+      "resident_nll": 2.869122665660466e-08,
+      "tail_probability": 4.497607929698777e-07
+    }
+  ],
+  "maxima": {
+    "group_nll": 3.053915790978363e-07,
+    "posterior_normalization": 8.881784197001252e-16,
+    "prediction_fraction": 3.5590406612597568e-06,
+    "resident_nll": 8.839076633515575e-07,
+    "tail_probability": 3.574244221329903e-06
+  },
+  "passed": true,
+  "peak_rss_kib": 330736,
+  "seconds": 8.35980280302465
+}

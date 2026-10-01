@@ -1,0 +1,409 @@
+{
+  "checks": [
+    {
+      "contract": {
+        "checkpoint_sha256": "c99c319cf9c64781d61deb6caada1836e56765a004db61ad3325d487e43e9538",
+        "family": "T03-constant",
+        "forecast_summary_sha256": "f8c0427aa096e877a60ddcbdf34fa2e3a74ca1f27133f25d85c1e8f715d8dced",
+        "games": 512,
+        "generation_contract_sha256": "d3c1df491b60f733242ca60c1feb9a0a0a3544c353ea2af1e45b266ba8e178ff",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "91b47752699226a4be50f0c76f2dc90a2e46e203fb8094742521839f84df3c90",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.1064362859999999,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 344612,
+      "pid": 41,
+      "seconds": 1.1273556129308417
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "c920fe932cf7cfad9e9e5928c07e0b5b5bab4d0732c8bd1d21c9c99063847ee2",
+        "family": "T03-linear",
+        "forecast_summary_sha256": "37a19778308dcc8d9c523da937077759812c00c849f174ee9de25f6d5bc91d3a",
+        "games": 512,
+        "generation_contract_sha256": "cfd9107be0ef6e89d8babef1fc89192c931e0577d93ed7c82ee0d41b150e518c",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "7e0cf2d234752d2edaa90b5cd9b5f0d60da37ca0ff76b5be18ecb16c3acc33d7",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 0.966128989,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 347200,
+      "pid": 42,
+      "seconds": 0.9198032519780099
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "be65c3cf7720e5805db3f1eeb285d832d662e8b54d5684fc51e051e9ce4032a2",
+        "family": "T03-feedforward",
+        "forecast_summary_sha256": "cbedcc2c542760bd5562832a112e9e8f900f827ac7f4739d300f8efd6b8c1ff2",
+        "games": 512,
+        "generation_contract_sha256": "6fe39daaa0c371e0608395d5fe7b3d5128b4b3072a631b4cd62eb493020e12ad",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "35d01bac65beee6d7c0c232be9d9560f0996b06a27283ad17edd88d84395da70",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 0.9688995,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 348124,
+      "pid": 43,
+      "seconds": 0.9130483079934493
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+        "family": "T03-GRU",
+        "forecast_summary_sha256": "6fd91f711c5e26d858433edf0602a89d2b8e5e88c6f1f1860afe16c6c2d02b95",
+        "games": 512,
+        "generation_contract_sha256": "40ebbba9034382487991e5f563b958d6f4372f26721f58c49c5ed8388cf51814",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "c8e5fae2602719c98bf45aa574cb0bb094d0b7bb49de72f886289558fd519866",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 0.895622109,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 345708,
+      "pid": 44,
+      "seconds": 0.8776553280185908
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "63ddc8400f53191767bb69890a743442f8c8cae9f18a70771b29a8a50b53710c",
+        "family": "T04-feedforward",
+        "forecast_summary_sha256": "c451ed1f489c87fc05708957c1ea3ac3ed051721438d65b99065db50f9f90d95",
+        "games": 512,
+        "generation_contract_sha256": "023a8cf6352830754439a821c009dcda5878124782be111821c16e4190f2827e",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "23be2f9f2ecca1fd7e2b934184b5b295d360b85f4da8a932900a5e59fda6c1b3",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.4451351259999998,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 346940,
+      "pid": 45,
+      "seconds": 1.370940891909413
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+        "family": "T04-GRU",
+        "forecast_summary_sha256": "f0b78b562c7a6d31a9dec40fdade2141ecedb65dc5c98612f8bd98e87b2c3a86",
+        "games": 512,
+        "generation_contract_sha256": "11a820ea93c7b76805567a535119b05aaae05735ff00cfd83adf1b5c87496bbc",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "2499c9b60114a7345b029d7b8156fc7bf8280bf89d1f000e9f86b77c231760c2",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.7574183899999998,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 344928,
+      "pid": 46,
+      "seconds": 1.6701291929930449
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+        "family": "P0",
+        "forecast_summary_sha256": "fceca81bd5f2ecefbfd9a8d91c4eb77311be756845f0042ce85da8a7601ac426",
+        "games": 512,
+        "generation_contract_sha256": "8d2e451b6d98ced5f7cef82b3ce6d55ec8cdac288071f644576c61fc037c58fd",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "9ce83c1be8efa53eb7e0bcbd7a4cc6d20770596f5defec0c0e99483f2ed16431",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.5290114169999995,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 348624,
+      "pid": 47,
+      "seconds": 1.6065674930578098
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "019662b85c044462d5d4b319ab65b2ab52128d7a7c3091fc3dd9df5daaf9a19e",
+        "family": "P1",
+        "forecast_summary_sha256": "44b7f77f2954f4404afda1ba74753b56a273934fcd4cce3d93641f11d6d41d9d",
+        "games": 512,
+        "generation_contract_sha256": "56598f0b98eacb9f521c7ec740cf002c5f0a755617211da434af0f3faa735a7f",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "cbe5a7ec84ce59eed908e535a1262f8bb557a5a326c438c13d21dd3de2e70ec9",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.3555352959999998,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 347636,
+      "pid": 48,
+      "seconds": 1.289179960032925
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+        "family": "H0",
+        "forecast_summary_sha256": "30b939aa641838b1a05ef5b4d680d06fa1898d0bc05103faaec76532593eb397",
+        "games": 512,
+        "generation_contract_sha256": "3019f8fcd30041beacf5215648ef5c8f0c0953c41a9bc533a63d9517e02d92db",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "6f2260981f435358b21a45e208cb9432913af384a71e43e2b46b74c85edc1844",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.088493267,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 346568,
+      "pid": 49,
+      "seconds": 1.0307849039090797
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d",
+        "family": "H1",
+        "forecast_summary_sha256": "ea5b6fc07752c94d883b68b9f571e092ec82668127be38abffd67faa9c3161e7",
+        "games": 512,
+        "generation_contract_sha256": "57de69cf9eb5935762896235073fa7258893e98110c5db6a2b9a11d7a7f01523",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "d58a3d621d6ae6e49ac83718b29957d139876906c254888b4652336733ecb012",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.1313285149999999,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 349512,
+      "pid": 50,
+      "seconds": 1.0698291320586577
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "520d40c378da3589ea259383b6829c6f1b13d4519528493f0b0ff228d8cff9a3",
+        "family": "FA-GRU",
+        "forecast_summary_sha256": "d9d85f53072b648efd6c19c7076f5e31dd0e88198c3a4f4acfc3ab531aec5982",
+        "games": 512,
+        "generation_contract_sha256": "8ec2a9c831b1115db01ed63c7475afc73fc8d7f2ccc0eb6a2ca10de962888f18",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "b2267c3c23c455d68fdfa52d4bbaf8be47d4e7eeb5f95c5cbb2e5671ec060767",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.3349450520000001,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 346472,
+      "pid": 51,
+      "seconds": 1.2639016429893672
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "721249dc948e3efd72b088706c39d06bba11626ed4a908b40e55af2af6aa8507",
+        "family": "FA-P0",
+        "forecast_summary_sha256": "b2e2e2c240837cc5b84c74b5cd70a5cdce75c34f69439264368f2655bf3cc943",
+        "games": 512,
+        "generation_contract_sha256": "83a4b1f478c765cbad4d0fd3cbb738af98501d178eb51d39159a1b385fe5383f",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "f737e972506e5600ea427c9bdc4421ca5b3e53f7f32d754225f9b2b38275ec0f",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.1915724169999997,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 345468,
+      "pid": 52,
+      "seconds": 1.128131070989184
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+        "family": "FA-H0",
+        "forecast_summary_sha256": "3f3262ba64c1af2fe62bfbe3f525b4887dcb4171138925e1120e7b122e07701c",
+        "games": 512,
+        "generation_contract_sha256": "bcd917c1de51a0b237a5d67f526f6e69fef8fb4795387cab4af84b8127e5718c",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "209e5d85798367f16c617367c40cdacf0528e7f0428e80b53e308130ff9a1a81",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.1068412689999998,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 346696,
+      "pid": 53,
+      "seconds": 1.0512856979621574
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+        "family": "CL-T04-GRU",
+        "forecast_summary_sha256": "a73e980936ed9d2358eade46aa1c202a6c397404ddaed629493bf68585d3076a",
+        "games": 512,
+        "generation_contract_sha256": "c6aaa9c8cb7ae2346c554f1b0af2ceb3daa32443212ef8d4b3753b06502c5df7",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "6421baee895d27ec9aed281492b068cab419bfa361c78c2ea2fc2fd0bfb9f9a6",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 1.7433155949999999,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 350908,
+      "pid": 54,
+      "seconds": 1.6589348509442061
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+        "family": "CL-P0",
+        "forecast_summary_sha256": "bbc615370f1520ea0e40e53cab03bcc08dcf2f0e0f60f62ba71e40d516d4b62b",
+        "games": 512,
+        "generation_contract_sha256": "21ada0b4d2fb87dffededb5fe95046a34fa390ec15c11a728e2ab9d9dae32524",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "fdd8b41a0af4d2643bb4c26fbc5d26672bdbef0d7a125435e3bfb8ff53488a5e",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 2.717794257,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 347552,
+      "pid": 55,
+      "seconds": 2.5806704479036853
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+        "family": "CL-H0",
+        "forecast_summary_sha256": "9d633fbb00c24bc6c45603071171375abbc77715485193aafa5844ba703e9c06",
+        "games": 512,
+        "generation_contract_sha256": "e020812e16bed9c17f78433ac44e5d32adc0aba2498777a3891e472fc3a0dccc",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "f6d1d707d1a9e414f16335c689eb134fe044d35863bdbffd768c370eab2f1b35",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 2.1847604890000003,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 347360,
+      "pid": 56,
+      "seconds": 2.0685442640678957
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "520d40c378da3589ea259383b6829c6f1b13d4519528493f0b0ff228d8cff9a3",
+        "family": "CL-FA-GRU",
+        "forecast_summary_sha256": "26a854a33928afadbbe31084539258749eb14e85f39136860df50787b8a655e5",
+        "games": 512,
+        "generation_contract_sha256": "e6a145b71126b8260d9a05ed6228b62873bf21f2eb38f9be12af336ff2e8788e",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "5fe39b8bb145b52e0f40971ff9d26733fb2791089086319a2c09cf1d4e8cabc8",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 2.688338868,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 348860,
+      "pid": 57,
+      "seconds": 2.5517699270276353
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "721249dc948e3efd72b088706c39d06bba11626ed4a908b40e55af2af6aa8507",
+        "family": "CL-FA-P0",
+        "forecast_summary_sha256": "20d57ff5feb3da7f15bef3542960ff8ed3a059ea7f71aa69a547806966411472",
+        "games": 512,
+        "generation_contract_sha256": "5a1de921f58223ae87fbcd87e676032260b9090e4dceaaf5ca6b6f9aa0b00105",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "e4b81abb6e1391d0ba9c17322be8118bdb63ca48a7e879a63716d9df7edfd2e1",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 2.0853185,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 344040,
+      "pid": 58,
+      "seconds": 1.9803543119924143
+    },
+    {
+      "contract": {
+        "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+        "family": "CL-FA-H0",
+        "forecast_summary_sha256": "c3c3b569e8e2847d913baa09793e68f5eb69c367e185b158edc630733590f434",
+        "games": 512,
+        "generation_contract_sha256": "4681cbe24dcb4f9b60306e9e190abf549e1ab60f6797c03e1e16802bbbf469ae",
+        "rule": "Mixed",
+        "seed": 17,
+        "trajectory_sha256": "4af27e71cf9398a573b6be641ab7fa6dbd4eb07455cd123273832086376161ab",
+        "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+      },
+      "cpu_seconds": 2.3979608760000004,
+      "exact_game_summaries": 512,
+      "exact_trajectories": 4,
+      "fresh_process": true,
+      "passed": true,
+      "peak_rss_kib": 347812,
+      "pid": 59,
+      "seconds": 2.2754037260310724
+    }
+  ],
+  "complete": true,
+  "families": 19,
+  "passed": true,
+  "peak_worker_rss_kib": 350908,
+  "projected_seconds": 28.43429001478944,
+  "seconds_this_invocation": 98.12540923303459
+}

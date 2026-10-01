@@ -1,0 +1,396 @@
+{
+  "checks": [
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "c99c319cf9c64781d61deb6caada1836e56765a004db61ad3325d487e43e9538",
+      "epochs": 120,
+      "family": "T03-constant",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 120,
+      "validation_nll": 2.8568291482359895
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "57709ffb15d56b9568f688cc56441bc3ec90c3a4777a1dad918676331a755a8b",
+      "epochs": 120,
+      "family": "T03-constant",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 120,
+      "validation_nll": 2.860996487307178
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "4d44dd4d21f404db3b0b785d5d59a737b5a01bcf0afa0588e49c58dfb161cc77",
+      "epochs": 120,
+      "family": "T03-constant",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 120,
+      "validation_nll": 2.8541968810050626
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "c920fe932cf7cfad9e9e5928c07e0b5b5bab4d0732c8bd1d21c9c99063847ee2",
+      "epochs": 120,
+      "family": "T03-linear",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 120,
+      "validation_nll": 2.808152092542238
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "1d746fff5df3a3d384c965301ae19af31b63dc48c1d5c4b1f86f1c5d36995c8c",
+      "epochs": 120,
+      "family": "T03-linear",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 120,
+      "validation_nll": 2.8038591958437022
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "cab8a69f36f55fcc0e3e6153b71856e08419caf9d5e6de8e74421260e1f115f9",
+      "epochs": 120,
+      "family": "T03-linear",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 120,
+      "validation_nll": 2.80963018363462
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "be65c3cf7720e5805db3f1eeb285d832d662e8b54d5684fc51e051e9ce4032a2",
+      "epochs": 120,
+      "family": "T03-feedforward",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 109,
+      "validation_nll": 2.6683948916927247
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "72769aecba837a6103debf4e06eb9657c7c975953a6c9238c6f38ec4da84fe6f",
+      "epochs": 120,
+      "family": "T03-feedforward",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 116,
+      "validation_nll": 2.6664142460057634
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "9f2316808439affb020d8d2382b50d0d5f2fa551c8451ed4228e82821cebbe18",
+      "epochs": 120,
+      "family": "T03-feedforward",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 117,
+      "validation_nll": 2.6692846954832694
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "4146b729f335ff47d4f2e59c62a77fc77d8cdc8db568839126dcc5cf41f884a7",
+      "epochs": 120,
+      "family": "T03-GRU",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 116,
+      "validation_nll": 2.6479121784064787
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "25143274613b933909fde59f9c7829f73581c5edb821787fdf4efeb1c2169091",
+      "epochs": 120,
+      "family": "T03-GRU",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 117,
+      "validation_nll": 2.6503829938635732
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "83ea46a7c1f7b5874d32f28d7a0a26cb3f07d77bf57f1682801d3ac26bed14d2",
+      "epochs": 120,
+      "family": "T03-GRU",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 113,
+      "validation_nll": 2.648604778061384
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "63ddc8400f53191767bb69890a743442f8c8cae9f18a70771b29a8a50b53710c",
+      "epochs": 480,
+      "family": "T04-feedforward",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 478,
+      "validation_nll": 2.6433068690851895
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "e64f1d4048b4f9b830d3cd5f6d31465f65e9ac4843161dded476ca275e53e946",
+      "epochs": 480,
+      "family": "T04-feedforward",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 444,
+      "validation_nll": 2.6412160960858295
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "6a1e6a7ef5770e5cb77a129d7c941aabd21f8b4fcac17e8b615fb4d61cd9b0e1",
+      "epochs": 480,
+      "family": "T04-feedforward",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 473,
+      "validation_nll": 2.641112246325137
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+      "epochs": 480,
+      "family": "T04-GRU",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 476,
+      "validation_nll": 2.566374499859358
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "d85aae54aeba7cf9de9a453c743dbaac3af05ae43385c8592b54f6d40694fc4f",
+      "epochs": 480,
+      "family": "T04-GRU",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 460,
+      "validation_nll": 2.5767467385036547
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "3bcb6bb2871153c8c95f34d6759c69fb18b7702b90f72633e8e8172973e52241",
+      "epochs": 480,
+      "family": "T04-GRU",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 470,
+      "validation_nll": 2.5673550634927635
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "2a32c5df362e28a7968ed071e518312fb34e7ee610149942050165cd367b68a9",
+      "epochs": 480,
+      "family": "P0",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 480,
+      "validation_nll": 2.5889217283089936
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "2fdd756d345c2013996866284f7792835fdb659a3c5df2690b00800af5d89642",
+      "epochs": 480,
+      "family": "P0",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 480,
+      "validation_nll": 2.5797710067459727
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "56f691d06b0452d030688fb9a09ff57445ec796c118db8e2dc5aa9166d73a662",
+      "epochs": 480,
+      "family": "P0",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 480,
+      "validation_nll": 2.5799215323445948
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "019662b85c044462d5d4b319ab65b2ab52128d7a7c3091fc3dd9df5daaf9a19e",
+      "epochs": 480,
+      "family": "P1",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 480,
+      "validation_nll": 2.584078729959894
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "deda3db37265ccd7344a0aef229ce761bfbfae8f29b44fe12a07d6b993a09087",
+      "epochs": 480,
+      "family": "P1",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 480,
+      "validation_nll": 2.575646299475136
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "940393c41c87f14644bfb449765c900f06cf92bcc858839f5814aeafbaa2b354",
+      "epochs": 480,
+      "family": "P1",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 480,
+      "validation_nll": 2.5757044315143283
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "7d6fc5c3d04529b68cb0425df74ed5b246e7aaad2fc64e4dd871c41437a87349",
+      "epochs": 480,
+      "family": "H0",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 480,
+      "validation_nll": 2.5719788962295755
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "9c6cade561becf4363b269f5db19158a0a5c4dc9895ce7f7edae5e1253718aa4",
+      "epochs": 480,
+      "family": "H0",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 479,
+      "validation_nll": 2.565794008256099
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "4606995065f47f7e6aded0b67ffbe1074066ada14798652153d70e8ee4df7b19",
+      "epochs": 480,
+      "family": "H0",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 480,
+      "validation_nll": 2.5657840264691005
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "0ce02615f56b7851dfb95f26cf20d12849e454da4d5b7e1462530a74cb7ada1d",
+      "epochs": 480,
+      "family": "H1",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 480,
+      "validation_nll": 2.5707357406205347
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "2ab1b391d4a2f416d83303dcb3d6f62da00f43cad1a8db76b1ccdab82faf37e9",
+      "epochs": 480,
+      "family": "H1",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 479,
+      "validation_nll": 2.5645993565110548
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "8db1ae16acc2a45e47b63d73d19b64849a67d78319bffa949269b6d8298094f1",
+      "epochs": 480,
+      "family": "H1",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 480,
+      "validation_nll": 2.5647030788020007
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "520d40c378da3589ea259383b6829c6f1b13d4519528493f0b0ff228d8cff9a3",
+      "epochs": 480,
+      "family": "FA-GRU",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 459,
+      "validation_nll": 2.592372522651333
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "ab1d2785defe4ba89fc4bf681e73beb1e8269e594a3cdb3515e2a32ace7f8766",
+      "epochs": 480,
+      "family": "FA-GRU",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 380,
+      "validation_nll": 2.5975958664054257
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "08b2c42836cb2c4b902d5e629b11133b082a4f628c4ddcf90e77c1c94f1137bb",
+      "epochs": 480,
+      "family": "FA-GRU",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 461,
+      "validation_nll": 2.584446904658507
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "721249dc948e3efd72b088706c39d06bba11626ed4a908b40e55af2af6aa8507",
+      "epochs": 480,
+      "family": "FA-P0",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 478,
+      "validation_nll": 2.5800843029594693
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "7e455e2572ff5a91dbdd5481d7c866f9f104a8661991460839013239005994f1",
+      "epochs": 480,
+      "family": "FA-P0",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 479,
+      "validation_nll": 2.580270674744564
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "e8c02a20c5c83af55511e4159bb54e4878b80cdf6d2e19e63c105b36148c53c0",
+      "epochs": 480,
+      "family": "FA-P0",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 480,
+      "validation_nll": 2.5813968232407203
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "b5468e4ea1619831db0bceb841ca2356e9bdfe274a280067bf02365d87ff9920",
+      "epochs": 480,
+      "family": "FA-H0",
+      "passed": true,
+      "seed": 17,
+      "selected_epoch": 473,
+      "validation_nll": 2.5636490774869323
+    },
+    {
+      "boundary_minimum": false,
+      "checkpoint_sha256": "5eeaf0fd7fa2ddab3da81b42ef4cd464db5cb07731db6e3368c525daaccc70e1",
+      "epochs": 480,
+      "family": "FA-H0",
+      "passed": true,
+      "seed": 29,
+      "selected_epoch": 477,
+      "validation_nll": 2.563548569506791
+    },
+    {
+      "boundary_minimum": true,
+      "checkpoint_sha256": "90a081156fe5d137fee0472d696935b289ab0c2ac2952036063f790364773d17",
+      "epochs": 480,
+      "family": "FA-H0",
+      "passed": true,
+      "seed": 43,
+      "selected_epoch": 480,
+      "validation_nll": 2.5639460520146655
+    }
+  ],
+  "passed": true,
+  "unique_fits": 39
+}

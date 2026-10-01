@@ -1,0 +1,1189 @@
+{
+  "aggregation": "Nonforced choices within each group; eight groups per rule; four rules equally including recorded M1 offers; fitted seeds equally",
+  "definition": "Calibrated minus base validation nonforced NLL; positive cost means worse likelihood",
+  "per_family_all_rules": [
+    {
+      "base_nll": 2.5914717645717564,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.60495844907433,
+      "cost": 0.013486684502573435,
+      "family": "FA-GRU",
+      "groups": 32,
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.5637145663361296,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.564192330920743,
+      "cost": 0.00047776458461360843,
+      "family": "FA-H0",
+      "groups": 32,
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.5805839336482523,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.578453944278841,
+      "cost": -0.0021299893694108154,
+      "family": "FA-P0",
+      "groups": 32,
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.567852310318258,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.570684387995027,
+      "cost": 0.0028320776767690368,
+      "family": "H0",
+      "groups": 32,
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.5828714224665212,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.583118435439216,
+      "cost": 0.0002470129726948415,
+      "family": "P0",
+      "groups": 32,
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.570158767285259,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.5830460329536145,
+      "cost": 0.012887265668355111,
+      "family": "T04-GRU",
+      "groups": 32,
+      "seeds": 3
+    }
+  ],
+  "per_family_rule": [
+    {
+      "base_nll": 2.1660290874613595,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.161641959827346,
+      "cost": -0.004387127634013203,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.532844689672832,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.5405472748323246,
+      "cost": 0.007702585159492663,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.668651533580926,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.7093859347330382,
+      "cost": 0.04073440115211158,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.9983617475719075,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 3.00825862690461,
+      "cost": 0.009896879332702705,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.1513434861165837,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.148692048407487,
+      "cost": -0.0026514377090968524,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.5005170680612534,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.4947891577372867,
+      "cost": -0.005727910323966394,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.6676577262297925,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.6783671230760766,
+      "cost": 0.010709396846284283,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.9353399849368884,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.9349209944621215,
+      "cost": -0.0004189904747666044,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "M1",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.148946012032211,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.1435432780464603,
+      "cost": -0.00540273398575053,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.5167031913769473,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.512865635613892,
+      "cost": -0.0038375557630550006,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.7070021947823784,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.708478466646433,
+      "cost": 0.0014762718640544865,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.9496843364014715,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.9489283968085793,
+      "cost": -0.0007559395928922186,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "M1",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.1448569780979816,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.1470508225129836,
+      "cost": 0.002193844415002477,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.507772058458459,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.5012524998653816,
+      "cost": -0.006519558593077661,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.678856735556407,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.6954249999487705,
+      "cost": 0.016568264392363623,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.939923469160185,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.939009229652973,
+      "cost": -0.0009142395072122925,
+      "family": "H0",
+      "groups": 8,
+      "rule": "M1",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.1397434475221946,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.1403116671961606,
+      "cost": 0.0005682196739657345,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.527411323187233,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.5243390529845127,
+      "cost": -0.003072270202720014,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.7082090361747446,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.711623157315944,
+      "cost": 0.003414121141199248,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.9561218829819125,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.956199864260247,
+      "cost": 7.798127833439732e-05,
+      "family": "P0",
+      "groups": 8,
+      "rule": "M1",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.1471899958690606,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.151929845442402,
+      "cost": 0.00473984957334143,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.528105781543227,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.5329470906466747,
+      "cost": 0.004841309103447304,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.654597115671075,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.6831704681422024,
+      "cost": 0.028573352471127578,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seeds": 3
+    },
+    {
+      "base_nll": 2.9507421760576755,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.9641367275831794,
+      "cost": 0.013394551525504136,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seeds": 3
+    }
+  ],
+  "per_seed_all_rules": [
+    {
+      "base_nll": 2.5923725226513343,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.60750349942705,
+      "cost": 0.015130976775715621,
+      "family": "FA-GRU",
+      "groups": 32,
+      "seed": 17
+    },
+    {
+      "base_nll": 2.597595866405427,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.6099807673655775,
+      "cost": 0.012384900960150547,
+      "family": "FA-GRU",
+      "groups": 32,
+      "seed": 29
+    },
+    {
+      "base_nll": 2.584446904658508,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.597391080430362,
+      "cost": 0.012944175771854138,
+      "family": "FA-GRU",
+      "groups": 32,
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5636490774869323,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.5633459944869337,
+      "cost": -0.000303082999998594,
+      "family": "FA-H0",
+      "groups": 32,
+      "seed": 17
+    },
+    {
+      "base_nll": 2.5635485695067906,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.565499697857039,
+      "cost": 0.0019511283502483545,
+      "family": "FA-H0",
+      "groups": 32,
+      "seed": 29
+    },
+    {
+      "base_nll": 2.563946052014665,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.5637313004182563,
+      "cost": -0.00021475159640893526,
+      "family": "FA-H0",
+      "groups": 32,
+      "seed": 43
+    },
+    {
+      "base_nll": 2.58008430295947,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.5772206818173444,
+      "cost": -0.002863621142125683,
+      "family": "FA-P0",
+      "groups": 32,
+      "seed": 17
+    },
+    {
+      "base_nll": 2.580270674744564,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.577545729449577,
+      "cost": -0.0027249452949871245,
+      "family": "FA-P0",
+      "groups": 32,
+      "seed": 29
+    },
+    {
+      "base_nll": 2.581396823240722,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.580595421569602,
+      "cost": -0.0008014016711196392,
+      "family": "FA-P0",
+      "groups": 32,
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5719788962295755,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.5752111768111843,
+      "cost": 0.0032322805816088485,
+      "family": "H0",
+      "groups": 32,
+      "seed": 17
+    },
+    {
+      "base_nll": 2.565794008256099,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.5685568829477616,
+      "cost": 0.002762874691662809,
+      "family": "H0",
+      "groups": 32,
+      "seed": 29
+    },
+    {
+      "base_nll": 2.5657840264691,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.5682851042261357,
+      "cost": 0.0025010777570354525,
+      "family": "H0",
+      "groups": 32,
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5889217283089954,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.587906863553878,
+      "cost": -0.0010148647551174728,
+      "family": "P0",
+      "groups": 32,
+      "seed": 17
+    },
+    {
+      "base_nll": 2.579771006745974,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.5811255261251453,
+      "cost": 0.001354519379171304,
+      "family": "P0",
+      "groups": 32,
+      "seed": 29
+    },
+    {
+      "base_nll": 2.5799215323445943,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.5803229166386252,
+      "cost": 0.0004013842940306933,
+      "family": "P0",
+      "groups": 32,
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5663744998593585,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.578713380638328,
+      "cost": 0.012338880778969497,
+      "family": "T04-GRU",
+      "groups": 32,
+      "seed": 17
+    },
+    {
+      "base_nll": 2.5767467385036555,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.590582351216132,
+      "cost": 0.013835612712476908,
+      "family": "T04-GRU",
+      "groups": 32,
+      "seed": 29
+    },
+    {
+      "base_nll": 2.5673550634927644,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.5798423670063833,
+      "cost": 0.01248730351361893,
+      "family": "T04-GRU",
+      "groups": 32,
+      "seed": 43
+    }
+  ],
+  "per_seed_rule": [
+    {
+      "base_nll": 2.161210763411929,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.1548608501601825,
+      "cost": -0.006349913251746386,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.541189864799643,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.548859268356763,
+      "cost": 0.007669403557119647,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.666537317668759,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.7155290479048118,
+      "cost": 0.048991730236052966,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 17
+    },
+    {
+      "base_nll": 3.000552144725006,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 3.0107648312864423,
+      "cost": 0.010212686561436257,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.1724538061986003,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.165840241997069,
+      "cost": -0.006613564201531474,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.528802080283169,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.534443148472809,
+      "cost": 0.005641068189639942,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.6753876115979263,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.7127795927827805,
+      "cost": 0.037391981184854206,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 29
+    },
+    {
+      "base_nll": 3.0137399675420125,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 3.026860086209652,
+      "cost": 0.013120118667639513,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.164422692773549,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.164224787324787,
+      "cost": -0.0001979054487617482,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5285421239356847,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.538339407667403,
+      "cost": 0.009797283731718398,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.6640296714760945,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.699849163511522,
+      "cost": 0.03581949203542756,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.980793130448704,
+      "calibrated_family": "CL-FA-GRU",
+      "calibrated_nll": 2.9871509632177364,
+      "cost": 0.0063578327690323455,
+      "family": "FA-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.149924688335964,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.147165638575048,
+      "cost": -0.0027590497609160103,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.5003006727211714,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.494639391780603,
+      "cost": -0.005661280940568503,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.666149426835082,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.673722165796391,
+      "cost": 0.007572738961309167,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.9382215220555117,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.9378567817956927,
+      "cost": -0.0003647402598190297,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.1517160490280354,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.1492001356499997,
+      "cost": -0.0025159133780356946,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.5010524500131446,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.4949316674701745,
+      "cost": -0.006120782542970105,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.6679295921215838,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.6847295407366873,
+      "cost": 0.016799948615103588,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.9334961868643985,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.933137447571294,
+      "cost": -0.0003587392931043709,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.152389720985751,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.149710370997412,
+      "cost": -0.0026793499883388527,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5001980814494438,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.494796413961083,
+      "cost": -0.005401667488360573,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.6688941597327123,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.6766496626951524,
+      "cost": 0.007755502962440097,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.9343022458907546,
+      "calibrated_family": "CL-FA-H0",
+      "calibrated_nll": 2.933768754019378,
+      "cost": -0.0005334918713764125,
+      "family": "FA-H0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.146609075629333,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.140932524674651,
+      "cost": -0.0056765509546816695,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.5168142549041725,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.51248318362401,
+      "cost": -0.004331071280162746,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.7043600559869034,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.704004362327881,
+      "cost": -0.000355693659022549,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.9525538253174712,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.9514626566428355,
+      "cost": -0.0010911686746357674,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.1489839370236985,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.1435034267109536,
+      "cost": -0.0054805103127448795,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.5169431196138223,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.51315860512219,
+      "cost": -0.003784514491632418,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.7073827973412063,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.706922382574664,
+      "cost": -0.0004604147665423497,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.9477728449995286,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.9465985033905,
+      "cost": -0.0011743416090288505,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.151245023443601,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.146193882753776,
+      "cost": -0.00505114068982504,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5163521996128466,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.512955118095477,
+      "cost": -0.0033970815173698377,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.7092637310190257,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.714508655036754,
+      "cost": 0.0052449240177283585,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.9487263388874148,
+      "calibrated_family": "CL-FA-P0",
+      "calibrated_nll": 2.9487240303924027,
+      "cost": -2.308495012037781e-06,
+      "family": "FA-P0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.1468590348348533,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.1486387713068966,
+      "cost": 0.001779736472043325,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.508503284944446,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.502413544719482,
+      "cost": -0.00608974022496378,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.685833291256877,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.704031221986343,
+      "cost": 0.018197930729466183,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.9467199738821264,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.945761169232016,
+      "cost": -0.0009588046501103342,
+      "family": "H0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.143683065909614,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.1447406088981,
+      "cost": 0.0010575429884860377,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.507165338428286,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.500646262213078,
+      "cost": -0.006519076215207864,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.676175130111102,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.694035723794568,
+      "cost": 0.01786059368346571,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.9361524985753933,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.9348049368853006,
+      "cost": -0.0013475616900926468,
+      "family": "H0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.144028833549477,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.147773087333955,
+      "cost": 0.0037442537844780688,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5076475520026458,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.5006976926635844,
+      "cost": -0.006949859339061337,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.6745617853012416,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.6882080540654005,
+      "cost": 0.013646268764158975,
+      "family": "H0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.9368979350230364,
+      "calibrated_family": "CL-H0",
+      "calibrated_nll": 2.9364615828416025,
+      "cost": -0.00043635218143389665,
+      "family": "H0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.14386742826678,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.1440370165821774,
+      "cost": 0.00016958831539737318,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.5289606853474345,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.5282631512736793,
+      "cost": -0.0006975340737551683,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.7183629588449945,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.7146610223756573,
+      "cost": -0.0037019364693371415,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.9644958407767725,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.9646662639839976,
+      "cost": 0.00017042320722504556,
+      "family": "P0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.1368302860510413,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.1369047178622815,
+      "cost": 7.443181124022757e-05,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.5268493048886844,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.5227992652497573,
+      "cost": -0.004050039638927139,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.703673076537472,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.712902409707711,
+      "cost": 0.009229333170238885,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.9517313595066987,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.951895711680832,
+      "cost": 0.0001643521741332421,
+      "family": "P0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.138532628248763,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.1399932671440225,
+      "cost": 0.0014606388952596028,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.52642397932558,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.5219547424301023,
+      "cost": -0.004469236895477735,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.7025910731417673,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.7073060398644633,
+      "cost": 0.004714966722696001,
+      "family": "P0",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.952138448662267,
+      "calibrated_family": "CL-P0",
+      "calibrated_nll": 2.952037617115912,
+      "cost": -0.00010083154635509572,
+      "family": "P0",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.1465795816883677,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.1498243475122196,
+      "cost": 0.003244765823851914,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.511914004414277,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.516624505850645,
+      "cost": 0.004710501436368197,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.664458562871765,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.6951401691259864,
+      "cost": 0.03068160625422145,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.9425458504630244,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.953264500064461,
+      "cost": 0.010718649601436425,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 17
+    },
+    {
+      "base_nll": 2.148569640030206,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.1560574995915642,
+      "cost": 0.007487859561358334,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.546688054564342,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.5544219679603533,
+      "cost": 0.0077339133960112605,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.6568714847993573,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.6855418849426895,
+      "cost": 0.02867040014333222,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.9548577746207165,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.9663080523699223,
+      "cost": 0.011450277749205817,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 29
+    },
+    {
+      "base_nll": 2.146420765888607,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.1499076892234212,
+      "cost": 0.0034869233348140405,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Equal",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.5257152856510627,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.527794798129025,
+      "cost": 0.002079512477962453,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Mixed",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.6424612993421017,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.668829350357931,
+      "cost": 0.026368051015829064,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "Proportional",
+      "seed": 43
+    },
+    {
+      "base_nll": 2.954822903089285,
+      "calibrated_family": "CL-T04-GRU",
+      "calibrated_nll": 2.9728376303151554,
+      "cost": 0.018014727225870164,
+      "family": "T04-GRU",
+      "groups": 8,
+      "rule": "M1",
+      "seed": 43
+    }
+  ],
+  "selection_boundary": "Tilts selected on training outcomes only; these validation costs are descriptive"
+}

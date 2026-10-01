@@ -1,0 +1,36 @@
+{
+  "elapsed_seconds": 9.233939118916169,
+  "experiment_2_opened": false,
+  "human_games": 160,
+  "peak_rss_mib": 243.4453125,
+  "phase": "prefreeze_data",
+  "replay": [
+    {
+      "cohort": "BC1",
+      "max_abs_offer_residual": 7.2898567525009526,
+      "max_abs_slope_residual": 0.04999490959865194,
+      "mechanism": "Interpolating",
+      "offer_rows_above_1e_4": 20480,
+      "offer_rows_above_1e_9": 20480,
+      "rows": 20480,
+      "slope_clipped_rows": 0,
+      "slope_defined_rows": 19968,
+      "slope_rows_above_1e_4": 7560,
+      "slope_undefined_rows": 512
+    },
+    {
+      "cohort": "BC2",
+      "max_abs_offer_residual": 7.3293117444554525,
+      "max_abs_slope_residual": 0.04998410779464885,
+      "mechanism": "Interpolating",
+      "offer_rows_above_1e_4": 20480,
+      "offer_rows_above_1e_9": 20480,
+      "rows": 20480,
+      "slope_clipped_rows": 0,
+      "slope_defined_rows": 19968,
+      "slope_rows_above_1e_4": 8566,
+      "slope_undefined_rows": 512
+    }
+  ],
+  "synthetic_games": 3584
+}

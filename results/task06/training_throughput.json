@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-01T20:37:03.328994+00:00",
+  "families": [
+    {
+      "family": "FA-GRU",
+      "seconds_per_epoch": 0.4401099172103891,
+      "timing_source": "Task06 retained training epochs",
+      "current_measurement": true,
+      "projected_seconds": 633.7582807829604
+    },
+    {
+      "family": "FA-P0",
+      "seconds_per_epoch": 0.2505943205214054,
+      "timing_source": "Task06 retained training epochs",
+      "current_measurement": true,
+      "projected_seconds": 360.85582155082375
+    },
+    {
+      "family": "FA-H0",
+      "seconds_per_epoch": 1.8808728170828544,
+      "timing_source": "Task06 retained training epochs",
+      "current_measurement": true,
+      "projected_seconds": 2708.4568565993104
+    }
+  ],
+  "projected_phase_seconds": 3703.0709589330945,
+  "projected_measured_components_seconds": 3703.0709589330945,
+  "all_families_measured": true,
+  "limit_seconds": 28800,
+  "retained_training_not_pilot": true
+}

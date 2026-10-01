@@ -1,0 +1,479 @@
+{
+  "audit_version": 2,
+  "interpolating_bc1_replay": {
+    "games": 512,
+    "offer_residual": {
+      "max": 7.185067292187455,
+      "max_abs": 7.2898567525009526,
+      "mean_abs": 0.13871824734950675,
+      "min": -7.2898567525009526
+    },
+    "rounds": 20480,
+    "slope_clipped_rounds": 0,
+    "slope_defined_rounds": 19968,
+    "slope_residual": {
+      "max": 0.04998764946202672,
+      "max_abs": 0.04999490959865194,
+      "mean_abs": 0.004639542822510667,
+      "min": -0.04999490959865194
+    },
+    "slope_undefined_rounds": 512
+  },
+  "interpolating_bc1_rounding_diagnostic": {
+    "hypothesis": "w=round((pool/200)**22,1); data-derived diagnostic only; not source-documented or implemented",
+    "interpretation": "Quantized weight explains large continuous-rule discrepancy. Remaining tiny absolute offer differences can amplify normalized slope differences when allocations are small or nearly equal.",
+    "offer_residual": {
+      "max": 4.998587881669772e-05,
+      "max_abs": 0.0010746853056957661,
+      "mean_abs": 0.0002614176480580276,
+      "min": -0.0010746853056957661
+    },
+    "rounded_weight_counts": {
+      "0.0": 16141,
+      "0.1": 753,
+      "0.2": 367,
+      "0.3": 232,
+      "0.4": 176,
+      "0.5": 120,
+      "0.6": 106,
+      "0.7": 93,
+      "0.8": 106,
+      "0.9": 59,
+      "1.0": 2327
+    },
+    "rows": 20480,
+    "slope_residual": {
+      "max": 0.0198343038593205,
+      "max_abs": 0.022449750472584906,
+      "mean_abs": 0.0003625737095747237,
+      "min": -0.022449750472584906
+    },
+    "worst_row": {
+      "expected": [
+        0.00065259598130501,
+        140.77786911889945,
+        0.13404828511924224,
+        0.0
+      ],
+      "key": [
+        "Interpolating Baseline BC 1",
+        "1814",
+        "278"
+      ],
+      "max_abs": 0.0010746853056957661,
+      "observed": [
+        0.000699999975040555,
+        140.77679443359375,
+        0.1340000033378601,
+        0.0
+      ],
+      "pool": 140.91257,
+      "round": 10,
+      "rounded_weight": 0.0
+    }
+  },
+  "mixed_test_humans_after20": {
+    "alive_exact_positive": 1.0,
+    "alive_gt1": 0.75,
+    "group_pools": [
+      81.20111846923828,
+      56.00093078613281,
+      113.40115356445312,
+      0.009999999776482582,
+      200.0,
+      53.200931549072266,
+      70.0009994506836,
+      0.009999999776482582
+    ],
+    "groups": 8,
+    "pool_mean": 71.72814172739163
+  },
+  "not_independently_recomputed": [
+    "Inference-based external-audit claims are handled separately by institutional_predict.py audit and audit-rollouts; this artifact-only audit does not certify unrun predictions. The external 64-game bank seed was not supplied, so new 64-game draws require explicit Monte Carlo uncertainty."
+  ],
+  "old_task06_budget_audit": {
+    "additional_epoch_multiple": 3,
+    "forecast_branches": {
+      "exp1": 516096,
+      "exp2": 1474560,
+      "total": 1990656
+    },
+    "interpretation": "Recorded epoch times imply 7.052 hours for threefold continuation, supporting the user brief roughly seven hours; the old task stated 7.2 hours. Branch arithmetic is exactly 1,990,656. Both were projections, not elapsed work.",
+    "old_task_status": "specified; not executed",
+    "projected_additional_hours_from_recorded_epoch_times": 7.051944001315375,
+    "task05_total_seconds": 8462.33280157845,
+    "task05_training_histories": [
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/H0_17/training.json",
+        "seconds": 980.8159346288303
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/H0_29/training.json",
+        "seconds": 1045.721703503863
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/H0_43/training.json",
+        "seconds": 1040.6325885538245
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/H1_17/training.json",
+        "seconds": 1062.7540189957945
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/H1_29/training.json",
+        "seconds": 1131.6110231888015
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/H1_43/training.json",
+        "seconds": 836.290563937393
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/P0_17/training.json",
+        "seconds": 152.32507313333917
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/P0_29/training.json",
+        "seconds": 153.31061759556178
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/P0_43/training.json",
+        "seconds": 185.3292600947898
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/P1_17/training.json",
+        "seconds": 685.9314038368175
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/P1_29/training.json",
+        "seconds": 609.1348944839556
+      },
+      {
+        "epochs": 480,
+        "path": "results/task05/weights/P1_43/training.json",
+        "seconds": 578.4757196254795
+      }
+    ]
+  },
+  "paper_evidence": [
+    {
+      "finding": "BC1 uses 537 initial random/baseline/M0 games collected before evaluation experiments 1 and 2. Its training predates Interpolating.",
+      "quote": "This comprised 537 games",
+      "section": "Human datasets / Train Set experiment 1",
+      "web_lines": "244-246"
+    },
+    {
+      "finding": "BC2 uses Train Set 3 including earlier training and evaluation data. Preceding sections include Exp 1 and Exp 2; BC2 has Exp 2 exposure and is descriptive, not a transfer comparator.",
+      "quotes": [
+        "This comprised all aforementioned data",
+        "for a total of 990 games"
+      ],
+      "section": "Human datasets / Train set experiment 3",
+      "web_lines": "253-255"
+    },
+    {
+      "finding": "Adam initially 0.0005, reported exponential decay by 0.05 every 1,000 steps to 0.000005. Four checkpoints were selected partly for high simulated surplus under hand-coded baselines and low surplus with a random mechanism.",
+      "quotes": [
+        "mini batches of size 256",
+        "700,000 update steps"
+      ],
+      "section": "Training virtual players (BC1)"
+    },
+    {
+      "finding": "Rule-strategy explanations were added in Experiments 2, 3 and 4; Exp 1 did not receive those explanations. The RL explanation conveyed a general surplus-maximization goal and was less informative than baseline-rule explanations.",
+      "section": "Instructions",
+      "web_lines": "223-226"
+    }
+  ],
+  "quote_word_count": 23,
+  "recomputed_mixed_origin0": [
+    {
+      "alive_exact_positive_after20": 0.042317708333333336,
+      "alive_gt1_after20": 0.042317708333333336,
+      "branches": 1536,
+      "budget": "original",
+      "family": "constant",
+      "groups": 8,
+      "pool_after20": 0.2625,
+      "task": "task04"
+    },
+    {
+      "alive_exact_positive_after20": 0.051432291666666664,
+      "alive_gt1_after20": 0.051432291666666664,
+      "branches": 1536,
+      "budget": "continued",
+      "family": "feedforward",
+      "groups": 8,
+      "pool_after20": 0.298046875,
+      "task": "task04"
+    },
+    {
+      "alive_exact_positive_after20": 0.028645833333333332,
+      "alive_gt1_after20": 0.028645833333333332,
+      "branches": 1536,
+      "budget": "original",
+      "family": "feedforward",
+      "groups": 8,
+      "pool_after20": 0.34726562499999997,
+      "task": "task04"
+    },
+    {
+      "alive_exact_positive_after20": 0.022786458333333332,
+      "alive_gt1_after20": 0.022786458333333332,
+      "branches": 1536,
+      "budget": "original",
+      "family": "linear",
+      "groups": 8,
+      "pool_after20": 0.210546875,
+      "task": "task04"
+    },
+    {
+      "alive_exact_positive_after20": 0.12434895833333333,
+      "alive_gt1_after20": 0.12434895833333333,
+      "branches": 1536,
+      "budget": "continued",
+      "family": "recurrent",
+      "groups": 8,
+      "pool_after20": 4.005989583333333,
+      "task": "task04"
+    },
+    {
+      "alive_exact_positive_after20": 0.119140625,
+      "alive_gt1_after20": 0.119140625,
+      "branches": 1536,
+      "budget": "original",
+      "family": "recurrent",
+      "groups": 8,
+      "pool_after20": 4.715625,
+      "task": "task04"
+    },
+    {
+      "alive_exact_positive_after20": 0.2649739583333333,
+      "alive_gt1_after20": 0.2649739583333333,
+      "branches": 1536,
+      "budget": "conditional",
+      "family": "H0",
+      "groups": 8,
+      "pool_after20": 7.193098958333333,
+      "task": "task05"
+    },
+    {
+      "alive_exact_positive_after20": 0.25390625,
+      "alive_gt1_after20": 0.25390625,
+      "branches": 1536,
+      "budget": "conditional",
+      "family": "H1",
+      "groups": 8,
+      "pool_after20": 8.079036458333333,
+      "task": "task05"
+    },
+    {
+      "alive_exact_positive_after20": 0.3359375,
+      "alive_gt1_after20": 0.3359375,
+      "branches": 1536,
+      "budget": "conditional",
+      "family": "P0",
+      "groups": 8,
+      "pool_after20": 9.807812499999999,
+      "task": "task05"
+    },
+    {
+      "alive_exact_positive_after20": 0.3203125,
+      "alive_gt1_after20": 0.3203125,
+      "branches": 1536,
+      "budget": "conditional",
+      "family": "P1",
+      "groups": 8,
+      "pool_after20": 12.233203125000001,
+      "task": "task05"
+    }
+  ],
+  "recomputed_recorded_surplus": {
+    "Equal Baseline BC 1": {
+      "games": 512,
+      "mean_surplus": 3.8792482603029006
+    },
+    "Equal Baseline Exp 1": {
+      "games": 40,
+      "mean_surplus": 2.2017613873723896
+    },
+    "Interpolating Baseline BC 1": {
+      "games": 512,
+      "mean_surplus": 7.371267307663947
+    },
+    "Interpolating Baseline BC 2": {
+      "games": 512,
+      "mean_surplus": 7.734088828674185
+    },
+    "Mixed Baseline BC 1": {
+      "games": 512,
+      "mean_surplus": 4.78677722563631
+    },
+    "Mixed Baseline Exp 1": {
+      "games": 40,
+      "mean_surplus": 4.532721120186616
+    },
+    "Proportional Baseline BC 1": {
+      "games": 512,
+      "mean_surplus": 6.405637533493392
+    },
+    "Proportional Baseline Exp 1": {
+      "games": 40,
+      "mean_surplus": 6.0468687356403095
+    },
+    "RL Agent (M1) BC 1": {
+      "games": 512,
+      "mean_surplus": 8.478325654219514
+    },
+    "RL Agent (M1) Exp 1": {
+      "games": 40,
+      "mean_surplus": 8.71846526746963
+    },
+    "RL Agent (M2) BC 2": {
+      "games": 512,
+      "mean_surplus": 9.09392373794059
+    }
+  },
+  "recomputed_task03_surplus": [
+    {
+      "family": "constant",
+      "games": 192,
+      "mean_surplus": 2.4887890625,
+      "mechanism": "Equal"
+    },
+    {
+      "family": "constant",
+      "games": 192,
+      "mean_surplus": 2.4941080729166667,
+      "mechanism": "Interpolating"
+    },
+    {
+      "family": "constant",
+      "games": 192,
+      "mean_surplus": 2.4577213541666665,
+      "mechanism": "Mixed"
+    },
+    {
+      "family": "constant",
+      "games": 192,
+      "mean_surplus": 2.4838476562499996,
+      "mechanism": "Proportional"
+    },
+    {
+      "family": "feedforward",
+      "games": 192,
+      "mean_surplus": 2.01859375,
+      "mechanism": "Equal"
+    },
+    {
+      "family": "feedforward",
+      "games": 192,
+      "mean_surplus": 3.7989778645833323,
+      "mechanism": "Interpolating"
+    },
+    {
+      "family": "feedforward",
+      "games": 192,
+      "mean_surplus": 2.1975260416666664,
+      "mechanism": "Mixed"
+    },
+    {
+      "family": "feedforward",
+      "games": 192,
+      "mean_surplus": 4.1172070312499995,
+      "mechanism": "Proportional"
+    },
+    {
+      "family": "linear",
+      "games": 192,
+      "mean_surplus": 2.46166015625,
+      "mechanism": "Equal"
+    },
+    {
+      "family": "linear",
+      "games": 192,
+      "mean_surplus": 3.050436197916666,
+      "mechanism": "Interpolating"
+    },
+    {
+      "family": "linear",
+      "games": 192,
+      "mean_surplus": 2.584192708333333,
+      "mechanism": "Mixed"
+    },
+    {
+      "family": "linear",
+      "games": 192,
+      "mean_surplus": 3.0525260416666664,
+      "mechanism": "Proportional"
+    },
+    {
+      "family": "recurrent",
+      "games": 192,
+      "mean_surplus": 2.0128059895833332,
+      "mechanism": "Equal"
+    },
+    {
+      "family": "recurrent",
+      "games": 192,
+      "mean_surplus": 3.780455729166666,
+      "mechanism": "Interpolating"
+    },
+    {
+      "family": "recurrent",
+      "games": 192,
+      "mean_surplus": 2.178411458333333,
+      "mechanism": "Mixed"
+    },
+    {
+      "family": "recurrent",
+      "games": 192,
+      "mean_surplus": 3.562805989583333,
+      "mechanism": "Proportional"
+    }
+  ],
+  "recovery": "Original source_audit.json had been overwritten by an unrelated concurrent implementation; this audit is reconstructed in a separate institutional-prefixed file without changing that file",
+  "runtime": {
+    "peak_rss_kib": 51740,
+    "utc": "2026-10-01T19:41:15.888206+00:00",
+    "wall_seconds": 14.644391420064494
+  },
+  "scope": "Independent stdlib recomputation; behavioral numeric parsing restricted to Exp1 and recorded BC1/BC2; no Exp2/3/4 behavioral parsing or torch imports",
+  "source": {
+    "hashes": {
+      "configs/task03.json": "16e6f69d152af0247f4e1c6dac2080d520b3b0c3f8bb739a0fb18d709748f94c",
+      "data/raw/paper.txt": "36e37681a25a0315772647e74f5bd5ff14a85696dea74446c8bf382f96fd5ae2",
+      "data/raw/paper.xml": "5552acbc0748415d769ff22c2c297d4a61d93032307692c43952c0007591b4fa",
+      "data/raw/sustainable_behavior.csv": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+      "data/raw/sustainable_behavior.ipynb": "4b93edeae3ca4f937bb71701072c3371bfc34d82887f8b8e39d171d0bc1588c9",
+      "results/task03/generated_groups.csv": "22056f096160abcad7f8fe747596e92beb96707b0ded4debb3dc2f32d1432116",
+      "results/task03/split.json": "780f6540f28f3ab02bfca116be2a250a4e9f9b4ad27f8628bb816bf13355a678"
+    },
+    "notebook_revision": "4f1a99a9d150f9fa6bad1a0f70f11c0673d46763",
+    "paper_doi": "10.1038/s41467-025-58043-7",
+    "paper_url": "https://www.nature.com/articles/s41467-025-58043-7",
+    "paper_version": "Version of record, 2025-03-22"
+  },
+  "source_discrepancies": [
+    {
+      "finding": "Initial data collection gives 36 random + 303 hand-coded + 234 M0 = 573 despite stated total 537. The earlier Mechanisms section gives initial random/baseline data 303 plus M0 234 = 537. Preserve the repeatedly stated total 537 and note inconsistent component counts.",
+      "section": "Initial data collection versus Mechanisms / Human datasets"
+    }
+  ],
+  "task03_training_budget": {
+    "effective_batch_groups": 8,
+    "epochs": 120,
+    "steps_per_fit": 1440,
+    "train_groups": 96
+  }
+}

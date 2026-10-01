@@ -1,0 +1,21 @@
+{
+  "contract": {
+    "checkpoint_sha256": "a8f92a9c4693f2c4efb1175208ad11230ff2b9c74c26ab466d117ec36676b61e",
+    "family": "CL-T04-GRU",
+    "forecast_summary_sha256": "a73e980936ed9d2358eade46aa1c202a6c397404ddaed629493bf68585d3076a",
+    "games": 512,
+    "generation_contract_sha256": "c6aaa9c8cb7ae2346c554f1b0af2ceb3daa32443212ef8d4b3753b06502c5df7",
+    "rule": "Mixed",
+    "seed": 17,
+    "trajectory_sha256": "6421baee895d27ec9aed281492b068cab419bfa361c78c2ea2fc2fd0bfb9f9a6",
+    "verification_code_sha256": "ad61edc01291657523390d111e1d18df94bc8ccdc4c593c82179c124618d8943"
+  },
+  "cpu_seconds": 1.7433155949999999,
+  "exact_game_summaries": 512,
+  "exact_trajectories": 4,
+  "fresh_process": true,
+  "passed": true,
+  "peak_rss_kib": 350908,
+  "pid": 54,
+  "seconds": 1.6589348509442061
+}

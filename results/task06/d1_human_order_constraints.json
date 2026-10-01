@@ -1,0 +1,94 @@
+{
+  "constraints": [
+    {
+      "affected_candidates": [
+        "FA-GRU",
+        "FA-P0",
+        "FA-H0"
+      ],
+      "human_groups_per_rule": 32,
+      "interpretation": "Both observed human rankings are strict, so a candidate can satisfy the ranking condition.",
+      "metrics": {
+        "surplus": {
+          "human_means": {
+            "Equal": 2.3052906633296515,
+            "Mixed": 4.267321919105598,
+            "Proportional": 5.86969277333701
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Mixed",
+            "Proportional"
+          ],
+          "human_strict": true,
+          "tied_rule_pairs": []
+        },
+        "survival": {
+          "human_means": {
+            "Equal": 0.0625,
+            "Mixed": 0.25,
+            "Proportional": 0.5
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Mixed",
+            "Proportional"
+          ],
+          "human_strict": true,
+          "tied_rule_pairs": []
+        }
+      },
+      "population": "train_validation",
+      "strict_order_condition_feasible": true
+    },
+    {
+      "affected_candidates": [
+        "CL-T04-GRU",
+        "CL-P0",
+        "CL-H0",
+        "CL-FA-GRU",
+        "CL-FA-P0",
+        "CL-FA-H0"
+      ],
+      "human_groups_per_rule": 8,
+      "interpretation": "An observed human outcome ranking contains a tie. Under the stipulated strict-order decision rule, no candidate assessed on this population can qualify, regardless of forecast accuracy or IE. This constraint is not evidence that calibrated behavior is inaccurate.",
+      "metrics": {
+        "surplus": {
+          "human_means": {
+            "Equal": 2.791198888188228,
+            "Mixed": 5.673762114718556,
+            "Proportional": 4.688049200782553
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Proportional",
+            "Mixed"
+          ],
+          "human_strict": true,
+          "tied_rule_pairs": []
+        },
+        "survival": {
+          "human_means": {
+            "Equal": 0.125,
+            "Mixed": 0.375,
+            "Proportional": 0.375
+          },
+          "human_order_low_to_high": [
+            "Equal",
+            "Mixed",
+            "Proportional"
+          ],
+          "human_strict": false,
+          "tied_rule_pairs": [
+            [
+              "Mixed",
+              "Proportional"
+            ]
+          ]
+        }
+      },
+      "population": "validation",
+      "strict_order_condition_feasible": false
+    }
+  ]
+}
