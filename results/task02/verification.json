@@ -1,0 +1,118 @@
+{
+  "cache": {
+    "bytes": 23556096,
+    "cold_prepare_seconds": 46.19,
+    "cold_peak_rss_mib": 23.6,
+    "warm_prepare_seconds": 0.39,
+    "warm_peak_rss_kib": 30592
+  },
+  "provenance": {
+    "schema_version": 1,
+    "source_file": "sustainable_behavior.csv",
+    "source_url": "https://storage.googleapis.com/sustainable_behavior/sustainable_behavior.csv",
+    "source_sha256": "9fd30106ef858772a37fbbf1dfa5f9f8553c88ced0e39e0865b76a945b4638d0",
+    "summary_sha256": "9b8bfebebc03dafce7d0bad4801444d2249608d08de206c3c72c9874d1ed1d12",
+    "upstream_revision": "4f1a99a9d150f9fa6bad1a0f70f11c0673d46763",
+    "paper_doi": "10.1038/s41467-025-58043-7",
+    "data_license": "CC-BY-4.0",
+    "episode_count": 2208,
+    "round_count": 88320,
+    "counts_by_condition": {
+      "Mixed Baseline BC 1": 512,
+      "RL Agent (M1) BC 1": 512,
+      "Equal Baseline BC 1": 512,
+      "Proportional Baseline BC 1": 512,
+      "Mixed Baseline Exp 1": 40,
+      "RL Agent (M1) Exp 1": 40,
+      "Equal Baseline Exp 1": 40,
+      "Proportional Baseline Exp 1": 40
+    },
+    "summary_max_abs_difference": 2.220446049250313e-16,
+    "summary_tolerance": 1e-09,
+    "equation_diagnostic_tolerance": 0.0001,
+    "default_selection": "Human Experiment 1 Equal; nearest condition median surplus; ties by full (condition, launch_id, episode_id) key.",
+    "cumulative_basis": "Sum of recorded player_reward_i from round 0 through the selected round; not rounded display values."
+  },
+  "example": {
+    "key": [
+      "Equal Baseline Exp 1",
+      "67430636",
+      "0"
+    ],
+    "selection": "Nearest human Equal median surplus; stable full-key tie",
+    "round12": {
+      "round_id": 11,
+      "pool_before": 2.8008086681365967,
+      "offers": [
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071
+      ],
+      "contributions": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "surplus": [
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071
+      ],
+      "cumulative_surplus": [
+        92.19979649782181,
+        74.19979649782181,
+        50.19979649782181,
+        60.19979649782181
+      ],
+      "group_cumulative_surplus": 276.79918599128723,
+      "pool_after": 0.009999999776482582,
+      "after_source": "recorded next-pool field",
+      "pool_after_raw": "0.009999999776482582",
+      "equation_after": 0.0008087158203125,
+      "equation_input_valid": true,
+      "pool_residual": 0.009191283956170082,
+      "active_count": 0
+    },
+    "round40_pool_after": 0.009999999776482582
+  },
+  "verification": {
+    "python_tests_passed": 21,
+    "browser_error_log_empty": true,
+    "browser_console_log_empty": true,
+    "viewport": [
+      1366,
+      900
+    ],
+    "screenshot": "docs/assets/community-viewer.png",
+    "screenshot_sha256": "26d960d1ac1bda7b314e3f5cbbe8932a4b924833d756f6695d47d02d30272453",
+    "prior_empirical_artifacts_unchanged": 13,
+    "comparison_horizontal_overflow": false,
+    "narrow_viewport": [
+      390,
+      844
+    ],
+    "narrow_page_width": 390,
+    "http_boundaries": {
+      "unlisted_files": 404,
+      "raw_csv": 404,
+      "unknown_episode": 404,
+      "invalid_fraction": 400
+    },
+    "occupied_port_message": "Address already in use. Try --port 8766.",
+    "share_url_reload": {
+      "passed": true,
+      "mechanism": "Recorded RL M1",
+      "resident": "D",
+      "round": 12
+    },
+    "mechanism_scatter_shapes_checked": [
+      "Equal: circle",
+      "Mixed: square",
+      "Proportional: triangle",
+      "Recorded RL M1: diamond"
+    ]
+  }
+}

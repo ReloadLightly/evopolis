@@ -100,10 +100,19 @@ def weighted_allocation(
     total = math.fsum(previous)
     if total == 0 or weight == 1:
         return equal
-    return tuple(
+    offers = [
         weight * pool / PLAYERS + (1 - weight) * pool * contribution / total
         for contribution in previous
-    )
+    ]
+    # These policies allocate the whole pool. Independent floating operations
+    # can overshoot it by an ulp, producing a negative next pool when all return
+    # zero. Balance the largest share, then round it downward only if necessary.
+    # This affects new baseline allocations only; recorded values are untouched.
+    largest = max(range(PLAYERS), key=offers.__getitem__)
+    offers[largest] = pool - math.fsum(value for i, value in enumerate(offers) if i != largest)
+    while math.fsum(offers) > pool:
+        offers[largest] = math.nextafter(offers[largest], 0.0)
+    return tuple(offers)
 
 
 def allocate(

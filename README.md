@@ -13,7 +13,7 @@ EvoPolis is a research project at the intersection of computational social scien
 
 The first world is a community sharing a productive resource. Its inhabitants receive allocations, decide what to retain, and choose what to return to the commons. Their choices can sustain mutual prosperity, concentrate opportunities, or exhaust the resource on which everyone depends. The research follows two connected problems: learning a faithful model of those choices, and discovering institutions that work across plausible models of human behavior.
 
-**Current state:** the first empirical comparison is reproduced from released trajectories, with executable resource accounting, four allocation baselines, and an audit of numerical discrepancies. Behavioral training and evolutionary search remain planned. The cover is conceptual artwork; the Figure 2A reproduction below is measured evidence.
+**Current state:** the empirical comparison is reproduced, and a working 16-bit community viewer replays all 2,208 Figure 2A episodes with resident inspection and synchronized comparisons. A separate scripted sandbox runs four allocation baselines through the numerical environment. Behavioral training and evolutionary search remain planned. The cover is concept art; the viewer screenshot and empirical figure below show working software and measured evidence.
 
 ## The research question
 
@@ -51,11 +51,11 @@ $$
 
 The initial protocol uses four inhabitants, a pool capacity and initial stock of 200, and a contribution multiplier of 1.4. Experiments 1–3 run for 40 rounds, with the horizon undisclosed to participants. Human contributions advance in integer units, while allocations can be fractional. The [implemented protocol](docs/protocol.md) records timing, observable information, termination, and unresolved numerical conventions. Experiment 4 instead repeats three games within each group with a different continuation rule.
 
-The planned interface will make this mechanism visible as an original **16-bit pixel-art town**: four resident sprites around a shared commons, discrete resource transfers, dialogue-style history panels, and synchronized comparisons between institutions. Replaying observed human decisions and running generated futures will be distinct display modes. Several independent communities can be compared without changing the original group size.
+The working interface makes this mechanism visible as an original **16-bit pixel-art town**: four resident sprites around a shared commons, discrete resource transfers, dialogue-style history panels, and synchronized comparisons between institutions. Recorded human decisions, recorded upstream model outcomes, and new scripted simulations have distinct source labels. Comparing communities does not change the original four-player group size.
 
 ### A 16-bit social laboratory
 
-EvoPolis takes its visual direction from NES and SNES games of the late 1980s and early 1990s: expressive pixel inhabitants, tile-based scenery, square-framed menus, and a restrained palette of midnight blue, mint, cyan, amber, coral, and parchment. The cover, research diagrams, and empirical figure share this theme. The future replay interface will extend it to the community itself.
+EvoPolis takes its visual direction from NES and SNES games of the late 1980s and early 1990s: expressive pixel inhabitants, tile-based scenery, square-framed menus, and a restrained palette of midnight blue, mint, cyan, amber, coral, and parchment. The cover, research diagrams, empirical figure, and working replay interface share this theme.
 
 | Surface | Visual direction |
 | :--- | :--- |
@@ -66,6 +66,20 @@ EvoPolis takes its visual direction from NES and SNES games of the late 1980s an
 | Empirical figures | Matching colors and monospaced labels, with accurate positions, scales, and uncertainty intervals. |
 
 The [visual style guide](docs/VISUAL_STYLE.md) and [reusable interface theme](docs/assets/evopolis-theme.css) keep future work consistent. Pixel art supplies the world and interface identity; empirical numbers, readable tables, and statistical meaning remain explicit.
+
+### Watch a recorded community
+
+![Actual EvoPolis application at a laptop viewport: the default human Equal community, its four residents, recorded pool and surplus, resident inspection, and synchronized trajectory cursor.](docs/assets/community-viewer.png)
+
+This is a **real screenshot of the running application**, showing human Experiment 1, Equal allocation, launch `67430636`, episode `0`, at playback round 1. The default is the episode nearest its condition's median mean surplus, with ties resolved by the full episode key.
+
+Play, pause, step or scrub through all **160 human episodes and 2,048 recorded BC1 episodes**. Select a resident to inspect allocations, returns, round surplus and cumulative retained resources. Exact source values remain available beneath the scene; charts and histories restore the selected round directly when seeking. An outcome scatter and episode menu expose every eligible game, and a copied view link preserves the selection and round.
+
+In that default community, **playback round 12** (source `round_id=11`) offers each resident **0.699999988079071** units. All four return zero. The recorded pool after the round is **0.009999999776482582**, and the release retains all 40 rounds. This makes the integer contribution constraint and documented residual pool visible; it is one identified episode, not a new estimate of a treatment effect.
+
+Comparison mode places two independently selected episodes on the same playback clock. These are different observed groups, not the same people under alternative institutions. The separate **scripted sandbox** assigns each resident an editable fraction `q`, returns `floor(q × allocation)`, and runs Equal, Proportional, Mixed or Interpolating allocation using the Python environment. Settings edits begin a new run. These fixed scripts are neither trained agents nor predictions of human behavior.
+
+The [viewer guide](docs/viewer.md) explains controls, source semantics, and limitations. In particular, the final BC1 next-pool value is unavailable; observed trajectories preserve the source's residuals, while scripted runs stop at exact zero or 40 rounds. Task 03 will introduce the first trained behavioral agents.
 
 ## First empirical result: surplus and inequality
 
@@ -123,8 +137,8 @@ The repository develops cumulatively. Each stage should yield a scientific objec
 | Stage | Experiment | Main artifact | Status |
 | :--- | :--- | :--- | :--- |
 | **01 · Ground** | Reconstruct the published task and reproduce a substantive result from the released human data. | Empirical figure, numerical comparison, and executable resource dynamics, with numerical ambiguities documented. | **Complete** |
-| **02 · Observe** | Visualize recorded communities and baseline simulations. | Local browser replay with resource flows and individual histories. | **[Next: implementation task](docs/tasks/02-pixel-community-replay.md)** |
-| **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Model checkpoints, learning curves, and predictions for held-out groups. | Planned |
+| **02 · Observe** | Visualize recorded communities and baseline simulations. | Verified local pixel-art replay, resident inspection, comparisons, and scripted sandbox. | **Complete** |
+| **03 · Learn** | Fit simple behavioral baselines and a compact recurrent agent. | Model checkpoints, learning curves, and predictions for held-out groups. | **Next** |
 | **04 · Imagine** | Generate multi-round social trajectories under recorded institutions. | Calibration, trajectory comparisons, and uncertainty estimates. | Planned |
 | **05 · Evolve** | Search memory and history-processing procedures. | Candidate lineage and comparison with fixed and random-search baselines. | Planned |
 | **06 · Govern** | Evolve allocation procedures across frozen behavioral models. | Trade-offs among surplus, inclusion, inequality, and resource persistence. | Planned |
@@ -157,15 +171,23 @@ git clone https://github.com/ReloadLightly/evopolis.git
 code --new-window evopolis
 ```
 
-If you already cloned the repository, open that checkout instead. With [uv](https://docs.astral.sh/uv/getting-started/installation/) available, reproduce the inventory, numerical replay, tables and figures:
+If you already cloned the repository, open that checkout instead. With [uv](https://docs.astral.sh/uv/getting-started/installation/) available, launch the community viewer:
+
+```bash
+bash scripts/viewer.sh --port 8765
+```
+
+Open **http://127.0.0.1:8765** and stop the server with Ctrl+C. The command uses the locked Python environment and prepares a compact, verified replay cache on first use. Playback works offline after preparation. No frontend build, model API, GPU, or external database service is needed. See [the viewer guide](docs/viewer.md) for alternate ports and verification.
+
+To reproduce the empirical inventory, accounting audit, tables and figures separately:
 
 ```bash
 bash scripts/reproduce.sh
 ```
 
-The command installs the locked Python environment and streams the public 204 MiB CSV into ignored `data/raw/` on first use. It verifies the pinned data and notebook checksums, then writes `results/task01/` and PNG/SVG figures in `docs/assets/`. Subsequent runs use cached sources. The [task notes](docs/tasks/01-empirical-foundation.md#completion-record) record measured runtime, memory, verification, and dependencies; the [data inventory](docs/data-inventory.md) describes schema, missing values, and group identity limits. No training or dashboard command exists yet.
+The analysis command streams the public 204 MiB CSV into ignored `data/raw/` on first use. It verifies the pinned data and notebook checksums, then writes `results/task01/` and PNG/SVG figures in `docs/assets/`. Subsequent runs use cached sources. The [Task 01 notes](docs/tasks/01-empirical-foundation.md#completion-record) record its runtime, memory, verification, and dependencies; the [data inventory](docs/data-inventory.md) describes schema, missing values, and group identity limits. No behavioral training command exists yet.
 
-The next concrete task is **[Task 02: make the commons observable](docs/tasks/02-pixel-community-replay.md)**: a local 16-bit community viewer with recorded human/model episodes, resident inspection, synchronized comparisons, and a clearly labeled scripted sandbox using the implemented allocation rules. Its brief is ready for Codex in the WSL checkout; the viewer itself has not been implemented yet. Later compact CPU models will be fitted to human decisions with declared group splits and separate institutional evaluation. Large language models remain optional for later communication or program proposals.
+The [completed Task 02 brief and verification record](docs/tasks/02-pixel-community-replay.md#completion-record) describe the viewer's scope. The next research step is Task 03: fit simple behavioral baselines and a compact recurrent agent to human decisions, with declared group splits and separate institutional evaluation. Large language models remain optional for later communication or program proposals.
 
 ## Research foundations
 

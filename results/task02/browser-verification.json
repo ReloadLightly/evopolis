@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "evidence": {
+        "episodes": 40,
+        "key": [
+          "Equal Baseline Exp 1",
+          "67430636",
+          "0"
+        ]
+      },
+      "name": "default selection",
+      "status": "pass"
+    },
+    {
+      "evidence": {
+        "final_cumulative": 50.26139649748802,
+        "resident": "C",
+        "round12_after": 0.009999999776482582
+      },
+      "name": "resident, exact values and backward seek",
+      "status": "pass"
+    },
+    {
+      "evidence": {
+        "paused_round": 2
+      },
+      "name": "play, pause, speed, previous and restart",
+      "status": "pass"
+    },
+    {
+      "evidence": {
+        "episodes": 512,
+        "final_after": null,
+        "key": [
+          "Equal Baseline BC 1",
+          "1221",
+          "197"
+        ]
+      },
+      "name": "upstream replay",
+      "status": "pass"
+    },
+    {
+      "evidence": {
+        "keys": [
+          "Equal Baseline BC 1 · launch 1221 · episode 197 · source rounds 0–39",
+          "Mixed Baseline Exp 1 · launch 70094867 · episode 0 · source rounds 0–39"
+        ],
+        "round": 9
+      },
+      "name": "independent recorded comparison",
+      "status": "pass"
+    },
+    {
+      "evidence": {
+        "selected": "e706d5afdf5a3e26d83e711d37aee3c8021c9eb39cae4706fbb9358a9039f134"
+      },
+      "name": "keyboard outcome selection",
+      "status": "pass"
+    },
+    {
+      "evidence": {
+        "decimal_fraction": 0.58,
+        "initial_return": 29,
+        "rules": [
+          "equal",
+          "proportional"
+        ]
+      },
+      "name": "scripted policies, matched comparison, edits and reset",
+      "status": "pass"
+    },
+    {
+      "evidence": {
+        "ended": "Run ended after round 1 (exact-zero pool); final state held while the other pane continues."
+      },
+      "name": "unequal run lengths and reduced motion",
+      "status": "pass"
+    }
+  ],
+  "viewport": [
+    1366,
+    900
+  ]
+}

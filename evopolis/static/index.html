@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EvoPolis · Community observatory</title>
+  <link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body class="ep-root">
+<header class="masthead">
+  <a class="brand" href="/" aria-label="EvoPolis home"><span class="brand-flower" aria-hidden="true">✣</span><span>EVOPOLIS<small>THE COMMUNITY OBSERVATORY</small></span></a>
+  <div class="header-note">Four residents. One commons.<br><span>Watch the choices. Inspect the evidence.</span></div>
+  <span class="local-tag">LOCAL LAB · 02</span>
+</header>
+<main>
+  <div class="mode-row">
+    <div class="mode-tabs" role="group" aria-label="Evidence mode"><button id="recorded-mode" class="active" aria-pressed="true">Recorded communities</button><button id="sandbox-mode" aria-pressed="false">Scripted sandbox</button></div>
+    <div class="view-options"><label><input type="checkbox" id="compare"> Compare communities</label><label><input type="checkbox" id="reduced-motion"> Reduced motion</label></div>
+  </div>
+  <div id="mode-context" class="context"></div>
+  <section class="transport" aria-label="Playback controls">
+    <button id="restart" title="Restart at round 1" aria-label="Restart">↺</button>
+    <button id="previous" title="Previous round" aria-label="Previous round">◀</button>
+    <button id="play" class="primary" aria-label="Play">▶ Play</button>
+    <button id="next" title="Next round" aria-label="Next round">▶|</button>
+    <div class="round-readout"><span class="eyebrow">ROUND</span><output id="round-label">—</output></div>
+    <input id="scrubber" type="range" min="0" max="39" value="0" step="1" aria-label="Round scrubber">
+    <label class="speed-label">Speed <select id="speed" aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+    <button id="copy-link" title="Copy a link to this selection and round">Copy view link</button>
+  </section>
+  <div id="error" role="alert" hidden></div>
+  <div id="loading" role="status">Opening the recorded archive…</div>
+  <div id="communities"></div>
+  <footer>
+    <span>RESEARCH PLAYBACK · residents A–D are group positions, not identities.</span>
+    <details><summary>Evidence &amp; interpretation</summary><p>Recorded human Experiment 1 and recorded upstream BC1 outcomes from Koster, Pîslar et al. (2025). Four-player, 40-round Figure 2A cohorts only. Source revision <code>4f1a99a</code>; data CC BY 4.0. The upstream models are replayed, not run here.</p><p>The 40-round horizon is a researcher control and was undisclosed to participants. Current contributions are simultaneous; animation order does not create additional observations. Movement and symbolic flower tokens add no distance, cost or social rules. Rounded labels never update the underlying data. No fitting or learning occurs in this viewer.</p><p id="provenance-detail"></p><a href="https://doi.org/10.1038/s41467-025-58043-7" target="_blank" rel="noreferrer">Published study ↗</a></details>
+  </footer>
+</main>
+<template id="community-template">
+  <section class="community" aria-label="Community">
+    <div class="community-heading"><span class="pane-name eyebrow"></span><span class="source-badge"></span></div>
+    <div class="recorded-selectors selectors">
+      <label>Evidence<select class="cohort"><option value="human">Human · Experiment 1</option><option value="bc1">Upstream model · BC1</option></select></label>
+      <label>Allocation rule<select class="mechanism"><option>Equal</option><option>Mixed</option><option>Proportional</option><option>Recorded RL M1</option></select></label>
+      <label class="episode-field">Episode · mean surplus / Gini<select class="episode"></select></label>
+    </div>
+    <div class="sandbox-selectors" hidden>
+      <div class="sandbox-top"><label>Allocation rule<select class="sandbox-mechanism"><option value="equal">Equal</option><option value="proportional">Proportional</option><option value="mixed">Mixed</option><option value="interpolating">Interpolating</option></select></label><button class="reset-sandbox">Reset settings</button></div>
+      <fieldset><legend>Fixed return fractions · q</legend><div class="fractions"></div></fieldset>
+      <p class="policy-note">Return = floor(q × allocation). Fixed script, no learning. Changing a setting starts a new run.</p>
+    </div>
+    <div class="identity"></div>
+    <div class="community-layout">
+      <div class="world-column">
+        <div class="phase-strip" aria-label="Round phases"><span data-phase="0">1 ALLOCATE</span><span data-phase="1">2 RETURN / RETAIN</span><span data-phase="2">3 REPLENISH</span></div>
+        <div class="town-wrap"><canvas class="town" width="480" height="240" aria-label="Pixel town with four selectable residents"></canvas></div>
+        <div class="resident-buttons" role="group" aria-label="Inspect a resident"></div>
+        <div class="scene-caption"><span class="cyan">◆ Allocate</span><span class="mint">◆ Return</span><span class="amber">◆ Retain</span><span>Symbolic tokens · rounded labels · exact values in inspection</span></div>
+        <div class="stats"><div><span>Pool before</span><strong class="pool-before"></strong></div><div><span class="after-label">Recorded pool after</span><strong class="pool-after"></strong></div><div><span>Offers ≥ 1 unit</span><strong class="active-count"></strong></div><div><span>Total retained so far</span><strong class="total-surplus"></strong></div></div>
+        <div class="trajectory-header"><h3>COMMUNITY TRAJECTORY</h3><span><i class="line cyan-line"></i> Pool before <i class="line amber-line"></i> Cumulative retained</span></div>
+        <svg class="timeline" viewBox="0 0 560 130" preserveAspectRatio="none" role="img" aria-label="Pool and cumulative retained surplus with selected round cursor"></svg>
+        <p class="end-state"></p>
+      </div>
+      <aside class="inspector">
+        <div class="inspector-title"><span class="eyebrow">RESIDENT RECORD</span><h2 class="resident-name">Resident A</h2><span class="resident-position"></span></div>
+        <dl class="resident-values"></dl>
+        <div class="opportunity"></div>
+        <details class="history-detail"><summary>Resident history through this round</summary><div class="history-scroll"><table><thead><tr><th>Round</th><th>Offer</th><th>Return</th><th>Retain</th><th>Cumulative</th></tr></thead><tbody class="history"></tbody></table></div></details>
+        <details><summary>Information before this choice</summary><p class="information-basis"></p><p class="previous-returns"></p><p class="prior-cumulative"></p><p>No fitted model predictions are available.</p></details>
+      </aside>
+    </div>
+    <details class="exact-detail"><summary>Inspect exact round values &amp; accounting</summary><div class="exact-scroll"><table><thead><tr><th>Resident</th><th>Allocation</th><th>Return</th><th>Round surplus</th><th>Cumulative surplus</th></tr></thead><tbody class="exact-values"></tbody></table></div><p class="exact-pool"></p><p class="accounting"></p><p class="after-source"></p><p class="gini-note"></p></details>
+    <details class="outcome-detail"><summary>Choose a community by completed-game outcomes</summary><p class="selection-rule"></p><div class="scatter-layout"><svg class="scatter" viewBox="0 0 540 190" role="group" aria-label="Select a game by surplus and Gini"></svg><p>Each mark is one complete game in the selected cohort and mechanism. Select a mark or use the episode menu. This view includes future rounds; it is a research tool.</p></div></details>
+  </section>
+</template>
+</body>
+</html>

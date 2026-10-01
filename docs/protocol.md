@@ -40,6 +40,8 @@ With pool `R`, four players and previous returns `c`, the published mixture allo
 
 All four baseline implementations allocate the whole pool. The initial unpublished training collection also used mechanisms that retained resources and a random allocator; those are outside this task. A proportional policy gives a player with zero return zero future allocation while others return positive amounts, creating a route to permanent exclusion. The mixture maintains an equal component; interpolation changes that component with resource abundance.
 
+Task 02's scripted sandbox exposed an implementation precision edge: independently calculated shares could exceed the pool by one floating-point unit, producing a tiny negative next pool when every return was zero. Newly computed baseline allocations now balance the largest share against the remaining shares and, if needed, round that share downward by the smallest representable step. This enforces feasible allocations without adding a pool floor or clipping source records. Recorded replay, its residuals, and the Task 01 artifacts are unchanged.
+
 Neither the paper nor the notebook specifies `sum(c)==0`. We return equal allocations for this denominator edge case and label it an **EvoPolis convention**. At zero pool, the result is unambiguously four zeros. With a full-allocation baseline, zero contributions produce zero next pool, so a positive-pool fallback is normally unreachable after the first round in an exact trajectory. It can become relevant when external mechanisms retain resources or floating-point residuals persist. The first round uses an explicit missing-history marker, not evidence that zero prior contributions occurred.
 
 ## Admissible observations

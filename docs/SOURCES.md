@@ -32,3 +32,9 @@ Raphael Koster, Miruna Pîslar, Andrea Tacchetti, Jan Balaguer, Leqi Liu, Romual
 All current graphics follow the NES/SNES-inspired direction in [VISUAL_STYLE.md](VISUAL_STYLE.md). The matching CSS in `assets/evopolis-theme.css` is a reusable starting point for the future local interface. The empirical figure's retro styling preserves its recorded points, aggregation, and uncertainty intervals.
 
 Source links and upstream licenses do not imply affiliation with or endorsement by the referenced institutions.
+
+## Working community viewer
+
+`evopolis/static/town.js` draws original pixel residents and town scenery directly on Canvas. It uses no copied game sprites or external runtime assets. A–D mark recorded group positions and do not attribute demographics or private beliefs to participants. Resource flowers and motion are schematic presentation, not empirical magnitudes or added environmental rules.
+
+`assets/community-viewer.png` is a real Chromium screenshot of the working local app at 1366×900: human Experiment 1, Equal allocation, launch `67430636`, episode `0`, playback round 1. Its underlying records have the same pinned CSV provenance and CC BY 4.0 attribution as the Task 01 figure. The [viewer verification](../results/task02/verification.json) records the screenshot checksum, cache provenance and identified example. No generated artwork is presented as a software screenshot.

@@ -2,7 +2,7 @@
 
 EvoPolis uses an original visual language inspired by NES and SNES games of the late 1980s and early 1990s: tile-based towns, expressive small sprites, limited palettes, square dialogue boxes, and clear status displays. The main reference is the richer 16-bit look of the SNES era, with the crisp simplicity of NES menus.
 
-This direction applies to the cover, diagrams, empirical figures, and the future local simulation interface. It changes how the research is presented, while keeping the experiment's definitions and evidence explicit.
+This direction applies to the cover, diagrams, empirical figures, and the working local community viewer. It changes how the research is presented, while keeping the experiment's definitions and evidence explicit.
 
 ## The world on screen
 
@@ -59,10 +59,10 @@ Provide distinct source labels for **recorded human data**, **recorded upstream 
 
 GitHub controls README prose, table, and code-block typography. Keep those sections as accessible, searchable Markdown; the illustrated cover, diagrams, and plotted figures carry the retro identity. Do not convert research tables into pictures just to imitate a game menu.
 
-The future local interface can apply the full theme using the supplied CSS tokens and component classes. It is a starting style sheet, not a claim that a dashboard already exists. Scope styles beneath `.ep-root` when embedding the interface in another application.
+The local community viewer applies the supplied CSS tokens to its original Canvas town, controls, inspection panels and charts. See the [viewer guide](viewer.md) for the working application and a real screenshot. Scope styles beneath `.ep-root` when embedding the interface in another application.
 
-## Direction for the next Codex task
+## Continuing the interface
 
-When implementing Stage 02, build a compact pixel-art community replay around the existing empirical records and numerical environment. Use this style guide from the first screen. Prioritize visible resource transfers, accurate status panels, resident inspection, pause/step/play controls, and synchronized comparisons. Keep recorded trajectories and generated baseline simulations visibly distinct.
+Stage 02 implements a compact pixel-art community replay around the existing empirical records and numerical environment. Further work should preserve visible resource transfers, accurate status panels, resident inspection, pause/step/play controls, and synchronized comparisons. Keep recorded trajectories, scripted simulations, and any future fitted-model predictions visibly distinct.
 
-The next task should make the existing experiment observable through this visual language. It should not change the social mechanism in order to make the scene resemble a game.
+Future interfaces should make the experiment and model behavior observable through this visual language. They should not change the social mechanism in order to make the scene resemble a game.
